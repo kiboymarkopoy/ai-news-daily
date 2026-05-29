@@ -554,7 +554,460 @@
       "file": "berita-ai-model-research-29-mei-2026.md",
       "source": "Hero Image",
       "first_seen": "berita-ai-model-research-29-mei-2026"
+    },
+    "https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/": {
+      "file": "industry-business-ai-news-2026-05-30.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-30-04.56"
+    },
+    "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/": {
+      "file": "industry-business-ai-news-2026-05-30.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-30-04.56"
+    },
+    "https://techcrunch.com/2026/05/29/xcena-secures-135m-at-570m-valuation-betting-on-memory-as-ais-real-bottleneck/": {
+      "file": "industry-business-ai-news-2026-05-30.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-30-04.56"
+    },
+    "https://techcrunch.com/2026/05/28/gleans-top-line-crosses-300m-as-ai-budget-cutting-becomes-its-major-selling-point/": {
+      "file": "industry-business-ai-news-2026-05-30.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-30-04.56"
+    },
+    "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/": {
+      "file": "industry-business-ai-news-2026-05-30.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-30-04.56"
+    },
+    "https://www.cnbc.com/2026/05/29/dell-stock-earnings-ai-servers.html": {
+      "file": "industry-business-ai-news-2026-05-30.md",
+      "source": "CNBC",
+      "first_seen": "2026-05-30-04.56"
+    },
+    "https://techcrunch.com/2026/05/28/just-like-gold-and-oil-well-soon-be-able-to-trade-ai-token-futures/": {
+      "file": "industry-business-ai-news-2026-05-30.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-30-04.56"
+    },
+    "https://techcrunch.com/2026/05/28/the-internet-is-being-rebuilt-for-machines/": {
+      "file": "industry-business-ai-news-2026-05-30.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-30-04.56"
+    },
+    "https://www.cnbc.com/2026/05/28/mistral-arthur-mensch-design-chips-ai-data-centers.html": {
+      "file": "industry-business-ai-news-2026-05-30.md",
+      "source": "CNBC",
+      "first_seen": "2026-05-30-04.56"
+    },
+    "https://techcrunch.com/wp-content/uploads/2024/03/GettyImages-1502217391.jpg?resize=1200,800": {
+      "file": "industry-business-ai-news-2026-05-30.md",
+      "source": "Groq Hero",
+      "first_seen": "2026-05-30-04.56"
+    },
+    "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2259183614.jpg?resize=1200,800": {
+      "file": "industry-business-ai-news-2026-05-30.md",
+      "source": "Glean Hero",
+      "first_seen": "2026-05-30-04.56"
+    },
+    "https://techcrunch.com/wp-content/uploads/2026/05/asana-illustration-getty.jpg?resize=1200,800": {
+      "file": "industry-business-ai-news-2026-05-30.md",
+      "source": "Asana Hero",
+      "first_seen": "2026-05-30-04.56"
+    },
+    "https://image.cnbcfm.com/api/v1/image/108293389-1776451820489-CNBC_INVESTINAMERICA_AC_041526_0240.jpg?v=1776789590&w=1920&h=1080": {
+      "file": "industry-business-ai-news-2026-05-30.md",
+      "source": "Dell CNBC Hero",
+      "first_seen": "2026-05-30-04.56"
+    },
+    "https://techcrunch.com/wp-content/uploads/2025/09/GettyImages-640351099.jpg?resize=1200,849": {
+      "file": "industry-business-ai-news-2026-05-30.md",
+      "source": "AI Token Hero",
+      "first_seen": "2026-05-30-04.56"
+    },
+    "https://techcrunch.com/wp-content/uploads/2026/05/ai-agents-GettyImages-2229880232.jpg?resize=1200,675": {
+      "file": "industry-business-ai-news-2026-05-30.md",
+      "source": "Internet Machines Hero",
+      "first_seen": "2026-05-30-04.56"
+    },
+    "https://image.cnbcfm.com/api/v1/image/108312961-1779950527402-gettyimages-2261818985-INDIA_AI_GOOGLE.jpeg?v=1779950533&w=1920&h=1080": {
+      "file": "industry-business-ai-news-2026-05-30.md",
+      "source": "Mistral CNBC Hero",
+      "first_seen": "2026-05-30-04.56"
     }
   },
-  "total": 111
+  "source_headlines": {
+    "www.anthropic.com": [
+      "gila cepat anthropic rilis claude opus cuma 41 hari versi sebelumnya",
+      "perusahaan ai termahal dunia saja lahir: $965 miliar"
+    ],
+    "www-cdn.anthropic.com": [
+      "kira ai pinter tunggu sampai liat opus",
+      "perusahaan ai termahal dunia saja lahir: $965 miliar"
+    ],
+    "www.bbc.com": [
+      "ethical hacker juara dunia: mungkin lomba terakhir",
+      "bmw taruh robot humanoid pabrik mobil bukan mimpi"
+    ],
+    "ichef.bbci.co.uk": [
+      "ethical hacker juara dunia: mungkin lomba terakhir",
+      "bmw taruh robot humanoid pabrik mobil bukan mimpi"
+    ],
+    "techcrunch.com": [
+      "waymo luncurkan robotaxi ojai minivan china dipesan penumpang",
+      "robotaxi china jalan kelihatannya… nyaman banget",
+      "anthropic kumpulin $65 miliar valuasi nyaris tembus $1 triliun",
+      "anthropic kumpulin $65 miliar valuasi mendekati $1 triliun",
+      "langsung 41 hari opus anthropic rilis opus kabarnya jauh lebih jujur",
+      "claude sonnet sampai opus sekarang atur banyak agen sekaligus",
+      "elevenlabs rilis model musik ganti genre tengah lagu",
+      "elevenlabs bikin model ai musik ganti genre tengah lagu dangdut jazz",
+      "elevenlabs rilis model musik ganti genre tengah lagu",
+      "waymo luncurkan robotaxi ojai minivan china dipesan penumpang",
+      "waymo hajar habis tesla soal mobil otonom data texas gak bohong",
+      "waymo rajanya av texas tesla cuma punya 42 mobil kalah jauh",
+      "startup chip xcena dapat $135 juta ai ternyata bukan cuma soal gpu tapi soal memori",
+      "startup chip dapet $135 juta bantah nvidia bilang masalah ai bukan compute tapi memory",
+      "anthropic raup $65 miliar valuasi mendekati $1 triliun jelang ipo",
+      "anthropic raup $65 miliar valuasi mendekati $1 triliun jelang ipo",
+      "anthropic raup $65 miliar valuasi mendekati $1 triliun jelang ipo",
+      "anthropic raup $65 miliar valuasi mendekati $1 triliun jelang ipo",
+      "anthropic raup $65 miliar valuasi mendekati $1 triliun jelang ipo",
+      "anthropic raup $65 miliar valuasi mendekati $1 triliun jelang ipo",
+      "anthropic raup $65 miliar valuasi mendekati $1 triliun jelang ipo",
+      "anthropic raup $65 miliar valuasi mendekati $1 triliun jelang ipo",
+      "anthropic raup $65 miliar valuasi mendekati $1 triliun jelang ipo",
+      "anthropic raup $65 miliar valuasi mendekati $1 triliun jelang ipo",
+      "anthropic raup $65 miliar valuasi mendekati $1 triliun jelang ipo",
+      "anthropic raup $65 miliar valuasi mendekati $1 triliun jelang ipo"
+    ],
+    "www.rollingstone.com": [
+      "film pertama buatan ai total tayang tribeca biaya cuma $2 000",
+      "film pertama buatan ai total tayang tribeca biaya cuma $2 000"
+    ],
+    "www.theverge.com": [
+      "claude opus 8: akhirnya ada model ai jujur kalau ngaco",
+      "film cuma $2 000 dibikin pakai ai tayang tribeca biola sampai nangis",
+      "anthropic dapat $65 miliar valuasi tembus $965 miliar ngacir lewati openai",
+      "illinois mau bikin undang undang ai paling strict wajib audit pihak ketiga",
+      "adobe punya asisten ai kayak desainer magang: kadang bego kadang bikin kagum",
+      "startup ai mau bersihin rumah gratis tapi harus dipasangin topeng ajaib buat latih robot",
+      "startup mau bersihin rumah gratis tapi minta direkam ada apa"
+    ],
+    "platform.theverge.com": [
+      "claude opus 8: akhirnya ada model ai jujur kalau ngaco",
+      "film buatan ai modal cuma $2 000 tayang tribeca bioskop siap siap",
+      "anthropic dapat $65 miliar valuasi tembus $965 miliar ngacir lewati openai",
+      "illinois mau bikin undang undang ai paling strict wajib audit pihak ketiga",
+      "film cuma $2 000 dibikin pakai ai tayang tribeca biola sampai nangis",
+      "adobe luncurkan ai assistant hasilnya magang desain biasa biasa aja",
+      "startup ai mau bersihin rumah gratis tapi harus dipasangin topeng ajaib buat latih robot",
+      "startup mau bersihin rumah gratis tapi minta direkam ada apa"
+    ],
+    "www.wired.com": [
+      "vatikan ngajak anthropic bicara soal ai iya paus tertarik sama safety ai",
+      "illinois sahkan uu ai terkeras amerika bikin teknologi gigit jari",
+      "startup china mau bikin tangan robot buat semua orang harganya cuma rp9 jutaan",
+      "waymo rilis ojai: robotaxi biru muda buatan china dibikin khusus tanpa setir manusia"
+    ],
+    "media.wired.com": [
+      "vatikan ngajak anthropic bicara soal ai iya paus tertarik sama safety ai",
+      "punya undang undang ai paling keras illinois pamer lawan trump",
+      "startup china mau bikin tangan robot buat semua orang harganya cuma rp9 jutaan",
+      "waymo rilis ojai: robotaxi biru muda buatan china dibikin khusus tanpa setir manusia"
+    ],
+    "eletric-vehicles.com": [
+      "robot humanoid xpeng iron mau masuk produksi massal jualan toko",
+      "robot humanoid xpeng iron mau masuk produksi massal jualan toko"
+    ],
+    "deadline.com": [
+      "legenda penulis taxi driver: bikin clint eastwood cukup pake text prompt",
+      "legenda penulis taxi driver: bikin clint eastwood cukup pake text prompt",
+      "spielberg buka suara soal ai hollywood: gak ada gantiin jiwa manusia",
+      "spielberg buka suara soal ai hollywood: gak ada gantiin jiwa manusia"
+    ],
+    "www.cnbc.com": [
+      "snowflake loncot 36% hari terbaik sepanjang sejarah katanya saaspocalypse cuma hoax",
+      "bersejarah anthropik kini lebih berharga openai raup $65 miliar valuasi $965 miliar",
+      "google ngeluarin model ai plus personal agent bantu kerjaan",
+      "anthropic resmi jadi unicorn paling gede: valuasi $965 miliar salip openai",
+      "nvidia gelontorkan $6 miliar startup cahaya bukan buat lampu tapi biar ai nggak mati kedinginan",
+      "anthropic raup $65 miliar valuasi mendekati $1 triliun jelang ipo",
+      "anthropic raup $65 miliar valuasi mendekati $1 triliun jelang ipo"
+    ],
+    "image.cnbcfm.com": [
+      "snowflake loncot 36% hari terbaik sepanjang sejarah katanya saaspocalypse cuma hoax",
+      "anthropic resmi nalikin openai startup ai paling bernilai dunia kini nyaris $1 triliun",
+      "google ngeluarin model ai plus personal agent bantu kerjaan",
+      "nvidia gelontorkan $6 miliar startup cahaya bukan buat lampu tapi biar ai nggak mati kedinginan",
+      "anthropic raup $65 miliar valuasi mendekati $1 triliun jelang ipo",
+      "anthropic raup $65 miliar valuasi mendekati $1 triliun jelang ipo"
+    ],
+    "arstechnica.com": [
+      "trump kalah illinois sahkan uu ai paling keras amerika perusahaan wajib diaudit pihak ketiga",
+      "punya robot humanoid cuma $2 500 hugging face buktikan kaki robot 3d print sendiri",
+      "robot humanoid figure ai viral live 24/7 sortir paket kalahin manusia intern"
+    ],
+    "cdn.arstechnica.net": [
+      "illinois sahkan uu ai terketat trump kehilangan kendali regulasi",
+      "punya robot humanoid cuma $2 500 hugging face buktikan kaki robot 3d print sendiri",
+      "robot humanoid figure ai viral live 24/7 sortir paket kalahin manusia intern"
+    ],
+    "finance.yahoo.com": [
+      "jensen huang gas taiwan nvidia mau investasi $150 miliar per tahun sana",
+      "gila claude opus saja meluncur langsung hajar gpt semua benchmark"
+    ],
+    "s.yimg.com": [
+      "jensen huang gas taiwan nvidia mau investasi $150 miliar per tahun sana",
+      "gila claude opus saja meluncur langsung hajar gpt semua benchmark"
+    ],
+    "cdn.sanity.io": [
+      "claude opus rilis lebih jujur lebih cepet harga tetap sama"
+    ],
+    "www.tomshardware.com": [
+      "china resmi masukin chip ai negeri daftar belanja pemerintah bye bye nvidia"
+    ],
+    "cdn.mos.cms.futurecdn.net": [
+      "china resmi masukin chip ai negeri daftar belanja pemerintah bye bye nvidia"
+    ],
+    "ia.acs.org.au": [
+      "spotify resmi masuk era remix ai karya fan jadi resmi",
+      "spotify resmi masuk era remix ai karya fan jadi resmi"
+    ],
+    "www.businessinsider.com": [
+      "anthropic sekarang startup ai paling berharga dunia openai tumbang"
+    ],
+    "i.insider.com": [
+      "anthropic sekarang startup ai paling berharga dunia openai tumbang"
+    ],
+    "www.resultsense.com": [
+      "inggris makin galak soal ai ada undang undang wajib tau",
+      "inggris makin galak soal ai ada undang undang wajib tau"
+    ],
+    "www.hollywoodreporter.com": [
+      "pembuat south park bikin rolling stones jadi muda pake ai hasilnya gila",
+      "pembuat south park bikin rolling stones jadi muda pake ai hasilnya gila",
+      "tribeca film festival tayangin film pertama 100% dibuat ai tanpa aktor tanpa kamera",
+      "$2 000 film ai generatif penuh pertama festival besar siap tayang tribeca"
+    ],
+    "businesscloud.co.uk": [
+      "ancaman keamanan ai makin nyata 2026 setiap pemimpin bisnis wajib tahu",
+      "ancaman keamanan ai makin nyata 2026 setiap pemimpin bisnis wajib tahu"
+    ],
+    "carnewschina.com": [
+      "pabrikan mobil china chery jual robot humanoid harganya rp 650 jutaan",
+      "pabrikan mobil china chery jual robot humanoid harganya rp 650 jutaan"
+    ],
+    "www.latimes.com": [
+      "demi moore: hollywood jangan lawan ai ajak kerja sama aja"
+    ],
+    "ca-times.brightspotcdn.com": [
+      "demi moore: hollywood jangan lawan ai ajak kerja sama aja"
+    ],
+    "i0.wp.com": [
+      "anthropic resmi jadi unicorn paling gede: valuasi $965 miliar salip openai"
+    ],
+    "www.forbes.com": [
+      "robot humanoid figure ai resmi kerja gudang jcpenney aéropostale brooks brothers"
+    ],
+    "imageio.forbes.com": [
+      "robot humanoid figure ai resmi kerja gudang jcpenney aéropostale brooks brothers"
+    ],
+    "www.theguardian.com": [
+      "sutradara star wars: ai kayak sutradara milyarder flying ngelakuin apa aja minta"
+    ],
+    "i.guim.co.uk": [
+      "sutradara star wars: ai kayak sutradara milyarder flying ngelakuin apa aja minta"
+    ],
+    "www.nbcnews.com": [
+      "illinois sahkan uu ai paling keras perusahaan wajib diaudit pihak ketiga",
+      "amazon paksa masuk hollywood ai kreator langsung protes keras"
+    ],
+    "media-cldnry.s-nbcnews.com": [
+      "illinois sahkan uu ai paling keras perusahaan wajib diaudit pihak ketiga",
+      "amazon paksa masuk hollywood ai kreator langsung protes keras"
+    ],
+    "blog.google": [
+      "google bikin gempar: gemini omni bikin video cuma omongan"
+    ],
+    "storage.googleapis.com": [
+      "google bikin gempar: gemini omni bikin video cuma omongan"
+    ],
+    "variety.com": [
+      "kreator book life mundur program ai amazon kena bully netizen",
+      "kreator book life mundur program ai amazon kena bully netizen"
+    ],
+    "9to5mac.com": [
+      "anthropic releases opus new 'dynamic workflow' tool"
+    ],
+    "newsroom.ibm.com": [
+      "anthropic releases opus new 'dynamic workflow' tool",
+      "anthropic releases opus new 'dynamic workflow' tool"
+    ],
+    "www.understandingai.org": [
+      "anthropic releases opus new 'dynamic workflow' tool"
+    ],
+    "substackcdn.com": [
+      "anthropic releases opus new 'dynamic workflow' tool"
+    ],
+    "economictimes.indiatimes.com": [
+      "anthropic releases opus new 'dynamic workflow' tool"
+    ],
+    "img.etimg.com": [
+      "anthropic releases opus new 'dynamic workflow' tool"
+    ]
+  },
+  "cross_topics": [
+    {
+      "key": "anthropic|claude_opus_4.8",
+      "who": "anthropic",
+      "what": "claude_opus_4.8",
+      "first_seen": "2026-05-30-04.00-01"
+    },
+    {
+      "key": "waymo|robotaxi",
+      "who": "waymo",
+      "what": "robotaxi",
+      "first_seen": "2026-05-29-12.00-04"
+    },
+    {
+      "key": "xpeng|robot_humanoid",
+      "who": "xpeng",
+      "what": "robot_humanoid",
+      "first_seen": "2026-05-29-08.00-04"
+    },
+    {
+      "key": "anthropic|opus_4.7",
+      "who": "anthropic",
+      "what": "opus_4.7",
+      "first_seen": "2026-05-29-22.00-01"
+    },
+    {
+      "key": "anthropic|agen",
+      "who": "anthropic",
+      "what": "agen",
+      "first_seen": "2026-05-29-09.00-01"
+    },
+    {
+      "key": "illinois|uu_ai",
+      "who": "illinois",
+      "what": "uu_ai",
+      "first_seen": "2026-05-30-03.00-03"
+    },
+    {
+      "key": "bmw|robot_humanoid",
+      "who": "bmw",
+      "what": "robot_humanoid",
+      "first_seen": "2026-05-29-09.00-04"
+    },
+    {
+      "key": "elevenlabs|rilis",
+      "who": "elevenlabs",
+      "what": "rilis",
+      "first_seen": "2026-05-29-11.00-05"
+    },
+    {
+      "key": "elevenlabs|model",
+      "who": "elevenlabs",
+      "what": "model",
+      "first_seen": "2026-05-29-10.00-05"
+    },
+    {
+      "key": "trump|uu_ai",
+      "who": "trump",
+      "what": "uu_ai",
+      "first_seen": "2026-05-30-04.00-03"
+    },
+    {
+      "key": "nvidia|fund_150miliar",
+      "who": "nvidia",
+      "what": "fund_150miliar",
+      "first_seen": "2026-05-29-11.00-04"
+    },
+    {
+      "key": "anthropic|fund_965miliar",
+      "who": "anthropic",
+      "what": "fund_965miliar",
+      "first_seen": "2026-05-29-14.00-02"
+    },
+    {
+      "key": "openai|fund_65miliar",
+      "who": "openai",
+      "what": "fund_65miliar",
+      "first_seen": "2026-05-30-04.00-02"
+    },
+    {
+      "key": "anthropic|startup",
+      "who": "anthropic",
+      "what": "startup",
+      "first_seen": "2026-05-29-15.00-02"
+    },
+    {
+      "key": "nvidia|chip",
+      "who": "nvidia",
+      "what": "chip",
+      "first_seen": "2026-05-29-15.00-04"
+    },
+    {
+      "key": "hugging|robot_humanoid",
+      "who": "hugging",
+      "what": "robot_humanoid",
+      "first_seen": "2026-05-29-16.00-04"
+    },
+    {
+      "key": "google|kerja",
+      "who": "google",
+      "what": "kerja",
+      "first_seen": "2026-05-29-18.00-01"
+    },
+    {
+      "key": "figure|robot_humanoid",
+      "who": "figure",
+      "what": "robot_humanoid",
+      "first_seen": "2026-05-29-20.00-04"
+    },
+    {
+      "key": "nvidia|fund_5miliar",
+      "who": "nvidia",
+      "what": "fund_5miliar",
+      "first_seen": "2026-05-29-21.00-02"
+    },
+    {
+      "key": "adobe|asisten",
+      "who": "adobe",
+      "what": "asisten",
+      "first_seen": "2026-05-29-23.00-05"
+    },
+    {
+      "key": "adobe|luncurkan",
+      "who": "adobe",
+      "what": "luncurkan",
+      "first_seen": "2026-05-29-21.00-05"
+    },
+    {
+      "key": "google|gemini_omni",
+      "who": "google",
+      "what": "gemini_omni",
+      "first_seen": "2026-05-30-03.00-01"
+    },
+    {
+      "key": "amazon|mundur",
+      "who": "amazon",
+      "what": "mundur",
+      "first_seen": "2026-05-30-04.00-05"
+    },
+    {
+      "key": "anthropic|opus_4.8",
+      "who": "anthropic",
+      "what": "opus_4.8",
+      "first_seen": "berita-ai-model-research-29-mei-2026"
+    },
+    {
+      "key": "anthropic|fund_1triliun",
+      "who": "anthropic",
+      "what": "fund_1triliun",
+      "first_seen": "2026-05-30-04.56"
+    }
+  ],
+  "total": 127
 }
