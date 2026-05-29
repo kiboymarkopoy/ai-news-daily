@@ -1,0 +1,577 @@
+{
+  "articles": {
+    "https://www.anthropic.com/news/claude-opus-4-8": {
+      "file": "2026-05-29-23.00-01.md",
+      "source": "Anthropic",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.anthropic.com/news/series-h": {
+      "file": "2026-05-29-07.00-2.md",
+      "source": "Anthropic — Series H",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.bbc.com/news/articles/c3r2zjpryzro": {
+      "file": "2026-05-29-07.00-3.md",
+      "source": "BBC — Champion ethical hacker warns AI tools",
+      "first_seen": "2026-05-29"
+    },
+    "https://techcrunch.com/2026/05/28/waymos-newest-robotaxi-is-chinese-made-built-to-make-money-and-now-accepting-riders/": {
+      "file": "2026-05-29-12.00-04.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.rollingstone.com/tv-movies/tv-movie-news/dreams-of-violets-ai-movie-tribeca-1235569122/": {
+      "file": "2026-05-29-07.00-5.md",
+      "source": "Rolling Stone — All AI-Generated Film at Tribeca",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.theverge.com/ai-artificial-intelligence/939094/anthropic-claude-4-8-opus-honesty-effort": {
+      "file": "2026-05-29-08.00-01.md",
+      "source": "The Verge",
+      "first_seen": "2026-05-29"
+    },
+    "https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/": {
+      "file": "2026-05-30-03.00-02.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.wired.com/story/anthropic-christopher-olah-pope-ai-encyclical/": {
+      "file": "2026-05-29-08.00-03.md",
+      "source": "WIRED",
+      "first_seen": "2026-05-29"
+    },
+    "https://eletric-vehicles.com/xpeng/xpengs-humanoid-robot-enters-final-stretch-before-mass-production/": {
+      "file": "2026-05-29-08.00-04.md",
+      "source": "Electric Vehicles",
+      "first_seen": "2026-05-29"
+    },
+    "https://deadline.com/2026/05/paul-schrader-ai-protagonists-box-office-draws-1236929344/": {
+      "file": "2026-05-29-08.00-05.md",
+      "source": "Deadline",
+      "first_seen": "2026-05-29"
+    },
+    "https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/": {
+      "file": "2026-05-30-04.00-01.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.wired.com/story/illinois-pass-major-ai-safety-law-pritzker/": {
+      "file": "2026-05-30-04.00-03.md",
+      "source": "WIRED",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.bbc.com/news/articles/cgmpwzzvxr2o": {
+      "file": "2026-05-30-04.00-04.md",
+      "source": "BBC",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.theverge.com/entertainment/939067/ai-film-dreams-of-violets-tribeca": {
+      "file": "2026-05-29-14.00-05.md",
+      "source": "The Verge",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.wired.com/story/made-in-china-the-dollar6-billion-chinese-startup-making-hands-for-humanoids/": {
+      "file": "2026-05-29-10.00-04.md",
+      "source": "WIRED",
+      "first_seen": "2026-05-29"
+    },
+    "https://techcrunch.com/2026/05/27/elevenlabss-new-music-generation-model-can-switch-genres-mid-track/": {
+      "file": "2026-05-29-11.00-05.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.cnbc.com/2026/05/28/snowflake-snow-software-stock-rally.html": {
+      "file": "2026-05-29-11.00-02.md",
+      "source": "CNBC",
+      "first_seen": "2026-05-29"
+    },
+    "https://arstechnica.com/tech-policy/2026/05/trump-loses-more-control-over-ai-regulation-as-illinois-passes-landmark-law/": {
+      "file": "2026-05-29-22.00-03.md",
+      "source": "Ars Technica",
+      "first_seen": "2026-05-29"
+    },
+    "https://finance.yahoo.com/sectors/technology/articles/nvidia-ceo-jensen-huang-heading-183340226.html": {
+      "file": "2026-05-29-11.00-04.md",
+      "source": "Yahoo Finance / Barchart",
+      "first_seen": "2026-05-29"
+    },
+    "https://techcrunch.com/2026/05/28/waymo-dominates-texas-autonomous-vehicle-registrations-as-tesla-trails-behind/": {
+      "file": "2026-05-29-17.00-04.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.theverge.com/ai-artificial-intelligence/939216/anthropic-raised-a-funding-round-valuing-it-at-nearly-1-trillion": {
+      "file": "2026-05-29-14.00-02.md",
+      "source": "The Verge",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.theverge.com/policy/939410/illinois-is-close-to-enacting-an-ai-safety-law-with-broader-mandates-than-other-states": {
+      "file": "2026-05-29-14.00-03.md",
+      "source": "The Verge",
+      "first_seen": "2026-05-29"
+    },
+    "https://finance.yahoo.com/news/anthropic-debuts-flagship-claude-opus-48-ai-model-as-ipo-race-with-openai-heats-up-170000527.html": {
+      "file": "2026-05-29-15.00-01.md",
+      "source": "Yahoo Finance",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html": {
+      "file": "2026-05-29-19.00-02.md",
+      "source": "CNBC",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.tomshardware.com/tech-industry/semiconductors/china-certifies-nine-domestic-ai-chips-for-government-procurement": {
+      "file": "2026-05-29-15.00-04.md",
+      "source": "Tom's Hardware",
+      "first_seen": "2026-05-29"
+    },
+    "https://ia.acs.org.au/article/2026/spotify-launches-ai-remix-era.html": {
+      "file": "2026-05-29-15.00-05.md",
+      "source": "Information Age | ACS",
+      "first_seen": "2026-05-29"
+    },
+    "https://arstechnica.com/ai/2026/05/3d-printable-humanoid-legs-let-robotics-experiments-run-wild/": {
+      "file": "2026-05-29-16.00-04.md",
+      "source": "Ars Technica",
+      "first_seen": "2026-05-29"
+    },
+    "https://deadline.com/2026/05/steven-spielberg-where-draw-the-line-ai-1236928790/": {
+      "file": "2026-05-29-16.00-05.md",
+      "source": "Deadline",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.businessinsider.com/anthropic-surpasses-openai-with-965b-valuation-debuts-opus-4-8-2026-5": {
+      "file": "2026-05-29-17.00-02.md",
+      "source": "Business Insider",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.resultsense.com/news/2026-05-28-uk-ai-regulatory-may-2026-roundup/": {
+      "file": "2026-05-29-17.00-03.md",
+      "source": "Resultsense",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.hollywoodreporter.com/music/music-news/rolling-stones-de-age-themselves-with-ai-in-the-stars-video-1236595906/": {
+      "file": "2026-05-29-17.00-05.md",
+      "source": "The Hollywood Reporter",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.cnbc.com/2026/05/19/google-debuts-new-ai-models-personal-ai-agents-effort-to-keep-pace.html": {
+      "file": "2026-05-29-18.00-01.md",
+      "source": "CNBC",
+      "first_seen": "2026-05-29"
+    },
+    "https://businesscloud.co.uk/ai-security-trends-2026": {
+      "file": "2026-05-29-18.00-03.md",
+      "source": "BusinessCloud",
+      "first_seen": "2026-05-29"
+    },
+    "https://carnewschina.com/2026/04/13/chery-begins-online-sales-of-humanoid-robot-with-a-0-7-kwh-battery-at-41400-usd/": {
+      "file": "2026-05-29-18.00-04.md",
+      "source": "CarNewsChina",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.latimes.com/entertainment-arts/story/2026-05-13/demi-moore-says-hollywood-has-to-find-ways-to-work-with-ai": {
+      "file": "2026-05-29-18.00-05.md",
+      "source": "Los Angeles Times",
+      "first_seen": "2026-05-29"
+    },
+    "https://techcrunch.com/2026/05/29/xcena-secures-135m-at-570m-valuation-betting-on-memory-as-ais-real-bottleneck/": {
+      "file": "2026-05-29-23.00-02.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.hollywoodreporter.com/movies/movie-news/ai-film-dreams-of-violet-tribeca-premiere-1236606092/": {
+      "file": "2026-05-29-20.00-05.md",
+      "source": "The Hollywood Reporter",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.cnbc.com/2026/05/28/anthropic-tops-openai-as-most-valuable-ai-startup-nears-1-trillion-valuation-in-latest-round.html": {
+      "file": "2026-05-29-20.00-02.md",
+      "source": "CNBC",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.forbes.com/sites/johnkoetsier/2026/05/26/figure-humanoid-robots-get-jobs-with-jcpenney-aropostale-brooks-brothers/": {
+      "file": "2026-05-29-20.00-04.md",
+      "source": "Forbes",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.cnbc.com/2026/05/29/nvidia-photonics-investment-ai.html": {
+      "file": "2026-05-29-21.00-02.md",
+      "source": "CNBC",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.theverge.com/tech/939686/adobes-conversational-ai-agent-is-a-mediocre-design-intern": {
+      "file": "2026-05-29-23.00-05.md",
+      "source": "The Verge",
+      "first_seen": "2026-05-29"
+    },
+    "https://arstechnica.com/ai/2026/05/the-internet-cant-stop-watching-figure-ais-humanoid-robots-handling-packages/": {
+      "file": "2026-05-29-22.00-04.md",
+      "source": "Ars Technica",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.theguardian.com/film/2026/may/29/star-wars-rogue-one-director-gareth-edwards-praises-ai-film-making": {
+      "file": "2026-05-29-22.00-05.md",
+      "source": "The Guardian",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.nbcnews.com/tech/tech-news/illinois-legislature-passes-historic-ai-bill-rcna347191": {
+      "file": "2026-05-29-23.00-03.md",
+      "source": "NBC News",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning": {
+      "file": "2026-05-29-23.00-04.md",
+      "source": "The Verge",
+      "first_seen": "2026-05-29"
+    },
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/": {
+      "file": "2026-05-30-03.00-01.md",
+      "source": "Google Blog",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.theverge.com/ai-artificial-intelligence/940007/ai-companies-will-pay-for-robot-training-data": {
+      "file": "2026-05-30-03.00-04.md",
+      "source": "The Verge",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.nbcnews.com/pop-culture/pop-culture-news/amazon-mgm-studios-ai-generated-animated-shows-creator-revolt-rcna347432": {
+      "file": "2026-05-30-04.00-05.md",
+      "source": "NBC News",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.cnbc.com/2026/05/29/dell-stock-earnings-ai-servers.html": {
+      "file": "2026-05-30-04.00-02.md",
+      "source": "CNBC",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.livescience.com/technology/artificial-intelligence/openais-internal-ai-model-just-solved-an-80-year-old-math-problem-and-mathematicians-verified-it": {
+      "file": "2026-05-30-05.30-01.md",
+      "source": "Live Science — OpenAI's internal AI model solves 80-year math problem",
+      "first_seen": "2026-05-29"
+    },
+    "https://www.wired.com/story/ex-google-apple-ai-researchers-want-to-make-ai-that-gets-smarter-as-you-use-it/": {
+      "file": "2026-05-30-06.00-01.md",
+      "source": "WIRED",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    "https://techcrunch.com/2026/05/28/gleans-top-line-crosses-300m-as-ai-budget-cutting-becomes-its-major-selling-point/": {
+      "file": "2026-05-30-06.00-02.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    "https://www.nytimes.com/2026/05/27/technology/ai-screens-schools-weingarten.html": {
+      "file": "2026-05-30-06.00-03.md",
+      "source": "NYT",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    "https://www.wired.com/story/here-comes-ojai-waymos-new-chinese-made-robotaxi/": {
+      "file": "2026-05-30-06.00-04.md",
+      "source": "WIRED",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    "https://www.wired.com/story/story/amazon-is-making-an-ai-animated-good-advice-cupcake-tv-show-its-original-creator-is-furious/": {
+      "file": "2026-05-30-06.00-05.md",
+      "source": "WIRED",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    }
+  },
+  "source_headlines": {
+    "www.anthropic.com": [
+      "lu kira ai udah pinter tunggu sampai lu liat opus 4 8",
+      "perusahaan ai termahal dunia saja lahir 965 miliar",
+      "claude opus 4 8 udah rilis lebih jujur lebih cepet harga tetap sama",
+      "dia datang claude opus 4 8 lebih jujur lebih cepat kerja massal pake dynamic workflows"
+    ],
+    "www.bbc.com": [
+      "ethical hacker juara dunia mungkin lomba terakhir gue",
+      "bmw taruh robot humanoid pabrik mobil bukan mimpi lagi",
+      "bmw resmi pakai robot humanoid pabrik kata mereka masa depan produksi mobil"
+    ],
+    "techcrunch.com": [
+      "robotaxi china udah jalan kelihatannya nyaman banget",
+      "anthropic kumpulin 65 miliar valuasi udah mendekati 1 triliun",
+      "claude sonnet sampai opus sekarang atur banyak agen sekaligus",
+      "anthropic kumpulin 65 miliar valuasi tembus rp15 000 triliun siap siap ipo",
+      "anthropic rilis opus 4 8 lebih jujur lebih canggih ngatur banyak agen ai sekaligus",
+      "anthropic kumpulin 65 miliar sekali gebrak valuasi udah nyaris 1 triliun ipo tinggal tunggu waktu",
+      "elevenlabs bikin model ai musik ganti genre tengah lagu dangdut ke jazz",
+      "dia duar anthropic rilis opus 4 8 cuma 41 hari setelah versi sebelumnya",
+      "elevenlabs rilis model musik ganti genre tengah lagu",
+      "claude opus 4 8 hadir katanya lebih jujur daripada kaka kakanya",
+      "anthropic kumpulin 65 miliar valuasi nyaris tembus 1 triliun siap ipo",
+      "waymo luncurkan robotaxi ojai minivan china udah dipesan penumpang",
+      "opus 4 8 saja rilis katanya lebih jujur soal kesalahannya",
+      "anthropic kumpulin 65 miliar valuasinya tembus 965 miliar lebih gede openai",
+      "waymo rajanya av texas tesla cuma punya 42 mobil kalah jauh",
+      "waymo hancurin tesla lobi pendaftaran mobil otonom texas beda banget jumlahnya",
+      "claude opus 4 8 udah rilis katanya ngatur workflow sendiri kayak anak magang",
+      "astaga opus 4 8 udah rilis lagi anthropic ngebut banget nih",
+      "waymo hajar habis tesla soal mobil otonom data texas gak bohong",
+      "pecah telor anthropic jadi startup ai paling berharga dunia sentuh 965 miliar",
+      "diao anthropic rilis opus 4 8 cuma 41 hari setelah 4 7 ngatur ratusan ai sekaligus",
+      "startup chip dapet 135 juta bantah nvidia bilang masalah ai bukan compute tapi memory",
+      "aja rilis claude opus 4 8 koordinasiin banyak ai agent sekaligus",
+      "claude opus 4 8 saja rilis 41 hari setelah versi sebelumnya langsung pecahin rekor",
+      "startup chip raup 135 juta karena mereka yakin masalah ai bukan compute tapi memori",
+      "langsung 41 hari setelah opus 4 7 anthropic rilis opus 4 8 kabarnya jauh lebih jujur",
+      "anthropic kumpulin 65 m valuasi nyaris 1 triliun siap siap ipo",
+      "startup chip xcena dapat 135 juta ai ternyata bukan cuma soal gpu tapi juga soal memori",
+      "anthropic kumpulin 65 miliar valuasi nyaris tembus 1 triliun",
+      "gila claude opus 4 8 aja rilis koordinasi banyak ai sekaligus",
+      "glean s top line crosses 300m ai budget cutting becomes major selling point"
+    ],
+    "www.rollingstone.com": [
+      "film pertama buatan ai total tayang tribeca biaya cuma 2 000"
+    ],
+    "www.theverge.com": [
+      "claude opus 4 8 akhirnya ada model ai jujur kalau lagi ngaco",
+      "film buatan ai modal cuma 2 000 tayang tribeca bioskop siap siap",
+      "film ai cuma modal 2 000 tembus tribeca pertama dalam sejarah festival besar",
+      "film ai cuma 2 000 bakal tayang perdana tribeca sejarah",
+      "anthropic dapat 65 miliar valuasi tembus 965 miliar ngacir lewati openai",
+      "illinois mau bikin undang undang ai paling strict wajib audit pihak ketiga",
+      "film cuma 2 000 dibikin pakai ai bakal tayang tribeca biola sampai nangis",
+      "adobe luncurkan ai assistant hasilnya magang desain biasa biasa aja",
+      "startup ai mau bersihin rumah lo gratis tapi lo harus dipasangin topeng ajaib latih robot",
+      "adobe punya asisten ai kayak desainer magang kadang bego kadang bikin kagum",
+      "startup mau bersihin rumah lo gratis tapi minta direkam ada apa"
+    ],
+    "www.wired.com": [
+      "vatikan ngajak anthropic bicara soal ai iya paus tertarik sama safety ai",
+      "punya undang undang ai paling keras illinois pamer lawan trump",
+      "illinois sahkan uu ai paling ketat amerika perusahaan kayak openai wajib diaudit pihak ketiga",
+      "startup china mau bikin tangan robot semua orang harganya cuma rp9 jutaan",
+      "illinois sahkan uu ai terkeras amerika perusahaan ai wajib diaudit pihak ketiga",
+      "illinois saja mengesahkan uu ai paling keras amerika openai google wajib diaudit pihak ketiga",
+      "illinois resmiin uu ai paling keras perusahaan ai wajib diaudit pihak ketiga",
+      "illinois sahkan uu ai terkeras amerika bikin teknologi gigit jari",
+      "illinois resmi mengesahkan uu keamanan ai paling ketat perusahaan ai wajib diaudit pihak ketiga"
+    ],
+    "eletric-vehicles.com": [
+      "robot humanoid xpeng iron mau masuk produksi massal bakal jualan toko"
+    ],
+    "deadline.com": [
+      "legenda penulis taxi driver bikin clint eastwood cukup pake text prompt",
+      "spielberg buka suara soal ai hollywood gak ada gantiin jiwa manusia"
+    ],
+    "www.cnbc.com": [
+      "snowflake loncot 36 hari terbaik sepanjang sejarah katanya saaspocalypse cuma hoax",
+      "anthropic resmi nalikin openai startup ai paling bernilai dunia kini nyaris 1 triliun",
+      "resmi anthropic kalahin openai startup ai termahal sepanjang sejarah 965 miliar",
+      "google ngeluarin model ai plus personal agent bantu kerjaan lo",
+      "anthropic jadi startup ai termahal kalahin openai valuasi tembus 965 miliar",
+      "anthropic resmi jadi unicorn paling gede valuasi 965 miliar salip openai",
+      "nvidia gelontorkan 6 5 miliar ke startup cahaya bukan lampu tapi biar ai nggak mati kedinginan",
+      "saham dell melonjak 32 pendapatan server ai naik 757 pemegang saham tersenyum lebar"
+    ],
+    "arstechnica.com": [
+      "illinois sahkan uu ai terketat trump kehilangan kendali regulasi",
+      "trump makin kehilangan kendali illinois sahkan aturan ai terkeras",
+      "illinois bikin geger negara bagian pertama mewajibkan audit keamanan ai pihak ketiga",
+      "punya robot humanoid cuma 2 500 hugging face buktikan kaki robot 3d print sendiri",
+      "illinois sahkan uu ai terberat openai anthropic justru dukung",
+      "illinois bikin undang undang ai paling keras trump makin kehilangan kendali",
+      "trump gigit jari illinois sahkan undang undang ai paling keras didukung openai",
+      "robot humanoid figure ai lagi viral live 24 7 sortir paket kalahin manusia intern"
+    ],
+    "finance.yahoo.com": [
+      "jensen huang gas ke taiwan nvidia mau investasi 150 miliar per tahun sana",
+      "gila claude opus 4 8 saja meluncur langsung hajar gpt semua benchmark"
+    ],
+    "www.tomshardware.com": [
+      "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia"
+    ],
+    "ia.acs.org.au": [
+      "spotify resmi masuk era remix ai karya fan jadi resmi"
+    ],
+    "www.businessinsider.com": [
+      "anthropic sekarang startup ai paling berharga dunia openai tumbang"
+    ],
+    "www.resultsense.com": [
+      "inggris makin galak soal ai ada undang undang wajib lo tau"
+    ],
+    "www.hollywoodreporter.com": [
+      "pembuat south park bikin rolling stones jadi muda lagi pake ai hasilnya gila",
+      "2 000 film ai generatif penuh pertama festival besar siap tayang tribeca",
+      "tribeca film festival bakal tayangin film pertama 100 dibuat ai tanpa aktor tanpa kamera"
+    ],
+    "businesscloud.co.uk": [
+      "ancaman keamanan ai makin nyata 2026 setiap pemimpin bisnis wajib tahu"
+    ],
+    "carnewschina.com": [
+      "pabrikan mobil china chery udah jual robot humanoid harganya rp 650 jutaan"
+    ],
+    "www.latimes.com": [
+      "demi moore hollywood jangan lawan ai ajak kerja sama aja"
+    ],
+    "www.forbes.com": [
+      "robot humanoid figure ai resmi kerja gudang jcpenney ropostale brooks brothers"
+    ],
+    "www.theguardian.com": [
+      "sutradara star wars ai kayak sutradara milyarder lagi flying ngelakuin apa aja lo minta"
+    ],
+    "www.nbcnews.com": [
+      "illinois sahkan uu ai paling keras perusahaan wajib diaudit pihak ketiga",
+      "amazon paksa masuk hollywood ai kreator langsung protes keras",
+      "amazon mau bikin film pake ai kreator hollywood langsung protes besar besaran"
+    ],
+    "blog.google": [
+      "google bikin gempar gemini omni bikin video cuma omongan"
+    ],
+    "www.livescience.com": [
+      "openai punya model internal ngerjain soal matematika 80 tahun gak terpecahkan"
+    ],
+    "wired.com": [
+      "former google apple researchers launch startup build ai s missing feedback loop",
+      "here comes ojai waymo s chinese made robotaxi",
+      "amazon making ai animated good advice cupcake tv show original creator furious"
+    ],
+    "nytimes.com": [
+      "teachers union urges schools curb chatbots screen time"
+    ]
+  },
+  "cross_topics": [
+    {
+      "who": "BMW",
+      "what": "Robot",
+      "first_seen": "2026-05-29"
+    },
+    {
+      "who": "BMW",
+      "what": "Humanoid",
+      "first_seen": "2026-05-29"
+    },
+    {
+      "who": "NVIDIA",
+      "what": "CHIP",
+      "first_seen": "2026-05-29"
+    },
+    {
+      "who": "Nvidia",
+      "what": "CHIP",
+      "first_seen": "2026-05-29"
+    },
+    {
+      "who": "Figure AI",
+      "what": "Robot",
+      "first_seen": "2026-05-29"
+    },
+    {
+      "who": "Figure AI",
+      "what": "humanoid",
+      "first_seen": "2026-05-29"
+    },
+    {
+      "who": "Google",
+      "what": "Gemini",
+      "first_seen": "2026-05-29"
+    },
+    {
+      "who": "Google",
+      "what": "Feedback Loop",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Google",
+      "what": "Startup",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Google",
+      "what": "Foundation Model",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Apple",
+      "what": "Feedback Loop",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Apple",
+      "what": "Startup",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Apple",
+      "what": "Foundation Model",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Glean",
+      "what": "$300 Million",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Glean",
+      "what": "Revenue",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Glean",
+      "what": "Enterprise",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Waymo",
+      "what": "Robotaxi",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Waymo",
+      "what": "Autonomous",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Waymo",
+      "what": "Robot",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Google",
+      "what": "Robotaxi",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Google",
+      "what": "Autonomous",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Google",
+      "what": "Robot",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Amazon",
+      "what": "Ai-Animated",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Amazon",
+      "what": "Tv Show",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Amazon",
+      "what": "Animation",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Buzzfeed",
+      "what": "Ai-Animated",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Buzzfeed",
+      "what": "Tv Show",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "Buzzfeed",
+      "what": "Animation",
+      "first_seen": "2026-05-30T06:03:00+07:00"
+    }
+  ],
+  "total": 55
+}
