@@ -609,6 +609,21 @@
       "file": "2026-05-31-00.00-05.md",
       "source": "VentureBeat — NousCoder-14B",
       "first_seen": "2026-05-31"
+    },
+    "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/": {
+      "file": "2026-05-31-01.00-01.md",
+      "source": "TechCrunch — GitHub Copilot Token Billing",
+      "first_seen": "2026-05-31"
+    },
+    "https://techcrunch.com/2026/05/30/the-groupthink-boom-what-three-top-vcs-really-think-about-the-ai-frenzy/": {
+      "file": "2026-05-31-01.00-02.md",
+      "source": "TechCrunch — VCs on AI Frenzy",
+      "first_seen": "2026-05-31"
+    },
+    "https://www.scientificamerican.com/article/new-protein-folding-ai-vastly-expands-on-alphafolds-efforts/": {
+      "file": "2026-05-31-01.00-03.md",
+      "source": "Scientific American / Nature — Protein-folding AI",
+      "first_seen": "2026-05-31"
     }
   },
   "source_headlines": {
@@ -664,7 +679,9 @@
       "nvidia 20b not acqui hire ai chip startup groq reportedly raising 650m",
       "cognition scott wu ai coding agents shouldnt replace humans",
       "just like gold oil well soon able trade ai token futures",
-      "how long anthropic lease spacex opinions vary"
+      "how long anthropic lease spacex opinions vary",
+      "what a joke github copilots new token based billing spurs consternation among devs",
+      "the groupthink boom what three top vcs really think about the ai frenzy"
     ],
     "www.rollingstone.com": [
       "film pertama buatan ai total tayang tribeca biaya cuma 2 000"
@@ -866,6 +883,9 @@
     ],
     "www.nist.gov": [
       "nist expands ai consortium scope calls new members"
+    ],
+    "www.scientificamerican.com": [
+      "new protein folding ai predicts the structures of 1 billion proteins"
     ]
   },
   "cross_topics": [
@@ -1518,7 +1538,22 @@
       "who": "Nous Research",
       "what": "Coding Model",
       "first_seen": "2026-05-31"
+    },
+    {
+      "who": "GitHub",
+      "what": "Copilot billing",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Microsoft",
+      "what": "Copilot pricing",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "AlphaFold",
+      "what": "Protein prediction",
+      "first_seen": "2026-05-31"
     }
   ],
-  "total": 122
+  "total": 125
 }
