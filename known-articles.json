@@ -689,6 +689,16 @@
       "file": "2026-05-31-04.00-05.md",
       "source": "TechCrunch — Meta AI Pendant",
       "first_seen": "2026-05-31"
+    },
+    "https://www.marktechpost.com/2026/05/29/stepfun-releases-step-3-7-flash-a-198b-moe-vision-language-model-for-coding-agents-and-search-workflows/": {
+      "file": "2026-05-31-05.00-01.md",
+      "source": "MarkTechPost",
+      "first_seen": "2026-05-31"
+    },
+    "https://www.marktechpost.com/2026/05/30/genesis-ai-releases-nyx-quadrants-and-genesis-world-1-0-physics-platform-for-scalable-robotics-foundation-model-evaluation/": {
+      "file": "2026-05-31-05.00-02.md",
+      "source": "MarkTechPost",
+      "first_seen": "2026-05-31"
     }
   },
   "source_headlines": {
@@ -974,6 +984,10 @@
     "news.google.com": [
       "bezos launches startup reported funding",
       "anthropic guarded mythos model headed wider release"
+    ],
+    "www.marktechpost.com": [
+      "stepfun releases step flash a b moe vision language model for coding agents and search workflows",
+      "genesis ai releases nyx quadrants and genesis world physics platform for scalable robotics foundation model evaluation"
     ]
   },
   "cross_topics": [
@@ -1716,7 +1730,17 @@
       "who": "Character.AI",
       "what": "Lawsuit",
       "first_seen": "2026-05-31"
+    },
+    {
+      "who": "StepFun",
+      "what": "Step 3.7 Flash",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Genesis AI",
+      "what": "Genesis World 1.0",
+      "first_seen": "2026-05-31"
     }
   ],
-  "total": 138
+  "total": 140
 }
