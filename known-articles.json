@@ -419,6 +419,31 @@
       "file": "2026-05-30-12.00-04.md",
       "source": "Use of Japanese anime for AI training undermines c",
       "first_seen": "2026-05-30T12:09:43+07:00"
+    },
+    "https://www.theverge.com/ai-artificial-intelligence/940095/openais-codex-can-now-control-your-windows-computer-too": {
+      "file": "2026-05-30-14.00-01.md",
+      "source": "The Verge — OpenAI Codex Windows",
+      "first_seen": "2026-05-30T14:11:14+07:00"
+    },
+    "https://fortune.com/2026/05/29/microsoft-working-on-super-app/": {
+      "file": "2026-05-30-14.00-02.md",
+      "source": "Fortune — Microsoft AI Super App",
+      "first_seen": "2026-05-30T14:11:14+07:00"
+    },
+    "https://www.theverge.com/tech/940058/microsoft-is-reportedly-working-on-its-own-ai-super-app": {
+      "file": "2026-05-30-14.00-02.md",
+      "source": "The Verge — Microsoft AI Super App",
+      "first_seen": "2026-05-30T14:11:14+07:00"
+    },
+    "https://www.theverge.com/ai-artificial-intelligence/940028/openai-is-sunsetting-chatgpts-canvas-interface": {
+      "file": "2026-05-30-14.00-03.md",
+      "source": "The Verge — OpenAI Canvas Sunset",
+      "first_seen": "2026-05-30T14:11:14+07:00"
+    },
+    "https://www.theverge.com/ai-artificial-intelligence/939986/microsoft-launches-preview-of-copilot-health-ai-that-can-analyze-your-medical-records": {
+      "file": "2026-05-30-14.00-04.md",
+      "source": "The Verge — Microsoft Copilot Health",
+      "first_seen": "2026-05-30T14:11:14+07:00"
     }
   },
   "source_headlines": {
@@ -489,7 +514,11 @@
       "adobe luncurkan ai assistant hasilnya magang desain biasa biasa aja",
       "startup ai mau bersihin rumah lo gratis tapi lo harus dipasangin topeng ajaib latih robot",
       "adobe punya asisten ai kayak desainer magang kadang bego kadang bikin kagum",
-      "startup mau bersihin rumah lo gratis tapi minta direkam ada apa"
+      "startup mau bersihin rumah lo gratis tapi minta direkam ada apa",
+      "openai codex windows computer use",
+      "microsoft reportedly working ai super app",
+      "openai sunsetting chatgpt canvas interface",
+      "microsoft launches preview copilot health ai analyze medical records"
     ],
     "www.wired.com": [
       "vatikan ngajak anthropic bicara soal ai iya paus tertarik sama safety ai",
@@ -612,6 +641,9 @@
     ],
     "www.rockpapershotgun.com": [
       "they biggest bullsht detectors planet how unlikely eve online google deepmind partnership landed players"
+    ],
+    "fortune.com": [
+      "microsoft building ai super app combining coding chat copilot tools"
     ]
   },
   "cross_topics": [
@@ -979,7 +1011,47 @@
       "who": "Amazon",
       "what": "AI",
       "first_seen": "2026-05-30T12:09:43+07:00"
+    },
+    {
+      "who": "openai",
+      "what": "codex",
+      "first_seen": "2026-05-30T14:11:14+07:00"
+    },
+    {
+      "who": "openai",
+      "what": "windows",
+      "first_seen": "2026-05-30T14:11:14+07:00"
+    },
+    {
+      "who": "microsoft",
+      "what": "super app",
+      "first_seen": "2026-05-30T14:11:14+07:00"
+    },
+    {
+      "who": "microsoft",
+      "what": "copilot",
+      "first_seen": "2026-05-30T14:11:14+07:00"
+    },
+    {
+      "who": "openai",
+      "what": "canvas",
+      "first_seen": "2026-05-30T14:11:14+07:00"
+    },
+    {
+      "who": "chatgpt",
+      "what": "canvas",
+      "first_seen": "2026-05-30T14:11:14+07:00"
+    },
+    {
+      "who": "microsoft",
+      "what": "copilot health",
+      "first_seen": "2026-05-30T14:11:14+07:00"
+    },
+    {
+      "who": "microsoft",
+      "what": "healthcare",
+      "first_seen": "2026-05-30T14:11:14+07:00"
     }
   ],
-  "total": 84
+  "total": 89
 }
