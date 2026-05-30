@@ -549,6 +549,16 @@
       "file": "2026-05-30-21.00-05.md",
       "source": "Ars Technica — YouTube AI Labeling",
       "first_seen": "2026-05-30"
+    },
+    "https://www.theverge.com/ai-artificial-intelligence/938844/ai-tiktok-shop-blackface-shein-dropshipping": {
+      "file": "2026-05-30-22.00-01.md",
+      "source": "The Verge",
+      "first_seen": "2026-05-30"
+    },
+    "https://www.theverge.com/ai-artificial-intelligence/938095/robinhood-ai-agent-stock-trading": {
+      "file": "2026-05-30-22.00-02.md",
+      "source": "The Verge",
+      "first_seen": "2026-05-30"
     }
   },
   "source_headlines": {
@@ -624,7 +634,9 @@
       "openai codex windows computer use",
       "microsoft reportedly working ai super app",
       "openai sunsetting chatgpt canvas interface",
-      "microsoft launches preview copilot health ai analyze medical records"
+      "microsoft launches preview copilot health ai analyze medical records",
+      "avatars digital blackface want sell belt buckle",
+      "robinhood let agent trade stocks make lose lots money"
     ],
     "www.wired.com": [
       "vatikan ngajak anthropic bicara soal ai iya paus tertarik sama safety ai",
@@ -1356,7 +1368,27 @@
       "who": "YouTube",
       "what": "Labeling",
       "first_seen": "2026-05-30"
+    },
+    {
+      "who": "TikTok Shop",
+      "what": "Scam",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "AI Avatar",
+      "what": "Digital Blackface",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Robinhood",
+      "what": "AI Agent",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Robinhood",
+      "what": "Trading",
+      "first_seen": "2026-05-30"
     }
   ],
-  "total": 110
+  "total": 112
 }
