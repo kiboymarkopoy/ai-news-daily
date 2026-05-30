@@ -624,6 +624,31 @@
       "file": "2026-05-31-01.00-03.md",
       "source": "Scientific American / Nature — Protein-folding AI",
       "first_seen": "2026-05-31"
+    },
+    "https://www.ft.com/content/1022f9bd-5b6d-44a5-9303-c8b05b8c6463": {
+      "file": "2026-05-31-02.00-01.md",
+      "source": "Financial Times",
+      "first_seen": "2026-05-31"
+    },
+    "https://www.bloomberg.com/news/articles/2026-05-30/ai-dangers-eclipse-nuclear-weapons-at-singapore-defense-forum": {
+      "file": "2026-05-31-02.00-02.md",
+      "source": "Bloomberg",
+      "first_seen": "2026-05-31"
+    },
+    "https://fortune.com/2026/05/30/taylor-swift-exposes-ai-law-blind-spot/": {
+      "file": "2026-05-31-02.00-03.md",
+      "source": "Fortune",
+      "first_seen": "2026-05-31"
+    },
+    "https://fortune.com/2026/05/30/ai-chip-token-bubble-economy-nvidia-microsoft-hyperscalers-2/": {
+      "file": "2026-05-31-02.00-04.md",
+      "source": "Fortune",
+      "first_seen": "2026-05-31"
+    },
+    "https://variety.com/2026/film/news/emily-blunt-ai-disclosure-day-terrified-1236763043/": {
+      "file": "2026-05-31-02.00-05.md",
+      "source": "Variety",
+      "first_seen": "2026-05-31"
     }
   },
   "source_headlines": {
@@ -841,7 +866,9 @@
       "they biggest bullsht detectors planet how unlikely eve online google deepmind partnership landed players"
     ],
     "fortune.com": [
-      "microsoft building ai super app combining coding chat copilot tools"
+      "microsoft building ai super app combining coding chat copilot tools",
+      "taylor swift exposed blind spot ai law bigger than copyright",
+      "ai economy crash mounting chip costs token costs wont help"
     ],
     "rdworldonline.com": [
       "openai luncurkan rosalind biodefense model ai ilmu hayati"
@@ -886,6 +913,15 @@
     ],
     "www.scientificamerican.com": [
       "new protein folding ai predicts the structures of 1 billion proteins"
+    ],
+    "ft.com": [
+      "softbank pledges 75bn build europes biggest ai facility france"
+    ],
+    "bloomberg.com": [
+      "ai dangers eclipse nuclear weapons singapore defense forum"
+    ],
+    "variety.com": [
+      "emily blunt says she terrified ai refused use disclosure day"
     ]
   },
   "cross_topics": [
@@ -1553,7 +1589,52 @@
       "who": "AlphaFold",
       "what": "Protein prediction",
       "first_seen": "2026-05-31"
+    },
+    {
+      "who": "SoftBank",
+      "what": "AI Facility",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "SoftBank",
+      "what": "€75bn",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Singapore",
+      "what": "AI Dangers",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Defense Forum",
+      "what": "AI Safety",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Taylor Swift",
+      "what": "Trademark",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Taylor Swift",
+      "what": "AI DEEPFAKE",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Hyperscaler",
+      "what": "Cost",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Emily Blunt",
+      "what": "Film",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Emily Blunt",
+      "what": "AI REFUSAL",
+      "first_seen": "2026-05-31"
     }
   ],
-  "total": 125
+  "total": 130
 }
