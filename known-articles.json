@@ -274,6 +274,26 @@
       "file": "2026-05-30-06.00-05.md",
       "source": "WIRED",
       "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    "https://techcrunch.com/2026/05/28/the-internet-is-being-rebuilt-for-machines/": {
+      "file": "2026-05-30-07.00-01.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-30"
+    },
+    "https://techcrunch.com/2026/05/29/coders-are-refusing-to-work-without-ai-and-that-could-come-back-to-bite-them/": {
+      "file": "2026-05-30-07.00-02.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-30"
+    },
+    "https://techcrunch.com/2026/05/28/sesame-the-conversational-ai-startup-from-oculus-founders-launches-its-ios-app/": {
+      "file": "2026-05-30-07.00-03.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-30"
+    },
+    "https://techcrunch.com/2026/05/28/sneak-peek-at-new-siri-app-reveals-apples-plans-to-take-on-chatgpt-and-more/": {
+      "file": "2026-05-30-07.00-04.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-30"
     }
   },
   "source_headlines": {
@@ -319,7 +339,11 @@
       "startup chip xcena dapat 135 juta ai ternyata bukan cuma soal gpu tapi juga soal memori",
       "anthropic kumpulin 65 miliar valuasi nyaris tembus 1 triliun",
       "gila claude opus 4 8 aja rilis koordinasi banyak ai sekaligus",
-      "glean s top line crosses 300m ai budget cutting becomes major selling point"
+      "glean s top line crosses 300m ai budget cutting becomes major selling point",
+      "internet lagi dirombak total tapi bukan buat manusia buat robot",
+      "programmer udah nge fomo banget sama ai tapi kata peneliti ini bahaya",
+      "suara ai yang bikin merinding startup dari mantan bos oculus rilis app ios",
+      "apple diam diam siapin siri baru bocoran app ketangkap mau saingan sama chatgpt"
     ],
     "www.rollingstone.com": [
       "film pertama buatan ai total tayang tribeca biaya cuma 2 000"
@@ -571,7 +595,67 @@
       "who": "Buzzfeed",
       "what": "Animation",
       "first_seen": "2026-05-30T06:03:00+07:00"
+    },
+    {
+      "who": "AWS",
+      "what": "infrastructure",
+      "first_seen": "2026-05-30T07:00:00+07:00"
+    },
+    {
+      "who": "AWS",
+      "what": "AI agents",
+      "first_seen": "2026-05-30T07:00:00+07:00"
+    },
+    {
+      "who": "Cloudflare",
+      "what": "infrastructure",
+      "first_seen": "2026-05-30T07:00:00+07:00"
+    },
+    {
+      "who": "Cloudflare",
+      "what": "AI agents",
+      "first_seen": "2026-05-30T07:00:00+07:00"
+    },
+    {
+      "who": "Sesame",
+      "what": "voice AI",
+      "first_seen": "2026-05-30T07:00:00+07:00"
+    },
+    {
+      "who": "Sesame",
+      "what": "iOS app",
+      "first_seen": "2026-05-30T07:00:00+07:00"
+    },
+    {
+      "who": "Oculus",
+      "what": "voice AI",
+      "first_seen": "2026-05-30T07:00:00+07:00"
+    },
+    {
+      "who": "Oculus",
+      "what": "iOS app",
+      "first_seen": "2026-05-30T07:00:00+07:00"
+    },
+    {
+      "who": "Apple",
+      "what": "ChatGPT",
+      "first_seen": "2026-05-30T07:00:00+07:00"
+    },
+    {
+      "who": "Apple",
+      "what": "Siri app",
+      "first_seen": "2026-05-30T07:00:00+07:00"
+    },
+    {
+      "who": "Siri",
+      "what": "ChatGPT",
+      "first_seen": "2026-05-30T07:00:00+07:00"
+    },
+    {
+      "who": "Siri",
+      "what": "Siri app",
+      "first_seen": "2026-05-30T07:00:00+07:00"
     }
   ],
-  "total": 55
+  "total": 59
 }
