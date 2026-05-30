@@ -339,6 +339,31 @@
       "file": "2026-05-30-09.00-04.md",
       "source": "CNBC — Mistral designing chips",
       "first_seen": "2026-05-30"
+    },
+    "https://www.wired.com/story/google-gemini-spark-ai-agent-hands-on": {
+      "file": "2026-05-30-10.00-01.md",
+      "source": "WIRED — Gemini Spark AI Agent",
+      "first_seen": "2026-05-30T10:00:00+07:00"
+    },
+    "https://www.wired.com/story/amazon-thinks-the-future-of-data-centers-depends-on-a-technical-problem-it-just-solved": {
+      "file": "2026-05-30-10.00-02.md",
+      "source": "WIRED — Amazon Data Centers",
+      "first_seen": "2026-05-30T10:00:00+07:00"
+    },
+    "https://www.engadget.com/2183900/cnn-is-the-latest-media-company-to-sue-perplexity": {
+      "file": "2026-05-30-10.00-03.md",
+      "source": "Engadget — CNN sues Perplexity",
+      "first_seen": "2026-05-30T10:00:00+07:00"
+    },
+    "https://www.wired.com/story/vertu-alphafold-folding-phone-powered-by-hermes-agent-ai": {
+      "file": "2026-05-30-10.00-04.md",
+      "source": "WIRED — Vertu AI Phone",
+      "first_seen": "2026-05-30T10:00:00+07:00"
+    },
+    "https://www.engadget.com/2183719/paramount-used-ai-to-make-the-ugliest-star-trek-thumbnail-ever": {
+      "file": "2026-05-30-10.00-05.md",
+      "source": "Engadget — Paramount AI Star Trek Thumbnail",
+      "first_seen": "2026-05-30T10:00:00+07:00"
     }
   },
   "source_headlines": {
@@ -502,13 +527,20 @@
     "wired.com": [
       "former google apple researchers launch startup build ai s missing feedback loop",
       "here comes ojai waymo s chinese made robotaxi",
-      "amazon making ai animated good advice cupcake tv show original creator furious"
+      "amazon making ai animated good advice cupcake tv show original creator furious",
+      "Google bikin gemini spark ai agent akses total ke hidup lo",
+      "Amazon bikin terobosan pendingin cairan data center ai",
+      "Vertu balik bikin hp lipat dengan ai agent butler"
     ],
     "nytimes.com": [
       "teachers union urges schools curb chatbots screen time"
     ],
     "www.engadget.com": [
       "meta acquires robotics ai startup makes push humanoid machines"
+    ],
+    "engadget.com": [
+      "CNN gugat perplexity AI search hak cipta",
+      "Paramount plus pake ai bikin thumbnail star trek jelek"
     ]
   },
   "cross_topics": [
@@ -786,7 +818,37 @@
       "who": "Mistral",
       "what": "INFRASTRUCTURE",
       "first_seen": "2026-05-30T09:00:00+07:00"
+    },
+    {
+      "who": "Google",
+      "what": "Spark",
+      "first_seen": "2026-05-30T10:00:00+07:00"
+    },
+    {
+      "who": "Amazon",
+      "what": "Data Center",
+      "first_seen": "2026-05-30T10:00:00+07:00"
+    },
+    {
+      "who": "CNN",
+      "what": "Lawsuit",
+      "first_seen": "2026-05-30T10:00:00+07:00"
+    },
+    {
+      "who": "Perplexity",
+      "what": "Lawsuit",
+      "first_seen": "2026-05-30T10:00:00+07:00"
+    },
+    {
+      "who": "Vertu",
+      "what": "AI Agent",
+      "first_seen": "2026-05-30T10:00:00+07:00"
+    },
+    {
+      "who": "Paramount",
+      "what": "Thumbnail",
+      "first_seen": "2026-05-30T10:00:00+07:00"
     }
   ],
-  "total": 68
+  "total": 73
 }
