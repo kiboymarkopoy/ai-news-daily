@@ -319,6 +319,26 @@
       "file": "2026-05-30-08.00-05.md",
       "source": "WIRED",
       "first_seen": "2026-05-30"
+    },
+    "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/": {
+      "file": "2026-05-30-09.00-01.md",
+      "source": "TechCrunch — Groq $650M",
+      "first_seen": "2026-05-30"
+    },
+    "https://www.engadget.com/2162606/meta-acquires-assured-robot-intelligence-humanoid-ai/": {
+      "file": "2026-05-30-09.00-02.md",
+      "source": "Engadget — Meta acquires robotics AI startup",
+      "first_seen": "2026-05-30"
+    },
+    "https://www.wired.com/story/the-vaticans-man-inside-anthropic/": {
+      "file": "2026-05-30-09.00-03.md",
+      "source": "WIRED — Vatican Man Inside Anthropic",
+      "first_seen": "2026-05-30"
+    },
+    "https://www.cnbc.com/2026/05/28/mistral-arthur-mensch-design-chips-ai-data-centers.html": {
+      "file": "2026-05-30-09.00-04.md",
+      "source": "CNBC — Mistral designing chips",
+      "first_seen": "2026-05-30"
     }
   },
   "source_headlines": {
@@ -369,7 +389,8 @@
       "programmer udah nge fomo banget sama ai tapi kata peneliti ini bahaya",
       "suara ai yang bikin merinding startup dari mantan bos oculus rilis app ios",
       "apple diam diam siapin siri baru bocoran app ketangkap mau saingan sama chatgpt",
-      "Asana acquires no code agent builder StackAI"
+      "Asana acquires no code agent builder StackAI",
+      "nvidia 20b not acqui hire ai chip startup groq reportedly raising 650m"
     ],
     "www.rollingstone.com": [
       "film pertama buatan ai total tayang tribeca biaya cuma 2 000"
@@ -397,7 +418,8 @@
       "illinois resmiin uu ai paling keras perusahaan ai wajib diaudit pihak ketiga",
       "illinois sahkan uu ai terkeras amerika bikin teknologi gigit jari",
       "illinois resmi mengesahkan uu keamanan ai paling ketat perusahaan ai wajib diaudit pihak ketiga",
-      "We asked the future of truth author to explain how he used AI it didnt go well"
+      "We asked the future of truth author to explain how he used AI it didnt go well",
+      "vatican man inside anthropic"
     ],
     "eletric-vehicles.com": [
       "robot humanoid xpeng iron mau masuk produksi massal bakal jualan toko"
@@ -414,7 +436,8 @@
       "anthropic jadi startup ai termahal kalahin openai valuasi tembus 965 miliar",
       "anthropic resmi jadi unicorn paling gede valuasi 965 miliar salip openai",
       "nvidia gelontorkan 6 5 miliar ke startup cahaya bukan lampu tapi biar ai nggak mati kedinginan",
-      "saham dell melonjak 32 pendapatan server ai naik 757 pemegang saham tersenyum lebar"
+      "saham dell melonjak 32 pendapatan server ai naik 757 pemegang saham tersenyum lebar",
+      "mistral explore designing own chips ceo says ramps infrastructure build"
     ],
     "arstechnica.com": [
       "illinois sahkan uu ai terketat trump kehilangan kendali regulasi",
@@ -483,6 +506,9 @@
     ],
     "nytimes.com": [
       "teachers union urges schools curb chatbots screen time"
+    ],
+    "www.engadget.com": [
+      "meta acquires robotics ai startup makes push humanoid machines"
     ]
   },
   "cross_topics": [
@@ -710,7 +736,57 @@
       "who": "WIRED",
       "what": "Book",
       "first_seen": "2026-05-30T08:08:00+07:00"
+    },
+    {
+      "who": "Groq",
+      "what": "CHIP",
+      "first_seen": "2026-05-30T09:00:00+07:00"
+    },
+    {
+      "who": "Groq",
+      "what": "FUNDING",
+      "first_seen": "2026-05-30T09:00:00+07:00"
+    },
+    {
+      "who": "Groq",
+      "what": "$650 Million",
+      "first_seen": "2026-05-30T09:00:00+07:00"
+    },
+    {
+      "who": "Meta",
+      "what": "ACQUISITION",
+      "first_seen": "2026-05-30T09:00:00+07:00"
+    },
+    {
+      "who": "Meta",
+      "what": "ROBOT",
+      "first_seen": "2026-05-30T09:00:00+07:00"
+    },
+    {
+      "who": "Meta",
+      "what": "HUMANOID",
+      "first_seen": "2026-05-30T09:00:00+07:00"
+    },
+    {
+      "who": "Vatican",
+      "what": "AI",
+      "first_seen": "2026-05-30T09:00:00+07:00"
+    },
+    {
+      "who": "Anthropic",
+      "what": "Vatican",
+      "first_seen": "2026-05-30T09:00:00+07:00"
+    },
+    {
+      "who": "Mistral",
+      "what": "CHIP",
+      "first_seen": "2026-05-30T09:00:00+07:00"
+    },
+    {
+      "who": "Mistral",
+      "what": "INFRASTRUCTURE",
+      "first_seen": "2026-05-30T09:00:00+07:00"
     }
   ],
-  "total": 64
+  "total": 68
 }

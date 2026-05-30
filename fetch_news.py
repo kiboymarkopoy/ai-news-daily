@@ -1,246 +1,358 @@
 #!/usr/bin/env python3
-"""Fetch AI news from RSS feeds, dedup, and generate files."""
-import json, re, time, urllib.request, urllib.parse, xml.etree.ElementTree as ET
-from datetime import datetime, timezone, timedelta
+"""Fetch AI news from RSS feeds and apply 3-layer dedup"""
+import json, re, html
+from urllib.request import urlopen, Request
+from urllib.parse import urlparse
+import xml.etree.ElementTree as ET
 
-jakarta_tz = timezone(timedelta(hours=7))
-now = datetime.now(jakarta_tz)
-
-# Load known articles
+# Read known articles
 with open('/root/ai-news-daily/known-articles.json') as f:
     known = json.load(f)
 
-stop_words = {'a','an','the','and','or','but','in','on','at','to','for','of',
-    'with','by','is','it','as','be','this','that','from','its','are','was',
-    'were','been','being','have','has','had','do','does','did','will','would',
-    'could','should','may','might','can','shall','not','no','nor','so','if',
-    'than','too','very','just','about','up','down','out','off','over','under',
-    'again','further','then','once','here','there','when','where','why','how',
-    'all','each','every','both','few','more','most','other','some','such',
-    'only','own','same','into','onto','upon','after','before','between',
-    'through','during','without','within','along','around','among','across',
-    'what','which','who','whom','&','s','t','re','ve','ll','m','ai',
-    'new','get','make','use','says','say','said','set','first','next',
-    'also','even','still','yet','already','ever','never','back','well',
-    'way','thing','like','just','much','many','able'}
+known_urls = set(known['articles'].keys())
+known_domain_headlines = known['source_headlines']
+known_cross_topics = known['cross_topics']
+
+# Stop words for normalization
+STOP_WORDS = {'the', 'a', 'an', 'is', 'in', 'to', 'of', 'and', 'for', 'on', 'with',
+              'by', 'as', 'at', 'from', 'its', 'it', 'that', 'this', 'are', 'was',
+              'be', 'has', 'have', 'not', 'but', 'or', 'will', 'can', 'all', 'new',
+              'more', 'about', 'than', 'also', 'into', 'after', 'their', 'they',
+              'been', 'had', 'would', 'could', 'should', 'may', 'what', 'who',
+              'how', 'when', 'where', 'why', 'just', 'like', 'says', 'said',
+              'make', 'made', 'get', 'got', 'go', 'goes', 'went', 'use', 'used',
+              'using', 'via', 'how', 'much', 'many', 'most', 'some', 'such',
+              'up', 'down', 'out', 'over', 'off', 'than', 'then', 'now', 'even'}
 
 def normalize_headline(title):
+    """Normalize headline for similarity comparison"""
     title = title.lower()
-    title = re.sub(r'[^\w\s]', ' ', title)
+    title = re.sub(r'[^a-z0-9\s]', '', title)
     words = title.split()
-    words = [w for w in words if w not in stop_words and len(w) > 1]
+    words = [w for w in words if w not in STOP_WORDS and len(w) > 2]
     return ' '.join(words)
 
-def word_overlap(n1, n2):
-    w1 = set(n1.split())
-    w2 = set(n2.split())
+def word_overlap(norm1, norm2):
+    """Calculate word overlap ratio between two normalized headlines"""
+    w1 = set(norm1.split())
+    w2 = set(norm2.split())
     if not w1 or not w2:
         return 0
     intersection = w1 & w2
     return len(intersection) / min(len(w1), len(w2))
 
-def extract_domain(url):
-    m = re.search(r'https?://([^/]+)', url or '')
-    return m.group(1) if m else ''
+def extract_who_what(title):
+    """Extract WHO (organization) and WHAT from headline"""
+    orgs_in = ['Anthropic', 'OpenAI', 'Google', 'Meta', 'Microsoft', 'Apple', 'Nvidia',
+               'Amazon', 'Tesla', 'Waymo', 'Figure AI', 'Figure', 'Xpeng', 'BMW', 'Samsung',
+               'Intel', 'AMD', 'IBM', 'Adobe', 'Spotify', 'Snap', 'TikTok', 'ByteDance',
+               'Alibaba', 'Tencent', 'Baidu', 'DeepSeek', 'Mistral', 'ElevenLabs', 'Stability AI',
+               'Midjourney', 'Runway', 'Asana', 'Glean', 'Cloudflare', 'Sesame', 'Oculus',
+               'Dell', 'Snowflake', 'Illinois', 'Trump', 'Perplexity', 'xAI', 'Elon Musk',
+               'Sam Altman', 'Jensen Huang', 'YC', 'SoftBank', 'Sequoia', 'a16z',
+               'Palantir', 'Oracle', 'Salesforce', 'Netflix', 'Disney', 'Sony',
+               'Bloomberg', 'Reuters', 'CNBC', 'WIRED', 'BBC', 'NYT', 'Forbes',
+               'ChatGPT', 'Claude', 'Gemini', 'Copilot', 'Siri', 'Alexa',
+               'DALL-E', 'Midjourney', 'Stable Diffusion', 'Sora', 'Veo',
+               'Llama', 'Mistral', 'DeepSeek', 'Qwen', 'Groq', 'Grok',
+               'Hugging Face', 'O1', 'O3', 'GPT', 'Claude Opus', 'Opus']
+    found_orgs = []
+    for org in orgs_in:
+        if org.lower() in title.lower():
+            found_orgs.append(org)
 
-def check_dedup(url, title, source_name, known):
-    domain = extract_domain(url)
-    
-    # Layer 1: URL exact match
-    if url in known['articles']:
-        return True, f"L1:URL exists"
-    
-    norm_title = normalize_headline(title)
-    
-    # Layer 2: Source headline similarity
-    if domain in known['source_headlines']:
-        for existing_norm in known['source_headlines'][domain]:
-            if word_overlap(norm_title, existing_norm) > 0.5:
-                return True, f"L2:Headline overlap"
-    
-    # Simple WHO extraction
-    who_candidates = ['Anthropic','OpenAI','Google','DeepMind','Meta','Microsoft',
-        'Apple','Nvidia','AMD','Intel','Amazon','Tesla','Waymo','SpaceX','xAI',
-        'Groq','Sesame','Glean','Asana','BMW','Figure','Spotify','Adobe',
-        'ElevenLabs','Suno','Stability AI','Midjourney','Runway','Cloudflare',
-        'Dell','Snowflake','Samsung','SK Hynix','Cognition','Devin',
-        'CNBC','Reuters','BBC','Trump','Pope','Spielberg','Hugging Face',
-        'Mistral','Perplexity','Cohere','Databricks','Palantir','Salesforce',
-        'IBM','Cisco','Disney','Netflix','Tribeca','Hollywood','Illinois',
-        'Pritzker','NBC','Instagram','WhatsApp','Snap','TikTok','Qualcomm',
-        'Arm','TSMC','SoftBank','Tencent','Alibaba','Baidu','ByteDance']
-    
-    title_lower = title.lower()
-    found_who = [o for o in who_candidates if o.lower() in title_lower]
-    
-    # WHAT extraction
-    what_list = []
-    if re.search(r'opus\s*4[.\s]*\d+|claude', title_lower): what_list.append('Claude')
-    if re.search(r'gpt[-\s]*\d+|chatgpt', title_lower): what_list.append('GPT')
-    if re.search(r'gemini', title_lower): what_list.append('Gemini')
-    if re.search(r'llama|llm|model', title_lower): what_list.append('Model')
-    if re.search(r'humanoid|robot', title_lower): what_list.append('Robot')
-    if re.search(r'regulat|law|bill|act|safety', title_lower): what_list.append('Regulation')
-    if re.search(r'chip|processor|semiconduc', title_lower): what_list.append('Chip')
-    if re.search(r'\$[\d,.]+\s*(?:b|m|t|billion|million|trillion)', title_lower, re.I): what_list.append('Funding')
-    if re.search(r'ipo|fundrai|valuat|revenue|earning', title_lower): what_list.append('Business')
-    if re.search(r'film|movie|music|art|gaming|entertain', title_lower): what_list.append('Media/Creative')
-    if re.search(r'acquis|merger', title_lower): what_list.append('Acquisition')
-    if re.search(r'ai\s+agent|coding|code|devin', title_lower): what_list.append('AI Agent')
-    if re.search(r'animat|cartoon', title_lower): what_list.append('Animation')
-    if re.search(r'token|futures|trading', title_lower): what_list.append('Token/Trading')
-    if re.search(r'siri|voice|conversation', title_lower): what_list.append('Voice AI')
-    if re.search(r'internet|infrastructure|cloud', title_lower): what_list.append('Infrastructure')
-    
-    # Layer 3: Cross-outlet WHO+WHAT
-    for who in found_who:
-        for what in what_list:
-            for ct in known['cross_topics']:
-                if ct['who'].lower() == who.lower() and ct['what'].lower() == what.lower():
-                    return True, f"L3:WHO={who}+WHAT={what}"
-    
-    return False, ""
+    # Extract WHAT - model names, key terms
+    what_patterns = [
+        r'(Opus\s*4[\.\-]\s*8|Opus\s*4\s*\.?\s*8)',
+        r'(GPT-\d|O\d|O3|Claude\s*\d|Gemini\s*\d[\d\.]*)',
+        r'(\d+\s*billion|\$\d+\s*[mbMB]illion|\$\d+\.?\d*\s*[bB]illion)',
+        r'(Robotaxi|humanoid|robot|AI chip|semiconductor)',
+        r'(regulation|safety law|AI bill|executive order)',
+        r'(funding|valuation|IPO|acquisition|merger)',
+        r'(Film|Movie|Music|Song|Animation)',
+        r'(Research|Paper|Model|Agent)'
+    ]
+    found_whats = []
+    for p in what_patterns:
+        m = re.search(p, title, re.IGNORECASE)
+        if m:
+            found_whats.append(m.group(0))
+    return found_orgs[:2], found_whats[:3]
 
-def fetch_rss(url, timeout=20):
-    """Fetch RSS and parse items"""
+def fetch_rss(url):
+    """Fetch and parse RSS feed"""
     try:
-        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        resp = urllib.request.urlopen(req, timeout=timeout)
+        req = Request(url, headers={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36'})
+        resp = urlopen(req, timeout=15)
         data = resp.read().decode('utf-8', errors='replace')
-        items = []
-        root = ET.fromstring(data)
-        # Handle RSS or Atom format
-        ns = {'atom': 'http://www.w3.org/2005/Atom'}
+        return data
+    except Exception as e:
+        print(f"  Error fetching {url}: {e}")
+        return None
+
+def parse_rss_items(xml_data):
+    """Extract items from RSS XML"""
+    items = []
+    try:
+        root = ET.fromstring(xml_data)
+        # RSS 2.0
         for item in root.iter('item'):
-            title_el = item.find('title')
-            link_el = item.find('link')
-            desc_el = item.find('description')
-            pubdate_el = item.find('pubDate')
-            if title_el is not None and link_el is not None and link_el.text:
-                title = title_el.text.strip()
-                link = link_el.text.strip()
-                # Skip Google News redirect URLs - extract real URL
-                if 'news.google.com/rss/articles' in link:
-                    continue
-                desc_text = desc_el.text or ''
-                desc = desc_text.strip()[:200]
-                pubdate_text = pubdate_el.text or ''
-                pubdate = pubdate_text.strip()
-                items.append({'title': title, 'link': link, 'desc': desc, 'pubdate': pubdate})
-        # Also try Atom format
+            title = ''
+            link = ''
+            pubdate = ''
+            desc = ''
+            el_title = item.find('title')
+            el_link = item.find('link')
+            el_pubdate = item.find('pubDate')
+            el_desc = item.find('description')
+            if el_title is not None and el_title.text:
+                title = el_title.text.strip()
+            if el_link is not None and el_link.text:
+                link = el_link.text.strip()
+            if el_pubdate is not None and el_pubdate.text:
+                pubdate = el_pubdate.text.strip()
+            if el_desc is not None and el_desc.text:
+                desc = el_desc.text.strip()
+            if title and link:
+                items.append({'title': html.unescape(title), 'link': link.strip(), 'pubdate': pubdate, 'desc': desc})
+
+        # Atom format
         if not items:
             for entry in root.iter('{http://www.w3.org/2005/Atom}entry'):
-                title_el = entry.find('{http://www.w3.org/2005/Atom}title')
-                link_el = entry.find('{http://www.w3.org/2005/Atom}link')
-                if title_el is not None and link_el is not None:
-                    link_text = link_el.text or ''
-                    if link_text:
-                        title_text = title_el.text or ''
-                        items.append({'title': title_text.strip(), 'link': link_text.strip(), 'desc': '', 'pubdate': ''})
-        return items
-    except Exception as e:
-        print(f"  ERROR fetching {url[:60]}: {e}")
-        return []
+                title = ''
+                link = ''
+                pubdate = ''
+                desc = ''
+                el_title = entry.find('{http://www.w3.org/2005/Atom}title')
+                el_link = entry.find('{http://www.w3.org/2005/Atom}link')
+                el_pubdate = entry.find('{http://www.w3.org/2005/Atom}published')
+                el_summary = entry.find('{http://www.w3.org/2005/Atom}summary')
+                if el_title is not None and el_title.text:
+                    title = html.unescape(el_title.text.strip())
+                if el_link is not None:
+                    link = el_link.get('href', '')
+                if el_pubdate is not None and el_pubdate.text:
+                    pubdate = el_pubdate.text.strip()
+                if el_summary is not None and el_summary.text:
+                    desc = el_summary.text.strip()
+                if title and link:
+                    items.append({'title': title, 'link': link.strip(), 'pubdate': pubdate, 'desc': desc})
+    except ET.ParseError as e:
+        print(f"  XML parse error: {e}")
+    return items
 
-# Fetch from multiple sources
-print("=" * 60)
-print(f"AI News Pipeline - {now.strftime('%Y-%m-%d %H:%M')} WIB")
-print("=" * 60)
+def extract_og_image(url):
+    """Try to extract og:image from article"""
+    try:
+        req = Request(url, headers={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36'})
+        resp = urlopen(req, timeout=8)
+        h = resp.read().decode('utf-8', errors='replace')
+        m = re.search(r'<meta\s+property=["\']og:image["\']\s+content=["\']([^"\']+)["\']', h, re.IGNORECASE)
+        if m:
+            img_url = m.group(1)
+            try:
+                img_req = Request(img_url, headers={'User-Agent': 'Mozilla/5.0'})
+                img_resp = urlopen(img_req, timeout=5)
+                if img_resp.status == 200:
+                    return img_url
+            except:
+                pass
+        m2 = re.search(r'<meta\s+content=["\']([^"\']+)["\']\s+property=["\']og:image["\']', h, re.IGNORECASE)
+        if m2:
+            return m2.group(1)
+    except:
+        pass
+    return ''
+
+def get_category(article):
+    """Categorize article into one of 5 angles"""
+    title_lower = article['title'].lower()
+    desc_lower = article['desc'].lower()
+    source = article['source']
+    text = title_lower + ' ' + desc_lower
+
+    # e. Creative & Media
+    if any(w in text for w in ['ai film', 'ai movie', 'ai music', 'ai art', 'ai game', 'ai-generated film',
+                                'ai video generation', 'ai animation', 'tribeca', 'creative ai',
+                                'ai music generation', 'elevenlabs', 'midjourney', 'runway',
+                                'sora', 'veo', 'ai songwriter', 'ai-generated art']):
+        return 'e', '🎬 Creative & Media'
+
+    # d. Robotics & Hardware
+    if any(w in text for w in ['robot', 'humanoid', 'robotaxi', 'autonomous vehicle', 'ai chip',
+                                'semiconductor', 'nvidia', 'amd', 'intel', 'quantum',
+                                'hardware', 'processor', 'gpu', 'tpu', 'robotics',
+                                'self-driving', 'waymo', 'figure ai', 'optimus']):
+        return 'd', '🤖 Robotics & Hardware'
+
+    # c. Regulasi & Etika
+    if any(w in text for w in ['regulation', 'safety law', 'ai bill', 'executive order',
+                                'ethics', 'ethical', 'deepfake', 'misinformation', 'bias',
+                                'privacy', 'audit', 'compliance', 'governance',
+                                'illinois', 'eu ai act', 'copyright', 'lawsuit']):
+        return 'c', '⚖️ Regulasi & Etika'
+
+    # b. Industry & Business
+    if any(w in text for w in ['funding', 'valuation', 'ipo', 'acquisition', 'merger',
+                                'revenue', 'earnings', 'startup', 'investment', 'market',
+                                'billion', 'million', 'stock', 'ceo', 'strategy',
+                                'layoff', 'hiring', 'partnership']):
+        return 'b', '💰 Industry & Business'
+
+    # a. Model & Research
+    if any(w in text for w in ['model release', 'ai research', 'paper', 'open source model',
+                                'llm', 'language model', 'openai', 'anthropic', 'google',
+                                'claude', 'chatgpt', 'gemini', 'llama', 'mistral',
+                                'deepseek', 'qwen', 'gpt', 'opus', 'sonnet',
+                                'training', 'benchmark', 'agi']):
+        return 'a', '🧠 Model & Research'
+
+    return 'a', '🧠 Model & Research'  # default
+
+def generate_file_name(timestamp, idx):
+    """Generate file name from timestamp and index"""
+    return f"{timestamp}-{idx:02d}.md"
+
+def extract_domain_name(domain):
+    """Get source display name from domain"""
+    domain_map = {
+        'techcrunch.com': 'TechCrunch',
+        'arstechnica.com': 'Ars Technica',
+        'theverge.com': 'The Verge',
+        'wired.com': 'WIRED',
+        'cnbc.com': 'CNBC',
+        'bbc.com': 'BBC',
+        'bbc.co.uk': 'BBC',
+        'nbcnews.com': 'NBC News',
+        'forbes.com': 'Forbes',
+        'bloomberg.com': 'Bloomberg',
+        'reuters.com': 'Reuters',
+        'nytimes.com': 'NYT',
+        'wsj.com': 'WSJ',
+        'ft.com': 'FT',
+        'theguardian.com': 'The Guardian',
+        'yahoo.com': 'Yahoo Finance',
+        'finance.yahoo.com': 'Yahoo Finance',
+        'businessinsider.com': 'Business Insider',
+        'axios.com': 'Axios',
+        'venturebeat.com': 'VentureBeat',
+        'engadget.com': 'Engadget',
+        'theinformation.com': 'The Information',
+        'semianalysis.com': 'SemiAnalysis',
+    }
+    for k, v in domain_map.items():
+        if k in domain:
+            return v
+    return domain
+
+# ========== MAIN ==========
+
+sources = {
+    'TechCrunch': 'https://techcrunch.com/category/artificial-intelligence/feed/',
+    'ArsTechnica': 'https://feeds.arstechnica.com/arstechnica/index',
+    'The Verge': 'https://www.theverge.com/ai-artificial-intelligence/rss/index.xml',
+    'WIRED': 'https://www.wired.com/feed/rss',
+    'CNBC AI': 'https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100727362',
+    'BBC Tech': 'https://feeds.bbci.co.uk/news/technology/rss.xml',
+    'Google News AI': 'https://news.google.com/rss/search?q=AI+artificial+intelligence&hl=en-US&gl=US&ceid=US:en',
+    'Google News Robot': 'https://news.google.com/rss/search?q=AI+robot+humanoid&hl=en-US&gl=US&ceid=US:en',
+}
 
 all_articles = []
-
-# Source 1: TechCrunch AI feed
-print("\n--- TechCrunch ---")
-tc_items = fetch_rss('https://techcrunch.com/category/artificial-intelligence/feed/')
-print(f"  Got {len(tc_items)} articles")
-for item in tc_items:
-    is_dup, reason = check_dedup(item['link'], item['title'], 'TechCrunch', known)
-    if not is_dup:
-        print(f"  NEW: {item['title'][:80]}")
-        print(f"       {item['link']}")
-        all_articles.append({**item, 'source': 'TechCrunch'})
+for source_name, url in sources.items():
+    print(f"\n=== {source_name} ===")
+    xml = fetch_rss(url)
+    if xml:
+        items = parse_rss_items(xml)
+        print(f"  {len(items)} items")
+        for item in items:
+            item['source'] = source_name
+            all_articles.append(item)
     else:
-        print(f"  DUP: {item['title'][:60]} ({reason})")
+        print(f"  FAILED")
 
-# Source 2: Ars Technica (filter for AI)
-print("\n--- Ars Technica ---")
-ars_items = fetch_rss('https://feeds.arstechnica.com/arstechnica/index')
-print(f"  Got {len(ars_items)} articles")
-ai_keywords = ['ai', 'artificial intelligence', 'robot', 'autonomous', 'machine learning',
-               'humanoid', 'chatbot', 'llm', 'gpt', 'neural', 'deep learning', 'nvidia',
-               'self-driving', 'autonomous vehicle', 'computer vision', 'nlu', 'nlp']
-for item in ars_items:
-    title_lower = item['title'].lower()
-    desc_lower = item.get('desc', '').lower()
-    # Only keep AI-related articles
-    if any(kw in title_lower or kw in desc_lower for kw in ai_keywords):
-        is_dup, reason = check_dedup(item['link'], item['title'], 'Ars Technica', known)
-        if not is_dup:
-            print(f"  NEW: {item['title'][:80]}")
-            print(f"       {item['link']}")
-            all_articles.append({**item, 'source': 'Ars Technica'})
-        else:
-            print(f"  DUP: {item['title'][:60]} ({reason})")
+print(f"\n\nTotal raw items: {len(all_articles)}")
+
+# Internal dedup by URL
+seen_links = set()
+unique_articles = []
+for a in all_articles:
+    l = a['link'].strip()
+    if l not in seen_links:
+        seen_links.add(l)
+        unique_articles.append(a)
+print(f"After internal URL dedup: {len(unique_articles)}")
+
+# LAYER 1: URL exact match
+l1 = []
+for a in unique_articles:
+    if a['link'] in known_urls:
+        print(f"L1-SKIP (URL known): {a['title'][:60]}")
     else:
-        print(f"  SKIP (not AI): {item['title'][:60]}")
+        l1.append(a)
+print(f"After Layer 1: {len(l1)}")
 
-# Source 3: The Verge - try fetching their main RSS then filter for AI
-print("\n--- The Verge (via RSS) ---")
-vg_items = fetch_rss('https://www.theverge.com/rss/index.xml')
-print(f"  Got {len(vg_items)} articles")
-# Filter for AI
-ai_keywords_vg = ['ai', 'artificial intelligence', 'robot', 'autonomous', 'machine learning',
-                  'humanoid', 'chatbot', 'llm', 'gpt', 'neural', 'deep learning', 'nvidia',
-                  'self-driving', 'anthropic', 'openai', 'llama', 'gemini', 'copilot',
-                  'claude', 'waymo', 'figure', 'google deepmind', 'meta ai']
-for item in vg_items:
-    title_lower = item['title'].lower()
-    if any(kw in title_lower for kw in ai_keywords_vg):
-        is_dup, reason = check_dedup(item['link'], item['title'], 'The Verge', known)
-        if not is_dup:
-            print(f"  NEW: {item['title'][:80]}")
-            print(f"       {item['link']}")
-            all_articles.append({**item, 'source': 'The Verge'})
+# LAYER 2: Source headline similarity
+l2 = []
+for a in l1:
+    domain = urlparse(a['link']).netloc
+    if domain.startswith('www.'):
+        domain = domain[4:]
+    norm = normalize_headline(a['title'])
+    if norm:
+        if domain in known_domain_headlines:
+            skip = False
+            for existing in known_domain_headlines[domain]:
+                overlap = word_overlap(norm, existing)
+                if overlap > 0.5:
+                    print(f"L2-SKIP (overlap {overlap:.2f}): '{a['title'][:50]}' ~ '{existing[:40]}'")
+                    skip = True
+                    break
+            if not skip:
+                l2.append(a)
         else:
-            print(f"  DUP: {item['title'][:60]} ({reason})")
+            l2.append(a)
+    else:
+        l2.append(a)
+print(f"After Layer 2: {len(l2)}")
 
-# Source 4: Google News - fresh AI news
-print("\n--- Google News ---")
-gn_items = fetch_rss('https://news.google.com/rss/search?q=AI+artificial+intelligence&hl=en-US&gl=US&ceid=US:en')
-print(f"  Got {len(gn_items)} items")
+# LAYER 3: Cross-outlet WHO+WHAT
+l3 = []
+for a in l2:
+    orgs, whats = extract_who_what(a['title'])
+    skip = False
+    for org in orgs:
+        for what in whats:
+            for ct in known_cross_topics:
+                if ct['who'].lower() == org.lower() and ct['what'].lower() == what.lower():
+                    print(f"L3-SKIP (entity {org}:{what}): '{a['title'][:60]}'")
+                    skip = True
+                    break
+            if skip:
+                break
+        if skip:
+            break
+    if not skip:
+        l3.append(a)
+print(f"After Layer 3: {len(l3)}")
 
-# Parse Google News items - they have tracking URLs which we skip in fetch_rss
-# Let's also try direct feeds from other sources
-print("\n--- Reuters AI ---")
-# Reuters doesn't have a clean RSS, skip
-# Try WIRED
-print("\n--- WIRED ---")
-wired_items = fetch_rss('https://www.wired.com/feed/rss')
-print(f"  Got {len(wired_items)} articles")
-for item in wired_items:
-    title_lower = item['title'].lower()
-    if any(kw in title_lower for kw in ai_keywords_vg):
-        is_dup, reason = check_dedup(item['link'], item['title'], 'WIRED', known)
-        if not is_dup:
-            print(f"  NEW: {item['title'][:80]}")
-            print(f"       {item['link']}")
-            all_articles.append({**item, 'source': 'WIRED'})
-        else:
-            print(f"  DUP: {item['title'][:60]} ({reason})")
-
-# Print summary
-print("\n" + "=" * 60)
-print(f"TOTAL NEW ARTICLES: {len(all_articles)}")
-print("=" * 60)
-for i, a in enumerate(all_articles):
-    print(f"  {i+1}. [{a['source']}] {a['title'][:90]}")
-    print(f"     {a['link']}")
-
-# Save discovered articles for next step
-if all_articles:
-    with open('/root/ai-news-daily/discovered.json', 'w') as f:
-        json.dump(all_articles, f, indent=2, ensure_ascii=False)
-    print(f"\nSaved {len(all_articles)} articles to discovered.json")
+if not l3:
+    print("\n=== NO NEW ARTICLES ===")
+    with open('/tmp/fetch_result.json', 'w') as f:
+        json.dump({'new_articles': []}, f)
 else:
-    print("\nNo new articles found.")
-    open('/root/ai-news-daily/discovered.json', 'w').write('[]')
+    print(f"\n\n=== NEW ARTICLES ({len(l3)}) ===")
+    for i, a in enumerate(l3, 1):
+        print(f"{i}. [{a['source']}] {a['title']}")
+        print(f"   {a['link']}")
+    print()
+
+# Also get og:images for new articles (only a few)
+for a in l3[:5]:
+    img = extract_og_image(a['link'])
+    a['og_image'] = img
+    print(f"  OG: {img}")
+
+with open('/tmp/fetch_result.json', 'w') as f:
+    json.dump({'new_articles': l3}, f, indent=2, ensure_ascii=False)
+print("\nDone. Results saved to /tmp/fetch_result.json")
