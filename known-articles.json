@@ -454,6 +454,31 @@
       "file": "2026-05-30-15.00-02.md",
       "source": "Forbes — Anthropic Acquires Stainless SDK",
       "first_seen": "2026-05-30"
+    },
+    "https://news.google.com/rss/articles/CBMiygFBVV95cUxNRTVKYUhiTVVrNlJSUnBlelFlMDFMZklSWWxSdkJhUG5heEt5LVFMV1FDZlM0MHpnbGlxX2J6enpnZVQzUHpVMTMyN1Rsa1dBMTF5bnl4RUJReFZBSEtKNGZtbjZweXZJRFI4QXV2M0NLcXhnTk1hWTF5aTc3ZEExX0U4RFBwNUVZbEV1a2RBVmhWQ21oaUpJN3Q2QjYwQ2JlT1pyVHE3YU51angwSEtna1ZfWGtYbEdweHhjNDhNZExKMnNleERHQ1ln": {
+      "file": "2026-05-30-17.00-01.md",
+      "source": "R&D World — OpenAI Rosalind Biodefense",
+      "first_seen": "2026-05-30"
+    },
+    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYW56R18tUlFncHQ4S0hlN2NJbkpwOWl6eDJhVS1Jdjg3VVJFWXNCUG5xSmNILWxJZlZnYVJSWS1aWm5rbFhkQ09PelFLMEtoMk1HTW5HVGNLREl1WUlvYjNkbmxtckh4LUtKampGQkk4QndTeTlYSGI1b2hQTDJTcU5JZ0lpNW13akllZWQtWE90VWFnSWNuLTZpdThqaVQ5ODVfUFRUQTlERE1mRlFTS0tCbnZEZjhw": {
+      "file": "2026-05-30-17.00-02.md",
+      "source": "Reuters — SoftBank Roze IPO",
+      "first_seen": "2026-05-30"
+    },
+    "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaE1GbjNlbWZYaXllRDVuWENIRnI0aTBSZTNwUjdpVkpQb05TSlVERTRvOVBuSXdxYnR0N3N6Ul9tOWdaY2ViUjlPTVJ3bnFmbWFubFhBSUJ6ZjFVSFRSTmY0Y05RU042RzRmZ2VjZEt6R3l2RENiUzVwaWNzSjBNVlRGUWtCLTc3eFRIYllRcXo": {
+      "file": "2026-05-30-17.00-03.md",
+      "source": "Let's Data Science — Connecticut SB5",
+      "first_seen": "2026-05-30"
+    },
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTFA2UW5rNXc1czZsVUJLa2wzd1VRVk9VWWxacEQ0QnRMTW0yeHVJSEJFeDNFcjQ5SlNDLTRuSURtSkZjNXpwX0wzcXFseFljRDVGN3d5ME5DazBPeDBhTWdYUnBYZzdsLU5paUo0aHRDLWhFb3c2": {
+      "file": "2026-05-30-17.00-04.md",
+      "source": "QZ — Mistral AI Airbus BMW",
+      "first_seen": "2026-05-30"
+    },
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxObXFBNUtSTlBXa2lyZmRFSnNlMTREcjZYSFpLM21BdzhVQ2NXX2xWTjBJd1NxSnVzYm5NMW0wYXEzUllpeHlkWmdOU3BGcUYyb0V3R1BBTzFIY0VrcmtjVmg2Yno0dFlTcHRvOGpKbGhrRy02WmpERXJkRy0zNVRXaEU4MVhPcW1zVFJqLU5ONTlxSVl2dVdISTdvVjBURDJEM0VvbGdPZ3QwbTRMSUcxdVRl": {
+      "file": "2026-05-30-17.00-05.md",
+      "source": "Decrypt — ElevenLabs Stability AI Music",
+      "first_seen": "2026-05-30"
     }
   },
   "source_headlines": {
@@ -656,6 +681,21 @@
     ],
     "fortune.com": [
       "microsoft building ai super app combining coding chat copilot tools"
+    ],
+    "rdworldonline.com": [
+      "openai luncurkan rosalind biodefense model ai ilmu hayati"
+    ],
+    "reuters.com": [
+      "softbank siapkan ipo spin off robotika ai roze"
+    ],
+    "letsdatascience.com": [
+      "connecticut sahkan sb5 regulasi ai sistem"
+    ],
+    "qz.com": [
+      "mistral ai teken kontrak airbus bmw platform ai industri"
+    ],
+    "decrypt.co": [
+      "elevenlabs stability ai rilis model musik ai baru"
     ]
   },
   "cross_topics": [
@@ -1078,7 +1118,62 @@
       "who": "Anthropic",
       "what": "Acquisition",
       "first_seen": "2026-05-30"
+    },
+    {
+      "who": "OpenAI",
+      "what": "Rosalind",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "OpenAI",
+      "what": "Biodefense",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "SoftBank",
+      "what": "IPO",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "SoftBank",
+      "what": "Roze",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Connecticut",
+      "what": "SB5",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Connecticut",
+      "what": "Regulation",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Mistral",
+      "what": "Airbus",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Mistral",
+      "what": "BMW",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Mistral",
+      "what": "Industrial",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "ElevenLabs",
+      "what": "Music Model",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Stability AI",
+      "what": "Music Model",
+      "first_seen": "2026-05-30"
     }
   ],
-  "total": 91
+  "total": 96
 }
