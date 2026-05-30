@@ -649,6 +649,21 @@
       "file": "2026-05-31-02.00-05.md",
       "source": "Variety",
       "first_seen": "2026-05-31"
+    },
+    "https://apnews.com/article/ai-song-generator-musician-parkinsons-ac2a6ed263256c12f68eb827f7e8238a": {
+      "file": "2026-05-31-03.00-01.md",
+      "source": "AP News",
+      "first_seen": "2026-05-31"
+    },
+    "https://www.rollingstone.com/music/music-features/luke-bryan-fish-hunt-golf-drink-song-ai-accusations-1235570146/": {
+      "file": "2026-05-31-03.00-02.md",
+      "source": "Rolling Stone",
+      "first_seen": "2026-05-31"
+    },
+    "https://apnews.com/article/artificial-intelligence-data-centers-taxes-tech-ohio-4d56561a14f9b0d00553001e8c2757a3": {
+      "file": "2026-05-31-03.00-03.md",
+      "source": "AP News",
+      "first_seen": "2026-05-31"
     }
   },
   "source_headlines": {
@@ -709,7 +724,8 @@
       "the groupthink boom what three top vcs really think about the ai frenzy"
     ],
     "www.rollingstone.com": [
-      "film pertama buatan ai total tayang tribeca biaya cuma 2 000"
+      "film pertama buatan ai total tayang tribeca biaya cuma 2 000",
+      "luke bryan song ai we ask songwriters"
     ],
     "www.theverge.com": [
       "claude opus 4 8 akhirnya ada model ai jujur kalau lagi ngaco",
@@ -922,6 +938,10 @@
     ],
     "variety.com": [
       "emily blunt says she terrified ai refused use disclosure day"
+    ],
+    "apnews.com": [
+      "ai helped musician parkinson finish album longer play guitar",
+      "ohio suspends data center tax break tech firms face pressure pay cost power ai"
     ]
   },
   "cross_topics": [
@@ -1634,7 +1654,22 @@
       "who": "Emily Blunt",
       "what": "AI REFUSAL",
       "first_seen": "2026-05-31"
+    },
+    {
+      "who": "AI",
+      "what": "Music-Assistive",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Rolling Stone",
+      "what": "Songwriters-Defense",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Ohio",
+      "what": "Data-Center-Tax-Break",
+      "first_seen": "2026-05-31"
     }
   ],
-  "total": 130
+  "total": 133
 }
