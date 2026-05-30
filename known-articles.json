@@ -364,6 +364,26 @@
       "file": "2026-05-30-10.00-05.md",
       "source": "Engadget — Paramount AI Star Trek Thumbnail",
       "first_seen": "2026-05-30T10:00:00+07:00"
+    },
+    "https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans/": {
+      "file": "2026-05-30-11.00-01.md",
+      "source": "TechCrunch — Cognition",
+      "first_seen": "2026-05-30"
+    },
+    "https://techcrunch.com/2026/05/28/just-like-gold-and-oil-well-soon-be-able-to-trade-ai-token-futures/": {
+      "file": "2026-05-30-11.00-02.md",
+      "source": "TechCrunch — AI Token Futures",
+      "first_seen": "2026-05-30"
+    },
+    "https://techcrunch.com/2026/05/28/how-long-is-anthropics-lease-with-spacex-opinions-vary/": {
+      "file": "2026-05-30-11.00-03.md",
+      "source": "TechCrunch — Anthropic SpaceX Lease",
+      "first_seen": "2026-05-30"
+    },
+    "https://asia.nikkei.com/business/technology/humanoid-robots-strut-their-stuff-as-trade-show-comes-to-japan": {
+      "file": "2026-05-30-11.00-04.md",
+      "source": "Nikkei Asia — Humanoid Robots Tokyo",
+      "first_seen": "2026-05-30"
     }
   },
   "source_headlines": {
@@ -415,7 +435,10 @@
       "suara ai yang bikin merinding startup dari mantan bos oculus rilis app ios",
       "apple diam diam siapin siri baru bocoran app ketangkap mau saingan sama chatgpt",
       "Asana acquires no code agent builder StackAI",
-      "nvidia 20b not acqui hire ai chip startup groq reportedly raising 650m"
+      "nvidia 20b not acqui hire ai chip startup groq reportedly raising 650m",
+      "cognition scott wu ai coding agents shouldnt replace humans",
+      "just like gold oil well soon able trade ai token futures",
+      "how long anthropic lease spacex opinions vary"
     ],
     "www.rollingstone.com": [
       "film pertama buatan ai total tayang tribeca biaya cuma 2 000"
@@ -541,6 +564,9 @@
     "engadget.com": [
       "CNN gugat perplexity AI search hak cipta",
       "Paramount plus pake ai bikin thumbnail star trek jelek"
+    ],
+    "asia.nikkei.com": [
+      "humanoid robots strut stuff trade show comes japan"
     ]
   },
   "cross_topics": [
@@ -848,7 +874,52 @@
       "who": "Paramount",
       "what": "Thumbnail",
       "first_seen": "2026-05-30T10:00:00+07:00"
+    },
+    {
+      "who": "Cognition",
+      "what": "AI Coding Agents",
+      "first_seen": "2026-05-30T11:00:00+07:00"
+    },
+    {
+      "who": "Scott Wu",
+      "what": "Devin",
+      "first_seen": "2026-05-30T11:00:00+07:00"
+    },
+    {
+      "who": "CME Group",
+      "what": "AI Token Futures",
+      "first_seen": "2026-05-30T11:00:00+07:00"
+    },
+    {
+      "who": "Intercontinental Exchange",
+      "what": "AI Token Futures",
+      "first_seen": "2026-05-30T11:00:00+07:00"
+    },
+    {
+      "who": "Anthropic",
+      "what": "SpaceX Lease",
+      "first_seen": "2026-05-30T11:00:00+07:00"
+    },
+    {
+      "who": "SpaceX",
+      "what": "Compute Lease",
+      "first_seen": "2026-05-30T11:00:00+07:00"
+    },
+    {
+      "who": "Elon Musk",
+      "what": "xAI Anthropic",
+      "first_seen": "2026-05-30T11:00:00+07:00"
+    },
+    {
+      "who": "Japan",
+      "what": "Humanoid Robots",
+      "first_seen": "2026-05-30T11:00:00+07:00"
+    },
+    {
+      "who": "Tokyo",
+      "what": "Robot Show",
+      "first_seen": "2026-05-30T11:00:00+07:00"
     }
   ],
-  "total": 73
+  "total": 77
 }
