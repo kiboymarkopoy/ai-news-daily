@@ -479,6 +479,41 @@
       "file": "2026-05-30-17.00-05.md",
       "source": "Decrypt — ElevenLabs Stability AI Music",
       "first_seen": "2026-05-30"
+    },
+    "https://www.nytimes.com/2026/05/30/technology/ai-super-pac-midterms.html": {
+      "file": "2026-05-30-18.00-01.md",
+      "source": "The New York Times",
+      "first_seen": "2026-05-30"
+    },
+    "https://www.wsj.com/articles/corporate-america-is-starting-to-ration-ai-as-cost-skyrockets": {
+      "file": "2026-05-30-18.00-02.md",
+      "source": "WSJ",
+      "first_seen": "2026-05-30"
+    },
+    "https://www.bloomberg.com/news/articles/2026-05-30/minimax-plans-china-ipo-as-it-eyes-local-rivals-like-deepseek": {
+      "file": "2026-05-30-18.00-03.md",
+      "source": "Bloomberg",
+      "first_seen": "2026-05-30"
+    },
+    "https://venturebeat.com/ai/the-ai-agent-bottleneck-isnt-model-performance-its-permissions/": {
+      "file": "2026-05-30-18.00-04.md",
+      "source": "VentureBeat",
+      "first_seen": "2026-05-30"
+    },
+    "https://www.cnbc.com/2026/05/30/how-ai-is-changing-what-satellites-can-do-in-orbit.html": {
+      "file": "2026-05-30-18.00-05.md",
+      "source": "CNBC",
+      "first_seen": "2026-05-30"
+    },
+    "https://www.kxan.com/news/texas-politics/greg-casar-calls-to-tax-ai-companies-to-fund-jobs-program/": {
+      "file": "2026-05-30-18.00-06.md",
+      "source": "KXAN Austin",
+      "first_seen": "2026-05-30"
+    },
+    "https://www.indiewire.com/news/breaking-news/jorge-gutierrez-cancels-ai-punky-duck-amazon-mgm-123456789/": {
+      "file": "2026-05-30-18.00-07.md",
+      "source": "IndieWire",
+      "first_seen": "2026-05-30"
     }
   },
   "source_headlines": {
@@ -585,7 +620,8 @@
       "anthropic resmi jadi unicorn paling gede valuasi 965 miliar salip openai",
       "nvidia gelontorkan 6 5 miliar ke startup cahaya bukan lampu tapi biar ai nggak mati kedinginan",
       "saham dell melonjak 32 pendapatan server ai naik 757 pemegang saham tersenyum lebar",
-      "mistral explore designing own chips ceo says ramps infrastructure build"
+      "mistral explore designing own chips ceo says ramps infrastructure build",
+      "satelit kini makin pintar berkat bisa proses data orbit tanpa kirim bumi"
     ],
     "arstechnica.com": [
       "illinois sahkan uu ai terketat trump kehilangan kendali regulasi",
@@ -696,6 +732,24 @@
     ],
     "decrypt.co": [
       "elevenlabs stability ai rilis model musik ai baru"
+    ],
+    "www.nytimes.com": [
+      "perang super pac pemilu paruh waktu miliarder pro dan kontra saling gebuk"
+    ],
+    "www.wsj.com": [
+      "perusahaan mulai menjatah biaya langganan melonjak dompet menjerit"
+    ],
+    "www.bloomberg.com": [
+      "startup china minimax siap ipo siapsiap perang model dengan deepseek"
+    ],
+    "venturebeat.com": [
+      "bottleneck agent bukan performa model tapi izin akses"
+    ],
+    "www.kxan.com": [
+      "anggota kongres usul pajak hasilnya buat training ulang pekerja"
+    ],
+    "www.indiewire.com": [
+      "sutradara terkenal urungkan acara amazon mgm garagara hujatan kreator"
     ]
   },
   "cross_topics": [
@@ -1173,7 +1227,42 @@
       "who": "Stability AI",
       "what": "Music Model",
       "first_seen": "2026-05-30"
+    },
+    {
+      "who": "AI Super PAC",
+      "what": "POLITICS",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Corporate America",
+      "what": "WORKFORCE",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "MiniMax",
+      "what": "IPO",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "VentureBeat",
+      "what": "AGENT",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Satellites",
+      "what": "ROBOT",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Greg Casar",
+      "what": "POLITICS",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Jorge Gutierrez",
+      "what": "CREATIVE",
+      "first_seen": "2026-05-30"
     }
   ],
-  "total": 96
+  "total": 103
 }
