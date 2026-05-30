@@ -584,6 +584,31 @@
       "file": "2026-05-30-23.00-05.md",
       "source": "VentureBeat — MeMo Memory Model",
       "first_seen": "2026-05-30"
+    },
+    "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no": {
+      "file": "2026-05-31-00.00-01.md",
+      "source": "VentureBeat — Anthropic Cowork",
+      "first_seen": "2026-05-31"
+    },
+    "https://www.engadget.com/2165585/anthropic-reportedly-agrees-to-pay-google-200-billion-for-chips-and-cloud-access/": {
+      "file": "2026-05-31-00.00-02.md",
+      "source": "Engadget — Anthropic $200B Google",
+      "first_seen": "2026-05-31"
+    },
+    "https://www.wired.com/story/huawei-chip-queen-moores-law-tau/": {
+      "file": "2026-05-31-00.00-03.md",
+      "source": "WIRED — Huawei Chip Queen",
+      "first_seen": "2026-05-31"
+    },
+    "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud": {
+      "file": "2026-05-31-00.00-04.md",
+      "source": "VentureBeat — Railway $100M",
+      "first_seen": "2026-05-31"
+    },
+    "https://venturebeat.com/technology/nous-researchs-nouscoder-14b-is-an-open-source-coding-model-landing-right-in": {
+      "file": "2026-05-31-00.00-05.md",
+      "source": "VentureBeat — NousCoder-14B",
+      "first_seen": "2026-05-31"
     }
   },
   "source_headlines": {
@@ -675,7 +700,8 @@
       "illinois resmi mengesahkan uu keamanan ai paling ketat perusahaan ai wajib diaudit pihak ketiga",
       "We asked the future of truth author to explain how he used AI it didnt go well",
       "vatican man inside anthropic",
-      "ibu baru pulang cuti kantor udah berubah total gegara ai"
+      "ibu baru pulang cuti kantor udah berubah total gegara ai",
+      "huaweis chip queen throws down gauntlet"
     ],
     "eletric-vehicles.com": [
       "robot humanoid xpeng iron mau masuk produksi massal bakal jualan toko"
@@ -778,7 +804,8 @@
     ],
     "www.engadget.com": [
       "meta acquires robotics ai startup makes push humanoid machines",
-      "meta reportedly working ai pendant smart glasses"
+      "meta reportedly working ai pendant smart glasses",
+      "anthropic reportedly agrees pay google 200 billion chips cloud access"
     ],
     "engadget.com": [
       "CNN gugat perplexity AI search hak cipta",
@@ -826,7 +853,10 @@
     "venturebeat.com": [
       "bottleneck agent bukan performa model tapi izin akses",
       "pinterest potong biaya ai dengan cara brutal",
-      "memo model ingatan ai baru upgrade llm tanpa retraining"
+      "memo model ingatan ai baru upgrade llm tanpa retraining",
+      "anthropic launches cowork claude desktop agent works your files coding required",
+      "railway secures 100 million challenge aws native cloud infrastructure",
+      "nous researchs nouscoder 14b open source coding model landing right claude code moment"
     ],
     "www.kxan.com": [
       "anggota kongres usul pajak hasilnya buat training ulang pekerja"
@@ -1438,7 +1468,57 @@
       "who": "Pinterest",
       "what": "AI Cost Cutting",
       "first_seen": "2026-05-30T23:03:00+07:00"
+    },
+    {
+      "who": "Anthropic",
+      "what": "Cowork",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Anthropic",
+      "what": "200B",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Anthropic",
+      "what": "Google Cloud",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Google",
+      "what": "200B",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Huawei",
+      "what": "Chip Queen",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Huawei",
+      "what": "Tau",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Railway",
+      "what": "Cloud",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Railway",
+      "what": "100M",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Nous Research",
+      "what": "NousCoder-14B",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Nous Research",
+      "what": "Coding Model",
+      "first_seen": "2026-05-31"
     }
   ],
-  "total": 117
+  "total": 122
 }
