@@ -559,6 +559,31 @@
       "file": "2026-05-30-22.00-02.md",
       "source": "The Verge",
       "first_seen": "2026-05-30"
+    },
+    "https://www.cnbc.com/2026/05/30/humanoid-robots-ukraine-war-foundation-military-ai.html": {
+      "file": "2026-05-30-23.00-01.md",
+      "source": "CNBC — Foundation Robotics Labs",
+      "first_seen": "2026-05-30"
+    },
+    "https://www.cnbc.com/2026/05/29/mythos-ai-models-eu-talks-us.html": {
+      "file": "2026-05-30-23.00-02.md",
+      "source": "CNBC — EU Mythos AI Talks",
+      "first_seen": "2026-05-30"
+    },
+    "https://www.wired.com/story/women-parental-leave-return-office-ai/": {
+      "file": "2026-05-30-23.00-03.md",
+      "source": "WIRED — New Moms AI Coding",
+      "first_seen": "2026-05-30"
+    },
+    "https://venturebeat.com/orchestration/pinterest-cut-ai-costs-90-by-gutting-a-frontier-models-vision-layer": {
+      "file": "2026-05-30-23.00-04.md",
+      "source": "VentureBeat — Pinterest AI Costs",
+      "first_seen": "2026-05-30"
+    },
+    "https://venturebeat.com/orchestration/memo-memory-model-teams-upgrade-llm-without-retraining": {
+      "file": "2026-05-30-23.00-05.md",
+      "source": "VentureBeat — MeMo Memory Model",
+      "first_seen": "2026-05-30"
     }
   },
   "source_headlines": {
@@ -649,7 +674,8 @@
       "illinois sahkan uu ai terkeras amerika bikin teknologi gigit jari",
       "illinois resmi mengesahkan uu keamanan ai paling ketat perusahaan ai wajib diaudit pihak ketiga",
       "We asked the future of truth author to explain how he used AI it didnt go well",
-      "vatican man inside anthropic"
+      "vatican man inside anthropic",
+      "ibu baru pulang cuti kantor udah berubah total gegara ai"
     ],
     "eletric-vehicles.com": [
       "robot humanoid xpeng iron mau masuk produksi massal bakal jualan toko"
@@ -668,7 +694,9 @@
       "nvidia gelontorkan 6 5 miliar ke startup cahaya bukan lampu tapi biar ai nggak mati kedinginan",
       "saham dell melonjak 32 pendapatan server ai naik 757 pemegang saham tersenyum lebar",
       "mistral explore designing own chips ceo says ramps infrastructure build",
-      "satelit kini makin pintar berkat bisa proses data orbit tanpa kirim bumi"
+      "satelit kini makin pintar berkat bisa proses data orbit tanpa kirim bumi",
+      "foundation robotics labs startup pro trump mau pasang robot humanoid di militer",
+      "eu desak untuk segera bahas regulasi model ai canggih"
     ],
     "arstechnica.com": [
       "illinois sahkan uu ai terketat trump kehilangan kendali regulasi",
@@ -796,7 +824,9 @@
       "startup china minimax siap ipo siapsiap perang model dengan deepseek"
     ],
     "venturebeat.com": [
-      "bottleneck agent bukan performa model tapi izin akses"
+      "bottleneck agent bukan performa model tapi izin akses",
+      "pinterest potong biaya ai dengan cara brutal",
+      "memo model ingatan ai baru upgrade llm tanpa retraining"
     ],
     "www.kxan.com": [
       "anggota kongres usul pajak hasilnya buat training ulang pekerja"
@@ -1388,7 +1418,27 @@
       "who": "Robinhood",
       "what": "Trading",
       "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Foundation Robotics",
+      "what": "Humanoid Robot Military",
+      "first_seen": "2026-05-30T23:03:00+07:00"
+    },
+    {
+      "who": "EU",
+      "what": "Mythos Regulation",
+      "first_seen": "2026-05-30T23:03:00+07:00"
+    },
+    {
+      "who": "WIRED",
+      "what": "Parental Leave AI",
+      "first_seen": "2026-05-30T23:03:00+07:00"
+    },
+    {
+      "who": "Pinterest",
+      "what": "AI Cost Cutting",
+      "first_seen": "2026-05-30T23:03:00+07:00"
     }
   ],
-  "total": 112
+  "total": 117
 }
