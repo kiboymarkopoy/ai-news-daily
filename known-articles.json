@@ -444,6 +444,16 @@
       "file": "2026-05-30-14.00-04.md",
       "source": "The Verge — Microsoft Copilot Health",
       "first_seen": "2026-05-30T14:11:14+07:00"
+    },
+    "https://www.bbc.com/news/articles/cdjp0n7rn41o": {
+      "file": "2026-05-30-15.00-01.md",
+      "source": "BBC — Ukraine AI Drones",
+      "first_seen": "2026-05-30"
+    },
+    "https://www.forbes.com/sites/janakirammsv/2026/05/19/anthropic-buys-the-sdk-pipeline-openai-and-gemini-depend-on/": {
+      "file": "2026-05-30-15.00-02.md",
+      "source": "Forbes — Anthropic Acquires Stainless SDK",
+      "first_seen": "2026-05-30"
     }
   },
   "source_headlines": {
@@ -456,7 +466,8 @@
     "www.bbc.com": [
       "ethical hacker juara dunia mungkin lomba terakhir gue",
       "bmw taruh robot humanoid pabrik mobil bukan mimpi lagi",
-      "bmw resmi pakai robot humanoid pabrik kata mereka masa depan produksi mobil"
+      "bmw resmi pakai robot humanoid pabrik kata mereka masa depan produksi mobil",
+      "ukraine pake drone ai hancurin konvoi rusia supply"
     ],
     "techcrunch.com": [
       "robotaxi china udah jalan kelihatannya nyaman banget",
@@ -596,7 +607,8 @@
       "demi moore hollywood jangan lawan ai ajak kerja sama aja"
     ],
     "www.forbes.com": [
-      "robot humanoid figure ai resmi kerja gudang jcpenney ropostale brooks brothers"
+      "robot humanoid figure ai resmi kerja gudang jcpenney ropostale brooks brothers",
+      "anthropic beli sdk pipeline yang dipake openai dan gemini"
     ],
     "www.theguardian.com": [
       "sutradara star wars ai kayak sutradara milyarder lagi flying ngelakuin apa aja lo minta"
@@ -1051,7 +1063,22 @@
       "who": "microsoft",
       "what": "healthcare",
       "first_seen": "2026-05-30T14:11:14+07:00"
+    },
+    {
+      "who": "Ukraine",
+      "what": "Drone",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Ukraine",
+      "what": "AI Warfare",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Anthropic",
+      "what": "Acquisition",
+      "first_seen": "2026-05-30"
     }
   ],
-  "total": 89
+  "total": 91
 }
