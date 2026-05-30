@@ -699,6 +699,21 @@
       "file": "2026-05-31-05.00-02.md",
       "source": "MarkTechPost",
       "first_seen": "2026-05-31"
+    },
+    "https://www.tomshardware.com/tech-industry/artificial-intelligence/uber-chief-warns-no-link-yet-between-ai-tokenmaxxing-and-shipping-successful-products-company-pumps-the-brakes-on-all-out-ai-spending": {
+      "file": "2026-05-31-06.00-01.md",
+      "source": "Tom's Hardware",
+      "first_seen": "2026-05-31"
+    },
+    "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPLUJuaTNNUnBTbDRHdzlHeUlxbXVfcE92M1NxOXVXaUQzMTZHcFhxNjhyVWNrTzZvb3JPRXZRLUU4bXhMZU9TbzZGbzRMTzdCcXg0Rk1jNmszZUZ1MWVkcGFPWVVPMnNSbHF1anJ3MnZaVU1BVHM5bFNhS0NIMFFiUmhZWHdWYUxyenhIRndLdkRZajJ3M1dXdTdIX0tGR3ZJT3JTbi1BY29HSXdhV1NfN3M5N0JIY256Y0R5QzhVVElPMXNBNTcxVFVJV0pMVEFGTmJHVmU0VzB1T3hoaHBR?oc=5": {
+      "file": "2026-05-31-06.00-02.md",
+      "source": "Reuters / The Information — Microsoft Coding Model",
+      "first_seen": "2026-05-31"
+    },
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTFBHel9Mb3NqNDNwREprSmNXeFYzUHdrVkkzRURsUUt5UHBnQWlRTlZ0TElGdi14UVNqQ3g4eFZDVU9aRmpabmNDM2tQdzRjODYwSUF6Sm04UlhMOG1lTy1qUW0wV2FQc1VROUtmVTB6SXJDN25k?oc=5": {
+      "file": "2026-05-31-06.00-03.md",
+      "source": "Axios — AI populist revolt",
+      "first_seen": "2026-05-31"
     }
   },
   "source_headlines": {
@@ -841,7 +856,8 @@
       "gila claude opus 4 8 saja meluncur langsung hajar gpt semua benchmark"
     ],
     "www.tomshardware.com": [
-      "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia"
+      "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
+      "uber chief warns link yet ai tokenmaxxing shipping successful products company pumps brakes ai spending"
     ],
     "ia.acs.org.au": [
       "spotify resmi masuk era remix ai karya fan jadi resmi"
@@ -983,7 +999,9 @@
     ],
     "news.google.com": [
       "bezos launches startup reported funding",
-      "anthropic guarded mythos model headed wider release"
+      "anthropic guarded mythos model headed wider release",
+      "microsoft release new coding model next week information reports",
+      "pitchforks are here billionaires work contain ai populist revolt"
     ],
     "www.marktechpost.com": [
       "stepfun releases step flash a b moe vision language model for coding agents and search workflows",
@@ -1740,7 +1758,37 @@
       "who": "Genesis AI",
       "what": "Genesis World 1.0",
       "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Uber",
+      "what": "Tokenmaxxing",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Uber",
+      "what": "AI spending",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Corporate America",
+      "what": "AI Rationing",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Goldman Sachs",
+      "what": "AI Token Demand",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Microsoft",
+      "what": "Coding Model",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Billionaires",
+      "what": "Populist Revolt",
+      "first_seen": "2026-05-31"
     }
   ],
-  "total": 140
+  "total": 143
 }
