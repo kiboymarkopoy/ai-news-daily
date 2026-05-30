@@ -514,6 +514,16 @@
       "file": "2026-05-30-18.00-07.md",
       "source": "IndieWire",
       "first_seen": "2026-05-30"
+    },
+    "https://www.nist.gov/news-events/news/2026/05/nist-expands-ai-consortiums-scope-calls-new-members": {
+      "file": "2026-05-30-19.00-01.md",
+      "source": "NIST",
+      "first_seen": "2026-05-30"
+    },
+    "https://www.engadget.com/2184224/meta-developing-ai-pendant-more-smart-glass-models/": {
+      "file": "2026-05-30-19.00-02.md",
+      "source": "Engadget",
+      "first_seen": "2026-05-30"
     }
   },
   "source_headlines": {
@@ -697,7 +707,8 @@
       "teachers union urges schools curb chatbots screen time"
     ],
     "www.engadget.com": [
-      "meta acquires robotics ai startup makes push humanoid machines"
+      "meta acquires robotics ai startup makes push humanoid machines",
+      "meta reportedly working ai pendant smart glasses"
     ],
     "engadget.com": [
       "CNN gugat perplexity AI search hak cipta",
@@ -750,6 +761,9 @@
     ],
     "www.indiewire.com": [
       "sutradara terkenal urungkan acara amazon mgm garagara hujatan kreator"
+    ],
+    "www.nist.gov": [
+      "nist expands ai consortium scope calls new members"
     ]
   },
   "cross_topics": [
@@ -1262,7 +1276,22 @@
       "who": "Jorge Gutierrez",
       "what": "CREATIVE",
       "first_seen": "2026-05-30"
+    },
+    {
+      "who": "NIST",
+      "what": "AI Consortium",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Meta",
+      "what": "AI Pendant",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Meta",
+      "what": "Wearables",
+      "first_seen": "2026-05-30"
     }
   ],
-  "total": 103
+  "total": 105
 }
