@@ -524,6 +524,31 @@
       "file": "2026-05-30-19.00-02.md",
       "source": "Engadget",
       "first_seen": "2026-05-30"
+    },
+    "https://arstechnica.com/ai/2026/05/apple-reportedly-trying-to-distill-googles-multi-trillion-parameter-gemini-ai-to-run-on-iphone/": {
+      "file": "2026-05-30-21.00-01.md",
+      "source": "Ars Technica — Apple Gemini iPhone Siri",
+      "first_seen": "2026-05-30"
+    },
+    "https://arstechnica.com/tech-policy/2026/05/nvidia-ceo-wants-taiwan-to-be-center-of-ai-revolution-not-us/": {
+      "file": "2026-05-30-21.00-02.md",
+      "source": "Ars Technica — Nvidia $150B Taiwan",
+      "first_seen": "2026-05-30"
+    },
+    "https://arstechnica.com/ai/2026/05/us-law-enforcement-warns-of-anti-tech-extremism-as-ai-hatred-grows/": {
+      "file": "2026-05-30-21.00-03.md",
+      "source": "Ars Technica — US Anti-Tech Extremism",
+      "first_seen": "2026-05-30"
+    },
+    "https://arstechnica.com/information-technology/2026/05/millions-of-ai-agents-imperiled-by-critical-vulnerability-in-open-source-package/": {
+      "file": "2026-05-30-21.00-04.md",
+      "source": "Ars Technica — AI Agent Vulnerability",
+      "first_seen": "2026-05-30"
+    },
+    "https://arstechnica.com/google/2026/05/youtube-to-begin-automatically-labeling-ai-videos/": {
+      "file": "2026-05-30-21.00-05.md",
+      "source": "Ars Technica — YouTube AI Labeling",
+      "first_seen": "2026-05-30"
     }
   },
   "source_headlines": {
@@ -644,7 +669,12 @@
       "robot humanoid figure ai lagi viral live 24 7 sortir paket kalahin manusia intern",
       "LLMs believe false statements even after explicit warnings that theyre false",
       "Fed up with vibe coders dev sneaks data nuking prompt injection into their code",
-      "Startup offers free home cleaning if it can record it all for robot training"
+      "Startup offers free home cleaning if it can record it all for robot training",
+      "apple working cram massive gemini model iphone power new siri",
+      "nvidia bets 150b taiwan trump plan make us ai hub backfires",
+      "us law enforcement warns anti tech extremism ai hatred grows",
+      "millions ai agents imperiled critical vulnerability open source package",
+      "youtube begin automatically labeling ai videos"
     ],
     "finance.yahoo.com": [
       "jensen huang gas ke taiwan nvidia mau investasi 150 miliar per tahun sana",
@@ -1291,7 +1321,42 @@
       "who": "Meta",
       "what": "Wearables",
       "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Apple",
+      "what": "Gemini",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Apple",
+      "what": "Siri",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Nvidia",
+      "what": "$150B",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "Nvidia",
+      "what": "Taiwan",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "FBI",
+      "what": "Extremism",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "DHS",
+      "what": "Extremism",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "who": "YouTube",
+      "what": "Labeling",
+      "first_seen": "2026-05-30"
     }
   ],
-  "total": 105
+  "total": 110
 }
