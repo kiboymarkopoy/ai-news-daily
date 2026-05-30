@@ -664,6 +664,31 @@
       "file": "2026-05-31-03.00-03.md",
       "source": "AP News",
       "first_seen": "2026-05-31"
+    },
+    "https://news.google.com/rss/articles/CBMiekFVX3lxTFB1TUJxel9YcktFWUZwQWZIODRidWZ5S0RHVko2TUdlOEQyVDBCZGladWJEZm1NSEZSTGRCQmlHWFlGRDExX3otYXBiVmpoUl91QmdqNWdHZm83OFZOUng0X0ZjNVI3TXZDNkRjTkgzeEdJbWVOc1cwOWZ3?oc=5": {
+      "file": "2026-05-31-04.00-01.md",
+      "source": "Crunchbase News — Bezos AI Startup $6.2B",
+      "first_seen": "2026-05-31"
+    },
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTUtDMmFiMmFTcWJoNG5WN3Bmc0x2X1RTNzVOUkVsSnVPS3R3TzktREZkUDAyWW1yTS1RSUtLUVBqbTdOTW5RQ051eWFldUFJeUhZejhhQ0k0S1lTZ3pMT1hCZ1dPcWlsekRxQTN3YkNiUHJSel9zcjVkMVZucFNMZ0ZwcmVyaFE1REhMQTdfbElSUXJJdHdqa3lXVzJjbElrekp2cUNxZXEzVFN2bHlhWExlZw?oc=5": {
+      "file": "2026-05-31-04.00-02.md",
+      "source": "Forbes — Anthropic Mythos Model",
+      "first_seen": "2026-05-31"
+    },
+    "https://www.engadget.com/2165373/pennsylvania-is-suing-characterai-over-chatbots-that-pretend-to-be-licensed-doctors/": {
+      "file": "2026-05-31-04.00-03.md",
+      "source": "Engadget — Pennsylvania sues Character.AI",
+      "first_seen": "2026-05-31"
+    },
+    "https://www.engadget.com/2165602/apple-will-pay-250-million-for-failing-to-deliver-its-ai-powered-siri-on-time/": {
+      "file": "2026-05-31-04.00-04.md",
+      "source": "Engadget — Apple $250M Siri Delay",
+      "first_seen": "2026-05-31"
+    },
+    "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/": {
+      "file": "2026-05-31-04.00-05.md",
+      "source": "TechCrunch — Meta AI Pendant",
+      "first_seen": "2026-05-31"
     }
   },
   "source_headlines": {
@@ -721,7 +746,8 @@
       "just like gold oil well soon able trade ai token futures",
       "how long anthropic lease spacex opinions vary",
       "what a joke github copilots new token based billing spurs consternation among devs",
-      "the groupthink boom what three top vcs really think about the ai frenzy"
+      "the groupthink boom what three top vcs really think about the ai frenzy",
+      "meta reportedly developing pendant"
     ],
     "www.rollingstone.com": [
       "film pertama buatan ai total tayang tribeca biaya cuma 2 000",
@@ -867,7 +893,9 @@
     ],
     "engadget.com": [
       "CNN gugat perplexity AI search hak cipta",
-      "Paramount plus pake ai bikin thumbnail star trek jelek"
+      "Paramount plus pake ai bikin thumbnail star trek jelek",
+      "pennsylvania suing character chatbots pretend licensed doctors",
+      "apple pay 250 million failing deliver powered siri time"
     ],
     "asia.nikkei.com": [
       "humanoid robots strut stuff trade show comes japan"
@@ -942,6 +970,10 @@
     "apnews.com": [
       "ai helped musician parkinson finish album longer play guitar",
       "ohio suspends data center tax break tech firms face pressure pay cost power ai"
+    ],
+    "news.google.com": [
+      "bezos launches startup reported funding",
+      "anthropic guarded mythos model headed wider release"
     ]
   },
   "cross_topics": [
@@ -1669,7 +1701,22 @@
       "who": "Ohio",
       "what": "Data-Center-Tax-Break",
       "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Bezos",
+      "what": "AI Startup",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Anthropic",
+      "what": "Mythos Model",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Character.AI",
+      "what": "Lawsuit",
+      "first_seen": "2026-05-31"
     }
   ],
-  "total": 133
+  "total": 138
 }
