@@ -294,6 +294,31 @@
       "file": "2026-05-30-07.00-04.md",
       "source": "TechCrunch",
       "first_seen": "2026-05-30"
+    },
+    "https://arstechnica.com/ai/2026/05/llms-believe-false-statements-even-after-explicit-warnings-that-theyre-false/": {
+      "file": "2026-05-30-08.00-01.md",
+      "source": "Ars Technica",
+      "first_seen": "2026-05-30"
+    },
+    "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/": {
+      "file": "2026-05-30-08.00-02.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-30"
+    },
+    "https://arstechnica.com/security/2026/05/fed-up-with-vibe-coders-dev-sneaks-data-nuking-prompt-injection-into-their-code/": {
+      "file": "2026-05-30-08.00-03.md",
+      "source": "Ars Technica",
+      "first_seen": "2026-05-30"
+    },
+    "https://arstechnica.com/ai/2026/05/robot-training-startup-will-send-humans-wearing-cameras-to-clean-your-home/": {
+      "file": "2026-05-30-08.00-04.md",
+      "source": "Ars Technica",
+      "first_seen": "2026-05-30"
+    },
+    "https://www.wired.com/story/future-of-truth-ai-interview/": {
+      "file": "2026-05-30-08.00-05.md",
+      "source": "WIRED",
+      "first_seen": "2026-05-30"
     }
   },
   "source_headlines": {
@@ -343,7 +368,8 @@
       "internet lagi dirombak total tapi bukan buat manusia buat robot",
       "programmer udah nge fomo banget sama ai tapi kata peneliti ini bahaya",
       "suara ai yang bikin merinding startup dari mantan bos oculus rilis app ios",
-      "apple diam diam siapin siri baru bocoran app ketangkap mau saingan sama chatgpt"
+      "apple diam diam siapin siri baru bocoran app ketangkap mau saingan sama chatgpt",
+      "Asana acquires no code agent builder StackAI"
     ],
     "www.rollingstone.com": [
       "film pertama buatan ai total tayang tribeca biaya cuma 2 000"
@@ -370,7 +396,8 @@
       "illinois saja mengesahkan uu ai paling keras amerika openai google wajib diaudit pihak ketiga",
       "illinois resmiin uu ai paling keras perusahaan ai wajib diaudit pihak ketiga",
       "illinois sahkan uu ai terkeras amerika bikin teknologi gigit jari",
-      "illinois resmi mengesahkan uu keamanan ai paling ketat perusahaan ai wajib diaudit pihak ketiga"
+      "illinois resmi mengesahkan uu keamanan ai paling ketat perusahaan ai wajib diaudit pihak ketiga",
+      "We asked the future of truth author to explain how he used AI it didnt go well"
     ],
     "eletric-vehicles.com": [
       "robot humanoid xpeng iron mau masuk produksi massal bakal jualan toko"
@@ -397,7 +424,10 @@
       "illinois sahkan uu ai terberat openai anthropic justru dukung",
       "illinois bikin undang undang ai paling keras trump makin kehilangan kendali",
       "trump gigit jari illinois sahkan undang undang ai paling keras didukung openai",
-      "robot humanoid figure ai lagi viral live 24 7 sortir paket kalahin manusia intern"
+      "robot humanoid figure ai lagi viral live 24 7 sortir paket kalahin manusia intern",
+      "LLMs believe false statements even after explicit warnings that theyre false",
+      "Fed up with vibe coders dev sneaks data nuking prompt injection into their code",
+      "Startup offers free home cleaning if it can record it all for robot training"
     ],
     "finance.yahoo.com": [
       "jensen huang gas ke taiwan nvidia mau investasi 150 miliar per tahun sana",
@@ -655,7 +685,32 @@
       "who": "Siri",
       "what": "Siri app",
       "first_seen": "2026-05-30T07:00:00+07:00"
+    },
+    {
+      "who": "LLM",
+      "what": "Research",
+      "first_seen": "2026-05-30T08:08:00+07:00"
+    },
+    {
+      "who": "Asana",
+      "what": "Acquisition",
+      "first_seen": "2026-05-30T08:08:00+07:00"
+    },
+    {
+      "who": "Developer",
+      "what": "Prompt Injection",
+      "first_seen": "2026-05-30T08:08:00+07:00"
+    },
+    {
+      "who": "Startup",
+      "what": "Robot Training",
+      "first_seen": "2026-05-30T08:08:00+07:00"
+    },
+    {
+      "who": "WIRED",
+      "what": "Book",
+      "first_seen": "2026-05-30T08:08:00+07:00"
     }
   ],
-  "total": 59
+  "total": 64
 }

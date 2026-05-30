@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Cognition\u2019s Scott Wu says AI coding agents shouldn\u2019t replace humans",
+    "link": "https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans/",
+    "desc": "Cognition makes Devin, the first and arguably most successful AI coding agent. But famed coder Wu says it isn't designed to supplant human programmers.",
+    "pubdate": "Fri, 29 May 2026 16:13:47 +0000",
+    "source": "TechCrunch"
+  },
+  {
+    "title": "Asana acquires no-code agent-builder StackAI",
+    "link": "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/",
+    "desc": "Asana will incorporate StackAI into its growing suite of AI workflow tools.",
+    "pubdate": "Thu, 28 May 2026 20:06:07 +0000",
+    "source": "TechCrunch"
+  },
+  {
+    "title": "Just like gold and oil, we\u2019ll soon be able to trade AI token futures",
+    "link": "https://techcrunch.com/2026/05/28/just-like-gold-and-oil-well-soon-be-able-to-trade-ai-token-futures/",
+    "desc": "Large exchanges are designing derivative products around AI tokens, which are increasingly being considered less a computational output and more a raw material input, like electricity or bandwidth.",
+    "pubdate": "Thu, 28 May 2026 18:32:25 +0000",
+    "source": "TechCrunch"
+  },
+  {
+    "title": "How long is Anthropic\u2019s lease with SpaceX? Opinions vary",
+    "link": "https://techcrunch.com/2026/05/28/how-long-is-anthropics-lease-with-spacex-opinions-vary/",
+    "desc": "Elon Musk is publicly reframing xAI\u2019s massive Anthropic compute deal as short-term and cancellable, despite SpaceX\u2019s own S-1 filing describing payments through May 2029.",
+    "pubdate": "Thu, 28 May 2026 15:36:00 +0000",
+    "source": "TechCrunch"
+  },
+  {
+    "title": "Startup offers free home cleaning\u2014if it can record it all for robot training",
+    "link": "https://arstechnica.com/ai/2026/05/robot-training-startup-will-send-humans-wearing-cameras-to-clean-your-home/",
+    "desc": "The latest twist in paying humans to wear head cameras for robot training data.",
+    "pubdate": "Fri, 29 May 2026 16:16:14 +0000",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "LLMs believe false statements even after explicit warnings that they're false",
+    "link": "https://arstechnica.com/ai/2026/05/llms-believe-false-statements-even-after-explicit-warnings-that-theyre-false/",
+    "desc": "Fine-tuning tests show \"bias... toward confidently representing the claims as true.\"",
+    "pubdate": "Thu, 28 May 2026 21:29:43 +0000",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "Fed up with vibe coders, dev sneaks data-nuking prompt injection into their code",
+    "link": "https://arstechnica.com/security/2026/05/fed-up-with-vibe-coders-dev-sneaks-data-nuking-prompt-injection-into-their-code/",
+    "desc": "Undisclosed addition in jqwik instructed AI coding agents to delete app output.",
+    "pubdate": "Thu, 28 May 2026 20:29:53 +0000",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "Hands-On With Gemini Spark: I Gave It Access to My Life and It Friend-Zoned My Boyfriend",
+    "link": "https://www.wired.com/story/google-gemini-spark-ai-agent-hands-on/",
+    "desc": "Google\u2019s new AI agent combed through my emails, documents, and calendar to plan a birthday party and still didn\u2019t clock the person most important to me.",
+    "pubdate": "Fri, 29 May 2026 19:07:46 +0000",
+    "source": "WIRED"
+  },
+  {
+    "title": "We Asked the \u2018Future of Truth\u2019 Author to Explain How He Used AI. It Didn\u2019t Go Well",
+    "link": "https://www.wired.com/story/future-of-truth-ai-interview/",
+    "desc": "A book about how AI shapes perceptions of reality came under fire for using AI-generated quotes. Its problems go beyond that.",
+    "pubdate": "Fri, 29 May 2026 16:30:00 +0000",
+    "source": "WIRED"
+  },
+  {
+    "title": "The Vatican\u2019s Man Inside Anthropic",
+    "link": "https://www.wired.com/story/the-vaticans-man-inside-anthropic/",
+    "desc": "Pope Leo XIV may not be able to disarm AI, but he\u2019s got the attention of the industry.",
+    "pubdate": "Fri, 29 May 2026 15:00:00 +0000",
+    "source": "WIRED"
+  },
+  {
+    "title": "New Moms Are Returning to Coding Jobs Radically Reshaped by AI",
+    "link": "https://www.wired.com/story/women-parental-leave-return-office-ai/",
+    "desc": "New mothers working in software development are staring down an AI-pilled workplace they barely recognize.",
+    "pubdate": "Thu, 28 May 2026 11:00:00 +0000",
+    "source": "WIRED"
+  },
+  {
+    "title": "Vertu Is Back With a Folding Phone Powered by\u2014Surprise\u2014an AI Agent",
+    "link": "https://www.wired.com/story/vertu-alphafold-folding-phone-powered-by-hermes-agent-ai/",
+    "desc": "The beleaguered luxury phone maker is pushing the AlphaFold, which has decent specs and comes with Vertu\u2019s new Hermes Agent on board, to wealthy would-be buyers.",
+    "pubdate": "Thu, 28 May 2026 07:00:00 +0000",
+    "source": "WIRED"
+  }
+]
