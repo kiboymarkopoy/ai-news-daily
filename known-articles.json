@@ -914,6 +914,11 @@
       "file": "2026-06-01-02.00-01.md",
       "source": "Los Angeles Times — Robot puppeteers training humanoids",
       "first_seen": "2026-06-01"
+    },
+    "https://techcrunch.com/2026/05/31/this-is-fine-artist-kc-green-reaches-agreement-with-ai-startup-artisan/": {
+      "file": "2026-06-01-03.00-01.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-06-01"
     }
   },
   "source_headlines": {
@@ -980,7 +985,8 @@
       "pope use ai write dangers ai",
       "pope use ai write dangers ai",
       "pope use ai write dangers ai",
-      "making sense debate psychosis"
+      "making sense debate psychosis",
+      "this fine artist kc green reaches agreement ai startup artisan"
     ],
     "www.rollingstone.com": [
       "film pertama buatan ai total tayang tribeca biaya cuma 2 000",
@@ -2313,7 +2319,22 @@
       "who": "Silicon Valley",
       "what": "Startup",
       "first_seen": "2026-06-01"
+    },
+    {
+      "who": "KC Green",
+      "what": "Artisan",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "who": "KC Green",
+      "what": "AI Startup Settlement",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "who": "Artisan",
+      "what": "Copyright",
+      "first_seen": "2026-06-01"
     }
   ],
-  "total": 183
+  "total": 184
 }
