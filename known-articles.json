@@ -809,6 +809,21 @@
       "file": "2026-05-31-14.00-03.md",
       "source": "VentureBeat — AutoTTS",
       "first_seen": "2026-05-31"
+    },
+    "https://interestingengineering.com/ai-robotics/china-engineai-humanoid-robot-factory": {
+      "file": "2026-05-31-15.00-01.md",
+      "source": "Interesting Engineering",
+      "first_seen": "2026-05-31"
+    },
+    "https://interestingengineering.com/ai-robotics/hyundai-atlas-humanoid-robot-football-skills": {
+      "file": "2026-05-31-15.00-02.md",
+      "source": "Interesting Engineering",
+      "first_seen": "2026-05-31"
+    },
+    "https://www.theregister.com/ai-ml/2026/05/31/netflix-wiz-creates-app-to-slash-ai-bills-then-open-sources-it/5248702": {
+      "file": "2026-05-31-15.00-03.md",
+      "source": "The Register",
+      "first_seen": "2026-05-31"
     }
   },
   "source_headlines": {
@@ -1118,7 +1133,9 @@
       "meta ngejar mimpi ai bisakah ai jadi jurus andalan"
     ],
     "interestingengineering.com": [
-      "china post deploys humanoid robots sort 1200 parcels per hour"
+      "china post deploys humanoid robots sort 1200 parcels per hour",
+      "china engineai 129 000 factory claims build one humanoid robot every mins",
+      "hyundai showcases atlas humanoid robot football skills new world cup themed series"
     ],
     "theatlantic.com": [
       "slop coming for your playlists"
@@ -1138,6 +1155,9 @@
     "techtimes.com": [
       "galaxy corporation humanoid robot fashion show seoul cowboy hats silks bowieera trousers",
       "google coscientist reaches nature hypothesis agents validated lab clinic"
+    ],
+    "www.theregister.com": [
+      "netflix wiz creates app slash bills open sources"
     ]
   },
   "cross_topics": [
@@ -2050,7 +2070,22 @@
       "who": "RESEARCHERS",
       "what": "AUTOTTS",
       "first_seen": "2026-05-31"
+    },
+    {
+      "who": "ENGINEAI",
+      "what": "ROBOT",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Hyundai",
+      "what": "ROBOT",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Netflix",
+      "what": "AI COST",
+      "first_seen": "2026-05-31"
     }
   ],
-  "total": 162
+  "total": 165
 }
