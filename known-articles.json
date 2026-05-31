@@ -864,6 +864,31 @@
       "file": "2026-05-31-19.06-05.md",
       "source": "WIRED — Oura’s New Ring 5 Is Smaller and Lighter—a",
       "first_seen": "2026-05-31"
+    },
+    "https://news.google.com/rss/articles/CBMimwFBVV95cUxNandXd2xiaWlub2RzM1RaanhmdXFuWFBkXzdtT0NzSnFoR0ZCRGJHeEtWWm51cVJDZXd1U2RfRXY3NzVnRXdiUmV3NDdXTDl0c3BOY0Zkal9Wd2FqNjZhLVRqclc0aF9JaWpxWlhkMGZQcHB5VWhjRWtpUWpCemdxZHZobjVPSEpNZHhKQURqWGpmcHRCS2lEQ2xtQQ?oc=5": {
+      "file": "2026-05-31-20.00-01.md",
+      "source": "NPR — Free private AI models",
+      "first_seen": "2026-05-31T20:00:00+07:00"
+    },
+    "https://news.google.com/rss/articles/CBMihAFBVV95cUxPR2QtZzBidjY5RHE0UFFPOUxsMkkwUFhaZEpOamI0R1FvWjk3QlhDYVNlbUdfMlJidE9WbGpUX2hGX3g5MmV0Um9tejhqOGpqUHF2UTRrNHpRS0hFZmpzZ3V0VEFBQk9OOHE4cC1lQkNsSFdKSnJ3bU1EVjlJUnQ0Zm1zLU0?oc=5": {
+      "file": "2026-05-31-20.00-02.md",
+      "source": "Axios — AI energy business",
+      "first_seen": "2026-05-31T20:00:00+07:00"
+    },
+    "https://news.google.com/rss/articles/CBMimAFBVV95cUxPak5LdkZ4OERMQXhaYVlzV1RPcjFsaldaalh1SXpaTVFocEw2ZXlOcWU5ZkNTWFgwYVEwTkU4WTRWMWR3NXF3a2RrNzZwbC1Vc185alhYSWI5OVFzVjFma1lUSkZCTGdUUUJVUmdKOVhhSjRPRFlack40XzU5QkYzeU5kRTl5Y09SSTZwT1RuVFFseTluVVR1eA?oc=5": {
+      "file": "2026-05-31-20.00-03.md",
+      "source": "Newsday — Pentagon battlefield AI",
+      "first_seen": "2026-05-31T20:00:00+07:00"
+    },
+    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZG1Db2RaSlZVLTQ2ajlUUFJIVlV1cUtaT1NndzJwY19iaURFbDhmN05ZYnpkV0d5VTVoSy1pcWU2Vm94X0tCZS05bEtsRG9RTi1zbEpFQ1otNWF0QTN5ay1wN1R4dkFGdDNEYV82Si1HalpTeFVrclJoUXJHSTJGTC03SktZMHh5OFk4dHF3c3hrTW51T3JRZVhpUkVqSHNQTGx3Mkp1NHd4SUcyYklkVmloYkxoT3Yzbmp3?oc=5": {
+      "file": "2026-05-31-20.00-04.md",
+      "source": "NBC News — China global dominance",
+      "first_seen": "2026-05-31T20:00:00+07:00"
+    },
+    "https://news.google.com/rss/articles/CBMifkFVX3lxTE5wY3ZQLUFsajEySUd3WklSbjFTeEE0eXk2akdhVG92WG9wbFdfbTE4UWpLQ1lYZG9pSTZzQUR1MVdIUlh6QTY2U3R6SDJnZl9QdTRQbFNJTm9GdXhObmpGU2tGUU1NQjZLYjZhdkZHejZXbDZUYUdUeTV6MGNMQQ?oc=5": {
+      "file": "2026-05-31-20.00-05.md",
+      "source": "NYT — Tilly Norwood AI Actress",
+      "first_seen": "2026-05-31T20:00:00+07:00"
     }
   },
   "source_headlines": {
@@ -1074,7 +1099,8 @@
       "pope use ai write dangers ai"
     ],
     "nytimes.com": [
-      "teachers union urges schools curb chatbots screen time"
+      "teachers union urges schools curb chatbots screen time",
+      "tilly norwood ai actress wants to know why everyone mad at her"
     ],
     "www.engadget.com": [
       "meta acquires robotics ai startup makes push humanoid machines",
@@ -1213,6 +1239,18 @@
     ],
     "www.theregister.com": [
       "netflix wiz creates app slash bills open sources"
+    ],
+    "npr.org": [
+      "ai models free private will never say no"
+    ],
+    "axios.com": [
+      "ai is turning energy into the hottest business in america"
+    ],
+    "newsday.com": [
+      "as the pentagon pushes for battlefield ai some military leaders urge caution"
+    ],
+    "nbcnews.com": [
+      "inside china push for global dominance evs robotics ai pandas"
     ]
   },
   "cross_topics": [
@@ -2175,7 +2213,12 @@
       "who": "Kiwibit",
       "what": "AI Bird Feeder",
       "first_seen": "2026-05-31T18:04:00+07:00"
+    },
+    {
+      "who": "Pentagon",
+      "what": "Military",
+      "first_seen": "2026-05-31T20:00:00+07:00"
     }
   ],
-  "total": 173
+  "total": 178
 }
