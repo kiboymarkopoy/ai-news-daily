@@ -1,298 +1,232 @@
 #!/usr/bin/env python3
-"""Better fetch that gets real URLs from articles."""
-
-import json, re, time, urllib.request, xml.etree.ElementTree as ET
+"""Fetch recent news from RSS feeds with real URLs, filter by recency."""
+import urllib.request
+import xml.etree.ElementTree as ET
+import json
+import re
+import ssl
+from urllib.parse import urlparse, parse_qs
 from datetime import datetime, timezone, timedelta
-from urllib.parse import urlparse
+import sys
 
-WIB = timezone(timedelta(hours=7))
-now = datetime.now(WIB)
-cutoff = now - timedelta(hours=24)  # ~29 May 05:30 WIB
+ssl_ctx = ssl.create_default_context()
+ssl_ctx.check_hostname = False
+ssl_ctx.verify_mode = ssl.CERT_NONE
 
-# Better exclusion - exclude Tribeca/Dreams of Violets, etc
-def should_exclude(title, summary):
-    t = (title + ' ' + summary).lower()
-    excludes = [
-        'dreams of violets', 'tribeca', 'rolling stones', 'paul schrader',
-        'steven spielberg', 'spielberg', 'adobe', 'elevenlabs',
-        'spotify ai remix', 'demi moore', 'gareth edwards', 'jurassic',
-        'val kilmer', 'tilly norwood', 'tilly tax',
-        'first fully ai-generated feature film',
-        'first fully ai-generated film',
-        'no cast, no crew, no cameras',
-        'first 95-minute ai movie',
-    ]
-    for ex in excludes:
-        if ex in t:
+def fetch_url(url, timeout=25):
+    req = urllib.request.Request(url, headers={
+        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36',
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=timeout, context=ssl_ctx) as resp:
+            return resp.read().decode('utf-8', errors='replace')
+    except Exception as e:
+        return None
+
+def parse_rss(xml_data, default_source=''):
+    articles = []
+    try:
+        root = ET.fromstring(xml_data)
+        for item in root.iter('item'):
+            title = item.findtext('title', '').strip()
+            link = item.findtext('link', '').strip()
+            pubdate = item.findtext('pubDate', '').strip()
+            if title and link and len(link) > 15:
+                articles.append({'source': default_source, 'title': title, 'link': link, 'pubdate': pubdate})
+    except:
+        pass
+    return articles
+
+def parse_tc_html(html, default_source='TechCrunch'):
+    """Extract article info from TechCrunch RSS XML"""
+    articles = []
+    try:
+        root = ET.fromstring(html)
+        for item in root.iter('item'):
+            title = item.findtext('title', '').strip()
+            link = item.findtext('link', '').strip()
+            pubdate = item.findtext('pubDate', '').strip()
+            if title and link and '/2026/' in link:
+                articles.append({'source': default_source, 'title': title, 'link': link, 'pubdate': pubdate})
+    except:
+        pass
+    return articles
+
+def get_domain(url):
+    return urlparse(url).netloc.replace('www.', '')
+
+def is_recent(pubdate_str, max_hours=48):
+    """Check if article is recent (within max_hours)"""
+    if not pubdate_str:
+        return False
+    for fmt in ['%a, %d %b %Y %H:%M:%S %z', '%a, %d %b %Y %H:%M:%S %Z']:
+        try:
+            dt = datetime.strptime(pubdate_str, fmt)
+            now = datetime.now(timezone.utc)
+            diff = now - dt
+            return diff.total_seconds() < max_hours * 3600 and diff.total_seconds() > -3600  # not in future either
+        except:
+            continue
+    return False
+
+# Load known articles
+with open('/root/ai-news-daily/known-articles.json') as f:
+    known = json.load(f)
+known_urls = set(known.get('articles', {}).keys())
+
+STOP_WORDS = set('a an the in on of to for and or is are was were be been has had have do does did will would could should may might must shall can need dare ought used'.split())
+
+def normalize_headline(title):
+    t = title.lower()
+    t = re.sub(r'[^a-z0-9\s]', '', t)
+    words = [w for w in t.split() if w not in STOP_WORDS and len(w) > 2]
+    return ' '.join(words)
+
+known_headlines_by_domain = known.get('source_headlines', {})
+
+def check_layer2(title, domain):
+    if domain not in known_headlines_by_domain:
+        return False
+    norm = normalize_headline(title).split()
+    if not norm:
+        return False
+    for existing in known_headlines_by_domain[domain]:
+        existing_words = existing.split()
+        if not existing_words:
+            continue
+        common = set(norm) & set(existing_words)
+        overlap = len(common) / max(len(set(norm)), len(set(existing_words)))
+        if overlap > 0.5:
             return True
     return False
 
-# Only fetch these targeted sources for freshness
-SOURCES = {
-    "The Guardian": "https://www.theguardian.com/technology/artificialintelligenceai/rss",
-    "Hollywood Reporter": "https://www.hollywoodreporter.com/feed/",
-    "Deadline": "https://deadline.com/feed/",
-    "Variety": "https://variety.com/feed/",
-    "Rolling Stone": "https://www.rollingstone.com/feed/",
-}
+known_cross_topics = known.get('cross_topics', [])
 
-# Also use Google News more specifically
-GOOGLE_NEWS_QUERIES = {
-    "Google News AI Entertainment": "https://news.google.com/rss/search?q=AI+entertainment+OR+AI+Hollywood+OR+AI+film+production+OR+AI+music+industry&hl=en-US&gl=US&ceid=US:en",
-    "Google News AI Gaming": "https://news.google.com/rss/search?q=AI+gaming+OR+AI+game+development+OR+AI+video+games&hl=en-US&gl=US&ceid=US:en",
-    "Google News Creative AI": "https://news.google.com/rss/search?q=AI+generative+content+OR+AI+creative+industry+OR+AI+media+production&hl=en-US&gl=US&ceid=US:en",
-}
+def check_layer3(title):
+    title_lower = title.lower()
+    # Check if any known cross_topic pair appears in this title
+    for ct in known_cross_topics:
+        who = ct['who'].lower()
+        what = ct['what'].lower()
+        if who in title_lower and what in title_lower:
+            return True
+    return False
 
-def fetch(url, retries=2):
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-    }
-    for attempt in range(retries):
-        try:
-            req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req, timeout=20) as r:
-                return r.read().decode('utf-8', errors='replace')
-        except Exception as e:
-            if attempt < retries - 1: time.sleep(1)
-            else: return None
+# === FETCH ===
+all_articles = []
 
-def resolve_google_news_url(google_url):
-    """Try to extract the real URL from a Google News redirect URL."""
-    # Google News RSS links are redirects. Try to follow them with a HEAD request.
-    try:
-        req = urllib.request.Request(google_url, method='HEAD', headers={
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-        })
-        with urllib.request.urlopen(req, timeout=10) as r:
-            return r.url
-    except:
-        pass
-    return google_url
+# TechCrunch
+print("=== TECHCRUNCH ===", file=sys.stderr)
+data = fetch_url("https://techcrunch.com/category/artificial-intelligence/feed/")
+if data:
+    arts = parse_tc_html(data, 'TechCrunch')
+    print(f"Got {len(arts)} TC articles", file=sys.stderr)
+    all_articles.extend(arts)
 
-def extract_og_image(html, base_url="", follow_redirects=True):
-    if not html: return ""
-    
-    # Try og:image
-    patterns = [
-        (r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']', re.I),
-        (r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']', re.I),
-        (r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\']', re.I),
-        (r'<meta[^>]+property=["\']og:image:secure_url["\'][^>]+content=["\']([^"\']+)["\']', re.I),
-    ]
-    
-    for pat, flags in patterns:
-        m = re.search(pat, html, flags)
-        if m:
-            url = m.group(1)
-            if url.startswith('//'): url = 'https:' + url
-            elif url.startswith('/') and base_url:
-                parsed = urlparse(base_url)
-                url = f'{parsed.scheme}://{parsed.netloc}{url}'
-            return url
-    
-    # Fallback: look for first large image
-    m = re.search(r'<img[^>]+src=["\']([^"\']+)["\'][^>]+(?:width=["\']\d{3,}["\']|class=["\'][^"\']*(?:hero|featured|lead|header)[^"\']*["\'])', html, re.I)
-    if m: return m.group(1)
-    
-    return ""
+# Ars Technica
+print("=== ARSTECHNICA ===", file=sys.stderr)
+data = fetch_url("https://feeds.arstechnica.com/arstechnica/index")
+if data:
+    arts = parse_rss(data, 'Ars Technica')
+    print(f"Got {len(arts)} Ars articles", file=sys.stderr)
+    all_articles.extend(arts)
 
-def parse_feed(xml_text, source_name):
-    if not xml_text: return []
-    articles = []
-    try:
-        root = ET.fromstring(xml_text)
-    except:
-        return []
+# WIRED AI
+print("=== WIRED ===", file=sys.stderr)
+data = fetch_url("https://www.wired.com/feed/tag/ai/latest/rss")
+if data:
+    arts = parse_rss(data, 'WIRED')
+    print(f"Got {len(arts)} WIRED articles", file=sys.stderr)
+    all_articles.extend(arts)
+
+# The Verge - fetch and extract stories from HTML
+print("=== THEVERGE ===", file=sys.stderr)
+data = fetch_url("https://www.theverge.com/ai-artificial-intelligence")
+if data:
+    links = re.findall(r'href="(/ai-artificial-intelligence/\d+/[^"]+)"', data)
+    seen = set()
+    for link in links:
+        full_url = f"https://www.theverge.com{link}"
+        if full_url not in seen:
+            seen.add(full_url)
+            title_match = re.search(rf'href="{re.escape(link)}"[^>]*>([^<]+)', data)
+            title = title_match.group(1).strip() if title_match else ''
+            if title:
+                all_articles.append({'source': 'The Verge', 'title': title, 'link': full_url, 'pubdate': ''})
+
+# Engadget
+print("=== ENGADGET ===", file=sys.stderr)
+data = fetch_url("https://www.engadget.com/rss.xml")
+if data:
+    arts = parse_rss(data, 'Engadget')
+    print(f"Got {len(arts)} Engadget articles", file=sys.stderr)
+    all_articles.extend(arts)
+
+# CNBC AI
+print("=== CNBC ===", file=sys.stderr)
+data = fetch_url("https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100006641")
+if data:
+    arts = parse_rss(data, 'CNBC')
+    print(f"Got {len(arts)} CNBC articles", file=sys.stderr)
+    all_articles.extend(arts)
+
+# Only keep articles with real URLs (not Google News redirects) and current year
+filtered = []
+for a in all_articles:
+    link = a['link']
+    domain = get_domain(link)
     
-    items = []
-    ch = root.find('channel')
-    if ch is not None:
-        items = ch.findall('item')
-        atom = False
-    else:
-        ns = '{http://www.w3.org/2005/Atom}'
-        items = root.findall(f'{ns}entry') or root.findall(f'{ns}entry')
-        atom = True
+    # Skip Google News redirect URLs
+    if domain in ('news.google.com',):
+        continue
     
-    for item in items:
-        try:
-            if atom:
-                ns = '{http://www.w3.org/2005/Atom}'
-                t = item.find(f'{ns}title')
-                le = item.find(f'{ns}link')
-                link = le.get('href','') if le is not None else ''
-                pe = item.find(f'{ns}published') or item.find(f'{ns}updated')
-                se = item.find(f'{ns}summary') or item.find(f'{ns}content')
-                title = (t.text or '') if t is not None else ''
-                date_str = (pe.text or '') if pe is not None else ''
-                summary = (se.text or '') if se is not None else ''
-            else:
-                t = item.find('title')
-                le = item.find('link')
-                link = (le.text or '').strip() if le is not None else ''
-                if not link: link = le.get('href','') if le is not None else ''
-                pe = item.find('pubDate')
-                se = item.find('description')
-                ce = item.find('{http://purl.org/rss/1.0/modules/content/}encoded')
-                if ce is None:
-                    ce = item.find('content:encoded')
-                title = (t.text or '') if t is not None else ''
-                date_str = (pe.text or '') if pe is not None else ''
-                summary = (se.text or '') if se is not None else ''
-                if ce is not None and ce.text:
-                    summary = ce.text
-            
-            title = title.replace('&amp;','&').replace('&lt;','<').replace('&gt;','>')
-            summary = re.sub(r'<[^>]+>',' ', summary).strip()[:500]
-            
-            pub_date = None
-            for fmt in ['%a, %d %b %Y %H:%M:%S %z', '%a, %d %b %Y %H:%M:%S %Z',
-                        '%Y-%m-%dT%H:%M:%S%z', '%Y-%m-%dT%H:%M:%SZ',
-                        '%Y-%m-%dT%H:%M:%S.%fZ', '%Y-%m-%dT%H:%M:%S.%f%z']:
-                try:
-                    pub_date = datetime.strptime(date_str.strip(), fmt)
-                    break
-                except: continue
-            if pub_date and pub_date.tzinfo is None:
-                pub_date = pub_date.replace(tzinfo=timezone.utc)
-            
-            # If we have no date, skip (can't verify freshness)
-            if not pub_date: continue
-            
-            # Check if within last 24h
-            if pub_date < (datetime.now(timezone.utc) - timedelta(hours=30)):
-                continue  # Give 6h buffer for timezone mismatch
-            
-            articles.append({
-                'title': title.strip(),
-                'url': link,
-                'source': source_name,
-                'pub_date': pub_date.isoformat(),
-                'summary': summary,
-            })
-        except:
+    # Skip non-2026 articles (check URL for year)
+    if '/2025/' in link or '/2024/' in link or '/2023/' in link:
+        continue
+    
+    # Skip if not recent
+    if a['pubdate'] and not is_recent(a['pubdate']):
+        # Still include if no date — we'll check URL freshness
+        if '/2026/05/3' not in link and '/2026/05/2' not in link and '2026/05/31' not in link and '2026-05-31' not in link:
             continue
     
-    return articles
+    filtered.append(a)
 
-# Fetch from major sources
-all_articles = []
-for name, url in SOURCES.items():
-    print(f"  {name}...", end=' ', flush=True)
-    xml = fetch(url)
-    if not xml:
-        print("FAIL")
+# Dedup by URL
+seen_urls = set()
+unique = []
+for a in filtered:
+    if a['link'] in seen_urls:
         continue
-    arts = parse_feed(xml, name)
-    print(f"{len(arts)}")
-    all_articles.extend(arts)
-    time.sleep(0.2)
+    seen_urls.add(a['link'])
+    unique.append(a)
 
-# Fetch from Google News
-for name, url in GOOGLE_NEWS_QUERIES.items():
-    print(f"  {name}...", end=' ', flush=True)
-    xml = fetch(url)
-    if not xml:
-        print("FAIL")
-        continue
-    arts = parse_feed(xml, name)
-    # Google News RSS returns MANY items, narrow down
-    print(f"{len(arts)}")
-    all_articles.extend(arts)
-    time.sleep(0.2)
+print(f"\nTotal unique articles with real URLs: {len(unique)}", file=sys.stderr)
 
-print(f"\nTotal fresh articles: {len(all_articles)}")
-
-# Filter for relevance
-relevant = []
-seen = set()
-for art in all_articles:
-    if art['url'] in seen: continue
-    seen.add(art['url'])
+# Apply 3-layer dedup
+passed = []
+for a in unique:
+    url = a['link']
+    title = a['title']
+    domain = get_domain(url)
     
-    if should_exclude(art['title'], art['summary']):
+    # Layer 1
+    if url in known_urls:
         continue
     
-    t = (art['title'] + ' ' + art['summary']).lower()
+    # Layer 2
+    if check_layer2(title, domain):
+        continue
     
-    # Must have AI + creative/media terms
-    has_ai = any(x in t for x in [' ai ', ' ai)', '(ai ', ' artificial intelligence', ' ai-'])
-    # Broader catch
-    has_ai_broad = any(x in t for x in [
-        'ai ', ' artificial intelligence', 'machine learning',
-        'generative ai', 'ai-generated', 'ai-powered', 'ai-assisted',
-        'openai', 'midjourney', 'stable diffusion', 'suno', 'udio',
-        'runway', 'sora',
-    ])
+    # Layer 3
+    if check_layer3(title):
+        continue
     
-    has_creative = any(x in t for x in [
-        'film', 'movie', 'cinema', 'hollywood', 'actor', 'actress',
-        'music', 'song', 'musician', 'singer', 'album',
-        'art', 'artist', 'creative',
-        'game', 'gaming', 'video game', 'game dev', 'animation',
-        'studio', 'entertainment', 'streaming', 'netflix',
-        'voice', 'voiceover', 'script', 'screenplay',
-        'content creation', 'production',
-        'director', 'producer', 'record label', 'record deal',
-        'music video', 'oscar', 'cannes',
-    ])
-    
-    if has_ai_broad and has_creative:
-        relevant.append(art)
+    passed.append(a)
 
-print(f"Relevant after filtering: {len(relevant)}")
+print(f"Articles that passed dedup: {len(passed)}", file=sys.stderr)
 
-# Sort by date (newest first)
-relevant.sort(key=lambda a: a.get('pub_date', ''), reverse=True)
-
-# Take top 25
-top = relevant[:25]
-print(f"Top articles for detail fetch:\n")
-
-# For each, try to resolve to real URL and fetch og:image
-results = []
-for i, art in enumerate(top):
-    print(f"  [{i+1}/{len(top)}] {art['title'][:70]}")
-    
-    # Get real URL (Google News redirects)
-    real_url = art['url']
-    print(f"       URL: {real_url[:90]}")
-    
-    # Resolve Google News redirect
-    if 'news.google.com/rss/articles' in real_url:
-        real_url = resolve_google_news_url(real_url)
-        print(f"       Resolved: {real_url[:90]}")
-        if real_url and 'news.google.com' in real_url:
-            # Try to extract from URL params
-            m = re.search(r'[?&]url=([^&]+)', real_url)
-            if m:
-                real_url = urllib.parse.unquote(m.group(1))
-                print(f"       Extracted: {real_url[:90]}")
-    
-    art['real_url'] = real_url
-    
-    # Fetch for og:image
-    html = fetch(real_url, retries=1)
-    og = extract_og_image(html, real_url)
-    art['og_image'] = og
-    
-    if og:
-        print(f"       OG: {og[:70]}")
-    else:
-        print(f"       OG: none")
-    
-    results.append(art)
-    time.sleep(0.4)
-
-# Save
-output = {
-    'fetched_at': now.isoformat(),
-    'total_fresh': len(all_articles),
-    'total_relevant': len(relevant),
-    'articles': results,
-}
-with open('/root/ai-news-daily/fresh_news_v2.json', 'w') as f:
-    json.dump(output, f, indent=2, ensure_ascii=False)
-
-print(f"\nSaved {len(results)} articles to fresh_news_v2.json")
+# Output
+print("\n--- RESULTS ---")
+for a in passed:
+    print(json.dumps(a))
