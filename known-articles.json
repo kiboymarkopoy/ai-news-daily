@@ -784,6 +784,16 @@
       "file": "2026-05-31-11.00-02.md",
       "source": "The Verge — YouTube AI Labels",
       "first_seen": "2026-05-31"
+    },
+    "https://www.forbes.com/sites/kevinholdenplatt/2026/05/31/spacex-vow-to-loft-1-million-ai-satellites-could-spark-doomsday-dive/": {
+      "file": "2026-05-31-12.00-01.md",
+      "source": "Forbes — SpaceX AI Satellites",
+      "first_seen": "2026-05-31"
+    },
+    "https://www.koreaherald.com/article/10760189": {
+      "file": "2026-05-31-12.00-02.md",
+      "source": "The Korea Herald — NC AI POSCO DX Robot AI Model",
+      "first_seen": "2026-05-31"
     }
   },
   "source_headlines": {
@@ -958,7 +968,8 @@
     ],
     "www.forbes.com": [
       "robot humanoid figure ai resmi kerja gudang jcpenney ropostale brooks brothers",
-      "anthropic beli sdk pipeline yang dipake openai dan gemini"
+      "anthropic beli sdk pipeline yang dipake openai dan gemini",
+      "spaces vow to loft 1 million ai satellites could spark doomsday dive"
     ],
     "www.theguardian.com": [
       "sutradara star wars ai kayak sutradara milyarder lagi flying ngelakuin apa aja lo minta"
@@ -1104,6 +1115,9 @@
     ],
     "blogs.nvidia.com": [
       "nvidia research advances robotics from simulation the real world"
+    ],
+    "www.koreaherald.com": [
+      "nc ai posco dx join hands robot ai model development"
     ]
   },
   "cross_topics": [
@@ -1976,7 +1990,37 @@
       "who": "SoftBank",
       "what": "Data Center",
       "first_seen": "2026-05-31"
+    },
+    {
+      "who": "SpaceX",
+      "what": "AI Satellites",
+      "first_seen": "2026-05-31T12:00:00+07:00"
+    },
+    {
+      "who": "SpaceX",
+      "what": "Data Center",
+      "first_seen": "2026-05-31T12:00:00+07:00"
+    },
+    {
+      "who": "NC AI",
+      "what": "Robot Model",
+      "first_seen": "2026-05-31T12:00:00+07:00"
+    },
+    {
+      "who": "POSCO DX",
+      "what": "Robot Model",
+      "first_seen": "2026-05-31T12:00:00+07:00"
+    },
+    {
+      "who": "NC AI",
+      "what": "Foundation Model",
+      "first_seen": "2026-05-31T12:00:00+07:00"
+    },
+    {
+      "who": "POSCO DX",
+      "what": "Foundation Model",
+      "first_seen": "2026-05-31T12:00:00+07:00"
     }
   ],
-  "total": 157
+  "total": 159
 }
