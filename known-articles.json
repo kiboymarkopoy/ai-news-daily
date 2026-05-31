@@ -824,6 +824,31 @@
       "file": "2026-05-31-15.00-03.md",
       "source": "The Register",
       "first_seen": "2026-05-31"
+    },
+    "https://www.cnbc.com/2026/05/30/openai-gpt-5-5-ai-model.html": {
+      "file": "2026-05-31-17.00-01.md",
+      "source": "CNBC — OpenAI GPT-5.5",
+      "first_seen": "2026-05-31"
+    },
+    "https://www.nytimes.com/2026/05/31/technology/meta-ai-model-superintelligence-lab.html": {
+      "file": "2026-05-31-17.00-02.md",
+      "source": "NYT — Meta Muse Spark",
+      "first_seen": "2026-05-31"
+    },
+    "https://www.cnbc.com/2026/05/30/china-deepseek-v4-ai-model.html": {
+      "file": "2026-05-31-17.00-03.md",
+      "source": "CNBC — DeepSeek V4",
+      "first_seen": "2026-05-31"
+    },
+    "https://www.cnbc.com/2026/05/30/trump-ai-model-testing-oversight.html": {
+      "file": "2026-05-31-17.00-04.md",
+      "source": "CNBC — Trump AI Oversight",
+      "first_seen": "2026-05-31"
+    },
+    "https://blogs.nvidia.com/blog/2026/05/28/nvidia-launches-ising-open-ai-models-quantum/": {
+      "file": "2026-05-31-17.00-05.md",
+      "source": "NVIDIA Newsroom — Ising Quantum",
+      "first_seen": "2026-05-31"
     }
   },
   "source_headlines": {
@@ -1071,7 +1096,8 @@
       "elevenlabs stability ai rilis model musik ai baru"
     ],
     "www.nytimes.com": [
-      "perang super pac pemilu paruh waktu miliarder pro dan kontra saling gebuk"
+      "perang super pac pemilu paruh waktu miliarder pro dan kontra saling gebuk",
+      "meta unveils new model first superintelligence lab"
     ],
     "www.wsj.com": [
       "perusahaan mulai menjatah biaya langganan melonjak dompet menjerit"
@@ -1130,7 +1156,10 @@
     ],
     "cnbc.com": [
       "samsung kirim sampel chip memori ai generasi baru hbm4e",
-      "meta ngejar mimpi ai bisakah ai jadi jurus andalan"
+      "meta ngejar mimpi ai bisakah ai jadi jurus andalan",
+      "openai announces gpt55 latest artificial intelligence model",
+      "chinas deepseek releases preview longawaited model race intensifies",
+      "trump admin moves oversight test google microsoft xai models"
     ],
     "interestingengineering.com": [
       "china post deploys humanoid robots sort 1200 parcels per hour",
@@ -1147,7 +1176,8 @@
       "warfare here and cbs news got look the military training use the battlefield"
     ],
     "blogs.nvidia.com": [
-      "nvidia research advances robotics from simulation the real world"
+      "nvidia research advances robotics from simulation the real world",
+      "nvidia launches ising world first open models accelerate path useful quantum computers"
     ],
     "www.koreaherald.com": [
       "nc ai posco dx join hands robot ai model development"
@@ -2085,7 +2115,32 @@
       "who": "Netflix",
       "what": "AI COST",
       "first_seen": "2026-05-31"
+    },
+    {
+      "who": "OpenAI",
+      "what": "GPT-5.5",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Meta",
+      "what": "Muse Spark",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "DeepSeek",
+      "what": "V4 Model",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Trump Administration",
+      "what": "AI Model Testing",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "NVIDIA",
+      "what": "Ising Quantum",
+      "first_seen": "2026-05-31"
     }
   ],
-  "total": 165
+  "total": 170
 }
