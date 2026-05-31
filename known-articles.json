@@ -919,6 +919,26 @@
       "file": "2026-06-01-03.00-01.md",
       "source": "TechCrunch",
       "first_seen": "2026-06-01"
+    },
+    "https://www.theverge.com/tech/940540/how-to-watch-nvidias-computex-keynote": {
+      "file": "2026-06-01-04.00-01.md",
+      "source": "The Verge — Nvidia Computex Keynote",
+      "first_seen": "2026-06-01T04:00:00+07:00"
+    },
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTFA2UW5rNXc1czZsVUJLa2wzd1VRVk9VWWxacEQ0QnRMTW0yeHVJSEJFeDNFcjQ5SlNDLTRuSURtSkZjNXpwX0wzcXFseFljRDVGN3d5ME5DazBPeDBhTWdYUnBYZzdsLU5paUo0aHRDLWhFb3c2?oc=5": {
+      "file": "2026-06-01-04.00-02.md",
+      "source": "Bloomberg Law — Connecticut AI Law",
+      "first_seen": "2026-06-01T04:00:00+07:00"
+    },
+    "https://techcrunch.com/2026/05/31/erin-brockovich-takes-aim-at-data-center-secrecy/": {
+      "file": "2026-06-01-04.00-03.md",
+      "source": "TechCrunch — Erin Brockovich Data Centers",
+      "first_seen": "2026-06-01T04:00:00+07:00"
+    },
+    "https://www.foxnews.com/tech/humanoid-robot-cleans-first-us-apartment": {
+      "file": "2026-06-01-04.00-04.md",
+      "source": "Fox News — Gatsby Humanoid Robot",
+      "first_seen": "2026-06-01T04:00:00+07:00"
     }
   },
   "source_headlines": {
@@ -986,7 +1006,8 @@
       "pope use ai write dangers ai",
       "pope use ai write dangers ai",
       "making sense debate psychosis",
-      "this fine artist kc green reaches agreement ai startup artisan"
+      "this fine artist kc green reaches agreement ai startup artisan",
+      "erin brockovich target data center ai serukan transparansi peta interaktif"
     ],
     "www.rollingstone.com": [
       "film pertama buatan ai total tayang tribeca biaya cuma 2 000",
@@ -1011,7 +1032,8 @@
       "avatars digital blackface want sell belt buckle",
       "robinhood let agent trade stocks make lose lots money",
       "fight brewing inside new york times",
-      "youtube putting labels actually see them"
+      "youtube putting labels actually see them",
+      "nvidia computex keynote chip n1x arm mikrosoft windows pc surface"
     ],
     "www.wired.com": [
       "vatikan ngajak anthropic bicara soal ai iya paus tertarik sama safety ai",
@@ -1287,6 +1309,12 @@
     ],
     "nbcnews.com": [
       "inside china push for global dominance evs robotics ai pandas"
+    ],
+    "news.bloomberglaw.com": [
+      "connecticut tanda tangan undang undang ai ketenagakerjaan wajib notifikasi phk ai"
+    ],
+    "www.foxnews.com": [
+      "gatsby robot humanoid bersihin apartemen pertama konsumen amerika"
     ]
   },
   "cross_topics": [
@@ -2334,7 +2362,27 @@
       "who": "Artisan",
       "what": "Copyright",
       "first_seen": "2026-06-01"
+    },
+    {
+      "who": "Nvidia",
+      "what": "N1X Chip",
+      "first_seen": "2026-06-01T04:00:00+07:00"
+    },
+    {
+      "who": "Connecticut",
+      "what": "AI Regulation",
+      "first_seen": "2026-06-01T04:00:00+07:00"
+    },
+    {
+      "who": "Erin Brockovich",
+      "what": "Data Center Transparency",
+      "first_seen": "2026-06-01T04:00:00+07:00"
+    },
+    {
+      "who": "Gatsby",
+      "what": "Humanoid Robot",
+      "first_seen": "2026-06-01T04:00:00+07:00"
     }
   ],
-  "total": 184
+  "total": 188
 }
