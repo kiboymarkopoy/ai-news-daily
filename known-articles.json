@@ -714,6 +714,31 @@
       "file": "2026-05-31-06.00-03.md",
       "source": "Axios — AI populist revolt",
       "first_seen": "2026-05-31"
+    },
+    "https://www.theverge.com/ai-artificial-intelligence/897778/openai-chatgpt-codex-atlas-browser-superapp": {
+      "file": "2026-05-31-07.00-01.md",
+      "source": "The Verge — OpenAI super app",
+      "first_seen": "2026-05-31T07:01:00+07:00"
+    },
+    "https://www.theverge.com/ai-artificial-intelligence/937801/pope-leo-xiv-magnifica-humanitas-ai-pangram": {
+      "file": "2026-05-31-07.00-02.md",
+      "source": "The Verge — Pope AI Encyclical",
+      "first_seen": "2026-05-31T07:01:00+07:00"
+    },
+    "https://www.cnbc.com/2026/05/29/samsung-hbm4e-chip-samples-ai-memory.html": {
+      "file": "2026-05-31-07.00-03.md",
+      "source": "CNBC — Samsung HBM4E Chip",
+      "first_seen": "2026-05-31T07:01:00+07:00"
+    },
+    "https://www.cnbc.com/2026/05/30/meta-struggled-selling-anything-other-than-ads-will-ai-be-different.html": {
+      "file": "2026-05-31-07.00-04.md",
+      "source": "CNBC — Meta AI Strategy",
+      "first_seen": "2026-05-31T07:01:00+07:00"
+    },
+    "https://venturebeat.com/orchestration/ai-agents-are-entering-their-rebuild-era-as-enterprises-confront-the-reliability-problem": {
+      "file": "2026-05-31-07.00-05.md",
+      "source": "VentureBeat — AI Agents Rebuild Era",
+      "first_seen": "2026-05-31T07:01:00+07:00"
     }
   },
   "source_headlines": {
@@ -970,7 +995,8 @@
       "memo model ingatan ai baru upgrade llm tanpa retraining",
       "anthropic launches cowork claude desktop agent works your files coding required",
       "railway secures 100 million challenge aws native cloud infrastructure",
-      "nous researchs nouscoder 14b open source coding model landing right claude code moment"
+      "nous researchs nouscoder 14b open source coding model landing right claude code moment",
+      "ai agents masuk era rebuild startup mulai sadar agent suka ngaco"
     ],
     "www.kxan.com": [
       "anggota kongres usul pajak hasilnya buat training ulang pekerja"
@@ -1006,6 +1032,14 @@
     "www.marktechpost.com": [
       "stepfun releases step flash a b moe vision language model for coding agents and search workflows",
       "genesis ai releases nyx quadrants and genesis world physics platform for scalable robotics foundation model evaluation"
+    ],
+    "theverge.com": [
+      "openai mau bikin super app gabungin chatgpt codex browser semua",
+      "paus pake ai buat nulis soal bahaya ai kok ironis banget"
+    ],
+    "cnbc.com": [
+      "samsung kirim sampel chip memori ai generasi baru hbm4e",
+      "meta ngejar mimpi ai bisakah ai jadi jurus andalan"
     ]
   },
   "cross_topics": [
@@ -1788,7 +1822,47 @@
       "who": "Billionaires",
       "what": "Populist Revolt",
       "first_seen": "2026-05-31"
+    },
+    {
+      "who": "OpenAI",
+      "what": "super app",
+      "first_seen": "2026-05-31T07:01:00+07:00"
+    },
+    {
+      "who": "OpenAI",
+      "what": "model",
+      "first_seen": "2026-05-31T07:01:00+07:00"
+    },
+    {
+      "who": "Pope",
+      "what": "safety",
+      "first_seen": "2026-05-31T07:01:00+07:00"
+    },
+    {
+      "who": "Pope",
+      "what": "model",
+      "first_seen": "2026-05-31T07:01:00+07:00"
+    },
+    {
+      "who": "OpenAI",
+      "what": "safety",
+      "first_seen": "2026-05-31T07:01:00+07:00"
+    },
+    {
+      "who": "Samsung",
+      "what": "chip",
+      "first_seen": "2026-05-31T07:01:00+07:00"
+    },
+    {
+      "who": "Meta",
+      "what": "agent",
+      "first_seen": "2026-05-31T07:01:00+07:00"
+    },
+    {
+      "who": "Meta",
+      "what": "assistant",
+      "first_seen": "2026-05-31T07:01:00+07:00"
     }
   ],
-  "total": 143
+  "total": 148
 }
