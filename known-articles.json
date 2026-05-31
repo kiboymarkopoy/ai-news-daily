@@ -794,6 +794,21 @@
       "file": "2026-05-31-12.00-02.md",
       "source": "The Korea Herald — NC AI POSCO DX Robot AI Model",
       "first_seen": "2026-05-31"
+    },
+    "https://www.techtimes.com/articles/317425/20260530/galaxy-corporation-humanoid-robot-fashion-show-seoul-cowboy-hats-silks-bowie-era-trousers.htm": {
+      "file": "2026-05-31-14.00-01.md",
+      "source": "Tech Times — Galaxy Corp Robot Fashion Show",
+      "first_seen": "2026-05-31"
+    },
+    "https://www.techtimes.com/articles/317408/20260530/google-co-scientist-reaches-nature-hypothesis-agents-validated-lab-not-yet-clinic.htm": {
+      "file": "2026-05-31-14.00-02.md",
+      "source": "Tech Times — Google Co-Scientist",
+      "first_seen": "2026-05-31"
+    },
+    "https://venturebeat.com/orchestration/researchers-automated-llm-reasoning-strategy-design-and-cut-token-usage-by-69-5": {
+      "file": "2026-05-31-14.00-03.md",
+      "source": "VentureBeat — AutoTTS",
+      "first_seen": "2026-05-31"
     }
   },
   "source_headlines": {
@@ -1056,7 +1071,8 @@
       "anthropic launches cowork claude desktop agent works your files coding required",
       "railway secures 100 million challenge aws native cloud infrastructure",
       "nous researchs nouscoder 14b open source coding model landing right claude code moment",
-      "ai agents masuk era rebuild startup mulai sadar agent suka ngaco"
+      "ai agents masuk era rebuild startup mulai sadar agent suka ngaco",
+      "researchers automated llm reasoning strategy design cut token usage 695"
     ],
     "www.kxan.com": [
       "anggota kongres usul pajak hasilnya buat training ulang pekerja"
@@ -1118,6 +1134,10 @@
     ],
     "www.koreaherald.com": [
       "nc ai posco dx join hands robot ai model development"
+    ],
+    "techtimes.com": [
+      "galaxy corporation humanoid robot fashion show seoul cowboy hats silks bowieera trousers",
+      "google coscientist reaches nature hypothesis agents validated lab clinic"
     ]
   },
   "cross_topics": [
@@ -1133,11 +1153,6 @@
     },
     {
       "who": "NVIDIA",
-      "what": "CHIP",
-      "first_seen": "2026-05-29"
-    },
-    {
-      "who": "Nvidia",
       "what": "CHIP",
       "first_seen": "2026-05-29"
     },
@@ -2020,7 +2035,22 @@
       "who": "POSCO DX",
       "what": "Foundation Model",
       "first_seen": "2026-05-31T12:00:00+07:00"
+    },
+    {
+      "who": "GALAXY CORPORATION",
+      "what": "ROBOT",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "GOOGLE",
+      "what": "CO-SCIENTIST",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "RESEARCHERS",
+      "what": "AUTOTTS",
+      "first_seen": "2026-05-31"
     }
   ],
-  "total": 159
+  "total": 162
 }
