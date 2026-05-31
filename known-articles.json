@@ -849,6 +849,16 @@
       "file": "2026-05-31-17.00-05.md",
       "source": "NVIDIA Newsroom — Ising Quantum",
       "first_seen": "2026-05-31"
+    },
+    "https://techcrunch.com/2026/05/30/i-put-googles-24-7-ai-assistant-gemini-spark-to-work-and-its-actually-pretty-useful/": {
+      "file": "2026-05-31-18.00-01.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-31T18:04:00+07:00"
+    },
+    "https://techcrunch.com/2026/05/29/kiwibits-ai-powered-bird-feeder-is-my-new-backyard-buddy/": {
+      "file": "2026-05-31-18.00-02.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-05-31T18:04:00+07:00"
     }
   },
   "source_headlines": {
@@ -908,7 +918,9 @@
       "what a joke github copilots new token based billing spurs consternation among devs",
       "the groupthink boom what three top vcs really think about the ai frenzy",
       "meta reportedly developing pendant",
-      "softbank invest billion build french data centers"
+      "softbank invest billion build french data centers",
+      "google rilis asisten ai 24 7 gemini spark yang bisa bantu tugas sehari hari",
+      "kiwibit bikin ai bird feeder pake kamera tenaga surya deteksi burung otomatis"
     ],
     "www.rollingstone.com": [
       "film pertama buatan ai total tayang tribeca biaya cuma 2 000",
@@ -2140,7 +2152,17 @@
       "who": "NVIDIA",
       "what": "Ising Quantum",
       "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Google",
+      "what": "Gemini Spark",
+      "first_seen": "2026-05-31T18:04:00+07:00"
+    },
+    {
+      "who": "Kiwibit",
+      "what": "AI Bird Feeder",
+      "first_seen": "2026-05-31T18:04:00+07:00"
     }
   ],
-  "total": 170
+  "total": 172
 }
