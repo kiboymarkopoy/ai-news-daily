@@ -899,6 +899,11 @@
       "file": "2026-05-31-21.00-02.md",
       "source": "Engadget — Nuro Robotaxis",
       "first_seen": "2026-05-31"
+    },
+    "https://techcrunch.com/2026/05/31/making-sense-of-the-debate-over-ai-psychosis/": {
+      "file": "2026-05-31-23.00-01.md",
+      "source": "TechCrunch — Making sense of the debate over AI psychosis",
+      "first_seen": "2026-05-31"
     }
   },
   "source_headlines": {
@@ -964,7 +969,8 @@
       "pope use ai write dangers ai",
       "pope use ai write dangers ai",
       "pope use ai write dangers ai",
-      "pope use ai write dangers ai"
+      "pope use ai write dangers ai",
+      "making sense debate psychosis"
     ],
     "www.rollingstone.com": [
       "film pertama buatan ai total tayang tribeca biaya cuma 2 000",
@@ -2260,7 +2266,17 @@
       "who": "Uber",
       "what": "Robotaxi",
       "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Box",
+      "what": "AI Psychosis",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Google",
+      "what": "AI Backlash",
+      "first_seen": "2026-05-31"
     }
   ],
-  "total": 180
+  "total": 181
 }
