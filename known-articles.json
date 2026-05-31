@@ -774,6 +774,16 @@
       "file": "2026-05-31-10.00-05.md",
       "source": "NVIDIA Blog",
       "first_seen": "2026-05-31T10:10:00+07:00"
+    },
+    "https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/": {
+      "file": "2026-05-31-11.00-01.md",
+      "source": "TechCrunch — SoftBank €75B",
+      "first_seen": "2026-05-31"
+    },
+    "https://www.theverge.com/streaming/937915/youtube-ai-labels-shorts-automatic-identification-updates": {
+      "file": "2026-05-31-11.00-02.md",
+      "source": "The Verge — YouTube AI Labels",
+      "first_seen": "2026-05-31"
     }
   },
   "source_headlines": {
@@ -832,7 +842,8 @@
       "how long anthropic lease spacex opinions vary",
       "what a joke github copilots new token based billing spurs consternation among devs",
       "the groupthink boom what three top vcs really think about the ai frenzy",
-      "meta reportedly developing pendant"
+      "meta reportedly developing pendant",
+      "softbank invest billion build french data centers"
     ],
     "www.rollingstone.com": [
       "film pertama buatan ai total tayang tribeca biaya cuma 2 000",
@@ -856,7 +867,8 @@
       "microsoft launches preview copilot health ai analyze medical records",
       "avatars digital blackface want sell belt buckle",
       "robinhood let agent trade stocks make lose lots money",
-      "fight brewing inside new york times"
+      "fight brewing inside new york times",
+      "youtube putting labels actually see them"
     ],
     "www.wired.com": [
       "vatikan ngajak anthropic bicara soal ai iya paus tertarik sama safety ai",
@@ -1959,7 +1971,12 @@
       "who": "NVIDIA",
       "what": "Robotics Simulation",
       "first_seen": "2026-05-31T10:10:00+07:00"
+    },
+    {
+      "who": "SoftBank",
+      "what": "Data Center",
+      "first_seen": "2026-05-31"
     }
   ],
-  "total": 155
+  "total": 157
 }
