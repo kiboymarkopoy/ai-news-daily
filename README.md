@@ -1,28 +1,32 @@
 # AI News Daily
 
-Cron-based AI news aggregator. Runs every hour, collects latest AI/tech news from multiple sources, deduplicates, and generates 3-5 markdown articles.
+Cron-based AI news aggregator. Runs every hour WIB, collects latest AI/tech news from multiple sources, deduplicates (3-layer), and generates markdown articles.
 
-## Structure
+## Struktur
 
-- `fetch_ai_news.py` — Main fetcher: RSS + direct API scraping
-- `fetch_and_dedup.py` — Fetch + 3-layer dedup pipeline
-- `known-articles.json` — Dedup database (URL exact + topic fingerprint)
-- `*.json` — Intermediate candidates & curated selections
-- `YYYY-MM-DD-HH.MM-NN.md` — Output articles
+```
+├── known-articles.json     — Dedup database (URL + topic fingerprint)
+├── YYYY-MM-DD-HH.MM-NN.md  — Output artikel
+├── README.md
+└── _old/
+    ├── scripts/            — Old script versions (archive)
+    └── data/               — Old intermediate JSON (archive)
+```
 
 ## Pipeline
 
-1. Fetch → raw candidates (`fresh_candidates.json`, `direct_fetch.json`)
-2. Dedup (3-layer: URL exact → topic overlap) → `selected_articles.json`
-3. Rank & select → `final_candidates.json`
-4. Write → timestamped `.md` files
+1. **Fetch** — RSS feeds + Google News search via curl
+2. **Dedup 3-layer** — URL exact → source headline similarity → WHO+WHAT entity overlap
+3. **Write** — Timestamped `.md` files
+4. **Commit & push** — `Cron Job HH:MM` ke GitHub
 
 ## Cron
 
-Runs via Hermes cron: `0 * * * *` (every hour WIB).
-Workdir: `/root/ai-news-daily`.
+- Schedule: `0 * * * *` (setiap jam, WIB)
+- Workdir: `/root/ai-news-daily`
+- Type: LLM-driven (Hermes cron)
 
-## Repo
+## Sumber
 
-Source: [Anthropic Opus 4.8](https://www.anthropic.com/news/claude-opus-4-8)
-Commit style: no emoji, clean messages.
+- Google News RSS, TechCrunch, Ars Technica, The Verge
+- Sumber tambahan: Anthropic, OpenAI, Reuters, Electrek
