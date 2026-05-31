@@ -744,6 +744,36 @@
       "file": "2026-05-31-08.00-01.md",
       "source": "The Verge — NYT AI Fight Inside",
       "first_seen": "2026-05-31"
+    },
+    "https://fortune.com/2026/05/28/ai-model-simulation-claude-chatgpt-grok-gemini/": {
+      "file": "2026-05-31-10.00-01.md",
+      "source": "Fortune",
+      "first_seen": "2026-05-31T10:10:00+07:00"
+    },
+    "https://interestingengineering.com/ai-robotics/china-deploys-humanoid-robots-in-postal-hub": {
+      "file": "2026-05-31-10.00-02.md",
+      "source": "Interesting Engineering",
+      "first_seen": "2026-05-31T10:10:00+07:00"
+    },
+    "https://www.theatlantic.com/newsletters/2026/05/ai-slop-music/687359/": {
+      "file": "2026-05-31-10.00-03.md",
+      "source": "The Atlantic",
+      "first_seen": "2026-05-31T10:10:00+07:00"
+    },
+    "https://www.theguardian.com/technology/2026/may/26/spotify-ai-remix-tool-protects-artists-slop": {
+      "file": "2026-05-31-10.00-03.md",
+      "source": "The Guardian",
+      "first_seen": "2026-05-31T10:10:00+07:00"
+    },
+    "https://www.cbsnews.com/news/ai-warfare-cbs-news-sees-us-military-exercise-robots-artificial-intelligence/": {
+      "file": "2026-05-31-10.00-04.md",
+      "source": "CBS News",
+      "first_seen": "2026-05-31T10:10:00+07:00"
+    },
+    "https://blogs.nvidia.com/blog/icra-research-robotics-simulation-to-real-world/": {
+      "file": "2026-05-31-10.00-05.md",
+      "source": "NVIDIA Blog",
+      "first_seen": "2026-05-31T10:10:00+07:00"
     }
   },
   "source_headlines": {
@@ -969,7 +999,8 @@
     "fortune.com": [
       "microsoft building ai super app combining coding chat copilot tools",
       "taylor swift exposed blind spot ai law bigger than copyright",
-      "ai economy crash mounting chip costs token costs wont help"
+      "ai economy crash mounting chip costs token costs wont help",
+      "researchers let run simulated society claude was the safestgrok went extinct within days"
     ],
     "rdworldonline.com": [
       "openai luncurkan rosalind biodefense model ai ilmu hayati"
@@ -1046,6 +1077,21 @@
     "cnbc.com": [
       "samsung kirim sampel chip memori ai generasi baru hbm4e",
       "meta ngejar mimpi ai bisakah ai jadi jurus andalan"
+    ],
+    "interestingengineering.com": [
+      "china post deploys humanoid robots sort 1200 parcels per hour"
+    ],
+    "theatlantic.com": [
+      "slop coming for your playlists"
+    ],
+    "theguardian.com": [
+      "spotify boss defends move music saying better than slop"
+    ],
+    "cbsnews.com": [
+      "warfare here and cbs news got look the military training use the battlefield"
+    ],
+    "blogs.nvidia.com": [
+      "nvidia research advances robotics from simulation the real world"
     ]
   },
   "cross_topics": [
@@ -1883,7 +1929,37 @@
       "who": "Tech Guild",
       "what": "AI Monitoring",
       "first_seen": "2026-05-31T08:08:41+07:00"
+    },
+    {
+      "who": "Emergence AI",
+      "what": "AI Simulated Society",
+      "first_seen": "2026-05-31T10:10:00+07:00"
+    },
+    {
+      "who": "China Post",
+      "what": "Humanoid Parcel Sorting",
+      "first_seen": "2026-05-31T10:10:00+07:00"
+    },
+    {
+      "who": "Spotify",
+      "what": "AI Music Slop",
+      "first_seen": "2026-05-31T10:10:00+07:00"
+    },
+    {
+      "who": "Spotify",
+      "what": "AI Music Defense",
+      "first_seen": "2026-05-31T10:10:00+07:00"
+    },
+    {
+      "who": "US Military",
+      "what": "AI Warfare Training",
+      "first_seen": "2026-05-31T10:10:00+07:00"
+    },
+    {
+      "who": "NVIDIA",
+      "what": "Robotics Simulation",
+      "first_seen": "2026-05-31T10:10:00+07:00"
     }
   ],
-  "total": 149
+  "total": 155
 }
