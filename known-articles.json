@@ -904,6 +904,11 @@
       "file": "2026-05-31-23.00-01.md",
       "source": "TechCrunch — Making sense of the debate over AI psychosis",
       "first_seen": "2026-05-31"
+    },
+    "https://www.wired.com/story/made-in-china-the-dollar6-billion-chinese-startup-making-hands-for-humanoids/": {
+      "file": "2026-06-01-01.00-01.md",
+      "source": "WIRED — LinkerBot Robot Hands",
+      "first_seen": "2026-06-01T01:00:00+07:00"
     }
   },
   "source_headlines": {
@@ -1112,7 +1117,8 @@
       "pope use ai write dangers ai",
       "pope use ai write dangers ai",
       "pope use ai write dangers ai",
-      "pope use ai write dangers ai"
+      "pope use ai write dangers ai",
+      "billion chinese startup trying build hands robot"
     ],
     "nytimes.com": [
       "teachers union urges schools curb chatbots screen time",
@@ -2276,7 +2282,12 @@
       "who": "Google",
       "what": "AI Backlash",
       "first_seen": "2026-05-31"
+    },
+    {
+      "who": "LinkerBot",
+      "what": "Robot Hands",
+      "first_seen": "2026-06-01T01:00:00+07:00"
     }
   ],
-  "total": 181
+  "total": 182
 }
