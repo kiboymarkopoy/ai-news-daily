@@ -889,6 +889,16 @@
       "file": "2026-05-31-20.00-05.md",
       "source": "NYT — Tilly Norwood AI Actress",
       "first_seen": "2026-05-31T20:00:00+07:00"
+    },
+    "https://venturebeat.com/technology/mistral-ai-launches-vibe-expands-into-industrial-ai-and-announces-data-center-push-to-challenge-openai": {
+      "file": "2026-05-31-21.00-01.md",
+      "source": "VentureBeat — Mistral AI Vibe",
+      "first_seen": "2026-05-31"
+    },
+    "https://www.engadget.com/2165815/nuro-approved-to-test-driverless-uber-robotaxis-on-california-roads/": {
+      "file": "2026-05-31-21.00-02.md",
+      "source": "Engadget — Nuro Robotaxis",
+      "first_seen": "2026-05-31"
     }
   },
   "source_headlines": {
@@ -1111,7 +1121,8 @@
       "CNN gugat perplexity AI search hak cipta",
       "Paramount plus pake ai bikin thumbnail star trek jelek",
       "pennsylvania suing character chatbots pretend licensed doctors",
-      "apple pay 250 million failing deliver powered siri time"
+      "apple pay 250 million failing deliver powered siri time",
+      "nuro resmi diizinin tes robotaxi tanpa sopir di california"
     ],
     "asia.nikkei.com": [
       "humanoid robots strut stuff trade show comes japan"
@@ -1164,7 +1175,8 @@
       "railway secures 100 million challenge aws native cloud infrastructure",
       "nous researchs nouscoder 14b open source coding model landing right claude code moment",
       "ai agents masuk era rebuild startup mulai sadar agent suka ngaco",
-      "researchers automated llm reasoning strategy design cut token usage 695"
+      "researchers automated llm reasoning strategy design cut token usage 695",
+      "mistral ai luncurkan vibe ekspansi ke industrial ai bangun data center sendiri"
     ],
     "www.kxan.com": [
       "anggota kongres usul pajak hasilnya buat training ulang pekerja"
@@ -2218,7 +2230,37 @@
       "who": "Pentagon",
       "what": "Military",
       "first_seen": "2026-05-31T20:00:00+07:00"
+    },
+    {
+      "who": "Mistral",
+      "what": "Vibe",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Mistral",
+      "what": "Data Center",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Mistral",
+      "what": "Physics AI",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Nuro",
+      "what": "Robotaxi",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Nuro",
+      "what": "California",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "who": "Uber",
+      "what": "Robotaxi",
+      "first_seen": "2026-05-31"
     }
   ],
-  "total": 178
+  "total": 180
 }
