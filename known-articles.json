@@ -1139,6 +1139,21 @@
       "file": "2026-06-01-22.00-01.md",
       "source": "TechCrunch",
       "first_seen": "2026-06-01"
+    },
+    "https://www.theverge.com/ai-artificial-intelligence/940978/florida-is-suing-openai-over-user-safety-concerns": {
+      "file": "2026-06-01-23.00-01.md",
+      "source": "The Verge — Florida sues OpenAI",
+      "first_seen": "2026-06-01"
+    },
+    "https://www.bbc.com/news/articles/cm2p3j6lvn7o": {
+      "file": "2026-06-01-23.00-02.md",
+      "source": "BBC — UK banks Mythos OpenAI",
+      "first_seen": "2026-06-01"
+    },
+    "https://www.theverge.com/podcast/940831/ai-grammys-music-recording-harvey-mason": {
+      "file": "2026-06-01-23.00-03.md",
+      "source": "The Verge — AI Grammys Podcast",
+      "first_seen": "2026-06-01"
     }
   },
   "source_headlines": {
@@ -1152,7 +1167,8 @@
       "ethical hacker juara dunia mungkin lomba terakhir gue",
       "bmw taruh robot humanoid pabrik mobil bukan mimpi lagi",
       "bmw resmi pakai robot humanoid pabrik kata mereka masa depan produksi mobil",
-      "ukraine pake drone ai hancurin konvoi rusia supply"
+      "ukraine pake drone ai hancurin konvoi rusia supply",
+      "uk banks blocked from cyber ai tool mythos get offer from rival openai"
     ],
     "techcrunch.com": [
       "robotaxi china udah jalan kelihatannya nyaman banget",
@@ -1486,7 +1502,9 @@
       "ai generated research papers overwhelming peer review",
       "people sure do hate googles ai search updates",
       "the pope ai encyclical tech industry reactions",
-      "apple strategy smart glasses same smart watches"
+      "apple strategy smart glasses same smart watches",
+      "florida sues openai and ceo sam altman accusing them of putting profit over safety",
+      "ai is blowing up music how should the grammys handle it"
     ],
     "cnbc.com": [
       "samsung kirim sampel chip memori ai generasi baru hbm4e",
@@ -2931,7 +2949,22 @@
       "who": "DuckDuckGo",
       "what": "Browser Extension",
       "first_seen": "2026-06-01T22:00:00+07:00"
+    },
+    {
+      "who": "Florida",
+      "what": "Lawsuit",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "who": "OpenAI",
+      "what": "GPT-5.5 Cyber",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "who": "Grammys",
+      "what": "AI Music",
+      "first_seen": "2026-06-01"
     }
   ],
-  "total": 228
+  "total": 231
 }
