@@ -1039,6 +1039,16 @@
       "file": "2026-06-01-14.00-03.md",
       "source": "Bloomberg — Gen-Z Gamer Vast AI Unicorn",
       "first_seen": "2026-06-01"
+    },
+    "https://www.engadget.com/2165451/apple-intelligence-will-reportedly-let-you-choose-third-party-ai-models-in-ios-27": {
+      "file": "2026-06-01-15.00-01.md",
+      "source": "Engadget — Apple Intelligence Third-Party AI",
+      "first_seen": "2026-06-01"
+    },
+    "https://www.theverge.com/tech/940572/apples-strategy-smart-glasses-smart-watches": {
+      "file": "2026-06-01-15.00-02.md",
+      "source": "The Verge — Apple Smart Glasses Strategy",
+      "first_seen": "2026-06-01"
     }
   },
   "source_headlines": {
@@ -1273,7 +1283,8 @@
       "Paramount plus pake ai bikin thumbnail star trek jelek",
       "pennsylvania suing character chatbots pretend licensed doctors",
       "apple pay 250 million failing deliver powered siri time",
-      "nuro resmi diizinin tes robotaxi tanpa sopir di california"
+      "nuro resmi diizinin tes robotaxi tanpa sopir di california",
+      "apple intelligence reportedly let you choose third party models ios"
     ],
     "asia.nikkei.com": [
       "humanoid robots strut stuff trade show comes japan"
@@ -1371,7 +1382,8 @@
       "paus pake ai buat nulis soal bahaya ai kok ironis banget",
       "ai generated research papers overwhelming peer review",
       "people sure do hate googles ai search updates",
-      "the pope ai encyclical tech industry reactions"
+      "the pope ai encyclical tech industry reactions",
+      "apple strategy smart glasses same smart watches"
     ],
     "cnbc.com": [
       "samsung kirim sampel chip memori ai generasi baru hbm4e",
@@ -2660,7 +2672,17 @@
       "who": "Vast",
       "what": "3D Model AI",
       "first_seen": "2026-06-01T14:00:00+07:00"
+    },
+    {
+      "who": "Apple",
+      "what": "AI Models",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "who": "Apple",
+      "what": "Smart Glasses",
+      "first_seen": "2026-06-01"
     }
   ],
-  "total": 208
+  "total": 210
 }
