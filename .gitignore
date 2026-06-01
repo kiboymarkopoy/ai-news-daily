@@ -1,1 +1,5 @@
 *.xml
+
+thumb/
+__pycache__/
+cache/

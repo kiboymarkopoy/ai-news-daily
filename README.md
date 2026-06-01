@@ -5,8 +5,10 @@ Cron-based AI news aggregator. Runs every hour WIB, collects latest AI/tech news
 ## Struktur
 
 ```
+├── YYYY-MM-DD/              — Folder per tanggal
+│   ├── HH.MM-NN.md         — Output artikel
+│   └── thumb/              — Thumbnail gambar (auto-generated)
 ├── known-articles.json     — Dedup database (URL + topic fingerprint)
-├── YYYY-MM-DD-HH.MM-NN.md  — Output artikel
 ├── README.md
 └── _old/
     ├── scripts/            — Old script versions (archive)
