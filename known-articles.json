@@ -1089,6 +1089,21 @@
       "file": "2026-06-01-18.00-08.md",
       "source": "WIRED",
       "first_seen": "2026-06-01"
+    },
+    "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTVJsZUhreUlYcUFPZk9hSzRXR0ktN3U1cVlGTEE3N2lnbktNS09VMEZjRGlIRl9FOURrRTZKcU8xS1pZampDZXVNZVpoMDU5N0lZNXdleEtCTURuTmNJb1VxWDExOXZkZkFwZ1pWUVFnVnkxOHJiWEU2U2FkVXBiend6QjdaWDhrMVZwenVnYnlJNGhCWnNaTF9WNDM5ZHM5UHU0SXJWcWk3MUpJVTdzQndya3hFNnhhNzlfVHRPZUVPdkxpMmZjcnlsVG5fa3hsS0Z4cV90OA?oc=5": {
+      "file": "2026-06-01-19.01-01.md",
+      "source": "Firstpost",
+      "first_seen": "2026-06-01"
+    },
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxQeldXaFUwMEJqNmJYNEVmZkxTNUhrOVdQbFI1aTh5NDNWNzdNMXBhMlU3YU9iOG50Vng?oc=5": {
+      "file": "2026-06-01-19.01-02.md",
+      "source": "SCMP",
+      "first_seen": "2026-06-01"
+    },
+    "https://news.google.com/rss/articles/CBMioAFBVV95cUxPYUZUMnBoSUJvbTJGX3RYRndMT0wwc0x1Z01ldHl5V3FtTlJFcEtDU29iM05oVmMzbl9xaHpiNE45X2RzeHE0TUtDazlXR2V3cHVQUV9mdUZmRnVobjlEVTMtUU11aHFlRHhrWUJyZ3F0QkZ3QjdYZGhEM1M4NjA1YUlvQnU1NzVmTngweGpCcUFQajNkV1VBUXNOdjFoREd1?oc=5": {
+      "file": "2026-06-01-19.01-03.md",
+      "source": "Computerworld",
+      "first_seen": "2026-06-01"
     }
   },
   "source_headlines": {
@@ -1503,6 +1518,15 @@
       "nvidia announces nvidia isaac gr00t reference humanoid robot academic research",
       "nvidia releases major collection open source agent tools skills physical",
       "nvidia launches alpamayo super open reasoning model robotaxis"
+    ],
+    "firstpost.com": [
+      "openai hiring robotics engineers sam altman lays vision aipowered humanoids"
+    ],
+    "scmp.com": [
+      "minimax debuts model built long complex coding tasks"
+    ],
+    "computerworld.com": [
+      "major models violate regulations study shows"
     ]
   },
   "cross_topics": [
@@ -2785,7 +2809,32 @@
       "who": "Nyt",
       "what": "Cybersecurity",
       "first_seen": "2026-06-01"
+    },
+    {
+      "who": "OpenAI",
+      "what": "Robotics",
+      "first_seen": "2026-06-01T19:01:00+07:00"
+    },
+    {
+      "who": "OpenAI",
+      "what": "Humanoid",
+      "first_seen": "2026-06-01T19:01:00+07:00"
+    },
+    {
+      "who": "Sam Altman",
+      "what": "Robotics",
+      "first_seen": "2026-06-01T19:01:00+07:00"
+    },
+    {
+      "who": "MiniMax",
+      "what": "Coding Model",
+      "first_seen": "2026-06-01T19:01:00+07:00"
+    },
+    {
+      "who": "EU",
+      "what": "AI Regulation Study",
+      "first_seen": "2026-06-01T19:01:00+07:00"
     }
   ],
-  "total": 218
+  "total": 221
 }
