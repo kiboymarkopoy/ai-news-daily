@@ -999,6 +999,21 @@
       "file": "2026-06-01-11.08-02.md",
       "source": "NVIDIA Newsroom — NVIDIA Luncurkan CPU Vera, Prosesor Khusus AI Agent",
       "first_seen": "2026-06-01"
+    },
+    "https://nvidianews.nvidia.com/news/nvidia-open-humanoid-robot-reference-design": {
+      "file": "2026-06-01-12.00-01.md",
+      "source": "NVIDIA Newsroom",
+      "first_seen": "2026-06-01"
+    },
+    "https://nvidianews.nvidia.com/news/nvidia-releases-major-collection-of-open-source-agent-tools-and-skills-for-physical-ai": {
+      "file": "2026-06-01-12.00-02.md",
+      "source": "NVIDIA Newsroom",
+      "first_seen": "2026-06-01"
+    },
+    "https://nvidianews.nvidia.com/news/nvidia-alpamayo-2-super-robotaxis": {
+      "file": "2026-06-01-12.00-03.md",
+      "source": "NVIDIA Newsroom",
+      "first_seen": "2026-06-01"
     }
   },
   "source_headlines": {
@@ -1393,7 +1408,10 @@
     ],
     "nvidianews.nvidia.com": [
       "nvidia vera rubin ramps into full production power agentic factories worldwide",
-      "nvidia unveils vera cpu for agents first processor built agentic ai"
+      "nvidia unveils vera cpu for agents first processor built agentic ai",
+      "nvidia announces nvidia isaac gr00t reference humanoid robot academic research",
+      "nvidia releases major collection open source agent tools skills physical",
+      "nvidia launches alpamayo super open reasoning model robotaxis"
     ]
   },
   "cross_topics": [
@@ -2551,7 +2569,22 @@
       "who": "NVIDIA",
       "what": "Vera CPU",
       "first_seen": "2026-06-01"
+    },
+    {
+      "who": "NVIDIA",
+      "what": "Isaac GR00T Robot",
+      "first_seen": "2026-06-01T12:00:00+07:00"
+    },
+    {
+      "who": "NVIDIA",
+      "what": "Agent Tools Physical AI",
+      "first_seen": "2026-06-01T12:00:00+07:00"
+    },
+    {
+      "who": "NVIDIA",
+      "what": "Alpamayo 2 Super Model",
+      "first_seen": "2026-06-01T12:00:00+07:00"
     }
   ],
-  "total": 200
+  "total": 203
 }
