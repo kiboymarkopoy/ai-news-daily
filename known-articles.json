@@ -949,6 +949,21 @@
       "file": "2026-06-01-05.00-02.md",
       "source": "Reuters — US halts Nvidia AI chip shipments",
       "first_seen": "2026-06-01"
+    },
+    "https://www.wired.com/story/the-vaticans-man-inside-anthropic/": {
+      "file": "2026-06-01-08.00-01.md",
+      "source": "WIRED",
+      "first_seen": "2026-06-01T08:03:00+07:00"
+    },
+    "https://arstechnica.com/tech-policy/2026/05/trump-canceled-ai-safety-testing-eo-after-snub-from-tech-ceos/": {
+      "file": "2026-06-01-08.00-02.md",
+      "source": "Ars Technica",
+      "first_seen": "2026-06-01T08:03:00+07:00"
+    },
+    "https://arstechnica.com/ai/2026/05/ai-put-synthetic-quotes-in-his-book-but-this-author-wants-to-keep-using-it/": {
+      "file": "2026-06-01-08.00-03.md",
+      "source": "Ars Technica",
+      "first_seen": "2026-06-01T08:03:00+07:00"
     }
   },
   "source_headlines": {
@@ -1097,7 +1112,9 @@
       "nvidia bets 150b taiwan trump plan make us ai hub backfires",
       "us law enforcement warns anti tech extremism ai hatred grows",
       "millions ai agents imperiled critical vulnerability open source package",
-      "youtube begin automatically labeling ai videos"
+      "youtube begin automatically labeling ai videos",
+      "trump abruptly cancels eo signing event after top ai firm ceos declined go",
+      "ai put synthetic quotes his book author wants keep using"
     ],
     "finance.yahoo.com": [
       "jensen huang gas ke taiwan nvidia mau investasi 150 miliar per tahun sana",
@@ -2416,7 +2433,47 @@
       "who": "US Commerce",
       "what": "Chip Ban",
       "first_seen": "2026-06-01"
+    },
+    {
+      "who": "Vatican",
+      "what": "Safety",
+      "first_seen": "2026-06-01T08:03:00+07:00"
+    },
+    {
+      "who": "Vatican",
+      "what": "Ethics",
+      "first_seen": "2026-06-01T08:03:00+07:00"
+    },
+    {
+      "who": "Anthropic",
+      "what": "AI",
+      "first_seen": "2026-06-01T08:03:00+07:00"
+    },
+    {
+      "who": "Anthropic",
+      "what": "Safety",
+      "first_seen": "2026-06-01T08:03:00+07:00"
+    },
+    {
+      "who": "Anthropic",
+      "what": "Ethics",
+      "first_seen": "2026-06-01T08:03:00+07:00"
+    },
+    {
+      "who": "Trump",
+      "what": "AI Safety",
+      "first_seen": "2026-06-01T08:03:00+07:00"
+    },
+    {
+      "who": "Trump",
+      "what": "Regulation",
+      "first_seen": "2026-06-01T08:03:00+07:00"
+    },
+    {
+      "who": "Trump",
+      "what": "Executive Order",
+      "first_seen": "2026-06-01T08:03:00+07:00"
     }
   ],
-  "total": 190
+  "total": 193
 }
