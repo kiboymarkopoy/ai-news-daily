@@ -1024,6 +1024,21 @@
       "file": "2026-06-01-13.00-03.md",
       "source": "The Verge — Pope AI Encyclical Reactions",
       "first_seen": "2026-06-01"
+    },
+    "https://www.cnbc.com/2026/05/31/nvidia-arm-pc-chip-rtx-spark-computex.html": {
+      "file": "2026-06-01-14.00-01.md",
+      "source": "CNBC — Nvidia Arm PC Chip RTX Spark",
+      "first_seen": "2026-06-01"
+    },
+    "https://www.cnbc.com/2026/05/31/nvidia-unitree-humanoid-robot-platform.html": {
+      "file": "2026-06-01-14.00-02.md",
+      "source": "CNBC — Nvidia Unitree Humanoid Robot",
+      "first_seen": "2026-06-01"
+    },
+    "https://www.bloomberg.com/news/articles/2026-06-01/gen-z-gamer-s-3d-model-startup-becomes-china-s-latest-ai-unicorn": {
+      "file": "2026-06-01-14.00-03.md",
+      "source": "Bloomberg — Gen-Z Gamer Vast AI Unicorn",
+      "first_seen": "2026-06-01"
     }
   },
   "source_headlines": {
@@ -1155,7 +1170,9 @@
       "mistral explore designing own chips ceo says ramps infrastructure build",
       "satelit kini makin pintar berkat bisa proses data orbit tanpa kirim bumi",
       "foundation robotics labs startup pro trump mau pasang robot humanoid di militer",
-      "eu desak untuk segera bahas regulasi model ai canggih"
+      "eu desak untuk segera bahas regulasi model ai canggih",
+      "nvidia gas ke pasar pc luncurkan chip arm rtx spark di laptop microsoft dell hp",
+      "nvidia pilih unitree robot humanoid incar ipo"
     ],
     "arstechnica.com": [
       "illinois sahkan uu ai terketat trump kehilangan kendali regulasi",
@@ -1300,7 +1317,8 @@
       "perusahaan mulai menjatah biaya langganan melonjak dompet menjerit"
     ],
     "www.bloomberg.com": [
-      "startup china minimax siap ipo siapsiap perang model dengan deepseek"
+      "startup china minimax siap ipo siapsiap perang model dengan deepseek",
+      "gen z gamer 3d model startup vast jadi unicorn ai china terbaru 200 juta"
     ],
     "venturebeat.com": [
       "bottleneck agent bukan performa model tapi izin akses",
@@ -2607,7 +2625,42 @@
       "who": "Pope",
       "what": "AI Encyclical",
       "first_seen": "2026-06-01T13:00:00+07:00"
+    },
+    {
+      "who": "Nvidia",
+      "what": "RTX Spark",
+      "first_seen": "2026-06-01T14:00:00+07:00"
+    },
+    {
+      "who": "Nvidia",
+      "what": "Arm PC Chip",
+      "first_seen": "2026-06-01T14:00:00+07:00"
+    },
+    {
+      "who": "Nvidia",
+      "what": "Unitree",
+      "first_seen": "2026-06-01T14:00:00+07:00"
+    },
+    {
+      "who": "Unitree",
+      "what": "IPO",
+      "first_seen": "2026-06-01T14:00:00+07:00"
+    },
+    {
+      "who": "Unitree",
+      "what": "Humanoid Robot",
+      "first_seen": "2026-06-01T14:00:00+07:00"
+    },
+    {
+      "who": "Vast",
+      "what": "AI Unicorn",
+      "first_seen": "2026-06-01T14:00:00+07:00"
+    },
+    {
+      "who": "Vast",
+      "what": "3D Model AI",
+      "first_seen": "2026-06-01T14:00:00+07:00"
     }
   ],
-  "total": 205
+  "total": 208
 }
