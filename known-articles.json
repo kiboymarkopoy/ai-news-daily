@@ -989,6 +989,16 @@
       "file": "2026-06-01-09.00-05.md",
       "source": "CNBC",
       "first_seen": "2026-06-01"
+    },
+    "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory": {
+      "file": "2026-06-01-11.08-01.md",
+      "source": "NVIDIA Newsroom — NVIDIA Vera Rubin Resmi Masuk Produksi Massal",
+      "first_seen": "2026-06-01"
+    },
+    "https://nvidianews.nvidia.com/news/nvidia-unveils-vera-the-cpu-for-agents": {
+      "file": "2026-06-01-11.08-02.md",
+      "source": "NVIDIA Newsroom — NVIDIA Luncurkan CPU Vera, Prosesor Khusus AI Agent",
+      "first_seen": "2026-06-01"
     }
   },
   "source_headlines": {
@@ -1380,6 +1390,10 @@
     ],
     "pcgamer.com": [
       "mass effect metal gear actor jennifer hale calls studios take responsibility their ai use"
+    ],
+    "nvidianews.nvidia.com": [
+      "nvidia vera rubin ramps into full production power agentic factories worldwide",
+      "nvidia unveils vera cpu for agents first processor built agentic ai"
     ]
   },
   "cross_topics": [
@@ -2527,7 +2541,17 @@
       "who": "Foundation Robotics",
       "what": "Humanoid Military Robot",
       "first_seen": "2026-06-01"
+    },
+    {
+      "who": "NVIDIA",
+      "what": "Vera Rubin",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "who": "NVIDIA",
+      "what": "Vera CPU",
+      "first_seen": "2026-06-01"
     }
   ],
-  "total": 198
+  "total": 200
 }
