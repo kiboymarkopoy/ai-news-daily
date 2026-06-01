@@ -1059,6 +1059,11 @@
       "file": "2026-06-01-16.00-02.md",
       "source": "Tom's Hardware — Intel Crescent Island AI GPU",
       "first_seen": "2026-06-01"
+    },
+    "https://www.cnbc.com/2026/06/01/nvidia-backed-runway-london-expansion.html": {
+      "file": "2026-06-01-17.00-01.md",
+      "source": "CNBC — Runway London Expansion",
+      "first_seen": "2026-06-01T17:00:00+07:00"
     }
   },
   "source_headlines": {
@@ -1192,7 +1197,8 @@
       "foundation robotics labs startup pro trump mau pasang robot humanoid di militer",
       "eu desak untuk segera bahas regulasi model ai canggih",
       "nvidia gas ke pasar pc luncurkan chip arm rtx spark di laptop microsoft dell hp",
-      "nvidia pilih unitree robot humanoid incar ipo"
+      "nvidia pilih unitree robot humanoid incar ipo",
+      "startup runway ekspansi london gebrak pasar eropa"
     ],
     "arstechnica.com": [
       "illinois sahkan uu ai terketat trump kehilangan kendali regulasi",
@@ -2714,7 +2720,12 @@
       "who": "Intel",
       "what": "AI Inference",
       "first_seen": "2026-06-01T16:00:00+07:00"
+    },
+    {
+      "who": "Runway",
+      "what": "London Expansion",
+      "first_seen": "2026-06-01T17:00:00+07:00"
     }
   ],
-  "total": 212
+  "total": 213
 }
