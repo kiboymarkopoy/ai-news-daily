@@ -1049,6 +1049,16 @@
       "file": "2026-06-01-15.00-02.md",
       "source": "The Verge — Apple Smart Glasses Strategy",
       "first_seen": "2026-06-01"
+    },
+    "https://blogs.nvidia.com/blog/cosmos-3-physical-ai-open-world-foundation-model/": {
+      "file": "2026-06-01-16.00-01.md",
+      "source": "NVIDIA Blog — Cosmos 3",
+      "first_seen": "2026-06-01"
+    },
+    "https://www.tomshardware.com/pc-components/gpus/intel-details-long-awaited-crescent-island-ai-gpu-at-computex-boasts-up-to-480-gb-of-lpddr5x-to-combat-memory-shortages-company-shares-more-details-of-its-xe3p-inference-accelerator-at-computex": {
+      "file": "2026-06-01-16.00-02.md",
+      "source": "Tom's Hardware — Intel Crescent Island AI GPU",
+      "first_seen": "2026-06-01"
     }
   },
   "source_headlines": {
@@ -1210,7 +1220,8 @@
     ],
     "www.tomshardware.com": [
       "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
-      "uber chief warns link yet ai tokenmaxxing shipping successful products company pumps brakes ai spending"
+      "uber chief warns link yet ai tokenmaxxing shipping successful products company pumps brakes ai spending",
+      "intel detail crescent island gpu ai computex lpddrx inference accelerator xe3p"
     ],
     "ia.acs.org.au": [
       "spotify resmi masuk era remix ai karya fan jadi resmi"
@@ -1409,7 +1420,8 @@
     ],
     "blogs.nvidia.com": [
       "nvidia research advances robotics from simulation the real world",
-      "nvidia launches ising world first open models accelerate path useful quantum computers"
+      "nvidia launches ising world first open models accelerate path useful quantum computers",
+      "nvidia cosmos 3 model ai open source fisik bisa lihat dengar rencanakan aksi"
     ],
     "www.koreaherald.com": [
       "nc ai posco dx join hands robot ai model development"
@@ -2682,7 +2694,27 @@
       "who": "Apple",
       "what": "Smart Glasses",
       "first_seen": "2026-06-01"
+    },
+    {
+      "who": "NVIDIA",
+      "what": "Cosmos 3",
+      "first_seen": "2026-06-01T16:00:00+07:00"
+    },
+    {
+      "who": "NVIDIA",
+      "what": "World Foundation Model",
+      "first_seen": "2026-06-01T16:00:00+07:00"
+    },
+    {
+      "who": "Intel",
+      "what": "Crescent Island GPU",
+      "first_seen": "2026-06-01T16:00:00+07:00"
+    },
+    {
+      "who": "Intel",
+      "what": "AI Inference",
+      "first_seen": "2026-06-01T16:00:00+07:00"
     }
   ],
-  "total": 210
+  "total": 212
 }
