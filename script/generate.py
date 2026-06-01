@@ -85,22 +85,38 @@ def load_config():
 def download_image(url):
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     url_hash = hashlib.md5(url.encode()).hexdigest()[:12]
-    ext = url.split("?")[0].split(".")[-1][:4] if "." in url.split("?")[0] else "jpg"
+    path_part = url.split("?")[0].split("#")[0]
+    ext = path_part.split(".")[-1][:4] if "." in path_part else "jpg"
     if ext not in ("jpg", "jpeg", "png", "webp", "gif", "avif"):
         ext = "jpg"
     cache_path = CACHE_DIR / f"{url_hash}.{ext}"
     if cache_path.exists():
         return str(cache_path)
-    print(f"  [DL] {url[:60]}...")
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "KiMedia/1.0"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            with open(cache_path, "wb") as f:
-                f.write(resp.read())
-        return str(cache_path)
-    except Exception as e:
-        print(f"  [!] Download failed: {e}")
-        return None
+    print(f"  [DL] {url[:70]}...")
+    
+    user_agents = [
+        "KiMedia/1.0",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    ]
+    for ua in user_agents:
+        try:
+            req = urllib.request.Request(url, headers={
+                "User-Agent": ua,
+                "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+                "Accept-Language": "en-US,en;q=0.9",
+                "Referer": "https://www.google.com/",
+            })
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                data = resp.read()
+                if len(data) > 1000:  # Valid image is >1KB
+                    with open(cache_path, "wb") as f:
+                        f.write(data)
+                    return str(cache_path)
+        except Exception as e:
+            continue
+    print(f"  [!] Download failed for {url[:60]}")
+    return None
 
 
 # ─── Background image ────────────────────────────────────────────────
@@ -147,6 +163,20 @@ def apply_backdrop(canvas, text_zone_y, text_zone_height, blur_radius=50, opacit
 
 
 # ─── Generate thumbnail ─────────────────────────────────────────────
+def make_fallback_bg(W, H, brand_color=(10, 10, 10)):
+    """Create a branded gradient background when no image available."""
+    img = Image.new("RGB", (W, H), (20, 20, 30))
+    draw = ImageDraw.Draw(img)
+    # Subtle radial gradient effect using rectangles
+    for i in range(20):
+        alpha = 5 + i * 2
+        x0, y0 = W * i // 80, H * i // 80
+        x1, y1 = W - x0, H - y0
+        color = (min(40 + i*3, 60), min(35 + i*2, 50), min(50 + i*4, 80))
+        draw.rectangle([x0, y0, x1, y1], fill=color)
+    return img
+
+
 def generate_thumbnail(thumb_lines, image_url, cfg, output_path):
     W = cfg["canvas"]["width"]
     H = cfg["canvas"]["height"]
@@ -155,8 +185,8 @@ def generate_thumbnail(thumb_lines, image_url, cfg, output_path):
     # Background
     bg = load_background(image_url, W, H)
     if bg is None:
-        print("  [!] No bg image, using white")
-        bg = Image.new("RGB", (W, H), (255, 255, 255))
+        print("  [!] No bg image, using branded gradient")
+        bg = make_fallback_bg(W, H)
     
     canvas = bg.copy()
     draw = ImageDraw.Draw(canvas)
