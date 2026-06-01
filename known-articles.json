@@ -964,6 +964,31 @@
       "file": "2026-06-01-08.00-03.md",
       "source": "Ars Technica",
       "first_seen": "2026-06-01T08:03:00+07:00"
+    },
+    "https://www.tomshardware.com/tech-industry/mystery-company-accidentally-blew-500-million-claude-ai": {
+      "file": "2026-06-01-09.00-01.md",
+      "source": "Tom's Hardware",
+      "first_seen": "2026-06-01"
+    },
+    "https://www.theverge.com/ai-artificial-intelligence/2026/5/30/ai-generated-papers-peer-review-flood": {
+      "file": "2026-06-01-09.00-02.md",
+      "source": "The Verge",
+      "first_seen": "2026-06-01"
+    },
+    "https://www.pcgamer.com/ai-artificial-intelligence/jennifer-hale-ai-gaming-responsibility/": {
+      "file": "2026-06-01-09.00-03.md",
+      "source": "PC Gamer",
+      "first_seen": "2026-06-01"
+    },
+    "https://www.nbcnews.com/tech/tech-news/teachers-union-ai-chatbots-schools": {
+      "file": "2026-06-01-09.00-04.md",
+      "source": "NBC News",
+      "first_seen": "2026-06-01"
+    },
+    "https://www.cnbc.com/2026/05/30/trump-linked-startup-humanoid-robot-military.html": {
+      "file": "2026-06-01-09.00-05.md",
+      "source": "CNBC",
+      "first_seen": "2026-06-01"
     }
   },
   "source_headlines": {
@@ -1289,14 +1314,16 @@
     ],
     "theverge.com": [
       "openai mau bikin super app gabungin chatgpt codex browser semua",
-      "paus pake ai buat nulis soal bahaya ai kok ironis banget"
+      "paus pake ai buat nulis soal bahaya ai kok ironis banget",
+      "ai generated research papers overwhelming peer review"
     ],
     "cnbc.com": [
       "samsung kirim sampel chip memori ai generasi baru hbm4e",
       "meta ngejar mimpi ai bisakah ai jadi jurus andalan",
       "openai announces gpt55 latest artificial intelligence model",
       "chinas deepseek releases preview longawaited model race intensifies",
-      "trump admin moves oversight test google microsoft xai models"
+      "trump admin moves oversight test google microsoft xai models",
+      "trump linked startup plans put humanoid robots military"
     ],
     "interestingengineering.com": [
       "china post deploys humanoid robots sort 1200 parcels per hour",
@@ -1336,7 +1363,8 @@
       "as the pentagon pushes for battlefield ai some military leaders urge caution"
     ],
     "nbcnews.com": [
-      "inside china push for global dominance evs robotics ai pandas"
+      "inside china push for global dominance evs robotics ai pandas",
+      "teachers union president calls limits ai screen time schools"
     ],
     "news.bloomberglaw.com": [
       "connecticut tanda tangan undang undang ai ketenagakerjaan wajib notifikasi phk ai"
@@ -1346,6 +1374,12 @@
     ],
     "mashable.com": [
       "wix cuts 1000 employees latest aifueled layoff"
+    ],
+    "tomshardware.com": [
+      "mystery company accidentally blew 00 million claude ai single month failed put usage limit licenses employees"
+    ],
+    "pcgamer.com": [
+      "mass effect metal gear actor jennifer hale calls studios take responsibility their ai use"
     ]
   },
   "cross_topics": [
@@ -2473,7 +2507,27 @@
       "who": "Trump",
       "what": "Executive Order",
       "first_seen": "2026-06-01T08:03:00+07:00"
+    },
+    {
+      "who": "The Verge",
+      "what": "AI Paper Flood",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "who": "Jennifer Hale",
+      "what": "AI Gaming Responsibility",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "who": "Teachers Union",
+      "what": "AI Chatbot School Ban",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "who": "Foundation Robotics",
+      "what": "Humanoid Military Robot",
+      "first_seen": "2026-06-01"
     }
   ],
-  "total": 193
+  "total": 198
 }
