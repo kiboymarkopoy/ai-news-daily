@@ -1124,6 +1124,16 @@
       "file": "2026-06-01-20.00-04.md",
       "source": "PetaPixel — Model sues fashion brand AI",
       "first_seen": "2026-06-01"
+    },
+    "https://nvidianews.nvidia.com/news/nvidia-and-tsmc-bring-ai-into-fabs-to-advance-semiconductor-design-and-manufacturing": {
+      "file": "2026-06-01-21.00-01.md",
+      "source": "NVIDIA Newsroom — NVIDIA TSMC AI Fabs",
+      "first_seen": "2026-06-01"
+    },
+    "https://arstechnica.com/ai/2026/06/openais-math-breakthrough-played-to-ais-strengths/": {
+      "file": "2026-06-01-21.00-02.md",
+      "source": "Ars Technica",
+      "first_seen": "2026-06-01"
     }
   },
   "source_headlines": {
@@ -1281,7 +1291,8 @@
       "millions ai agents imperiled critical vulnerability open source package",
       "youtube begin automatically labeling ai videos",
       "trump abruptly cancels eo signing event after top ai firm ceos declined go",
-      "ai put synthetic quotes his book author wants keep using"
+      "ai put synthetic quotes his book author wants keep using",
+      "openai model solved famous math problem stumped humans 80 years"
     ],
     "finance.yahoo.com": [
       "jensen huang gas ke taiwan nvidia mau investasi 150 miliar per tahun sana",
@@ -1541,7 +1552,8 @@
       "nvidia unveils vera cpu for agents first processor built agentic ai",
       "nvidia announces nvidia isaac gr00t reference humanoid robot academic research",
       "nvidia releases major collection open source agent tools skills physical",
-      "nvidia launches alpamayo super open reasoning model robotaxis"
+      "nvidia launches alpamayo super open reasoning model robotaxis",
+      "nvidia tsmc bring ai into fabs advance semiconductor design manufacturing"
     ],
     "firstpost.com": [
       "openai hiring robotics engineers sam altman lays vision aipowered humanoids"
@@ -2873,7 +2885,32 @@
       "who": "Model",
       "what": "AI-Generated Pictures Lawsuit",
       "first_seen": "2026-06-01"
+    },
+    {
+      "who": "NVIDIA",
+      "what": "TSMC",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "who": "NVIDIA",
+      "what": "CHIP FAB",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "who": "TSMC",
+      "what": "AI MANUFACTURING",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "who": "OpenAI",
+      "what": "Math Problem",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "who": "OpenAI",
+      "what": "Erdos",
+      "first_seen": "2026-06-01"
     }
   ],
-  "total": 225
+  "total": 227
 }
