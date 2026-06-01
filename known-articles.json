@@ -1104,6 +1104,26 @@
       "file": "2026-06-01-19.01-03.md",
       "source": "Computerworld",
       "first_seen": "2026-06-01"
+    },
+    "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ2syWGhmZU10YXdaWk9vWlpoaWlsOXp3SGg3TXZFdEFyQm9waHZfOUFIOVAtenNFM1RJTk84cXFEOU1ZNzNMZ0VVNm5vX1pPSE0zMlU4bTZRcTNtNmNTZERHR1hCbVNFM2tFNC01Z2ZTeF9qVmppa2p0clNWRUV4b1ZWck9wMUE?oc=5": {
+      "file": "2026-06-01-20.00-01.md",
+      "source": "NVIDIA Newsroom — RTX Spark DGX Station",
+      "first_seen": "2026-06-01"
+    },
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxOeUZlQXhzZ1BxZUpwQlY5LUhuOEw4ZGdycGpKWWdXZUh2VUlZb3pldEEwajFLVVZjZVczTEFVOGE4VmJlc0g2YjdoZjBBWGxIN192R2NJT05ETlBEUUtLT2w5SmhsRFdWMnlobVh2SG1ZWFJ1V0haV2tSSlZ5X1FaXy1BeWtXekt3UGlpZ1hkeGx0OUlTUlFkRHFpM2ZURkFOTFEyWk1PWVl1ZGoyTjVF?oc=5": {
+      "file": "2026-06-01-20.00-02.md",
+      "source": "NVIDIA Newsroom — Cosmos 3",
+      "first_seen": "2026-06-01"
+    },
+    "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNHRPc1hKaF9fbmY1Q2FQWlUxREExZHpCaUtjd2JHZ3RudGxkcDFZUTZ4RWJiYzFuelR3eTR1MnN6SlRjeUExMzczeXZJdmhpQkpzOHpybkxzeEJqNXFVbUtSNXRxcTNoV19HZjVzRmNCa0xWd2lGZUhaNE8tNDQ4c1UycWhyME52ejVibdIBkgFBVV95cUxNSFpZdDI3VV9qVzRjaTA2NC00SDRsTlc5OXBBWWZOalRjblJoTnFBNTk2cnNVVXAtSXhJazlaVWZ6ZnZtNjR6WHR4VGFxZzJ5Qjk5T1dlRjNhbmRsby1lZ3BRbXo1amYteGQzb0ZUMVN1WU5kM0ZnWUhsXzIxYVJ4Zk1KMXJrSmI5Z1l4TGlvVVd3dw?oc=5": {
+      "file": "2026-06-01-20.00-03.md",
+      "source": "CNBC — SoftBank Son AI 50x",
+      "first_seen": "2026-06-01"
+    },
+    "https://news.google.com/rss/articles/CBMinAFBVV95cUxQOVowMHRJQU8yTm1GWlBPYk5lcHB4YVZMTEZJWk5MYjNzNFZEeERFemVsOW9ndVRmT2ZCTzg1Z0hha0d6aDJwc1RtODhVNW83TmlBd3Fubk1DZlFEY2JTaUh2S3Y4RGE0VVNwTlhldG5TbllfN051OVRFYWdxRnZOOVhuTG9scUVzLXNNZHo2dExXRzdhMUNIRVRNbl8?oc=5": {
+      "file": "2026-06-01-20.00-04.md",
+      "source": "PetaPixel — Model sues fashion brand AI",
+      "first_seen": "2026-06-01"
     }
   },
   "source_headlines": {
@@ -1433,7 +1453,11 @@
       "bezos launches startup reported funding",
       "anthropic guarded mythos model headed wider release",
       "microsoft release new coding model next week information reports",
-      "pitchforks are here billionaires work contain ai populist revolt"
+      "pitchforks are here billionaires work contain ai populist revolt",
+      "nvidia microsoft reinvent windows pcs age personal",
+      "nvidia launches cosmos open frontier foundation model physical",
+      "revolution 50x bigger dotcom boom softbank masayoshi son",
+      "model sues fashion brand generated pictures her"
     ],
     "www.marktechpost.com": [
       "stepfun releases step flash a b moe vision language model for coding agents and search workflows",
@@ -2834,7 +2858,22 @@
       "who": "EU",
       "what": "AI Regulation Study",
       "first_seen": "2026-06-01T19:01:00+07:00"
+    },
+    {
+      "who": "NVIDIA",
+      "what": "AI PC Chip",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "who": "SoftBank",
+      "what": "50x Bigger",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "who": "Model",
+      "what": "AI-Generated Pictures Lawsuit",
+      "first_seen": "2026-06-01"
     }
   ],
-  "total": 221
+  "total": 225
 }
