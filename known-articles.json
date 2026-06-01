@@ -1154,6 +1154,16 @@
       "file": "2026-06-01/23.00-03.md",
       "source": "The Verge — AI Grammys Podcast",
       "first_seen": "2026-06-01"
+    },
+    "https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/": {
+      "file": "2026-06-02/00.06-01.md",
+      "source": "TechCrunch — Anthropic files to go public",
+      "first_seen": "2026-06-02"
+    },
+    "https://techcrunch.com/2026/06/01/this-ai-weather-startup-is-out-forecasting-government-agencies/": {
+      "file": "2026-06-02/00.06-02.md",
+      "source": "TechCrunch — AI weather startup",
+      "first_seen": "2026-06-02"
     }
   },
   "source_headlines": {
@@ -1228,7 +1238,9 @@
       "companies become too ai pilled",
       "internet being rebuilt for machines",
       "asana acquires no code agent builder stackai",
-      "duckduckgo makes no ai search engine easier access traffic booms"
+      "duckduckgo makes no ai search engine easier access traffic booms",
+      "anthropic files go public",
+      "weather startup forecasting government agencies"
     ],
     "www.rollingstone.com": [
       "film pertama buatan ai total tayang tribeca biaya cuma 2 000",
@@ -2964,7 +2976,22 @@
       "who": "Grammys",
       "what": "AI Music",
       "first_seen": "2026-06-01"
+    },
+    {
+      "who": "Anthropic",
+      "what": "IPO",
+      "first_seen": "2026-06-02"
+    },
+    {
+      "who": "Anthropic",
+      "what": "Public",
+      "first_seen": "2026-06-02"
+    },
+    {
+      "who": "WindBorne",
+      "what": "WeatherMesh",
+      "first_seen": "2026-06-02"
     }
   ],
-  "total": 231
+  "total": 233
 }
