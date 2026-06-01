@@ -3,7 +3,7 @@
     "version": 2,
     "created_at": "2026-06-02T00:00:00+07:00",
     "updated_at": "2026-06-02",
-    "total_articles": 231,
+    "total_articles": 235,
     "total_posts": 0
   },
   "brand": {
@@ -3179,6 +3179,58 @@
           "thumb_highlight": 0,
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/CoSim-SG1-1152x648.jpeg",
           "thumb_generated": false
+        },
+        "https://techcrunch.com/2026/06/01/alphabet-plans-to-raise-80-billion-to-pay-for-ai-buildout/": {
+          "file": "2026-06-02/06.07-1.md",
+          "source": "techcrunch.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Alphabet Siap Kumpulkan",
+            "$80 Miliar dari Jual Saham",
+            "Dana Terbesar Buat AI Infrastructure"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2173545265.jpg?resize=1200,800",
+          "thumb_generated": false
+        },
+        "https://www.meritalk.com/articles/sanders-to-introduce-bill-creating-ai-sovereign-wealth-fund/": {
+          "file": "2026-06-02/06.07-2.md",
+          "source": "www.meritalk.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Sanders Usulkan Dana",
+            "Kekayaan Berdaulat AI",
+            "Pajak AI Buat Sosial"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://www.meritalk.com/wp-content/uploads/2025/10/Adobe-Express-file-1.jpg",
+          "thumb_generated": false
+        },
+        "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/": {
+          "file": "2026-06-02/06.07-3.md",
+          "source": "openai.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "OpenAI Hadirkan Model",
+            "Frontier dan Codex di AWS",
+            "Adopsi Enterprise Makin Mudah"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "",
+          "thumb_generated": false
+        },
+        "https://fortune.com/2026/06/01/godfather-of-ai-hinton-warning-superintelligence/": {
+          "file": "2026-06-02/06.07-4.md",
+          "source": "fortune.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Godfather of AI",
+            "Peringatkan Manusia soal",
+            "Kecerdasan yang Melampaui"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "",
+          "thumb_generated": false
         }
       },
       "source_headlines": {
@@ -3304,7 +3356,8 @@
           "mesin pencari yang antiai strategi berani duckduckgo di tengah demam ai",
           "gila anthropic startup ai paling berharga di dunia resmi ajukan ipo target valuasi 1 triliun",
           "ai weathermesh 6 dari windborne bisa prediksi cuaca lebih akurat dari pemerintah eropa gegara 400 balon udara",
-          "spacex peringatkan risiko air di ipo data center ai"
+          "spacex peringatkan risiko air di ipo data center ai",
+          "alphabet siap kumpulkan 80 miliar dari jual saham dana terbesar buat ai infrastructure"
         ],
         "www.tomshardware.com": [
           "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -3400,7 +3453,8 @@
           "bocoran terbaru microsoft mau bikin aplikasi ai raksasa yang gabungin semua layanan copilot jadi satu",
           "taylor swift just exposed a blind spot in ai law and its bigger than copyright",
           "the ai economy could crash on mounting chip costs and those token costs wont help",
-          "gila startup ai uji coba 5 model ai jadi penguasa kota virtual hasilnya bikin merinding"
+          "gila startup ai uji coba 5 model ai jadi penguasa kota virtual hasilnya bikin merinding",
+          "godfather of ai peringatkan manusia soal kecerdasan yang melampaui"
         ],
         "www.wsj.com": [
           "perusahaan di as mulai menjatah ai biaya langganan melonjak dompet menjerit"
@@ -3492,6 +3546,12 @@
           "agent ai kini bisa ngatur robot mobil otonom dan pabrik nvidia rilis puluhan tools skills open source",
           "nvidia bikin model alasan robotaxi bukan cuma nyetir tapi mikir dulu sebelum ambil tindakan",
           "nvidia tsmc resmi deploy ai di pabrik chip revolusi manufaktur semikonduktor dimulai"
+        ],
+        "www.meritalk.com": [
+          "sanders usulkan dana kekayaan berdaulat ai pajak ai buat sosial"
+        ],
+        "openai.com": [
+          "openai hadirkan model frontier dan codex di aws adopsi enterprise makin mudah"
         ]
       },
       "cross_topics": [
@@ -3919,9 +3979,24 @@
           "who": "General Motors",
           "what": "AI ML speeding up car development simulation",
           "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Alphabet",
+          "what": "plans to raise $80 billion for AI buildout",
+          "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Sanders",
+          "what": "proposes AI Sovereign Wealth Fund bill",
+          "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Geoffrey Hinton",
+          "what": "warns AI superintelligence soon surpassing humans",
+          "first_seen": "2026-06-02"
         }
       ],
-      "total": 231
+      "total": 235
     },
     "queue": {
       "pending": [],

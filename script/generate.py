@@ -211,6 +211,78 @@ def check_text_contrast(img, text_positions, threshold_brightness=180):
     return bright_zones / total_zones < 0.4  # <40% bright zones = OK
 
 
+# ── Smart line fitting ──
+def smart_fit_line(text, max_width, font, draw, size):
+    """Fit a single line within max_width. Returns (fitted_text, truncated_bool).
+    
+    5-stage pipeline:
+    1. Strip quotes
+    2. Word-boundary truncation with "…" (preserves grammar)
+    3. Remove clause after punctuation (— , ;)
+    4. Remove filler words
+    5. Character-level truncation (last resort)
+    """
+    def text_w(t):
+        bb = draw.textbbox((0, 0), t, font=font)
+        return bb[2] - bb[0]
+
+    if text_w(text) <= max_width:
+        return text, False
+
+    # Stage 1: Strip quotes
+    noq = text
+    for ch in ['\u201c', '\u201d', '\u2018', '\u2019', '"', '"']:
+        noq = noq.replace(ch, '')
+    noq = noq.strip('"')
+    if noq != text and text_w(noq) <= max_width:
+        return noq, True
+
+    current = noq if noq else text
+
+    # Stage 2: Word-boundary truncation
+    words = current.split()
+    if len(words) >= 2:
+        for i in range(len(words) - 1, 0, -1):
+            t = ' '.join(words[:i]) + ' \u2026'
+            if text_w(t) <= max_width:
+                return t, True
+
+    # Stage 3: Remove clause after punctuation
+    for sep in [' \u2014 ', ' \u2013 ', ' - ', ', ', '; ']:
+        if sep in current:
+            before = current.split(sep, 1)[0].strip()
+            if before and text_w(before) <= max_width:
+                return before, True
+
+    # Stage 4: Remove filler words from middle
+    if len(words) >= 3:
+        filler = {'yang', 'paling', 'sangat', 'telah', 'sudah', 'sedang',
+                  'ini', 'itu', 'para', 'serta', 'lagi', 'juga', 'atau',
+                  'dapat', 'bisa', 'di', 'ke', 'dari', 'untuk', 'dengan', 'tanpa'}
+        w = words[:]
+        changed = True
+        while changed:
+            changed = False
+            for i in range(1, len(w) - 1):
+                word = w[i].lower().strip('.,;:!?')
+                if word in filler:
+                    nw = w[:i] + w[i+1:]
+                    nt = ' '.join(nw)
+                    if text_w(nt) <= max_width:
+                        return nt, True
+                    w = nw
+                    changed = True
+                    break
+
+    # Stage 5: Character-level truncation
+    for i in range(len(current) - 1, 5, -1):
+        t = current[:i] + '\u2026'
+        if text_w(t) <= max_width:
+            return t, True
+
+    return current[:4] + '\u2026', True
+
+
 # ── Determine highlight index dynamically ──
 def get_highlight_index(num_lines):
     """2 lines → line 0, 3 lines → line 1, 1 line → no highlight"""
@@ -274,13 +346,12 @@ def generate_thumbnail(thumb_lines, highlight_idx, image_url, cfg, output_path):
     if highlight_idx is None or highlight_idx < 0:
         highlight_idx = get_highlight_index(len(lines))
 
-    # ── Auto-split long lines ──
-    # Try to fit at default size first, then downsample
+    # ── Find best font size + fit each line ──
     default_size = hl_cfg.get("default_size", 56)
     min_size = hl_cfg.get("min_size", 44)
     max_text_w = int(W * hl_cfg.get("max_width_pct", 0.88)) - PADDING_PX
 
-    # Find font size that fits ALL lines
+    # Find font size where MOST lines fit naturally
     font_size = default_size
     while font_size >= min_size:
         ft = get_font(hl_cfg.get("font", "Montserrat-Bold"), font_size)
@@ -292,56 +363,20 @@ def generate_thumbnail(thumb_lines, highlight_idx, image_url, cfg, output_path):
             break
         font_size -= 2
 
-    # If even at min_size it doesn't fit, try splitting the longest line
-    if font_size < min_size:
-        font_size = min_size
-        ft = get_font(hl_cfg.get("font", "Montserrat-Bold"), font_size)
-        # Try to split the longest line at word boundary
-        new_lines = []
-        for text in lines:
-            bb = draw_orig.textbbox((0, 0), text, font=ft)
-            tw = bb[2] - bb[0]
-            if tw > max_text_w and len(new_lines) < max_lines:
-                # Split at midpoint word boundary
-                words = text.split()
-                if len(words) >= 3:
-                    half = len(words) // 2
-                    line_a = " ".join(words[:half])
-                    line_b = " ".join(words[half:])
-                    new_lines.append(line_a)
-                    if len(new_lines) < max_lines:
-                        new_lines.append(line_b)
-                else:
-                    new_lines.append(text)
-            else:
-                if len(new_lines) < max_lines:
-                    new_lines.append(text)
-        lines = new_lines[:max_lines]
-
-    # Re-check if all lines fit at min_size
+    # If some lines still don't fit at min_size -> smart-fit them
+    font_size = max(min_size, font_size)
     ft = get_font(hl_cfg.get("font", "Montserrat-Bold"), font_size)
-    all_fit = True
+    fitted_lines = []
+    shortened_count = 0
     for text in lines:
-        bb = draw_orig.textbbox((0, 0), text, font=ft)
-        tw = bb[2] - bb[0]
-        if tw > max_text_w:
-            all_fit = False
-            break
+        fitted, shortened = smart_fit_line(text, max_text_w, ft, draw_orig, font_size)
+        fitted_lines.append(fitted)
+        if shortened:
+            shortened_count += 1
+    lines = fitted_lines
 
-    if not all_fit:
-        # Last resort: drop last line
-        while len(lines) > 1 and not all_fit:
-            lines = lines[:-1]
-            all_fit = True
-            for text in lines:
-                bb = draw_orig.textbbox((0, 0), text, font=ft)
-                tw = bb[2] - bb[0]
-                if tw > max_text_w:
-                    all_fit = False
-                    break
-        if not all_fit:
-            print(f"  [SKIP] Lines still don't fit even after reduction")
-            return None
+    if shortened_count > 0:
+        print(f"  [FIT] {shortened_count}/{len(lines)} line(s) shortened to fit")
 
     # ── Calculate positions ──
     line_spacing = hl_cfg.get("line_spacing", 1.25)
