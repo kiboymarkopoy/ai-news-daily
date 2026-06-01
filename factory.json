@@ -2,8 +2,8 @@
   "meta": {
     "version": 1,
     "created_at": "2026-06-02T00:00:00+07:00",
-    "updated_at": "2026-06-02T01.03+07:00",
-    "total_articles": 226,
+    "updated_at": "2026-06-02T03.00+07:00",
+    "total_articles": 228,
     "total_posts": 0
   },
   "brand": {
@@ -2887,6 +2887,30 @@
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/intel-1152x648.jpg",
           "thumb_generated": false
+        },
+        "https://arstechnica.com/tech-policy/2026/06/florida-sues-openai-sam-altman-after-multiple-chatgpt-linked-murders/": {
+          "file": "2026-06-02/03.00-01.md",
+          "source": "arstechnica.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Florida Gugat OpenAI & Sam Altman",
+            "ChatGPT Dituding Bantu Rencana Pembunuhan",
+            "Pertama Kali dalam Sejarah!"
+          ],
+          "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2265991640-640x427.jpg",
+          "thumb_generated": false
+        },
+        "https://arstechnica.com/ai/2026/06/allegedly-trashing-airbnbs-to-test-robots-puts-startup-in-legal-trouble/": {
+          "file": "2026-06-02/03.00-02.md",
+          "source": "arstechnica.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Startup Robot Merusak Airbnb",
+            "Uji Coba Robot Berakhir Gugatan",
+            "Rusak Rumah Harga 2 Ribu!"
+          ],
+          "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2248542588-640x448.jpg",
+          "thumb_generated": false
         }
       },
       "source_headlines": {
@@ -3038,7 +3062,9 @@
           "ai mencuri kutipan palsu ke dalam buku penulis tapi penulisnya nggak mau berhenti pake ai",
           "bocoran detail gimana model internal openai akhirnya ngebuktiin erds unit distance conjecture yang bikin matematician tercengang",
           "nvidia rtx spark comes windows pcs arm cpu rtx gpu unified memory",
-          "intel upcoming chip cheaper run cooler nvidia amd options"
+          "intel upcoming chip cheaper run cooler nvidia amd options",
+          "florida sues openai sam altman after multiple chatgpt linked murders",
+          "startup robot the bot company airbnb trashes home legal trouble lawsuit"
         ],
         "www.businessinsider.com": [
           "anthropic sekarang startup ai paling berharga di dunia openai tumbang"
@@ -3597,9 +3623,19 @@
           "who": "Intel",
           "what": "Crescent Island AI inference GPU, Computex",
           "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Florida",
+          "what": "sues OpenAI Sam Altman ChatGPT murders",
+          "first_seen": "2026-06-02"
+        },
+        {
+          "who": "The Bot Company",
+          "what": "trashes Airbnb robot testing lawsuit",
+          "first_seen": "2026-06-02"
         }
       ],
-      "total": 226
+      "total": 228
     },
     "queue": {
       "pending": [],
