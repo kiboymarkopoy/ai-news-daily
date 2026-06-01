@@ -931,9 +931,9 @@
       "first_seen": "2026-06-01T04:00:00+07:00"
     },
     "https://techcrunch.com/2026/05/31/erin-brockovich-takes-aim-at-data-center-secrecy/": {
-      "file": "2026-06-01-04.00-03.md",
-      "source": "TechCrunch — Erin Brockovich Data Centers",
-      "first_seen": "2026-06-01T04:00:00+07:00"
+      "file": "2026-06-01-13.00-01.md",
+      "source": "TechCrunch — Erin Brockovich",
+      "first_seen": "2026-06-01"
     },
     "https://www.foxnews.com/tech/humanoid-robot-cleans-first-us-apartment": {
       "file": "2026-06-01-04.00-04.md",
@@ -1014,6 +1014,16 @@
       "file": "2026-06-01-12.00-03.md",
       "source": "NVIDIA Newsroom",
       "first_seen": "2026-06-01"
+    },
+    "https://www.theverge.com/ai-artificial-intelligence/937901/people-sure-do-hate-googles-ai-search-updates": {
+      "file": "2026-06-01-13.00-02.md",
+      "source": "The Verge — Google AI Search Backlash",
+      "first_seen": "2026-06-01"
+    },
+    "https://www.theverge.com/ai-artificial-intelligence/937933/pope-ai-encyclical-tech-industry-reactions": {
+      "file": "2026-06-01-13.00-03.md",
+      "source": "The Verge — Pope AI Encyclical Reactions",
+      "first_seen": "2026-06-01"
     }
   },
   "source_headlines": {
@@ -1082,7 +1092,8 @@
       "pope use ai write dangers ai",
       "making sense debate psychosis",
       "this fine artist kc green reaches agreement ai startup artisan",
-      "erin brockovich target data center ai serukan transparansi peta interaktif"
+      "erin brockovich target data center ai serukan transparansi peta interaktif",
+      "erin brockovich takes aim at data center secrecy"
     ],
     "www.rollingstone.com": [
       "film pertama buatan ai total tayang tribeca biaya cuma 2 000",
@@ -1340,7 +1351,9 @@
     "theverge.com": [
       "openai mau bikin super app gabungin chatgpt codex browser semua",
       "paus pake ai buat nulis soal bahaya ai kok ironis banget",
-      "ai generated research papers overwhelming peer review"
+      "ai generated research papers overwhelming peer review",
+      "people sure do hate googles ai search updates",
+      "the pope ai encyclical tech industry reactions"
     ],
     "cnbc.com": [
       "samsung kirim sampel chip memori ai generasi baru hbm4e",
@@ -2584,7 +2597,17 @@
       "who": "NVIDIA",
       "what": "Alpamayo 2 Super Model",
       "first_seen": "2026-06-01T12:00:00+07:00"
+    },
+    {
+      "who": "Google",
+      "what": "AI Search Backlash",
+      "first_seen": "2026-06-01T13:00:00+07:00"
+    },
+    {
+      "who": "Pope",
+      "what": "AI Encyclical",
+      "first_seen": "2026-06-01T13:00:00+07:00"
     }
   ],
-  "total": 203
+  "total": 205
 }
