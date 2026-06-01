@@ -1134,6 +1134,11 @@
       "file": "2026-06-01-21.00-02.md",
       "source": "Ars Technica",
       "first_seen": "2026-06-01"
+    },
+    "https://techcrunch.com/2026/06/01/duckduckgo-makes-its-no-ai-search-engine-easier-to-access-as-its-traffic-booms/": {
+      "file": "2026-06-01-22.00-01.md",
+      "source": "TechCrunch",
+      "first_seen": "2026-06-01"
     }
   },
   "source_headlines": {
@@ -1206,7 +1211,8 @@
       "erin brockovich takes aim at data center secrecy",
       "companies become too ai pilled",
       "internet being rebuilt for machines",
-      "asana acquires no code agent builder stackai"
+      "asana acquires no code agent builder stackai",
+      "duckduckgo makes no ai search engine easier access traffic booms"
     ],
     "www.rollingstone.com": [
       "film pertama buatan ai total tayang tribeca biaya cuma 2 000",
@@ -2910,7 +2916,22 @@
       "who": "OpenAI",
       "what": "Erdos",
       "first_seen": "2026-06-01"
+    },
+    {
+      "who": "DuckDuckGo",
+      "what": "No-AI Search",
+      "first_seen": "2026-06-01T22:00:00+07:00"
+    },
+    {
+      "who": "DuckDuckGo",
+      "what": "Search Engine",
+      "first_seen": "2026-06-01T22:00:00+07:00"
+    },
+    {
+      "who": "DuckDuckGo",
+      "what": "Browser Extension",
+      "first_seen": "2026-06-01T22:00:00+07:00"
     }
   ],
-  "total": 227
+  "total": 228
 }
