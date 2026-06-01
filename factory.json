@@ -2,8 +2,8 @@
   "meta": {
     "version": 1,
     "created_at": "2026-06-02T00:00:00+07:00",
-    "updated_at": "2026-06-02T00:00:00+07:00",
-    "total_articles": 224,
+    "updated_at": "2026-06-02T01.03+07:00",
+    "total_articles": 226,
     "total_posts": 0
   },
   "brand": {
@@ -2863,6 +2863,30 @@
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/Pic-8.jpg?resize=1200,675",
           "thumb_generated": false
+        },
+        "https://arstechnica.com/gadgets/2026/06/nvidia-gets-into-the-arm-pc-business-with-new-high-end-rtx-spark-processor/": {
+          "file": "2026-06-02/01.03-01.md",
+          "source": "arstechnica.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Nvidia Resmi Bikin Chip PC",
+            "RTX Spark: Arm + GPU Desktop",
+            "Siap Lawan Apple & Qualcomm"
+          ],
+          "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/nvidia-rtx-spark.jpeg",
+          "thumb_generated": false
+        },
+        "https://arstechnica.com/ai/2026/06/intel-our-upcoming-ai-chip-will-be-cheaper-run-cooler-than-nvidia-amd-options/": {
+          "file": "2026-06-02/01.03-02.md",
+          "source": "arstechnica.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Intel Balas Dendam Ke Nvidia",
+            "Crescent Island GPU: Lebih Murah",
+            "Pake LPDDR5, Air-Cooled!"
+          ],
+          "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/intel-1152x648.jpg",
+          "thumb_generated": false
         }
       },
       "source_headlines": {
@@ -3012,7 +3036,9 @@
           "youtube keluarkan aturan baru semua video yang dibikin ai bakal ditag otomatis pake sistem deteksi internal kreator gak bisa manipulasi",
           "ceo ai nolak hadir trump batalkan tanda tangan executive order safety testing di menit terakhir",
           "ai mencuri kutipan palsu ke dalam buku penulis tapi penulisnya nggak mau berhenti pake ai",
-          "bocoran detail gimana model internal openai akhirnya ngebuktiin erds unit distance conjecture yang bikin matematician tercengang"
+          "bocoran detail gimana model internal openai akhirnya ngebuktiin erds unit distance conjecture yang bikin matematician tercengang",
+          "nvidia rtx spark comes windows pcs arm cpu rtx gpu unified memory",
+          "intel upcoming chip cheaper run cooler nvidia amd options"
         ],
         "www.businessinsider.com": [
           "anthropic sekarang startup ai paling berharga di dunia openai tumbang"
@@ -3561,9 +3587,19 @@
           "who": "Anthropic",
           "what": ", Startup AI Paling Berharga di Dunia, R",
           "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Nvidia",
+          "what": "RTX Spark chip, Arm PC processor, Computex",
+          "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Intel",
+          "what": "Crescent Island AI inference GPU, Computex",
+          "first_seen": "2026-06-02"
         }
       ],
-      "total": 224
+      "total": 226
     },
     "queue": {
       "pending": [],
