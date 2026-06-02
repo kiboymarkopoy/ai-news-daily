@@ -3,7 +3,7 @@
     "version": 2,
     "created_at": "2026-06-02T00:00:00+07:00",
     "updated_at": "2026-06-02",
-    "total_articles": 242,
+    "total_articles": 243,
     "total_posts": 0
   },
   "brand": {
@@ -3324,6 +3324,19 @@
           "thumb_highlight": 0,
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/STKB305_STRAVA_B.jpg",
           "thumb_generated": false
+        },
+        "https://blogs.nvidia.com/blog/jetson-agentic-ai-physical-world/": {
+          "file": "2026-06-02/13.00-01.md",
+          "source": "blogs.nvidia.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Agentic AI Kini di Perangkat Fisik",
+            "NVIDIA Rilis JetPack 7.2 dan NemoClaw",
+            "Robot dan Pabrik Makin Otonom"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://blogs.nvidia.com/wp-content/uploads/2026/06/robotics-press-jetson-agentic-ready-cptx26-1920x1080-5180550.jpg",
+          "thumb_generated": false
         }
       },
       "source_headlines": {
@@ -3615,7 +3628,8 @@
         "blogs.nvidia.com": [
           "nvidia pamer 8 paper riset robotics di icra 2026 robot yang latihan di game kini bisa jalan di dunia nyata",
           "nvidia bikin gebrakan baru ising jadi model ai open source pertama di dunia yang dirancang khusus untuk akselerasi komputer kuantum",
-          "nvidia rilis cosmos 3 model ai dunia terbuka yang bisa lihat dengar dan rencanakan gerakan robot bukan cuma gerak otomatis lagi"
+          "nvidia rilis cosmos 3 model ai dunia terbuka yang bisa lihat dengar dan rencanakan gerakan robot bukan cuma gerak otomatis lagi",
+          "nvidia bawa agentic ke dunia fisik lewat jetson dan nemoclaw robot dan pabrik jadi otonom"
         ],
         "www.koreaherald.com": [
           "nc ai anak perusahaan ncsoft dan posco dx resmi teken kerjasama strategis buat kembangkan robot foundation model ini langkah berani korea di dunia robotika"
@@ -4137,9 +4151,14 @@
           "who": "Strava",
           "what": "API access AI apps",
           "first_seen": "2026-06-02"
+        },
+        {
+          "who": "NVIDIA",
+          "what": "Jetson Agentic AI NemoClaw JetPack physical world robots",
+          "first_seen": "2026-06-02"
         }
       ],
-      "total": 242
+      "total": 243
     },
     "queue": {
       "pending": [],
