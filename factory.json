@@ -3,7 +3,7 @@
     "version": 2,
     "created_at": "2026-06-02T00:00:00+07:00",
     "updated_at": "2026-06-02",
-    "total_articles": 257,
+    "total_articles": 259,
     "total_posts": 0
   },
   "brand": {
@@ -3519,6 +3519,32 @@
           "thumb_highlight": 0,
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Google-Gemini-Spark.jpg?quality=90&strip=all&crop=0%2C10.711701357851%2C100%2C78.576597284297&w=1200",
           "thumb_generated": true
+        },
+        "https://venturebeat.com/technology/minimax-m3-debuts-eclipsing-gpt-5-5-and-gemini-3-1-pro-on-key-benchmark-performance-for-just-5-10-of-the-cost": {
+          "file": "2026-06-02/21.06-01.md",
+          "source": "venturebeat.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "MiniMax M3 Kalahkan GPT-5.5",
+            "dan Gemini 3.1 Pro",
+            "Hanya 10 Persen Biayanya"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/2xknlPWQng1dFd9Hs24w6L/f35f7459068592467a35e04819c87a59/ChatGPT_Image_Jun_1__2026__11_28_15_AM.png?w=1000&q=100",
+          "thumb_generated": false
+        },
+        "https://venturebeat.com/security/anthropic-browser-agent-hijacked-31-percent-before-safeguards-engaged": {
+          "file": "2026-06-02/21.06-02.md",
+          "source": "venturebeat.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Browser AI Claude Bisa Dibajak",
+            "31,5 Persen Sekali Coba",
+            "Anthropic Buka Data Keamanan"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/4HRY3GcnERUOX9hYWvCPIE/9f0831912aa5741f124b39d1c6ebb4a9/HERO.png?w=1000&q=100",
+          "thumb_generated": false
         }
       },
       "source_headlines": {
@@ -3774,7 +3800,9 @@
           "saat claude code berbayar 200bulan nouscoder14b dateng gratis dan hasilnya ngeri",
           "ai agents are entering their rebuild era as enterprises confront the reliability problem versi 20 lagi digarap",
           "peneliti metagoogle ciptain autotts biaya token ai langsung pangkas 695 tanpa kurangi akurasi",
-          "startup ai prancis mistral bukabukaan bikin model fisika buat airbus rebranding assistant jadi vibe dan target 1 miliar di 2026"
+          "startup ai prancis mistral bukabukaan bikin model fisika buat airbus rebranding assistant jadi vibe dan target 1 miliar di 2026",
+          "minimax m3 debut kalahkan gpt 5 5 gemini 3 1 pro harga cuma 10 persen",
+          "risiko browser ai claude bisa dibajak 31 5 persen anthropic buka data keamanan"
         ],
         "www.kxan.com": [
           "anggota kongres as usul pajak ai hasilnya buat training ulang pekerja"
@@ -4436,9 +4464,19 @@
           "who": "Google",
           "what": "Gemini Spark AI agent launch 24/7",
           "first_seen": "2026-06-02"
+        },
+        {
+          "who": "MiniMax",
+          "what": "M3 model kalahkan GPT-5.5 Gemini 3.1 Pro dengan harga murah",
+          "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Anthropic",
+          "what": "Browser agent hijacked 31.5% prompt injection",
+          "first_seen": "2026-06-02"
         }
       ],
-      "total": 257
+      "total": 259
     },
     "queue": {
       "pending": [],
