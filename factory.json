@@ -3,7 +3,7 @@
     "version": 2,
     "created_at": "2026-06-02T00:00:00+07:00",
     "updated_at": "2026-06-02",
-    "total_articles": 249,
+    "total_articles": 250,
     "total_posts": 0
   },
   "brand": {
@@ -3415,6 +3415,19 @@
           "thumb_highlight": 1,
           "thumb_image": "https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2026/06/02/0606b535-d351-49c1-a664-307b7518efdf_fc2c5000.jpg?itok=Qj5ggJc_&v=1780379128",
           "thumb_generated": false
+        },
+        "https://www.bbc.com/news/articles/c74d1ydv01eo": {
+          "file": "2026-06-02/17.06-01.md",
+          "source": "www.bbc.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Strategi AI Bikin Bingung",
+            "Perusahaan Terjebak Tren Tanpa",
+            "Rencana Jelas, Karyawan Frustrasi"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://ichef.bbci.co.uk/news/1024/branded_news/b7c7/live/85925530-5033-11f1-89a3-d1f559421220.jpg",
+          "thumb_generated": false
         }
       },
       "source_headlines": {
@@ -3426,7 +3439,8 @@
           "ethical hacker juara dunia ini mungkin lomba terakhir gue",
           "bmw resmi pakai robot humanoid di pabrik kata mereka ini masa depan produksi mobil",
           "gila drone ai ukraina bikin rusia kehilangan ratusan truk logistik jarak tempuh lebih dari 100 km",
-          "bankbank inggris diblokir akses mythos ai openai langsung turun tangan tawarin gpt55 cyber"
+          "bankbank inggris diblokir akses mythos ai openai langsung turun tangan tawarin gpt55 cyber",
+          "how confused ai rollout hurts firms baffles staff"
         ],
         "www.rollingstone.com": [
           "film pertama buatan ai total tayang di tribeca biaya cuma 2000",
@@ -4274,9 +4288,14 @@
           "who": "Tencent",
           "what": "Saham Melonjak 10% Ekspektasi AI Agent WeChat",
           "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Perusahaan",
+          "what": "Strategi AI Bingung Karyawan Frustrasi",
+          "first_seen": "2026-06-02"
         }
       ],
-      "total": 249
+      "total": 250
     },
     "queue": {
       "pending": [],
