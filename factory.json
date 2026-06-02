@@ -3,7 +3,7 @@
     "version": 2,
     "created_at": "2026-06-02T00:00:00+07:00",
     "updated_at": "2026-06-02",
-    "total_articles": 250,
+    "total_articles": 253,
     "total_posts": 0
   },
   "brand": {
@@ -3428,6 +3428,45 @@
           "thumb_highlight": 0,
           "thumb_image": "https://ichef.bbci.co.uk/news/1024/branded_news/b7c7/live/85925530-5033-11f1-89a3-d1f559421220.jpg",
           "thumb_generated": false
+        },
+        "https://pulse2.com/tripo-ai-raises-nearly-200-million-to-advance-ai-3d-and-world-model-development/": {
+          "file": "2026-06-02/18.09-01.md",
+          "source": "pulse2.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Tripo AI Kumpulkan Hampir USD 200 Juta",
+            "Kembangkan AI 3D dan World Model",
+            "Project Eden Bisa Ciptakan Dunia Virtual"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://cdn.pulse2.com/cdn/2026/06/Tripo-Logo.jpg",
+          "thumb_generated": false
+        },
+        "https://theaiinsider.tech/2026/06/02/rlwrld-debuts-robotics-foundation-model-rldx-1-at-nvidia-gtc-taipei-2026/": {
+          "file": "2026-06-02/18.09-02.md",
+          "source": "theaiinsider.tech",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "RLWRLD Pamer Robot Model RLDX-1",
+            "Skor 70.6 di RoboCasa Kitchen",
+            "Kalahkan Model Milik NVIDIA Sendiri"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "",
+          "thumb_generated": false
+        },
+        "https://www.helpnetsecurity.com/2026/06/02/ai-model-backdoor-attack/": {
+          "file": "2026-06-02/18.09-03.md",
+          "source": "www.helpnetsecurity.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Peneliti Temukan Backdoor AI Baru",
+            "BadBone Bisa Bobol Tanpa Terdeteksi",
+            "Enam Tools Keamanan Gagal Total"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://img.helpnetsecurity.com/wp-content/uploads/2026/06/01091216/brain-backdoor.webp",
+          "thumb_generated": false
         }
       },
       "source_headlines": {
@@ -3771,6 +3810,15 @@
         "www.scmp.com": [
           "bytedance kehilangan pimpinan riset ai gu quanquan tinggalkan seed models monetisasi ai makin tertekan",
           "saham tencent melonjak 10 persen ai agent segara hadir di wechat 14 miliar pengguna tersambung"
+        ],
+        "pulse2.com": [
+          "tripo ai kumpulkan hampir usd 200 juta untuk kembangkan ai 3d dan world model"
+        ],
+        "theaiinsider.tech": [
+          "rlwrld debutkan foundation model robot rldx 1 di nvidia gtc taipei 2026"
+        ],
+        "www.helpnetsecurity.com": [
+          "peneliti temukan backdoor ai baru badbone yang sulit terdeteksi"
         ]
       },
       "cross_topics": [
@@ -4293,9 +4341,24 @@
           "who": "Perusahaan",
           "what": "Strategi AI Bingung Karyawan Frustrasi",
           "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Tripo AI",
+          "what": "Mengumpulkan USD 200 Juta untuk AI 3D dan World Model",
+          "first_seen": "2026-06-02"
+        },
+        {
+          "who": "RLWRLD",
+          "what": "Meluncurkan Foundation Model Robot RLDX-1",
+          "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Peneliti Keamanan",
+          "what": "Temukan Backdoor AI BadBone yang Sulit Terdeteksi",
+          "first_seen": "2026-06-02"
         }
       ],
-      "total": 250
+      "total": 253
     },
     "queue": {
       "pending": [],
