@@ -2,8 +2,8 @@
   "meta": {
     "version": 2,
     "created_at": "2026-06-02T00:00:00+07:00",
-    "updated_at": "2026-06-02",
-    "total_articles": 263,
+    "updated_at": "2026-06-03",
+    "total_articles": 266,
     "total_posts": 0
   },
   "brand": {
@@ -3596,6 +3596,45 @@
           "thumb_highlight": 0,
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg",
           "thumb_generated": false
+        },
+        "https://www.theverge.com/news/941271/microsoft-surface-rtx-spark-dev-box-specs-availability": {
+          "file": "2026-06-03/00.00-01.md",
+          "source": "www.theverge.com",
+          "first_seen": "2026-06-03",
+          "thumb_lines": [
+            "Microsoft Rilis PC Mini Khusus AI",
+            "Surface RTX Spark Dev Box",
+            "Jalankan Model 120 Miliar Parameter"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Surface-RTX-Spark-Image-4.png?quality=90&strip=all&crop=0%2C3.4686413370787%2C100%2C93.062717325843&w=1200",
+          "thumb_generated": false
+        },
+        "https://www.theverge.com/ai-artificial-intelligence/941773/with-5-million-weekly-users-openai-says-codex-isnt-just-for-programmers": {
+          "file": "2026-06-03/00.00-02.md",
+          "source": "www.theverge.com",
+          "first_seen": "2026-06-03",
+          "thumb_lines": [
+            "OpenAI Codex Tembus 5 Juta User",
+            "Luncurkan Plugin Baru",
+            "Bukan Cuma Buat Programmer"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Blossom-Enterprise-Summit.png?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+          "thumb_generated": false
+        },
+        "https://www.theverge.com/ai-artificial-intelligence/941792/anthropic-claude-mythos-preview-expansion": {
+          "file": "2026-06-03/00.00-03.md",
+          "source": "www.theverge.com",
+          "first_seen": "2026-06-03",
+          "thumb_lines": [
+            "Anthropic Buka Akses Mythos",
+            "150 Organisasi Baru Bergabung",
+            "Sektor Air Listrik Kesehatan"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "",
+          "thumb_generated": false
         }
       },
       "source_headlines": {
@@ -3641,7 +3680,10 @@
           "microsoft unveil models windows improvements build",
           "strava blames code apps scrapers tightens api access",
           "nvidias dlss 45 ray reconstruction feature works geforce rtx gpus",
-          "switchbot akuisisi nanoleaf pivot robotik"
+          "switchbot akuisisi nanoleaf pivot robotik",
+          "microsoft rilis pc mini khusus surface rtx spark dev box jalankan model 120 miliar parameter",
+          "openai codex tembus 5 juta user luncurkan plugin baru bukan cuma buat programmer",
+          "anthropic buka akses mythos 150 organisasi baru bergabung sektor air listrik kesehatan"
         ],
         "www.wired.com": [
           "vatikan ngajak anthropic bicara soal ai iya paus tertarik sama safety ai",
@@ -4549,9 +4591,24 @@
           "who": "OpenAI",
           "what": "new Codex tools for white-collar work",
           "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Microsoft",
+          "what": "Rilis Surface RTX Spark Dev Box untuk AI",
+          "first_seen": "2026-06-03"
+        },
+        {
+          "who": "OpenAI",
+          "what": "Codex 5 Juta Pengguna Plugin Baru",
+          "first_seen": "2026-06-03"
+        },
+        {
+          "who": "Anthropic",
+          "what": "Claude Mythos Preview 150 Organisasi Project Glasswing",
+          "first_seen": "2026-06-03"
         }
       ],
-      "total": 263
+      "total": 266
     },
     "queue": {
       "pending": [],
