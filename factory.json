@@ -3,7 +3,7 @@
     "version": 2,
     "created_at": "2026-06-02T00:00:00+07:00",
     "updated_at": "2026-06-02",
-    "total_articles": 259,
+    "total_articles": 262,
     "total_posts": 0
   },
   "brand": {
@@ -3545,6 +3545,44 @@
           "thumb_highlight": 0,
           "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/4HRY3GcnERUOX9hYWvCPIE/9f0831912aa5741f124b39d1c6ebb4a9/HERO.png?w=1000&q=100",
           "thumb_generated": false
+        },
+        "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/": {
+          "file": "2026-06-02/22.05-01.md",
+          "source": "techcrunch.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Anthropic Perluas Claude Mythos",
+            "Infrastruktur Kritis 15 Negara",
+            "NATO dan Samsung Ikut Serta"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269811684.jpg?w=1024",
+          "thumb_generated": false
+        },
+        "https://www.theverge.com/tech/941430/switchbot-buys-nanoleaf-for-40-million": {
+          "file": "2026-06-02/22.05-02.md",
+          "source": "www.theverge.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Switchbot Akuisisi Nanoleaf",
+            "USD 40 Juta untuk Pivot AI Robotik"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "",
+          "thumb_generated": false
+        },
+        "https://venturebeat.com/security/claude-mythos-exposed-a-hard-truth-your-enterprise-patching-process-is-way-too-slow": {
+          "file": "2026-06-02/22.05-03.md",
+          "source": "venturebeat.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Claude Mythos Buka Fakta",
+            "Proses Patching Terlalu Lambat",
+            "Eksploitasi Cuma 9 Jam"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/2cA0GCQpD8tpycEMmf0mwY/617d2d6214e1fadcb252519b00a1ec60/u7277289442_A_modern_interpretation_of_cybersecurity._3D._--a_48e0894a-799a-4645-9c75-f18358f3b4bf_3.png?w=800&q=75",
+          "thumb_generated": false
         }
       },
       "source_headlines": {
@@ -3589,7 +3627,8 @@
           "ai udah bikin industri musik kacau gimana cara grammy ngadepinnya",
           "microsoft unveil models windows improvements build",
           "strava blames code apps scrapers tightens api access",
-          "nvidias dlss 45 ray reconstruction feature works geforce rtx gpus"
+          "nvidias dlss 45 ray reconstruction feature works geforce rtx gpus",
+          "switchbot akuisisi nanoleaf pivot robotik"
         ],
         "www.wired.com": [
           "vatikan ngajak anthropic bicara soal ai iya paus tertarik sama safety ai",
@@ -3680,7 +3719,8 @@
           "nvidia resmi masuk pasar cpu dengan chip rtx spark untuk agent",
           "duckduckgo makes noai search engine easier access traffic booms",
           "zerodrift raises million protect models themselves",
-          "rocket engine startup impulse raises 500 million hire people"
+          "rocket engine startup impulse raises 500 million hire people",
+          "anthropic perluas claude mythos infrastruktur kritis negara"
         ],
         "www.tomshardware.com": [
           "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -3802,7 +3842,8 @@
           "peneliti metagoogle ciptain autotts biaya token ai langsung pangkas 695 tanpa kurangi akurasi",
           "startup ai prancis mistral bukabukaan bikin model fisika buat airbus rebranding assistant jadi vibe dan target 1 miliar di 2026",
           "minimax m3 debut kalahkan gpt 5 5 gemini 3 1 pro harga cuma 10 persen",
-          "risiko browser ai claude bisa dibajak 31 5 persen anthropic buka data keamanan"
+          "risiko browser ai claude bisa dibajak 31 5 persen anthropic buka data keamanan",
+          "claude mythos buka fakta proses patching terlalu lambat"
         ],
         "www.kxan.com": [
           "anggota kongres as usul pajak ai hasilnya buat training ulang pekerja"
@@ -4474,9 +4515,24 @@
           "who": "Anthropic",
           "what": "Browser agent hijacked 31.5% prompt injection",
           "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Anthropic",
+          "what": "Claude Mythos critical infrastructure 15 countries",
+          "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Switchbot",
+          "what": "Nanoleaf acquisition robotics AI pivot",
+          "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Anthropic",
+          "what": "Claude Mythos enterprise patching security vulnerability management",
+          "first_seen": "2026-06-02"
         }
       ],
-      "total": 259
+      "total": 262
     },
     "queue": {
       "pending": [],
