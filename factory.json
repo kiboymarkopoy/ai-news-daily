@@ -3,7 +3,7 @@
     "version": 2,
     "created_at": "2026-06-02T00:00:00+07:00",
     "updated_at": "2026-06-02",
-    "total_articles": 254,
+    "total_articles": 257,
     "total_posts": 0
   },
   "brand": {
@@ -3480,6 +3480,45 @@
           "thumb_highlight": 0,
           "thumb_image": "https://www.pymnts.com/wp-content/uploads/2026/06/Walmart-AI-tokens-1.jpg",
           "thumb_generated": false
+        },
+        "https://techcrunch.com/2026/06/02/zerodrift-raises-10-million-to-protect-ai-models-from-themselves/": {
+          "file": "2026-06-02/20.07-02.md",
+          "source": "techcrunch.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "ZeroDrift Kumpulkan $10 Juta",
+            "Lindungi AI dari Dirinya Sendiri",
+            "Solusi Kepatuhan AI Generatif"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/Kumesh-headshot.jpg?resize=1200,800",
+          "thumb_generated": true
+        },
+        "https://techcrunch.com/2026/06/02/rocket-engine-startup-impulse-raises-500-million-to-hire-people-not-ai/": {
+          "file": "2026-06-02/20.07-03.md",
+          "source": "techcrunch.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Impulse Kumpulkan $500 Juta",
+            "Pilih Rekrut Manusia Bukan AI",
+            "Pendekatan Human-Centric di Aerospace"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/Impulse-Mira-Spacecraft-In-Orbit-2.png?resize=1200,672",
+          "thumb_generated": true
+        },
+        "https://www.theverge.com/ai-artificial-intelligence/941388/gemini-spark-ai-agent-trip-planning": {
+          "file": "2026-06-02/20.07-01.md",
+          "source": "www.theverge.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Gemini Spark AI Agent",
+            "Bisa Kerja 24/7 Tanpa Henti",
+            "Paling Mengesankan dan Menyeramkan"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Google-Gemini-Spark.jpg?quality=90&strip=all&crop=0%2C10.711701357851%2C100%2C78.576597284297&w=1200",
+          "thumb_generated": true
         }
       },
       "source_headlines": {
@@ -3613,7 +3652,9 @@
           "spacex peringatkan risiko air di ipo data center ai",
           "alphabet siap kumpulkan 80 miliar dari jual saham dana terbesar buat ai infrastructure",
           "nvidia resmi masuk pasar cpu dengan chip rtx spark untuk agent",
-          "duckduckgo makes noai search engine easier access traffic booms"
+          "duckduckgo makes noai search engine easier access traffic booms",
+          "zerodrift raises million protect models themselves",
+          "rocket engine startup impulse raises 500 million hire people"
         ],
         "www.tomshardware.com": [
           "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -3835,6 +3876,9 @@
         ],
         "www.pymnts.com": [
           "walmart batasi pemakaian ai karyawan token langganan"
+        ],
+        "theverge.com": [
+          "gemini spark most impressive terrifying experience yet"
         ]
       },
       "cross_topics": [
@@ -4377,9 +4421,24 @@
           "who": "Walmart",
           "what": "Batasi Pemakaian AI Karyawan Token Langganan",
           "first_seen": "2026-06-02"
+        },
+        {
+          "who": "ZeroDrift",
+          "what": "funding AI compliance layer",
+          "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Impulse Space",
+          "what": "funding $500 million human-centric aerospace",
+          "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Google",
+          "what": "Gemini Spark AI agent launch 24/7",
+          "first_seen": "2026-06-02"
         }
       ],
-      "total": 254
+      "total": 257
     },
     "queue": {
       "pending": [],
