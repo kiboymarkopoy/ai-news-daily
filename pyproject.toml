@@ -1,0 +1,12 @@
+[project]
+name = "kiboy"
+version = "1.0.0"
+description = "AI News Daily — Automated news aggregation and content pipeline"
+requires-python = ">=3.10"
+dependencies = [
+    "Pillow>=10.0",
+    "numpy>=1.24",
+]
+
+[project.scripts]
+kiboy = "kiboy.__main__:main"

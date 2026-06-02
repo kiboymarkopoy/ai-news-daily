@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "version": 3,
+    "repo": "ai-news-daily"
+  },
+  "brand": {
+    "name": "KiMedia AI",
+    "tagline": "AI News, Setiap Jam.",
+    "handle": "@kimedia.ai",
+    "colors": {
+      "primary": [
+        10,
+        10,
+        10
+      ],
+      "accent": [
+        0,
+        180,
+        216
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ]
+    },
+    "fonts": {
+      "bold": "Montserrat-Bold",
+      "black": "Montserrat-Black",
+      "regular": "Montserrat-Regular"
+    },
+    "watermark": {
+      "text": "www.KiMedia.com",
+      "size_px": 22,
+      "color": [
+        200,
+        200,
+        200
+      ]
+    }
+  },
+  "sources": {
+    "rss": [
+      {
+        "id": "google-news",
+        "name": "Google News AI",
+        "url": "news.google.com/rss/search?q=AI",
+        "enabled": true
+      },
+      {
+        "id": "tc-ai",
+        "name": "TechCrunch AI",
+        "url": "techcrunch.com/category/artificial-intelligence/feed/",
+        "enabled": true
+      },
+      {
+        "id": "ars",
+        "name": "ArsTechnica",
+        "url": "feeds.arstechnica.com/arstechnica/index",
+        "enabled": true
+      },
+      {
+        "id": "verge",
+        "name": "The Verge AI",
+        "url": "theverge.com/ai-artificial-intelligence",
+        "enabled": true
+      }
+    ]
+  },
+  "pipeline": {
+    "fetch": {
+      "interval": 60,
+      "timeout": 30,
+      "max_per_source": 20
+    },
+    "dedup": {
+      "headline_threshold": 0.5,
+      "entity_threshold": 2
+    },
+    "curation": {
+      "max_per_run": 5,
+      "categories": [
+        "model_research",
+        "industry_business",
+        "regulasi_etika",
+        "robotics_hardware",
+        "creative_media"
+      ]
+    },
+    "generation": {
+      "style": "casual_indonesian",
+      "max_thread_parts": 4,
+      "include_image": true
+    }
+  },
+  "thumbnail": {
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "text_backdrop": {
+      "blur_radius": 80,
+      "opacity": 0.95,
+      "color": [
+        10,
+        10,
+        10
+      ]
+    },
+    "headline": {
+      "font": "Montserrat-Bold",
+      "sizes": {
+        "default": 56,
+        "min": 44
+      },
+      "line_spacing": 1.25,
+      "max_width_pct": 0.88,
+      "max_lines": 4,
+      "y_start_pct": 0.65,
+      "colors": {
+        "line1": [
+          255,
+          255,
+          255
+        ],
+        "line2": [
+          0,
+          180,
+          216
+        ],
+        "line3": [
+          255,
+          255,
+          255
+        ]
+      }
+    },
+    "brand": {
+      "text": "KiMedia",
+      "font": "Montserrat-Black",
+      "size_px": 48,
+      "top_pct": 0.05,
+      "color": [
+        255,
+        255,
+        255
+      ]
+    }
+  },
+  "platforms": {
+    "threads": {
+      "enabled": false,
+      "account": "@kiboy.markoboy",
+      "post_limit_per_day": 10
+    },
+    "twitter": {
+      "enabled": false,
+      "account": null,
+      "post_limit_per_day": 15
+    },
+    "instagram": {
+      "enabled": false,
+      "account": null,
+      "post_limit_per_day": 3
+    }
+  },
+  "fonts": {
+    "paths": [
+      "/usr/share/fonts/opentype/montserrat/",
+      "/usr/share/fonts/truetype/montserrat/"
+    ]
+  }
+}

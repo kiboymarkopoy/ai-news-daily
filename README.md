@@ -1,49 +1,98 @@
-# AI News Daily
+# AI News Daily — KiMedia AI
 
-Cron-based AI news aggregator + Auto Content Factory. Runs every hour WIB, collects latest AI/tech news, deduplicates (3-layer), generates markdown articles + thumbnail images.
+Cron-based AI news aggregator + content factory. Scrapes AI/tech news every hour (WIB), deduplicates via 3-layer system, generates Indonesian-language articles + thumbnail images.
 
-## Struktur
+## Quick Start
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Check pipeline status
+python -m kiboy status
+
+# Fetch latest news (dry run)
+python -m kiboy pipeline --dry-run
+
+# Generate pending thumbnails
+python -m kiboy thumbnail --pending
+
+# Full pipeline
+python -m kiboy pipeline
+```
+
+## Structure
 
 ```
-├── YYYY-MM-DD/              — Folder per tanggal
-│   ├── HH.MM-NN.md         — Output artikel (dibuat cron)
-│   └── thumb/              — Thumbnail gambar (auto-generated)
-├── factory.json             — Source of Truth (brand, config, state dedup)
-├── script/
-│   └── generate.py          — KiMedia thumbnail generator V6
-├── cache/                   — Downloaded image cache (gitignored)
-├── README.md
-└── _old/                    — Archive (script versions, old data)
+ai-news-daily/
+├── kiboy/                  # Python package
+│   ├── __main__.py         # CLI entry point
+│   ├── config.py           # Config & state management
+│   ├── fetcher.py          # RSS feed fetcher
+│   ├── dedup.py            # 3-layer dedup engine
+│   ├── entities.py         # Known orgs & entity extraction
+│   ├── writer.py           # Article .md writer
+│   ├── thumbnail.py        # Thumbnail generator (1080x1350)
+│   ├── pipeline.py         # Pipeline orchestrator
+│   └── utils.py            # Shared utilities
+├── data/
+│   └── YYYY-MM-DD/         # Output per tanggal
+│       ├── HH.MM-NN.md     # Artikel
+│       └── thumb/           # Thumbnail gambar
+├── config.json             # Static config (brand, sources, pipeline)
+├── state.json              # Runtime state (dedup, queue)
+├── requirements.txt
+├── pyproject.toml
+└── README.md
 ```
 
 ## Pipeline
 
-1. **Fetch** — RSS feeds + Google News search via curl
-2. **Dedup 3-layer** — URL exact → source headline → WHO+WHAT entity
-3. **Write** — `.md` file + thumb_lines di factory.json
-4. **Thumbnail** — GitHub Action generate dari thumb_lines
-5. **Commit & push** — `Cron Job HH:MM` ke GitHub
+```
+FETCH → DEDUP → WRITE .md → THUMBNAIL .png → COMMIT & PUSH
+ RSS    3-layer   Article     1080x1350       Git auto
+```
 
-## Source of Truth (factory.json)
+### Dedup 3-Layer System
 
-Single file yang menggerakkan semua pipeline:
+| Layer | Method | Description |
+|-------|--------|-------------|
+| 1 | URL exact match | Skip if URL already in state |
+| 2 | Headline similarity | Same domain + >50% word overlap |
+| 3 | Cross-outlet entity | Same WHO+WHAT across different sources |
 
-| Section | Isi |
-|---------|-----|
-| `brand` | KiMedia AI — warna, font, watermark |
-| `sources` | RSS feeds config |
-| `pipeline` | Fetch, dedup, curation settings |
-| `thumbnail` | Canvas, font sizes, layout |
-| `state.dedup` | 226+ artikel dengan thumb_lines |
+## CLI Commands
 
-## Cron
+| Command | Description |
+|---------|-------------|
+| `python -m kiboy status` | Show pipeline stats |
+| `python -m kiboy fetch` | Fetch RSS feeds, show results |
+| `python -m kiboy dedup --url URL --title TITLE` | Check dedup status |
+| `python -m kiboy pipeline` | Full pipeline run |
+| `python -m kiboy pipeline --dry-run` | Fetch + dedup only |
+| `python -m kiboy thumbnail --pending` | Generate pending thumbnails |
+| `python -m kiboy thumbnail --regen` | Regenerate all thumbnails |
+| `python -m kiboy migrate --factory factory.json` | Migrate from old format |
 
-- Schedule: `0 * * * *` (setiap jam, WIB)
-- Workdir: `/root/ai-news-daily`
-- Type: LLM-driven (Hermes cron)
+## Configuration
 
-## Scripts
+### config.json (Static)
+Brand info, RSS sources, pipeline settings, thumbnail layout, platform configs.
 
-- `script/generate.py` — Generate thumbnail dari factory.json
-  - `--article 2026-06-01/14.00-01.md` — Generate 1 artikel
-  - `--all` — Generate semua pending
+### state.json (Runtime)
+Dedup state (articles, headlines, cross-topics), queue, schedule. Updated every pipeline run.
+
+## Environment
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `KIBOY_ROOT` | Auto-detect | Repository root directory |
+| `PYTHONIOENCODING` | System default | Set to `utf-8` on Windows |
+
+## Tech Stack
+
+- **Runtime**: Python 3.10+
+- **LLM**: DeepSeek v4 Flash (via Hermes agent)
+- **Image**: Pillow + NumPy
+- **Fonts**: Montserrat (Bold, Black, Regular)
+- **Server**: Linux VPS with cron
