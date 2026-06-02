@@ -118,20 +118,15 @@
       "max_lines": 4,
       "y_start_pct": 0.65,
       "colors": {
-        "line1": [
+        "highlight": [
           255,
           255,
           255
         ],
-        "line2": [
-          0,
-          180,
-          216
-        ],
-        "line3": [
-          255,
-          255,
-          255
+        "main": [
+          200,
+          200,
+          200
         ]
       }
     },
@@ -166,8 +161,10 @@
   },
   "fonts": {
     "paths": [
+      "fonts/",
       "/usr/share/fonts/opentype/montserrat/",
-      "/usr/share/fonts/truetype/montserrat/"
+      "/usr/share/fonts/truetype/montserrat/",
+      "C:/Windows/Fonts/"
     ]
   }
 }

@@ -99,8 +99,12 @@ def get_font_path(font_name: str, config: dict) -> str | None:
     ])
     extensions = [".otf", ".ttf"]
     for font_dir in font_dirs:
+        # Resolve relative paths against REPO_DIR (e.g. "fonts/" → "<repo>/fonts/")
+        dir_path = Path(font_dir)
+        if not dir_path.is_absolute():
+            dir_path = REPO_DIR / dir_path
         for ext in extensions:
-            path = Path(font_dir) / f"{font_name}{ext}"
+            path = dir_path / f"{font_name}{ext}"
             if path.exists():
                 return str(path)
     return None

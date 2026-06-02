@@ -8,6 +8,10 @@ build/
 venv/
 .venv/
 
+# Fonts (local dev only — install on VPS separately)
+fonts/
+
+
 # Cache & temp
 cache/
 *.xml
