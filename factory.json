@@ -3,7 +3,7 @@
     "version": 2,
     "created_at": "2026-06-02T00:00:00+07:00",
     "updated_at": "2026-06-02",
-    "total_articles": 235,
+    "total_articles": 236,
     "total_posts": 0
   },
   "brand": {
@@ -3231,6 +3231,20 @@
           "thumb_highlight": 0,
           "thumb_image": "",
           "thumb_generated": false
+        },
+        "https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/": {
+          "file": "2026-06-02/07.06-01.md",
+          "source": "techcrunch.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Nvidia Gas Pasar CPU PC",
+            "RTX Spark Siap Jadi Otak AI Agent",
+            "Microsoft, Dell, HP Jadi Partner Awal",
+            "Pasar 00 Miliar Mulai Dicaplok"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-2205761886.jpg",
+          "thumb_generated": false
         }
       },
       "source_headlines": {
@@ -3357,7 +3371,8 @@
           "gila anthropic startup ai paling berharga di dunia resmi ajukan ipo target valuasi 1 triliun",
           "ai weathermesh 6 dari windborne bisa prediksi cuaca lebih akurat dari pemerintah eropa gegara 400 balon udara",
           "spacex peringatkan risiko air di ipo data center ai",
-          "alphabet siap kumpulkan 80 miliar dari jual saham dana terbesar buat ai infrastructure"
+          "alphabet siap kumpulkan 80 miliar dari jual saham dana terbesar buat ai infrastructure",
+          "nvidia resmi masuk pasar cpu dengan chip rtx spark untuk agent"
         ],
         "www.tomshardware.com": [
           "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -3994,9 +4009,14 @@
           "who": "Geoffrey Hinton",
           "what": "warns AI superintelligence soon surpassing humans",
           "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Nvidia",
+          "what": "Masuk Pasar CPU PC dengan Chip RTX Spark",
+          "first_seen": "2026-06-02"
         }
       ],
-      "total": 235
+      "total": 236
     },
     "queue": {
       "pending": [],
