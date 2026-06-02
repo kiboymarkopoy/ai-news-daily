@@ -3,7 +3,7 @@
     "version": 2,
     "created_at": "2026-06-02T00:00:00+07:00",
     "updated_at": "2026-06-02",
-    "total_articles": 245,
+    "total_articles": 247,
     "total_posts": 0
   },
   "brand": {
@@ -3363,6 +3363,32 @@
           "thumb_highlight": 0,
           "thumb_image": "https://hbr.org/resources/images/article_assets/2026/06/May26_30_ClaraSanMillan.jpg",
           "thumb_generated": false
+        },
+        "https://www.nytimes.com/2026/06/01/technology/states-ai-regulation-trump.html": {
+          "file": "2026-06-02/15.13-01.md",
+          "source": "www.nytimes.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Trump Targetkan Regulasi AI",
+            "Negara Bagian dengan Aturan Baru",
+            "Illinois dan California Lawan"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/GettyImages-1476750862-1152x648-1779984812.jpg",
+          "thumb_generated": false
+        },
+        "https://www.theverge.com/tech/941292/nvidia-dlss-4-5-ray-reconstruction-computex-2026": {
+          "file": "2026-06-02/15.13-02.md",
+          "source": "www.theverge.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Nvidia Rilis DLSS 4.5 Baru",
+            "Bisa untuk Semua GPU RTX",
+            "Gaming Pakai AI Lebih Canggih"
+          ],
+          "thumb_highlight": 1,
+          "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/announcing-nvidia-dlss-4-5-ray-reconstruction.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+          "thumb_generated": false
         }
       },
       "source_headlines": {
@@ -3405,7 +3431,8 @@
           "florida gugat openai dan sam altman chatgpt dituduh bikin kecanduan bahayakan pengguna",
           "ai udah bikin industri musik kacau gimana cara grammy ngadepinnya",
           "microsoft unveil models windows improvements build",
-          "strava blames code apps scrapers tightens api access"
+          "strava blames code apps scrapers tightens api access",
+          "nvidias dlss 45 ray reconstruction feature works geforce rtx gpus"
         ],
         "www.wired.com": [
           "vatikan ngajak anthropic bicara soal ai iya paus tertarik sama safety ai",
@@ -3573,7 +3600,8 @@
           "guruguru di as minta sekolah larang ai chatbots anak sd sama sekali gak boleh pake",
           "perang super pac ai di pemilu paruh waktu miliarder pro dan kontra ai saling gebuk",
           "meta akhirnya pamer model ai superintelligence pertama muse spark siap bersaing dengan gpt55 dan gemini",
-          "bikin melongo one job that is growing in the ai era cybersecurity experts"
+          "bikin melongo one job that is growing in the ai era cybersecurity experts",
+          "states plow ahead with ai regulation defying trump"
         ],
         "www.engadget.com": [
           "setelah bertahuntahun bicara metaverse meta tibatiba beli startup robotsinyal keras ke pasar humanoid",
@@ -4196,9 +4224,19 @@
           "who": "Harvard Business Review",
           "what": "how people are really using AI in 2026 study survey",
           "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Trump",
+          "what": "targets state AI regulations executive order",
+          "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Nvidia",
+          "what": "DLSS 4.5 Ray Reconstruction all RTX GPUs",
+          "first_seen": "2026-06-02"
         }
       ],
-      "total": 245
+      "total": 247
     },
     "queue": {
       "pending": [],
