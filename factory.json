@@ -3,7 +3,7 @@
     "version": 2,
     "created_at": "2026-06-02T00:00:00+07:00",
     "updated_at": "2026-06-03",
-    "total_articles": 266,
+    "total_articles": 270,
     "total_posts": 0
   },
   "brand": {
@@ -3635,6 +3635,58 @@
           "thumb_highlight": 0,
           "thumb_image": "",
           "thumb_generated": false
+        },
+        "https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/": {
+          "file": "2026-06-03/01.04-01.md",
+          "source": "techcrunch.com",
+          "first_seen": "2026-06-03",
+          "thumb_lines": [
+            "Microsoft Kenalkan Scout AI",
+            "Asisten Personal untuk Office 365",
+            "Bekerja Penuh Waktu di Ekosistem Microsoft"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://techcrunch.com/wp-content/uploads/2025/07/microsoft-logo-1865237814.jpg?resize=1200,863",
+          "thumb_generated": false
+        },
+        "https://techcrunch.com/2026/06/02/microsoft-offers-devs-a-better-way-to-control-ai-agent-behavior/": {
+          "file": "2026-06-03/01.04-02.md",
+          "source": "techcrunch.com",
+          "first_seen": "2026-06-03",
+          "thumb_lines": [
+            "Microsoft Rilis Standar Baru",
+            "Kendalikan Perilaku AI Agent",
+            "Policy File Portabel untuk Developer"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2276155467.jpg?resize=1200,833",
+          "thumb_generated": false
+        },
+        "https://techcrunch.com/2026/06/02/amazon-faces-class-action-lawsuit-over-ring-facial-recognition-feature/": {
+          "file": "2026-06-03/01.04-03.md",
+          "source": "techcrunch.com",
+          "first_seen": "2026-06-03",
+          "thumb_lines": [
+            "Amazon Kena Gugatan Class Action",
+            "Fitur Face Recognition Ring",
+            "Diduga Rekam Wajah Tanpa Izin"
+          ],
+          "thumb_highlight": 2,
+          "thumb_image": "https://techcrunch.com/wp-content/uploads/2022/08/GettyImages-621058316.jpg?resize=1200,930",
+          "thumb_generated": false
+        },
+        "https://techcrunch.com/2026/06/02/trump-signs-narrower-executive-order-on-ai-oversight-after-industry-objections/": {
+          "file": "2026-06-03/01.04-04.md",
+          "source": "techcrunch.com",
+          "first_seen": "2026-06-03",
+          "thumb_lines": [
+            "Trump Teken Executive Order AI",
+            "Bersifat Sukarela, Bukan Wajib",
+            "Industri Bernapas Lega"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2277839095.jpg?w=1024",
+          "thumb_generated": false
         }
       },
       "source_headlines": {
@@ -3776,7 +3828,14 @@
           "zerodrift raises million protect models themselves",
           "rocket engine startup impulse raises 500 million hire people",
           "anthropic perluas claude mythos infrastruktur kritis negara",
-          "openai launches codex tools whitecollar work"
+          "openai launches codex tools whitecollar work",
+          "microsoft launches scout openclaw inspired personal assistant",
+          "microsoft offers devs better way control ai agent behavior",
+          "amazon faces class action lawsuit ring facial recognition feature",
+          "microsoft launches scout openclaw inspired personal assistant",
+          "microsoft offers devs better way control ai agent behavior",
+          "amazon faces class action lawsuit ring facial recognition feature",
+          "trump signs narrower executive order ai oversight industry objections"
         ],
         "www.tomshardware.com": [
           "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -4004,6 +4063,10 @@
         ],
         "theverge.com": [
           "gemini spark most impressive terrifying experience yet"
+        ],
+        "Google News": [
+          "nvidia new pc chips represent ceo huang bid win layer ai stack cnbc",
+          "amazon prime day 2026 moves june time alexa ai powering cart forbes"
         ]
       },
       "cross_topics": [
@@ -4606,9 +4669,34 @@
           "who": "Anthropic",
           "what": "Claude Mythos Preview 150 Organisasi Project Glasswing",
           "first_seen": "2026-06-03"
+        },
+        {
+          "who": "Microsoft",
+          "what": "Scout",
+          "first_seen": "2026-06-03"
+        },
+        {
+          "who": "Microsoft",
+          "what": "agent behavior",
+          "first_seen": "2026-06-03"
+        },
+        {
+          "who": "Amazon",
+          "what": "over Ring facial recognition feature",
+          "first_seen": "2026-06-03"
+        },
+        {
+          "who": "Google",
+          "what": "stack - CNBC",
+          "first_seen": "2026-06-03"
+        },
+        {
+          "who": "Google",
+          "what": "Powering The Cart - Forbes",
+          "first_seen": "2026-06-03"
         }
       ],
-      "total": 266
+      "total": 270
     },
     "queue": {
       "pending": [],
