@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-03T05:06:00+07:00",
-    "total_articles": 279
+    "updated_at": "2026-06-03T05:50:52.822931+07:00",
+    "total_articles": 280
   },
   "dedup": {
     "articles": {
@@ -2525,7 +2525,8 @@
         ],
         "thumb_highlight": 1,
         "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/00_Title-Page-scaled-1-1152x648.png",
-        "thumb_generated": true
+        "thumb_generated": true,
+        "thumb_headline": "Microsoft Bikin OS Android Khusus AI Agent Project Solara Bikin Antarmuka Real-Time Tanpa App Store OS Masa Depan Android"
       },
       "https://arstechnica.com/tech-policy/2026/06/mathematicians-warn-of-ai-threats-to-profession-as-industry-encroaches/": {
         "file": "data/2026-06-03/05.06-02.md",
@@ -2538,6 +2539,20 @@
         ],
         "thumb_highlight": 1,
         "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/Mathematics-formula-1152x648.jpg",
+        "thumb_generated": true,
+        "thumb_headline": "Matematikawan Dunia Peringatkan Ancaman AI Deklarasi Leiden Resmi Dirilis Klaim OpenAI Pecahkan Soal 80 Tahun Picu Kekhawatiran"
+      },
+      "https://www.wired.com/story/opal-electronics-openai-investment-ai-powered-audio-gadget/": {
+        "file": "data/2026-06-03/05.48-01.md",
+        "source": "www.wired.com",
+        "first_seen": "2026-06-03",
+        "thumb_lines": [
+          "OpenAI Kucurkan $40 Juta",
+          "Opal Bikin Gadget Audio AI",
+          "Rebranding Webcam ke Elektronik"
+        ],
+        "thumb_highlight": 0,
+        "thumb_image": "https://media.wired.com/photos/6a1db2153696beebf95db3a0/191:100/w_1280,c_limit/Opal_Tadpole_01.jpg",
         "thumb_generated": true
       }
     },
@@ -2608,7 +2623,8 @@
         "linkerbot startup robot asal china bikin tangan robot dexterous cuma 600 per unit target standarisasi industri humanoid global",
         "vatikan punya orang dalam di anthropic paus leo xiv resepsi ilmuwan ai di vatikan",
         "no way handson with gemini spark i gave it access to my life and it friendzoned my boyfriend",
-        "anthropic confidentially files what largest ipo ever"
+        "anthropic confidentially files what largest ipo ever",
+        "dari webcam ke audio ai opal dapat duit 40 juta dari openai"
       ],
       "eletric-vehicles.com": [
         "robot humanoid xpeng iron mau masuk produksi massal bakal jualan di toko"
@@ -3600,9 +3616,14 @@
         "who": "Mathematicians/IMU",
         "what": "Leiden Declaration peringatan AI ancam profesi",
         "first_seen": "2026-06-03"
+      },
+      {
+        "who": "OpenAI",
+        "what": "Opal Is Making an AI-Powered Audio Gadget",
+        "first_seen": "2026-06-03"
       }
     ],
-    "total": 279
+    "total": 280
   },
   "queue": {
     "pending": [],
