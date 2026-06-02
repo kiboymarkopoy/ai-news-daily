@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-03T03:27:59.760092+07:00",
-    "total_articles": 273
+    "updated_at": "2026-06-03",
+    "total_articles": 277
   },
   "dedup": {
     "articles": {
@@ -2461,6 +2461,58 @@
         "thumb_generated": false,
         "thumb_headline": "Microsoft Buka Alat Uji Perilaku AI Tulis Aturan Pakai Bahasa Manusia Open Source Bikin AI Agent Lebih Aman",
         "thumb_subheadline": null
+      },
+      "https://www.wired.com/story/anthropic-files-s1-ipo-sec/": {
+        "file": "data/2026-06-03/04.00-01.md",
+        "source": "www.wired.com",
+        "first_seen": "2026-06-03",
+        "thumb_lines": [
+          "Anthropic Ajukan IPO Raksasa",
+          "Valuasi Hampir 1 Triliun Dolar",
+          "IPO Terbesar dalam Sejarah"
+        ],
+        "thumb_highlight": 2,
+        "thumb_image": "https://media.wired.com/photos/6a1db04538f4e0fcb2641f17/191:100/w_1280,c_limit/Anthropic-Goes-Public-Business-2274306161.jpg",
+        "thumb_generated": false
+      },
+      "https://www.bbc.com/news/articles/cj4p7gyvp52o": {
+        "file": "data/2026-06-03/04.00-02.md",
+        "source": "www.bbc.com",
+        "first_seen": "2026-06-03",
+        "thumb_lines": [
+          "Microsoft Bikin Chip Quantum Baru",
+          "1.000 Kali Lebih Andal",
+          "Terobosan Komputasi Masa Depan"
+        ],
+        "thumb_highlight": 2,
+        "thumb_image": "https://ichef.bbci.co.uk/news/1024/branded_news/823e/live/9bf6bfd0-5e9a-11f1-95ff-f5086c3b3d40.jpg",
+        "thumb_generated": false
+      },
+      "https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/": {
+        "file": "data/2026-06-03/04.00-03.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-03",
+        "thumb_lines": [
+          "Anggaran AI Uber Jebol",
+          "Habis Dalam 4 Bulan Saja",
+          "Perusahaan Mulai Menjatah AI"
+        ],
+        "thumb_highlight": 2,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/03/claude-app-centered-in-ai-apps-GettyImages-2167861906.jpg",
+        "thumb_generated": false
+      },
+      "https://www.bbc.com/news/articles/c98rzr72dpyo": {
+        "file": "data/2026-06-03/04.00-04.md",
+        "source": "www.bbc.com",
+        "first_seen": "2026-06-03",
+        "thumb_lines": [
+          "Chatbot Meta Dibobol Hacker",
+          "Akun Instagram Selebriti Dirampas",
+          "Celah Keamanan AI Baru"
+        ],
+        "thumb_highlight": 2,
+        "thumb_image": "https://ichef.bbci.co.uk/news/1024/branded_news/04d6/live/0af82d50-5e74-11f1-9bb7-93b44936b5cf.jpg",
+        "thumb_generated": false
       }
     },
     "source_headlines": {
@@ -2473,7 +2525,9 @@
         "bmw resmi pakai robot humanoid di pabrik kata mereka ini masa depan produksi mobil",
         "gila drone ai ukraina bikin rusia kehilangan ratusan truk logistik jarak tempuh lebih dari 100 km",
         "bankbank inggris diblokir akses mythos ai openai langsung turun tangan tawarin gpt55 cyber",
-        "how confused ai rollout hurts firms baffles staff"
+        "how confused ai rollout hurts firms baffles staff",
+        "microsoft says new quantum chip 1000 times reliable predecessor",
+        "instagram ai chatbot tricked hackers give access others accounts"
       ],
       "www.rollingstone.com": [
         "film pertama buatan ai total tayang di tribeca biaya cuma 2000",
@@ -2527,7 +2581,8 @@
         "oura ring 5 lebih tipis lebih ringan plus ada ai health coach nya",
         "linkerbot startup robot asal china bikin tangan robot dexterous cuma 600 per unit target standarisasi industri humanoid global",
         "vatikan punya orang dalam di anthropic paus leo xiv resepsi ilmuwan ai di vatikan",
-        "no way handson with gemini spark i gave it access to my life and it friendzoned my boyfriend"
+        "no way handson with gemini spark i gave it access to my life and it friendzoned my boyfriend",
+        "anthropic confidentially files what largest ipo ever"
       ],
       "eletric-vehicles.com": [
         "robot humanoid xpeng iron mau masuk produksi massal bakal jualan di toko"
@@ -2612,7 +2667,8 @@
         "trump signs narrower executive order ai oversight industry objections",
         "martin scorsese becomes the latest and most unlikely hollywood voice for ai",
         "google rolls out fake call detection to protect against ai deepfake impersonation scams",
-        "new microsoft tool lets devs spin up ai behavior tests using text descriptions"
+        "new microsoft tool lets devs spin up ai behavior tests using text descriptions",
+        "uber caps employee ai spending blowing budget four months"
       ],
       "www.tomshardware.com": [
         "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -3486,8 +3542,29 @@
         "who": "Microsoft",
         "what": "Rilis Framework Open Source untuk Uji Perilaku AI",
         "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Anthropic",
+        "what": "Confidentially Files for IPO Largest IPO Ever",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Microsoft",
+        "what": "Quantum chip 1000 times more reliable",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Uber",
+        "what": "Caps employee AI spending budget",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Meta",
+        "what": "AI support chatbot tricked hackers Instagram account access",
+        "first_seen": "2026-06-03"
       }
-    ]
+    ],
+    "total": 277
   },
   "queue": {
     "pending": [],
