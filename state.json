@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-03",
-    "total_articles": 277
+    "updated_at": "2026-06-03T05:06:00+07:00",
+    "total_articles": 279
   },
   "dedup": {
     "articles": {
@@ -2440,7 +2440,7 @@
         "source": "techcrunch.com",
         "first_seen": "2026-06-03",
         "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2244067270.jpg?resize=1200,800",
-        "thumb_generated": false,
+        "thumb_generated": true,
         "thumb_headline": "Martin Scorsese Dukung AI untuk Storyboard Sutradara Legendaris Berusia 83 Tahun AI Bisa Jadi Alat Bantu Bukan Musuh",
         "thumb_subheadline": null
       },
@@ -2449,7 +2449,7 @@
         "source": "techcrunch.com",
         "first_seen": "2026-06-03",
         "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/fake-call-detection.png?resize=1200,640",
-        "thumb_generated": false,
+        "thumb_generated": true,
         "thumb_headline": "Google Lawan AI Deepfake di Panggilan Fake Call Detection Hadir di Android Aktif Otomatis Tanpa Perlu Setelan",
         "thumb_subheadline": null
       },
@@ -2458,7 +2458,7 @@
         "source": "techcrunch.com",
         "first_seen": "2026-06-03",
         "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-172665283.jpg?resize=1200,900",
-        "thumb_generated": false,
+        "thumb_generated": true,
         "thumb_headline": "Microsoft Buka Alat Uji Perilaku AI Tulis Aturan Pakai Bahasa Manusia Open Source Bikin AI Agent Lebih Aman",
         "thumb_subheadline": null
       },
@@ -2473,7 +2473,7 @@
         ],
         "thumb_highlight": 2,
         "thumb_image": "https://media.wired.com/photos/6a1db04538f4e0fcb2641f17/191:100/w_1280,c_limit/Anthropic-Goes-Public-Business-2274306161.jpg",
-        "thumb_generated": false
+        "thumb_generated": true
       },
       "https://www.bbc.com/news/articles/cj4p7gyvp52o": {
         "file": "data/2026-06-03/04.00-02.md",
@@ -2486,7 +2486,7 @@
         ],
         "thumb_highlight": 2,
         "thumb_image": "https://ichef.bbci.co.uk/news/1024/branded_news/823e/live/9bf6bfd0-5e9a-11f1-95ff-f5086c3b3d40.jpg",
-        "thumb_generated": false
+        "thumb_generated": true
       },
       "https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/": {
         "file": "data/2026-06-03/04.00-03.md",
@@ -2499,7 +2499,7 @@
         ],
         "thumb_highlight": 2,
         "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/03/claude-app-centered-in-ai-apps-GettyImages-2167861906.jpg",
-        "thumb_generated": false
+        "thumb_generated": true
       },
       "https://www.bbc.com/news/articles/c98rzr72dpyo": {
         "file": "data/2026-06-03/04.00-04.md",
@@ -2512,7 +2512,33 @@
         ],
         "thumb_highlight": 2,
         "thumb_image": "https://ichef.bbci.co.uk/news/1024/branded_news/04d6/live/0af82d50-5e74-11f1-9bb7-93b44936b5cf.jpg",
-        "thumb_generated": false
+        "thumb_generated": true
+      },
+      "https://arstechnica.com/gadgets/2026/06/microsofts-project-solara-is-an-android-os-designed-for-agents-instead-of-apps/": {
+        "file": "data/2026-06-03/05.06-01.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-03",
+        "thumb_lines": [
+          "OS Android Khusus AI Agent",
+          "Microsoft Rilis Project Solara",
+          "Gantikan Aplikasi Tradisional"
+        ],
+        "thumb_highlight": 1,
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/00_Title-Page-scaled-1-1152x648.png",
+        "thumb_generated": true
+      },
+      "https://arstechnica.com/tech-policy/2026/06/mathematicians-warn-of-ai-threats-to-profession-as-industry-encroaches/": {
+        "file": "data/2026-06-03/05.06-02.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-03",
+        "thumb_lines": [
+          "Matematikawan Peringatkan AI",
+          "Deklarasi Leiden Resmi Rilis",
+          "Ancaman pada Profesi Riset"
+        ],
+        "thumb_highlight": 1,
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/Mathematics-formula-1152x648.jpg",
+        "thumb_generated": true
       }
     },
     "source_headlines": {
@@ -2702,7 +2728,9 @@
         "dari 15 jam jadi 1 menit ai ubah cara general motors kembangkan mobil",
         "github copilot ganti sistem harga user kaget tagihan bisa ratusan dolar sehari",
         "microsoft surface laptop ultra looks like first true macbook pro competitor",
-        "ubah waktu simulasi gm dari 15 jam jadi 1 menit ribuan skenario bisa diparalelkan"
+        "ubah waktu simulasi gm dari 15 jam jadi 1 menit ribuan skenario bisa diparalelkan",
+        "microsofts project solara android os designed for agents instead of apps",
+        "mathematicians warn ai threats to profession as industry encroaches"
       ],
       "www.businessinsider.com": [
         "anthropic sekarang startup ai paling berharga di dunia openai tumbang"
@@ -3562,9 +3590,19 @@
         "who": "Meta",
         "what": "AI support chatbot tricked hackers Instagram account access",
         "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Microsoft",
+        "what": "Project Solara Android OS untuk AI Agent",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Mathematicians/IMU",
+        "what": "Leiden Declaration peringatan AI ancam profesi",
+        "first_seen": "2026-06-03"
       }
     ],
-    "total": 277
+    "total": 279
   },
   "queue": {
     "pending": [],
