@@ -3,7 +3,7 @@
     "version": 2,
     "created_at": "2026-06-02T00:00:00+07:00",
     "updated_at": "2026-06-03",
-    "total_articles": 270,
+    "total_articles": 273,
     "total_posts": 0
   },
   "brand": {
@@ -3022,7 +3022,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/05/DuckDuckGo_NoAI.png?resize=1200,784",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://www.theverge.com/ai-artificial-intelligence/940978/florida-is-suing-openai-over-user-safety-concerns": {
           "file": "2026-06-01/23.00-01.md",
@@ -3257,7 +3257,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2254059922-1152x648.jpg",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://www.pbs.org/newshour/nation/authorities-struggle-to-stop-ai-tools-generating-nude-images": {
           "file": "2026-06-02/09.01-02.md",
@@ -3270,7 +3270,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/06/aiabuse-1024x687.jpg",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://finance.yahoo.com/markets/article/hpe-stock-soars-on-record-backlog-booming-ai-server-business-022931504.html": {
           "file": "2026-06-02/11.00-01.md",
@@ -3284,7 +3284,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://s.yimg.com/ny/api/res/1.2/kzMnJzaeJRcXszsvGMeoeA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://d29szjachogqwa.cloudfront.net/images/2026-06/2cb9c630-0505-4556-847d-cebc22f51543",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://arstechnica.com/gadgets/2026/06/microsoft-surface-laptop-ultra-will-be-among-the-first-nvidia-rtx-spark-arm-pcs/": {
           "file": "2026-06-02/11.00-02.md",
@@ -3297,7 +3297,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/surface-laptop-ultra-1152x648.jpeg",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://www.theverge.com/report/940861/microsoft-build-ai-models-windows-dev-mode-what-to-expect": {
           "file": "2026-06-02/12.00-02.md",
@@ -3310,7 +3310,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/MS_BUILD.jpg",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://www.theverge.com/gadgets/940854/strava-restricts-api-access-ai-apps": {
           "file": "2026-06-02/12.00-03.md",
@@ -3323,7 +3323,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/STKB305_STRAVA_B.jpg",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://blogs.nvidia.com/blog/jetson-agentic-ai-physical-world/": {
           "file": "2026-06-02/13.00-01.md",
@@ -3336,7 +3336,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://blogs.nvidia.com/wp-content/uploads/2026/06/robotics-press-jetson-agentic-ready-cptx26-1920x1080-5180550.jpg",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://arstechnica.com/ai/2026/06/from-15-hours-to-one-minute-how-ai-ml-is-speeding-up-gms-development/": {
           "file": "2026-06-02/14.06-01.md",
@@ -3349,7 +3349,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/CoSim-SG1-1152x648.jpeg",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://hbr.org/2026/06/how-people-are-really-using-ai-in-2026": {
           "file": "2026-06-02/14.06-02.md",
@@ -3362,7 +3362,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://hbr.org/resources/images/article_assets/2026/06/May26_30_ClaraSanMillan.jpg",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://www.nytimes.com/2026/06/01/technology/states-ai-regulation-trump.html": {
           "file": "2026-06-02/15.13-01.md",
@@ -3375,7 +3375,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/GettyImages-1476750862-1152x648-1779984812.jpg",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://www.theverge.com/tech/941292/nvidia-dlss-4-5-ray-reconstruction-computex-2026": {
           "file": "2026-06-02/15.13-02.md",
@@ -3388,7 +3388,7 @@
           ],
           "thumb_highlight": 1,
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/announcing-nvidia-dlss-4-5-ray-reconstruction.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://www.scmp.com/tech/big-tech/article/3355677/bytedance-loses-key-ai-research-leader-behind-seed-models-amid-monetisation-push": {
           "file": "2026-06-02/16.00-01.md",
@@ -3401,7 +3401,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2026/06/02/dadd126c-9a9f-45c4-85fb-f981e929ac13_7f47ae1c.jpg?itok=EtCWDZWL&v=1780387278",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://www.scmp.com/tech/big-tech/article/3355651/tencent-shares-jump-expectations-ai-agent-within-wechat-super-app": {
           "file": "2026-06-02/16.00-02.md",
@@ -3414,7 +3414,7 @@
           ],
           "thumb_highlight": 1,
           "thumb_image": "https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2026/06/02/0606b535-d351-49c1-a664-307b7518efdf_fc2c5000.jpg?itok=Qj5ggJc_&v=1780379128",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://www.bbc.com/news/articles/c74d1ydv01eo": {
           "file": "2026-06-02/17.06-01.md",
@@ -3427,7 +3427,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://ichef.bbci.co.uk/news/1024/branded_news/b7c7/live/85925530-5033-11f1-89a3-d1f559421220.jpg",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://pulse2.com/tripo-ai-raises-nearly-200-million-to-advance-ai-3d-and-world-model-development/": {
           "file": "2026-06-02/18.09-01.md",
@@ -3440,7 +3440,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://cdn.pulse2.com/cdn/2026/06/Tripo-Logo.jpg",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://theaiinsider.tech/2026/06/02/rlwrld-debuts-robotics-foundation-model-rldx-1-at-nvidia-gtc-taipei-2026/": {
           "file": "2026-06-02/18.09-02.md",
@@ -3466,7 +3466,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://img.helpnetsecurity.com/wp-content/uploads/2026/06/01091216/brain-backdoor.webp",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://www.pymnts.com/artificial-intelligence/2026/walmart-curbs-employee-ai-use-as-demand-spikes/": {
           "file": "2026-06-02/19.00-01.md",
@@ -3479,7 +3479,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://www.pymnts.com/wp-content/uploads/2026/06/Walmart-AI-tokens-1.jpg",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://techcrunch.com/2026/06/02/zerodrift-raises-10-million-to-protect-ai-models-from-themselves/": {
           "file": "2026-06-02/20.07-02.md",
@@ -3531,7 +3531,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/2xknlPWQng1dFd9Hs24w6L/f35f7459068592467a35e04819c87a59/ChatGPT_Image_Jun_1__2026__11_28_15_AM.png?w=1000&q=100",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://venturebeat.com/security/anthropic-browser-agent-hijacked-31-percent-before-safeguards-engaged": {
           "file": "2026-06-02/21.06-02.md",
@@ -3544,7 +3544,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/4HRY3GcnERUOX9hYWvCPIE/9f0831912aa5741f124b39d1c6ebb4a9/HERO.png?w=1000&q=100",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/": {
           "file": "2026-06-02/22.05-01.md",
@@ -3557,7 +3557,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269811684.jpg?w=1024",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://www.theverge.com/tech/941430/switchbot-buys-nanoleaf-for-40-million": {
           "file": "2026-06-02/22.05-02.md",
@@ -3582,7 +3582,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/2cA0GCQpD8tpycEMmf0mwY/617d2d6214e1fadcb252519b00a1ec60/u7277289442_A_modern_interpretation_of_cybersecurity._3D._--a_48e0894a-799a-4645-9c75-f18358f3b4bf_3.png?w=800&q=75",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/": {
           "file": "2026-06-02/23.06-01.md",
@@ -3595,7 +3595,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://www.theverge.com/news/941271/microsoft-surface-rtx-spark-dev-box-specs-availability": {
           "file": "2026-06-03/00.00-01.md",
@@ -3608,7 +3608,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Surface-RTX-Spark-Image-4.png?quality=90&strip=all&crop=0%2C3.4686413370787%2C100%2C93.062717325843&w=1200",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://www.theverge.com/ai-artificial-intelligence/941773/with-5-million-weekly-users-openai-says-codex-isnt-just-for-programmers": {
           "file": "2026-06-03/00.00-02.md",
@@ -3621,7 +3621,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Blossom-Enterprise-Summit.png?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://www.theverge.com/ai-artificial-intelligence/941792/anthropic-claude-mythos-preview-expansion": {
           "file": "2026-06-03/00.00-03.md",
@@ -3647,7 +3647,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2025/07/microsoft-logo-1865237814.jpg?resize=1200,863",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://techcrunch.com/2026/06/02/microsoft-offers-devs-a-better-way-to-control-ai-agent-behavior/": {
           "file": "2026-06-03/01.04-02.md",
@@ -3660,7 +3660,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2276155467.jpg?resize=1200,833",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://techcrunch.com/2026/06/02/amazon-faces-class-action-lawsuit-over-ring-facial-recognition-feature/": {
           "file": "2026-06-03/01.04-03.md",
@@ -3673,7 +3673,7 @@
           ],
           "thumb_highlight": 2,
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2022/08/GettyImages-621058316.jpg?resize=1200,930",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://techcrunch.com/2026/06/02/trump-signs-narrower-executive-order-on-ai-oversight-after-industry-objections/": {
           "file": "2026-06-03/01.04-04.md",
@@ -3686,6 +3686,45 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2277839095.jpg?w=1024",
+          "thumb_generated": true
+        },
+        "https://techcrunch.com/2026/06/02/martin-scorsese-becomes-the-latest-and-most-unlikely-hollywood-voice-for-ai/": {
+          "file": "2026-06-03/02.02-1.md",
+          "source": "techcrunch.com",
+          "first_seen": "2026-06-03",
+          "thumb_lines": [
+            "Martin Scorsese Dukung AI untuk Storyboard",
+            "Sutradara Legendaris Berusia 83 Tahun",
+            "AI Bisa Jadi Alat Bantu Bukan Musuh"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2244067270.jpg?resize=1200,800",
+          "thumb_generated": false
+        },
+        "https://techcrunch.com/2026/06/02/google-rolls-out-fake-call-detection-to-protect-against-ai-deepfake-impersonation-scams/": {
+          "file": "2026-06-03/02.02-2.md",
+          "source": "techcrunch.com",
+          "first_seen": "2026-06-03",
+          "thumb_lines": [
+            "Google Lawan AI Deepfake di Panggilan",
+            "Fake Call Detection Hadir di Android",
+            "Aktif Otomatis Tanpa Perlu Setelan"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/fake-call-detection.png?resize=1200,640",
+          "thumb_generated": false
+        },
+        "https://techcrunch.com/2026/06/02/new-microsoft-tool-lets-devs-spin-up-ai-behavior-tests-using-text-descriptions/": {
+          "file": "2026-06-03/02.02-3.md",
+          "source": "techcrunch.com",
+          "first_seen": "2026-06-03",
+          "thumb_lines": [
+            "Microsoft Buka Alat Uji Perilaku AI",
+            "Tulis Aturan Pakai Bahasa Manusia",
+            "Open Source Bikin AI Agent Lebih Aman"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-172665283.jpg?resize=1200,900",
           "thumb_generated": false
         }
       },
@@ -3835,7 +3874,10 @@
           "microsoft launches scout openclaw inspired personal assistant",
           "microsoft offers devs better way control ai agent behavior",
           "amazon faces class action lawsuit ring facial recognition feature",
-          "trump signs narrower executive order ai oversight industry objections"
+          "trump signs narrower executive order ai oversight industry objections",
+          "martin scorsese becomes the latest and most unlikely hollywood voice for ai",
+          "google rolls out fake call detection to protect against ai deepfake impersonation scams",
+          "new microsoft tool lets devs spin up ai behavior tests using text descriptions"
         ],
         "www.tomshardware.com": [
           "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -4694,9 +4736,24 @@
           "who": "Google",
           "what": "Powering The Cart - Forbes",
           "first_seen": "2026-06-03"
+        },
+        {
+          "who": "Martin Scorsese",
+          "what": "Dukung AI untuk Storyboard Hollywood",
+          "first_seen": "2026-06-03"
+        },
+        {
+          "who": "Google",
+          "what": "Luncurkan Fake Call Detection untuk Lawan Deepfake",
+          "first_seen": "2026-06-03"
+        },
+        {
+          "who": "Microsoft",
+          "what": "Rilis Framework Open Source untuk Uji Perilaku AI",
+          "first_seen": "2026-06-03"
         }
       ],
-      "total": 270
+      "total": 273
     },
     "queue": {
       "pending": [],
