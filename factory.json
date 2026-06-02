@@ -3,7 +3,7 @@
     "version": 2,
     "created_at": "2026-06-02T00:00:00+07:00",
     "updated_at": "2026-06-02",
-    "total_articles": 262,
+    "total_articles": 263,
     "total_posts": 0
   },
   "brand": {
@@ -3583,6 +3583,19 @@
           "thumb_highlight": 0,
           "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/2cA0GCQpD8tpycEMmf0mwY/617d2d6214e1fadcb252519b00a1ec60/u7277289442_A_modern_interpretation_of_cybersecurity._3D._--a_48e0894a-799a-4645-9c75-f18358f3b4bf_3.png?w=800&q=75",
           "thumb_generated": false
+        },
+        "https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/": {
+          "file": "2026-06-02/23.06-01.md",
+          "source": "techcrunch.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "OpenAI Rilis Codex untuk Kantoran",
+            "AI Agent Kini Bisa Bantu Tugas Administratif",
+            "Ekspansi dari Coding ke White-Collar Work"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg",
+          "thumb_generated": false
         }
       },
       "source_headlines": {
@@ -3720,7 +3733,8 @@
           "duckduckgo makes noai search engine easier access traffic booms",
           "zerodrift raises million protect models themselves",
           "rocket engine startup impulse raises 500 million hire people",
-          "anthropic perluas claude mythos infrastruktur kritis negara"
+          "anthropic perluas claude mythos infrastruktur kritis negara",
+          "openai launches codex tools whitecollar work"
         ],
         "www.tomshardware.com": [
           "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -4530,9 +4544,14 @@
           "who": "Anthropic",
           "what": "Claude Mythos enterprise patching security vulnerability management",
           "first_seen": "2026-06-02"
+        },
+        {
+          "who": "OpenAI",
+          "what": "new Codex tools for white-collar work",
+          "first_seen": "2026-06-02"
         }
       ],
-      "total": 262
+      "total": 263
     },
     "queue": {
       "pending": [],
