@@ -3,7 +3,7 @@
     "version": 2,
     "created_at": "2026-06-02T00:00:00+07:00",
     "updated_at": "2026-06-02",
-    "total_articles": 243,
+    "total_articles": 245,
     "total_posts": 0
   },
   "brand": {
@@ -3337,6 +3337,32 @@
           "thumb_highlight": 0,
           "thumb_image": "https://blogs.nvidia.com/wp-content/uploads/2026/06/robotics-press-jetson-agentic-ready-cptx26-1920x1080-5180550.jpg",
           "thumb_generated": false
+        },
+        "https://arstechnica.com/ai/2026/06/from-15-hours-to-one-minute-how-ai-ml-is-speeding-up-gms-development/": {
+          "file": "2026-06-02/14.06-01.md",
+          "source": "arstechnica.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "AI Ubah Waktu Simulasi GM",
+            "Dari 15 Jam Jadi 1 Menit",
+            "Ribuan Skenario Bisa Diparalelkan"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/CoSim-SG1-1152x648.jpeg",
+          "thumb_generated": false
+        },
+        "https://hbr.org/2026/06/how-people-are-really-using-ai-in-2026": {
+          "file": "2026-06-02/14.06-02.md",
+          "source": "hbr.org",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Studi Harvard: Cara Orang Pakai AI",
+            "Tugas Rutin Dominan, Strategis Masih Minim",
+            "Tingkat Stres Pekerja AI Justru Meningkat"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://hbr.org/resources/images/article_assets/2026/06/May26_30_ClaraSanMillan.jpg",
+          "thumb_generated": false
         }
       },
       "source_headlines": {
@@ -3501,7 +3527,8 @@
           "peretas bobol akun instagram selebriti cuma modal ngobrol dengan ai chatbot meta",
           "dari 15 jam jadi 1 menit ai ubah cara general motors kembangkan mobil",
           "github copilot ganti sistem harga user kaget tagihan bisa ratusan dolar sehari",
-          "microsoft surface laptop ultra looks like first true macbook pro competitor"
+          "microsoft surface laptop ultra looks like first true macbook pro competitor",
+          "ubah waktu simulasi gm dari 15 jam jadi 1 menit ribuan skenario bisa diparalelkan"
         ],
         "www.businessinsider.com": [
           "anthropic sekarang startup ai paling berharga di dunia openai tumbang"
@@ -3669,6 +3696,9 @@
         ],
         "www.pbs.org": [
           "otoritas di seluruh dunia kewalahan hentikan ai pembuat gambar vulgar tanpa izin"
+        ],
+        "hbr.org": [
+          "studi harvard cara orang pakai ai tugas rutin dominan strategis masih minim tingkat stres pekerja ai justru meningkat"
         ]
       },
       "cross_topics": [
@@ -4156,9 +4186,19 @@
           "who": "NVIDIA",
           "what": "Jetson Agentic AI NemoClaw JetPack physical world robots",
           "first_seen": "2026-06-02"
+        },
+        {
+          "who": "General Motors",
+          "what": "AI/ML speeding up car development simulation from 15 hours to 1 minute",
+          "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Harvard Business Review",
+          "what": "how people are really using AI in 2026 study survey",
+          "first_seen": "2026-06-02"
         }
       ],
-      "total": 243
+      "total": 245
     },
     "queue": {
       "pending": [],
