@@ -3,7 +3,7 @@
     "version": 2,
     "created_at": "2026-06-02T00:00:00+07:00",
     "updated_at": "2026-06-02",
-    "total_articles": 240,
+    "total_articles": 242,
     "total_posts": 0
   },
   "brand": {
@@ -3012,17 +3012,17 @@
           "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/06/01/duckduckgo-makes-its-no-ai-search-engine-easier-to-access-as-its-traffic-booms/": {
-          "file": "2026-06-01/22.00-01.md",
+          "file": "2026-06-02/12.00-01.md",
           "source": "techcrunch.com",
-          "first_seen": "2026-06-01",
+          "first_seen": "2026-06-02",
           "thumb_lines": [
-            "DuckDuckGo pilih jadi mesin pencari anti-AI",
-            "Strategi berani di tengah demam AI global",
-            "Traffic DuckDuckGo melonjak drastis"
+            "DuckDuckGo Raup Banyak Pengguna Baru",
+            "Strategi No AI Justru Makin Laris",
+            "Ekstensi Chrome dan Firefox Dirilis"
           ],
+          "thumb_highlight": 0,
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/05/DuckDuckGo_NoAI.png?resize=1200,784",
-          "thumb_generated": true,
-          "thumb_highlight": 0
+          "thumb_generated": false
         },
         "https://www.theverge.com/ai-artificial-intelligence/940978/florida-is-suing-openai-over-user-safety-concerns": {
           "file": "2026-06-01/23.00-01.md",
@@ -3298,6 +3298,32 @@
           "thumb_highlight": 0,
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/surface-laptop-ultra-1152x648.jpeg",
           "thumb_generated": false
+        },
+        "https://www.theverge.com/report/940861/microsoft-build-ai-models-windows-dev-mode-what-to-expect": {
+          "file": "2026-06-02/12.00-02.md",
+          "source": "www.theverge.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Microsoft Siap Umumkan Model AI Baru",
+            "Konferensi Build Pekan Ini",
+            "Copilot Super App Juga Dikabarkan Hadir"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/MS_BUILD.jpg",
+          "thumb_generated": false
+        },
+        "https://www.theverge.com/gadgets/940854/strava-restricts-api-access-ai-apps": {
+          "file": "2026-06-02/12.00-03.md",
+          "source": "www.theverge.com",
+          "first_seen": "2026-06-02",
+          "thumb_lines": [
+            "Strava Batasi Akses API",
+            "Bayar USD 11,99 per Bulan",
+            "Akibat Serbuan Aplikasi AI Tanpa Kode"
+          ],
+          "thumb_highlight": 0,
+          "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/STKB305_STRAVA_B.jpg",
+          "thumb_generated": false
         }
       },
       "source_headlines": {
@@ -3338,7 +3364,9 @@
           "paus leo xiv rilis ensiklik ai magnifica humanitas didampingi cofounder anthropic reaksi industri campur aduk",
           "bukan sekadar meta killer apple mau bikin smart glasses jadi aksesoris seharihari kayak apple watch target pasar fashion juga",
           "florida gugat openai dan sam altman chatgpt dituduh bikin kecanduan bahayakan pengguna",
-          "ai udah bikin industri musik kacau gimana cara grammy ngadepinnya"
+          "ai udah bikin industri musik kacau gimana cara grammy ngadepinnya",
+          "microsoft unveil models windows improvements build",
+          "strava blames code apps scrapers tightens api access"
         ],
         "www.wired.com": [
           "vatikan ngajak anthropic bicara soal ai iya paus tertarik sama safety ai",
@@ -3426,7 +3454,8 @@
           "ai weathermesh 6 dari windborne bisa prediksi cuaca lebih akurat dari pemerintah eropa gegara 400 balon udara",
           "spacex peringatkan risiko air di ipo data center ai",
           "alphabet siap kumpulkan 80 miliar dari jual saham dana terbesar buat ai infrastructure",
-          "nvidia resmi masuk pasar cpu dengan chip rtx spark untuk agent"
+          "nvidia resmi masuk pasar cpu dengan chip rtx spark untuk agent",
+          "duckduckgo makes noai search engine easier access traffic booms"
         ],
         "www.tomshardware.com": [
           "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -4093,9 +4122,24 @@
           "who": "Microsoft",
           "what": "AI PC",
           "first_seen": "2026-06-02"
+        },
+        {
+          "who": "DuckDuckGo",
+          "what": "No AI search engine traffic booms",
+          "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Microsoft",
+          "what": "AI models Build Windows improvements",
+          "first_seen": "2026-06-02"
+        },
+        {
+          "who": "Strava",
+          "what": "API access AI apps",
+          "first_seen": "2026-06-02"
         }
       ],
-      "total": 240
+      "total": 242
     },
     "queue": {
       "pending": [],
