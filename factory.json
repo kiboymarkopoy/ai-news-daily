@@ -118,8 +118,8 @@
       },
       "line_spacing": 1.25,
       "max_width_pct": 0.88,
-      "max_lines": 3,
-      "y_start_pct": 0.68,
+      "max_lines": 4,
+      "y_start_pct": 0.65,
       "colors": {
         "line1": [
           255,
@@ -182,26 +182,26 @@
           "source": "www.anthropic.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Perusahaan AI Termahal di Dunia Baru Saja Lahir",
-            "$965 Miliar.",
-            "Baca Selengkapnya"
+            "Anthropic jadi perusahaan AI termahal dunia",
+            "Kumpulkan dana segar $65 miliar",
+            "Valuasi tembus $965 miliar"
           ],
           "thumb_image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/c0af2a56f56cf298ce5904f2901e9a36facd0dbe-1000x1000.svg",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.bbc.com/news/articles/c3r2zjpryzro": {
           "file": "2026-05-29/07.00-3.md",
           "source": "www.bbc.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Ethical Hacker Juara Dunia",
-            "\"Ini Mungkin Lomba Terakhir Gue\"",
-            "Baca Selengkapnya"
+            "Ethical hacker juara dunia buka suara",
+            "Ini mungkin lomba terakhir gue",
+            "Kompetisi hacking etis makin ketat"
           ],
           "thumb_image": "https://ichef.bbci.co.uk/news/480/cpsprodpb/529a/live/5a4cd470-58dc-11f1-a182-6b602140f589.jpg.webp",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.rollingstone.com/tv-movies/tv-movie-news/dreams-of-violets-ai-movie-tribeca-1235569122/": {
           "file": "2026-05-29/07.00-5.md",
@@ -221,13 +221,13 @@
           "source": "www.theverge.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Claude Opus 4.8",
-            "Akhirnya Ada Model AI Yang Jujur Kalau Lagi Ngaco!",
-            "Baca Selengkapnya"
+            "Claude Opus 4.8 hadir dengan kejujuran",
+            "Model AI kini berani akui kesalahan",
+            "Kejujuran AI jadi standar baru industri"
           ],
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STKB364_CLAUDE_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.wired.com/story/anthropic-christopher-olah-pope-ai-encyclical/": {
           "file": "2026-05-29/08.00-03.md",
@@ -260,104 +260,104 @@
           "source": "deadline.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Legenda Penulis Taxi Driver",
-            "\"Bikin Clint Eastwood Baru Cukup Pake Text Prompt\"",
-            "Baca Selengkapnya"
+            "Penulis Taxi Driver bikin aktor AI baru",
+            "Cukup text prompt hasilnya gila",
+            "AI generatif ubah industri film selamanya"
           ],
           "thumb_image": "https://deadline.com/wp-content/uploads/2024/10/Paul-Schrader-2170993032.jpg?w=1024",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.cnbc.com/2026/05/28/snowflake-snow-software-stock-rally.html": {
           "file": "2026-05-29/11.00-02.md",
           "source": "www.cnbc.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "SNOWFLAKE LONCOT 36% HARI TERBAIK SEPANJANG SEJARAH",
-            "Katanya \"SaaSpocalypse\" Cuma Hoax",
-            "Baca Selengkapnya"
+            "Saham Snowflake melesat 36% dalam sehari",
+            "Rekor perdagangan terbaik sepanjang sejarah",
+            "Isu SaaSpocalypse terbukti hoax belaka"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://finance.yahoo.com/sectors/technology/articles/nvidia-ceo-jensen-huang-heading-183340226.html": {
           "file": "2026-05-29/11.00-04.md",
           "source": "finance.yahoo.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "JENSEN HUANG GAS KE TAIWAN",
-            "NVIDIA MAU INVESTASI $150 MILIAR PER TAHUN DI SANA",
-            "Baca Selengkapnya"
+            "Jensen Huang gas ke Taiwan bawa misi",
+            "NVIDIA investasi $150 miliar per tahun",
+            "Taiwan jadi pusat chip AI global"
           ],
           "thumb_image": "https://s.yimg.com/ny/api/res/1.2/ehHK1CccPgvvkPPZI7hPVA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://media.zenfs.com/en/barchart_com_477/e6f9cbf762054b4a83941a8757d2d9f9",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/27/elevenlabss-new-music-generation-model-can-switch-genres-mid-track/": {
           "file": "2026-05-29/11.00-05.md",
           "source": "techcrunch.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "ELEVENLABS RILIS MODEL MUSIK BARU",
-            "BISA GANTI GENRE DI TENGAH LAGU!",
-            "Baca Selengkapnya"
+            "ElevenLabs rilis model musik revolusioner",
+            "Bisa ganti genre di tengah lagu",
+            "AI generasi musik makin fleksibel"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2025/01/ElevenLabs-feat.jpg?resize=1107,617",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/28/waymos-newest-robotaxi-is-chinese-made-built-to-make-money-and-now-accepting-riders/": {
           "file": "2026-05-29/12.00-04.md",
           "source": "techcrunch.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Waymo Luncurkan Robotaxi \"Ojai\"",
-            "Minivan China yang Udah Bisa Dipesan Penumpang",
-            "Baca Selengkapnya"
+            "Waymo luncurkan robotaxi Ojai buatan China",
+            "Minivan otonom siap angkut penumpang",
+            "Robotaxi China mulai beroperasi komersial"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/05/waymo-zeekr-robotaxi.jpg?resize=1200,900",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.theverge.com/ai-artificial-intelligence/939216/anthropic-raised-a-funding-round-valuing-it-at-nearly-1-trillion": {
           "file": "2026-05-29/14.00-02.md",
           "source": "www.theverge.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Anthropic Dapat $65 Miliar, Valuasi Tembus $965 Miliar",
-            "Ngacir Lewati OpenAI!",
-            "Baca Selengkapnya"
+            "Anthropic kumpulkan $65 miliar dana segar",
+            "Valuasi tembus $965 miliar lewati OpenAI",
+            "Startup AI termahal sepanjang sejarah"
           ],
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STKB364_CLAUDE_C.jpg?quality=90&strip=all&crop=0,0,100,100",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.theverge.com/policy/939410/illinois-is-close-to-enacting-an-ai-safety-law-with-broader-mandates-than-other-states": {
           "file": "2026-05-29/14.00-03.md",
           "source": "www.theverge.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Illinois Mau Bikin Undang",
-            "Undang AI Paling Strict di AS — Wajib Audit Pihak Ketiga!",
-            "Baca Selengkapnya"
+            "Illinois siapkan UU AI terketat di AS",
+            "Perusahaan AI wajib audit pihak ketiga",
+            "Regulasi AI makin diperketat di Amerika"
           ],
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/01/verge-placeholder_f212b3.png?quality=90&strip=all&crop=0,0.13712291199202,100,99.725754176016",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.theverge.com/entertainment/939067/ai-film-dreams-of-violets-tribeca": {
           "file": "2026-05-29/14.00-05.md",
           "source": "www.theverge.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Film Cuma $2.000 Dibikin Pakai AI Bakal Tayang di Tribeca",
-            "Biola Sampai Nangis?",
-            "Baca Selengkapnya"
+            "Film AI budget $2.000 tayang di Tribeca",
+            "Hasilnya bikin bioskop sampai nangis",
+            "AI buktikan film murah tetap berkualitas"
           ],
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/ai-dreams-of-violets.png?quality=90&strip=all&crop=0,10.732984293194,100,78.534031413613&w=1200",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://finance.yahoo.com/news/anthropic-debuts-flagship-claude-opus-48-ai-model-as-ipo-race-with-openai-heats-up-170000527.html": {
           "file": "2026-05-29/15.00-01.md",
@@ -377,104 +377,104 @@
           "source": "www.tomshardware.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "CHINA RESMI MASUKIN CHIP AI DALAM NEGERI KE DAFTAR BELANJA PEMERINTAH",
-            "BYE BYE NVIDIA?",
-            "Baca Selengkapnya"
+            "China resmi pakai chip AI buatan sendiri",
+            "Sembilan chip lokal masuk daftar pemerintah",
+            "NVIDIA terancam kehilangan pasar China"
           ],
           "thumb_image": "https://cdn.mos.cms.futurecdn.net/Jkou5w3ynsSt9QqVKLHK4e-2560-80.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://ia.acs.org.au/article/2026/spotify-launches-ai-remix-era.html": {
           "file": "2026-05-29/15.00-05.md",
           "source": "ia.acs.org.au",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "SPOTIFY RESMI MASUK ERA REMIX AI",
-            "KARYA FAN BISA JADI RESMI?",
-            "Baca Selengkapnya"
+            "Spotify resmi buka era remix AI global",
+            "Karya fans berpotensi jadi rilisan resmi",
+            "Musik AI makin terintegrasi di platform"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://arstechnica.com/ai/2026/05/3d-printable-humanoid-legs-let-robotics-experiments-run-wild/": {
           "file": "2026-05-29/16.00-04.md",
           "source": "arstechnica.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Punya Robot Humanoid Cuma $2.500? Hugging Face Buktikan Bisa",
-            "Kaki Robot Bisa Di-3D-Print Sendiri!",
-            "Baca Selengkapnya"
+            "Robot humanoid cuma $2.500 bisa dibuat",
+            "Kaki robot di-3D-print sendiri dari rumah",
+            "Hugging Face buktikan mimpi jadi nyata"
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/Hugging-Face-LeHumanoid-Robot-legs-1152x648.png",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://deadline.com/2026/05/steven-spielberg-where-draw-the-line-ai-1236928790/": {
           "file": "2026-05-29/16.00-05.md",
           "source": "deadline.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Spielberg Buka Suara Soal AI di Hollywood",
-            "\"Gak Ada yang Bisa Gantiin Jiwa Manusia\"",
-            "Baca Selengkapnya"
+            "Spielberg buka suara soal AI di Hollywood",
+            "Gak ada yang bisa gantiin jiwa manusia",
+            "Sutradara legendaris kritik penggunaan AI"
           ],
           "thumb_image": "https://deadline.com/wp-content/uploads/2026/05/P105NWUQ-e1779933098290.jpg?w=798",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.businessinsider.com/anthropic-surpasses-openai-with-965b-valuation-debuts-opus-4-8-2026-5": {
           "file": "2026-05-29/17.00-02.md",
           "source": "www.businessinsider.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Anthropic sekarang startup AI paling berharga di dunia",
-            "OpenAI tumbang!",
-            "Baca Selengkapnya"
+            "Anthropic resmi startup AI paling berharga",
+            "OpenAI tumbang dari posisi puncak",
+            "Valuasi $965 miliar rekor baru industri"
           ],
           "thumb_image": "https://i.insider.com/6a188845b4fb977f35980df5?width=1200&format=jpeg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.resultsense.com/news/2026-05-28-uk-ai-regulatory-may-2026-roundup/": {
           "file": "2026-05-29/17.00-03.md",
           "source": "www.resultsense.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Inggris makin galak soal AI",
-            "ada undang-undang baru yang wajib lo tau",
-            "Baca Selengkapnya"
+            "Inggris perketat regulasi AI global",
+            "Undang-undang baru wajib lo ketahui",
+            "Perusahaan AI harus patuhi aturan baru"
           ],
           "thumb_image": "https://www.resultsense.com/assets/img/2026-05-28-uk-ai-regulatory-may-2026-roundup-D8oS5OOi.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/28/waymo-dominates-texas-autonomous-vehicle-registrations-as-tesla-trails-behind/": {
           "file": "2026-05-29/17.00-04.md",
           "source": "techcrunch.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Waymo hajar habis Tesla di soal mobil otonom",
-            "data Texas gak bohong",
-            "Baca Selengkapnya"
+            "Waymo kuasai registrasi mobil otonom Texas",
+            "Tesla tertinggal jauh menurut data resmi",
+            "Dominasi robotaxi Waymo makin kuat"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/02/waymo-getty-streets.jpg?resize=1200,800",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.hollywoodreporter.com/music/music-news/rolling-stones-de-age-themselves-with-ai-in-the-stars-video-1236595906/": {
           "file": "2026-05-29/17.00-05.md",
           "source": "www.hollywoodreporter.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Pembuat South Park bikin Rolling Stones jadi muda lagi pake AI",
-            "hasilnya gila!",
-            "Baca Selengkapnya"
+            "Rolling Stones jadi muda lagi pakai AI",
+            "Pembuat South Park sulap band legendaris",
+            "Video de-aging AI bikin heboh industri"
           ],
           "thumb_image": "https://www.hollywoodreporter.com/wp-content/uploads/2026/05/Rolling-Stones-AI-In-the-Stars-Music-Video-Screenshot-Publicity-H-2026.jpg?w=1296&h=730&crop=1",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.cnbc.com/2026/05/19/google-debuts-new-ai-models-personal-ai-agents-effort-to-keep-pace.html": {
           "file": "2026-05-29/18.00-01.md",
@@ -494,13 +494,13 @@
           "source": "businesscloud.co.uk",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Ancaman Keamanan AI Makin Nyata di 2026",
-            "Setiap Pemimpin Bisnis Wajib Tahu!",
-            "Baca Selengkapnya"
+            "Ancaman keamanan AI makin nyata di 2026",
+            "Setiap pemimpin bisnis wajib waspada",
+            "Risiko AI mengancam perusahaan global"
           ],
           "thumb_image": "https://businesscloud.co.uk/wp-content/uploads/2026/05/Chris-Maguire-and-Frank-Mckenna-1-.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://carnewschina.com/2026/04/13/chery-begins-online-sales-of-humanoid-robot-with-a-0-7-kwh-battery-at-41400-usd/": {
           "file": "2026-05-29/18.00-04.md",
@@ -598,13 +598,13 @@
           "source": "arstechnica.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Trump gigit jari",
-            "Illinois sahkan undang-undang AI paling keras di AS — dan didukung OpenAI",
-            "Baca Selengkapnya"
+            "Illinois sahkan UU AI terkeras di AS",
+            "Perusahaan AI wajib audit pihak ketiga",
+            "Regulasi jadi preseden bagi negara lain"
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/GettyImages-1476750862-1152x648-1779984812.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://arstechnica.com/ai/2026/05/the-internet-cant-stop-watching-figure-ais-humanoid-robots-handling-packages/": {
           "file": "2026-05-29/22.00-04.md",
@@ -624,13 +624,13 @@
           "source": "www.theguardian.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Sutradara Star Wars",
-            "\"AI kayak sutradara milyarder yang lagi flying — ngelakuin apa aja yang lo minta\"",
-            "Baca Selengkapnya"
+            "Sutradara Star Wars puji kemampuan AI",
+            "AI kayak sutradara milyader lagi flying",
+            "Teknologi AI bisa lakukan apa pun diminta"
           ],
           "thumb_image": "https://i.guim.co.uk/img/media/9429f1be73dfdc2e32dcc42248fd742145c29225/515_80_6082_4866/master/6082.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=128b892e1c31bd802e541637ea9fd883",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.anthropic.com/news/claude-opus-4-8": {
           "file": "2026-05-29/23.00-01.md",
@@ -663,26 +663,26 @@
           "source": "www.nbcnews.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Illinois Sahkan UU AI Paling Keras di AS",
-            "Perusahaan Wajib Diaudit Pihak Ketiga!",
-            "Baca Selengkapnya"
+            "Illinois sahkan UU AI paling keras se-AS",
+            "Perusahaan AI wajib audit pihak ketiga",
+            "Regulasi jadi preseden bagi negara lain"
           ],
           "thumb_image": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-05/260527-illinois-state-capitol-vl-401p-e0bb9f.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning": {
           "file": "2026-05-29/23.00-04.md",
           "source": "www.theverge.com",
           "first_seen": "2026-05-29",
           "thumb_lines": [
-            "Startup AI Mau Bersihin Rumah Lo GRATIS",
-            "Tapi Lo Harus Dipasangin \"Topeng Ajaib\" Buat Latih Robot",
-            "Baca Selengkapnya"
+            "Startup tawarkan bersihin rumah gratis",
+            "Lo harus pakai topeng ajaib untuk latihan",
+            "Data dikumpulkan training robot rumah tangga"
           ],
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/Screenshot-2026-05-29-at-12.44.12.png?quality=90&strip=all&crop=0,1.3015853110533,100,97.396829377893",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.theverge.com/tech/939686/adobes-conversational-ai-agent-is-a-mediocre-design-intern": {
           "file": "2026-05-29/23.00-05.md",
@@ -702,13 +702,13 @@
           "source": "blog.google",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Google Bikin Gempar",
-            "Gemini Omni Bisa Bikin Video Cuma dari Omongan!",
-            "Baca Selengkapnya"
+            "Google Gemini bikin video cuma dari suara",
+            "Omni 3.5 hasilkan video realistis langsung",
+            "AI text-to-video makin canggih dan cepat"
           ],
           "thumb_image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_herosocial.width-1300.png",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/": {
           "file": "2026-05-30/03.00-02.md",
@@ -728,26 +728,26 @@
           "source": "www.theverge.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Startup Mau Bersihin Rumah Lo GRATIS",
-            "Tapi Minta Direkam. Ada Apa?",
-            "Baca Selengkapnya"
+            "Startup bersihin rumah gratis minta rekaman",
+            "Lo dibayar untuk data training robot",
+            "AI butuh data nyata dari rumah lo"
           ],
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/STK414_AI_CVIRGINIA_I__0009_7.png?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/": {
           "file": "2026-05-30/04.00-01.md",
           "source": "techcrunch.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Gila! Claude Opus 4.8 Baru aja Rilis",
-            "Bisa Koordinasi Banyak AI Sekaligus",
-            "Baca Selengkapnya"
+            "Claude Opus 4.8 rilis dengan fitur gila",
+            "Bisa koordinasi banyak AI sekaligus",
+            "Dynamic workflow bikin kerja makin efisien"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269811684.jpg?w=1024",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.cnbc.com/2026/05/29/dell-stock-earnings-ai-servers.html": {
           "file": "2026-05-30/04.00-02.md",
@@ -767,39 +767,39 @@
           "source": "www.wired.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Illinois Resmi Mengesahkan UU Keamanan AI Paling Ketat di AS",
-            "Perusahaan AI Wajib Diaudit Pihak Ketiga",
-            "Baca Selengkapnya"
+            "Illinois resmi sahkan UU keamanan AI ketat",
+            "Perusahaan AI wajib diaudit pihak ketiga",
+            "Regulasi AI baru mulai berlaku di Illinois"
           ],
           "thumb_image": "https://media.wired.com/photos/6a1769e135f75a644600c4ac/191:100/w_1280,c_limit/Illionois-AI-Safetry-Bill-Business-2270597563.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.bbc.com/news/articles/cgmpwzzvxr2o": {
           "file": "2026-05-30/04.00-04.md",
           "source": "www.bbc.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "BMW Resmi Pakai Robot Humanoid di Pabrik",
-            "Kata Mereka Ini Masa Depan Produksi Mobil",
-            "Baca Selengkapnya"
+            "BMW resmi pakai robot humanoid di pabrik",
+            "Masa depan produksi mobil berganti total",
+            "Robot humanoid mulai gantikan pekerja pabrik"
           ],
           "thumb_image": "https://ichef.bbci.co.uk/news/1024/branded_news/7c2f/live/48e23e10-4dd7-11f1-bd52-e755d604ece4.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.nbcnews.com/pop-culture/pop-culture-news/amazon-mgm-studios-ai-generated-animated-shows-creator-revolt-rcna347432": {
           "file": "2026-05-30/04.00-05.md",
           "source": "www.nbcnews.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Amazon Mau Bikin Film Pake AI, Kreator Hollywood Langsung Protes Besar",
-            "besaran",
-            "Baca Selengkapnya"
+            "Amazon bikin film animasi pakai AI",
+            "Kreator Hollywood protes besar-besaran",
+            "Kontroversi AI di hiburan makin panas"
           ],
           "thumb_image": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-05/260528-Cuppy3D-ww-1755-a7b2f7.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.livescience.com/technology/artificial-intelligence/openais-internal-ai-model-just-solved-an-80-year-old-math-problem-and-mathematicians-verified-it": {
           "file": "2026-05-30/05.30-01.md",
@@ -819,13 +819,13 @@
           "source": "Google News",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Tilly Norwood",
-            "Aktris AI Yang Curhat \"Kenapa Semua Orang Marah Sama Gue?\"",
-            "Baca Selengkapnya"
+            "Aktris AI Tilly Norwood curhat bingung",
+            "Kenapa semua orang marah sama gue",
+            "Aktris virtual hadapi kontroversi publik"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.wired.com/story/ex-google-apple-ai-researchers-want-to-make-ai-that-gets-smarter-as-you-use-it/": {
           "file": "2026-05-30/06.00-01.md",
@@ -858,13 +858,13 @@
           "source": "www.nytimes.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Guru",
-            "Guru di AS Minta Sekolah Larang AI Chatbots — Anak SD Sama Sekali Gak Boleh Pake",
-            "Baca Selengkapnya"
+            "Guru-guru AS minta sekolah larang AI chatbot",
+            "Anak SD sama sekali gak boleh pakai",
+            "Kekhawatiran dampak AI pada pendidikan anak"
           ],
           "thumb_image": "https://static01.nyt.com/images/2026/05/27/multimedia/27Biz-AI-Weingarten-1-pzkm/27Biz-AI-Weingarten-1-pzkm-mediumSquareAt3X.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.wired.com/story/here-comes-ojai-waymos-new-chinese-made-robotaxi/": {
           "file": "2026-05-30/06.00-04.md",
@@ -884,13 +884,13 @@
           "source": "www.wired.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Amazon Bikin Serial Kartun Pake AI dari Karakter Viral",
-            "Kreator Aslinya Marah Besar",
-            "Baca Selengkapnya"
+            "Amazon bikin kartun AI dari karakter viral",
+            "Kreator aslinya marah besar tanpa izin",
+            "Kontroversi hak cipta AI kembali memanas"
           ],
           "thumb_image": "https://media.wired.com/photos/6a18c5e0148c56039b79b0d5/191:100/w_1280,c_limit/Amazon-Turns-Buzzfeed-Good-Advice-Cupcake-Into-AI-Series-Culture-1164238077.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/29/coders-are-refusing-to-work-without-ai-and-that-could-come-back-to-bite-them/": {
           "file": "2026-05-30/07.00-02.md",
@@ -910,39 +910,39 @@
           "source": "techcrunch.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Suara AI Yang Bikin Merinding",
-            "Startup dari Mantan Bos Oculus Rilis App iOS",
-            "Baca Selengkapnya"
+            "Suara AI merinding dari mantan bos Oculus",
+            "Startup conversational AI rilis app iOS",
+            "Teknologi suara AI makin realistis alami"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/05/crossing-the-uncanny-valley-of-voice-hero.webp?resize=1200,900",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/28/sneak-peek-at-new-siri-app-reveals-apples-plans-to-take-on-chatgpt-and-more/": {
           "file": "2026-05-30/07.00-04.md",
           "source": "techcrunch.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Apple Diam",
-            "Diam Siapin Siri Baru — Bocoran App Ketangkap Mau Saingan Sama ChatGPT!",
-            "Baca Selengkapnya"
+            "Apple diam-diam siapkan Siri generasi baru",
+            "Bocoran app ketangkap bakal saingi ChatGPT",
+            "Asisten AI Apple siap bertarung di pasar"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/05/1476x1375.webp?resize=1200,1118",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://arstechnica.com/ai/2026/05/llms-believe-false-statements-even-after-explicit-warnings-that-theyre-false/": {
           "file": "2026-05-30/08.00-01.md",
           "source": "arstechnica.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Udah Dibilangin Bohong Tetep Percaya",
-            "LLM Ternyata Punya \"Keyakinan\" Kayak Manusia",
-            "Baca Selengkapnya"
+            "LLM punya keyakinan kayak manusia ternyata",
+            "Udah dibilangin bohong tetep percaya",
+            "Penelitian ungkap kelemahan serius AI"
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/GettyImages-2207567240-1152x648.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://arstechnica.com/security/2026/05/fed-up-with-vibe-coders-dev-sneaks-data-nuking-prompt-injection-into-their-code/": {
           "file": "2026-05-30/08.00-03.md",
@@ -962,39 +962,39 @@
           "source": "arstechnica.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Mau Bersihin Rumah Gratis? Startup Ini Bayar Lo",
-            "Tapi Lo Harus Dipasangin Kamera buat Latih Robot",
-            "Baca Selengkapnya"
+            "Startup bayar lo untuk bersihin rumah gratis",
+            "Lo harus dipasangin kamera latih robot",
+            "Data training AI dikumpulkan dari rumah lo"
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/Screenshot-2026-05-29-at-9.24.24-AM-1152x648.png",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.wired.com/story/future-of-truth-ai-interview/": {
           "file": "2026-05-30/08.00-05.md",
           "source": "www.wired.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Penulis Buku \"Masa Depan Kebenaran\" Ketahuan Pakai AI",
-            "Pas Ditanya Malah Gak Bisa Jelasin Diri",
-            "Baca Selengkapnya"
+            "Penulis buku kebenaran ketahuan pakai AI",
+            "Pas ditanya malah gak bisa jelasin diri",
+            "Ironi penulis AI yang bicara kebenaran"
           ],
           "thumb_image": "https://media.wired.com/photos/6a173332faa2148b4ab454b6/191:100/w_1280,c_limit/Business_AIBookAuthorUsedAItoWriteHisBook_v1.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/": {
           "file": "2026-05-30/09.00-01.md",
           "source": "techcrunch.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Startup Chip AI Ini Dapat 'Restu' Investor buat Kumpulin $650M Lagi",
-            "Setelah Nvidia 'Beli' $20M?",
-            "Baca Selengkapnya"
+            "Startup chip AI kumpulkan $650M dari investor",
+            "Setelah Nvidia beli talenta mereka $20M",
+            "Groq siap bersaing di pasar chip global"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2024/03/GettyImages-1502217391.jpg?resize=1200,800",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.engadget.com/2162606/meta-acquires-assured-robot-intelligence-humanoid-ai/": {
           "file": "2026-05-30/09.00-02.md",
@@ -1014,52 +1014,52 @@
           "source": "www.cnbc.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "CEO Mistral Buka Suara Soal Rencana Bikin Chip Custom",
-            "'Turunin Biaya Token'—Eropa Gak Mau Ketinggalan Infrastruktur AI",
-            "Baca Selengkapnya"
+            "Mistral bikin chip custom untuk AI Eropa",
+            "Target turunkan biaya token secara drastis",
+            "Eropa tak mau ketinggalan infrastruktur AI"
           ],
           "thumb_image": "",
-          "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_generated": false,
+          "thumb_highlight": 0
         },
         "https://www.wired.com/story/google-gemini-spark-ai-agent-hands-on": {
           "file": "2026-05-30/10.00-01.md",
           "source": "www.wired.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Gila, Google Kasih AI Agent Akses ke Hidup Lo",
-            "Pacar aja Sampai Friend-Zone!",
-            "Baca Selengkapnya"
+            "Google kasih AI agent akses hidup lo",
+            "Pacar aja sampai friend-zone kalah saing",
+            "AI Spark bisa akses data pribadi lo"
           ],
           "thumb_image": "https://media.wired.com/photos/6a19d3576c603cc05220330d/191:100/w_1280,c_limit/Gemini-Spark-Carousel.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.wired.com/story/amazon-thinks-the-future-of-data-centers-depends-on-a-technical-problem-it-just-solved": {
           "file": "2026-05-30/10.00-02.md",
           "source": "www.wired.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Amazon Pecahin Telur",
-            "Masalah Teknis yang Bikin Data Center AI Nge-drop Kini Terjawab!",
-            "Baca Selengkapnya"
+            "Amazon pecahkan masalah teknis data center",
+            "Masalah bikin AI nge-drop kini terjawab",
+            "Infrastruktur AI Amazon makin stabil kuat"
           ],
           "thumb_image": "https://media.wired.com/photos/6a173c117ababccb510cce19/191:100/w_1280,c_limit/Amazon-Cover.gif",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.engadget.com/2183900/cnn-is-the-latest-media-company-to-sue-perplexity": {
           "file": "2026-05-30/10.00-03.md",
           "source": "www.engadget.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "CNN Gugat Perplexity",
-            "Startup AI Pencari Informasi Dituduh Curang — Bayar Konten? Gak Mau!",
-            "Baca Selengkapnya"
+            "CNN gugat Perplexity soal konten curian",
+            "Startup AI dituduh curang bayar konten",
+            "Media besar lawan AI penyalahgunaan konten"
           ],
           "thumb_image": "https://www.engadget.com/img/gallery/cnn-is-the-latest-media-company-to-sue-perplexity/l-intro-1780081911.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.wired.com/story/vertu-alphafold-folding-phone-powered-by-hermes-agent-ai": {
           "file": "2026-05-30/10.00-04.md",
@@ -1079,13 +1079,13 @@
           "source": "www.engadget.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Star Trek Dapat Thumbnail Paling Jelek Sepanjang Masa",
-            "Semua Karena AI!",
-            "Baca Selengkapnya"
+            "Star Trek dapat thumbnail paling jelek",
+            "Semua karena AI hasilkan gambar buruk",
+            "AI gagal total bikin desain thumbnail"
           ],
           "thumb_image": "https://www.engadget.com/img/gallery/paramount-used-ai-slop-to-make-the-ugliest-star-trek-thumbnail-ever/l-intro-1780070519.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans/": {
           "file": "2026-05-30/11.00-01.md",
@@ -1105,13 +1105,13 @@
           "source": "techcrunch.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "CME Group dan ICE Mau Bikin Pasar Berjangka Buat Token AI",
-            "Lo Bisa Spekulasi Harga Token Kayak Komoditas",
-            "Baca Selengkapnya"
+            "Bursa global buka pasar berjangka token AI",
+            "Lo bisa spekulasi harga token kayak komoditas",
+            "CME ICE buka era perdagangan token AI"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2025/09/GettyImages-640351099.jpg?resize=1200,849",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/28/how-long-is-anthropics-lease-with-spacex-opinions-vary/": {
           "file": "2026-05-30/11.00-03.md",
@@ -1131,13 +1131,13 @@
           "source": "asia.nikkei.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Pameran Teknologi Tokyo Heboh",
-            "Robot Humanoid Jalan di Atas Panggung Pakai Baju Matching Sama Manusia",
-            "Baca Selengkapnya"
+            "Pameran Tokyo heboh robot humanoid fashion",
+            "Robot jalan di panggung pakai baju matching",
+            "Teknologi robot humanoid makin canggih"
           ],
           "thumb_image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fcms-image-bucket-productionv3-ap-northeast-1-a7d2.s3.ap-northeast-1.amazonaws.com%2Fimages%2F5%2F8%2F5%2F3%2F12553585-3-eng-GB%2F2039ef845440-photo_SXM2026052800006814.jpg?width=1260&fit=cover&gravity=faces&dpr=2&quality=medium&source=nar-cms&format=auto&height=630",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://news.google.com/rss/articles/CBMirwFBVV95cUxONXVCcmN2VmdmUGFiWWRlVXpPNUJiWUJrVGNSNldQNThoNGVaRzdzckFqdGJjOThRVk5SWlQ3Ump5bXkySThlSTY4X1VuU05HNmpDRk5CUDVNdlgxSUFvT3c1TFlJdHJKWHFCbGozd2RLZlFHenRvcTZLSzZaclhRNlRpczR2THJkNlZVSjFtUHVxMDRMODNwZmY5Y18wM2VzZm14UTBBQmRPZkRLVXhv?oc=5": {
           "file": "2026-05-30/12.00-01.md",
@@ -1157,26 +1157,26 @@
           "source": "Google News",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "CEO DeepMind Sir Demis Hassabis Peringetin",
-            "Manusia Lagi Ngalamin Perubahan Sebesar Penemuan Api atau Bahasa",
-            "Baca Selengkapnya"
+            "CEO DeepMind: AI sebesar penemuan api",
+            "Demis Hassabis beri peringatan keras",
+            "Perubahan terjadi sekarang juga"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://news.google.com/rss/articles/CBMifkFVX3lxTE1QSG1YbFVEWGVFYnR6b1l0YmdjQ19vUWtJZVN4OFBaRm81V3M4QkJXSklPSTYxdm1SUjhKa1N0RzFpcU9hSEhWdE13bWVLNEx5RUMwRkQ2WFppa2xvQm1NMFlOYWFmUXBNa2hLajZJaGszcjl2d1JWWEppWnZBUQ?oc=5": {
           "file": "2026-05-30/12.00-03.md",
           "source": "Google News",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Bos Amazon Kiro Suruh Karyawan Berhenti Obsesi sama Metrik Token",
-            "Kualitas Jauh Lebih Penting dari Kuantitas",
-            "Baca Selengkapnya"
+            "Bos Amazon: berhenti obsesi token",
+            "Kualitas jauh lebih penting dari kuantitas",
+            "Karyawan diminta fokus ke value"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNSUM3ODdhQjJ3Sm9aNXFnQWxNNk1wUkNNSHZqVDhGbWJ3UzlZVkRwekhpX3U3UTNXMml3Uzk5N3RERUZzYjhNcmdrV29jNmlZTnJvS2hYRG5EU0RYd3BObDkzUWhPWjRGeTlDYWNkZDNIR2hnQVJ3YUJ3aFl3bzlydkY5ZHg4bVVoN2Y?oc=5": {
           "file": "2026-05-30/12.00-04.md",
@@ -1196,35 +1196,35 @@
           "source": "www.theverge.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "OpenAI Codex Resmi Ngelanjutin Ekspansi ke Windows",
-            "Dari Mac Sekarang Bisa \"Ngeliat\" Layar PC",
-            "Baca Selengkapnya"
+            "Codex kini bisa kendalikan Windows",
+            "Dari Mac lihat layar PC langsung",
+            "Ekspansi besar OpenAI berlanjut"
           ],
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/01/verge-placeholder_f212b3.png?quality=90&strip=all",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://fortune.com/2026/05/29/microsoft-working-on-super-app/": {
           "file": "2026-05-30/14.00-02.md",
           "source": "fortune.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Bocoran Terbaru",
-            "Microsoft Mau Bikin Aplikasi AI Raksasa yang Gabungin Semua Layanan Copilot Jadi Satu",
-            "Baca Selengkapnya"
+            "Microsoft bikin super app AI",
+            "Gabungin semua Copilot jadi satu",
+            "Bocoran terbaru gemparkan industri"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.theverge.com/ai-artificial-intelligence/940028/openai-is-sunsetting-chatgpts-canvas-interface": {
           "file": "2026-05-30/14.00-03.md",
           "source": "www.theverge.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "OpenAI Resmi Pensiunin Canvas",
-            "Fitur Edit Teks & Code Bareng ChatGPT Bakal Dihapus Dari GPT-5.5",
-            "Baca Selengkapnya"
+            "OpenAI resmi pensiunkan fitur Canvas",
+            "Edit teks dan code dihapus dari GPT-5.5",
+            "Canvas lenyap dari ChatGPT selamanya"
           ],
           "thumb_image": "",
           "thumb_generated": false,
@@ -1248,22 +1248,22 @@
           "source": "www.bbc.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Gila! Drone AI Ukraina Bikin Rusia Kehilangan Ratusan Truk Logistik",
-            "Jarak Tempuh Lebih dari 100 Km",
-            "Baca Selengkapnya"
+            "Drone AI Ukraina hancurkan logistik Rusia",
+            "Ratusan truk hilang dalam serangan",
+            "Jarak tempuh lebih dari 100 km"
           ],
           "thumb_image": "https://ichef.bbci.co.uk/news/1024/branded_news/1222/live/288ef030-5b7a-11f1-b682-cf91850925ea.png",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.forbes.com/sites/janakirammsv/2026/05/19/anthropic-buys-the-sdk-pipeline-openai-and-gemini-depend-on/": {
           "file": "2026-05-30/15.00-02.md",
           "source": "www.forbes.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Ancaman Nyata! Anthropic Beli Startup Pembuat SDK yang Jadi Tulang Punggung API OpenAI, Gemini, dan Meta Llama",
-            "Harganya Lebih dari $300 Juta",
-            "Baca Selengkapnya"
+            "Anthropic beli startup SDK AI",
+            "Dipakai OpenAI, Gemini, dan Meta Llama",
+            "Harganya lebih dari $300 juta"
           ],
           "thumb_image": "",
           "thumb_generated": false,
@@ -1274,26 +1274,26 @@
           "source": "Google News",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "OpenAI Rilis Rosalind Biodefense",
-            "Model AI Khusus Biologi yang Langsung Ditawarkan ke Badan Federal AS",
-            "Baca Selengkapnya"
+            "OpenAI rilis Rosalind Biodefense",
+            "Model AI khusus biologi dan keamanan",
+            "Ditawarkan langsung ke badan federal AS"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYW56R18tUlFncHQ4S0hlN2NJbkpwOWl6eDJhVS1Jdjg3VVJFWXNCUG5xSmNILWxJZlZnYVJSWS1aWm5rbFhkQ09PelFLMEtoMk1HTW5HVGNLREl1WUlvYjNkbmxtckh4LUtKampGQkk4QndTeTlYSGI1b2hQTDJTcU5JZ0lpNW13akllZWQtWE90VWFnSWNuLTZpdThqaVQ5ODVfUFRUQTlERE1mRlFTS0tCbnZEZjhw": {
           "file": "2026-05-30/17.00-02.md",
           "source": "Google News",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "SoftBank Rekrut Bankir untuk IPO Roze",
-            "Spin-off Robotika AI yang Siap Go Public di AS",
-            "Baca Selengkapnya"
+            "SoftBank siapkan IPO Roze di AS",
+            "Spin-off robotika AI rekrut bankir top",
+            "Go public makin dekat"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaE1GbjNlbWZYaXllRDVuWENIRnI0aTBSZTNwUjdpVkpQb05TSlVERTRvOVBuSXdxYnR0N3N6Ul9tOWdaY2ViUjlPTVJ3bnFmbWFubFhBSUJ6ZjFVSFRSTmY0Y05RU042RzRmZ2VjZEt6R3l2RENiUzVwaWNzSjBNVlRGUWtCLTc3eFRIYllRcXo": {
           "file": "2026-05-30/17.00-03.md",
@@ -1326,9 +1326,9 @@
           "source": "Google News",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Perang Musik AI Makin Panas",
-            "ElevenLabs dan Stability AI Rilis Model Baru Generasi Musik",
-            "Baca Selengkapnya"
+            "Perang musik AI semakin memanas",
+            "ElevenLabs dan Stability rilis model baru",
+            "Generasi musik AI terus berkembang"
           ],
           "thumb_image": "",
           "thumb_generated": false,
@@ -1339,13 +1339,13 @@
           "source": "www.nytimes.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Perang Super PAC AI di Pemilu Paruh Waktu",
-            "Miliarder Pro dan Kontra AI Saling Gebuk",
-            "Baca Selengkapnya"
+            "Miliarder AI bertarung di pemilu",
+            "Super PAC pro dan kontra saling gebuk",
+            "Pemilu paruh waktu AS memanas"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.wsj.com/articles/corporate-america-is-starting-to-ration-ai-as-cost-skyrockets": {
           "file": "2026-05-30/18.00-02.md",
@@ -1365,9 +1365,9 @@
           "source": "www.bloomberg.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Startup AI China MiniMax Siap IPO",
-            "Siap-siap Perang Model dengan DeepSeek",
-            "Baca Selengkapnya"
+            "MiniMax siap IPO di China",
+            "Siap perang model dengan DeepSeek",
+            "Kompetisi AI China makin sengit"
           ],
           "thumb_image": "",
           "thumb_generated": false,
@@ -1391,9 +1391,9 @@
           "source": "www.cnbc.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Satelit Kini Makin Pintar Berkat AI",
-            "Bisa Proses Data di Orbit Tanpa Kirim ke Bumi",
-            "Baca Selengkapnya"
+            "Satelit AI makin pintar di orbit",
+            "Proses data langsung tanpa kirim ke Bumi",
+            "Revolusi pemrosesan data antariksa"
           ],
           "thumb_image": "",
           "thumb_generated": false,
@@ -1404,26 +1404,26 @@
           "source": "www.kxan.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Anggota Kongres AS Usul Pajak AI",
-            "Hasilnya Buat Training Ulang Pekerja",
-            "Baca Selengkapnya"
+            "Anggota Kongres AS usul pajak AI",
+            "Hasilnya untuk training ulang pekerja",
+            "Regulasi AI semakin mendekati kenyataan"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.indiewire.com/news/breaking-news/jorge-gutierrez-cancels-ai-punky-duck-amazon-mgm-123456789/": {
           "file": "2026-05-30/18.00-07.md",
           "source": "www.indiewire.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Sutradara Terkenal Urungkan Acara AI Amazon MGM gara",
-            "gara Hujatan Kreator",
-            "Baca Selengkapnya"
+            "Sutradara urungkan proyek AI Amazon",
+            "Gara-gara hujatan dari para kreator",
+            "Kontroversi AI di Hollywood makin panas"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.nist.gov/news-events/news/2026/05/nist-expands-ai-consortiums-scope-calls-new-members": {
           "file": "2026-05-30/19.00-01.md",
@@ -1456,22 +1456,22 @@
           "source": "arstechnica.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Apple Diam",
-            "Diam Ngeborong Model AI Terbesar Google buat Dijadiin Otak Baru Siri — iPhonemu Bakal Sepinter Apa?",
-            "Baca Selengkapnya"
+            "Apple ambil model AI terbesar Google",
+            "Mau jadiin otak baru Siri di iPhone",
+            "Siri bakal jauh lebih pintar"
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2024/04/apple-google-logo-1152x648.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://arstechnica.com/tech-policy/2026/05/nvidia-ceo-wants-taiwan-to-be-center-of-ai-revolution-not-us/": {
           "file": "2026-05-30/21.00-02.md",
           "source": "arstechnica.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Jensen Huang Pilih Taiwan Daripada Amerika",
-            "$150 Miliar buat Pusat Revolusi AI — Kebijakan Trump Justru Bikin NVIDIA Makin Jauh",
-            "Baca Selengkapnya"
+            "Jensen Huang pilih Taiwan bukan AS",
+            "$150 miliar untuk pusat revolusi AI",
+            "Kebijakan Trump bikin NVIDIA menjauh"
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/GettyImages-2212801534-2-1024x648.jpg",
           "thumb_generated": true,
@@ -1482,25 +1482,25 @@
           "source": "arstechnica.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Kebencian ke AI Makin Parah",
-            "FBI dan DHS Keluarkan Peringatan Resmi soal 'Ekstremisme Anti-Teknologi' yang Bisa Berujung Kekerasan",
-            "Baca Selengkapnya"
+            "FBI peringatkan ekstremisme anti-AI",
+            "Kebencian ke AI berujung kekerasan",
+            "Peringatan resmi dari DHS dan FBI"
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/GettyImages-2263649204-1152x648.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://arstechnica.com/information-technology/2026/05/millions-of-ai-agents-imperiled-by-critical-vulnerability-in-open-source-package/": {
           "file": "2026-05-30/21.00-04.md",
           "source": "arstechnica.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Kerentanan Kritis Ditemukan di Package Open Source yang Dipake Jutaan AI Agent",
-            "Bisa Kendalikan Robot dari Jarak Jauh!",
-            "Baca Selengkapnya"
+            "Kerentanan kritis di package open source",
+            "Jutaan AI agent terancam bahaya",
+            "Bisa kendalikan robot dari jarak jauh"
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/gatekeeping-ai-agents-1152x648.jpg",
-          "thumb_generated": false,
+          "thumb_generated": true,
           "thumb_highlight": 1
         },
         "https://arstechnica.com/google/2026/05/youtube-to-begin-automatically-labeling-ai-videos/": {
@@ -1508,13 +1508,13 @@
           "source": "arstechnica.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "YouTube Keluarkan Aturan Baru",
-            "Semua Video yang Dibikin AI Bakal Di-tag Otomatis Pake Sistem Deteksi Internal — Kreator Gak Bisa Manipulasi",
-            "Baca Selengkapnya"
+            "YouTube tag otomatis video bikinan AI",
+            "Kreator tak bisa manipulasi sistem",
+            "Sistem deteksi internal langsung bekerja"
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2021/10/youtube-logo-1024x648.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.theverge.com/ai-artificial-intelligence/938095/robinhood-ai-agent-stock-trading": {
           "file": "2026-05-30/22.00-02.md",
@@ -1534,9 +1534,9 @@
           "source": "www.cnbc.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Startup Pro",
-            "Trump Mau Kirim Robot Humanoid ke Medan Perang — Target 12-18 Bulan Lagi",
-            "Baca Selengkapnya"
+            "Startup Pro-Trump kirim robot humanoid",
+            "Target 12-18 bulan ke medan perang",
+            "Robot humanoid masuk industri perang"
           ],
           "thumb_image": "",
           "thumb_generated": false,
@@ -1547,9 +1547,9 @@
           "source": "www.cnbc.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "EU Desak AS untuk Segera Bahas Regulasi Model AI Canggih",
-            "Ancaman Mythos Bikin Khawatir",
-            "Baca Selengkapnya"
+            "EU desak AS bahas regulasi AI",
+            "Ancaman Mythos bikin semua khawatir",
+            "Model AI canggih perlu segera diatur"
           ],
           "thumb_image": "",
           "thumb_generated": false,
@@ -1573,13 +1573,13 @@
           "source": "venturebeat.com",
           "first_seen": "2026-05-30",
           "thumb_lines": [
-            "Pinterest Cuma Butuh 10% Biaya AI Awal",
-            "Caranya? Bikin Model \"Buta\" Tapi Tetep Pintar",
-            "Baca Selengkapnya"
+            "Pinterest hemat 90% biaya AI",
+            "Bikin model buta tapi tetap pintar",
+            "Cuma butuh 10% dari biaya awal"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 2
         },
         "https://venturebeat.com/orchestration/memo-memory-model-teams-upgrade-llm-without-retraining": {
           "file": "2026-05-30/23.00-05.md",
@@ -1612,22 +1612,22 @@
           "source": "www.engadget.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Bukan $65 Miliar Lagi",
-            "Anthropic Siap Bayar $200 M ke Google Demi Compute Power",
-            "Baca Selengkapnya"
+            "Anthropic bayar $200 miliar ke Google",
+            "Demi compute power yang masif",
+            "Melonjak dari $65 miliar sebelumnya"
           ],
           "thumb_image": "https://www.engadget.com/img/gallery/anthropic-reportedly-agrees-to-pay-google-200-billion-for-chips-and-cloud-access/l-intro-1778017205.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.wired.com/story/huawei-chip-queen-moores-law-tau/": {
           "file": "2026-05-31/00.00-03.md",
           "source": "www.wired.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Wanita di Balik Chip Huawei Tantang Dunia",
-            "AI Bukan Soal Transistor Lagi",
-            "Baca Selengkapnya"
+            "Ilmuwan Huawei tantang paradigma AI",
+            "AI bukan cuma soal transistor lagi",
+            "Wanita di balik chip Huawei bersuara"
           ],
           "thumb_image": "https://media.wired.com/photos/6a1615f55f7c39896f97f413/191:100/w_1280,c_limit/AI-Lab-Huawei-Chip-Queen-Says-No-More-Moores-Law-Business.jpg",
           "thumb_generated": true,
@@ -1651,26 +1651,26 @@
           "source": "venturebeat.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Saat Claude Code Berbayar $200/Bulan, NousCoder",
-            "14B Dateng Gratis — dan Hasilnya Ngeri",
-            "Baca Selengkapnya"
+            "NousCoder-14B gratis hasilnya ngeri",
+            "Saingan Claude Code $200 per bulan",
+            "Open source coding model fenomenal"
           ],
           "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/66Tw6dMGGoSZZOK6XB6gm6/0fafc7520898e26c88edf1de9e74e863/nuneybits_Vector_art_of_radiant_skull_emitting_code_beams_deep__17d19acc-0af7-41ad-ac28-16f09ef5234b.webp?w=300&q=30",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/": {
           "file": "2026-05-31/01.00-01.md",
           "source": "techcrunch.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "\"What a joke\"",
-            "Sistem Billing Token GitHub Copilot Bikin Developer Naik Darah",
-            "Baca Selengkapnya"
+            "Sistem billing token Copilot dikritik",
+            "Developer naik darah karena biaya baru",
+            "Protes what a joke menggema"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2023/11/github-copilot-chat-2.webp?w=1200",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/30/the-groupthink-boom-what-three-top-vcs-really-think-about-the-ai-frenzy/": {
           "file": "2026-05-31/01.00-02.md",
@@ -1690,13 +1690,13 @@
           "source": "www.scientificamerican.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Prediksi protein 1 miliar",
-            "AI bikin lompatan besar dalam biologi molekuler",
-            "Baca Selengkapnya"
+            "AI prediksi 1 miliar struktur protein",
+            "Lompatan besar dalam biologi molekuler",
+            "Melampaui pencapaian AlphaFold"
           ],
           "thumb_image": "https://static.scientificamerican.com/dam/asset/88adfe47-2cf5-480e-9a5a-f7db1c5fcd73/JMXCY8.jpg?m=1779903185.238&w=1200",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.ft.com/content/1022f9bd-5b6d-44a5-9303-c8b05b8c6463": {
           "file": "2026-05-31/02.00-01.md",
@@ -1729,26 +1729,26 @@
           "source": "fortune.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Taylor Swift just exposed a blind spot in AI law",
-            "and it's bigger than copyright",
-            "Baca Selengkapnya"
+            "Taylor Swift ungkap celah hukum AI",
+            "Lebih besar dari masalah copyright",
+            "Blind spot dalam regulasi AI terbongkar"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://fortune.com/2026/05/30/ai-chip-token-bubble-economy-nvidia-microsoft-hyperscalers-2/": {
           "file": "2026-05-31/02.00-04.md",
           "source": "fortune.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "The AI economy could crash on mounting chip costs",
-            "and those token costs won't help",
-            "Baca Selengkapnya"
+            "Ekonomi AI terancam biaya chip melonjak",
+            "Biaya token makin memperparah krisis",
+            "Ekonomi AI bisa crash kapan saja"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://variety.com/2026/film/news/emily-blunt-ai-disclosure-day-terrified-1236763043/": {
           "file": "2026-05-31/02.00-05.md",
@@ -1781,13 +1781,13 @@
           "source": "www.rollingstone.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Is Luke Bryan's New Song AI? We Ask the Songwriters",
-            "dan Jawabannya Bikin Ngakak",
-            "Baca Selengkapnya"
+            "Lagu Luke Bryan dituduh bikinan AI",
+            "Jawaban songwriters bikin ngakak",
+            "Kontroversi AI di industri musik"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://apnews.com/article/artificial-intelligence-data-centers-taxes-tech-ohio-4d56561a14f9b0d00553001e8c2757a3": {
           "file": "2026-05-31/03.00-03.md",
@@ -1846,9 +1846,9 @@
           "source": "www.engadget.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Apple will pay $250 million for failing to deliver its AI",
-            "powered Siri on time",
-            "Baca Selengkapnya"
+            "Apple bayar $250 juta denda Siri",
+            "Gagal deliver AI-powered Siri tepat waktu",
+            "Denda besar karena keterlambatan"
           ],
           "thumb_image": "https://www.engadget.com/img/gallery/apple-will-pay-250-million-for-failing-to-deliver-its-ai-powered-siri-on-time/l-intro-1778017785.jpg",
           "thumb_generated": true,
@@ -1898,39 +1898,39 @@
           "source": "www.tomshardware.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Tokenmaxxing Berakhir",
-            "Corporate AS Mulai Ngerem AI Spending karena Biaya di Luar Kendali",
-            "Baca Selengkapnya"
+            "Tokenmaxxing berakhir di Amerika",
+            "Corporate ngerem AI spending besar-besaran",
+            "Biaya AI di luar kendali perusahaan"
           ],
           "thumb_image": "https://cdn.mos.cms.futurecdn.net/hBXjYPMV93iZ5WJrEfkuWM-2000-80.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPLUJuaTNNUnBTbDRHdzlHeUlxbXVfcE92M1NxOXVXaUQzMTZHcFhxNjhyVWNrTzZvb3JPRXZRLUU4bXhMZU9TbzZGbzRMTzdCcXg0Rk1jNmszZUZ1MWVkcGFPWVVPMnNSbHF1anJ3MnZaVU1BVHM5bFNhS0NIMFFiUmhZWHdWYUxyenhIRndLdkRZajJ3M1dXdTdIX0tGR3ZJT3JTbi1BY29HSXdhV1NfN3M5N0JIY256Y0R5QzhVVElPMXNBNTcxVFVJV0pMVEFGTmJHVmU0VzB1T3hoaHBR?oc=5": {
           "file": "2026-05-31/06.00-02.md",
           "source": "Google News",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Microsoft Siap Rilis Model Coding Anyar Pekan Depan",
-            "Comeback Lawan OpenAI dan Anthropic",
-            "Baca Selengkapnya"
+            "Microsoft rilis model coding baru",
+            "Comeback lawan OpenAI dan Anthropic",
+            "Rilis pekan depan siap bersaing"
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2025/07/GettyImages-2223415789-1152x648.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://news.google.com/rss/articles/CBMidEFVX3lxTFBHel9Mb3NqNDNwREprSmNXeFYzUHdrVkkzRURsUUt5UHBnQWlRTlZ0TElGdi14UVNqQ3g4eFZDVU9aRmpabmNDM2tQdzRjODYwSUF6Sm04UlhMOG1lTy1qUW0wV2FQc1VROUtmVTB6SXJDN25k?oc=5": {
           "file": "2026-05-31/06.00-03.md",
           "source": "Google News",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "\"Pitchforks Are Here\"",
-            "Miliarder AI Berjibaku Bendung Gelombang Pemberontakan Populis",
-            "Baca Selengkapnya"
+            "Miliarder AI hadapi pemberontakan populis",
+            "Gelombang protes terhadap industri AI",
+            "Pitchforks are here kata mereka"
           ],
           "thumb_image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.theverge.com/ai-artificial-intelligence/897778/openai-chatgpt-codex-atlas-browser-superapp": {
           "file": "2026-05-31/07.00-01.md",
@@ -1950,9 +1950,9 @@
           "source": "www.theverge.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Did the Pope use AI to write about the dangers of AI?",
-            "Encyclical terbaru Paus Leo XIV bikin heboh",
-            "Baca Selengkapnya"
+            "Paus Leo XIV dituduh pakai AI",
+            "Nulis ensiklik soal bahaya AI sendiri",
+            "Kontroversi mengguncang Vatikan"
           ],
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/gettyimages-2278118480.jpg?quality=90&strip=all&crop=0%2C10.752607989199%2C100%2C78.494784021602&w=1200",
           "thumb_generated": true,
@@ -1963,52 +1963,52 @@
           "source": "www.cnbc.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Samsung ships next",
-            "generation AI memory chip samples as HBM competition with SK Hynix heats up",
-            "Baca Selengkapnya"
+            "Samsung kirim sampel chip HBM generasi baru",
+            "Kompetisi dengan SK Hynix memanas",
+            "Revolusi memory chip AI berlanjut"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.cnbc.com/2026/05/30/meta-struggled-selling-anything-other-than-ads-will-ai-be-different.html": {
           "file": "2026-05-31/07.00-04.md",
           "source": "www.cnbc.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Meta has struggled at selling anything other than ads",
-            "and now it's betting everything on AI to change that",
-            "Baca Selengkapnya"
+            "Meta bertaruh segalanya pada AI",
+            "Gagal jual produk selain iklan selama ini",
+            "AI jadi harapan terakhir Meta"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://venturebeat.com/orchestration/ai-agents-are-entering-their-rebuild-era-as-enterprises-confront-the-reliability-problem": {
           "file": "2026-05-31/07.00-05.md",
           "source": "venturebeat.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "AI agents are entering their rebuild era as enterprises confront the reliability problem",
-            "versi 2.0 lagi digarap",
-            "Baca Selengkapnya"
+            "AI agent masuk era rebuild total",
+            "Enterprise hadapi masalah reliability",
+            "Versi 2.0 sedang digarap besar-besaran"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.theverge.com/ai-artificial-intelligence/937689/new-york-times-tech-guild-ai-monitoring-performance-union-contract": {
           "file": "2026-05-31/08.00-01.md",
           "source": "www.theverge.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "\"The AI fight brewing inside The New York Times\"",
-            "NYT Tech Guild protes keras soal AI performance tracking yang dipasang manajemen",
-            "Baca Selengkapnya"
+            "Pertempuran AI di internal NYT",
+            "Tech Guild protes performance tracking",
+            "Manajemen vs karyawan soal AI"
           ],
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/gettyimages-1171305932.jpg?quality=90&strip=all&crop=0%2C15.095986038394%2C100%2C69.808027923211&w=1200",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://fortune.com/2026/05/28/ai-model-simulation-claude-chatgpt-grok-gemini/": {
           "file": "2026-05-31/10.00-01.md",
@@ -2028,9 +2028,9 @@
           "source": "interestingengineering.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "China Maju Terus",
-            "Robot Humanoid Sekarang Bisa Sortir Paket Dengan Kecepatan Gila-Gilaan",
-            "Baca Selengkapnya"
+            "Robot humanoid China sortir paket",
+            "Kecepatan gila-gilaan di pos hub",
+            "China makin maju dalam robotika"
           ],
           "thumb_image": "https://cms.interestingengineering.com/wp-content/uploads/2026/05/Robot-1.jpg",
           "thumb_generated": true,
@@ -2054,35 +2054,35 @@
           "source": "www.cbsnews.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Perang Udah Gak Seperti Dulu",
-            "Tentara AS Sekarang Latihan Pake Drone dan Robot AI di Medan Perang Beneran",
-            "Baca Selengkapnya"
+            "Tentara AS latihan perang pakai AI",
+            "Drone dan robot di medan beneran",
+            "Perang modern berubah total"
           ],
           "thumb_image": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/05/29/16f53ebd-27b5-46fd-8c4b-fd49162413bf/thumbnail/1200x630g8/87766c4b5c3cbd54b02ca4e853a6cc30/ai-warfare-robot-overland.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://blogs.nvidia.com/blog/icra-research-robotics-simulation-to-real-world/": {
           "file": "2026-05-31/10.00-05.md",
           "source": "blogs.nvidia.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "NVIDIA Pamer 8 Paper Riset Robotics di ICRA 2026",
-            "Robot Yang Latihan di Game Kini Bisa Jalan di Dunia Nyata",
-            "Baca Selengkapnya"
+            "NVIDIA pamer riset robotika di ICRA",
+            "Robot dari game ke dunia nyata",
+            "8 paper penelitian dipamerkan"
           ],
           "thumb_image": "https://blogs.nvidia.com/wp-content/uploads/2026/05/ICRA2026Blog-scaled.jpg",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/": {
           "file": "2026-05-31/11.00-01.md",
           "source": "techcrunch.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "SoftBank Bikin Gebrakan",
-            "€75 Miliar Demi Pusat Data AI Terbesar di Eropa",
-            "Baca Selengkapnya"
+            "SoftBank investasi 75 miliar euro",
+            "Pusat data AI terbesar di Eropa",
+            "Gebrakan investasi AI raksasa"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2025/07/GettyImages-2224533087.jpg?w=1024",
           "thumb_generated": true,
@@ -2093,22 +2093,22 @@
           "source": "www.theverge.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "YouTube Gak Mau Ketinggalan",
-            "Konten AI Wajib Dikasih Label Biar Penonton Gak Terkecoh",
-            "Baca Selengkapnya"
+            "YouTube wajibkan label konten AI",
+            "Biar penonton tidak terkecoh",
+            "Aturan label AI makin ketat"
           ],
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/YouTube-updated-AI-labels.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.theverge.com/ai-artificial-intelligence/938844/ai-tiktok-shop-blackface-shein-dropshipping": {
           "file": "2026-05-31/11.00-03.md",
           "source": "www.theverge.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Mengerikan",
-            "AI Dipake Bikin Digital Blackface Demi Jual Belt Buckle di TikTok Shop",
-            "Baca Selengkapnya"
+            "AI dipakai bikin digital blackface",
+            "Demi jual belt buckle di TikTok Shop",
+            "Praktik mengerikan di e-commerce"
           ],
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/268550_Crying_AI_avatars_AParkin_2.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
           "thumb_generated": true,
@@ -2119,78 +2119,78 @@
           "source": "www.forbes.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Elon Musk janji mau bikin konstelasi 1 juta satelit AI buat data center di orbit",
-            "tapi Forbes bilang ini bisa bikin SpaceX jatuh bebas secara finansial.",
-            "Baca Selengkapnya"
+            "1 juta satelit AI di orbit Bumi",
+            "Data center super canggih di luar angkasa",
+            "Forbes peringatkan risiko kebangkrutan SpaceX"
           ],
           "thumb_image": "https://imageio.forbes.com/specials-images/imageserve/6a1ba365dc58bd98aed2cd6a/0x0.jpg?format=jpg&amp;height=900&amp;width=1600&amp;fit=bounds",
           "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.koreaherald.com/article/10760189": {
           "file": "2026-05-31/12.00-02.md",
           "source": "www.koreaherald.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "NC AI (anak perusahaan NCsoft) dan POSCO DX resmi teken kerjasama strategis buat kembangkan robot foundation model",
-            "ini langkah berani Korea di dunia robotika.",
-            "Baca Selengkapnya"
+            "NC AI dan POSCO gandeng bikin robot",
+            "Kembangkan foundation model untuk robotika",
+            "Langkah berani Korea di industri robot global"
           ],
           "thumb_image": "https://wimg.heraldcorp.com/news/cms/2026/05/31/news-p.v1.20260531.2f3aa87d4d1344068c7931ba5b13d401_T1.jpg",
-          "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_generated": true,
+          "thumb_highlight": 0
         },
         "https://www.techtimes.com/articles/317425/20260530/galaxy-corporation-humanoid-robot-fashion-show-seoul-cowboy-hats-silks-bowie-era-trousers.htm": {
           "file": "2026-05-31/14.00-01.md",
           "source": "www.techtimes.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Robot Humanoid Catwalk Bareng Model Beneran di Seoul",
-            "Pake Cowboy Hats & Gaun Sutra",
-            "Baca Selengkapnya"
+            "Robot humanoid catwalk bareng model sungguhan",
+            "Tampil gaya cowboy hat dan gaun sutra",
+            "Seoul gelar fashion show robotik pertama"
           ],
           "thumb_image": "https://d.techtimes.com/en/full/465663/humanoid-robots-models-perform-they-present-creations.jpg",
-          "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_generated": false,
+          "thumb_highlight": 0
         },
         "https://www.techtimes.com/articles/317408/20260530/google-co-scientist-reaches-nature-hypothesis-agents-validated-lab-not-yet-clinic.htm": {
           "file": "2026-05-31/14.00-02.md",
           "source": "www.techtimes.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Google Co",
-            "Scientist Tembus Jurnal Nature — AI Multi-Agent Bikin Hipotesis Ilmiah yang Beneran Teruji di Lab",
-            "Baca Selengkapnya"
+            "Google Co-Scientist tembus jurnal Nature",
+            "AI multi-agent bikin hipotesis ilmiah sendiri",
+            "Teruji di laboratorium, belum ke klinik"
           ],
           "thumb_image": "https://d.techtimes.com/en/full/465646/google.jpg",
-          "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_generated": false,
+          "thumb_highlight": 0
         },
         "https://venturebeat.com/orchestration/researchers-automated-llm-reasoning-strategy-design-and-cut-token-usage-by-69-5": {
           "file": "2026-05-31/14.00-03.md",
           "source": "venturebeat.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Peneliti Meta",
-            "Google Ciptain AutoTTS: Biaya Token AI Langsung Pangkas 69,5% Tanpa Kurangi Akurasi",
-            "Baca Selengkapnya"
+            "AutoTTS pangkas biaya token hingga 69,5%",
+            "Kolaborasi Meta dan Google bikin terobosan",
+            "Akurasi tetap terjaga tanpa kompromi"
           ],
           "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/4uS7JdQ3Q7BzOfRUeZd7us/e702355f143d4ca73c7269c49c846025/test-time_scaling_strategy.jpg?w=800&q=75",
-          "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_generated": false,
+          "thumb_highlight": 0
         },
         "https://interestingengineering.com/ai-robotics/china-engineai-humanoid-robot-factory": {
           "file": "2026-05-31/15.00-01.md",
           "source": "interestingengineering.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Pabrik Humanoid ENGINEAI di Shenzhen",
-            "Satu Robot T800 Keluar Setiap 15 Menit!",
-            "Baca Selengkapnya"
+            "Satu robot T800 lahir setiap 15 menit",
+            "Pabrik humanoid ENGINEAI di Shenzhen melesat",
+            "China ukir rekor produksi robot massal"
           ],
           "thumb_image": "https://cms.interestingengineering.com/wp-content/uploads/2026/05/IE-Photo-58-1.jpg",
-          "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_generated": false,
+          "thumb_highlight": 0
         },
         "https://interestingengineering.com/ai-robotics/hyundai-atlas-humanoid-robot-football-skills": {
           "file": "2026-05-31/15.00-02.md",
@@ -2210,26 +2210,26 @@
           "source": "www.cnbc.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "OpenAI Resmi Luncurkan GPT",
-            "5.5 — Model AI Terbaru yang Siap Tempur Lawan Claude Opus 4.8",
-            "Baca Selengkapnya"
+            "OpenAI resmi luncurkan GPT-5.5",
+            "Model AI terbaru siap lawan Claude Opus",
+            "Persaingan AI makin memanas secara global"
           ],
           "thumb_image": "https://the-decoder.com/wp-content/uploads/2026/05/anthropic_opus48_benchmarks-scaled-1.webp",
-          "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_generated": false,
+          "thumb_highlight": 0
         },
         "https://www.nytimes.com/2026/05/31/technology/meta-ai-model-superintelligence-lab.html": {
           "file": "2026-05-31/17.00-02.md",
           "source": "www.nytimes.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Meta Akhirnya Pamer Model AI Superintelligence Pertama",
-            "'Muse Spark' Siap Bersaing dengan GPT-5.5 dan Gemini",
-            "Baca Selengkapnya"
+            "Meta pamer Muse Spark AI superintelligence",
+            "Siap bersaing dengan GPT-5.5 dan Gemini",
+            "Meta akhirnya masuk arena perang AI"
           ],
           "thumb_image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_SS.width-1300.jpg",
-          "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_generated": false,
+          "thumb_highlight": 0
         },
         "https://www.cnbc.com/2026/05/30/china-deepseek-v4-ai-model.html": {
           "file": "2026-05-31/17.00-03.md",
@@ -2262,26 +2262,26 @@
           "source": "blogs.nvidia.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "NVIDIA Bikin Gebrakan Baru",
-            "'Ising' Jadi Model AI Open Source Pertama di Dunia yang Dirancang Khusus untuk Akselerasi Komputer Kuantum",
-            "Baca Selengkapnya"
+            "NVIDIA rilis Ising, AI open source kuantum",
+            "Model pertama untuk akselerasi komputer kuantum",
+            "Terobosan di persimpangan AI dan kuantum"
           ],
           "thumb_image": "https://images.unsplash.com/photo-1677442136019-21780ecad995",
-          "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_generated": false,
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/30/i-put-googles-24-7-ai-assistant-gemini-spark-to-work-and-its-actually-pretty-useful/": {
           "file": "2026-05-31/18.00-01.md",
           "source": "techcrunch.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Google Rilis Gemini Spark",
-            "Asisten AI 24/7 yang Bisa Ngatur Hidup Lo",
-            "Baca Selengkapnya"
+            "Gemini Spark asisten AI 24/7 dari Google",
+            "Bisa ngatur jadwal dan hidup sehari-hari",
+            "TechCrunch uji coba dan bilang berguna banget"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/05/gemini-spark-GettyImages-2276583186-1.jpg?w=1024",
-          "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_generated": false,
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/29/kiwibits-ai-powered-bird-feeder-is-my-new-backyard-buddy/": {
           "file": "2026-05-31/18.00-02.md",
@@ -2301,13 +2301,13 @@
           "source": "techcrunch.com",
           "first_seen": "2026-05-31",
           "thumb_lines": [
-            "Gak Paham Istilah AI? TechCrunch Bikin Glosarium Biar Kamu Gak Pura",
-            "Pura Ngerti",
-            "Baca Selengkapnya"
+            "TechCrunch bikin glosarium istilah AI",
+            "Biar kamu paham tanpa pura-pura ngerti",
+            "Panduan lengkap istilah teknis AI kekinian"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-ai-generated-eb728837-4a65-4ce4-b814-abd0c140d20c.jpg?w=1024",
-          "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_generated": false,
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/podcast/does-your-ceo-have-ai-psychosis-aaron-levie-thinks-most-of-them-do": {
           "file": "2026-05-31/19.06-02.md",
@@ -2418,39 +2418,39 @@
           "source": "www.latimes.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Manusia di Balik Robot",
-            "Startup \"Boneka Tangan\" Silicon Valley yang Ngajarin Humanoid Bikin Kopi",
-            "Baca Selengkapnya"
+            "Manusia di balik robot humanoid bikin kopi",
+            "Startup Silicon Valley pake sistem teleoperasi",
+            "Robot belajar tugas sehari-hari dari jarak jauh"
           ],
           "thumb_image": "https://ca-times.brightspotcdn.com/dims4/default/9b15ce3/2147483647/strip/true/crop/4000x2100+0+284/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F5d%2F5f%2Fcfcd69cb45b2b73382f4d949322d%2F1555507-fi-why-california-building-humanoid-8913.jpg",
-          "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_generated": false,
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/31/this-is-fine-artist-kc-green-reaches-agreement-with-ai-startup-artisan/": {
           "file": "2026-06-01/03.00-01.md",
           "source": "techcrunch.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "\"This is Fine\" Creator Akhirnya Menang Lawan Startup AI",
-            "Artisan Setuju Cabut Iklan dan Bayar Kompensasi",
-            "Baca Selengkapnya"
+            "This is Fine creator menang lawan AI",
+            "Artisan setuju cabut iklan bayar ganti rugi",
+            "Kemenangan penting seniman melawan AI"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2025/01/GettyImages-2188469160.jpg?w=1024",
-          "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_generated": false,
+          "thumb_highlight": 0
         },
         "https://www.theregister.com/ai-ml/2026/05/31/netflix-wiz-creates-app-to-slash-ai-bills-then-open-sources-it/5248702": {
           "file": "2026-06-01/03.00-02.md",
           "source": "www.theregister.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Insinyur Netflix Bikin Tools Open Source Buat Pangkas Tagihan AI",
-            "Bisa Hemat Ratusan Juta",
-            "Baca Selengkapnya"
+            "Netflix buka tools hemat tagihan AI gratis",
+            "Insinyur Netflix bikin solusi open source",
+            "Bisa potong biaya hingga ratusan juta"
           ],
           "thumb_image": "https://image.theregister.com/5248730.jpg?imageId=5248730&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683",
-          "thumb_generated": true,
-          "thumb_highlight": 1
+          "thumb_generated": false,
+          "thumb_highlight": 0
         },
         "https://www.theverge.com/tech/940540/how-to-watch-nvidias-computex-keynote": {
           "file": "2026-06-01/04.00-01.md",
@@ -2475,7 +2475,7 @@
             "Peraturan Paling Strict Soal AI di Dunia Kerja"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2217198328.jpeg?resize=1200,800",
-          "thumb_generated": false,
+          "thumb_generated": true,
           "thumb_highlight": 1
         },
         "https://www.foxnews.com/tech/humanoid-robot-cleans-first-us-apartment": {
@@ -2488,7 +2488,7 @@
             "Nyapu, Beresin Meja Kayak Manusia"
           ],
           "thumb_image": "https://static.foxnews.com/foxnews.com/content/uploads/2026/05/apartment-cleaning-robot-1.jpeg",
-          "thumb_generated": false,
+          "thumb_generated": true,
           "thumb_highlight": 1
         },
         "https://mashable.com/tech/wix-cuts-1000-employees-in-latest-ai-fueled-layoff": {
@@ -2496,39 +2496,39 @@
           "source": "mashable.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Wix PHK Massal 1.000 Karyawan Gegara AI",
-            "Startup Lain Menyusul?",
-            "Baca Selengkapnya"
+            "Wix PHK 1.000 karyawan karena AI",
+            "Gelombang PHK akibat AI makin meluas",
+            "Startup lain diprediksi bakal menyusul"
           ],
           "thumb_image": "https://helios-i.mashable.com/imagery/articles/07HAnEKIEs2C0LAHq5K4d4C/hero-image.fill.size_1200x675.v1780240531.jpg",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.reuters.com/world/china/us-takes-step-halt-nvidia-ai-chip-shipments-chinese-firms-outside-china-2026-05-31/": {
           "file": "2026-06-01/05.00-02.md",
           "source": "www.reuters.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "AS Makin Ketat! Nvidia Kena Batasi Jual Chip AI ke Perusahaan China",
-            "Termasuk di Luar China",
-            "Baca Selengkapnya"
+            "AS makin ketat batasi Nvidia jual chip",
+            "Pelarangan berlaku bahkan di luar China",
+            "Eskalasi perang chip AI antara dua negara"
           ],
           "thumb_image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=675&fit=crop",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.wired.com/story/the-vaticans-man-inside-anthropic/": {
           "file": "2026-06-01/08.00-01.md",
           "source": "www.wired.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Vatikan Punya \"Orang Dalam\" di Anthropic",
-            "Paus Leo XIV Resepsi Ilmuwan AI di Vatikan",
-            "Baca Selengkapnya"
+            "Vatikan punya orang dalam di Anthropic",
+            "Paus Leo XIV resepsi ilmuwan AI Vatikan",
+            "Gereja mulai serius urusan kecerdasan buatan"
           ],
           "thumb_image": "https://media.wired.com/photos/6a1898e5148c56039b79abe1/191:100/w_1280,c_limit/Backchannel-Pope-Leo-AI-Business-2214167500.jpg",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://arstechnica.com/tech-policy/2026/05/trump-canceled-ai-safety-testing-eo-after-snub-from-tech-ceos/": {
           "file": "2026-06-01/08.00-02.md",
@@ -2540,7 +2540,7 @@
             "Order Safety Testing di Menit Terakhir"
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/GettyImages-2276026044-1152x648-1779465384.jpg",
-          "thumb_generated": false,
+          "thumb_generated": true,
           "thumb_highlight": 1
         },
         "https://arstechnica.com/ai/2026/05/ai-put-synthetic-quotes-in-his-book-but-this-author-wants-to-keep-using-it/": {
@@ -2548,39 +2548,39 @@
           "source": "arstechnica.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "AI \"Mencuri\" Kutipan Palsu ke Dalam Buku Penulis",
-            "Tapi Penulisnya Nggak Mau Berhenti Pake AI",
-            "Baca Selengkapnya"
+            "AI sisipkan kutipan palsu ke buku penulis",
+            "Penulis tetap pakai AI meski kena masalah",
+            "Hubungan rumit penulis dengan AI berlanjut"
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/ai-fabricated-quotes-Rosenbaum.jpg",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.tomshardware.com/tech-industry/mystery-company-accidentally-blew-500-million-claude-ai": {
           "file": "2026-06-01/09.00-01.md",
           "source": "www.tomshardware.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "$500 Juta Ludes Dalam Sebulan",
-            "Satu Perusahaan Lupa Pasang Batas Pemakaian Claude AI",
-            "Baca Selengkapnya"
+            "Satu perusahaan lupa pasang limit Claude AI",
+            "Tagihan membengkak 500 juta dolar sebulan",
+            "Kesalahan konfigurasi paling mahal dalam sejarah"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.theverge.com/ai-artificial-intelligence/2026/5/30/ai-generated-papers-peer-review-flood": {
           "file": "2026-06-01/09.00-02.md",
           "source": "www.theverge.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Banjir! AI Nulis 380 Makalah Akademik Palsu dalam 12 Jam",
-            "Sistem Peer Review Kolaps",
-            "Baca Selengkapnya"
+            "380 makalah AI palsu dalam 12 jam",
+            "Sistem peer review akademik kolaps karenanya",
+            "Dunia akademia darurat makalah palsu AI"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.pcgamer.com/ai-artificial-intelligence/jennifer-hale-ai-gaming-responsibility/": {
           "file": "2026-06-01/09.00-03.md",
@@ -2600,26 +2600,26 @@
           "source": "www.nbcnews.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Serikat Guru Terbesar AS Minta Sekolah Rem Radio",
-            "Stop Kasi AI Chatbots Ke Bocah SD",
-            "Baca Selengkapnya"
+            "Serikat guru AS minta stop AI chatbot",
+            "Bocah SD dilarang akses AI di sekolah",
+            "Kekhawatiran dampak AI pada anak-anak"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.cnbc.com/2026/05/30/trump-linked-startup-humanoid-robot-military.html": {
           "file": "2026-06-01/09.00-05.md",
           "source": "www.cnbc.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Startup Koneksi Trump Kirim Robot Humanoid ke Medan Perang Ukraina",
-            "Kontroversi Meledak",
-            "Baca Selengkapnya"
+            "Robot humanoid dikirim ke medan perang Ukraina",
+            "Startup koneksi Trump picu kontroversi global",
+            "Robot tempur humanoid mulai diuji nyata"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory": {
           "file": "2026-06-01/11.08-01.md",
@@ -2631,7 +2631,7 @@
             "Siap Bangun Pabrik AI Jutaan GPU"
           ],
           "thumb_image": "https://iprsoftwaremedia.com/219/files/202605/5997ef43d2b38e2687c10b6f62ed633a/6a1c7fc23d6332ecbb1d64a7_nvidia-vera-rubin-platform/nvidia-vera-rubin-platform_72a0541c-6fc0-4962-8b28-d72709e8c4cb-prv.jpg",
-          "thumb_generated": false,
+          "thumb_generated": true,
           "thumb_highlight": 1
         },
         "https://nvidianews.nvidia.com/news/nvidia-unveils-vera-the-cpu-for-agents": {
@@ -2639,39 +2639,39 @@
           "source": "nvidianews.nvidia.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Bukan Cuma GPU, NVIDIA Kini Punya CPU Andalan Buat AI Agent",
-            "Vera 88 Core",
-            "Baca Selengkapnya"
+            "NVIDIA rilis Vera, CPU 88 core AI",
+            "Bukan cuma GPU, NVIDIA kini punya CPU",
+            "Chip khusus untuk agen AI masa depan"
           ],
           "thumb_image": "https://iprsoftwaremedia.com/219/files/202605/a001b33d69781fbd94187c7e3737b8e1/6a1c7fc93d6332ecbb1d64ae_nvidia-vera-cpu-rack/nvidia-vera-cpu-rack_a7b5dbb6-2387-48c6-8516-abc720f4e5b2-prv.jpg",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://nvidianews.nvidia.com/news/nvidia-open-humanoid-robot-reference-design": {
           "file": "2026-06-01/12.00-01.md",
           "source": "nvidianews.nvidia.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "NVIDIA Mau Bikin Robot Humanoid Semurah dan Seabrek Mungkin",
-            "Rilis Referensi Desain Open Source",
-            "Baca Selengkapnya"
+            "NVIDIA rilis desain robot humanoid open source",
+            "Target bikin robot semurah dan sebanyak mungkin",
+            "Revolusi harga robot humanoid dimulai"
           ],
           "thumb_image": "https://iprsoftwaremedia.com/219/files/202605/dd0fcde2db49f29fc1596865178c673a/6a1c7fce3d6332ecba1d64a8_nvidia-and-unitree/nvidia-and-unitree_83d7a169-ce01-483a-b313-b01fd213063c-prv.jpg",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://nvidianews.nvidia.com/news/nvidia-releases-major-collection-of-open-source-agent-tools-and-skills-for-physical-ai": {
           "file": "2026-06-01/12.00-02.md",
           "source": "nvidianews.nvidia.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Agent AI Kini Bisa Ngatur Robot, Mobil Otonom, dan Pabrik",
-            "NVIDIA Rilis Puluhan Tools & Skills Open Source",
-            "Baca Selengkapnya"
+            "Agent AI kini atur robot dan pabrik",
+            "NVIDIA rilis tools open source physical AI",
+            "Puluhan skill baru untuk robot dan mobil"
           ],
           "thumb_image": "https://iprsoftwaremedia.com/219/files/202605/789e0cba6333f0532e3d39722e07bc02/6a1a7c0f3d633205461d64a6_nvidia-agent-tools-skills-physical-ai/nvidia-agent-tools-skills-physical-ai_16f2b554-8819-469a-8e18-1d8371bd367a-prv.jpg",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://nvidianews.nvidia.com/news/nvidia-alpamayo-2-super-robotaxis": {
           "file": "2026-06-01/12.00-03.md",
@@ -2683,7 +2683,7 @@
             "Tapi Mikir Dulu Sebelum Ambil Tindakan"
           ],
           "thumb_image": "https://iprsoftwaremedia.com/219/files/202606/38cae1f00579dead56f8a468f44e2f98/6a1d0f0c3d6332b4b6a6bd27_a5817f75-25fd-4aca-aed3-bd4664db841/a5817f75-25fd-4aca-aed3-bd4664db841_e220583a-0192-437e-baf7-31577580976b-prv.jpg",
-          "thumb_generated": false,
+          "thumb_generated": true,
           "thumb_highlight": 1
         },
         "https://techcrunch.com/2026/05/31/erin-brockovich-takes-aim-at-data-center-secrecy/": {
@@ -2691,26 +2691,26 @@
           "source": "techcrunch.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Aktivis Legendaris Erin Brockovich Buka Perang Lawan Data Center AI yang Tertutup",
-            "4.000 Warga Lapor dalam Sebulan",
-            "Baca Selengkapnya"
+            "Erin Brockovich lawan data center AI",
+            "4.000 warga lapor dalam sebulan terakhir",
+            "Data center tertutup jadi sasaran utama"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.theverge.com/ai-artificial-intelligence/937901/people-sure-do-hate-googles-ai-search-updates": {
           "file": "2026-06-01/13.00-02.md",
           "source": "www.theverge.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Pengguna Benci AI Search Baru Google",
-            "DuckDuckGo dan \"No AI\" Search Jadi Pelarian",
-            "Baca Selengkapnya"
+            "Pengguna benci AI search baru Google",
+            "DuckDuckGo dan search non-AI jadi pelarian",
+            "Gelombang migrasi dari Google Search dimulai"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.theverge.com/ai-artificial-intelligence/937933/pope-ai-encyclical-tech-industry-reactions": {
           "file": "2026-06-01/13.00-03.md",
@@ -2735,7 +2735,7 @@
             "Dell, dan HP"
           ],
           "thumb_image": "https://iprsoftwaremedia.com/219/files/202605/789e0cba6333f0532e3d39722e07bc02/6a1a7c0f3d633205461d64a6_nvidia-agent-tools-skills-physical-ai/nvidia-agent-tools-skills-physical-ai_mid.jpg",
-          "thumb_generated": false,
+          "thumb_generated": true,
           "thumb_highlight": 1
         },
         "https://www.cnbc.com/2026/05/31/nvidia-unitree-humanoid-robot-platform.html": {
@@ -2743,13 +2743,13 @@
           "source": "www.cnbc.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Jensen Huang Resmi Menggandeng Unitree",
-            "Robot Humanoid China Ini Bakal Makin Canggih Berkat Isaac GR00T dan Cosmos 3",
-            "Baca Selengkapnya"
+            "Jensen Huang gandeng Unitree robot humanoid",
+            "Robot China makin canggih berkat platform NVIDIA",
+            "Kolaborasi raksasa chip dan robot China"
           ],
           "thumb_image": "https://iprsoftwaremedia.com/219/files/202605/dd0fcde2db49f29fc1596865178c673a/6a1c7fce3d6332ecba1d64a8_nvidia-and-unitree/nvidia-and-unitree_mid.jpg",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.bloomberg.com/news/articles/2026-06-01/gen-z-gamer-s-3d-model-startup-becomes-china-s-latest-ai-unicorn": {
           "file": "2026-06-01/14.00-03.md",
@@ -2761,7 +2761,7 @@
             "Startup AI 3D Model yang Didirikan Bocah 24 Tahun, Banjir Investasi"
           ],
           "thumb_image": "https://iprsoftwaremedia.com/219/files/202606/7907c7315b24f829edb76885ee032bc2/6a1d12933d6332c72cdf62de_robotics-factory-ai-computer-1280x680-5259650-842x450/robotics-factory-ai-computer-1280x680-5259650-842x450_mid.jpg",
-          "thumb_generated": false,
+          "thumb_generated": true,
           "thumb_highlight": 1
         },
         "https://www.engadget.com/2165451/apple-intelligence-will-reportedly-let-you-choose-third-party-ai-models-in-ios-27": {
@@ -2774,7 +2774,7 @@
             "Bukan Cuma Apple Punya"
           ],
           "thumb_image": "https://www.engadget.com/img/gallery/apple-intelligence-will-reportedly-let-you-choose-third-party-ai-models-in-ios-27/l-intro-1778009823.jpg",
-          "thumb_generated": false,
+          "thumb_generated": true,
           "thumb_highlight": 1
         },
         "https://www.theverge.com/tech/940572/apples-strategy-smart-glasses-smart-watches": {
@@ -2787,7 +2787,7 @@
             "Target Pasar Fashion Juga"
           ],
           "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK071_APPLE_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-          "thumb_generated": false,
+          "thumb_generated": true,
           "thumb_highlight": 1
         },
         "https://blogs.nvidia.com/blog/cosmos-3-physical-ai-open-world-foundation-model/": {
@@ -2800,7 +2800,7 @@
             "Dengar, dan Rencanakan Gerakan — Robot Bukan Cuma Gerak Otomatis Lagi"
           ],
           "thumb_image": "https://blogs.nvidia.com/wp-content/uploads/2026/05/Featured-image.png",
-          "thumb_generated": false,
+          "thumb_generated": true,
           "thumb_highlight": 1
         },
         "https://www.tomshardware.com/pc-components/gpus/intel-details-long-awaited-crescent-island-ai-gpu-at-computex-boasts-up-to-480-gb-of-lpddr5x-to-combat-memory-shortages-company-shares-more-details-of-its-xe3p-inference-accelerator-at-computex": {
@@ -2834,208 +2834,208 @@
           "source": "techcrunch.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "BREAKING",
-            "What happens when companies become too AI-pilled?",
-            "Baca Selengkapnya"
+            "Perusahaan yang terlalu kecanduan AI bahaya",
+            "Dampak buruk over-reliance pada teknologi AI",
+            "TechCrunch ulas fenomena over-reliance AI"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2025/10/2244026103.jpg?resize=1200,800",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/28/the-internet-is-being-rebuilt-for-machines/": {
           "file": "2026-06-01/18.00-03.md",
           "source": "techcrunch.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "BREAKING",
-            "The internet is being rebuilt for machines",
-            "Baca Selengkapnya"
+            "Internet dibangun ulang untuk mesin",
+            "Bukan untuk manusia, untuk AI dan bot",
+            "Transformasi besar infrastruktur digital global"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/05/ai-agents-GettyImages-2229880232.jpg?resize=1200,675",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/": {
           "file": "2026-06-01/18.00-04.md",
           "source": "techcrunch.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Bikin Melongo",
-            "Asana acquires no-code agent-builder StackAI",
-            "Baca Selengkapnya"
+            "Asana akuisisi platform agen AI tanpa kode",
+            "StackAI jadi senjata baru produktivitas",
+            "No-code AI agent makin dilirik korporasi"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/05/asana-illustration-getty.jpg?resize=1200,800",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.nytimes.com/2026/05/24/technology/ai-cybersecurity-jobs.html": {
           "file": "2026-06-01/18.00-07.md",
           "source": "www.nytimes.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Bikin Melongo",
-            "One Job That Is Growing in the A.I. Era? Cybersecurity Experts.",
-            "Baca Selengkapnya"
+            "Satu profesi tumbuh pesat di era AI",
+            "Ahli keamanan siber makin dibutuhkan",
+            "AI justru ciptakan lapangan kerja baru"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.wired.com/story/google-gemini-spark-ai-agent-hands-on/": {
           "file": "2026-06-01/18.00-08.md",
           "source": "www.wired.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "No Way! Hands",
-            "On With Gemini Spark: I Gave It Access to My Life and It Friend-Zoned My Boyfriend",
-            "Baca Selengkapnya"
+            "Gemini Spark friendzone pacar penggunanya",
+            "Asisten AI akses penuh kehidupan pribadi",
+            "Uji coba hands-on bikin heboh jagat maya"
           ],
           "thumb_image": "https://media.wired.com/photos/6a19d3576c603cc05220330d/191:100/w_1280,c_limit/Gear_HandsOnWithGeminiSparkGoogle%E2%80%99sAIAgentThatLivesinYourPhone_v1.jpg",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTVJsZUhreUlYcUFPZk9hSzRXR0ktN3U1cVlGTEE3N2lnbktNS09VMEZjRGlIRl9FOURrRTZKcU8xS1pZampDZXVNZVpoMDU5N0lZNXdleEtCTURuTmNJb1VxWDExOXZkZkFwZ1pWUVFnVnkxOHJiWEU2U2FkVXBiend6QjdaWDhrMVZwenVnYnlJNGhCWnNaTF9WNDM5ZHM5UHU0SXJWcWk3MUpJVTdzQndya3hFNnhhNzlfVHRPZUVPdkxpMmZjcnlsVG5fa3hsS0Z4cV90OA?oc=5": {
           "file": "2026-06-01/19.01-01.md",
           "source": "Google News",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "OpenAI Resmi Masuk ke Dunia Robot! Sam Altman Buka Lowongan Robotics Engineer",
-            "Siap Lawan Elon Musk?",
-            "Baca Selengkapnya"
+            "OpenAI resmi masuk ke dunia robotik",
+            "Sam Altman buka lowongan robotics engineer",
+            "Siap lawan Elon Musk di industri robot"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://news.google.com/rss/articles/CBMiswFBVV95cUxQeldXaFUwMEJqNmJYNEVmZkxTNUhrOVdQbFI1aTh5NDNWNzdNMXBhMlU3YU9iOG50Vng?oc=5": {
           "file": "2026-06-01/19.01-02.md",
           "source": "Google News",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "MiniMax, Startup AI China, Rilis Model Coding Terbaru",
-            "Siap Saingan Sama DeepSeek dan Qwen?",
-            "Baca Selengkapnya"
+            "MiniMax rilis model coding AI terbaru",
+            "Startup China siap saingan dengan DeepSeek",
+            "Persaingan AI coding China makin ketat"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://news.google.com/rss/articles/CBMioAFBVV95cUxPYUZUMnBoSUJvbTJGX3RYRndMT0wwc0x1Z01ldHl5V3FtTlJFcEtDU29iM05oVmMzbl9xaHpiNE45X2RzeHE0TUtDazlXR2V3cHVQUV9mdUZmRnVobjlEVTMtUU11aHFlRHhrWUJyZ3F0QkZ3QjdYZGhEM1M4NjA1YUlvQnU1NzVmTngweGpCcUFQajNkV1VBUXNOdjFoREd1?oc=5": {
           "file": "2026-06-01/19.01-03.md",
           "source": "Google News",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Gawat! Studi Terbaru Bilang Semua Model AI Besar Melanggar Regulasi Uni Eropa",
-            "Dari GPT Sampe Claude Kena Semua",
-            "Baca Selengkapnya"
+            "Model AI besar langgar aturan Uni Eropa",
+            "Studi ungkap GPT hingga Claude kena semua",
+            "Ancaman baru bagi industri AI global"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ2syWGhmZU10YXdaWk9vWlpoaWlsOXp3SGg3TXZFdEFyQm9waHZfOUFIOVAtenNFM1RJTk84cXFEOU1ZNzNMZ0VVNm5vX1pPSE0zMlU4bTZRcTNtNmNTZERHR1hCbVNFM2tFNC01Z2ZTeF9qVmppa2p0clNWRUV4b1ZWck9wMUE?oc=5": {
           "file": "2026-06-01/20.00-01.md",
           "source": "Google News",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Gila! Nvidia Resmi Luncurkan Chip AI untuk PC",
-            "Superkomputer Desktop Triliunan Parameter Sekarang Bisa Masuk Meja Kantor!",
-            "Baca Selengkapnya"
+            "Nvidia luncurkan chip AI untuk PC desktop",
+            "Superkomputer triliunan parameter di meja kantor",
+            "Revolusi komputasi AI personal dimulai"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://news.google.com/rss/articles/CBMirwFBVV95cUxOeUZlQXhzZ1BxZUpwQlY5LUhuOEw4ZGdycGpKWWdXZUh2VUlZb3pldEEwajFLVVZjZVczTEFVOGE4VmJlc0g2YjdoZjBBWGxIN192R2NJT05ETlBEUUtLT2w5SmhsRFdWMnlobVh2SG1ZWFJ1V0haV2tSSlZ5X1FaXy1BeWtXekt3UGlpZ1hkeGx0OUlTUlFkRHFpM2ZURkFOTFEyWk1PWVl1ZGoyTjVF?oc=5": {
           "file": "2026-06-01/20.00-02.md",
           "source": "Google News",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Nvidia Rilis Cosmos 3",
-            "Model Foundation Open Source Buat Robot Biar Bisa \"Berpikir\" Sebelum Bertindak!",
-            "Baca Selengkapnya"
+            "Nvidia rilis Cosmos 3, otak buat robot",
+            "Model open source biar robot bisa berpikir",
+            "Robot makin pintar sebelum bertindak"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNHRPc1hKaF9fbmY1Q2FQWlUxREExZHpCaUtjd2JHZ3RudGxkcDFZUTZ4RWJiYzFuelR3eTR1MnN6SlRjeUExMzczeXZJdmhpQkpzOHpybkxzeEJqNXFVbUtSNXRxcTNoV19HZjVzRmNCa0xWd2lGZUhaNE8tNDQ4c1UycWhyME52ejVibdIBkgFBVV95cUxNSFpZdDI3VV9qVzRjaTA2NC00SDRsTlc5OXBBWWZOalRjblJoTnFBNTk2cnNVVXAtSXhJazlaVWZ6ZnZtNjR6WHR4VGFxZzJ5Qjk5T1dlRjNhbmRsby1lZ3BRbXo1amYteGQzb0ZUMVN1WU5kM0ZnWUhsXzIxYVJ4Zk1KMXJrSmI5Z1l4TGlvVVd3dw?oc=5": {
           "file": "2026-06-01/20.00-03.md",
           "source": "Google News",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "SoftBank Bos Bilang Revolusi AI \"50x Lebih Besar\" Dari Dotcom Boom",
-            "Siap Investasi Ratusan Miliar Dolar!",
-            "Baca Selengkapnya"
+            "SoftBank: AI 50x lebih besar dari dotcom",
+            "Siap investasi ratusan miliar dolar",
+            "Revolusi AI disebut yang terbesar dalam sejarah"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://news.google.com/rss/articles/CBMinAFBVV95cUxQOVowMHRJQU8yTm1GWlBPYk5lcHB4YVZMTEZJWk5MYjNzNFZEeERFemVsOW9ndVRmT2ZCTzg1Z0hha0d6aDJwc1RtODhVNW83TmlBd3Fubk1DZlFEY2JTaUh2S3Y4RGE0VVNwTlhldG5TbllfN051OVRFYWdxRnZOOVhuTG9scUVzLXNNZHo2dExXRzdhMUNIRVRNbl8?oc=5": {
           "file": "2026-06-01/20.00-04.md",
           "source": "Google News",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Model Fashion Digugat Karena Pake AI Buat Hasilin Foto Palsu",
-            "Pertanda Era Baru Perlindungan Hak Cipta di Dunia AI?",
-            "Baca Selengkapnya"
+            "Model fashion gugat AI karena foto palsu",
+            "Pertanda era baru perlindungan hak cipta",
+            "Batas antara nyata dan palsu makin kabur"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://nvidianews.nvidia.com/news/nvidia-and-tsmc-bring-ai-into-fabs-to-advance-semiconductor-design-and-manufacturing": {
           "file": "2026-06-01/21.00-01.md",
           "source": "nvidianews.nvidia.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "NVIDIA & TSMC Resmi Deploy AI di Pabrik Chip",
-            "Revolusi Manufaktur Semikonduktor Dimulai",
-            "Baca Selengkapnya"
+            "NVIDIA dan TSMC deploy AI di pabrik",
+            "Revolusi manufaktur semikonduktor dimulai",
+            "AI kini bikin chip yang lebih canggih"
           ],
           "thumb_image": "https://iprsoftwaremedia.com/219/files/202605/a48203542ba5d5ac4f69b41259adace9/6a1b25733d63325c071d64a1_nvidia-tsmc/nvidia-tsmc_de1b3079-a7bb-477d-b5e3-0cc20a8ddded-prv.jpg",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://arstechnica.com/ai/2026/06/openais-math-breakthrough-played-to-ais-strengths/": {
           "file": "2026-06-01/21.00-02.md",
           "source": "arstechnica.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Bocoran Detail",
-            "Gimana Model Internal OpenAI Akhirnya Ngebuktiin Erdős Unit Distance Conjecture yang Bikin Matematician Tercengang",
-            "Baca Selengkapnya"
+            "OpenAI buktikan teorema matematika Erdős",
+            "Model internal OpenAI bikin matematikawan tercengang",
+            "Erdos Unit Distance Conjecture akhirnya terpecahkan"
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/getty-string-pins-1152x648.jpg",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/06/01/duckduckgo-makes-its-no-ai-search-engine-easier-to-access-as-its-traffic-booms/": {
           "file": "2026-06-01/22.00-01.md",
           "source": "techcrunch.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Mesin Pencari yang Anti",
-            "AI: Strategi Berani DuckDuckGo di Tengah Demam AI",
-            "Baca Selengkapnya"
+            "DuckDuckGo pilih jadi mesin pencari anti-AI",
+            "Strategi berani di tengah demam AI global",
+            "Traffic DuckDuckGo melonjak drastis"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/05/DuckDuckGo_NoAI.png?resize=1200,784",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.theverge.com/ai-artificial-intelligence/940978/florida-is-suing-openai-over-user-safety-concerns": {
           "file": "2026-06-01/23.00-01.md",
           "source": "www.theverge.com",
           "first_seen": "2026-06-01",
           "thumb_lines": [
-            "Florida Gugat OpenAI dan Sam Altman",
-            "ChatGPT Dituduh Bikin Kecanduan & Bahayakan Pengguna",
-            "Baca Selengkapnya"
+            "Florida gugat OpenAI dan Sam Altman",
+            "ChatGPT dituduh bikin kecanduan berbahaya",
+            "Gelombang hukum menerpa industri AI"
           ],
           "thumb_image": "",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://www.bbc.com/news/articles/cm2p3j6lvn7o": {
           "file": "2026-06-01/23.00-02.md",
@@ -3047,7 +3047,7 @@
             "OpenAI Langsung Turun Tangan Tawarin GPT-5.5 Cyber"
           ],
           "thumb_image": "https://ichef.bbci.co.uk/news/1024/branded_news/1da9/live/87ea54d0-5dae-11f1-8132-9508271dd882.jpg",
-          "thumb_generated": false,
+          "thumb_generated": true,
           "thumb_highlight": 1
         },
         "https://www.theverge.com/podcast/940831/ai-grammys-music-recording-harvey-mason": {
@@ -3068,26 +3068,26 @@
           "source": "techcrunch.com",
           "first_seen": "2026-06-02",
           "thumb_lines": [
-            "🚨 GILA! Anthropic, Startup AI Paling Berharga di Dunia, Resmi Ajukan IPO",
-            "Target Valuasi $1 Triliun?",
-            "Baca Selengkapnya"
+            "Anthropic resmi ajukan IPO ke publik",
+            "Target valuasi tembus satu triliun dolar",
+            "IPO startup AI paling dinanti sepanjang masa"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2261854833.jpg?resize=1200,800",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://techcrunch.com/2026/06/01/this-ai-weather-startup-is-out-forecasting-government-agencies/": {
           "file": "2026-06-02/00.06-02.md",
           "source": "techcrunch.com",
           "first_seen": "2026-06-02",
           "thumb_lines": [
-            "AI WeatherMesh 6 dari WindBorne Bisa Prediksi Cuaca Lebih Akurat dari Pemerintah Eropa",
-            "Gegara 400 Balon Udara",
-            "Baca Selengkapnya"
+            "WindBorne prediksi cuaca lebih akurat dari pemerintah",
+            "Pakai 400 balon udara untuk data real-time",
+            "AI WeatherMesh 6 kalahkan badan cuaca Eropa"
           ],
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/Pic-8.jpg?resize=1200,675",
           "thumb_generated": false,
-          "thumb_highlight": 1
+          "thumb_highlight": 0
         },
         "https://arstechnica.com/gadgets/2026/06/nvidia-gets-into-the-arm-pc-business-with-new-high-end-rtx-spark-processor/": {
           "file": "2026-06-02/01.03-01.md",
@@ -3099,7 +3099,7 @@
             "Siap Lawan Apple & Qualcomm"
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/nvidia-rtx-spark.jpeg",
-          "thumb_generated": false,
+          "thumb_generated": true,
           "thumb_highlight": 1
         },
         "https://arstechnica.com/ai/2026/06/intel-our-upcoming-ai-chip-will-be-cheaper-run-cooler-than-nvidia-amd-options/": {
@@ -3112,7 +3112,7 @@
             "Pake LPDDR5, Air-Cooled!"
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/intel-1152x648.jpg",
-          "thumb_generated": false,
+          "thumb_generated": true,
           "thumb_highlight": 1
         },
         "https://arstechnica.com/tech-policy/2026/06/florida-sues-openai-sam-altman-after-multiple-chatgpt-linked-murders/": {
@@ -3125,7 +3125,7 @@
             "Pertama Kali dalam Sejarah!"
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2265991640-640x427.jpg",
-          "thumb_generated": false,
+          "thumb_generated": true,
           "thumb_highlight": 1
         },
         "https://arstechnica.com/ai/2026/06/allegedly-trashing-airbnbs-to-test-robots-puts-startup-in-legal-trouble/": {
@@ -3138,7 +3138,7 @@
             "Rusak Rumah Harga 2 Ribu!"
           ],
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2248542588-640x448.jpg",
-          "thumb_generated": false,
+          "thumb_generated": true,
           "thumb_highlight": 1
         },
         "https://techcrunch.com/2026/06/01/water-access-is-now-a-risk-factor-in-spacexs-ipo/": {
@@ -3152,7 +3152,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2259661359.jpg?w=1024",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://arstechnica.com/ai/2026/06/meta-ai-support-chatbot-gave-hackers-access-to-notable-instagram-accounts/": {
           "file": "2026-06-02/05.03-02.md",
@@ -3165,7 +3165,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/Meta-AI-logo-1152x648.jpg",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://arstechnica.com/cars/2026/06/from-15-hours-to-one-minute-how-ai-ml-is-speeding-up-gms-development/": {
           "file": "2026-06-02/05.03-03.md",
@@ -3178,7 +3178,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/CoSim-SG1-1152x648.jpeg",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://techcrunch.com/2026/06/01/alphabet-plans-to-raise-80-billion-to-pay-for-ai-buildout/": {
           "file": "2026-06-02/06.07-1.md",
@@ -3191,7 +3191,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2173545265.jpg?resize=1200,800",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://www.meritalk.com/articles/sanders-to-introduce-bill-creating-ai-sovereign-wealth-fund/": {
           "file": "2026-06-02/06.07-2.md",
@@ -3204,7 +3204,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://www.meritalk.com/wp-content/uploads/2025/10/Adobe-Express-file-1.jpg",
-          "thumb_generated": false
+          "thumb_generated": true
         },
         "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/": {
           "file": "2026-06-02/06.07-3.md",
@@ -3244,7 +3244,7 @@
           ],
           "thumb_highlight": 0,
           "thumb_image": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-2205761886.jpg",
-          "thumb_generated": false
+          "thumb_generated": true
         }
       },
       "source_headlines": {

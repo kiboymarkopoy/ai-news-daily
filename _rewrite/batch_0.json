@@ -1,0 +1,508 @@
+[
+  {
+    "url": "https://www.anthropic.com/news/series-h",
+    "file": "2026-05-29/07.00-2.md",
+    "title": "Perusahaan AI Termahal di Dunia Baru Saja Lahir: $965 Miliar.",
+    "lines": [
+      ">> Anthropic jadi perusahaan AI termahal dunia",
+      "Kumpulkan dana segar $65 miliar",
+      "Valuasi tembus $965 miliar"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.bbc.com/news/articles/c3r2zjpryzro",
+    "file": "2026-05-29/07.00-3.md",
+    "title": "Ethical Hacker Juara Dunia: \"Ini Mungkin Lomba Terakhir Gue\"",
+    "lines": [
+      ">> Ethical hacker juara dunia buka suara",
+      "Ini mungkin lomba terakhir gue",
+      "Kompetisi hacking etis makin ketat"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/939094/anthropic-claude-4-8-opus-honesty-effort",
+    "file": "2026-05-29/08.00-01.md",
+    "title": "Claude Opus 4.8: Akhirnya Ada Model AI Yang Jujur Kalau Lagi Ngaco!",
+    "lines": [
+      ">> Claude Opus 4.8 hadir dengan kejujuran",
+      "Model AI kini berani akui kesalahan",
+      "Kejujuran AI jadi standar baru industri"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://deadline.com/2026/05/paul-schrader-ai-protagonists-box-office-draws-1236929344/",
+    "file": "2026-05-29/08.00-05.md",
+    "title": "Legenda Penulis Taxi Driver: \"Bikin Clint Eastwood Baru Cukup Pake Text Prompt\"",
+    "lines": [
+      ">> Penulis Taxi Driver bikin aktor AI baru",
+      "Cukup text prompt hasilnya gila",
+      "AI generatif ubah industri film selamanya"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.cnbc.com/2026/05/28/snowflake-snow-software-stock-rally.html",
+    "file": "2026-05-29/11.00-02.md",
+    "title": "SNOWFLAKE LONCOT 36% HARI TERBAIK SEPANJANG SEJARAH — Katanya \"SaaSpocalypse\" Cuma Hoax",
+    "lines": [
+      ">> Saham Snowflake melesat 36% dalam sehari",
+      "Rekor perdagangan terbaik sepanjang sejarah",
+      "Isu SaaSpocalypse terbukti hoax belaka"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://finance.yahoo.com/sectors/technology/articles/nvidia-ceo-jensen-huang-heading-183340226.html",
+    "file": "2026-05-29/11.00-04.md",
+    "title": "JENSEN HUANG GAS KE TAIWAN — NVIDIA MAU INVESTASI $150 MILIAR PER TAHUN DI SANA",
+    "lines": [
+      ">> Jensen Huang gas ke Taiwan bawa misi",
+      "NVIDIA investasi $150 miliar per tahun",
+      "Taiwan jadi pusat chip AI global"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/27/elevenlabss-new-music-generation-model-can-switch-genres-mid-track/",
+    "file": "2026-05-29/11.00-05.md",
+    "title": "ELEVENLABS RILIS MODEL MUSIK BARU — BISA GANTI GENRE DI TENGAH LAGU!",
+    "lines": [
+      ">> ElevenLabs rilis model musik revolusioner",
+      "Bisa ganti genre di tengah lagu",
+      "AI generasi musik makin fleksibel"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/28/waymos-newest-robotaxi-is-chinese-made-built-to-make-money-and-now-accepting-riders/",
+    "file": "2026-05-29/12.00-04.md",
+    "title": "Waymo Luncurkan Robotaxi \"Ojai\" — Minivan China yang Udah Bisa Dipesan Penumpang",
+    "lines": [
+      ">> Waymo luncurkan robotaxi Ojai buatan China",
+      "Minivan otonom siap angkut penumpang",
+      "Robotaxi China mulai beroperasi komersial"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/939216/anthropic-raised-a-funding-round-valuing-it-at-nearly-1-trillion",
+    "file": "2026-05-29/14.00-02.md",
+    "title": "Anthropic Dapat $65 Miliar, Valuasi Tembus $965 Miliar — Ngacir Lewati OpenAI!",
+    "lines": [
+      ">> Anthropic kumpulkan $65 miliar dana segar",
+      "Valuasi tembus $965 miliar lewati OpenAI",
+      "Startup AI termahal sepanjang sejarah"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.theverge.com/policy/939410/illinois-is-close-to-enacting-an-ai-safety-law-with-broader-mandates-than-other-states",
+    "file": "2026-05-29/14.00-03.md",
+    "title": "Illinois Mau Bikin Undang-Undang AI Paling Strict di AS — Wajib Audit Pihak Ketiga!",
+    "lines": [
+      ">> Illinois siapkan UU AI terketat di AS",
+      "Perusahaan AI wajib audit pihak ketiga",
+      "Regulasi AI makin diperketat di Amerika"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.theverge.com/entertainment/939067/ai-film-dreams-of-violets-tribeca",
+    "file": "2026-05-29/14.00-05.md",
+    "title": "Film Cuma $2.000 Dibikin Pakai AI Bakal Tayang di Tribeca — Biola Sampai Nangis?",
+    "lines": [
+      ">> Film AI budget $2.000 tayang di Tribeca",
+      "Hasilnya bikin bioskop sampai nangis",
+      "AI buktikan film murah tetap berkualitas"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.tomshardware.com/tech-industry/semiconductors/china-certifies-nine-domestic-ai-chips-for-government-procurement",
+    "file": "2026-05-29/15.00-04.md",
+    "title": "CHINA RESMI MASUKIN CHIP AI DALAM NEGERI KE DAFTAR BELANJA PEMERINTAH — BYE BYE NVIDIA?",
+    "lines": [
+      ">> China resmi pakai chip AI buatan sendiri",
+      "Sembilan chip lokal masuk daftar pemerintah",
+      "NVIDIA terancam kehilangan pasar China"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://ia.acs.org.au/article/2026/spotify-launches-ai-remix-era.html",
+    "file": "2026-05-29/15.00-05.md",
+    "title": "SPOTIFY RESMI MASUK ERA REMIX AI — KARYA FAN BISA JADI RESMI?",
+    "lines": [
+      ">> Spotify resmi buka era remix AI global",
+      "Karya fans berpotensi jadi rilisan resmi",
+      "Musik AI makin terintegrasi di platform"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://arstechnica.com/ai/2026/05/3d-printable-humanoid-legs-let-robotics-experiments-run-wild/",
+    "file": "2026-05-29/16.00-04.md",
+    "title": "Punya Robot Humanoid Cuma $2.500? Hugging Face Buktikan Bisa — Kaki Robot Bisa Di-3D-Print Sendiri!",
+    "lines": [
+      ">> Robot humanoid cuma $2.500 bisa dibuat",
+      "Kaki robot di-3D-print sendiri dari rumah",
+      "Hugging Face buktikan mimpi jadi nyata"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://deadline.com/2026/05/steven-spielberg-where-draw-the-line-ai-1236928790/",
+    "file": "2026-05-29/16.00-05.md",
+    "title": "Spielberg Buka Suara Soal AI di Hollywood: \"Gak Ada yang Bisa Gantiin Jiwa Manusia\"",
+    "lines": [
+      ">> Spielberg buka suara soal AI di Hollywood",
+      "Gak ada yang bisa gantiin jiwa manusia",
+      "Sutradara legendaris kritik penggunaan AI"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.businessinsider.com/anthropic-surpasses-openai-with-965b-valuation-debuts-opus-4-8-2026-5",
+    "file": "2026-05-29/17.00-02.md",
+    "title": "Anthropic sekarang startup AI paling berharga di dunia — OpenAI tumbang!",
+    "lines": [
+      ">> Anthropic resmi startup AI paling berharga",
+      "OpenAI tumbang dari posisi puncak",
+      "Valuasi $965 miliar rekor baru industri"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.resultsense.com/news/2026-05-28-uk-ai-regulatory-may-2026-roundup/",
+    "file": "2026-05-29/17.00-03.md",
+    "title": "Inggris makin galak soal AI — ada undang-undang baru yang wajib lo tau",
+    "lines": [
+      ">> Inggris perketat regulasi AI global",
+      "Undang-undang baru wajib lo ketahui",
+      "Perusahaan AI harus patuhi aturan baru"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/28/waymo-dominates-texas-autonomous-vehicle-registrations-as-tesla-trails-behind/",
+    "file": "2026-05-29/17.00-04.md",
+    "title": "Waymo hajar habis Tesla di soal mobil otonom — data Texas gak bohong",
+    "lines": [
+      ">> Waymo kuasai registrasi mobil otonom Texas",
+      "Tesla tertinggal jauh menurut data resmi",
+      "Dominasi robotaxi Waymo makin kuat"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.hollywoodreporter.com/music/music-news/rolling-stones-de-age-themselves-with-ai-in-the-stars-video-1236595906/",
+    "file": "2026-05-29/17.00-05.md",
+    "title": "Pembuat South Park bikin Rolling Stones jadi muda lagi pake AI — hasilnya gila!",
+    "lines": [
+      ">> Rolling Stones jadi muda lagi pakai AI",
+      "Pembuat South Park sulap band legendaris",
+      "Video de-aging AI bikin heboh industri"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://businesscloud.co.uk/ai-security-trends-2026",
+    "file": "2026-05-29/18.00-03.md",
+    "title": "Ancaman Keamanan AI Makin Nyata di 2026 — Setiap Pemimpin Bisnis Wajib Tahu!",
+    "lines": [
+      ">> Ancaman keamanan AI makin nyata di 2026",
+      "Setiap pemimpin bisnis wajib waspada",
+      "Risiko AI mengancam perusahaan global"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://arstechnica.com/tech-policy/2026/05/trump-loses-more-control-over-ai-regulation-as-illinois-passes-landmark-law/",
+    "file": "2026-05-29/22.00-03.md",
+    "title": "Trump gigit jari: Illinois sahkan undang-undang AI paling keras di AS — dan didukung OpenAI",
+    "lines": [
+      ">> Illinois sahkan UU AI terkeras di AS",
+      "Perusahaan AI wajib audit pihak ketiga",
+      "Regulasi jadi preseden bagi negara lain"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.theguardian.com/film/2026/may/29/star-wars-rogue-one-director-gareth-edwards-praises-ai-film-making",
+    "file": "2026-05-29/22.00-05.md",
+    "title": "Sutradara Star Wars: \"AI kayak sutradara milyarder yang lagi flying — ngelakuin apa aja yang lo minta\"",
+    "lines": [
+      ">> Sutradara Star Wars puji kemampuan AI",
+      "AI kayak sutradara milyader lagi flying",
+      "Teknologi AI bisa lakukan apa pun diminta"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.nbcnews.com/tech/tech-news/illinois-legislature-passes-historic-ai-bill-rcna347191",
+    "file": "2026-05-29/23.00-03.md",
+    "title": "Illinois Sahkan UU AI Paling Keras di AS — Perusahaan Wajib Diaudit Pihak Ketiga!",
+    "lines": [
+      ">> Illinois sahkan UU AI paling keras se-AS",
+      "Perusahaan AI wajib audit pihak ketiga",
+      "Regulasi jadi preseden bagi negara lain"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning",
+    "file": "2026-05-29/23.00-04.md",
+    "title": "Startup AI Mau Bersihin Rumah Lo GRATIS — Tapi Lo Harus Dipasangin \"Topeng Ajaib\" Buat Latih Robot",
+    "lines": [
+      ">> Startup tawarkan bersihin rumah gratis",
+      "Lo harus pakai topeng ajaib untuk latihan",
+      "Data dikumpulkan training robot rumah tangga"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+    "file": "2026-05-30/03.00-01.md",
+    "title": "Google Bikin Gempar: Gemini Omni Bisa Bikin Video Cuma dari Omongan!",
+    "lines": [
+      ">> Google Gemini bikin video cuma dari suara",
+      "Omni 3.5 hasilkan video realistis langsung",
+      "AI text-to-video makin canggih dan cepat"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/940007/ai-companies-will-pay-for-robot-training-data",
+    "file": "2026-05-30/03.00-04.md",
+    "title": "Startup Mau Bersihin Rumah Lo GRATIS — Tapi Minta Direkam. Ada Apa?",
+    "lines": [
+      ">> Startup bersihin rumah gratis minta rekaman",
+      "Lo dibayar untuk data training robot",
+      "AI butuh data nyata dari rumah lo"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/",
+    "file": "2026-05-30/04.00-01.md",
+    "title": "Gila! Claude Opus 4.8 Baru aja Rilis — Bisa Koordinasi Banyak AI Sekaligus",
+    "lines": [
+      ">> Claude Opus 4.8 rilis dengan fitur gila",
+      "Bisa koordinasi banyak AI sekaligus",
+      "Dynamic workflow bikin kerja makin efisien"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.wired.com/story/illinois-pass-major-ai-safety-law-pritzker/",
+    "file": "2026-05-30/04.00-03.md",
+    "title": "Illinois Resmi Mengesahkan UU Keamanan AI Paling Ketat di AS — Perusahaan AI Wajib Diaudit Pihak Ketiga",
+    "lines": [
+      ">> Illinois resmi sahkan UU keamanan AI ketat",
+      "Perusahaan AI wajib diaudit pihak ketiga",
+      "Regulasi AI baru mulai berlaku di Illinois"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.bbc.com/news/articles/cgmpwzzvxr2o",
+    "file": "2026-05-30/04.00-04.md",
+    "title": "BMW Resmi Pakai Robot Humanoid di Pabrik — Kata Mereka Ini Masa Depan Produksi Mobil",
+    "lines": [
+      ">> BMW resmi pakai robot humanoid di pabrik",
+      "Masa depan produksi mobil berganti total",
+      "Robot humanoid mulai gantikan pekerja pabrik"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/amazon-mgm-studios-ai-generated-animated-shows-creator-revolt-rcna347432",
+    "file": "2026-05-30/04.00-05.md",
+    "title": "Amazon Mau Bikin Film Pake AI, Kreator Hollywood Langsung Protes Besar-besaran",
+    "lines": [
+      ">> Amazon bikin film animasi pakai AI",
+      "Kreator Hollywood protes besar-besaran",
+      "Kontroversi AI di hiburan makin panas"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "",
+    "file": "2026-05-31/20.00-05.md",
+    "title": "Tilly Norwood: Aktris AI Yang Curhat \"Kenapa Semua Orang Marah Sama Gue?\"",
+    "lines": [
+      ">> Aktris AI Tilly Norwood curhat bingung",
+      "Kenapa semua orang marah sama gue",
+      "Aktris virtual hadapi kontroversi publik"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.nytimes.com/2026/05/27/technology/ai-screens-schools-weingarten.html",
+    "file": "2026-05-30/06.00-03.md",
+    "title": "Guru-Guru di AS Minta Sekolah Larang AI Chatbots — Anak SD Sama Sekali Gak Boleh Pake",
+    "lines": [
+      ">> Guru-guru AS minta sekolah larang AI chatbot",
+      "Anak SD sama sekali gak boleh pakai",
+      "Kekhawatiran dampak AI pada pendidikan anak"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.wired.com/story/story/amazon-is-making-an-ai-animated-good-advice-cupcake-tv-show-its-original-creator-is-furious/",
+    "file": "2026-05-30/06.00-05.md",
+    "title": "Amazon Bikin Serial Kartun Pake AI dari Karakter Viral — Kreator Aslinya Marah Besar",
+    "lines": [
+      ">> Amazon bikin kartun AI dari karakter viral",
+      "Kreator aslinya marah besar tanpa izin",
+      "Kontroversi hak cipta AI kembali memanas"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/28/sesame-the-conversational-ai-startup-from-oculus-founders-launches-its-ios-app/",
+    "file": "2026-05-30/07.00-03.md",
+    "title": "Suara AI Yang Bikin Merinding — Startup dari Mantan Bos Oculus Rilis App iOS",
+    "lines": [
+      ">> Suara AI merinding dari mantan bos Oculus",
+      "Startup conversational AI rilis app iOS",
+      "Teknologi suara AI makin realistis alami"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/28/sneak-peek-at-new-siri-app-reveals-apples-plans-to-take-on-chatgpt-and-more/",
+    "file": "2026-05-30/07.00-04.md",
+    "title": "Apple Diam-Diam Siapin Siri Baru — Bocoran App Ketangkap Mau Saingan Sama ChatGPT!",
+    "lines": [
+      ">> Apple diam-diam siapkan Siri generasi baru",
+      "Bocoran app ketangkap bakal saingi ChatGPT",
+      "Asisten AI Apple siap bertarung di pasar"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://arstechnica.com/ai/2026/05/llms-believe-false-statements-even-after-explicit-warnings-that-theyre-false/",
+    "file": "2026-05-30/08.00-01.md",
+    "title": "Udah Dibilangin Bohong Tetep Percaya — LLM Ternyata Punya \"Keyakinan\" Kayak Manusia",
+    "lines": [
+      ">> LLM punya keyakinan kayak manusia ternyata",
+      "Udah dibilangin bohong tetep percaya",
+      "Penelitian ungkap kelemahan serius AI"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://arstechnica.com/ai/2026/05/robot-training-startup-will-send-humans-wearing-cameras-to-clean-your-home/",
+    "file": "2026-05-30/08.00-04.md",
+    "title": "Mau Bersihin Rumah Gratis? Startup Ini Bayar Lo — Tapi Lo Harus Dipasangin Kamera buat Latih Robot",
+    "lines": [
+      ">> Startup bayar lo untuk bersihin rumah gratis",
+      "Lo harus dipasangin kamera latih robot",
+      "Data training AI dikumpulkan dari rumah lo"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.wired.com/story/future-of-truth-ai-interview/",
+    "file": "2026-05-30/08.00-05.md",
+    "title": "Penulis Buku \"Masa Depan Kebenaran\" Ketahuan Pakai AI — Pas Ditanya Malah Gak Bisa Jelasin Diri",
+    "lines": [
+      ">> Penulis buku kebenaran ketahuan pakai AI",
+      "Pas ditanya malah gak bisa jelasin diri",
+      "Ironi penulis AI yang bicara kebenaran"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/",
+    "file": "2026-05-30/09.00-01.md",
+    "title": "Startup Chip AI Ini Dapat 'Restu' Investor buat Kumpulin $650M Lagi—Setelah Nvidia 'Beli' $20M?",
+    "lines": [
+      ">> Startup chip AI kumpulkan $650M dari investor",
+      "Setelah Nvidia beli talenta mereka $20M",
+      "Groq siap bersaing di pasar chip global"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.cnbc.com/2026/05/28/mistral-arthur-mensch-design-chips-ai-data-centers.html",
+    "file": "2026-05-30/09.00-04.md",
+    "title": "CEO Mistral Buka Suara Soal Rencana Bikin Chip Custom: 'Turunin Biaya Token'—Eropa Gak Mau Ketinggalan Infrastruktur AI",
+    "lines": [
+      ">> Mistral bikin chip custom untuk AI Eropa",
+      "Target turunkan biaya token secara drastis",
+      "Eropa tak mau ketinggalan infrastruktur AI"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.wired.com/story/google-gemini-spark-ai-agent-hands-on",
+    "file": "2026-05-30/10.00-01.md",
+    "title": "Gila, Google Kasih AI Agent Akses ke Hidup Lo — Pacar aja Sampai Friend-Zone!",
+    "lines": [
+      ">> Google kasih AI agent akses hidup lo",
+      "Pacar aja sampai friend-zone kalah saing",
+      "AI Spark bisa akses data pribadi lo"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.wired.com/story/amazon-thinks-the-future-of-data-centers-depends-on-a-technical-problem-it-just-solved",
+    "file": "2026-05-30/10.00-02.md",
+    "title": "Amazon Pecahin Telur: Masalah Teknis yang Bikin Data Center AI Nge-drop Kini Terjawab!",
+    "lines": [
+      ">> Amazon pecahkan masalah teknis data center",
+      "Masalah bikin AI nge-drop kini terjawab",
+      "Infrastruktur AI Amazon makin stabil kuat"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.engadget.com/2183900/cnn-is-the-latest-media-company-to-sue-perplexity",
+    "file": "2026-05-30/10.00-03.md",
+    "title": "CNN Gugat Perplexity: Startup AI Pencari Informasi Dituduh Curang — Bayar Konten? Gak Mau!",
+    "lines": [
+      ">> CNN gugat Perplexity soal konten curian",
+      "Startup AI dituduh curang bayar konten",
+      "Media besar lawan AI penyalahgunaan konten"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://www.engadget.com/2183719/paramount-used-ai-to-make-the-ugliest-star-trek-thumbnail-ever",
+    "file": "2026-05-30/10.00-05.md",
+    "title": "Star Trek Dapat Thumbnail Paling Jelek Sepanjang Masa — Semua Karena AI!",
+    "lines": [
+      ">> Star Trek dapat thumbnail paling jelek",
+      "Semua karena AI hasilkan gambar buruk",
+      "AI gagal total bikin desain thumbnail"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/28/just-like-gold-and-oil-well-soon-be-able-to-trade-ai-token-futures/",
+    "file": "2026-05-30/11.00-02.md",
+    "title": "CME Group dan ICE Mau Bikin Pasar Berjangka Buat Token AI—Lo Bisa Spekulasi Harga Token Kayak Komoditas",
+    "lines": [
+      ">> Bursa global buka pasar berjangka token AI",
+      "Lo bisa spekulasi harga token kayak komoditas",
+      "CME ICE buka era perdagangan token AI"
+    ],
+    "highlight_idx": 0
+  },
+  {
+    "url": "https://asia.nikkei.com/business/technology/humanoid-robots-strut-their-stuff-as-trade-show-comes-to-japan",
+    "file": "2026-05-30/11.00-04.md",
+    "title": "Pameran Teknologi Tokyo Heboh: Robot Humanoid Jalan di Atas Panggung Pakai Baju Matching Sama Manusia",
+    "lines": [
+      ">> Pameran Tokyo heboh robot humanoid fashion",
+      "Robot jalan di panggung pakai baju matching",
+      "Teknologi robot humanoid makin canggih"
+    ],
+    "highlight_idx": 0
+  }
+]

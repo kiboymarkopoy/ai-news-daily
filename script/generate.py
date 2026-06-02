@@ -322,15 +322,13 @@ def generate_thumbnail(thumb_lines, highlight_idx, image_url, cfg, output_path):
     draw_orig.text(((W - brand_w) // 2, BRAND_TOP_Y), brand_text, fill=brand_color, font=brand_font)
 
     # ── Prepare text lines ──
-    # Filter out garbage lines
+    # Filter out garbage lines (keep "Baca Selengkapnya" as 3rd line CTA)
     lines = []
     for t in thumb_lines:
         if not t or not t.strip():
             continue
         t_stripped = t.strip()
         if t_stripped in ("--", "-"):
-            continue
-        if "Baca" in t_stripped and "Selengkapnya" in t_stripped:
             continue
         lines.append(t_stripped)
 
@@ -517,15 +515,13 @@ def process_article(file_path, cfg, factory, force_regen=False):
     image_url = article.get("thumb_image", "")
     highlight_idx = article.get("thumb_highlight", None)  # None = auto
 
-    # Filter out "Baca Selengkapnya" and garbage upstream
+    # Clean up lines (keep "Baca Selengkapnya" as 3rd line CTA)
     clean_lines = []
     for t in thumb_lines:
         if not t or not t.strip():
             continue
         ts = t.strip()
         if ts in ("--", "-", ""):
-            continue
-        if "Baca" in ts and "Selengkapnya" in ts:
             continue
         clean_lines.append(ts)
 
