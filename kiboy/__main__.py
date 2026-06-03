@@ -131,7 +131,13 @@ def cmd_dedup(args: argparse.Namespace) -> None:
 
 
 def cmd_pipeline(args: argparse.Namespace) -> None:
-    """Run the full pipeline."""
+    """Run the full pipeline or cron stage."""
+    if args.cron:
+        from kiboy.pipeline import run_cron_stage
+        summary = run_cron_stage(max_articles=args.max_articles)
+        print(summary)
+        return
+
     from kiboy.pipeline import run_pipeline
 
     result = run_pipeline(
@@ -146,6 +152,65 @@ def cmd_pipeline(args: argparse.Namespace) -> None:
     print(f"  Written     : {result.written}")
     print(f"  Thumbnails  : {result.thumbnails}")
     print(f"{'=' * 50}")
+
+
+def cmd_register(args: argparse.Namespace) -> None:
+    """Register articles from temp JSON file into state.json."""
+    from kiboy.pipeline import stage_register
+    from kiboy.config import load_state, save_state, get_wib_now
+
+    temp_path = Path("/tmp/kiboy_new_articles.json")
+    if not temp_path.exists():
+        print(f"Error: {temp_path} not found. Run 'pipeline --cron' first.")
+        sys.exit(1)
+
+    with open(temp_path, encoding="utf-8") as f:
+        cron_data = json.load(f)
+
+    articles = cron_data.get("new_articles", [])
+    if not articles:
+        print("No new articles to register.")
+        return
+
+    # Enrich articles with file paths written by LLM
+    state = load_state()
+    date_str = cron_data["date"]
+
+    registered = 0
+    for article in articles:
+        # Skip if already registered
+        url = article["url"]
+        if url in state["dedup"]["articles"]:
+            print(f"  [SKIP] Already registered: {article['title'][:60]}")
+            continue
+
+        # Build file path: data/YYYY-MM-DD/HH.MM-NN.md
+        from kiboy.writer import get_next_sequence
+        data_dir = Path(f"/root/ai-news-daily/data/{date_str}")
+        time_str = cron_data.get("time", "00.00")
+        seq = article.get("seq", get_next_sequence(data_dir, time_str))
+        file_path = f"data/{date_str}/{time_str}-{seq:02d}.md"
+
+        # Use article fields directly
+        thumb_headline = article.get("thumb_headline", article["title"])
+        thumb_image = article.get("image_url", "")
+
+        from kiboy.dedup import register_article
+        register_article(
+            url=url,
+            title=article["title"],
+            domain=article.get("domain", ""),
+            file_path=file_path,
+            thumb_headline=thumb_headline,
+            thumb_image=thumb_image,
+            state=state,
+            first_seen=date_str,
+        )
+        registered += 1
+        print(f"  [REG] {article['title'][:60]}")
+
+    save_state(state)
+    print(f"\n  ✅ Registered {registered} articles to state.json")
 
 
 def cmd_thumbnail(args: argparse.Namespace) -> None:
@@ -314,7 +379,14 @@ def main() -> None:
     sp_pipe = subparsers.add_parser("pipeline", help="Run full pipeline")
     sp_pipe.add_argument("--dry-run", action="store_true", help="Fetch + dedup only")
     sp_pipe.add_argument("--skip-thumbnails", action="store_true", help="Skip thumbnail generation")
+    sp_pipe.add_argument("--cron", action="store_true", help="Cron mode: fetch+dedup, output JSON for LLM")
+    sp_pipe.add_argument("--max-articles", type=int, default=5, help="Max articles for cron mode (default: 5)")
     sp_pipe.set_defaults(func=cmd_pipeline)
+
+    # register
+    sp_reg = subparsers.add_parser("register", help="Register articles into state.json")
+    sp_reg.add_argument("--from-temp", action="store_true", help="Register from /tmp/kiboy_new_articles.json")
+    sp_reg.set_defaults(func=cmd_register)
 
     # thumbnail
     sp_thumb = subparsers.add_parser("thumbnail", help="Generate thumbnails")

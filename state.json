@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-04T00:02:01.371752+07:00",
-    "total_articles": 333
+    "updated_at": "2026-06-04T01:33:00+07:00",
+    "total_articles": 338
   },
   "dedup": {
     "articles": {
@@ -3022,6 +3022,51 @@
         "thumb_headline": "Nvidia resmi meluncurkan chip AI terbaru yang dirancang khusus untuk membawa teknologi AI Agent langsung ke personal computer Anda.",
         "thumb_image": "",
         "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUkx2dTZSdUlFZy1haEEteWVIWURmQjRFbkVqMzM3ZTREY2hfVnU0R0xyM2pGRS1NZkQ0cldvT2JiUXBNcW10RnNURkNKUW9pYTBGWlJ0WTkwRTZ1eDhxS3NMSGVYMnI4ZmpUa1VBRWJLQ3NNdWU0RlZRbVhwaXN5VDF3UVAzT0RZNFVqaGZSM05qVHd0bnRmNXRWQnFwdVlpYXFIQ1drYVFmdUNqUGVlaUt3cEx0SlFJbHc?oc=5": {
+        "file": "data/2026-06-04/01.33-01.md",
+        "source": "fortune.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Peneliti peringatkan ancaman siber baru dari worm komputer bertenaga AI yang sulit dihentikan.",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMklqMGhuN28yREwtSGRTNW94NmRWMFJ5ODNROTQ4QUdVTV91VlBRZG9wckZFSGZKbjFlRS14OThyaXhXcmNDb0wzWGtVOEE2eXdyUS1peFlmU1JhdklXVGxaQU1SaV9WN2tZTUoyd2dzUHltaGR2MWM2OTljUmJFUEdDb2tjV0ZiTXpNb0dvWUl2VUpjbTd2Ums0UnJVdml1OEZpeTlENFJoREktcGlKRi1kSmhpMnd4cTlnSHRRcEM?oc=5": {
+        "file": "data/2026-06-04/01.33-02.md",
+        "source": "gizmodo.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Worm AI yang dapat beradaptasi sendiri ciptakan ancaman fundamental baru bagi sistem keamanan siber.",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSlhaY0JaQ2o4M3hCZGxCWGpsMHJPWjRyQmtUaUFMTDBkWG5sNzZiZjBYbUJWRXhKR1BSakxQRGhENFJPRGpuNm9LR3p3dmJUME9Gb3hxY19VM1Jsc2puN1JwM04zVVhfMnl6NlpzWWNTaUJwdHh0bllmVVhrMVRXbFFSNmFBSmpKM2fSAY8BQVVfeXFMUFBvVmhuMzExekFGd1VOdzhTMDBqUENkWlBVTkVZbTF3WDFIZEdaRXB6V1VWZXg5YXJVdDh6aGJKZ1NSclJLeXZ1MDMzaG1waXlNTWEtWnNZOGpnbW5mTjdvZTIwZUQ3VFcwQ3Y5MmZVNjFhU183cVZ6ZDZ0WFJVZmN2djFqNUZla2xDR1lzWTQ?oc=5": {
+        "file": "data/2026-06-04/01.33-03.md",
+        "source": "cnbc.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "CEO Perplexity sebut nilai tambah dan kepuasan pengguna jadi metrik kunci kemenangan di industri AI.",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOSTBMQWVGbWJPYmN2WTFacHJxT3c1bTJsYXlvSFhpWHQ5ZWZjTXNiamRPM3QxOWNzV0UwZl9CMW9VNzVZV3ZnRUw1UklXMkh2bDNFSWdyYy1HV3RkYVNWMmxpTXVnYV9COFB1dmtQTnhlRXJ5Wnl2d0psa3NUSERrTXJuLXVPb0FqOW52NTV4dGVJOU9xU0pNTFFrYlRzRndtR0F2RWNaZkt3VXlTZmxhRVFqa3hibER1cFA0RFJiSkZYTDg?oc=5": {
+        "file": "data/2026-06-04/01.33-04.md",
+        "source": "bloomberg.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Adopsi teknologi AI diproyeksikan lonjakkan kebutuhan daya listrik hingga sepuluh kali lipat.",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMipgFBVV95cUxOT2hVT2k3N2NoQ3ZTa3FRMDV4VU04QlRWal95R3VwWTI1alI0elpJUEdBbEg5UWgxQWZXUTdVeWZWdW1aOG51ZEVXRGQ2SjBkc1ZibmhVbEdxcXZJOEh0dnhUNUxfenB0dHBzLUxBRUZndThUdEtsU0tqWTQ4UFpfdzNCQmU4UVd3Y1Y1VXNxNGJqX0pva25pZkxKMldTbURRdXhlT1N3?oc=5": {
+        "file": "data/2026-06-04/01.33-05.md",
+        "source": "politico.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Parlemen AS ditargetkan segera merilis draf rancangan undang-undang AI bipartisan akhir pekan ini.",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
       }
     },
     "source_headlines": {
@@ -3303,7 +3348,8 @@
         "taylor swift just exposed a blind spot in ai law and its bigger than copyright",
         "the ai economy could crash on mounting chip costs and those token costs wont help",
         "gila startup ai uji coba 5 model ai jadi penguasa kota virtual hasilnya bikin merinding",
-        "godfather of ai peringatkan manusia soal kecerdasan yang melampaui"
+        "godfather of ai peringatkan manusia soal kecerdasan yang melampaui",
+        "new ai powered computer worm prove stuff cybersecurity nightmares"
       ],
       "www.wsj.com": [
         "perusahaan di as mulai menjatah ai biaya langganan melonjak dompet menjerit"
@@ -3607,16 +3653,24 @@
       ],
       "bloomberg.com": [
         "india it stocks soar as nvidia ceo huang calms ai disruption fears",
-        "googles ai shift is causing a collective freakout"
+        "googles ai shift is causing a collective freakout",
+        "duke ceo sees ai fueling power growth 10 times historic pace"
       ],
       "cnbc.com": [
-        "palo alto networks tops earnings as ai fuels cybersecurity urgency"
+        "palo alto networks tops earnings as ai fuels cybersecurity urgency",
+        "perplexity ceo tells cnbc one metric determine wins ai race"
       ],
       "Bloomberg.com": [
         "alphabet to raise 80 billion in equity capital for ai spending"
       ],
       "BBC": [
         "nvidia announces new ai chip for personal computers"
+      ],
+      "gizmodo.com": [
+        "fundamentally new threat researchers develop new ai powered worm might unstoppable"
+      ],
+      "politico.com": [
+        "negotiators aiming unveil draft bipartisan house ai bill week end"
       ]
     },
     "cross_topics": [
@@ -4838,6 +4892,16 @@
       {
         "who": "nvidia",
         "what": "announces new ai chip for personal computers",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "SEC",
+        "what": "urity nightmares",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Perplexity",
+        "what": "CEO tells CNBC one metric will determine who wins the AI race",
         "first_seen": "2026-06-04"
       }
     ],

@@ -5,12 +5,19 @@ function.  The actual article *content* generation (Bahasa Indonesia, casual
 style) is performed by Kiboy's LLM (DeepSeek via Hermes) and is outside the
 scope of this module.  The pipeline therefore exposes hooks that Kiboy can
 call individually or as a full end-to-end run.
+
+CRON MODE: ``run_cron_stage()`` performs fetch+dedup deterministically and
+outputs a verified JSON payload to ``/tmp/kiboy_new_articles.json``.  The
+LLM then reads this file, writes articles using the verified data, and
+calls ``stage_register()`` + ``stage_thumbnails()`` to finalise.
 """
 
 from __future__ import annotations
 
+import json
 import logging
 from dataclasses import dataclass, field
+from pathlib import Path
 
 from kiboy.config import (
     get_wib_now,
@@ -157,6 +164,111 @@ def stage_thumbnails(
 
     logger.info("Thumbnails generated: %d", count)
     return count
+
+
+# ---------------------------------------------------------------------------
+# Cron pipeline (deterministic fetch+dedup for LLM consumption)
+# ---------------------------------------------------------------------------
+
+_CRON_OUTPUT = Path("/tmp/kiboy_new_articles.json")
+
+
+def run_cron_stage(max_articles: int = 5) -> str:
+    """Execute deterministic fetch + dedup for cron; output JSON for LLM.
+
+    This function performs the following:
+
+    1. Fetch all RSS feeds deterministically (Python ``urllib``, no LLM).
+    2. Run 3-layer dedup against ``state.json``.
+    3. Save verified new articles to ``/tmp/kiboy_new_articles.json``.
+    4. Print a summary to stdout for the LLM to read and act on.
+
+    The LLM is expected to:
+    - Read ``/tmp/kiboy_new_articles.json``
+    - Write 3-5 paragraph Indonesian articles using **only** the provided
+      ``url``, ``title``, ``source_domain``, and ``image_url`` fields
+    - **NEVER fabricate URLs or image URLs** — use only what's provided
+    - Call ``python -m kiboy register --from-temp`` to register articles
+    - Call ``python -m kiboy thumbnail --pending`` to generate thumbnails
+
+    Args:
+        max_articles: Maximum number of new articles to pass to LLM
+            (default 5, LLM typically produces 2-5 articles per run).
+
+    Returns:
+        Human-readable summary string for the LLM to include in its report.
+    """
+    import logging
+    logging.basicConfig(level=logging.INFO, format="%(message)s")
+
+    print("=" * 60)
+    print("  KIBOY CRON PIPELINE (DETERMINISTIC)")
+    print("=" * 60)
+
+    config = load_config()
+    state = load_state()
+    now = get_wib_now()
+    date_str = now.strftime("%Y-%m-%d")
+    time_str = now.strftime("%H.%M")
+
+    # Stage 1: Fetch (deterministic Python, no LLM hallucination possible)
+    raw_articles = stage_fetch(config)
+    fetched = len(raw_articles)
+
+    # Stage 2: 3-layer dedup
+    new_articles = stage_dedup(raw_articles, config, state)
+    duplicates = fetched - len(new_articles)
+
+    # Limit to max_articles
+    new_articles = new_articles[:max_articles]
+
+    # Build clean JSON payload for LLM
+    payload: list[dict] = []
+    for i, article in enumerate(new_articles, 1):
+        payload.append({
+            "seq": i,
+            "title": article["title"],
+            "url": article["url"],
+            "source_domain": article.get("source_domain", article.get("domain", "")),
+            "rss_source": article.get("source", ""),
+            "image_url": article.get("image_url", ""),
+            "domain": article.get("domain", ""),
+        })
+
+    # Save to temp file
+    cron_data = {
+        "date": date_str,
+        "time": time_str,
+        "fetched_total": fetched,
+        "duplicates_skipped": duplicates,
+        "new_articles": payload,
+    }
+    _CRON_OUTPUT.write_text(json.dumps(cron_data, indent=2, ensure_ascii=False),
+                            encoding="utf-8")
+
+    # Print summary (stdout goes to LLM context)
+    print(f"\n  Fetched:    {fetched} articles")
+    print(f"  Duplicates: {duplicates} skipped")
+    print(f"  NEW:        {len(payload)} articles → /tmp/kiboy_new_articles.json")
+    print(f"  Date/Time:  {date_str} / {time_str}")
+
+    for art in payload:
+        has_img = "🖼️" if art["image_url"] else "❌"
+        print(f"  [{art['seq']}] {has_img} {art['title'][:80]}")
+        if art["source_domain"]:
+            print(f"       Source: {art['source_domain']}")
+
+    print(f"\n  ✅ JSON saved to {_CRON_OUTPUT}")
+    print(f"  📋 LLM: read this file, write articles, then run:")
+    print(f"     python -m kiboy register --from-temp")
+    print(f"     python -m kiboy thumbnail --pending")
+    print("=" * 60)
+
+    return (
+        f"Fetched {fetched} articles, "
+        f"{duplicates} duplicates skipped, "
+        f"{len(payload)} new articles ready at {_CRON_OUTPUT}"
+    )
 
 
 # ---------------------------------------------------------------------------

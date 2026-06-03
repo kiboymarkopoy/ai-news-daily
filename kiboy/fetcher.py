@@ -96,6 +96,13 @@ def fetch_rss(
     articles: list[dict[str, str]] = []
     try:
         root = ET.fromstring(data)
+
+        # Register namespaces for media/enclosure extraction
+        nsmap = {
+            "media": "http://search.yahoo.com/mrss/",
+            "atom": "http://www.w3.org/2005/Atom",
+        }
+
         for item in root.findall(".//item")[:max_items]:
             title_el = item.find("title")
             link_el = item.find("link")
@@ -116,12 +123,54 @@ def fetch_rss(
                 if pub_date_el is not None and pub_date_el.text
                 else ""
             )
+
+            # Extract image URL from media:content or enclosure tags
+            image_url = ""
+            # Try media:content (ArsTechnica, major RSS feeds)
+            media_content = item.find("media:content", nsmap)
+            if media_content is not None and media_content.get("url"):
+                image_url = media_content.get("url", "")
+            # Fallback: media:thumbnail
+            if not image_url:
+                media_thumb = item.find("media:thumbnail", nsmap)
+                if media_thumb is not None and media_thumb.get("url"):
+                    image_url = media_thumb.get("url", "")
+            # Fallback: enclosure with image type
+            if not image_url:
+                enclosure = item.find("enclosure")
+                if enclosure is not None:
+                    enc_type = enclosure.get("type", "")
+                    enc_url = enclosure.get("url", "")
+                    if enc_type.startswith("image/") and enc_url:
+                        image_url = enc_url
+            # Fallback: extract first <img> from description CDATA
+            if not image_url:
+                desc_el = item.find("description")
+                if desc_el is not None and desc_el.text:
+                    img_match = re.search(
+                        r'<img[^>]+src=["\']([^"\']+)["\']',
+                        desc_el.text,
+                        re.IGNORECASE,
+                    )
+                    if img_match:
+                        image_url = img_match.group(1)
+
+            # Extract source domain from <source> tag (e.g. Google News source)
+            source_el = item.find("source")
+            source_domain = ""
+            if source_el is not None and source_el.text:
+                source_domain = source_el.text.strip()
+                # source_domain should be the REAL source, not the RSS aggregator
+                source_label = source_domain if source_domain else source_name
+
             articles.append({
                 "title": title,
                 "url": link,
                 "domain": extract_domain(link),
                 "source": source_name,
+                "source_domain": source_domain,
                 "pub_date": pub_date,
+                "image_url": image_url,
             })
     except ET.ParseError as e:
         print(f"  [PARSE ERROR] {source_name}: {e}")
@@ -162,19 +211,56 @@ def fetch_google_news(
     # Regex extraction (Google News XML sometimes trips up strict parsers)
     titles = re.findall(r"<title>(.*?)</title>", data, re.DOTALL)
     links = re.findall(r"<link>(.*?)</link>", data, re.DOTALL)
+    # Extract <source url="..."> for real source attribution
+    sources = re.findall(
+        r'<source\s+url="([^"]+)"[^>]*>([^<]+)</source>', data, re.DOTALL
+    )
+    source_map: dict[int, tuple[str, str]] = {}
+    # Map source info by position (approximate, since <source> is inside <item>)
+    source_entries = re.findall(
+        r'<item>.*?<source\s+url="([^"]+)"[^>]*>([^<]+)</source>.*?</item>',
+        data,
+        re.DOTALL,
+    )
+    if not source_entries:
+        source_entries = sources  # fallback
 
     # Skip first 2 titles/links — they are feed-level metadata
     for i in range(2, min(len(titles), max_items + 2)):
-        title = html.unescape(titles[i].strip())
+        title_raw = titles[i].strip()
+        title_full = html.unescape(title_raw)
+
+        # Extract real source from title suffix (" - SourceName")
+        # e.g. "Headline - The New York Times" → headline, source=The New York Times
+        source_domain = extract_domain(links[i]) if i < len(links) else ""
+        if " - " in title_full:
+            parts = title_full.rsplit(" - ", 1)
+            title_clean = parts[0].strip()
+            source_name = parts[1].strip()
+            source_domain = f"{source_name.lower().replace(' ', '')}.com"
+        else:
+            title_clean = title_full
+            source_name = ""
+
+        # Try to get real source URL from <source> tags
+        source_url = ""
+        source_idx = i - 2  # approximate index into source_entries
+        if source_idx < len(source_entries):
+            source_url = source_entries[source_idx][0] if source_entries[source_idx] else ""
+
         link = links[i].strip() if i < len(links) else ""
         if not link:
             continue
+
         articles.append({
-            "title": title,
+            "title": title_clean,
             "url": link,
-            "domain": extract_domain(link),
+            "domain": extract_domain(source_url) if source_url else extract_domain(link),
             "source": f"GoogleNews:{query[:20]}",
+            "source_domain": source_name,
+            "source_url": source_url,
             "pub_date": "",
+            "image_url": "",
         })
 
     return articles
