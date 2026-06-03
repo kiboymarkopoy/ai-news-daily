@@ -434,6 +434,8 @@ def generate_thumbnail(
     brand_size = brand_cfg.get("size_px", 48)
     brand_top_y = int(H * brand_cfg.get("top_pct", 0.04))
     brand_color = tuple(brand_cfg.get("color", [255, 255, 255]))
+    brand_outline = 1
+    brand_outline_color = tuple(brand_cfg.get("outline_color", [0, 0, 0]))
     brand_font = _get_font(brand_font_name, brand_size, config)
 
     bb = draw_tmp.textbbox((0, 0), brand_text, font=brand_font)
@@ -441,6 +443,7 @@ def generate_thumbnail(
     draw_tmp.text(
         ((W - brand_w) // 2, brand_top_y), brand_text,
         fill=brand_color, font=brand_font,
+        stroke_width=brand_outline, stroke_fill=brand_outline_color
     )
 
     # ── Auto-wrap headline ───────────────────────────────────────────────
@@ -603,17 +606,17 @@ def generate_thumbnail(
             )
 
     # ── Watermark (bottom) ───────────────────────────────────────────────
-    wm_cfg = config.get("brand", {}).get("watermark", {})
+    wm_cfg = {}
     wm_size = wm_cfg.get("size_px", 22)
     wm_pad_x = int(W * wm_cfg.get("padding_pct", 0.04))
     wm_pad_y = int(H * wm_cfg.get("padding_pct", 0.03))
     wm_font = _get_font("Montserrat-Regular", wm_size, config)
     wm_color = tuple(wm_cfg.get("color", [200, 200, 200]))
-    wm_text = wm_cfg.get("text", "www.KiMedia.com")
-    draw_final.text(
-        (wm_pad_x, H - wm_pad_y - wm_size), wm_text,
-        fill=wm_color, font=wm_font,
-    )
+    # wm_text = ""
+    # draw_final.text(
+    #     (wm_pad_x, H - wm_pad_y - wm_size), wm_text,
+    #     fill=wm_color, font=wm_font,
+    # )
 
     # ── Final contrast check ─────────────────────────────────────────────
     if not check_text_contrast(canvas, text_positions, threshold_brightness=200):

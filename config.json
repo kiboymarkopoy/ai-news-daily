@@ -30,7 +30,7 @@
       "regular": "Montserrat-Regular"
     },
     "watermark": {
-      "text": "www.KiMedia.com",
+      "text": "",
       "size_px": 22,
       "color": [
         200,
@@ -139,7 +139,8 @@
         255,
         255,
         255
-      ]
+      ],
+      "outline_width": 1
     }
   },
   "platforms": {
