@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-03T05:50:52.822931+07:00",
-    "total_articles": 280
+    "updated_at": "2026-06-03T07:02:47.009518+07:00",
+    "total_articles": 283
   },
   "dedup": {
     "articles": {
@@ -2554,6 +2554,33 @@
         "thumb_highlight": 0,
         "thumb_image": "https://media.wired.com/photos/6a1db2153696beebf95db3a0/191:100/w_1280,c_limit/Opal_Tadpole_01.jpg",
         "thumb_generated": true
+      },
+      "https://www.geekwire.com/2026/version-one-ventures-raises-fresh-capital-for-early-bets-on-ai-robotics-and-deep-tech/": {
+        "file": "data/2026-06-03/07.00-01.md",
+        "source": "geekwire.com",
+        "first_seen": "2026-06-03",
+        "thumb_image": "https://cdn.geekwire.com/wp-content/uploads/2026/06/borisangela.jpeg",
+        "thumb_generated": true,
+        "thumb_headline": "Firma VC Version One Ventures siap bakar uang dukung startup AI dan robotika incaran pendanaan segar dari suntikan modal baru",
+        "thumb_subheadline": null
+      },
+      "https://portal.ct.gov/governor/news/press-releases/2026/06-2026/governor-lamont-signs-legislation-establishing-youth-online-safety-protections-ai": {
+        "file": "data/2026-06-03/07.00-02.md",
+        "source": "ct.gov",
+        "first_seen": "2026-06-03",
+        "thumb_image": "https://portal.ct.gov/-/media/office-of-the-governor/news/2026/ct_seal.png",
+        "thumb_generated": false,
+        "thumb_headline": "Connecticut sahkan undang-undang baru fokus perlindungan anak dari bahaya AI dan siapkan tenaga kerja hadapi disrupsi teknologi",
+        "thumb_subheadline": null
+      },
+      "https://openai.com/news/advancing-youth-safety-and-opportunity-through-global-leadership": {
+        "file": "data/2026-06-03/07.00-03.md",
+        "source": "openai.com",
+        "first_seen": "2026-06-03",
+        "thumb_image": "https://images.openai.com/blob/7841961e-6531-4ce7-88de-ddc0dfccb38c/advancing-youth-safety-and-opportunity-through-global-leadership.jpg?width=1200&height=630&quality=80",
+        "thumb_generated": false,
+        "thumb_headline": "OpenAI serius garap inisiatif keselamatan dan peluang buat generasi muda lewat kolaborasi global",
+        "thumb_subheadline": null
       }
     },
     "source_headlines": {
@@ -3620,6 +3647,21 @@
       {
         "who": "OpenAI",
         "what": "Opal Is Making an AI-Powered Audio Gadget",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Version One Ventures",
+        "what": "capital for early bets on AI robotics",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Governor Lamont",
+        "what": "legislation establishing youth online safety protections ai",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "OpenAI",
+        "what": "advancing youth safety and opportunity",
         "first_seen": "2026-06-03"
       }
     ],
