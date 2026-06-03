@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-03T14:02:35.182544+07:00",
-    "total_articles": 440
+    "updated_at": "2026-06-03T18:03:04.375187+07:00",
+    "total_articles": 308
   },
   "dedup": {
     "articles": {
@@ -2615,6 +2615,190 @@
         "thumb_headline": "Pergeseran fokus Google ke teknologi AI memicu kehebohan massal dan kepanikan di kalangan internal karyawan perusahaan",
         "thumb_image": "",
         "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaF9Yall0WVVyYktXZk1ISHU5Sm9BMGNMZG1vdmxLSUlhRlRReEpTdTVlbXIwVnpMM1lOUi1pZl9yRkJVd1YtOEI2b2xHSVhUMjFIeG5HUHZwZEVtR2ZweFJEdkgxeGNLcVMxY1cxbEswU1E5S2lRamVRdzZuWWxPemVZd25FalB4ZVdtRHBXa0c0SXhXVE9iRW1VeVpldWlTQWhfcGU2a18xWm02?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "U.K. Regulator to Let Publishers Keep Content Out of Google Search’s AI Tool - WSJ",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMingFBVV95cUxNT0NGcjJpd09ZMTZIaXhmVC1aOHAxMExseHNGY0VOemJ1bTdwclY4ZnZSYzJPeUlLY2RCTUxvVnQxQnlFcGxUb1NiNVZnemtOVW9WUFRaSDNCY3cxRXI5dF9Rakd1bGN2MHRSQkpzZDBaLS1GRGRtN0hzSjdGTGY0Y0I3SU9mU3JVcnRtdS1OYjVDdUdJOWo0VEdHVXlqdw?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Goldman's Gutman on AI: We're in an industrial revolution - CNBC",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMie0FVX3lxTE9lZjktNFNVbVJYNThNTmoyR0FVRFgzUGhPUHQ5QUFGczJjclkzeWh4MzBhbUpEUjhtUHNwT2wtUXdoU0o1RkN6ZHYzSFRvOWNGQnRONkFBdWsxUWEzMEJvNnlaVXg2Ynl1NUZGa3Z5RTdFa2NnUUtBUGZucw?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Broadcom Stock Faces Earnings Test as AI Chip Revenue Surges - Barron's",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOU0JBTF94ZFEyUnh4S0drRFZieWNrT0tpSTdtR0Ewdy1uc3drZE1maGlCSmN2RFZOZnhYa0ZSb2JMUVdsN00yQ2dWQTEza29LaDcyU2kxTmFhQ1VLQU1rc3RaanlGeHNjT0tZNk4xN2hoZmI0WVdzaHFVWktsa3ExbHM4VVZZTzVKQnR0cTA3ZFRPQWN6TENOZHdLay1EY1RiS0FGaEhVUEJQV0g1UTRFWm5SV0k2bmh6?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Exclusive: Apoha, startup pioneering AI based on liquid 'wave form' data, gets $36 million Series A - Fortune",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlhpUTg0OVZlTm9Cc056bUd1YjJmU19HenZmcUMwZUMzQmhxbi1hTnh2TEN5MU9RdmlOVDh0QV9iczk0N2U0VWhCOGRMbXpxU1VGNzdmVE40ZVYtekNtdEdaSFRjdHRib1FKREpQT29oZ3VXdVJsZWNtM0JyWEhyUWFxeTg0SzBEOWN0SWJVRjI4UV9kbU54TXpVUHhwOHE4WEJRXzdrQjVUdW5PSU1GMDln?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "SoftBank’s Masayoshi Son Becomes Asia’s Richest Person Amid AI Boom - Forbes",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMiogFBVV95cUxNbmVzdDlDSi1RYTZCRFdfTjhjMDFrRk9FeklYYzJuUERNZ2NTb28yc0t2UnFybVB6bXNDMDQ5OXVLcWU3a1ZOak41LVJRM3h6NGNlQTNabVdlWS1lNXFuam5aa3dKU05XbWdXUUJERmV1R2FreW5xeUJ0OUdCXzIyYjQ2cHJOUjlKbVBGVGRKNXQxZmJrZjBTcjVkWHZ5MDEzUVHSAacBQVVfeXFMTVVVYjZzVTBGQ1lhXzFzSU4tYS1iVEpsVVh3LXBOZlluWS14emtldWlCdnVXLWNwTDBxWjNrdkgtclJKWmlCemVhamNtU2FOUFdLQW5MUUMtSXVWQmdnNzJDMGFub1g2eE14Wi12R1VJVUxKZk5aQVBOZ1BXbDhac0tCeVNxbEhXcnRCeTIwdXFKQVQ5R1pZUjNqZUl0T0huLUN0RmJKT0k?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Nvidia's new PC chips represent CEO Huang's bid to win at every layer of AI stack - CNBC",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSEt5VS03ZE93QmpVbUpIMVVpMy1zTlpsUldrX2pzWFl4S3MzcXRNQjdXd2VFYlJNSm94RzZZVXdPV1d0dElhVVZ1a1AxUHFpTHRoZTVlTGVHNEdqa3YyUVpFVWxQSDc0eW9mdzVzSmJZdTc3VFRqMXJsZTltb2xTdDRrSi02c3JzT1B5Ui0wS2g1U19l?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Two Years After Copilot+, Nvidia Is Shoving AI Into PCs Again - Gizmodo",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMizgFBVV95cUxNaEsxN1FwX28wYlE5SDg0WW5RZFpQajFCR1ctQjhZUTFoVXNUclcwUV9weFBmUU8tb01HcHFFOWV4SGYxaGI4YzFtcXNEU01aV3lhaUdzOExadkMwelp4dEVxdHBNbUJOQVgzeE03WW4zTERrMVZoTFdkb0lpMmNsLWV5WE91ZGoxTTRPalpLYUYxZ2ZsNzlfVl9vcmFuRDdXa0pNWmZhc25xZEpDVW5yb0pibktGNnVycVJyckZTbEZXZ1Y0VU5DRWJzSEtJdw?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Private infra, real estate capital to play larger financing role in AI data center boom, Goldman says - Reuters",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMipwFBVV95cUxNNjNJd0xFVjlReWNzd2VYSFN1eVZGSFc3ZnZhYnNYS3YxdTlLV2tkTDY1RnZSeWdsMU03eWMxUHBYRFhNRzR0WHFaVnhmb2ptZ1NOZzd5Y1AxR1gyWHBmVnVwRzJzTUtVTnZCZjlJSW5kZm0zUHlsMkdTSDRGdWtNdmJtaE54SGFQNHBZbVVCRjlnZzRhb0FWRjlMdERBZFJZZDJiT2pSTQ?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "China’s Pudu Robotics Unveils Industrial Sem-Humanoid Robot PUDU D7 - AI Insider",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1sT0RLX2s1V19uaTlfN0w3NkhVX21TSEo3ZVR4VS10cEoxSThUT3dBR0NZTEptU0VIcERGcXB5SFZ3T1lPN1VxX1dTVngxVU55MEI3NzNWNm9PdFI4V1ZpVUlITQ?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "2028: Two scenarios for global AI leadership - Anthropic",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMiggFBVV95cUxQUFBlYTc0SGt6ZlhHNlpyblpLSXVtVy12TEI4N3doaUM1VnpFZW9rLXdxdkxnV3ctakF5bXJYUUtjVDhXRHUzYXhBTFlBLVZTMGhFVll5U0tOc3Iwd3dERmRaNlFQdHhYMnRXNjBRSHprQ2xySHNIaDl3VTM0djhzRDJR?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "AI has a water problem. Google thinks it has a fix - The Verge",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMiXkFVX3lxTE53cmVPenlxRFZjOU1HdE40SzVKWGZpNWJhQnpoMWZKcWpzMXNCdlVYdW9lVDVERWk4STMxM3FmLWRpdE1FY3Zzb1BubHNfaFhSUE93dTEtYWpIc2tLVlE?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "AI data centers in space are Big Tech's next big bet - qz.com",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMirAFBVV95cUxOS1I5dDFOTUc5WFFTWUd3VFZxSjUyX3FNaVA5cG5tazdPdzBaQmJsa3FpVmt4X3NadDMzcHFEbmZLanZYM1JkcDkxN2hfMWhnUTU1RFpISElPOHgwMDMwbmMtLTluWXpOZ29Oa3RUV3ZEME9jQkVmcnJRMDFDNVhaMXlmRnprZDZxRWFXOTAtZG1yOHZNNEh6TzZsZFZGMVlPb1Faelg4Z0hERUU4?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Google keeps finding new ways to crash the stock market's AI party - Business Insider",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQndrWkhOSlJwN0RXcWgzbXZBLU14RERpdTIxZFhyaENpcEF0TUxrWWZBZ0lfWE00UEhqaWNyZkY4US1iUkw1LS1zcnlBQV8tN0dfWHVxTm9uSG02UTB5TGROQ19aZkh3bndtZHFGM1NWNlRTRWZIN3BUelNhMkhQRkh0SUlEUFB4ZnI1SVRxeWc4WE9xeC1EMXA3cUxGOVM1eVQybVFYMDFxQQ?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "robotic art and AI-driven spirituality empower human connection at sónar+D 2026 - Designboom",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTUFkWXpwV0gzdzFJQnplcFFySUJMRVNuN3BxVFlGMk5YR1lLa3dDc0F5ZlRTbk53dXJQWGJIUks3b0g3M0pfOUlxUnpBSU5lT1pweVpzX0Rub2Z6ajhtaVk5dm45T1JiNDZRajZTTVhWclZ2TUZDTUpBenpzYlRYRVlUZGczSDNYV3ljSC1IMVlIazd0MjhRWGtLVQ?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Jensen Huang Praises Meta, Says ‘Nobody Uses AI Better’ – META Stock Rebounds In Premarket - Yahoo Finance",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMib0FVX3lxTE4yRlAxQk5KX0s5eDRjci00ZU9CZXMyZ1k3UDRHeWdVQzhOOFQ5TzQxYWVGeGpLOFBuVHV5akg1MjZ4bDlIZXFzcjl1ejhROXZzdDlxYUxXLUE4cHdvbko1M01Ea0ZNLWV3MzN5ekFiSQ?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Introducing the IBM Granite 4.1 family of models - IBM Research",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://techcrunch.com/2026/06/01/florida-sues-openai-sam-altman-in-first-of-its-kind-lawsuit-over-violent-incidents/": {
+        "file": "data/2026-06-03/18.02-01.md",
+        "source": "",
+        "first_seen": "2026-06-03",
+        "thumb_headline": " merilis berita terbaru: Florida sues OpenAI, Sam Altman, in first-of-its-k... Simak detailnya di KiMedia!",
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://techcrunch.com/2026/05/30/as-the-browser-wars-heat-up-here-are-the-hottest-alternatives-to-chrome-and-safari-in-2026/": {
+        "file": "data/2026-06-03/18.02-02.md",
+        "source": "",
+        "first_seen": "2026-06-03",
+        "thumb_headline": " merilis berita terbaru: As the browser wars heat up, here are the hottest ... Simak detailnya di KiMedia!",
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://techcrunch.com/2026/05/29/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/": {
+        "file": "data/2026-06-03/18.02-03.md",
+        "source": "",
+        "first_seen": "2026-06-03",
+        "thumb_headline": " merilis berita terbaru: So you’ve heard these AI terms and nodded along; l... Simak detailnya di KiMedia!",
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://techcrunch.com/2026/05/29/today-is-the-last-day-to-apply-to-speak-at-techcrunch-disrupt-2026/": {
+        "file": "data/2026-06-03/18.02-04.md",
+        "source": "",
+        "first_seen": "2026-06-03",
+        "thumb_headline": " merilis berita terbaru: Today is the last day to apply to speak at TechCru... Simak detailnya di KiMedia!",
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://arstechnica.com/science/2026/06/research-roundup-7-cool-science-stories-we-almost-missed-4/": {
+        "file": "data/2026-06-03/18.02-05.md",
+        "source": "",
+        "first_seen": "2026-06-03",
+        "thumb_headline": " merilis berita terbaru: Why cats prefer silver vine to catnip and other Ma... Simak detailnya di KiMedia!",
+        "thumb_image": "",
+        "thumb_generated": false
       }
     },
     "source_headlines": {
@@ -3163,7 +3347,23 @@
         "ai replace auto mechanics cnn",
         "group fights shell oil bid ai prompts used climate lawsuit reuters",
         "trump administration ask us ai firms voluntarily submit models cybersecurity tests reuters",
-        "trump quietly signed scaled back ai executive order delaying fears falling behind china business insider"
+        "trump quietly signed scaled back ai executive order delaying fears falling behind china business insider",
+        "regulator let publishers keep content google search ai tool wsj",
+        "goldman gutman ai re industrial revolution cnbc",
+        "broadcom stock faces earnings test ai chip revenue surges barron",
+        "exclusive apoha startup pioneering ai based liquid wave form data gets 36 million series fortune",
+        "softbank masayoshi son becomes asia richest person amid ai boom forbes",
+        "nvidia new pc chips represent ceo huang bid win layer ai stack cnbc",
+        "two years copilot nvidia shoving ai pcs again gizmodo",
+        "private infra real estate capital play larger financing role ai data center boom goldman says reuters",
+        "china pudu robotics unveils industrial sem humanoid robot pudu d7 ai insider",
+        "2028 two scenarios global ai leadership anthropic",
+        "ai water problem google thinks fix verge",
+        "ai data centers space big tech next big bet qz com",
+        "google keeps finding new ways crash stock market ai party business insider",
+        "robotic art ai driven spirituality empower human connection sónar 2026 designboom",
+        "jensen huang praises meta says nobody uses ai better meta stock rebounds premarket yahoo finance",
+        "introducing ibm granite family models ibm research"
       ],
       "bloomberg.com": [
         "india it stocks soar as nvidia ceo huang calms ai disruption fears",
@@ -4273,9 +4473,69 @@
         "who": "China",
         "what": "Business Insider",
         "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Google",
+        "what": "Search’s AI Tool - WSJ",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Broadcom",
+        "what": "Stock Faces Earnings Test as AI Chip Revenue Surges - Barron's",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "SoftBank",
+        "what": "’s Masayoshi Son Becomes Asia’s Richest Person Amid AI Boom - Forbes",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Nvidia",
+        "what": "s new PC chips represent CEO Huang's bid to win at every layer of AI stack - CNB",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Nvidia",
+        "what": "Is Shoving AI Into PCs Again - Gizmodo",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "EU",
+        "what": "ters",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "China",
+        "what": "’s Pudu Robotics Unveils Industrial Sem-Humanoid Robot PUDU D7 - AI Insider",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Anthropic",
+        "what": "2028: Two scenarios for global AI leadership - Anthropic",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Google",
+        "what": "thinks it has a fix - The Verge",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Google",
+        "what": "keeps finding new ways to crash the stock market's AI party - Business Insider",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Jensen Huang",
+        "what": "Praises Meta, Says ‘Nobody Uses AI Better’ – META Stock Rebounds In Premarket -",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "IBM",
+        "what": "Granite 4.1 family of models - IBM Research",
+        "first_seen": "2026-06-03"
       }
     ],
-    "total": 287
+    "total": 308
   },
   "queue": {
     "pending": [],
