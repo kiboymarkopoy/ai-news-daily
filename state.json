@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-03T18:03:04.375187+07:00",
-    "total_articles": 308
+    "updated_at": "2026-06-04T00:02:01.371752+07:00",
+    "total_articles": 333
   },
   "dedup": {
     "articles": {
@@ -2799,6 +2799,229 @@
         "thumb_headline": " merilis berita terbaru: Why cats prefer silver vine to catnip and other Ma... Simak detailnya di KiMedia!",
         "thumb_image": "",
         "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUDJ6d2NlUlF6YlNJRk5kcjgtaHBrc2l1Z2s5YUxhZUpqMW02STg0ZTF3alE2YmZtQXNuTnQ5V3BZcGE1bFZ3WFRMV2ZmVUhHck1IMnpPSnU4d1lUU241cnhjT00wcktiR1RvSXlkWHdXM3Fvb0RRaHNTQ1paVHZfMGhvc2RacGJabE5Hd0hqLXVxbXNhcWdQSw?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Trump orders federal oversight of new AI models - Yahoo",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMiekFVX3lxTE5ZN2ZBNFB4bFJ6dFVjUXJ0RTNENWxhMmgxUjRCZ3NWVk44UGFGOWF1M2t1U0lHbVExZ0dPamdZN0xYSVlYc21MeFNyM2hkQTF2aTNueXhIVXg3dmFId0s0MkNwTVJOSndoaEFzX1VCc3NQV2E5VVVjZW5R?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "AI can replicate human-made art. Here’s why it can never replace it. - vox.com",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNY2RSMjFicUI3NFpKYnpZamUwYWgzMjRGZ3dJOUNFNTVHSzRhOWNjUDhycWNDOU5vTWJsYTdWaF9YY3p6V3dobFkzM2N4cUUwU2g2bDI1eks5UDJ4WVN3Ymc5VFlCazg1SFcwT0hCR0dNRkEycXFKRjVGMHNzempzc1B0dm5mX25YQmo1YUt3VzVwLTNMNHlxMmpVSG5rSXNRT09JSlNEanhFbTQ?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Can autonomous AI-powered killer drones take morality onboard? - The Guardian",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMiugFBVV95cUxPOXZ4VmlFd2NZczVrLWJoS1pqZEFQcmI2dXlBaVNVX0ZFd3J3Y3VwcldKWnF0RUtGS25BZ1lQMF9FeXB3OXhNQnplRjJYallzMU1HNGZtX1k0N2dTZ1BOeGpfX01aRGM5NllwTGRvQ1Q4QTE2dHNadUpYWENidkdhbGU5MUxzNFNCajRBM1lMZ3U4MFRRM1c2SFVPaTZTUnlFUGJIZEFLZlRiSUU0eDBwNy1iMFpYeThOaFE?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Digi Power X commits $35M for NVIDIA AI chips and 40MW Alabama campus - Stock Titan",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdzF4V0M5MlIzT1NSdk5rQkhNQWFlS1h3aFNjeUNqZ2JONXh3WTd1Nlc0bFN0X19uakJaZEVoMXZZVTQ4QTd2SUN1dFA2RjZDd0Y1ME1NY29nZHo4QkYzMlg2eVMxZGU3R3hiemI3TkRTSVViOHVrOE91SWcxUDFwaUU5dVFhTmNDQUxRU2pBdkFQQTZTZkF1Uk5adWxXVGFCTVRtSnI1SWJHN2pfaTJ0STFtajR5a19EOS1VVGk3d0s3WmNOY1dGVDluWXI1LTRfZWhRbGFsS1l2SnM?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Stock market today: Dow, S&P 500, Nasdaq futures mixed as AI fervor meets US-Iran uncertainty - Yahoo Finance",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMisAFBVV95cUxNMDN4TXlScl9kWUxnV1hrMGRibXh5REV6VVlDNjE2b3h5WmVmV0poNnQxV2M5RngyQ1ppNm54aWxnUkRqOUtpVTJ1d0tva0NqLVViSGpoa25lb3FBbERfQThPWmVIakJtaWExcTlNVTRndUVSMWlEb18zR3NDTDBsbUlDNFpybWd0SldzNkFiUXlmc2l2ZUtQemR1NTBCN2tMYWdwV1JOWnlXRWNLdjJVMQ?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Nvidia CEO Pitches ‘Insane’ AI Returns to Billionaire Families - Bloomberg.com",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMioAFBVV95cUxPS2NGNkY4dHFleDM2MzM4NEhFZlBwZWpsbGFnVFRzdVFmamxNSm50Zk1EczQ2WDF5NlpwMnNiZUNEQkVGWE44WlpNZ2NCd2xtM1FGZklYNjI3dkIxZEFVUnhBUGJldTF0VEN5bVpEMmpnMjN3NEZ0bHdSWmR4bjNHWk5ka3h4SEh1aHZ0SWNvOE43VGNhZjJCMkJCX1pxUHY1?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "It's last call for ordinary people trying to buy a house in San Francisco - Business Insider",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMiugFBVV95cUxPZlA2dUQyeWFBS1ZWNmVuQTdKNVhsdFBDZGFVeTBTSXlvM0NWVElLSzJqYmkxTjhQM3JvcEdiOS14RDVWcmpFZkZ5ZGNRaW5QVjhGcUtjaUpFekFoWktKc1kyeWNScWlxWk8tTjl0TmRxOWN6Y2pEbklzNjZzLWhZdjI0a3NVRUtySUFiREo4VU5yY3R3UnRfWUVzNXR6dnk4WDJDRG1RbFZnOUtIMGpjeUhmOTR2TmJxS3c?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Scientists Find Way to Supercharge Dangerous Computer ‘Worms’ With A.I. - The New York Times",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://arstechnica.com/space/2026/06/how-long-will-it-take-to-rebuild-blue-origins-launch-pad-we-asked-some-spacex-vets/": {
+        "file": "",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "How long will it take to rebuild Blue Origin's launch pad? We asked some SpaceX vets.",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZ2FIR3ZFcUJBbnZ2VXczbmtwcFA1cnlkVk1LVE1uUVVjVEhLYkE1SzNUZTZHaVlkcmJJY3gyTlYyRmd2eVFfMkk2a1ZpN1dQLTgwMjRhUVctNThpSXkwWEVHTEpPSUFnc3Z1MDM3U1h6UUtwRVZlNDIxYWpzUGZCSGdmeWZ3dG1DSDdhZzlaVmNJLUJBdDNxOWRURWY5TXNTTmMxMEdzWFhfTEc4SV9heTI1WC1MbEJUZ2lTRDZlSQ?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "AI's future should not be decided for workers. It should be built with them. - Cleveland.com",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMifkFVX3lxTFBzQXg5MUpuUXRsUGtXRDhSeTR6bkpUTWZlUVBiaHpwcXNfOTBtS2JmNGMxRnFldHdDY1VsZkNTdlc3RzZOWm9hLTUtRFdISDA5VXNBRWpJVzR4ak5RTnZYRmdJU055ZkFDc1dselQ4OWNzMTNyTkZqQ2V6bkloUQ?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Anthropic Funding Pushed Startup Investment To Near-Record Levels In May As Exit Market Reopened - Crunchbase News",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOc0l3RF82cjVhRmhsWlBQRDROWGxpWTFNaFZPM0RRazRROFlCSENrTGl3b3Z0VEl6bkNsVmxKc1RMNDBSb3I1d1UtYUZjbW0yaW5PQ2pGUktWY1FwUFJDTl9kV3lvVGoza2pfWVpEOVY4N19JSFQyb2FoeFlhbDRlS3FDb0ZkQk1PUy1seXV4UV82dlNxTDFlSWk0UjA5bDJYY0djMFU5c2FOcnprcGg0b1pYd1dHdHBGdk1iR3JGelJVdHE5SWE0SUQ2aWNfN1AxLWY0VF9DYkZDbGs?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Defense Tech Startup Funding Hits Record High as AI and Military Innovation Drive VC Investment Surge - fundsforNGOs News",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMiekFVX3lxTFBuNjJhWW92MVplVVJvdGZKVkl2aWstOXpyeU8xS3JpY1MzWW9qbktmU3drRTI5b0NwRlRYNGo2RXJLc1RtbnNtS19vNDJrWkNwV3JRVmVCUVFQMUJvZmQtQjRodU04b3o2ZGltTmVWLXZVVnJSVWVDTHpR?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "Ottawa wants a seat at the startup table - The Peak",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVHJDQ3VaNm9BQ2VzeVBxZ1B3VmhDMnFkUWRLMFUtTms2eE9VdE95Uy05d09aRm9MMnBncHFEbFk3RW1xRkNIOFdnUFJkVklXQUcwMjVhNFh6OTVhQVRzV1NZTWpsaFFXNVVQZm1Bb2dFY3ppQ1VuZU81M282SHl4YU03MmNjLWdOM01IRkVXQmtPZHNTUmp2VjFYRTdMWVllSXpCYjI2QmVGdDNTa0t2ZTJXcUQyQTU1?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "DeepSeek Eyes $7 Billion Debut Fundraise at Massive Valuation - Asia Business Outlook",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMibkFVX3lxTE5odXhVZTZxdldQX2VaVmJ5azlXbi10S3RqUHBzdFhoNXRfOTU0c0VKY1l6aWhKUEpLOVhJd3hDY1U0Zy1mNXdtdVp0cWpWNEhkUHBKczFvcDNXMEtWZ2dzN2Y4d1JEcnpyTnV6Y0JB?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "China is training a robot future — one folded shirt at a time - Rest of World",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMifkFVX3lxTE40SWJIVWllRzduUXZOYWhFVGtNUXYwSnRkMUs3b3dETHM1ODR5Nk1nQWV1QkdCcU45b2hiOTdMMlZab18zR1E4R1U2aEozbTlGazFzZnVyb1BQaXYwWjJweU90akhqdXNxUjcxNThnNjdIMnhWdnJYSWRuTl9Bdw?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "LA Tech professor lands $185k NSF award to build AI tools for real-world infrastructure risks - Technical.ly",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMijAJBVV95cUxOUFROQW1ZWmw0MVBPTE00Y1ZPUzF0QVVWY2U5NmhVdVVseElUUzVhbEEtSHQwa3lPZ1NkazhhZWJGV0dYSlNYa2xKX0JnWkJ2QW41Y0NlanBJaEhPejdzcjEzRkVMMFQxUDJIanl4YzBORDVVa3VPOTM5ckZ2NmhQMXJDZzVmdHhtSHdzWWJqbDBWdDFfX1pZUFkyU3JnUmgwYUt0OFNJRnRxaDB1WEpkVFdlUGhwYnB4M0NzMkxlNGljMmdhQmVvWTEwY3Q3OWFIeGhZdm1BbFJaZ2J6SFdranpyUk9UUXl5LVhqb2xCUFFZLS1mWXlWUnZpV3NJWHpIcXFSTWJ2SDY1Y0It?oc=5": {
+        "file": "",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_headline": "79% of Enterprises Are Confident They Can Scale AI Without Breaking Governance. Only 29% Can Even Find the Data. - GlobeNewswire",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://arstechnica.com/tech-policy/2026/05/fbi-easily-nabs-man-selling-sexy-deepfakes-who-used-his-own-photo-in-profile/": {
+        "file": "data/2026-06-03/19.29-01.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-03",
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/00_Title-Page-scaled-1-1152x648.png",
+        "thumb_generated": true,
+        "thumb_headline": "FBI tangkap kreator deepfake porno yang pasang foto sendiri sebagai avatar profil.",
+        "thumb_subheadline": null
+      },
+      "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPOTRlWVlGYlR4Q3B2QTBsZWhpZFF0RE5Wbml1MVZXSkJERGU5YnB1VXRkdVpibDZSdW84TVhtY1F3MWtIdndmYy00QzgtRFhRTjNtTk8tQ1BpSGhkWWhBNHpvRXQ4ZWdLODY4RTRjamw3SV9XdW1qV0o1SUtybGxjX1JnbTRxakNxV0Rr?oc=5": {
+        "file": "data/2026-06-03/01.md",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_image": "",
+        "thumb_generated": false,
+        "thumb_headline": "Penggunaan AI di dunia pendidikan menuai kontroversi tajam setelah sebuah laporan mengungkapkan dampaknya terhadap penurunan kemampuan berpikir kritis siswa.",
+        "thumb_subheadline": null
+      },
+      "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdFBxTmNqS0xqVXZSbVpqTFc2T1RLVFFtLXN2azNSb1d4N2lJYUVrdEZYdklTMjhocXRJX1BMU0JDQ2pFSzFKU0RWT1Zra1QzaHp4a3VkeEJvSThOQzVaT09LUzhMcHJieDQ5aXkxcklCaU11U2lWcEVoajFxWlQ0ag?oc=5": {
+        "file": "data/2026-06-03/02.md",
+        "source": "news.google.com",
+        "first_seen": "2026-06-03",
+        "thumb_image": "",
+        "thumb_generated": false,
+        "thumb_headline": "Laporan terbaru Hoover Institution memperingatkan ancaman serius AI terhadap keamanan global dan memicu perlombaan senjata baru antar negara besar.",
+        "thumb_subheadline": null
+      },
+      "https://bunghatta.ac.id/news/international-community-service-collaboration-bahas-transformasi-komunikasi-digital-berbasis-ai.html": {
+        "file": "data/2026-06-03/22.01-01.md",
+        "source": "bunghatta.ac.id",
+        "first_seen": "2026-06-03",
+        "thumb_image": "https://picsum.photos/800/400",
+        "thumb_generated": true,
+        "thumb_headline": "Artikel tentang international community service collaboration bahas transformasi komunikasi digital berbasis ai",
+        "thumb_subheadline": null
+      },
+      "https://www.hukumonline.com/berita/a/hukumonline-bagikan-akses-ai-gratis-pada-10-lembaga-di-program-ailex-for-good-lt665db7203b9b4": {
+        "file": "data/2026-06-03/22.01-02.md",
+        "source": "www.hukumonline.com",
+        "first_seen": "2026-06-03",
+        "thumb_image": "https://picsum.photos/800/400",
+        "thumb_generated": true,
+        "thumb_headline": "Artikel tentang hukumonline bagikan akses ai gratis pada 10 lembaga di program ailex for good",
+        "thumb_subheadline": null
+      },
+      "https://techcrunch.com/2026/06/03/gitlab-cuts-14-of-staff-as-it-scales-its-platform-to-serve-ai-workloads/": {
+        "file": "data/2026-06-03/22.00-01.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-03",
+        "thumb_image": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1000",
+        "thumb_generated": true,
+        "thumb_headline": "GitLab mem-PHK 14% karyawannya untuk memfokuskan sumber daya pada pengembangan platform agar mampu melayani beban kerja AI",
+        "thumb_subheadline": null
+      },
+      "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWjQ5YXVUdllqYk1xMDRFVmM5bkpHa2FtdmJuYnZQTjZ4b2U5VnZfbmhaV3lzUzgyLTNsSVl1cFZJMmV4OWt6Ync5NGVDcFRtQ0FoaUM2RF90UEYzU0tSYTE3cXZDclhxa0xZUi1GWkxGdG9RdXFFTlExa2pDMHNxckdMTVdpRFZ4RmZBOU1WODdLZjg0TUM5RmJLeVo1a3ZkeW02Z1c4dzRxNVV0bS1wb2owTQ?oc=5": {
+        "file": "data/2026-06-04/00.00-01.md",
+        "source": "Bloomberg.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Alphabet berencana menggalang dana segar sebesar 80 miliar dolar melalui ekuitas untuk membangun infrastruktur AI modern.",
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBGOUR1ZWt4cjBrc2hua05UUThBNFkzRVFyYUZ5NU9uRzFjQjlJWmZBX2ZESk43eUNzSURoN041QUhSWGM4ZXBLRVhKVmV6UXlWcUkyTE9UVUVzdw?oc=5": {
+        "file": "data/2026-06-04/00.00-02.md",
+        "source": "BBC",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Nvidia resmi meluncurkan chip AI terbaru yang dirancang khusus untuk membawa teknologi AI Agent langsung ke personal computer Anda.",
+        "thumb_image": "",
+        "thumb_generated": false
       }
     },
     "source_headlines": {
@@ -3012,7 +3235,8 @@
         "trump doe restarts energy rebate program dumb conditions",
         "impulse space raises 500 million orbital maneuvering race heats",
         "cats prefer silver vine catnip may highlights",
-        "moderna gets 50 million develop mrna ebola vaccine against bundibugyo"
+        "moderna gets 50 million develop mrna ebola vaccine against bundibugyo",
+        "long take rebuild blue origin launch pad asked spacex vets"
       ],
       "www.businessinsider.com": [
         "anthropic sekarang startup ai paling berharga di dunia openai tumbang"
@@ -3363,7 +3587,23 @@
         "google keeps finding new ways crash stock market ai party business insider",
         "robotic art ai driven spirituality empower human connection sónar 2026 designboom",
         "jensen huang praises meta says nobody uses ai better meta stock rebounds premarket yahoo finance",
-        "introducing ibm granite family models ibm research"
+        "introducing ibm granite family models ibm research",
+        "trump orders federal oversight new ai models yahoo",
+        "ai replicate human made art never replace vox com",
+        "autonomous ai powered killer drones take morality onboard guardian",
+        "digi power commits 35m nvidia ai chips 40mw alabama campus stock titan",
+        "stock market today dow 500 nasdaq futures mixed ai fervor meets us iran uncertainty yahoo finance",
+        "nvidia ceo pitches insane ai returns billionaire families bloomberg com",
+        "last call ordinary people trying buy house san francisco business insider",
+        "scientists find way supercharge dangerous computer worms new york times",
+        "ai future should decided workers should built cleveland com",
+        "anthropic funding pushed startup investment near record levels may exit market reopened crunchbase news",
+        "defense tech startup funding hits record high ai military innovation drive vc investment surge fundsforngos news",
+        "ottawa wants seat startup table peak",
+        "deepseek eyes billion debut fundraise massive valuation asia business outlook",
+        "china training robot future one folded shirt time rest world",
+        "la tech professor lands 185k nsf award build ai tools real world infrastructure risks technical ly",
+        "79 enterprises confident scale ai without breaking governance 29 even find data globenewswire"
       ],
       "bloomberg.com": [
         "india it stocks soar as nvidia ceo huang calms ai disruption fears",
@@ -3371,6 +3611,12 @@
       ],
       "cnbc.com": [
         "palo alto networks tops earnings as ai fuels cybersecurity urgency"
+      ],
+      "Bloomberg.com": [
+        "alphabet to raise 80 billion in equity capital for ai spending"
+      ],
+      "BBC": [
+        "nvidia announces new ai chip for personal computers"
       ]
     },
     "cross_topics": [
@@ -4533,9 +4779,69 @@
         "who": "IBM",
         "what": "Granite 4.1 family of models - IBM Research",
         "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Trump",
+        "what": "orders federal oversight of new AI models - Yahoo",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Nvidia",
+        "what": "AI chips and 40MW Alabama campus - Stock Titan",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Nvidia",
+        "what": "CEO Pitches ‘Insane’ AI Returns to Billionaire Families - Bloomberg.com",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Cisco",
+        "what": "Business Insider",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "SpaceX",
+        "what": "vets.",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Anthropic",
+        "what": "Funding Pushed Startup Investment To Near-Record Levels In May As Exit Market Re",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "DeepSeek",
+        "what": "Eyes $7 Billion Debut Fundraise at Massive Valuation - Asia Business Outlook",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "China",
+        "what": "is training a robot future — one folded shirt at a time - Rest of World",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Siswa",
+        "what": "pendidikan",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Hoover Institution",
+        "what": "keamanan global",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "alphabet",
+        "what": "to raise 80 billion in equity capital for ai spend",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "nvidia",
+        "what": "announces new ai chip for personal computers",
+        "first_seen": "2026-06-04"
       }
     ],
-    "total": 308
+    "total": 333
   },
   "queue": {
     "pending": [],
@@ -4546,5 +4852,19 @@
   "schedule": {
     "last_post_at": {},
     "posts_today": {}
+  },
+  "articles": {
+    "https://news.google.com/rss/articles/CBMingFBVV95cUxNdUt1ODF6Sl9NcUZpam9IajlWeDhtbVJQVmFnUHA3RmhQOTZNNWw2WnBNYTJZa19xdkVJcjRfc3dsUUplN20zdENsRzN3VWVQamtEeC1yNTRweUQ5NExuejlJZEVSOGI5T1JvWU4yRmpMbmJrWk1NYzc2OFJfY3FiSjhrdGNzc1N5RmFIWXp5aG5tVFpPd2plYVcwZjFWQQ?oc=5": {
+      "title": "Nvidia Janjikan Keuntungan AI yang Fantastis untuk Para Miliarder",
+      "file": "/root/ai-news-daily/data/2026-06-03/21.00-01.md",
+      "date": "2026-06-03",
+      "thumb_headline": "CEO Nvidia menjanjikan keuntungan investasi AI yang sangat besar kepada para investor miliarder",
+      "thumb_generated": false
+    }
+  },
+  "source_headlines": {
+    "news.google.com": [
+      "Nvidia CEO Pitches \\u2018Insane\\u2019 AI Returns to Billionaire Families - Yahoo Finance"
+    ]
   }
 }
