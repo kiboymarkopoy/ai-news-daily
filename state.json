@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-04T01:33:00+07:00",
-    "total_articles": 338
+    "updated_at": "2026-06-04T01:59:50.412783+07:00",
+    "total_articles": 343
   },
   "dedup": {
     "articles": {
@@ -3067,6 +3067,51 @@
         "thumb_subheadline": null,
         "thumb_image": "",
         "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMic0FVX3lxTE1Ec3BQOW5rYW03MjlGQXNZQzJTVmFmYzA0S0gteEpkR3lLaktsbzRMV3JRMFR0RDY4MXE3Y3M5NFgxMnRYNFVwQml6bUo4RmUwSmhIR09NV0FNTVg0UktKbFEwRmlDWXBsMElncUdoVWxtQm8?oc=5": {
+        "file": "data/2026-06-04/01.57-01.md",
+        "source": "axios.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "CEO IBM Dukung Kebijakan Eksekutif AI yang Dipersempit oleh Trump",
+        "thumb_subheadline": null,
+        "thumb_image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+        "thumb_generated": true
+      },
+      "https://news.google.com/rss/articles/CBMifEFVX3lxTE15SnBoSGtqTUVSUDlHVzY3VXN5ZFFCUl8wQUUza0xpak11Q2ZxdVRfRG5XU0VKOWVlZlpiLUtOeW5wZ2d5Yk9oV1J2aUFQYkp5enRrS1FRM0k5STQ0T2hpY1NqckU3VDd6RUJZczlSR1VrYlZNSy1GaEhVWGc?oc=5": {
+        "file": "data/2026-06-04/01.57-02.md",
+        "source": "businessinsider.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Uber Lakukan PHK pada Hampir Seperempat Staf HR dan Perekrutan, Bantah Terkait AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+        "thumb_generated": true
+      },
+      "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQd0hrVlBOWGFsaE9tcXhJY1VQRk5ydmJSSUNqZlRuVVZ1RkxMRWFXOEhpNHBkSnFjWnJTNVlCWVRjZE41UUxPSXpZajZhM2pXZjlPNjFUZHFmTmtjamZWUXhzc2UtZkg5d1RaLURaRWhsbG5nb0FaMHN0SGlZUzFQQ2JSc1J6MXA1VGRTU2tOQlZ3bmhHX3R0UmYwMUdXUFYyVU1XN1J0SlU?oc=5": {
+        "file": "data/2026-06-04/01.57-03.md",
+        "source": "usatoday.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Alat Desain AI untuk Membantu Anda Menata Ulang Interior Rumah",
+        "thumb_subheadline": null,
+        "thumb_image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+        "thumb_generated": true
+      },
+      "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZjRSNVNnblo3eXVYSER5TTJVbVcyMERsTVF3M28wSWhsS042V3I0N1ZwTzA4QldXeUxaV0dXVEZsVG10b3FxRXg1bGJlZzRoQ1VXdFRFVDFKaTN0ZkxqbmhIcDhHR1IxSThldW1oSDRpOElNVnAwV2x2OUR3Nm1PZnl1Wl9DVXd1bF9VS2lDblZKQ2x2eTNEYldNSWRtdWlLWTRhQmVLNDhFMWRnOUN6QjJ3VllLdW9aWjllUG8yd04?oc=5": {
+        "file": "data/2026-06-04/01.57-04.md",
+        "source": "politico.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Anggota DPR dari Partai Demokrat Usulkan RUU untuk Bantu Badan Pemerintah Buat Aturan AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+        "thumb_generated": true
+      },
+      "https://news.google.com/rss/articles/CBMiekFVX3lxTE5YdU00c0otWExhYndHcHNFOGE5bWJoenVkc3NjXzE5VlZyS1llMS03alVRRWFOS0R4MlJWSGJMdjI4UTJNZ2RMZDM0ODNFRUpxd0Q5R20zaXFWMlpfaGwxdjQycjNHVmV6eEJJR0Y3UWF1bnpidTZzVnZB?oc=5": {
+        "file": "data/2026-06-04/01.57-05.md",
+        "source": "theatlantic.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "AI Telah Merusak Pasar Tenaga Kerja",
+        "thumb_subheadline": null,
+        "thumb_image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+        "thumb_generated": true
       }
     },
     "source_headlines": {
@@ -3670,7 +3715,20 @@
         "fundamentally new threat researchers develop new ai powered worm might unstoppable"
       ],
       "politico.com": [
-        "negotiators aiming unveil draft bipartisan house ai bill week end"
+        "negotiators aiming unveil draft bipartisan house ai bill week end",
+        "house dem proposes bill help agencies create ai rules"
+      ],
+      "axios.com": [
+        "exclusive ibm ceo backs trump narrowed ai executive order"
+      ],
+      "businessinsider.com": [
+        "uber lays almost quarter hr recruitment staff says nothing ai"
+      ],
+      "usatoday.com": [
+        "ai design tools help reimagine home interior"
+      ],
+      "theatlantic.com": [
+        "ai ruined job market"
       ]
     },
     "cross_topics": [
@@ -4902,6 +4960,11 @@
       {
         "who": "Perplexity",
         "what": "CEO tells CNBC one metric will determine who wins the AI race",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Trump",
+        "what": "s narrowed AI executive order",
         "first_seen": "2026-06-04"
       }
     ],

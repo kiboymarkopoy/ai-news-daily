@@ -134,7 +134,10 @@ def cmd_pipeline(args: argparse.Namespace) -> None:
     """Run the full pipeline or cron stage."""
     if args.cron:
         from kiboy.pipeline import run_cron_stage
-        summary = run_cron_stage(max_articles=args.max_articles)
+        summary = run_cron_stage(
+            max_articles=args.max_articles,
+            enrich=not args.no_enrich,
+        )
         print(summary)
         return
 
@@ -381,6 +384,7 @@ def main() -> None:
     sp_pipe.add_argument("--skip-thumbnails", action="store_true", help="Skip thumbnail generation")
     sp_pipe.add_argument("--cron", action="store_true", help="Cron mode: fetch+dedup, output JSON for LLM")
     sp_pipe.add_argument("--max-articles", type=int, default=5, help="Max articles for cron mode (default: 5)")
+    sp_pipe.add_argument("--no-enrich", action="store_true", help="Skip OG image scraping (cron mode only)")
     sp_pipe.set_defaults(func=cmd_pipeline)
 
     # register

@@ -173,15 +173,16 @@ def stage_thumbnails(
 _CRON_OUTPUT = Path("/tmp/kiboy_new_articles.json")
 
 
-def run_cron_stage(max_articles: int = 5) -> str:
+def run_cron_stage(max_articles: int = 5, enrich: bool = True) -> str:
     """Execute deterministic fetch + dedup for cron; output JSON for LLM.
 
     This function performs the following:
 
     1. Fetch all RSS feeds deterministically (Python ``urllib``, no LLM).
     2. Run 3-layer dedup against ``state.json``.
-    3. Save verified new articles to ``/tmp/kiboy_new_articles.json``.
-    4. Print a summary to stdout for the LLM to read and act on.
+    3. (Optional) Enrich articles without images by scraping og:image.
+    4. Save verified new articles to ``/tmp/kiboy_new_articles.json``.
+    5. Print a summary to stdout for the LLM to read and act on.
 
     The LLM is expected to:
     - Read ``/tmp/kiboy_new_articles.json``
@@ -194,6 +195,8 @@ def run_cron_stage(max_articles: int = 5) -> str:
     Args:
         max_articles: Maximum number of new articles to pass to LLM
             (default 5, LLM typically produces 2-5 articles per run).
+        enrich: If ``True`` (default), scrape og:image for articles
+            without an image URL.
 
     Returns:
         Human-readable summary string for the LLM to include in its report.
@@ -221,6 +224,13 @@ def run_cron_stage(max_articles: int = 5) -> str:
 
     # Limit to max_articles
     new_articles = new_articles[:max_articles]
+
+    # Stage 2.5: Enrich articles without images via og:image scraping
+    enriched_count = 0
+    if enrich:
+        from kiboy.imagescraper import enrich_articles
+        new_articles = enrich_articles(new_articles, timeout=5, max_scrapes=max_articles)
+        enriched_count = sum(1 for a in new_articles if a.get("image_url"))
 
     # Build clean JSON payload for LLM
     payload: list[dict] = []
@@ -250,6 +260,7 @@ def run_cron_stage(max_articles: int = 5) -> str:
     print(f"\n  Fetched:    {fetched} articles")
     print(f"  Duplicates: {duplicates} skipped")
     print(f"  NEW:        {len(payload)} articles → /tmp/kiboy_new_articles.json")
+    print(f"  Enriched:   {enriched_count} images (OG scrape)")
     print(f"  Date/Time:  {date_str} / {time_str}")
 
     for art in payload:
