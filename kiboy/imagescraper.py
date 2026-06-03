@@ -1,35 +1,52 @@
-"""Extract og:image from article URLs via HTTP scraping.
-
-Uses only stdlib (urllib + regex). No BeautifulSoup dependency.
+"""Extract og:image from article URLs via HTTP scraping + Playwright for GN.
 
 Supports:
 
 - Standard RSS feeds via ``<media:content>`` / ``<enclosure>`` tags
-  (ArsTechnica, TechCrunch, VentureBeat).
+  (ArsTechnica, TechCrunch, VentureBeat, The Verge).
 - OG image meta tag from direct article URLs.
 - ``twitter:image`` fallback.
-- First ``<img>`` fallback for feeds that embed images in description
-  (The Verge, Wired).
-
-For articles where no image is available, the enrichment step leaves
-``image_url`` empty — the thumbnail generator will use a gradient
-fallback background.
+- Playwright-based Google News redirect resolution (GN -> real article URL
+  -> OG image scrape).
+- First ``<img>`` fallback for feeds that embed images in description.
 
 Usage::
 
     from kiboy.imagescraper import scrape_og_image, enrich_articles
 
     img = scrape_og_image("https://techcrunch.com/...")
+    article = resolve_and_enrich(article)
     articles = enrich_articles(articles, max_scrapes=5)
 """
 
 from __future__ import annotations
 
+import asyncio
+import json
+import os
 import re
 import ssl
+import time
 import urllib.parse
 import urllib.request
 from typing import Optional
+
+# ── Playwright (lazy-loaded) ────────────────────────────────────────────────
+
+_PLAYWRIGHT_AVAILABLE: bool | None = None
+
+
+def _check_playwright() -> bool:
+    global _PLAYWRIGHT_AVAILABLE
+    if _PLAYWRIGHT_AVAILABLE is not None:
+        return _PLAYWRIGHT_AVAILABLE
+    try:
+        import playwright  # noqa: F401
+        _PLAYWRIGHT_AVAILABLE = True
+    except ImportError:
+        _PLAYWRIGHT_AVAILABLE = False
+    return _PLAYWRIGHT_AVAILABLE
+
 
 _USER_AGENT = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
@@ -44,6 +61,172 @@ _BLOCKED_DOMAINS: set[str] = {
     "barrons.com",
     "economist.com",
 }
+
+# Cache for resolved GN URLs: {gn_url: (real_url, og_image, timestamp)}
+_RESOLVE_CACHE: dict[str, tuple[str, str, float]] = {}
+_RESOLVE_CACHE_PATH = "/tmp/kiboy_gn_resolve_cache.json"
+_CACHE_TTL = 86400  # 24 hours
+
+
+def _load_cache():
+    global _RESOLVE_CACHE
+    try:
+        if os.path.exists(_RESOLVE_CACHE_PATH):
+            data = json.load(open(_RESOLVE_CACHE_PATH))
+            now = time.time()
+            _RESOLVE_CACHE = {
+                k: (v[0], v[1], v[2])
+                for k, v in data.items()
+                if now - v[2] < _CACHE_TTL
+            }
+    except Exception:
+        _RESOLVE_CACHE = {}
+
+
+def _save_cache():
+    try:
+        with open(_RESOLVE_CACHE_PATH, "w") as f:
+            serializable = {
+                k: [v[0], v[1], v[2]]
+                for k, v in _RESOLVE_CACHE.items()
+            }
+            json.dump(serializable, f)
+    except Exception:
+        pass
+
+
+_load_cache()
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+#  GN URL Resolution (Playwright)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def is_gn_url(url: str) -> bool:
+    """Check if a URL is a Google News CBMi redirect."""
+    return bool(url and "news.google.com/rss/articles/CBM" in url)
+
+
+def resolve_gn_url(gn_url: str, timeout: int = 10) -> tuple[str, str]:
+    """Resolve a GN redirect URL to the real article URL + OG image.
+
+    Uses Playwright (headless Chromium) to navigate the GN page, wait for
+    the client-side redirect, and return the final article URL.
+
+    Returns:
+        ``(real_url, og_image_url)`` — ``og_image_url`` may be empty if
+        the article page wasn't loaded in time.
+    """
+    # Check cache first
+    if gn_url in _RESOLVE_CACHE:
+        cached = _RESOLVE_CACHE[gn_url]
+        if time.time() - cached[2] < _CACHE_TTL:
+            return cached[0], cached[1]
+
+    if not _check_playwright():
+        print(f"  ⚠️  Playwright not available — can't resolve GN URL")
+        return gn_url, ""
+
+    try:
+        from playwright.async_api import async_playwright
+
+        async def _resolve():
+            async with async_playwright() as p:
+                browser = await p.chromium.launch(
+                    headless=True,
+                    args=[
+                        "--no-sandbox",
+                        "--disable-setuid-sandbox",
+                        "--disable-dev-shm-usage",
+                    ],
+                )
+                ctx = await browser.new_context(
+                    user_agent=_USER_AGENT,
+                    viewport={"width": 1280, "height": 720},
+                )
+                page = await ctx.new_page()
+
+                try:
+                    # Step 1: Navigate to GN URL
+                    await page.goto(gn_url, timeout=timeout * 1000, wait_until="networkidle")
+                    await asyncio.sleep(1.5)
+                    real_url = page.url
+                except Exception:
+                    real_url = gn_url
+
+                # Step 2: If resolved to a real article URL, scrape OG image
+                og_image = ""
+                if real_url != gn_url and not any(
+                    d in real_url for d in ["news.google.com", "google.com/"]
+                ):
+                    # Quick check: skip known blocked domains
+                    domain = urllib.parse.urlparse(real_url).netloc.lower()
+                    domain = domain.removeprefix("www.")
+                    if domain not in _BLOCKED_DOMAINS:
+                        try:
+                            await page.goto(real_url, timeout=8000, wait_until="domcontentloaded")
+                            content = await page.content()
+                            og_image = _extract_og_from_html(content, real_url)
+                        except Exception:
+                            pass
+
+                await browser.close()
+                return real_url, og_image
+
+        real_url, og_image = asyncio.run(_resolve())
+
+    except Exception as e:
+        print(f"  ⚠️  Playwright error: {e}")
+        real_url = gn_url
+        og_image = ""
+
+    # Cache result
+    now = time.time()
+    _RESOLVE_CACHE[gn_url] = (real_url, og_image, now)
+    _save_cache()
+
+    return real_url, og_image
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+#  OG Image Scraping (stdlib, no browser)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def _extract_og_from_html(html: str, base_url: str) -> str:
+    """Extract OG image URL from HTML content."""
+    # Pattern 1: <meta property="og:image" content="URL">
+    match = re.search(
+        r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']',
+        html, re.IGNORECASE,
+    )
+    if match:
+        return _resolve_url(match.group(1), base_url)
+
+    # Pattern 2: Reverse order (content before property)
+    match = re.search(
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']',
+        html, re.IGNORECASE,
+    )
+    if match:
+        return _resolve_url(match.group(1), base_url)
+
+    # Fallback: twitter:image
+    match = re.search(
+        r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\']',
+        html, re.IGNORECASE,
+    )
+    if match:
+        return _resolve_url(match.group(1), base_url)
+
+    # Last resort: first <img>
+    match = re.search(
+        r'<img[^>]+src=["\']([^"\']+)["\']',
+        html, re.IGNORECASE,
+    )
+    if match:
+        return _resolve_url(match.group(1), base_url)
+
+    return ""
 
 
 def _make_request(url: str, timeout: int = 5) -> Optional[str]:
@@ -74,9 +257,7 @@ def scrape_og_image(article_url: str, timeout: int = 5) -> str:
     """Visit an article URL and extract its ``og:image`` meta tag.
 
     Args:
-        article_url: Any article URL (must be a direct URL —
-            Google News redirects only reach an intermediate JS page,
-            which has no OG meta data).
+        article_url: Any article URL (direct URL, not GN redirect).
         timeout: HTTP timeout in seconds (default 5).
 
     Returns:
@@ -95,53 +276,7 @@ def scrape_og_image(article_url: str, timeout: int = 5) -> str:
     if not html:
         return ""
 
-    # ------------------------------------------------------------------
-    # Pattern 1: <meta property="og:image" content="URL">
-    #   (property attribute comes first — most common)
-    # ------------------------------------------------------------------
-    match = re.search(
-        r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']',
-        html,
-        re.IGNORECASE,
-    )
-    if match:
-        return _resolve_url(match.group(1), article_url)
-
-    # ------------------------------------------------------------------
-    # Pattern 2: <meta content="URL" ... property="og:image">
-    #   (content attribute comes first — rare but valid)
-    # ------------------------------------------------------------------
-    match = re.search(
-        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']',
-        html,
-        re.IGNORECASE,
-    )
-    if match:
-        return _resolve_url(match.group(1), article_url)
-
-    # ------------------------------------------------------------------
-    # Fallback: twitter:image
-    # ------------------------------------------------------------------
-    match = re.search(
-        r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\']',
-        html,
-        re.IGNORECASE,
-    )
-    if match:
-        return _resolve_url(match.group(1), article_url)
-
-    # ------------------------------------------------------------------
-    # Last resort: first <img> (catches The Verge, MIT Tech Review, etc.)
-    # ------------------------------------------------------------------
-    match = re.search(
-        r'<img[^>]+src=["\']([^"\']+)["\']',
-        html,
-        re.IGNORECASE,
-    )
-    if match:
-        return _resolve_url(match.group(1), article_url)
-
-    return ""
+    return _extract_og_from_html(html, article_url)
 
 
 def _resolve_url(image_url: str, base_url: str) -> str:
@@ -156,47 +291,142 @@ def _resolve_url(image_url: str, base_url: str) -> str:
     return urllib.parse.urljoin(base_url, image_url)
 
 
+def validate_image_url(image_url: str) -> bool:
+    """Check if an image URL is actually downloadable and usable.
+
+    Returns True if the image appears valid (not SVG, not 404).
+    """
+    if not image_url:
+        return False
+    if image_url.lower().endswith(".svg"):
+        return False
+    try:
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+        req = urllib.request.Request(
+            image_url,
+            headers={"User-Agent": _USER_AGENT, "Accept": "image/*"},
+        )
+        with urllib.request.urlopen(req, timeout=5, context=ctx) as resp:
+            content_type = resp.headers.get("Content-Type", "")
+            if "svg" in content_type:
+                return False
+            # Accept any image type or octet-stream
+            return bool(
+                "image" in content_type
+                or "octet-stream" in content_type
+                or not content_type
+            )
+    except Exception:
+        return False
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+#  Enrichment pipeline
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def resolve_and_enrich(
+    article: dict,
+    timeout: int = 10,
+) -> dict:
+    """Resolve GN URL + enrich a single article dict with image + real URL.
+
+    Modifies the dict **in place** and also returns it for chaining.
+
+    If the article URL is a GN redirect, attempts to resolve it to
+    the real article URL via Playwright.  Also scrapes ``og:image``.
+
+    Sets these keys on the dict:
+        ``image_url`` — OG image URL (or empty if not found/valid)
+        ``resolved_url`` — real article URL (or original if direct)
+    """
+    url = article.get("url", "")
+
+    # If already has a VALID image from RSS feed, skip
+    if article.get("image_url") and not is_gn_url(url):
+        if validate_image_url(article["image_url"]):
+            article["resolved_url"] = url
+            return article
+        else:
+            # RSS-provided image is invalid — try to find a better one
+            article["image_url"] = ""
+
+    # Case 1: Direct URL — just scrape OG image
+    if not is_gn_url(url):
+        if not article.get("image_url"):
+            og = scrape_og_image(url, timeout=timeout)
+            if og and validate_image_url(og):
+                article["image_url"] = og
+        article["resolved_url"] = url
+        return article
+
+    # Case 2: GN URL — resolve via Playwright
+    print(f"  🌐 Resolving GN URL: {url[:60]}...")
+    real_url, og_image = resolve_gn_url(url, timeout=timeout)
+
+    if real_url and real_url != url:
+        print(f"     → {real_url[:80]}")
+        article["url"] = real_url  # Replace GN URL with real URL
+        article["resolved_url"] = real_url
+    else:
+        article["resolved_url"] = url
+
+    # Validate OG image before accepting
+    if og_image and validate_image_url(og_image):
+        article["image_url"] = og_image
+        print(f"     🖼️  OG image found & validated")
+
+    return article
+
+
 def enrich_articles(
     articles: list[dict],
-    timeout: int = 5,
+    timeout: int = 8,
     max_scrapes: int = 5,
 ) -> list[dict]:
-    """Enrich article dicts with ``og:image`` where ``image_url`` is missing.
+    """Enrich article dicts with OG images and real URLs.
 
-    Scrapes each article's URL for its OG image.  Articles without an
-    image (e.g. Google News) keep an empty ``image_url`` — the thumbnail
-    generator will fall back to a gradient background.
+    Processing order:
+    1. First pass: direct URLs (stdlib, fast) — up to ``max_scrapes``
+    2. Second pass: GN URLs (Playwright, slower) — up to 3
 
     Modifies the list **in place** and also returns it for chaining.
 
     Args:
         articles: List of article dicts from the pipeline dedup stage.
-            Each dict must have ``url`` and ``image_url`` keys.
-        timeout: HTTP timeout per scrape (default 5s).
-        max_scrapes: Max URLs to scrape (rate-limit safeguard).
+        timeout: Timeout per URL resolution/scrape (default 8s).
+        max_scrapes: Max URLs to process (rate-limit safeguard).
 
     Returns:
-        The same list with ``image_url`` populated where possible.
+        The same list with ``image_url`` and ``resolved_url`` populated.
     """
-    scraped = 0
+    processed = 0
 
+    # Phase 1: Direct URLs (fast, stdlib-based)
     for article in articles:
-        if scraped >= max_scrapes:
+        if processed >= max_scrapes:
             break
-
-        # Skip if already has an image from RSS feed
-        if article.get("image_url"):
-            continue
-
-        # Skip Google News redirect URLs — they resolve to a JS page
-        # without OG metadata
         url = article.get("url", "")
-        if not url or "news.google.com" in url:
+        if not url or is_gn_url(url):
             continue
+        article["resolved_url"] = url
+        article.setdefault("image_url", "")
+        if not article["image_url"]:
+            og = scrape_og_image(url, timeout=min(timeout, 5))
+            if og:
+                article["image_url"] = og
+            processed += 1
 
-        og_image = scrape_og_image(url, timeout)
-        if og_image:
-            article["image_url"] = og_image
-            scraped += 1
+    # Phase 2: GN URLs (slower, Playwright-based)
+    gn_count = 0
+    for article in articles:
+        if gn_count >= 3:  # Max 3 GN resolutions per run
+            break
+        url = article.get("url", "")
+        if not is_gn_url(url):
+            continue
+        resolve_and_enrich(article, timeout=timeout)
+        gn_count += 1
 
     return articles

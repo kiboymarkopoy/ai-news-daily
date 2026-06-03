@@ -222,18 +222,32 @@ def run_cron_stage(max_articles: int = 5, enrich: bool = True) -> str:
     new_articles = stage_dedup(raw_articles, config, state)
     duplicates = fetched - len(new_articles)
 
-    # Stage 2.5: Enrich articles without images via og:image scraping
+    # Stage 2.5: Enrich articles without images via OG image scraping
     # Run enrichment on a larger pool (3x) so we can pick the best
     enriched_count = 0
     if enrich:
         from kiboy.imagescraper import enrich_articles
         pool = new_articles[:max_articles * 3]
-        pool = enrich_articles(pool, timeout=5, max_scrapes=max_articles)
-        # Re-sort: articles WITH images first, then the rest
+        pool = enrich_articles(pool, timeout=8, max_scrapes=max_articles)
+        # Sort: articles WITH images first
         pool.sort(key=lambda a: 0 if a.get("image_url") else 1)
-        new_articles = pool[:max_articles]
+
+        # CRITICAL: Hanya pilih artikel yang PUNYA GAMBAR (no gradient fallback)
+        new_articles = [a for a in pool if a.get("image_url")][:max_articles]
+
+        if len(new_articles) < max_articles:
+            print(f"  ⚠️  Only {len(new_articles)}/{max_articles} articles have images.")
+            print(f"  📸 Available pool: {len(pool)} articles ({sum(1 for a in pool if a.get('image_url'))} with images)")
+
+            # If too few, also include articles with GN-resolved URLs (might have images at runtime)
+            remaining = [a for a in pool if not a.get("image_url") and a.get("resolved_url")]
+            if remaining and len(new_articles) > 0:
+                # Still prioritize quality over quantity
+                pass
+
         enriched_count = sum(1 for a in new_articles if a.get("image_url"))
     else:
+        # Without enrichment, still take top N
         new_articles = new_articles[:max_articles]
 
     # Build clean JSON payload for LLM
