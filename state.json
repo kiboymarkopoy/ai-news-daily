@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-03T11:02:47.804419+07:00",
-    "total_articles": 402
+    "updated_at": "2026-06-03T14:02:35.182544+07:00",
+    "total_articles": 440
   },
   "dedup": {
     "articles": {
@@ -2470,7 +2470,8 @@
         ],
         "thumb_highlight": 2,
         "thumb_image": "https://media.wired.com/photos/6a1db04538f4e0fcb2641f17/191:100/w_1280,c_limit/Anthropic-Goes-Public-Business-2274306161.jpg",
-        "thumb_generated": true
+        "thumb_generated": true,
+        "thumb_headline": ""
       },
       "https://www.bbc.com/news/articles/cj4p7gyvp52o": {
         "file": "data/2026-06-03/04.00-02.md",
@@ -2483,7 +2484,8 @@
         ],
         "thumb_highlight": 2,
         "thumb_image": "https://ichef.bbci.co.uk/news/1024/branded_news/823e/live/9bf6bfd0-5e9a-11f1-95ff-f5086c3b3d40.jpg",
-        "thumb_generated": true
+        "thumb_generated": true,
+        "thumb_headline": ""
       },
       "https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/": {
         "file": "data/2026-06-03/04.00-03.md",
@@ -2496,7 +2498,8 @@
         ],
         "thumb_highlight": 2,
         "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/03/claude-app-centered-in-ai-apps-GettyImages-2167861906.jpg",
-        "thumb_generated": true
+        "thumb_generated": true,
+        "thumb_headline": ""
       },
       "https://www.bbc.com/news/articles/c98rzr72dpyo": {
         "file": "data/2026-06-03/04.00-04.md",
@@ -2509,7 +2512,8 @@
         ],
         "thumb_highlight": 2,
         "thumb_image": "https://ichef.bbci.co.uk/news/1024/branded_news/04d6/live/0af82d50-5e74-11f1-9bb7-93b44936b5cf.jpg",
-        "thumb_generated": true
+        "thumb_generated": true,
+        "thumb_headline": ""
       },
       "https://arstechnica.com/gadgets/2026/06/microsofts-project-solara-is-an-android-os-designed-for-agents-instead-of-apps/": {
         "file": "data/2026-06-03/05.06-01.md",
@@ -2550,7 +2554,8 @@
         ],
         "thumb_highlight": 0,
         "thumb_image": "https://media.wired.com/photos/6a1db2153696beebf95db3a0/191:100/w_1280,c_limit/Opal_Tadpole_01.jpg",
-        "thumb_generated": true
+        "thumb_generated": true,
+        "thumb_headline": ""
       },
       "https://www.geekwire.com/2026/version-one-ventures-raises-fresh-capital-for-early-bets-on-ai-robotics-and-deep-tech/": {
         "file": "data/2026-06-03/07.00-01.md",
@@ -2587,1046 +2592,11 @@
         "thumb_generated": true,
         "thumb_headline": "Startup keamanan data Cyera bidik valuasi 12 miliar dolar lewat pendanaan baru meski belum cetak untung"
       },
-      "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVkRGajdRcnVMNE5FT1RwMklmNFlXVm5CRF9FSDRibkRDOHJrdGl5dm16RUl6VTR4Y19tMGR1dUtiNW15V3JHLXRyaUFqMDBGcEM2d3FTMXpGazFURDdsbllNM3dzajBjbkswdWpRZzlUTUZoNGJkN2hWd3dOWkI4Zg?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Trump Signs Executive Order Seeking Oversight of A.I. Models - The New York Times",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRalJTcl83aFBpRW54R1JtVjlKcEdDNGVrTGpwVFVwd0dFbVJhbHhzQzFrMmNLalgydllacFRTLXhpUTNLZGlxcWRiUjJkeU41RHA2SldmaFRtZw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Microsoft testing wearable AI gadget aimed at office workers - BBC",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUWRZdno3dVcxQjJtTFdjMlRsVThmQ3MyVk5mdF8yVC1jVkpHUEVlR3RLSjAwd0E0VF9SeDFHTVhGMFlhZGE0Yjk1VkVHWmtFS3FucUZDZHBZVnFhUURXLU5IYllVSkx5dW56cVJzUDgteGQzR0YzNk9oT3VRNHl2eXJscDE1RzNGM0FPLVdPSHRlQ2hfdF9Kb1lXZWI0N19xVXJoUHVTMXl1QdIBrwFBVV95cUxQUzhkQkl3R1FLaWwzVXdGUWlmMXhqR2h3SVVpQVlEQTREZjliZzgxVkJzTy1WS3pzdV9jenAySXVTXzRKWHRjMXZTbXliQkhNd1Nmd2ZSc2tiMzBUSm00SEZ3MkRkQ1F3N2NyNTlaYTFZSmJKT2hKVXdldktTMEtTY29zMFRmZWJnNl9ISWEyVWwwUFZJTFlzRDk4UEdTSVg1eTZ5LW00QV8tc0JfUWVj?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Microsoft unveils new AI models to lessen reliance on OpenAI and lower costs for developers - CNBC",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQXc1ZGhLSkRXVGJ3TC14WHAyTk1GV0xqclpLOTVIeXBiTDFvN1d2ZGhweUpEcFc2ekxBSkE1YmxQdEZfNS03Y0M2b0hzUmZUdHBIRUowYVpkd0tCQ2JLM0IxWjNWaW9xVGhNb1M0dFRlM3pQcFlIRm0zd09yM3RDWA?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "People are flooding AI chatbots with health questions. Microsoft is teaming up with Mayo Clinic to help - CNN",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA1TDhNcEcySml0WXVGNlJVTWdDQjNSdk0xc25KdWNXYk1yQ2hqclo2dDVlQ21uNUxXWm9yZVEyTHg5SHBYbTJVc2Z2VnBydVZfcDd0Ymtn?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "How AI killed the cover letter - Fox News",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiugFBVV95cUxOY01WOTZEM1VsNTdRMnZHZ2E2czhtUGdyS08xX3c4eXFwLWZwWWdSb2x2WGpZRjhhSmdXZUo5V0wyczNPOEh2MGtXZTJQb3BsMFkxaV9QQ29iQ1hKTUtzRzBDM2wxRXMxdGlxM1BIMmNHbDhfTV8wUk1tek91ZjN4bmJvVVJQY280R1JYMGpOU2piRl9RaEN1OGpoUzdGOHVkbHMzaXVrTjhodXo1cWJlZHM5d294YVFOUFE?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Inside the race to rebuild AI data centers before the grid hits its limit - Los Angeles Times",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZG1uanVVbXJPMVUwSzVsSmRhMU0tSDAyQ0FndTRxUWFNU3dOa1lrQW9oRTJ5NFI3Rk44VjkyNUFPYjlteVNaX0VmZUp2Rnh4UW5nZWphZW1LcnEwUGxUZDlhNVpZRUdSWlVxV2hwc0NPUFIyMUhJcGlBUkd3U2JKUVExSGFlYjVUcVBQUA?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "How Much of Data-Center Activism Is Really AI Slop? - The Atlantic",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMk5SZ3h0bTg5bTdDd0xJNGVqbEtJc1lONjFpOG5wX3J4Y2RXZW1OVHNaR0hJQzZFaU1aczR2MWZVVFdiZkRGV0dyUXNpQkx3ZWJBNjdlV3N5Y1dPczF6Y1BwOXI4ZjlqNnowTVVOb3FjbnppSW9xcW9mVWVtdy1LSA?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Americans don’t know how to fight AI. So they’re fighting data centers. - vox.com",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMTc0RmR1Q2xGQmNZcFJtMUVNVWx0cmhxV3RfWmhkU3dxYmd6blIwX3k5THlBaFg4bWoyQTR3eENzQUtBQ3dDb1NsSEZpYTEzUzZ2ZlIyMGdfVmtXU2publRrcFU4Q1FkWDVSRmsyaTFhQnJiamxYZDlwU3l5TmY2Z3ViakdTOF9iQ0Npbmhob295Tm9sQmpYeldRNnNMWWZ6ZmZVMG1OTTczS3g0WTk4S20xMFQ?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Opinion  Do these words make you sound smarter? The bias is spreading. - The Washington Post",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMibkFVX3lxTE5KdkFmMFVqT3FBQ0ZRZGR1eDFKWFhrZXhFQ3plMjB2TDJDNTNwVXV4T1pBQTl5OTYzNkU5VHB2bG91cU9OTkxQZUd4Mm9GcXNjNzg2Rjl1aTU3STJYWnh3RjFZdDVtVi1NWmJtekd3?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Sam Altman dishes on OpenAI's top token user - Axios",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRllwVWpJS2s0ZHRINlMyWkZ6ckFSRkJYOVp5alp1NVNVSGtDV3BiVGJJeDhuYVlyZWpvSFllZWhIY09iMFJuMURWT2N6M0hGaTZWMVZibEsxZzBJd19kR3VfaGttV3ZOVFF5Q05salFHX0p2WHBMY0s1bzhQek1sSlcyWEZWVk9wWWU1Qk1HZW5udkZLMVHSAZsBQVVfeXFMT3BzbFNaM2xqZDhTN2hpaWhvMnBFRldLWW1rTjcyU2phMi13dWhOeUtFbEY5UDJ3aEMyVDFRdGpjQ2ozQnBzeTY4a2JBbHlESFg3aTFGWDBjQjJEWXlFTEFwSmxOYUhRckEyU3czclFXdHdmZl91UC03Vm00NlNLOFN6ZnYyLW9tZWZKN0JmTGdPS3JuS1pzZkxEc2c?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Jim Cramer says look to buy these 5 stocks outside the AI trade for diversification - CNBC",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUjM5cjllQ0lYU3NFSGdaVjV4Z0tIUjlQNjlWZkd5S0RlRExwbml1MllTbXd0YnJHOS1EdWZmd29HOU00bThwVHBmTjBIWnBkWTZHY29HcU1lTENzT0RheXhrblNMMUxIRWRtT2J1NVdGQmNhTmZsbTQ2dl9SS1U1NGtBRy1zZElWbWhIanNzWXlaWERRRHJsd0tlQ3lmNUU5Q2x6endoWFNhUGxzeHBB?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Google owner Alphabet to sell $80bn in stock to fund AI spending spree - The Guardian",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRUgtMzUtb3E5V2g5QnZDcktfa0lLV0VuNXduUlVmRXhwWEd0T3ZsS0Z4NkJCb2Z2amFtV0I2RUxTSjJia0RSRVhwdmY3WUhEWi1VN29JMGtvb2xzVzBxMWpOdU54Tk5LTlNyYzEyTlBab1ZWQkZycVZjSllmeGtPdGxfVzYwVXBNRTVCTHIwS0ZCcnR5YWRiT0RVMHI?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Wall Street inches to more records thanks to booming AI stocks - AP News",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNU9KQmxGeDVxSWlOTjFsdEhxUVNfTGl6RTNvaF85MEdoM0NtZjhJRlpzUF9VeGlOVWNVN2M5YjZ4aXJmSFFIdG1Fc1phVV9oa0hKMDh5emZXLVJmVHRTS1JaWEVzbzBFc1ItRWQ4Y2ZSMHQ1ZE80NHdJWXI1SkxhaVJBRFpfVzkyRVpUMmZmLUQxaUZqSTNtcUZzMA?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Can A.I. Produce Writing That We Actually Want to Read? - The New Yorker",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMilAFBVV95cUxQRUgxRXVZalFyZ1RDZkxydXRrQ3hMMVpscmZLNHRSdE05N1VFLWM0bmJQdE92Z0RVS3RjdHNzSjBFdVI0c0lWQ2pyVnV0WG5tdndJY0d5SmFmUTJocGJhLTdwV25RM2pUYk1aelpyd2ZoV2pZZkpETjJ5ajhPbHdJcFNxRUh2WlF2Mlo5NUhoNEstOG80?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Remote work — not AI — has sidelined recent college graduates, research finds - NPR",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiggFBVV95cUxOcEJIMzUzSzIwSmt6ZnJFVC16empBQ2NHZEp3QkRPdnljN3lKZ0FVRHVNcFN2UTNoM0MzZkw4elZXRWduTm1yLVU4ekRUXzQ0Q3VWcFh3QlQ0Mi1fZVkzUVgyY2pHX0dUbnEzbTZ1Z0dtdlUyYzhyVTVSWjBhU0JGZjBB?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Some companies question cost of using AI over human workers - CBS News",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSEVidm5rTU5JWEFhQTg2YUVNQmZYN2FuamFTOXZhUHZ1bVBxbG02ZGRzZnpvMG9FRzZydE50YlljUFg4UHpjMGVWTWxLYmY4ZWxWaG9nWEtFTDRnZ1lYYVdoa1lvNU92MG5oVkQyR0ctYVBrV1RzeC01ZnlMX1RfUTRRYw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Assessing Trump’s Executive Order on AI Oversight - Council on Foreign Relations",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiggFBVV95cUxPNEVhQ1gwaXFUcjNRYkdUb0ZrcWNNVTVCRmJGM0N6X3Q2bU1nSU5hYTJJS1FKaVJVRk1NcTlvNlo5YWJjN1pmWXJTNi02YWk1dTdNRG9EbVIzZDMtSF9ZXzNDYTlZQVdFeVpnbVBORlU0Skp2MVRGTkhscnBjZTFpOG5n?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Trump signs AI safety order seeking voluntary review of new models - NPR",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMifkFVX3lxTE54NTVva1N6dnVRZk1Mb3FUNGFrODVjRTFsWDhScjE4a2RvX0xTckVwbTgyUTRDZWduYUN0X0pLVDVCajFwbm5OMnlUMkZPcXV4b1FQTHQ1VHNzSGdVYnV3T283bzlXSi1sYkZvVGxnbjVRSEdfTGtYd3NDb2dpdw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "There Is Already a Word for the Deep Moral Failures of AI - The Atlantic",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMidkFVX3lxTE54bWJsZUZuRk5CRk53TWkySm0zN3oxWXB3aE9Pb1A4TXhQM0tNMXc5T3VHMF8zaGxxYVVtYzQtQW1aUGJYdTBrc0JNYVpVYXB5dUJNbU9YNElfRHRtdEVOWWdhUHoyTktETUs2RkNHR2JyUmpUUUE?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Trump dodges AI rules for now with latest executive order - Axios",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://techcrunch.com/2026/06/01/florida-sues-openai-sam-altman-in-first-of-its-kind-lawsuit-over-violent-incidents/": {
-        "file": "",
-        "source": "techcrunch.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Florida sues OpenAI, Sam Altman, in first-of-its-kind lawsuit over violent incidents",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://arstechnica.com/science/2026/06/male-bowerbirds-prefer-colorful-human-items-to-decorate-bowers/": {
-        "file": "",
-        "source": "arstechnica.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Male bowerbirds hope to dazzle females with bright human-made items",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://arstechnica.com/gadgets/2026/06/microsoft-plans-linux-tools-and-an-rtx-spark-desktop-for-windows-developers/": {
-        "file": "",
-        "source": "arstechnica.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Microsoft plans Linux tools and an RTX Spark desktop for Windows developers",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://arstechnica.com/tech-policy/2026/06/amazon-owned-ring-should-pay-americans-for-scanning-their-faces-lawsuit-says/": {
-        "file": "",
-        "source": "arstechnica.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Amazon-owned Ring should pay Americans for scanning their faces, lawsuit says",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://arstechnica.com/science/2026/06/experiments-reveal-that-neanderthals-used-rhino-teeth-as-hammers/": {
-        "file": "",
-        "source": "arstechnica.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "If I had a hammer... it might actually be a rhino tooth",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://arstechnica.com/science/2026/06/judge-blocks-part-of-trump-admins-effort-to-hurt-colorado-research-center/": {
-        "file": "",
-        "source": "arstechnica.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Feds failing in bid to take a supercomputer from a climate research center",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://arstechnica.com/gadgets/2026/06/google-announces-deepfake-call-detection-for-android-new-airdrop-device-support/": {
-        "file": "",
-        "source": "arstechnica.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Android phones will soon be able to detect spoofed calls and impersonation scams",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://arstechnica.com/culture/2026/06/the-truth-lies-in-the-past-in-silo-s3-trailer/": {
-        "file": "",
-        "source": "arstechnica.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "The truth lies in the past in Silo S3 trailer",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://arstechnica.com/health/2026/06/number-of-suspected-ebola-cases-falls-by-hundreds-as-testing-ramps-up/": {
-        "file": "",
-        "source": "arstechnica.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Number of suspected Ebola cases falls by hundreds as testing ramps up",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://arstechnica.com/gaming/2026/06/why-a-neo-geo-port-of-doom-is-functionally-impossible/": {
-        "file": "",
-        "source": "arstechnica.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Why a Neo Geo port of Doom is functionally impossible",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://arstechnica.com/space/2026/06/another-falcon-9-lookalike-joins-chinas-growing-roster-of-rockets/": {
-        "file": "",
-        "source": "arstechnica.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "In a surprise launch, China debuts another big rocket designed for reusability",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://arstechnica.com/space/2026/06/blue-origin-vows-to-fly-its-new-glenn-rocket-before-the-end-of-this-year/": {
-        "file": "",
-        "source": "arstechnica.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Blue Origin has set a very aggressive return-to-flight timeline",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://arstechnica.com/cars/2026/06/slate-says-its-electric-pickup-will-never-track-you/": {
-        "file": "",
-        "source": "arstechnica.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Slate Auto gets serious about privacy for its bare-bones EV pickup",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://arstechnica.com/tech-policy/2026/06/trumps-doe-restarts-energy-rebate-program-with-dumb-conditions/": {
-        "file": "",
-        "source": "arstechnica.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Trump's DOE restarts energy rebate program with dumb conditions",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://arstechnica.com/space/2026/06/impulse-space-raises-500-million-as-orbital-maneuvering-race-heats-up/": {
-        "file": "",
-        "source": "arstechnica.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Impulse Space raises $500 million as orbital maneuvering race heats up",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://arstechnica.com/science/2026/06/research-roundup-7-cool-science-stories-we-almost-missed-4/": {
-        "file": "",
-        "source": "arstechnica.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Why cats prefer silver vine to catnip and other May highlights",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://arstechnica.com/health/2026/06/moderna-gets-50-million-to-develop-mrna-ebola-vaccine-against-bundibugyo/": {
-        "file": "",
-        "source": "arstechnica.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Moderna gets $50 million to develop mRNA Ebola vaccine against Bundibugyo",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSk1SV2lqUlNMa1QweEt5Qm5YOUx4dlRMcWt1R2hhWjRLYklaV0lobldWSzNqaDhsa05XdWxWd3o3QkFneDR1VUpjSmxfck9aa2tlZVN2NkFsSEpmalRVTTNiQU9fUTBKek1BLV9CU29KQkhUalR4MzNicmltVlF5c2RFT1F0NTNiN3ZuZTFiRHN3NzhOd3lYMjREWmtjTFVLUUxmLWxHdmZVRDgyTUZJSlRjZTBMQUhBNnN3eFBRcFczNEp4cThYdzAtRGZiaWZ2T1ZxZmh4OEtycmprLXZj?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Trump signs executive order that allows voluntary federal vetting of top AI models for national security risks - PBS",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMidEFVX3lxTE41OVprOE5tN2lBVzZuck52RDRvRU9FU0JvNThpald0enFRaUNzSHBxY0QzVmVhWnJMMHNEUXAzUlNrRnFmOFBtNkpTUVhTQ1lkdFVFeXJpRUZodHAwWTZwMDQ1UzNfMThKTFZqSjZuWkxtOEl2?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "DOE Explains...Artificial Intelligence - Department of Energy (.gov)",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPQk5uUG5jVEZ2ZWFkZGtGc1loaVZGUEtIU09CS3hKdzBXWXJjcGNJTzhyVnFEVkNwUmJ2LXVXUXYwWktDODd0UDdVYm5oSGF0RnRFVzBMZWR4Z0dwanU1V0dRODNycFBsa2FYV25lNk11SzlOOTlzZGlWek42UlljQ2tqcUFSX1Y1Uml2ai1HSUJXTTlpLW1BZ1FJaGxvQ0gtMTUwQVAyQmQxNkFhVDBncTIyNldmbDA0UE9HSjRWdzI3Mnp1TjFWeg?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Australia's Megaport secures four new AI infrastructure contracts, to raise $594 million - Reuters",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPUE8zY2RKd1VicGtNQVJodzBINENRYmRsMERVSnJ0QmtiV19Dejd6WGhEclBXTGs2VWwxMzhTYnpDMjFmOW9ycl9LMXd4b0ZiUHRPSmx0clB2eG1TUU56Sk51NWNvU3FWS1V0RnVuUFBsMWEzNlZQTEZYV0Z4RzFuRmVRQVFhZzU3WjRTZV9qXzJ0WEc5aTZYcWk2YkxqcTlubXpTdXdkcmRBb1podF81MVh2VnNaS1NNOEk0R2hKVER2N2lDaDNrZ2RFQTZoWHdfQ1J1OHVUWXVkZw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Governor Lamont Signs Legislation Establishing Youth Online Safety Protections, Regulations Over Artificial Intelligence, and Initiatives to Upskill Connecticut’s Workforce - CT.GOV-Connecticut's Official State Website (.gov)",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQXVmdEFvcFJKNEE0LUFtTDIyTjZhX2lIaGVnQ3NEZFFXYlF6Q0RMYXVJcXBENjdmX0stcGtoNHNsOU1FOE94NDRaMEJ1Z1NrS1U5Q1l0MWpyN1ZnVXl0Rk9VSGFlQUM4ZmxhakhoX3hUVHctbHJaU18wdm4tWWRXQU8xZnBJZVUxUFpteFdYMEtwYW5GbjRHR1Bzd1UxSmdIbUFuZkFCbU1HV29KcTBtM1dzcWwyYnliYWFOT1hBZzI5REJldXdJ?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Joint Commission launches voluntary AI certification program for healthcare organizations - Fierce Healthcare",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMizwFBVV95cUxPWXh6dExEXzlTVzFySkhzeFNZV3czMlAxNlJMTUhuOTdBS1Zoc1lnYW50RXpoQ01mZFZJUUoxeGdkWVZrOThENkYtQi1HVXBGYmNINWZiNTJ2YXAyLURSREV6SEdWVXFhMmFIT3Q1UnhPbWU0VVg0NGl3Y3ZpVGRNQ0dhSWpQV0VvUWxXSmE0Smt2Z1Q0aDJjQTU4SzBRODlpb1VFT3VrR0piX3B1RVBlSnlkckVpVjVZY0EtS19ZRS1pQ0dXQnBRRmhqSllTUnM?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Forget C3.ai: Buy This Unstoppable Artificial Intelligence Security Anchor Under $20 Instead - 24/7 Wall St.",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMijAFBVV95cUxPYVM0RDNFX0Y1ckxha3kyZDBpSTYwaUVFckY5SzRRdGVUeDJCYTRCS3djdXRSbXNhRkRZYmJpVVVfR3pPdFk3YjdueU45OEdjWVd3bnZTeUZTaGpkektFVE1pc0tXWnUwalRwaDZ5OHVjLWRaSzIyTkJZQ3J2N0tpU20yQm9xMEZWY3YzUA?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Chatbots And The Soul: Has AI Transformed Religion? - Religion Unplugged",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMigwFBVV95cUxNXzFYSXgtN2lhSTQzYWpEUjkyUGRLdktkdEVTbUh5S3pMTF9jdFdlTWVKVGFvU05QS0hTSThybGdKelhmSVo3aEVkTDlLMkNfaFFZUjRQZGR3MWY1eXYwZEdHN3BxNDh4T0hsNTVsbkxDblU4RUE2NElHME1zanVsbzRWaw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Congress to Consider Restricting How the Military Uses A.I. - The New York Times",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWlQxc0JkeVJaSXNLZGdwYmx4WWo2UmRCNXNyX1NGTGJfSTZyZmpqTzhDN0dLcURwcUx0ZFlUTms0dUhNeWZYTGc2aXkyTEVvVkFHaWVQQmxpZzI3OWgxdzIxT1VDbzJhdUpSanhJaC15amt6azVBcU9qZU1Sa2M4UV9Ld25IcnVWNnFBWHEtdTBTRXdT?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Robinhood Launches Agentic Artificial Intelligence (AI) for Stock Trading. Here's Why It Might Not Move the Stock. - The Motley Fool",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMipAFBVV95cUxQLTA5azZHaWhwS0c0WmMtS1ZTVVRvSDRMbTc3VllvbWVhV1VzUHVxS2d1VnF5XzdPa3hqU0E5bTA2SUswN0ZvMFV5Sm1fZ0dTeTJjb2VPTmlCWFpIcEdLTlpmb0lvbXBEaklmVm5GRllLWUdQTjJic3Jxc2NpM01Vdi1zcmJmUUVYdXNfSXBONVF3dTlWRlBnRkpsZWNybmFfUWpySg?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Trump signs order seeking early access to powerful AI models before release - NBC News",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZjk5ZXdWQ3RwbVZXdmNaTmdpTXVKQVVlcFk0d3d4dmNDZF9LeVBCWkg4MVNtVHZEX21TcklkSWlaX1hTcHBIVll4WlNNaEtDZ2RXbmc0Mk9NMFhzcE9lZHVkWC1aNU9YVjMwZGZwZkJERkRKeHBfbzVuNEFQZHJ2R253S2diRTlwUkQwbWQzdmtGYkRPYlZwRUZGcTF3d0NFUzhFczFEMUk4NEpuY0tUT2Q5aw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Microsoft debuts an expansion of its model families and agentic AI intelligence for developers - SiliconANGLE",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMimAFBVV95cUxOSDlKeDdCbFNocVNCaS16enFHeHBTWXQ4WTlrbG9qSU5Ha3J6TnplSHN1VENHUnJ1VDgyXzVLWUpSbmQ4NDFGd3FUWTBaMlpBOGxSdXQ5YUtwdWNrTU9MVTVQNXF4c1hYYjRfVEQ4MHJUMWQ1SmoyR3F0SlZUanRySTBlTVBKclR0NXhDVV9nUVlXMjZNNEZ1YQ?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Boston Startup Fundraising Looks Strong Only By Pre-AI Parameters - Crunchbase News",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMinAFBVV95cUxQR2hwaHBHY0hxd1dYeUFNNmlSMFlBWVlJQXJfczZnLUY2MnZxUk9XZDhGTGU2UE1wLTdqdVo3RlQ1QmNtV1dZNjNDd2dvUWhtLWZ1SzdmREhLZzhwcGg2TmpiOGozeks3NGE3d1lHc05wMkdSeGFtVHVVeWd0UFRXeXV1VjdYTkxINHJEY2pFWFh0RGpNdjBMeGNVaHk?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "How AI is changing what startup founders must show investors in Greater Washington - The Business Journals",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMisgFBVV95cUxPd2tZM2Zxc0dOVkNhckJ6VlI0X19DTUxhWTh1QjljaE5UVzNfcDZlaFRFVnhadjVfNXg0U0Y1VjJybUtXNUI3aUk1aUVPVjQ5SG9CUkRhRkI2MUduU2pGWnhRMG5zNGZYb09ISkoyWkRmMFNfSU16NzZ1c3VfMFJyR0lOZmdMUWlVaG84Y1BrR25JaGotdDZ0NnRkeWp1d0JKUm5WR1JqVFZVRUJNNE9SM2NR?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Carney Government’s National AI Strategy to Launch Startup Fund, Equity Stakes in AI Firms - thedeepdive.ca",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTy1aR3pJZ3VTWWhxbUR3Z05nNGtxMGVoeGZPS1Q0WWViWjV0LV9BU1BDNHhpLUtmTFk3OHhJQV8tRlp1cGhfWWx0dTRnVDVmNVBiQVFfWVhYREVxUHFQd0xGYmJVdllpQlRNZnNzSVhRRk55N2RMRkl0NWdFeXVnbUQxZkUtRGk3Y3NnRlR6ZXI?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Amazon's AI jackpot: Its $8 billion Anthropic holdings are now worth $74 billion - Business Insider",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiswFBVV95cUxPY2FKVFBlWTlSanhTa3ZYSXZkZGx1VjBvZFVGT1dETW41Nm9tN0JGTDdYYjZISWNCbURhazRuaTk5SDhsOENUNU9LME1OWHR4Ml9QaTZ5dE9NVXpQQ2EyYnp4cVY0MmVGNkRLV3RrSjkyNnQwMlBkUkVMMkRpcmZjeHp4NExXOVRxXzR0MVJkejVrMVlvV0pQN2cxY1VBUk5raEk3bzA4amItOWtUQk1RbDZYZw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "AI venture capital funding worldwide quarterly 2023-2026 - Statista",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZUF0Y1lGMzgzZzdLNVJybnM3U2tfVkhuZkRyQlV5ZFZiRUJKSk5YV0JFUUZHWW5lajYyd0JYRG0xS0VIb0YwVmYwT3BvOEVhamF6WXVQR0NYbWNIb3lvRVNzN05BS21yejZ2ejF2WjJSNnhfZFNMOUNLaDE3SDAzeFV0djNMQVJxSElXQ0ZwTGNMNVJRLUlv?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Federal AI plan includes new investment fund to boost domestic firms, source says - The Globe and Mail",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBma0treDFsc1M2eUp4RUM4UzRLek1rYWtSWURvOW5QZTNMSkxxUkMxRnZmakJpd2gwN1lkc213T01BR29IYlVYVTdCWjlQUVFEMGE5b1NaNA?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "National Growth Fund to invest $535mn in AI startup FuriosaAI - 매일경제",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUGtWWU1XRGt0Sk1uMGpreno2ejY3VGkyaWtFS01wZms4OEV4MDdreGJRSzY2VUxoeERqNnZPUmc4cEZJSk1Nb3dFNFZmUEJCM19WUFl2eVl0dGNYOVl5TXkxVl9KRXpNZU13a3lSYjgweldycEZBVXd2S1k5MGVCelZUcngxeWpSVjhSWXFLV0J2VnBPbjlsLWFqbw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Funding for startup AI companies dominates VC investment arena - CFO.com",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOVE12Q3k4MHJLOEVsajNwN3EzUDZmSm1YZmswNEVVMVJ1TF9PaGI3NF9Pb3dmbFFuNGVFcXBYcngyb25QSTc0N2w0T3RnVGtYLVFJSFg4NGtQOUJ5UFduYnNWUkEtRWh2dkphT0ZTSEhPbEdJUDEzeEU2ckNxLW9yQVRBUS1nRS15SWh1bF9iS2gzRElQSHNKZEc1NENITGJjZmtOM1V3U04yR2hhd01ucHZZNnZVUUNZRGtJbzQteXBDOWdxWnVpb2VVTW5EZjJ5RmFNdGtwbGJ5aFozMDdtdVZ1OGc4TnR3NkxaT1dJOA?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Call For Applications: MEST AI Startup Program 2027 for African AI - MSME Africa",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTHRrT0lKaVJhcDRjcVVHUjJqMmJlR0x4SHNLeTlocl9kUEd1al9OTl9yUXBqUkM3YjJKTlhTeGh1NWY5Y2ktUDB2aWJzbk4xeWFrN0xJaFZvQk0xZkYxYXdpQk9JSFNoLUJSMjFRenRJTk5IVzJ1UGVRTURjOUp4Mml1MlRjaERzTm5iUkNiem9aNWd0TTkxS3ZpNi1ycEUwdDI0d3ZqMlM1RzVZcmwzU0dOak5XZE1nakF2R29ic3pOQQ?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "AI push reshapes Michigan startup funding with fewer but bigger bets - Crain's Grand Rapids Business",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQzEzU191bU5EM3BOX3JESTlYZWRYY3FRVmNfcDBNNGJ6MW9qMXoxeWFKbmFrSmxZRUJXUzFzRWozNjRRSklIMTJLRzFNMXNzSjMwMmlIYXhrLU04MmpmV3dxd3Z1NGtsNTkweWd3cUZZOEhBWklIM1lUSFJyVHB4TzZLQnd1YUtPVlptYnQ5dW5UTi0yc1hRN2dnSktIdzc5bjFnYlhMUQ?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Exclusive  Startup Makes Switching AI Chips Easier—and Nvidia Is a New Investor - WSJ",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiekFVX3lxTFBtWGxMZUVoMl8tdFBkRW9nbnJCYlNoVkRJZEtKd1Fnb0ZFdHdLOVFzcDlXVG9PcFBESGwxcnNEb0hXQnZhR19tdTBNaVlpaERRWE1tZURKcFZoeWlPRGprTFdESTNPdU1vc0RGV2VWTC1sS24xMmNDdlpB0gF_QVVfeXFMTkZRem9QRXBjUFc2WXNjSldGV1puME44VUxkWVI1MlFvX1k1MVUtRU8xX0MzTExIQU51VmlTWnRzNmtjM2wzX1VsUzhOdVNoNmtISGl1Z3pDT0t3VWJpVVdXQkpyczN4MzFWWDlieXozODBhRnBPUjFDdE53elhDRQ?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "AI startup Cursor in talks to raise $2 billion funding round at valuation of over $50 billion - CNBC",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNjVSOGxhbVc5RU9qMU5xZ0VIZzZyQkk0YUlVT2NCVTZkN092X09zTW80M0ljQWs0ei0xNHpQbVh6YWdhei1oRTQwSTFpczI5MWkxZTMxeFpSdzJING0tdUlTdHF5Qmc1V1JqSGk1emw5YWk4MFBfcFpVSFFEQ0lPTmdQejFpUmxmLXhJQy1sTWdZQ2dHb2RTMzJWbk44aVRvVnM0SjZNUUt2WEFkZlRndlp5S3g5Q2lzV3BLRg?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Trump loses more control over AI regulation as Illinois passes landmark law - Ars Technica",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQaFI0RzFJcHpQaWg2UEpza080aFg5aEFTeXpmNzZpMlc3MGwzT0V2WG44NGJUZENibVBxelN5WmtVQTVMbkk1VS1wR00tbndjN3FUbTkzN1lRbW9aTm4zbUlKVXlLYjBiNTg4ZzA1V2E2dGxMLTU3S3dZVHp2X0EyQXZOV3RLb3N0akR1TEd2Y3FMaFpPd0lIdzI3LTB5RlZuUWJFZ3BSTmJXTFJmZkFjQ05wTFBaSVZ1elNCYktnbkoyZm9vR0JNZnphejU5bG5QZUlfNdIB2gFBVV95cUxNWnl3Y1UxNUxXaFdfblNlNDhNNkl4RllDWWtxZG9HNXZHSmF4ajNSWWo3ZTEyaEhlTGExQXN1aTQyN2hncEVOR3VSY0xwQ2Y5c3lpRHJOOVlPeFFjYmhrWVExSUd3SF96ZlVhQVdOcWdkOG0yX2c1Q1NhUUdMYkhqQktPNEU4Ykk4X3hTYWZONG9FbjBXeGhDM1RtRWtuVDZNbzZLck5lQ0lXQWo4NV9YYlZGM25zc0pFeDZ4NEtVN3Y4cjVtNkpDTTJ4WndsZFU3WVc0WDdYU3BYQQ?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "﻿California eyes AI regulation as Gov. Newsom orders new workforce protections amid job shifts, mass layoffs - ABC7 Bay Area",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMihAFBVV95cUxQNFl0OENaSEFud25JUGdVWjVKVzhQZmNQOF8tWjMySk9SOFlYWlJVOVdMc09EYXlRU3B2WDZGZk5Xb2VFeFVwNnQyR3BJQ0pUS3JUUmFFSXRfRy1HekF6eTdVQkd1QzM5Y29ESzZraGw5VzZxcmljeU9HR0tMWXdYb19ZX20?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "House talks look at blocking some state AI laws, including in California and New York - Politico",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZ2w0RXp3cDVRWnk4NS1sYktrbHkyME80TmZEejEzZ2pMbzZXNzFwNnUyTVFIdUo3QmlkTm00S1VoYjJfSk1mYnV5NDdPRE9GcmRuQUxQTmhxblZuYkxBaHVEZlRyczE0RXJJRGtZdFlXSUhSUVZTMnNEWDBHOUpfUzRqd0l0VE9wU3lSVndvNEFRS1NWY1JwdF9QallselFOVmZubk40OTdhZmk4VUpqYmRuQXAzY1BVOThVYXpDWXE2dTM5WVA1bW5vazA?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "EU AI Act Update: Timeline Relief, Targeted Simplification, and New Prohibitions - Inside Privacy",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbjBpS1BvU3Q5Q2tCaklUVldtSS1VbC1IMDBUMVRtb2JJbF8yaF85ZEY1RU14bWI4eFR5NElYaWFIZ0NOaGktZ1RHYzJ4akI3OXpoYlM4Y3JBRHFfTWVHV0s0SmlLQXh6eWJ6T0xhTW5HN0RCT0tEU0tUR0YzbFBNU2NNNGw5MlFpekxZYlFlMjVkd0xPMlpOSWx2Nkxab1psUk14cnZIcmNtUDhYX1E?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "AI in Education Legislation: 2026 State Policy Trends - MultiState",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMirgFBVV95cUxOR0hnOWx1YV9TRjdzZW1DS3JmbVFFTDhjX3RyTVBadGs5V0tGbC11MHBjOHRvWXAzenBBMzVCSFQ0WXhUWkhnU2RaeEpYZU9aSFFuN1VrVUhmS1FISTU2QUp2M3dBZmZZQkZicVVmZmZMWV90RmdDY1R2aDY2R1BqMk9SYWNyUzcwRXBsWXBxcGk2cDlqZ2ZqTXQxVGFjR0tCZDJucDRoekJDcDd4S3c?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Children's online safety, preemption highlight White House's AI policy recommendations - IAPP",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiogFBVV95cUxQU3ZiTVlYa3R4RHl5REgzSTlOOU1pNGlvU2h3bjZRX2Z4eXE2aG1CY3ZLMTdVLVlCSk93TUFEd1JjMncwcnZqZFpVYm0wREZQYnlQRU9YTlYzQVVKNndXQ001QzlzbG13WkJhOF9WNnloYm9IV0NlX3BGZm1Cb0l1ZjdxbThiME1yazBhUi0yMEV3Q1NPVHQyNHJaMnJ3YndrMkE?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "White House AI Framework Proposes Industry-Friendly Legislation - Lawfare",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMifEFVX3lxTE9OTk04QXZNaUg0N2F3a1V4VFVIYjZRaUtfT0JzZUgxNy1ORm9ZMGFyM1dmRzlMak1DZU5hcDV4ZzdLSktjQk5JODNxd1FMT0V5QXdiTTd6X19JUXZJUGNkY0hjZUpKOVFLZG5NTU9kQnRMWWhhbVR6Qmh5c0M?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Inside the next phase of OpenAI’s political strategy - Politico",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeDI2LThNcmFfdFllRUJCelpGdUlNM3FaeGVDTmM4Uzhoa3J2c0RfNzVlczJhMDJHMHo0dFBtR3U5QUhjYXJfV3ZTQnNSeHdwT2ViSVRQRy1YVEJCMkJLbXJEb0kzNVFuZ00xT05nYzVOX2haOWJRMlZfZjRHZkNxRWhJUWxUZkttMTY1eVR3eUdpZFZqXzEwRTVxbWZ0UkFJYU82NEFGMzdEWWpvR3FXbw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "China Issues Draft Rules on Interactive AI Services - Mayer Brown",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9QdDF5MnR0VGgydkowWndzam1xQ1lCNnU5alNReTdLVnNSYi1BS1hpd2dnTll4dW5kT3J3X1hoRlQzLTlTcjFHUEFySEFIRXFqaXFERDVGd1NGWElrb29N?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Let 2026 be the year the world comes together for AI safety - Nature",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMib0FVX3lxTE5xY3RXRGYzb29rQldEYjAzZkxBVHZmYVJUQUdUbmljNHVrNDV3cU9zT3VtWTFWeFNXeXFjeEtyTjhNM29kYm8tNkZFbWdaZEdTTkM3aG9mSWJCV2QxOTBWWUxUTWNiNTZDR1hOUGhnSdIBdEFVX3lxTE9rTEZzVVVXckZONGNYQkhqemEwdVhCSnRmMFhxVE5DaXJPaWhqYkVuNjR5Y0VMelhwS00ySk1GX0g1OWhUbHBRNzdUbDRiS0V3alo0b3hJMnF6X2JWb09XdlhzaWo3WlBMLWF0c01KVEtkd1pC?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Trump administration unveils national AI policy framework to limit state power - CNBC",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiowFBVV95cUxNV3NGUjlaQmx2NGFuS0diemd4NUNDSEc4Q05CcThLWFNESjEyMjIxRnN2X3pFWmZEb2xSU1NpQVoyRm9NbWtZZ3M2Y21qaUUyM0xzRWlSMzVVal80bVFwNjRBOFd4cGE4UkFFVTl1bXU3QzBUOVQtcEVZR1g5R3pvNXNjVkhhTlZtajRTbTVLNm1ueTlkTmM1dUg4NzNNVUxCZzdj?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "President Trump Targets State AI Regulations - The Regulatory Review",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQS0tneTZVOF96ajJpZ1kzUlJ0RGN4dUFIbUw1bzRfZlZJX2FVUks5alJSNjZMbVdHREV1U3JfWXFGT0dqelFNbHQ3b0MtNDBXR1hUNzM1TnpPRE9rdDdybFJYQ0tJVzlfSUFvMS1GRGNiQkVYYndwQzFwV25faVVicjVyd0hVQWR3QnNuM1RPa1BYUVpEMEkyTG9KOGNsdDVRejdFT2NBOVlJOGFlc1o0RFpCOGQ4N21obVY4NlY4cHJHQXpPMXZQZ3NnSlpqbFJJblRIb1luRC1IQUMwZ0kzLXhPdGpUdnJsVEtBeHpFSXUyeTNsTkE?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Jensen Huang Just Called Humanoid Robots a $40 Trillion Market. Here's Why Wall Street Is Loading Up on Physical AI Stocks - 24/7 Wall St.",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRE9iS2JlZnJTN0hPSjMzM1ZweURObTZ5eng0RXdfOVZEUFN6ZDBCcVpod19JZE55TGNOQlBFVTVtNWs2ak0ybWZfSGpjLUpYOGllWHJFeGZ4TlJFQUhvMVlQSVN2NTlTWUMxUGJ1enk2MzdjdEZIdTFNYWJGalNld1F6emhfdXdhNlNYSDBMcnAwZ9IBlwFBVV95cUxOUTBkdDlXUHI4akZlenhoUHdyVmJNS09ERmZXTEtjemIzLVphdHdibEtpdXlIQnBCeFJFc1V4cFhLQWdkdVFCczNiWjF0YWs4UUZJdmxuWlNiYUx0UTVYZmtLd0k3U3JXdHN6ZjNlOHg4bVlPazd5YUo5M0IyRlBUNWE2TUlpeEY3VEE2bzFPSDRvX1NTQktj?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Nvidia picks Unitree for humanoid robot platform as Chinese startup eyes IPO - CNBC",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMimgFBVV95cUxOX19mRmpoUmdWNXd5cTVuUUNDM1ZHczdjaWxxNjg1Nl9oTTVac1Fha2NYWmVkOGNkd1MzUXBzU245dWNqVF9NSG9UZ0dCazZ6S0dtd0Z1b0Z0X0IwLXpsZkZWZF9YTkUtdXRndGgwc0xNV0pBcmNucy1iWFhTamNGZm96Y016QXJCdXlKUUtKMmdnUkxtSF9Db0V3?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "NVIDIA launches Cosmos 3, chip-fab tools and humanoid robot platform - Interesting Engineering",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPa1E3bzE4VDJFcE94WjJrTEZhYjNsUkh3T1VjdnA2dnJIQVRuYUxIUlp5WHRGejBGMGFrUDVpVk5GOWczdlpRVTBPQjhtdFEweGJZenNIcEc3UDAzaVNJbEdEYm4yZTlJRDNFVTFfdDlxeVBOb3NDdFYzSGRwd0hCamZWOXZ0dlJf?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Interested in Humanoid Robot Stocks? You Might Consider Buying This Humanoid Robotics ETF - The Motley Fool",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUDhxVjIyMElad2RGd2tyLU1hb2plR0J1TDRXYWNnLWZxR1lsSHhzUm9CU0VYaEt5MzB5TzB5blplU1NFQWVuUUZ0eXVtYnJkdUt4a25XQVhWMDZBRXVvampMWEVNM3ZjSDViZUVaTmRaazhIUEpyVTZZU0M1NkNKNUx2blRRSEpoLUxRM3VjNkZsTzBuUmc?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Hyundai showcases Atlas humanoid robot’s football skills in new World Cup-themed series - Interesting Engineering",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMisgFBVV95cUxPb1RMYjVDVHpqWUt2SzYyNHk4cEhVYkRPOWVoWmhqbDJHSVZsdUN5Ym1qZG5lNkp2VjdySTEySUFpbFVaaE1TQmJJdTNHeGRZcFNMaWNzQWRtZ1U1X3c4MWU5T1hmVlQxUE43SXpqMmdDMUNRSEZaOW1DSU1NVVZzSDVVU2tybXFKSWE5YkhpSlVEWXREWXJBdVB4WjJ6cE01MzhpdFdtYXg1UDhUZUFEYnRR?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "The Internet can’t stop watching Figure AI’s humanoid robots handling packages - Ars Technica",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMUJmZHFfZ2R5UmJ1cHc5dEdrWEFJWjNTYkRpUk5tdjRSQnZGaWNITWlMZVdrWHVsc3RPUzNzTXNqUmdMS210MmozTWhkSFRwdjVYUTdydmVyeVFFMEd1WVRQVVZCbFdxYkdza1VFajdnNWlEVkRfQ2lTZ09rNTNKa1VKS1RiV3lkVWd0ZGZXSll3REs5WWlDMVBWSDFLbkU?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Meta buys robotics startup to bolster its humanoid AI ambitions - TechCrunch",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMilAFBVV95cUxNV3FQNEFzUXotUk15VjNrY3czTGhTRzhQR2NfWHVNMzFjSFdSdkU1aHJRS0VsWWpUdVFncGIxOTFyWnVOWVZ4SjUySmlad1NzcGxBZmhEQkszYWZLUFRYdElxOTE2OHRudUFWVjZhX1lKSkxiMmpBLVhxQWNEVWNubTNwcE5waWdGVFN4UTMzX0l1Uy15?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "China deploys humanoid robots to sort 1,200 parcels per hour in massive postal hub - Interesting Engineering",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWnZzRXZOSnpISUtPLWVGZzdWZ01MNzE3bFVDT0cwZnpVRGZOejd0OUplSXQ4ZTRhRVgzbWRyYWZSal9QRGYtYk1BZ2JVOEtFUENjV1JLa1pxX0tKelhLcnpVY2kxTTNqUWhwdjJ5bnJaODJaNUljVnNmOGRXRkdBTFAzR2NSa3JUQVNYNk1Jc2XSAZYBQVVfeXFMTnhiVEtOWTd2RW93YXpVd2czLVBEdUFwRUNhWnZCa1ZnZHFfSXgyMzhjY0prTUtWSXhPM2VuSzJWaWNWajB1SjRxMUFQUWxESjFpNmpHTWJIaTRfNlZ4T3dic0tDVVNXd1lqRkxWaHctVER2Nm1HMTFVV1VWWFQ5R2dfbFBmMlRvNVNabm1zNXJ6VW5vRmxn?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "This Trump-linked startup plans to put humanoid robots in the military - CNBC",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMilgFBVV95cUxPYjhkYWh5WlFsczRJeUJNZTh3anM3dUdHUkd3QUNuc2Y2clQ1RkZvU09zcVFybmJYT3pDbXdlRUtJaUQtaTA4T2c2bGJoeU1FeUQwMks2MGlXY2hxdWtCQnBwamVJNUswQ2NjMU02RkxYX29EZkFoSEpDZXd2bkVZZDBoWF9vQzR0QUlfczdEd0RsLXZCMWc?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Helix-02 humanoid robot handles full 8-hour factory work shifts - Interesting Engineering",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMihAFBVV95cUxQa1B3b3A1eXcwc3AzeG1BNDRwU1hJbWliLWN6WW5FWlJCaUNrNW1sM24tV3p6NEF4YkVfTnZqWWtfbmttdUxXLVV6bnN4RzQxM0hlVUhLQXVGYzlzRlotVnEzcW1jYy1hallQQVBQWUNESDhXcXJKSElkbGdHM0FVSkVkSTc?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "NVIDIA Announces NVIDIA Isaac GR00T Reference Humanoid Robot for Academic Research - NVIDIA Newsroom",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMifkFVX3lxTE9yUEVhWFZhS1RUWWx2YTNHRWwwamtwcjE2dUxOYVVwWnJJeS1lRXZrTjVQX1JtVWlzODhyTkFzVlhkdlFSMk5HWDlDNkZvZW5ubDBIU0Q3NHVtclRqWlZKdmR5WjNDc3BmY0FFNkxXeFNlZGMzcVkxVzZra3ludw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Partnership highlights nation's growing AI strength - China Daily",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMilgFBVV95cUxORkl1cnVDelNNdzNMbGNVM3ZBUjZZQkxaNzdDQ1VLVGFUbE1vUXJkeTdvREJ1UXNjUVRBRnRvY0NHQ1kwTUtXT0IyUXpXejljLUVMNHp1cV8yc1NxWGxpNkktNWdjSGw0WnFGT3d2M1kwQ1NLT2ppb0IwdFhDeU5qSHpMaFdEb1RFbFd2ZGJxZWNiaVo2SUE?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Do AI models omit religion? Here’s what new BYU-led research says - Church News",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiSEFVX3lxTFA1cUtwV0lOLXAwU18ybWI2NVRDLUd3VmQwd0hUeTlwZW53WmdPaEZYdGxDaWJoZjNVR3pTTGE5dnAtWFFkcHoxTw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "8 Years of Security Research in 8 Weeks: Transforming Cybersecurity with AI - Cisco Blogs",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5HMWZqdEFIWlpMUGVDQy1FUndCWlpoRHZaaEcxUXJvUlNTSDZoSTBBbERoX0Q3cnNtOWFveTJKVmtWUWx1NVBuOWRIMDdWaVBsVExKSlBn?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Farewell Ai2 - Interconnects AI",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMijwFBVV95cUxOWUxDblBxa3ZnQWZJY29zRUVOdXZQdWF3WHJnV2I4NTlZWFphUE13UlBRQ1d4WWtkcEQzUGRNYmhPUXNELXVFV3ZOQlpyWTNzRjFXdHZydnBSbkNPWldlUXA4bEdlaV9xNEszRGtqczZQeFNISzJBZ2g5MzlsTWlFUGFOanBZT1V5YkUzWk9oMA?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Turbo-charging battery research with AI : An ambitious vision - anl.gov",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiywFBVV95cUxPQ3UzQkJRaDI3aGlfMzd4SjkyYm9RT21ZNU5UdVBVTm14M2JrY0d0TmFKb2NYZ1kxSWRoT3pvTHV4bDNyQU5RZ2dXeThVSVQ4ZmExaFVjbFIzTzZ6bTlYNDBBZzRFMTBqSDlsSDVQOXlDcXJTNXJLcmRCN2RRcmdsVUdLMmRIY1BCQktFTEV5RTZ4Nnh2OGNxQ1ZBcHhpSXlIaDlaQVZmTnMzS0tQdmR5c3VOVVIzWmFuYnZrSjlydUlvaXVFanhiblhMUdIBywFBVV95cUxORjVBVHZSWUhQNTdQWGc4aVhvd0dQLVk0WHlraDZlMC1McWVQdmRsdXFxeUxKSElFb3c2cGxKNjBPSGpaVk9UUkdLWlU4ZFFNQU1BTkJJZ3VpalNvMWh4aFd0Um4zb3o4NGswRHhjS2QyZV9yc1EzR0FNc01RXzRYMHBncXdwTWUzNERFY3hxWm5JS2l0WWliRGR6S29GdF9fRXU0Vk1jR01velJ6OEZYREQtLUxJN0gyRE9UMWVCQW83WnRCZHFvcjhnaw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "ByteDance loses key AI research leader behind Seed models - South China Morning Post",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUldqeDBINW42S2dtZkxpcGNaclU0UGRQMG9VbDRXNnhiUEdwLXpacmp1bUxFZGFVeWJfRWo5eExHWFA5dE8yWTJBWEV3bjkyZjhSblVLMjNsXzVlQ3FfYXE4RmVwaXZIX3BaaDd6bVE4SlMyZHJrV1JfemlYNlZDQUtPLTJkb1Nld0lZ?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Gemini 3.5: frontier intelligence with action - blog.google",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMimwFBVV95cUxPODYzTnF2LUJaX3p3SXMxWlJHcUZVSVFQVmVYT1p2OXVSbWY3bTlLbW9uRVViZ1hwM25qal9QZUtjUWdTZTYwRjF0UVptNEcwTzZMTHU2WkFBdkZ2aWNiemJSclNfaS1IZUdDYU02RkVyQ1pwMVM0dGhBRHZjNXN1eU5BcHl2d0ZCNGNZbDhqb3ZoQ3NKS25kNnVLcw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Do AI models omit religion? Here’s what new BYU-led research says - Deseret News",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQMTdHeUxHcnRuN1daRE56X2ZHa25GN08tN1BpNUdMMjVsYVk2UFYtdlpORGJtQVBHZ3c3WjZOUzV5YV94UWxINVl6V2czYWx4SXVaTGpTbkEzVXhOdUZGVGxxWUtkWVF2SHA0QWVuV2tuaTJxSVVoOGNKRlVXeXJLSFNVZDFkd25COWR2bmFVRTFWczhnaHVyY1ZZX05IYlNtc29VZUxTVWNtbjRZV2Y2cmFKRENCY2oxSzA0TTlPNk9SZUZDbDZhVTlnVGQ2S0VncWxQSTduNm83M3ZwYV9DVHN0aWR6dw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "EasyVista Research Finds AI Is Widely Adopted in ITSM, Scaling Its Impact Is the Next Challenge - Business Wire",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5CdXE5OFVCZFNRM1haRU9tTGtNMUFPWTV3MEMxQ3VRT3BJdVpPY2pJTV9RNnBzX3g5aE9lQmxGbGhRQWpBSllvUlRwMjhyRW01a3dPMl9QcE5SSk90?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Science and AI-enabled research platforms - EurekAlert!",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUHFodWI3bG1oeTZDVElSWkdpR2s2WVYxMEtRREdhTnl2anpkZ19oaVB6VVAwTTkzc0JUUlkzZHM0LWhIVnVNWEdva0hYM19PVzM2VzBLVDNaTWE2cHNORmM3QjVxXzhMV0czWkotZTBaeGVCSXNiVE96bXdBdkpESUE0N1U2NUpzTVM0TGR3WDg1UVk0ZjNGV0FScTVQX0ZVQnJPYkVxb1BvSnFX?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Intermountain Health Research Study Finds AI Technology is a ‘Gam - The National Law Review",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMigwFBVV95cUxPaGFWdDJJZUNDOTJVd3o5MFVsaF9yQzFsdEJzZnlsYmttN3cyNlIwSmtaRW54ZzN6NzhCbTFfTWYyb0F5V1FueTZLLTBTQVB3SlVPN0c2LVhtdXlmOWo3aHQ5eFZMLVJPVm9LVEtDa3RPTDdBV1VRSW4xVjZBV3JRRW5SNA?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "This AI model backdoor attack stays hidden until you customize the model - Help Net Security",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMikAJBVV95cUxPcjFyYjZUQUdWZ2plRlBiU25wREZmQ3EzOXBEMEc2NkF1VzlfeXlhSkNadUNGcjhOYnJUaDI4dG1DTmlFcFhDTU9Gd3ZPMVpUNmExSThySHlseTNHX0Y2dTZ1TTJKWjgtZV9IdmZVeEduYmEtdkRLcDhOZ1Y3Qy1JTEltMlpyR0s4ZzNpQm1uekdvS19tSzhyN09wX3hSYWt2ZTc0ZW5jMWI3NmdwZUxkNmpidDZyRkxqTXBoYjQ4NlhXWTJabU1jb0xKUjdabFN2QkJYSzVzZEpDMG00YWM4NHNaQktQT0tIQlJsbFE0YURZeVpKbnZ1UHZzZDBobGpabDc0UTZlenR0ZzJXRkFYVg?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "ChapsVision Research Identifies Agentic Knowledge Layer and Trust as Critical Barriers to Agentic AI Adoption in the Enterprise - PR Newswire",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRUFXMGs1YzZkM0p1OXF4bWtxbWFrUm9Sa0RuV0xLZzRUV0lnOVI3Sm5wRTBQX3JKc0kwUXpCZXhOOE9fV3BYX2ZVWUc4QllkQ0p4Q2dUTVhteElIS09XOFVCWjRyVnJ4VWF2dEVhMG96UlEtRVBNVVVyUkVjazdwZmNrRmE?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Goldman Sachs cuts Hong Kong stocks in favor of mainland China AI hardware plays - CNBC",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQ3B6Wkt3X3YtbUZDVlJMZnJWNGpNQ19nUlhpTlEtaGhUQXRyZFN0X3BmdURKaGJuUk9yWGZlMFh1ZjlzOE1McWRTZy1PMm9nRzZWckNmb3EyaGlJRGE3RDM5WHlwU0VaRkN5ZDFLTWhkSnZWWFpGMHNKeTJLQmI5akJyQldtZDA?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Trump finds an AI policy he can live with - Politico",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMG8yU3VmVWk5SkljWEJlNWtaZlJja0d6aGNMd24yMXFoRElmZ3FvN0hjd0YzdjlvS0cyZGlkakVqLWJoS0pLQ3FrOEp3S2lGSDJBSXk5UC15MDRqQ25CZFhUdWVsMUx6bUVVa0RmLU4zRlB3WlBxRy1KZHI5cE5SUG9JZU9Vb3ZKd3VEdlVOam45bVJoanhzMmF5MXc?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Introducing Majorana 2 - Microsoft Source",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMi1AFBVV95cUxONThHNm9EaWMzYTcxeTV1TGRjdHl1NVZOR3J0WlpEeWFrdmpNUUxJZFVtY2taNFc4V3NFV080aENUSmdQSlhOeTh3c2lsTDB6NEZlNzZuel83c1dNTEtYYTMtb1NEVjl1QjNlWFVCekxDU0hfVUVTZ29BWXZvRUFnWUt4U3RWVFN0cEZUZ2QyQVVYYW1yenRncnh5VlpXWjlucFhoNDZacU1wdW5oSnpYeUVVT3JUdTdoN3JvM1E1RlJHSFBSUmVUUWxyV0YyOU5CZVZxOA?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "AI Regulatory Roundup: Recent Developments in Colorado, Connecticut, and California - Kelley Drye & Warren LLP",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeVllVU5TSEVpajhKb3hSRUx6NDY3bWU2cDJpaUtOMllscG9lckFqZzJrMEowQ0IxSENhamFtNjZuOXVGb2Ywd0VfSUhlTnUzRkR5dlJlNHI1ME02YnhJV1RWRk5PZml5QlRIRlRQWEZIMzNUYlBmQ183aGEzNXFZU3V3ZFFXb0dw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Oil jumps on Mideast missiles while AI bulls carry stocks higher - Reuters",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMiekFVX3lxTE5YdU00c0otWExhYndHcHNFOGE5bWJoenVkc3NjXzE5VlZyS1llMS03alVRRWFOS0R4MlJWSGJMdjI4UTJNZ2RMZDM0ODNFRUpxd0Q5R20zaXFWMlpfaGwxdjQycjNHVmV6eEJJR0Y3UWF1bnpidTZzVnZB?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "AI Has Ruined the Job Market - The Atlantic",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRkFmcEZfNGxmenUzVzZIQUszZVVCUGxndnBHZGxmTC1RSzRLNVFKOEs3eEs3aVI4WlVTWnNmNlNsbWpuR1diYVpwSFBoaEpha2ZHVUFyV1BLQzNmR00wNWVRMkt2anNJRm9lSWx3VDlnNTVtc3M2LVd4Sk5wV3o1VWlGVDhESW5FWUtSUXhfUTM5OUxvcmdzMWYtazRFZ2dVVHlQMmtYYzdIcFFBQmpnTXlHWDVXLTc2TThnSlR3?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Microsoft reveals new quantum chip made with AI, says it will have systems by 2029 - Reuters",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMif0FVX3lxTE8tdS00RjNxZnFSSVBaaW80T1VVbnR2UXBsNmhCcWw4bjFzaVBteXBrUHppMDl1OHd5U2k0ZkVyOWEyZUlqVmRDYkZxNVN4c09VeUVVN2lxekhwd2ZxMWRWdTFrem1SaHhULWJmRTZVN05CMXpGOTdIdWEtc1pfY2s?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local - NVIDIA Blog",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMid0FVX3lxTFBuWHNjVkJCdV9nc0tCektKOUp3RXk2b0VsUUZuTW1LQ3BpZFBOYk93NkxGcTVtZ2hnRUQxeWpfTU1aeUozaU44TXRUM1dfeWYtRXZwa25qQjkxNjZNSF9Tc2JkR052LWhFdmhZQ0F5U096NG1wd0Rv?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "How African Churches Are Embracing Artificial Intelligence - Religion Unplugged",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVjBHaHpscFNCSHJTczBjcF9fNFF2OWM5VlpNS0gzWkhLcUxuYnJrS1JaWGM0RkRRSDc4MG9nV1JsYnY3c0xjcHVjTE5Nei1WSG90RXBVak9TemFPYU1LSkloYk5ONEU2NWs0dWZQb3BlMmhSS0M0dXVSdW1PeDhtcTVJRkVUWWZXTWhxaVdGYzktdHhxMHhVRG83Z3FCX2Fra3ZubGY1Znk1cFhtODNXRjE5Tmp2Zw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "A ‘compute tax’ is the wrong answer for the future of artificial intelligence and work - Reason Foundation",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMihAFBVV95cUxORTBNMEJaeUpqNXpYWnNEYjk1eXFpOU9aQVdfS2JvSXB0bElUN1VYMGM1UTZ6REo5VzZjcHBPODRFcmZqQkIwX1FpWXdsbVNaako0N1k2ZjBobzctanU4TWdpZW8tUURmMTBwMWM5VktrWVlHSk8zMW16RXh2anhRS282VVY?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Q1 2026 Shatters Venture Funding Records As AI Boom Pushes Startup Investment To $300B - Crunchbase News",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMilAFBVV95cUxOT0JqVlJ0Y3A0WGktOENLZmdRSDc5WGVoM2toYU5YX0V0eF9kVFNKVl9fRllKT293Z1NmTDg3VHZfZFpJdkNLSlRsMzhjQWh5V2JZUWZTOVNHai16RVpOREhaOUR6ZHE0cWNyNnBmbHc1Rkp1UVJTaGM0N3lmQ0lOYVF1NlJrS1oxYVk0NFNOWHZJeDRp?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "States Plow Ahead With A.I. Regulation, Defying Trump - The New York Times",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMixgFBVV95cUxOa2Z0cmt4YTRTSlUya013U2wzcl9QTXhrMHZzZk1yUlNuc1A4MlIycmU2X0lSc25Oa1ZINnk3QjRXanRUN0hjSE9wa3ZTejBsaWdpdEtTanFkdGJLeEJvOFRfQmFSYUttVGJ1LXNsbmhZSkp4SEhHYzIxRXZ4MHU1UEVaWnl1Q2xCdk1MU0tDb2tta2xETUtTMUFBSDV4ZlJueVlfUERURnQ2cTduMjduUWdfRHg4NmhLYlVUZTMyMS1hcUVpV0E?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Navigating the AI Employment Landscape in 2026: Considerations and Best Practices for Employers - K&L Gates",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMitAFBVV95cUxQN0FIRV9QZDMyWjAxTzIyZm1OZ3NTbXBOR3pRZ1lrdkZzMzVYN2RfckYzOXpBUEV5b2pIdzJ6bGtxTlQ5dDdfSUQxTVZKMWVnRUFvNi1Lc1dWWl9aU2czMXJNQTRuTXZFdnFMd05CLTU5TWFFQ1A0dE9EUldrNzg2c1RMVUxYdk95Q2h1bGVtbnZOeU9IT0c3eGFycDZ5cjM4WEpzQWNQZUVxSHdRWXh4V1NmM2Y?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "How AI Safety Rules Could Backfire On Competition - Forbes",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQVhrUzZPYnNOSk9HeFNtYkVYa1FIR1VQOUxRNmpPd1FUNkVtSXBVZ190amtUeEdqVUZqSVE1T050Njc0R1RrWFcwY0xndXhkUmNkeFYtNlhqQXpXSVBQUHBDSDl0UFN6UDlUSnRtZVZlQ3c3UUpBOXNiZ0g0UEliai1BWTRrQm93cFhpY29ZS3NpOWluY3N5ZDFlc1BEaXM?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Why India Needs a Concrete AI Policy Framework - The Regulatory Review",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbjdWYWdSTVdXZnl1NC1wRlNKZjRSSlhzSTRRdzJ0SVhCSnl2Y1VTMnpiSWlYRDNhQjhEOFRMTVV4MC1RYTk3YWJfLXAxbHRhX2VHd2xtTTkxWW0yNjdFcjFMOHQ2a1phWDBYaTg4U1I4M1RveHlHSXlHU0g5X09PZ3ktdTR0NU93Z0JraFVuVkVRdUk?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "‘Uncharted territory’: Figure AI humanoid robots hit 24/7 nonstop work milestone - Interesting Engineering",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMipAFBVV95cUxObUREOEdlT2g4VjMwSGo0SklIaEZxa2FIWXZiQzByLTB0OUJyWlU0cllrS3FiX1pFVW0yZG1XYnBtV0lOUGltLUYyTmdKNnRiQXhob0tocDdkZ2JoeEhQUjlPYkJDRWNCNGtCa0JHQmROLUJrUFp6X2xEUVBEVGstT25MZ3c3MHJFVS1tZzlaaGVSVGlWLXhtRTZmNXpkZmxHOXpFddIBqgFBVV95cUxQN1lhbnJlekNsalFLMEJhM0lqMEpsOE5jZFBqTjFWdFkzU1NDaWdwb3B4WVgtY2RfdWNuX1lOT1VOajBnTVEzSFl1Qm56NGJtMjZrN0g3WkZ3WmVrYVJ2THcwZXJQMlhyZWRNV01rLXpMWEt4MUdIUzRfOWd6dHFZSDR4UkJDYU9BWUIxU2V0RHV1aS02VGgySElWTkxYUEpCTzUtTllITlUwdw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "Alphabet plans to raise $80 billion from stock sales to fund AI build-out - CNBC",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUFZzMHJISHQ2ZmlVdEprWklEbUFiT0JPYjZlaUdyQmp4TElPS1dKVVZKWEwyY2JzSGVWYkFpcHRYMXlXN19SSVJZa2c3eVQ4S0VZVlJEVTR0TDhUWWVkdUFXdFdzZDd2YWRKeHU5dWJDYXh5bWV4SV9IRkVkV0lsM3VRZUwxYU5pekZFeFo4WlVQaXViS3hMRmRPcTFfSE1qNzU3MVA0aw?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "The U.S. has 1,200 AI bills and no good test for any of them - Fortune",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
-      "https://news.google.com/rss/articles/CBMie0FVX3lxTE9GWGk5MWNqOUNiQXJ4d2J1N1piNm9uOXBBTXMyWExMU0ZIT05Va0NjUE9KTk1ocVlJWnEyOF9KRFEyVmowVXBNR1JueTNfR3g5Y1dNMnpnMUM5RUZXb0llNm1iM1BCdzZBa0g2bzZhWnJEUkFId21fbjEyVQ?oc=5": {
-        "file": "",
-        "source": "news.google.com",
-        "first_seen": "2026-06-03",
-        "thumb_headline": "AI safety bill advancing in Tennessee was narrowed after White House feedback, analyst claims - StateScoop",
-        "thumb_subheadline": null,
-        "thumb_image": "",
-        "thumb_generated": false
-      },
       "https://www.bloomberg.com/news/articles/2026-06-03/india-it-stocks-soar-as-nvidia-ceo-huang-calms-ai-disruption-fears": {
         "file": "data/2026-06-03/11.00-01.md",
         "source": "bloomberg.com",
         "first_seen": "2026-06-03",
-        "thumb_headline": "Saham IT India melonjak tajam setelah CEO Nvidia Jensen Huang tenangkan kekhawatiran soal disrupsi AI yang akan merebut pekerjaan sektor teknologi.",
+        "thumb_headline": "Saham IT India melonjak tajam setelah CEO Nvidia Jensen Huang tenangkan kekhawatiran soal disrupsi AI yang akan merebut pekerjaan sektor teknologi",
         "thumb_image": "",
         "thumb_generated": false
       },
@@ -3634,7 +2604,7 @@
         "file": "data/2026-06-03/11.00-02.md",
         "source": "cnbc.com",
         "first_seen": "2026-06-03",
-        "thumb_headline": "Palo Alto Networks raih pendapatan tinggi, bukti bahwa AI kini tingkatkan urgensi investasi besar-besaran di sektor keamanan siber.",
+        "thumb_headline": "Palo Alto Networks raih pendapatan tinggi, bukti bahwa AI kini tingkatkan urgensi investasi besar-besaran di sektor keamanan siber",
         "thumb_image": "",
         "thumb_generated": false
       },
@@ -3642,7 +2612,7 @@
         "file": "data/2026-06-03/11.00-03.md",
         "source": "bloomberg.com",
         "first_seen": "2026-06-03",
-        "thumb_headline": "Pergeseran fokus Google ke teknologi AI memicu kehebohan massal dan kepanikan di kalangan internal karyawan perusahaan.",
+        "thumb_headline": "Pergeseran fokus Google ke teknologi AI memicu kehebohan massal dan kepanikan di kalangan internal karyawan perusahaan",
         "thumb_image": "",
         "thumb_generated": false
       }
@@ -4155,7 +3125,45 @@
         "uncharted territory figure ai humanoid robots hit 24 nonstop work milestone interesting engineering",
         "alphabet plans raise 80 billion stock sales fund ai build cnbc",
         "200 ai bills good test any fortune",
-        "ai safety bill advancing tennessee narrowed white house feedback analyst claims statescoop"
+        "ai safety bill advancing tennessee narrowed white house feedback analyst claims statescoop",
+        "chinese investors exit hong kong stocks ai woos money onshore bloomberg com",
+        "mistral ceo arthur mensch ai infrastructure sovereignty europe ai future cnbc",
+        "guide perplexed ai financial times",
+        "mit researchers teach ai models interpret charts mit news",
+        "levine mediocrity enemy ai stanford daily",
+        "lfucg using artificial intelligence council review city ai policy week civiclex",
+        "ai startup funding falls 10 725 million jan may investors shift smaller early stage bets moneycontrol com",
+        "njeda coreweave announce creation 20m ai hub fund support innovative startups njeda gov",
+        "microsoft first advanced reasoning ai verge",
+        "people really using ai 2026 harvard business review",
+        "microsoft unveils seven homegrown ai models new bid long term self sufficiency geekwire",
+        "president keeps contradicting himself ai atlantic",
+        "sell now social ai vogue",
+        "bernie sanders ai wealth fund bill shows doesn understand ai wealth reason magazine",
+        "trump ai order blow against laissez faire politico",
+        "white house missing ai rule book growing liability bloomberg com",
+        "researchers demonstrate ai worm target any online device university toronto",
+        "new york fed research one many saying remote work behind real gen hiring nightmare fortune",
+        "investors bet humanoid robots transform industry homes next decade cnbc",
+        "morning bid marvell fitting name latest ai darling reuters",
+        "ai industry profit problem getting bigger says goldman sachs equity research chief business insider",
+        "cgi cost millions spent 000 dreams violets ai slop future film making guardian",
+        "microsoft teases new era ai driven devices annual developer conference reuters",
+        "humanoid robots emerge trillion dollar ai bet tech buzz",
+        "modern robots impress years away replacing humans cryptonews net",
+        "argonne launches high performance computing backed ai research service nextgov fcw",
+        "baylor joins multi university consortium launch first cross faith ai benchmark baylor university",
+        "north american startup funding soared 46 2025 driven ai boom crunchbase news",
+        "gemini spark impressive terrifying ai experience ve yet verge",
+        "perplexity ceo tells cnbc one metric determine wins ai race cnbc",
+        "uk media groups given power opt google ai search summaries guardian",
+        "google must give uk publishers choice block ai search summaries says competition watchdog business live guardian",
+        "google forced uk give publishers control ai summaries bloomberg com",
+        "ai agent guardrails business needs things go wrong forbes",
+        "ai replace auto mechanics cnn",
+        "group fights shell oil bid ai prompts used climate lawsuit reuters",
+        "trump administration ask us ai firms voluntarily submit models cybersecurity tests reuters",
+        "trump quietly signed scaled back ai executive order delaying fears falling behind china business insider"
       ],
       "bloomberg.com": [
         "india it stocks soar as nvidia ceo huang calms ai disruption fears",
@@ -5185,9 +4193,89 @@
         "who": "google",
         "what": "ai shift is causing a collective freakout",
         "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Mistral",
+        "what": "CEO Arthur Mensch on AI infrastructure, sovereignty and Europe’s AI future - CNB",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Intel",
+        "what": "ligence? Council will review city's AI policy this week - CivicLex",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Microsoft",
+        "what": "’s first advanced reasoning AI is here - The Verge",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Microsoft",
+        "what": "unveils seven homegrown AI models in new bid for ‘long term self-sufficiency’ -",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Bernie Sanders",
+        "what": "AI Wealth Fund Bill Shows That He Doesn't Understand AI or Wealth - Reason Magaz",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Trump",
+        "what": "’s AI order is a blow against laissez-faire - Politico",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "White House",
+        "what": "’s Missing AI Rule Book Is a Growing Liability - Bloomberg.com",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "EU",
+        "what": "ters",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Microsoft",
+        "what": "teases new era of AI-driven devices at annual developer conference - Reuters",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Perplexity",
+        "what": "CEO tells CNBC one metric will determine who wins the AI race - CNBC",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Google",
+        "what": "AI search summaries - The Guardian",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Google",
+        "what": "must give UK publishers choice to block AI search summaries, says competition wa",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Google",
+        "what": "Forced by UK to Give Publishers Control Over AI Summaries - Bloomberg.com",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "EU",
+        "what": "ters",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "Trump",
+        "what": "administration to ask US AI firms to voluntarily submit models for cybersecurity",
+        "first_seen": "2026-06-03"
+      },
+      {
+        "who": "China",
+        "what": "Business Insider",
+        "first_seen": "2026-06-03"
       }
     ],
-    "total": 402
+    "total": 287
   },
   "queue": {
     "pending": [],
