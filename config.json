@@ -55,8 +55,8 @@
       },
       {
         "id": "ars",
-        "name": "ArsTechnica",
-        "url": "feeds.arstechnica.com/arstechnica/index",
+        "name": "ArsTechnica AI",
+        "url": "arstechnica.com/ai/feed/",
         "enabled": true
       },
       {

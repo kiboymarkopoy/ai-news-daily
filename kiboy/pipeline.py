@@ -232,8 +232,40 @@ def run_cron_stage(max_articles: int = 5, enrich: bool = True) -> str:
         # Sort: articles WITH images first
         pool.sort(key=lambda a: 0 if a.get("image_url") else 1)
 
+        # Topic filter: pastikan artikel relevan dengan AI/tech
+        AI_KEYWORDS = [
+            "ai", "artificial intelligence", "machine learning", "deep learning",
+            "llm", "large language model", "gpt", "openai", "anthropic", "claude",
+            "gemini", "gemma", "mistral", "llama", "deepseek", "qwen",
+            "chatbot", "copilot", "codex", "agent",
+            "robot", "robotics", "humanoid",
+            "nvidia", "gpu", "chip", "semiconductor", "data center",
+            "startup", "funding", "investment",
+            "regulation", "policy", "safety", "ethics",
+            "nvidia", "microsoft", "google", "meta", "apple", "amazon", "aws",
+            "openai", "perplexity", "xai", "grok",
+            "neural", "transformer", "diffusion", "generative",
+            "autonomous", "self-driving",
+            "cyber", "security", "compute",
+            "silicon", "processor", "quantum",
+            "software", "app", "platform", "enterprise",
+            "blockchain", "crypto", "web3",
+            "cloud", "saas", "api",
+        ]
+
+        def is_ai_related(title: str) -> bool:
+            title_lower = title.lower()
+            return any(kw in title_lower for kw in AI_KEYWORDS)
+
+        # Filter non-AI articles (especially from general feeds)
+        ai_pool = [a for a in pool if is_ai_related(a.get("title", ""))]
+        non_ai = [a for a in pool if not is_ai_related(a.get("title", ""))]
+        if non_ai:
+            print(f"  🔍 Filtered {len(non_ai)} non-AI articles: {[a['title'][:40] for a in non_ai[:3]]}")
+            pool = ai_pool + non_ai  # push non-AI to the back
+
         # CRITICAL: Hanya pilih artikel yang PUNYA GAMBAR (no gradient fallback)
-        new_articles = [a for a in pool if a.get("image_url")][:max_articles]
+        new_articles = [a for a in pool if a.get("image_url") and is_ai_related(a.get("title", ""))][:max_articles]
 
         if len(new_articles) < max_articles:
             print(f"  ⚠️  Only {len(new_articles)}/{max_articles} articles have images.")
