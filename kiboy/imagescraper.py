@@ -1,7 +1,19 @@
 """Extract og:image from article URLs via HTTP scraping.
 
 Uses only stdlib (urllib + regex). No BeautifulSoup dependency.
-Handles Google News redirect URLs transparently via urllib redirect-follow.
+
+Supports:
+
+- Standard RSS feeds via ``<media:content>`` / ``<enclosure>`` tags
+  (ArsTechnica, TechCrunch, VentureBeat).
+- OG image meta tag from direct article URLs.
+- ``twitter:image`` fallback.
+- First ``<img>`` fallback for feeds that embed images in description
+  (The Verge, Wired).
+
+For articles where no image is available, the enrichment step leaves
+``image_url`` empty — the thumbnail generator will use a gradient
+fallback background.
 
 Usage::
 
@@ -24,15 +36,13 @@ _USER_AGENT = (
     "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
 )
 
-# Domains known to block automated requests — skip immediately
+# Domains known to block automated requests — skip immediately.
 _BLOCKED_DOMAINS: set[str] = {
     "bloomberg.com",
     "wsj.com",
     "ft.com",
     "barrons.com",
     "economist.com",
-    "nytimes.com",
-    "washingtonpost.com",
 }
 
 
@@ -63,17 +73,14 @@ def _make_request(url: str, timeout: int = 5) -> Optional[str]:
 def scrape_og_image(article_url: str, timeout: int = 5) -> str:
     """Visit an article URL and extract its ``og:image`` meta tag.
 
-    Works with Google News redirect URLs — :mod:`urllib` follows redirects
-    automatically, so ``news.google.com/rss/articles/...`` resolves to the
-    underlying article page before scraping.
-
     Args:
-        article_url: Any article URL (including Google News redirects).
+        article_url: Any article URL (must be a direct URL —
+            Google News redirects only reach an intermediate JS page,
+            which has no OG meta data).
         timeout: HTTP timeout in seconds (default 5).
 
     Returns:
-        Absolute image URL, or ``""`` if no og:image found or the request
-        fails.
+        Absolute image URL, or ``""`` if not found or request fails.
     """
     if not article_url:
         return ""
@@ -124,7 +131,7 @@ def scrape_og_image(article_url: str, timeout: int = 5) -> str:
         return _resolve_url(match.group(1), article_url)
 
     # ------------------------------------------------------------------
-    # Last resort: first <img> with width ≥ 200 (likely hero image)
+    # Last resort: first <img> (catches The Verge, MIT Tech Review, etc.)
     # ------------------------------------------------------------------
     match = re.search(
         r'<img[^>]+src=["\']([^"\']+)["\']',
@@ -154,7 +161,11 @@ def enrich_articles(
     timeout: int = 5,
     max_scrapes: int = 5,
 ) -> list[dict]:
-    """Enrich article dicts with og:image where ``image_url`` is missing.
+    """Enrich article dicts with ``og:image`` where ``image_url`` is missing.
+
+    Scrapes each article's URL for its OG image.  Articles without an
+    image (e.g. Google News) keep an empty ``image_url`` — the thumbnail
+    generator will fall back to a gradient background.
 
     Modifies the list **in place** and also returns it for chaining.
 
@@ -177,8 +188,10 @@ def enrich_articles(
         if article.get("image_url"):
             continue
 
+        # Skip Google News redirect URLs — they resolve to a JS page
+        # without OG metadata
         url = article.get("url", "")
-        if not url:
+        if not url or "news.google.com" in url:
             continue
 
         og_image = scrape_og_image(url, timeout)

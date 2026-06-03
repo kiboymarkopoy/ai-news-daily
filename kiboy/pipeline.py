@@ -222,15 +222,19 @@ def run_cron_stage(max_articles: int = 5, enrich: bool = True) -> str:
     new_articles = stage_dedup(raw_articles, config, state)
     duplicates = fetched - len(new_articles)
 
-    # Limit to max_articles
-    new_articles = new_articles[:max_articles]
-
     # Stage 2.5: Enrich articles without images via og:image scraping
+    # Run enrichment on a larger pool (3x) so we can pick the best
     enriched_count = 0
     if enrich:
         from kiboy.imagescraper import enrich_articles
-        new_articles = enrich_articles(new_articles, timeout=5, max_scrapes=max_articles)
+        pool = new_articles[:max_articles * 3]
+        pool = enrich_articles(pool, timeout=5, max_scrapes=max_articles)
+        # Re-sort: articles WITH images first, then the rest
+        pool.sort(key=lambda a: 0 if a.get("image_url") else 1)
+        new_articles = pool[:max_articles]
         enriched_count = sum(1 for a in new_articles if a.get("image_url"))
+    else:
+        new_articles = new_articles[:max_articles]
 
     # Build clean JSON payload for LLM
     payload: list[dict] = []

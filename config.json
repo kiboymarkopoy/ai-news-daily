@@ -62,7 +62,13 @@
       {
         "id": "verge",
         "name": "The Verge AI",
-        "url": "theverge.com/ai-artificial-intelligence",
+        "url": "theverge.com/rss/ai-artificial-intelligence/index.xml",
+        "enabled": true
+      },
+      {
+        "id": "venturebeat",
+        "name": "VentureBeat AI",
+        "url": "feeds.feedburner.com/venturebeat/SZYf",
         "enabled": true
       }
     ]

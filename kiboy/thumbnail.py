@@ -397,8 +397,9 @@ def generate_thumbnail(
     # ── Load background ──────────────────────────────────────────────────
     bg = load_background(image_url, W, H)
     if bg is None:
-        logger.warning("No valid background image — skipping")
-        return None
+        logger.info("No image URL — using gradient fallback")
+        bg = _create_gradient_background(W, H)
+    # (bg is guaranteed not-None past this point)
 
     canvas = bg.copy()
     draw_tmp = ImageDraw.Draw(canvas)
@@ -697,8 +698,7 @@ def process_article(
         return False
 
     if not image_url:
-        logger.info("Skipping %s — no image URL", file_stem)
-        return False
+        logger.info("No image URL for %s — using gradient fallback", file_stem)
 
     result = generate_thumbnail(
         headline=headline,
@@ -713,6 +713,33 @@ def process_article(
         return True
 
     return False
+
+
+# ── Gradient fallback ─────────────────────────────────────────────────────────
+
+
+def _create_gradient_background(width: int, height: int) -> Image.Image:
+    """Create a dark purple/navy gradient for articles without images.
+
+    Smooth vertical transition from deep charcoal-navy at the top to
+    near-black at the bottom, with a subtle diagonal light streak.
+    """
+    img = Image.new("RGB", (width, height))
+    for y in range(height):
+        t = y / height
+        r = int(26 * (1 - t) + 13 * t)
+        g = int(26 * (1 - t) + 13 * t)
+        b = int(46 * (1 - t) + 13 * t)
+        streak = max(0, 1 - abs((y / height) - 0.3) * 3)
+        streak_val = int(streak * 20)
+        for x in range(width):
+            px_shift = int((x / width) * streak_val * 0.5)
+            img.putpixel((x, y), (
+                min(255, r + px_shift),
+                min(255, g + px_shift),
+                min(255, b + px_shift),
+            ))
+    return img
 
 
 # ── CLI entry point ──────────────────────────────────────────────────────────
