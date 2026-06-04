@@ -14,13 +14,13 @@ from __future__ import annotations
 import hashlib
 import logging
 import os
-import urllib.request
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 import numpy as np
 
 from kiboy.config import get_font_path, CACHE_DIR, DATA_DIR, REPO_DIR
+from kiboy.httpclient import download_binary
 
 logger = logging.getLogger(__name__)
 
@@ -66,11 +66,18 @@ def _get_font(
 
 # ── Image download with cache ────────────────────────────────────────────────
 
-def download_image(url: str) -> Path | None:
-    """Download an image, caching by MD5 hash of the URL.
+def download_image(url: str, referer: str = "") -> Path | None:
+    """Download an image via ``httpclient`` with anti-bot bypass, caching by MD5.
 
-    Tries multiple User-Agent strings to work around hotlink protection.
-    Returns the local cache path on success, ``None`` on failure.
+    Uses ``curl_cffi`` (TLS fingerprint impersonation) as primary method,
+    falling back to Playwright for JS-challenge sites.
+
+    Args:
+        url: Remote image URL.
+        referer: The article page URL (for legitimate Referer header).
+
+    Returns:
+        Local cache path on success, ``None`` on failure.
     """
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -84,37 +91,25 @@ def download_image(url: str) -> Path | None:
     if cache_path.exists():
         return cache_path
 
-    for ua in _USER_AGENTS:
-        try:
-            req = urllib.request.Request(url, headers={
-                "User-Agent": ua,
-                "Accept": (
-                    "image/avif,image/webp,image/apng,"
-                    "image/svg+xml,image/*,*/*;q=0.8"
-                ),
-                "Accept-Language": "en-US,en;q=0.9",
-                "Referer": "https://www.google.com/",
-            })
-            with urllib.request.urlopen(req, timeout=15) as resp:
-                data = resp.read()
-                if len(data) > 1000:
-                    cache_path.write_bytes(data)
-                    return cache_path
-        except Exception:  # noqa: BLE001
-            continue
+    # Download via httpclient (curl_cffi → Playwright fallback)
+    data = download_binary(url, referer=referer)
+    if data and len(data) > 1000:
+        cache_path.write_bytes(data)
+        return cache_path
 
     return None
 
 
 # ── Background image loading ─────────────────────────────────────────────────
 
-def load_background(image_url: str, width: int, height: int) -> Image.Image | None:
+def load_background(image_url: str, width: int, height: int, referer: str = "") -> Image.Image | None:
     """Download, center-crop, and resize an image to fill the canvas.
 
     Args:
         image_url: Remote image URL.
         width: Target canvas width.
         height: Target canvas height.
+        referer: Article URL for anti-bot Referer header.
 
     Returns:
         An RGB ``Image`` sized to ``(width, height)``, or ``None`` on failure.
@@ -122,7 +117,7 @@ def load_background(image_url: str, width: int, height: int) -> Image.Image | No
     if not image_url or not image_url.startswith("http"):
         return None
 
-    local = download_image(image_url)
+    local = download_image(image_url, referer=referer)
     if local is None or not local.exists():
         return None
 
@@ -426,6 +421,7 @@ def generate_thumbnail(
     output_path: Path,
     config: dict,
     subheadline: str | None = None,
+    referer: str = "",
 ) -> Path | None:
     """Generate a 1080×1350 thumbnail with headline and optional subheadline.
 
@@ -447,7 +443,7 @@ def generate_thumbnail(
     logger.info("Generating thumbnail %dx%d → %s", W, H, output_path.name)
 
     # ── Load background ──────────────────────────────────────────────────
-    bg = load_background(image_url, W, H)
+    bg = load_background(image_url, W, H, referer=referer)
     if bg is None:
         logger.info("No image URL — using gradient fallback")
         bg = _create_gradient_background(W, H)
@@ -485,26 +481,46 @@ def generate_thumbnail(
     brand_text = brand_cfg.get("text", config.get("brand", {}).get("name", "KiMedia"))
     brand_font_name = brand_cfg.get("font", "Montserrat-Black")
     brand_size = brand_cfg.get("size_px", 48)
+    # Brand accent dot color (green, matching highlight)
+    brand_dot_color = highlight_color
     brand_top_y = int(H * brand_cfg.get("top_pct", 0.04))
     brand_color = tuple(brand_cfg.get("color", [255, 255, 255]))
     brand_outline = 1
     brand_outline_color = tuple(brand_cfg.get("outline_color", [0, 0, 0]))
     brand_font = _get_font(brand_font_name, brand_size, config)
 
-    bb = draw_tmp.textbbox((0, 0), brand_text, font=brand_font)
-    brand_w = bb[2] - bb[0]
+    # Measure brand text + dot for centering
+    brand_display = brand_text
+    dot_char = "\u25A0"  # ■ solid square
+    brand_with_dot = f"{brand_display}{dot_char}"
+    bb_full = draw_tmp.textbbox((0, 0), brand_with_dot, font=brand_font)
+    full_w = bb_full[2] - bb_full[0]
+    bb_base = draw_tmp.textbbox((0, 0), brand_display, font=brand_font)
+    base_w = bb_base[2] - bb_base[0]
+    brand_x = (W - full_w) // 2
+    dot_x = brand_x + base_w
     
-    # Render Brand text with a soft drop shadow instead of outline
+    # Render brand text with drop shadow
     canvas = draw_text_with_shadow(
-        canvas, brand_text, (W - brand_w) // 2, brand_top_y,
+        canvas, brand_display, brand_x, brand_top_y,
         font=brand_font, fill=brand_color,
         shadow_color=(0, 0, 0), shadow_offset=(0, 6),
         blur_radius=8, opacity=0.75,
+    )
+    # Render green accent dot
+    canvas = draw_text_with_shadow(
+        canvas, dot_char, dot_x, brand_top_y,
+        font=brand_font, fill=brand_dot_color,
+        shadow_color=(0, 0, 0), shadow_offset=(0, 4),
+        blur_radius=6, opacity=0.6,
     )
     # Re-bind the draw object to the updated canvas
     draw_tmp = ImageDraw.Draw(canvas)
 
     # ── Auto-wrap headline ───────────────────────────────────────────────
+    # ALL CAPS transform — matches REFERENSI media aesthetic
+    headline = headline.upper()
+
     font_size = default_size
     headline_font_name = hl_cfg.get("font", "Montserrat-Bold")
     lines: list[str] = []
@@ -586,15 +602,24 @@ def generate_thumbnail(
     text_positions: list[dict] = []
     current_y = text_y_start
 
-    # Headline lines → accent / highlight color
-    for text in lines:
+    # "Last Line Green" — top lines WHITE (context), bottom lines GREEN (punchline)
+    n_lines = len(lines)
+    if n_lines <= 1:
+        green_start = 0       # Single line → all green
+    elif n_lines <= 3:
+        green_start = n_lines - 1  # Last 1 line green
+    else:
+        green_start = n_lines - 2  # Last 2 lines green
+
+    for i, text in enumerate(lines):
         bb = draw_tmp.textbbox((0, 0), text, font=ft)
         tw = bb[2] - bb[0]
         th = bb[3] - bb[1]
         x = (W - tw) // 2
+        line_color = highlight_color if i >= green_start else main_color
         text_positions.append({
             "text": text,
-            "color": highlight_color,
+            "color": line_color,
             "font": ft,
             "size": font_size,
             "x": x,
@@ -645,23 +670,15 @@ def generate_thumbnail(
         )
         draw_final = ImageDraw.Draw(canvas)
 
-    # ── Render text ──────────────────────────────────────────────────────
-    use_outline = outline_cfg.get("enabled", True)
-    ol_color = tuple(outline_cfg.get("color", [0, 0, 0]))
-    ol_width = outline_cfg.get("width", 2)
-
+    # ── Render text with drop shadow (premium, matching brand style) ────
     for tp in text_positions:
-        if use_outline:
-            draw_text_with_outline(
-                draw_final, tp["text"], tp["x"], tp["y"],
-                tp["font"], tp["color"],
-                outline_color=ol_color, outline_width=ol_width,
-            )
-        else:
-            draw_final.text(
-                (tp["x"], tp["y"]), tp["text"],
-                fill=tp["color"], font=tp["font"],
-            )
+        canvas = draw_text_with_shadow(
+            canvas, tp["text"], tp["x"], tp["y"],
+            font=tp["font"], fill=tp["color"],
+            shadow_color=(0, 0, 0), shadow_offset=(0, 4),
+            blur_radius=6, opacity=0.7,
+        )
+    draw_final = ImageDraw.Draw(canvas)
 
     # ── Watermark (bottom) ───────────────────────────────────────────────
     wm_cfg = {}
@@ -757,12 +774,16 @@ def process_article(
     if not image_url:
         logger.info("No image URL for %s — using gradient fallback", file_stem)
 
+    # article_url is available when called from stage_thumbnails
+    article_url = article_info.get("_article_url", "")
+
     result = generate_thumbnail(
         headline=headline,
         image_url=image_url,
         output_path=thumb_path,
         config=config,
         subheadline=subheadline,
+        referer=article_url,
     )
 
     if result:

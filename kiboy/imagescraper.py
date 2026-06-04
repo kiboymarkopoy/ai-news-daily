@@ -230,25 +230,10 @@ def _extract_og_from_html(html: str, base_url: str) -> str:
 
 
 def _make_request(url: str, timeout: int = 5) -> Optional[str]:
-    """GET a URL, return decoded body if HTML, or None on failure."""
-    ctx = ssl.create_default_context()
-    ctx.check_hostname = False
-    ctx.verify_mode = ssl.CERT_NONE
-
+    """GET a URL via httpclient (curl_cffi anti-bot), return decoded HTML."""
     try:
-        req = urllib.request.Request(
-            url,
-            headers={
-                "User-Agent": _USER_AGENT,
-                "Accept": "text/html,application/xhtml+xml",
-                "Accept-Language": "en-US,en;q=0.9",
-            },
-        )
-        with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
-            content_type = resp.headers.get("Content-Type", "")
-            if "html" not in content_type and "text" not in content_type:
-                return None
-            return resp.read().decode("utf-8", errors="ignore")
+        from kiboy.httpclient import fetch_html
+        return fetch_html(url, timeout=timeout)
     except Exception:
         return None
 
@@ -353,6 +338,7 @@ def _resolve_url(image_url: str, base_url: str) -> str:
 def validate_image_url(image_url: str) -> bool:
     """Check if an image URL is actually downloadable and usable.
 
+    Uses httpclient (curl_cffi) for anti-bot bypass.
     Returns True if the image appears valid (not SVG, not 404).
     """
     if not image_url:
@@ -360,23 +346,8 @@ def validate_image_url(image_url: str) -> bool:
     if image_url.lower().endswith(".svg"):
         return False
     try:
-        ctx = ssl.create_default_context()
-        ctx.check_hostname = False
-        ctx.verify_mode = ssl.CERT_NONE
-        req = urllib.request.Request(
-            image_url,
-            headers={"User-Agent": _USER_AGENT, "Accept": "image/*"},
-        )
-        with urllib.request.urlopen(req, timeout=5, context=ctx) as resp:
-            content_type = resp.headers.get("Content-Type", "")
-            if "svg" in content_type:
-                return False
-            # Accept any image type or octet-stream
-            return bool(
-                "image" in content_type
-                or "octet-stream" in content_type
-                or not content_type
-            )
+        from kiboy.httpclient import validate_url
+        return validate_url(image_url)
     except Exception:
         return False
 

@@ -160,6 +160,8 @@ def stage_thumbnails(
         if not should_run or not info.get("file"):
             continue
 
+        # Thread article URL for Referer header in image downloads
+        info["_article_url"] = url
         if generate_thumb(info, config, state, force_regen=force_regen):
             count += 1
 
