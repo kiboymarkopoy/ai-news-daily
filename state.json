@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-05T04:06:27.384525+07:00",
-    "total_articles": 415
+    "updated_at": "2026-06-05T05:08:25.605003+07:00",
+    "total_articles": 420
   },
   "dedup": {
     "articles": {
@@ -3760,6 +3760,51 @@
         "thumb_subheadline": null,
         "thumb_image": "",
         "thumb_generated": true
+      },
+      "https://www.eff.org/deeplinks/2026/06/eff-testifies-congress-protecting-americans-rights-government-ai": {
+        "file": "data/2026-06-05/05.03-01.md",
+        "source": "eff.org",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "EFF Desak Kongres Lindungi Warga dari AI Pemerintah",
+        "thumb_subheadline": null,
+        "thumb_image": "https://www.eff.org/files/banner_library/ai-brain-surgery-banner.jpg",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/defense-tech-ai-and-fundraising-take-center-stage-at-strictlyvc-los-angeles-on-june-18/": {
+        "file": "data/2026-06-05/05.03-02.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "StrictlyVC Los Angeles Siap Gebrak dengan Defense Tech dan AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2025/04/StrictlyVC-NYC-2024.jpg?resize=1200,800",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/is-silicon-valley-ready-to-put-robots-in-peoples-homes-hello-robot-is/": {
+        "file": "data/2026-06-05/05.03-03.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Hello Robot Bawa Robot Rumahan ke Silicon Valley",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/IMG_4162-rotated.jpg?resize=900,1200",
+        "thumb_generated": true
+      },
+      "https://arstechnica.com/ai/2026/06/these-llms-are-the-best-at-resisting-russian-propaganda/": {
+        "file": "data/2026-06-05/05.03-04.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Riset Ungkap LLM Paling Kebal Propaganda Rusia",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2271282507-1024x648.jpg",
+        "thumb_generated": true
+      },
+      "https://arstechnica.com/tech-policy/2026/06/elon-musk-tries-again-to-escape-ftc-audits-of-x-data-handling/": {
+        "file": "data/2026-06-05/05.03-05.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Elon Musk Berusaha Lagi Hindari Audit FTC Data X",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2256975350-1152x648-1780599648.jpg",
+        "thumb_generated": true
       }
     },
     "source_headlines": {
@@ -3934,7 +3979,9 @@
         "meta steals tactic tesla builds data centers tents",
         "apple approves poke first ai agent messages business platform",
         "meta rolls new ai creator assistant facebook",
-        "expect wwdc 2026 siri highly anticipated revamp apple intelligence updates"
+        "expect wwdc 2026 siri highly anticipated revamp apple intelligence updates",
+        "defense tech ai fundraising take center stage strictlyvc los angeles june 18",
+        "silicon valley ready put robots people homes hello robot"
       ],
       "www.tomshardware.com": [
         "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -3992,7 +4039,9 @@
         "google new gemma 12b model designed run any laptop 16gb ram",
         "trump plan test ai models problem us security teams gutted doge",
         "inside meta attempts play catch ai",
-        "google ordered put clearer links ai search let uk publishers opt"
+        "google ordered put clearer links ai search let uk publishers opt",
+        "llms best resisting russian propaganda",
+        "elon musk tries again escape ftc audits data handling"
       ],
       "www.businessinsider.com": [
         "anthropic sekarang startup ai paling berharga di dunia openai tumbang"
@@ -4512,6 +4561,9 @@
       ],
       "wsj.com": [
         "anthropic urges global pause ai development flags self improvement risk"
+      ],
+      "eff.org": [
+        "eff testifies congress protecting americans rights government ai"
       ]
     },
     "cross_topics": [
@@ -5958,6 +6010,11 @@
       {
         "who": "Anthropic",
         "what": "Urges Global Pause in AI Development, Flags ‘Self-Improvement’ Risk",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Elon Musk",
+        "what": "tries again to escape FTC audits of X data handling",
         "first_seen": "2026-06-05"
       }
     ],
