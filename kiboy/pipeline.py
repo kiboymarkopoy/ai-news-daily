@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -257,8 +258,15 @@ def run_cron_stage(max_articles: int = 5, enrich: bool = True) -> str:
         ]
 
         def is_ai_related(title: str) -> bool:
+            # Word-boundary match: short keywords like "ai", "api", "app", "gpu"
+            # must NOT match inside longer words (e.g. "ai" in "Dubai", "Thailand").
+            # Multi-word phrases (e.g. "machine learning") still match as substrings.
             title_lower = title.lower()
-            return any(kw in title_lower for kw in AI_KEYWORDS)
+            for kw in AI_KEYWORDS:
+                pattern = r"\b" + re.escape(kw) + r"\b"
+                if re.search(pattern, title_lower):
+                    return True
+            return False
 
         # Filter non-AI articles (especially from general feeds)
         ai_pool = [a for a in pool if is_ai_related(a.get("title", ""))]

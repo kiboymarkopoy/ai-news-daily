@@ -81,7 +81,7 @@
     },
     "dedup": {
       "headline_threshold": 0.5,
-      "entity_threshold": 2
+      "entity_threshold": 0.4
     },
     "curation": {
       "max_per_run": 5,

@@ -189,7 +189,7 @@ def cmd_register(args: argparse.Namespace) -> None:
 
         # Build file path: data/YYYY-MM-DD/HH.MM-NN.md
         from kiboy.writer import get_next_sequence
-        data_dir = Path(f"/root/ai-news-daily/data/{date_str}")
+        data_dir = DATA_DIR / date_str
         time_str = cron_data.get("time", "00.00")
         seq = article.get("seq", get_next_sequence(data_dir, time_str))
         file_path = f"data/{date_str}/{time_str}-{seq:02d}.md"
@@ -415,7 +415,16 @@ def main() -> None:
         parser.print_help()
         sys.exit(0)
 
-    args.func(args)
+    try:
+        args.func(args)
+    except KeyboardInterrupt:
+        logger.warning("Interrupted by user (command: %s)", args.command)
+        sys.exit(130)
+    except Exception:
+        # Fail loud: log full traceback + exit non-zero so cron/alerting
+        # (Phase 2.2) can detect the failure instead of it passing silently.
+        logger.exception("Command '%s' failed", args.command)
+        sys.exit(1)
 
 
 if __name__ == "__main__":
