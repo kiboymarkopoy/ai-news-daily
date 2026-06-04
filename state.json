@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-05T03:09:43.089880+07:00",
-    "total_articles": 410
+    "updated_at": "2026-06-05T04:06:27.384525+07:00",
+    "total_articles": 415
   },
   "dedup": {
     "articles": {
@@ -406,7 +406,7 @@
         "source": "www.cnbc.com",
         "first_seen": "2026-05-30",
         "thumb_image": "",
-        "thumb_generated": false,
+        "thumb_generated": true,
         "thumb_headline": "Saham Dell Melonjak 32% Pendapatan Server AI Naik 757% Pemegang Saham Tersenyum Lebar",
         "thumb_subheadline": null
       },
@@ -3715,6 +3715,51 @@
         "thumb_subheadline": null,
         "thumb_image": "",
         "thumb_generated": true
+      },
+      "https://www.latimes.com/business/story/2026-06-04/dow-leaps-to-record-as-oil-prices-ease-stocks-outside-of-ai-rally": {
+        "file": "data/2026-06-05/04.03-01.md",
+        "source": "latimes.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "WWDC 2026 Siap Revolusi Siri dengan Apple Intelligence",
+        "thumb_subheadline": null,
+        "thumb_image": "https://ca-times.brightspotcdn.com/dims4/default/0a8b45f/2147483647/strip/true/crop/5528x2902+0+391/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F3e%2F78%2Fea372a274139b136fdb93df541d1%2F13094d706972420ba034c04ba856a582.jpg",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/apple-approves-poke-as-the-first-ai-agent-on-its-messages-for-business-platform/": {
+        "file": "data/2026-06-05/04.03-02.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Dow Jones Cetak Rekor Baru, Saham Non-AI Mulai Bangkit",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/04/Poke-at-3.57.33-PM.jpg?resize=1200,604",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/meta-rolls-out-a-new-ai-creator-assistant-on-facebook/": {
+        "file": "data/2026-06-05/04.03-03.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Anthropic Panggil Dunia untuk Moratorium Pengembangan AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/Introducing-Creator-Assistant-Plus-More-Languages-for-AI-Translations-on-Facebook_Header.jpg?resize=1200,675",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/what-to-expect-from-wwdc-2026-siris-highly-anticipated-revamp-and-apple-intelligence-updates/": {
+        "file": "data/2026-06-05/04.03-04.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Apple Setujui AI Agent Pertama Poke di iMessage Business",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/03/Apple-WWDC26-event-branding_big.jpg.large_.jpg?w=980",
+        "thumb_generated": true
+      },
+      "https://www.wsj.com/tech/ai/anthropic-urges-global-pause-in-ai-development-flags-self-improvement-risk-99cefb73": {
+        "file": "data/2026-06-05/04.03-05.md",
+        "source": "wsj.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Meta Rilis Asisten AI Khusus Kreator di Facebook",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
       }
     },
     "source_headlines": {
@@ -3886,7 +3931,10 @@
         "coralogix raises 200m bet someone needs watch ai agents",
         "lovable signs multi year deal google cloud usage 5x source says",
         "apple touts trillion app store billings sales 90 without commission",
-        "meta steals tactic tesla builds data centers tents"
+        "meta steals tactic tesla builds data centers tents",
+        "apple approves poke first ai agent messages business platform",
+        "meta rolls new ai creator assistant facebook",
+        "expect wwdc 2026 siri highly anticipated revamp apple intelligence updates"
       ],
       "www.tomshardware.com": [
         "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -4447,7 +4495,8 @@
         "strengthening biosecurity era ai"
       ],
       "latimes.com": [
-        "spacex ipo video sells elon musk space ai asteroid dreams mom pop investors"
+        "spacex ipo video sells elon musk space ai asteroid dreams mom pop investors",
+        "dow leaps record oil prices ease stocks outside ai rally"
       ],
       "nbcconnecticut.com": [
         "hartford mayor disputes ai data center rumors residents call transparency"
@@ -4460,6 +4509,9 @@
       ],
       "unc.edu": [
         "carolina launches study libraries generative ai local communities"
+      ],
+      "wsj.com": [
+        "anthropic urges global pause ai development flags self improvement risk"
       ]
     },
     "cross_topics": [
@@ -5886,6 +5938,26 @@
       {
         "who": "Trump",
         "what": "Is Finally Facing Reality on A.I.",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Apple",
+        "what": "approves Poke as the first AI agent on its Messages for Business platform",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Meta",
+        "what": "rolls out a new AI creator assistant on Facebook",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Apple",
+        "what": "Intelligence updates",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Anthropic",
+        "what": "Urges Global Pause in AI Development, Flags ‘Self-Improvement’ Risk",
         "first_seen": "2026-06-05"
       }
     ],
