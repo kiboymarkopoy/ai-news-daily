@@ -777,14 +777,27 @@ def process_article(
     # article_url is available when called from stage_thumbnails
     article_url = article_info.get("_article_url", "")
 
-    result = generate_thumbnail(
-        headline=headline,
-        image_url=image_url,
-        output_path=thumb_path,
-        config=config,
-        subheadline=subheadline,
-        referer=article_url,
-    )
+    # Dispatch: V9 split layout (config flag) or V8 full-bleed (default/fallback).
+    layout = config.get("thumbnail", {}).get("layout", "fullbleed")
+    if layout == "split":
+        from kiboy.thumbnail_v9 import generate_thumbnail_v9
+        result = generate_thumbnail_v9(
+            headline=headline,
+            image_url=image_url,
+            output_path=thumb_path,
+            config=config,
+            subheadline=subheadline,
+            referer=article_url,
+        )
+    else:
+        result = generate_thumbnail(
+            headline=headline,
+            image_url=image_url,
+            output_path=thumb_path,
+            config=config,
+            subheadline=subheadline,
+            referer=article_url,
+        )
 
     if result:
         article_info["thumb_generated"] = True
