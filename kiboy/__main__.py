@@ -433,10 +433,18 @@ def main() -> None:
     except KeyboardInterrupt:
         logger.warning("Interrupted by user (command: %s)", args.command)
         sys.exit(130)
-    except Exception:
-        # Fail loud: log full traceback + exit non-zero so cron/alerting
-        # (Phase 2.2) can detect the failure instead of it passing silently.
+    except Exception as exc:
+        # Fail loud: log full traceback + exit non-zero so cron can detect the
+        # failure instead of it passing silently. Also fire a Telegram alert for
+        # cron-critical commands (no-op if alerting env vars are unset).
         logger.exception("Command '%s' failed", args.command)
+        if args.command in {"pipeline", "register", "thumbnail"}:
+            from kiboy.notify import send_telegram
+            send_telegram(
+                f"🚨 Kiboy pipeline FAILED\n"
+                f"Command: {args.command}\n"
+                f"Error: {type(exc).__name__}: {str(exc)[:300]}"
+            )
         sys.exit(1)
 
 
