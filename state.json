@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-04T03:18:09.270414+07:00",
-    "total_articles": 358
+    "updated_at": "2026-06-04T20:23:17.116391+07:00",
+    "total_articles": 382
   },
   "dedup": {
     "articles": {
@@ -3247,6 +3247,222 @@
         "thumb_subheadline": null,
         "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-539781130-1152x648.jpg",
         "thumb_generated": true
+      },
+      "https://www.foxbusiness.com/video/6397460093112": {
+        "file": "data/2026-06-04/03.25-01.md",
+        "source": "foxbusiness.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Kenapa Chip Memori Jadi Incaran Panas di Era AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/854081161001/ceba078b-df22-407b-856f-efead9731544/6051c3f3-92ed-49c7-aaad-6dceafa83a02/1280x720/match/1024/512/image.jpg?ve=1&amp;tl=1",
+        "thumb_generated": true
+      },
+      "https://arstechnica.com/google/2026/06/googles-new-gemma-4-open-ai-model-is-sized-for-your-laptop/": {
+        "file": "data/2026-06-04/03.25-02.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Gemma 4 12B dari Google: Model AI Keren Buat Laptop RAM 16GB Lo",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2025/11/Gemma-social-share.width-1300-1152x648.jpg",
+        "thumb_generated": true
+      },
+      "https://arstechnica.com/tech-policy/2026/06/trumps-ai-executive-order-may-not-prevent-dangerous-deployments/": {
+        "file": "data/2026-06-04/03.25-03.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Ujian AI Era Trump: Rencana Nge-test Model Tersandung Kurangnya Ahli Sekuriti (Efek DOGE)",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/trump-terminator-monkey-cymbals-1152x648.jpg",
+        "thumb_generated": true
+      },
+      "https://arstechnica.com/ai/2026/06/inside-metas-attempts-to-play-catch-up-with-ai/": {
+        "file": "data/2026-06-04/03.25-04.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Ngegas Ngejar Ketinggalan: Intip Perjuangan Meta di Arena AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/bluealexandr-1152x648.jpg",
+        "thumb_generated": true
+      },
+      "https://arstechnica.com/tech-policy/2026/06/google-ordered-to-put-clearer-links-in-ai-search-and-let-uk-publishers-opt-out/": {
+        "file": "data/2026-06-04/04.00-01.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Google Dipaksa Bikin Link AI Search Lebih Jelas & Kasih Opsi Opt-Out Buat Publisher UK",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/google-sign-logo-1152x648.jpg",
+        "thumb_generated": true
+      },
+      "https://venturebeat.com/technology/alibabas-qwen3-7-plus-supports-text-video-and-imagery-inputs-at-low-cost-of-0-4-1-6-per-1m-token-but-its-proprietary": {
+        "file": "data/2026-06-04/04.00-02.md",
+        "source": "venturebeat.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Alibaba Rilis Qwen3.7-Plus: Model Multimodal Super Murah Tapi Sayangnya Proprietary",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/3PD7bcZwfl7LUqX2wWEFux/05c4df4be513499b49ea1d9e79009cc7/Gemini_Generated_Image_tmex3utmex3utmex.png?w=300&q=30",
+        "thumb_generated": true
+      },
+      "https://venturebeat.com/technology/perplexity-ai-unveils-hybrid-local-cloud-inference-system-at-computex-2026": {
+        "file": "data/2026-06-04/04.00-03.md",
+        "source": "venturebeat.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Perplexity AI Pamer Sistem Inference Hybrid (Lokal + Cloud) di Computex 2026",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/7KmFf9Vapi9RYzj3aLtQPl/fdaf9045387338f3e44380d3ad9b5fdd/Nuneybits_a_nostalgic_surreal_photograph_of_an_old_computer_set_e1939de5-f0c8-4834-b6b4-c73efd5ac7d1.webp?w=300&q=30",
+        "thumb_generated": true
+      },
+      "https://venturebeat.com/resources/the-agentic-reckoning-enterprise-ai-organizations-have-a-runtime-problem-not-a-model-problem": {
+        "file": "data/2026-06-04/04.00-04.md",
+        "source": "venturebeat.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Ironi Perusahaan Enterprise AI: Punya Model Bagus, Tapi Gagal Pas Dijalankan (Runtime)",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/3YcL8Sbx04RQsgnRvbYfs5/6620b35dd75cc138cb57cf72a9773f07/VentureBeat-Research-1.png?w=300&q=30",
+        "thumb_generated": true
+      },
+      "https://venturebeat.com/technology/googles-new-open-source-gemma-4-12b-analyzes-audio-video-and-runs-entirely-locally-on-a-typical-16gb-enterprise-laptop": {
+        "file": "data/2026-06-04/05.00-01.md",
+        "source": "venturebeat.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Gokil! AI Google Gemma 4 Bisa Analisa Video & Audio, Jalan Mulus di Laptop Biasa!",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/6cqo2dZzZAqwTjt37B3cjc/fbb8eb55e17c2ce25514d21d3c5aca91/ChatGPT_Image_Jun_3__2026__02_38_37_PM.png?w=300&q=30",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/03/lovable-signs-multi-year-deal-with-google-cloud-to-up-usage-5x-source-says/": {
+        "file": "data/2026-06-04/06.00-01.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Lovable Gandeng Google Cloud, Kencengin Gas Sampai 5x Lipat!",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2245627953.jpg?resize=1200,800",
+        "thumb_generated": true
+      },
+      "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/": {
+        "file": "data/2026-06-04/08.00-01.md",
+        "source": "blog.google",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Google Rilis Gemma 4 12B: Model AI Multimodal Baru Tanpa Encoder",
+        "thumb_subheadline": null,
+        "thumb_image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Social_Image_G4_12B.width-1300.png",
+        "thumb_generated": true
+      },
+      "https://www.axios.com/2026/06/03/yahoo-scout-ai-sports-finance": {
+        "file": "data/2026-06-04/08.00-02.md",
+        "source": "axios.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Yahoo Luncurin Tools AI Buat Fans NBA & Investor",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.axios.com/Mx4QTm5pvIt_2F7KPVKDTDt3kWI=/0x632:6016x4016/1366x768/2026/06/03/1780515345725.jpeg",
+        "thumb_generated": true
+      },
+      "https://venturebeat.com/data/enterprise-ai-agents-keep-creating-data-silos-microsofts-build-answer-is-microsoft-iq-and-rayfin": {
+        "file": "data/2026-06-04/09.00-01.md",
+        "source": "venturebeat.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Solusi Microsoft Buat Agen AI yang Suka Bikin 'Pulau Data' Sendiri",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/2pEzT3ZdMxDl52oJEjUEJK/97f59713b559f5e6ca0d7b7185014e79/matrix-msft-smk1.jpg?w=300&q=30",
+        "thumb_generated": true
+      },
+      "https://www.thefp.com/p/i-built-an-ai-company-heres-why-ai": {
+        "file": "data/2026-06-04/10.00-01.md",
+        "source": "thefp.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Bos Startup AI Buka Suara: Tenang, Kerjaan Coder Gak Bakal Ilang!",
+        "thumb_subheadline": null,
+        "thumb_image": "https://substackcdn.com/image/fetch/$s_!u1_n!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F08d5fd3e-8003-4896-b9ac-57d5a933dc84_1594x897.jpeg",
+        "thumb_generated": true
+      },
+      "https://venturebeat.com/infrastructure/microsoft-debuts-surface-rtx-spark-dev-box-to-run-large-ai-models-without-cloud-costs": {
+        "file": "data/2026-06-04/10.00-02.md",
+        "source": "venturebeat.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Microsoft Rilis Surface RTX Spark Dev Box: Jalanin Model AI Gede Tanpa Takut Tagihan Cloud Jebol!",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/9ZXML9iabyyDqXI5bDqHu/0be5bd55a52eb7b0ecc35bc7f4a6cb83/Surface_RTX_Spark_Image_4.png?w=300&q=30",
+        "thumb_generated": true
+      },
+      "https://www.wkrn.com/video/mcminnville-residents-against-ai-data-center/11852434/": {
+        "file": "data/2026-06-04/11.00-01.md",
+        "source": "wkrn.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Warga McMinnville Tolak Pembangunan Data Center AI",
+        "thumb_subheadline": null,
+        "thumb_image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAQCAMAAADDGrRQAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURUdwTNYELOEGONQILd0AONwALtwEL+AAL9MFLfkJSNQGLdMJLdQJLdQGLdQKLtYFLNcELdUGLdcBL9gFL88OLdUFLNEOLglBhT4AAAAXdFJOUwC8CqgNIRgRoAS1dWWuR4RTjzgryZpYblfkcAAAAI9JREFUGNNdj+sWhCAIhAdvqGVa1r7/oy6RZ7eaH3D4ZACBIed9wlOOMtUnSrEmZ6cHa9YAIfsbCkWrdpi/c50Bk2CO9mNLdMAu03wJA3HpEnfpxbyOg6ruyx8JJi6KNstnslp1dbPd9GnqmuYq7mmcv1zjnbQw8cV0xzkqo+fX1zkjUOO7wnrInUTxJiruC3vtBNRoQQn2AAAAAElFTkSuQmCC",
+        "thumb_generated": true
+      },
+      "https://venturebeat.com/security/microsoft-launches-mxc-an-os-level-sandbox-for-ai-agents-with-openai-and-nvidia-already-on-board": {
+        "file": "data/2026-06-04/11.00-02.md",
+        "source": "venturebeat.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Microsoft Rilis MXC: Sandbox Keren Buat Agent AI Biar Nggak Nakal",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/2Bj8ehmUSTCeqnkJ3pPCjc/f9782b3575c73ccecb809afd58e7acd2/Nuneybits_Vector_art_of_the_iconic_Microsoft_Windows_logo_on_a__b8c7cdb1-4983-4e68-94a9-93fbef23357b.webp?w=300&q=30",
+        "thumb_generated": true
+      },
+      "https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins": {
+        "file": "data/2026-06-04/12.00-01.md",
+        "source": "venturebeat.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Update Baru OpenAI Codex: AI Bisa Bikin Workspace Interaktif Sendiri!",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/2TEj8wOuqSrOfRJ3k5WZTg/fc481e92f1a3b9b2421e12757fef8532/ChatGPT_Image_Jun_2__2026__11_52_04_AM.png?w=300&q=30",
+        "thumb_generated": true
+      },
+      "https://developers.googleblog.com/bringing-gemma-4-12b-to-your-laptop-unlocking-local-agentic-workflows-with-google-ai-edge/": {
+        "file": "data/2026-06-04/15.00-01.md",
+        "source": "developers.googleblog.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Bawa Gemma 4 12B ke Laptop Lo: Buka Workflow Agen Lokal Pake Google AI Edge",
+        "thumb_subheadline": null,
+        "thumb_image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/banner_final_1.2e16d0ba.fill-1200x600.png",
+        "thumb_generated": true
+      },
+      "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNU0hzc196b3ZwOG9DaURMLXo3MFR5b3VVaEdFNG05WjMwSlJNTGdRTHRIeG40RzdkeF9kVkhnS19wQ2RaWUdOa0JFTGxEeU9BLTRycU03XzBfYXZLS1dDUDBOdU9qMjFweldiYy1pV2pKRFVudDBoQ21ENzVEcEFtXzl6LU1kUUEzZVNHcDZnRnRPQ1lSVTlXV0ZKdjViS2g0d3ZRMllfbG1ya3N4MloydFc1MnpKbmc2NTRaUVFqMjJDUGM?oc=5": {
+        "file": "data/2026-06-04/20.17-03.md",
+        "source": "cnbc.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Usul Pajak AI dan Robot, Jangan Pajakin Manusia",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.barrons.com/articles/global-wealth-survey-rises-millionaires-1e514663": {
+        "file": "data/2026-06-04/20.17-02.md",
+        "source": "barrons.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "AI Boom Cetak Banyak Miliarder Baru di Seluruh Dunia",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://news.google.com/rss/articles/CBMihgFBVV95cUxQNV9rdFNLX1FqczJFYWo5VUpwRjVwOEE1SHc1YVp1OHlWaXNIQ2JUaUVvTFZpckJJQVpfSkhuVzlieEw4NDl0QXFsajR4TS1zdFR1ZmptRS1MbDJSdFpVTzJpZUtma3Y1X0pNMDJnWDhOcWxKRFRoZFQ1OVQ1T0pSbkhSbkJ2UQ?oc=5": {
+        "file": "data/2026-06-04/20.17-05.md",
+        "source": "yahoo.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Mainan AI Bisa Rusak Hubungan Anak dan Orang Tua",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUVRRRjlMU2E1UW0zVE9kc0YtWmxMWjFpaExFamxCemJab3ZUREhWNWFya1dIRUl6cUdjRDZkU1lhM21WczlRM1dLU053bElQUkItdVdhd0YzZ1lBSWJLSzNBN3RDN2dqd2xidzdzcTE0X0NHRWE4aFp0blBZMUFVQ0hjbzVVcU9Zbjc3Rjhzam1HOXdVQnEtbVl0RlhlY2lnX3BKOWZteWFtbVZMR0p4ekI1cDV0Y0VxSGc?oc=5": {
+        "file": "data/2026-06-04/20.17-04.md",
+        "source": "news.samsung.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Samsung Rilis Fitur AI Baru di Galaxy Watch",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUFFoVno1anJYMFAtTzNfMHJWZHlzNGhKZndKd0lPOGJCNHBTTzA3NWVXMU15TFhFb3Rtam9qTDMwOGx6MmlIMGFodnhWZUtySlp1TTN6WGZ4aEswNVpDTzFUcTNMR29ZT212eER0RnUwNjROeTRKSnpQU1FZMkYtNHEtb1ZRWEZUaU9HcTlENnJaTEkxQ0V0ZFQ3OWlmTTJKWEZpUUR0Qk5jYzZXQmEyT3VlcFIxMlhkOEE?oc=5": {
+        "file": "data/2026-06-04/20.17-01.md",
+        "source": "washingtonpost.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Trump Dukung AI Dokter Masuk ke Sistem Kesehatan AS",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
       }
     },
     "source_headlines": {
@@ -3415,7 +3631,8 @@
         "two founders left goldman meta build voice ai markets everyone else overlooked",
         "publishers able opt ai search thanks new regulation",
         "meta ai agent whatsapp business now available globally",
-        "coralogix raises 200m bet someone needs watch ai agents"
+        "coralogix raises 200m bet someone needs watch ai agents",
+        "lovable signs multi year deal google cloud usage 5x source says"
       ],
       "www.tomshardware.com": [
         "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -3469,7 +3686,11 @@
         "cats prefer silver vine catnip may highlights",
         "moderna gets 50 million develop mrna ebola vaccine against bundibugyo",
         "long take rebuild blue origin launch pad asked spacex vets",
-        "beans use immune receptor call airstrikes caterpillars"
+        "beans use immune receptor call airstrikes caterpillars",
+        "google new gemma 12b model designed run any laptop 16gb ram",
+        "trump plan test ai models problem us security teams gutted doge",
+        "inside meta attempts play catch ai",
+        "google ordered put clearer links ai search let uk publishers opt"
       ],
       "www.businessinsider.com": [
         "anthropic sekarang startup ai paling berharga di dunia openai tumbang"
@@ -3505,7 +3726,8 @@
         "serikat guru terbesar as minta sekolah rem radio stop kasi ai chatbots ke bocah sd"
       ],
       "blog.google": [
-        "google bikin gempar gemini omni bisa bikin video cuma dari omongan"
+        "google bikin gempar gemini omni bisa bikin video cuma dari omongan",
+        "introducing gemma 12b unified encoder free multimodal model"
       ],
       "www.livescience.com": [
         "openai punya model internal yang bisa ngerjain soal matematika 80 tahun gak terpecahkan"
@@ -3559,7 +3781,15 @@
         "startup ai prancis mistral bukabukaan bikin model fisika buat airbus rebranding assistant jadi vibe dan target 1 miliar di 2026",
         "minimax m3 debut kalahkan gpt 5 5 gemini 3 1 pro harga cuma 10 persen",
         "risiko browser ai claude bisa dibajak 31 5 persen anthropic buka data keamanan",
-        "claude mythos buka fakta proses patching terlalu lambat"
+        "claude mythos buka fakta proses patching terlalu lambat",
+        "alibaba qwen3 plus supports text video imagery inputs low cost per 1m token proprietary",
+        "perplexity ai unveils hybrid local cloud inference system computex 2026",
+        "agentic reckoning enterprise ai organizations runtime problem model problem building wrong solution",
+        "google new open source gemma 12b analyzes audio video runs entirely locally typical 16gb enterprise laptop",
+        "enterprise ai agents keep creating data silos microsoft build answer microsoft iq rayfin",
+        "microsoft debuts surface rtx spark dev box run large ai models without cloud costs",
+        "microsoft launches mxc os level sandbox ai agents openai nvidia already board",
+        "openai codex update lets agents build interactive enterprise workspaces via sites role specific plugins"
       ],
       "www.kxan.com": [
         "anggota kongres as usul pajak ai hasilnya buat training ulang pekerja"
@@ -3847,7 +4077,8 @@
       ],
       "cnbc.com": [
         "palo alto networks tops earnings as ai fuels cybersecurity urgency",
-        "perplexity ceo tells cnbc one metric determine wins ai race"
+        "perplexity ceo tells cnbc one metric determine wins ai race",
+        "andrew pitch tax ai tax ai tax robots stop taxing human workers"
       ],
       "Bloomberg.com": [
         "alphabet to raise 80 billion in equity capital for ai spending"
@@ -3863,7 +4094,8 @@
         "house dem proposes bill help agencies create ai rules"
       ],
       "axios.com": [
-        "exclusive ibm ceo backs trump narrowed ai executive order"
+        "exclusive ibm ceo backs trump narrowed ai executive order",
+        "exclusive yahoo launches ai tools nba fans investors"
       ],
       "businessinsider.com": [
         "uber lays almost quarter hr recruitment staff says nothing ai"
@@ -3881,7 +4113,8 @@
         "labour mp sues elon musk ai company fake sexualised images"
       ],
       "washingtonpost.com": [
-        "opinion government ownership path poverty"
+        "opinion government ownership path poverty",
+        "inside trump backed push bring ai doctors american medicine"
       ],
       "unu.edu": [
         "environmental cost artificial intelligence carbon water land footprints"
@@ -3891,6 +4124,27 @@
       ],
       "scientificamerican.com": [
         "scientists built powerful ai computer worm learns spreads"
+      ],
+      "foxbusiness.com": [
+        "memory chips emerging one ai hottest trades"
+      ],
+      "thefp.com": [
+        "built ai company ai won kill coding jobs"
+      ],
+      "wkrn.com": [
+        "mcminnville residents against ai data center"
+      ],
+      "developers.googleblog.com": [
+        "bringing gemma 12b laptop unlocking local agentic workflows google ai edge"
+      ],
+      "barrons.com": [
+        "global wealth surging ai boom minting millionaires"
+      ],
+      "yahoo.com": [
+        "ai toys weaken kids bond parents anxious generation author says"
+      ],
+      "news.samsung.com": [
+        "samsung introduces next gen galaxy watch features ai powered everyday health companion"
       ]
     },
     "cross_topics": [
@@ -5172,6 +5426,81 @@
       {
         "who": "Meta",
         "what": "’s AI agent for WhatsApp Business is now available globally",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Google",
+        "what": "s new Gemma 4 12B model is designed to run on any laptop with 16GB of RAM",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Trump",
+        "what": "plan to test AI models has a problem—US security teams were gutted by DOGE",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Meta",
+        "what": "s attempts to play catch-up with AI",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Google",
+        "what": "ordered to put clearer links in AI search and let UK publishers opt out",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Alibaba",
+        "what": "s Qwen3.7-Plus supports text, video and imagery inputs at low cost of $0.4/$1.6",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Perplexity",
+        "what": "AI unveils hybrid local-cloud inference system at Computex 2026",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Google",
+        "what": "s new open source Gemma 4 12B analyzes audio, video — and runs entirely locally",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Google",
+        "what": "Cloud to up usage 5x, source says",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Microsoft",
+        "what": "s Build answer is Microsoft IQ and Rayfin.",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Microsoft",
+        "what": "debuts Surface RTX Spark Dev Box to run large AI models without cloud costs",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Microsoft",
+        "what": "launches MXC, an OS-level sandbox for AI agents, with OpenAI and Nvidia already",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "OpenAI",
+        "what": "s Codex update lets agents build interactive enterprise workspaces via Sites and",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Google",
+        "what": "AI Edge",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Samsung",
+        "what": "Introduces Next-Gen Galaxy Watch Features for AI-Powered Everyday Health Compani",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Trump",
+        "what": "backed push to bring AI doctors into American medicine",
         "first_seen": "2026-06-04"
       }
     ],

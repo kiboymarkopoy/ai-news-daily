@@ -29,6 +29,7 @@ from kiboy.dedup import check_duplicate, register_article
 from kiboy.fetcher import fetch_all
 from kiboy.thumbnail import process_article as generate_thumb
 from kiboy.utils import extract_domain
+from kiboy.imagescraper import is_gn_url
 
 logger = logging.getLogger(__name__)
 
@@ -264,18 +265,38 @@ def run_cron_stage(max_articles: int = 5, enrich: bool = True) -> str:
             print(f"  🔍 Filtered {len(non_ai)} non-AI articles: {[a['title'][:40] for a in non_ai[:3]]}")
             pool = ai_pool + non_ai  # push non-AI to the back
 
-        # CRITICAL: Hanya pilih artikel yang PUNYA GAMBAR (no gradient fallback)
-        new_articles = [a for a in pool if a.get("image_url") and is_ai_related(a.get("title", ""))][:max_articles]
+        # GN URL filter: push unresolved GN URLs to the VERY back
+        # Articles with real URLs selalu lebih prioritas
+        has_real_url = [a for a in pool if not is_gn_url(a.get("url", ""))]
+        gn_urls = [a for a in pool if is_gn_url(a.get("url", ""))]
+        if gn_urls:
+            print(f"  🔗 {len(gn_urls)} articles still have GN redirect URLs — deprioritized")
+        pool = has_real_url + gn_urls
 
-        if len(new_articles) < max_articles:
-            print(f"  ⚠️  Only {len(new_articles)}/{max_articles} articles have images.")
-            print(f"  📸 Available pool: {len(pool)} articles ({sum(1 for a in pool if a.get('image_url'))} with images)")
+        # Prioritas 1: Artikel AI dengan gambar
+        ai_with_img = [a for a in pool if a.get("image_url") and is_ai_related(a.get("title", ""))]
+        # Prioritas 2: Artikel AI tanpa gambar
+        ai_no_img = [a for a in pool if not a.get("image_url") and is_ai_related(a.get("title", ""))]
+        # Prioritas 3: Non-AI (last resort)
+        non_ai_pool = [a for a in pool if not is_ai_related(a.get("title", ""))]
 
-            # If too few, also include articles with GN-resolved URLs (might have images at runtime)
-            remaining = [a for a in pool if not a.get("image_url") and a.get("resolved_url")]
-            if remaining and len(new_articles) > 0:
-                # Still prioritize quality over quantity
-                pass
+        if len(ai_with_img) >= max_articles:
+            new_articles = ai_with_img[:max_articles]
+        else:
+            # Isi dulu dengan yang ada gambar, sisanya dari AI tanpa gambar
+            new_articles = ai_with_img[:]
+            need = max_articles - len(ai_with_img)
+            fill = ai_no_img[:need]
+            new_articles.extend(fill)
+            need = max_articles - len(new_articles)
+
+            # Last resort: ambil non-AI buat genapin
+            if need > 0:
+                new_articles.extend(non_ai_pool[:need])
+
+            print(f"  ⚠️  Only {len(ai_with_img)}/{max_articles} articles have images.")
+            print(f"  📸 Available pool: {len(ai_no_img)} AI w/o img + {len(non_ai_pool)} non-AI")
+            print(f"  ✅ Selected: {len(new_articles)} articles ({len(ai_with_img)} with images)")
 
         enriched_count = sum(1 for a in new_articles if a.get("image_url"))
     else:

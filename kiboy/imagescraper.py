@@ -403,7 +403,21 @@ def enrich_articles(
     """
     processed = 0
 
-    # Phase 1: Direct URLs (fast, stdlib-based)
+    # ══ Phase 0: Resolve GN URLs FIRST (Playwright-based, slow) ══
+    # Semua GN URL harus di-resolve ke real URL sebelum scraping gambar.
+    # Ini prioritas karena akan melambat jika dilakukan terakhir.
+    gn_resolved = 0
+    for article in articles:
+        if gn_resolved >= 20:  # Max 20 GN resolutions per run
+            break
+        url = article.get("url", "")
+        if not is_gn_url(url):
+            continue
+        resolve_and_enrich(article, timeout=timeout)
+        gn_resolved += 1
+
+    # ══ Phase 1: Direct URLs (fast, stdlib-based) ══
+    # Scrape OG image only — URL sudah real, tidak perlu resolve
     for article in articles:
         if processed >= max_scrapes:
             break
@@ -417,16 +431,5 @@ def enrich_articles(
             if og:
                 article["image_url"] = og
             processed += 1
-
-    # Phase 2: GN URLs (slower, Playwright-based)
-    gn_count = 0
-    for article in articles:
-        if gn_count >= 3:  # Max 3 GN resolutions per run
-            break
-        url = article.get("url", "")
-        if not is_gn_url(url):
-            continue
-        resolve_and_enrich(article, timeout=timeout)
-        gn_count += 1
 
     return articles
