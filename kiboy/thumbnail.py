@@ -366,6 +366,58 @@ def draw_text_with_outline(
     draw.text((x, y), text, fill=fill, font=font)
 
 
+# ── Text drop shadow renderer (NEW) ──────────────────────────────────────────
+
+def draw_text_with_shadow(
+    canvas: Image.Image,
+    text: str,
+    x: int,
+    y: int,
+    font: ImageFont.FreeTypeFont,
+    fill: tuple[int, ...],
+    shadow_color: tuple[int, int, int] = (0, 0, 0),
+    shadow_offset: tuple[int, int] = (0, 4),
+    blur_radius: int = 5,
+    opacity: float = 0.6,
+) -> Image.Image:
+    """Draw *text* with a soft drop shadow on *canvas*.
+    
+    Creates a separate transparent layer, draws the shadow text, blurs it,
+    applies opacity, composites it over the canvas, and finally draws the
+    main text on top.
+    
+    Returns:
+        A new RGB ``Image`` with the shadowed text.
+    """
+    w, h = canvas.size
+    
+    # 1. Create a transparent shadow layer
+    shadow_layer = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    shadow_draw = ImageDraw.Draw(shadow_layer)
+    
+    # 2. Draw the text in shadow color with offset
+    shadow_draw.text(
+        (x + shadow_offset[0], y + shadow_offset[1]), 
+        text, 
+        font=font, 
+        fill=(*shadow_color, int(255 * opacity))
+    )
+    
+    # 3. Apply Gaussian blur to the shadow layer
+    shadow_layer = shadow_layer.filter(ImageFilter.GaussianBlur(radius=blur_radius))
+    
+    # 4. Composite shadow over the original canvas
+    canvas_rgba = canvas.convert("RGBA")
+    result = Image.alpha_composite(canvas_rgba, shadow_layer)
+    
+    # 5. Draw the actual crisp text on top
+    draw_final = ImageDraw.Draw(result)
+    draw_final.text((x, y), text, fill=fill, font=font)
+    
+    return result.convert("RGB")
+
+
+
 # ── Core thumbnail generation ────────────────────────────────────────────────
 
 def generate_thumbnail(
@@ -441,11 +493,16 @@ def generate_thumbnail(
 
     bb = draw_tmp.textbbox((0, 0), brand_text, font=brand_font)
     brand_w = bb[2] - bb[0]
-    draw_tmp.text(
-        ((W - brand_w) // 2, brand_top_y), brand_text,
-        fill=brand_color, font=brand_font,
-        stroke_width=brand_outline, stroke_fill=brand_outline_color
+    
+    # Render Brand text with a soft drop shadow instead of outline
+    canvas = draw_text_with_shadow(
+        canvas, brand_text, (W - brand_w) // 2, brand_top_y,
+        font=brand_font, fill=brand_color,
+        shadow_color=(0, 0, 0), shadow_offset=(0, 6),
+        blur_radius=8, opacity=0.75,
     )
+    # Re-bind the draw object to the updated canvas
+    draw_tmp = ImageDraw.Draw(canvas)
 
     # ── Auto-wrap headline ───────────────────────────────────────────────
     font_size = default_size
