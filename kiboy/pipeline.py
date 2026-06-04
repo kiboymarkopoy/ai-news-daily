@@ -270,8 +270,8 @@ def run_cron_stage(max_articles: int = 5, enrich: bool = True) -> str:
         has_real_url = [a for a in pool if not is_gn_url(a.get("url", ""))]
         gn_urls = [a for a in pool if is_gn_url(a.get("url", ""))]
         if gn_urls:
-            print(f"  🔗 {len(gn_urls)} articles still have GN redirect URLs — deprioritized")
-        pool = has_real_url + gn_urls
+            print(f"  🔗 {len(gn_urls)} articles still have GN redirect URLs — excluded from selection")
+        pool = has_real_url
 
         # Prioritas 1: Artikel AI dengan gambar
         ai_with_img = [a for a in pool if a.get("image_url") and is_ai_related(a.get("title", ""))]

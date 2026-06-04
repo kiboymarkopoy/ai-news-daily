@@ -256,6 +256,9 @@ def _make_request(url: str, timeout: int = 5) -> Optional[str]:
 def scrape_og_image(article_url: str, timeout: int = 5) -> str:
     """Visit an article URL and extract its ``og:image`` meta tag.
 
+    Falls back to Playwright-based scraping when ``urllib`` is blocked
+    by bot detection (qz.com, theatlantic.com, reuters.com, etc.).
+
     Args:
         article_url: Any article URL (direct URL, not GN redirect).
         timeout: HTTP timeout in seconds (default 5).
@@ -266,17 +269,73 @@ def scrape_og_image(article_url: str, timeout: int = 5) -> str:
     if not article_url:
         return ""
 
-    # Skip known paywalled / bot-blocking domains
+    # Skip known paywalled / bot-blocking domains entirely
     domain = urllib.parse.urlparse(article_url).netloc.lower()
     domain = domain.removeprefix("www.")
     if domain in _BLOCKED_DOMAINS:
+        # Even Playwright won't help with these
         return ""
 
+    # Try 1: Fast path — stdlib HTTP request (no JS)
     html = _make_request(article_url, timeout)
-    if not html:
+    if html:
+        og = _extract_og_from_html(html, article_url)
+        if og:
+            return og
+
+    # Try 2: Playwright fallback — handles JS-heavy / bot-blocked sites
+    if not _check_playwright():
         return ""
 
-    return _extract_og_from_html(html, article_url)
+    og = _scrape_og_playwright(article_url, timeout)
+    return og
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+#  Playwright-based OG scrape fallback
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def _scrape_og_playwright(url: str, timeout: int = 8) -> str:
+    """Scrape OG image using Playwright (bypasses basic bot detection).
+
+    Navigates to the article, waits for the page to render, then extracts
+    ``og:image`` / ``twitter:image`` from the DOM.
+
+    Returns:
+        Absolute image URL, or ``""`` if not found.
+    """
+    try:
+        from playwright.async_api import async_playwright
+
+        async def _scrape():
+            async with async_playwright() as p:
+                browser = await p.chromium.launch(
+                    headless=True,
+                    args=[
+                        "--no-sandbox",
+                        "--disable-setuid-sandbox",
+                        "--disable-dev-shm-usage",
+                    ],
+                )
+                ctx = await browser.new_context(
+                    user_agent=_USER_AGENT,
+                    viewport={"width": 1280, "height": 720},
+                )
+                page = await ctx.new_page()
+                try:
+                    await page.goto(url, timeout=timeout * 1000, wait_until="domcontentloaded")
+                    content = await page.content()
+                except Exception:
+                    content = ""
+                finally:
+                    await browser.close()
+                if not content:
+                    return ""
+                return _extract_og_from_html(content, url)
+
+        return asyncio.run(_scrape())
+    except Exception:
+        return ""
 
 
 def _resolve_url(image_url: str, base_url: str) -> str:

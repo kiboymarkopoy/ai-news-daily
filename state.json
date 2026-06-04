@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-04T20:23:17.116391+07:00",
-    "total_articles": 382
+    "updated_at": "2026-06-04T22:03:02.344521+07:00",
+    "total_articles": 393
   },
   "dedup": {
     "articles": {
@@ -3463,6 +3463,105 @@
         "thumb_subheadline": null,
         "thumb_image": "",
         "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/apple-touts-1-4-trillion-in-app-store-billings-and-sales-90-without-a-commission/": {
+        "file": "data/2026-06-04/21.08-01.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Apple Pamer $1,4 Triliun Transaksi App Store, 90% Tanpa Komisi",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2024/01/app-store-2024-v1.jpg?resize=1200,675",
+        "thumb_generated": false
+      },
+      "https://www.fool.com/investing/2026/06/04/predict-artificial-intelligence-ai-stock-split/": {
+        "file": "data/2026-06-04/21.08-02.md",
+        "source": "fool.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Saham AI Diprediksi Bakal Stock Split Sebelum Akhir 2026",
+        "thumb_subheadline": null,
+        "thumb_image": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F872386%2Fasml.png&amp;w=1200&amp;op=resize",
+        "thumb_generated": false
+      },
+      "https://www.reuters.com/business/broadcom-tumbles-revenue-miss-clouds-ai-boom-bets-2026-06-04/": {
+        "file": "data/2026-06-04/21.08-03.md",
+        "source": "reuters.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Broadcom Kehilangan $300 Miliar Gara-gara Hasil AI yang Nggak Impresif",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdmRfWUZwQWcxUXprS1BlRjFpUTJ0QVVpTF95d19SY1BpRWxCNXBwcEVJMVpaSHVqX0JtVmdIajN1SzZZd1FIdnNETWVQWUViX01oY1hicEhUd0VDZExVVzA2cDRqcm5yaWkwX2ZOTHhfUkNfaWtFZENHbDd5Zm5TRjltY0NzVUllcXItaG84MF83c2twaHVFbGE1a3R2NnpROXJnQWdGZ2dJZTBfRkxXNEdwb1EyNkxrM0pzZFBfa2JNcVBGckRzM01UVlJkTmpX?oc=5": {
+        "file": "data/2026-06-04/21.08-04.md",
+        "source": "247wallst.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Broadcom Anjlok 14% Gegara Prospek Chip AI yang Lesu",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://news.google.com/rss/articles/CBMijwFBVV95cUxQekVoN0lheEpWOHBzQi1mTDduUGtKS0hxZnZPN0xHSl9YTldtZkRQSmtZVnh5Z2RaUl9DSk1waExrUzhxUEp3cTBBR05XOGZfcG9mLTZXX1NKbXlLRWhmRlRJQS1GajRZVFBUNlByYmU0Vm1nZHkxS0tKM2FoRm5QZzRRM01HUlVBTlJWbmhJRQ?oc=5": {
+        "file": "data/2026-06-04/21.08-05.md",
+        "source": "theinformation.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Laporan Tengah Tahun 2026: Hype AI Mulai Bentrok dengan Batasan Nyata",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://thehackernews.com/2026/06/threatsday-bulletin-ai-agents-gone.html": {
+        "file": "data/2026-06-04/21.18-01.md",
+        "source": "thehackernews.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Keamanan AI Agent Jadi Ancaman Baru Dunia Maya",
+        "thumb_subheadline": null,
+        "thumb_image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOsPH2SzhBWTxhXi2KCJw0YY29azn2hLkDQwQhyrjmwaRIXQfCAPNIjej3_TBd6VJm1JqWSs2EoI2jiWyVHENmhtd1alqSEqlJC8WxUk4b5zWUqszQ8akhGzRmCHf8OL7wMTZiWLYZDzHRXY8unPcsh2QMTfyTH0XeRszrwCunK2DazuZIF9oNKQUFxlqN/s1700-e365/thh.jpg",
+        "thumb_generated": true
+      },
+      "https://about.roblox.com/newsroom/2026/06/pioneering-ai-founders-join-to-accelerate-roblox-reality-vision": {
+        "file": "data/2026-06-04/21.18-05.md",
+        "source": "about.roblox.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Founder AI Ternama Gabung Roblox Genjot Reality Vision",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cms-media.roblox.com/assets/9bfd31a7-d763-4384-973a-7d32f50dcd37.png",
+        "thumb_generated": true
+      },
+      "https://www.law.upenn.edu/live/news/18549-new-appointment-in-ai-and-legal-education": {
+        "file": "data/2026-06-04/21.18-03.md",
+        "source": "law.upenn.edu",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Kampus Hukum AS Angkat Spesialis AI Hadapi Era Regulasi",
+        "thumb_subheadline": null,
+        "thumb_image": "https://www.law.upenn.edu/live/image/gid/52/width/1260/height/630/crop/1/51345_725_praveen_kosuri_2.jpg",
+        "thumb_generated": true
+      },
+      "https://www.nytimes.com/2026/06/04/magazine/ai-agents-openclaw-small-business.html": {
+        "file": "data/2026-06-04/21.18-02.md",
+        "source": "nytimes.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Bos UKM di AS Udah Ganti Karyawan dengan AI Agent",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": false
+      },
+      "https://about.roblox.com/newsroom/2026/06/pioneering-ai-founders-join-to-accelerate-roblox-reality-vision#robotics": {
+        "file": "data/2026-06-04/21.18-04.md",
+        "source": "about.roblox.com",
+        "first_seen": "2026-06-04",
+        "thumb_image": "https://cms-media.roblox.com/assets/9bfd31a7-d763-4384-973a-7d32f50dcd37.png",
+        "thumb_generated": true,
+        "thumb_headline": "Roblox Reality Vision Siap Ubah Cara Kita Berinteraksi dengan Dunia Virtual",
+        "thumb_subheadline": null
+      },
+      "https://warontherocks.com/cogs-of-war/forged-in-a-knife-fight-chinas-brutal-domestic-ai-competition/": {
+        "file": "data/2026-06-04/22.00-01.md",
+        "source": "warontherocks.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Persaingan Brutal AI China Bikin Startup Bertarung Hidup-Mati",
+        "thumb_subheadline": null,
+        "thumb_image": "https://warontherocks.com/wp-content/uploads/wotr-og-images/wotr-og-44721-e19571e0b378.jpg",
+        "thumb_generated": true
       }
     },
     "source_headlines": {
@@ -3632,7 +3731,8 @@
         "publishers able opt ai search thanks new regulation",
         "meta ai agent whatsapp business now available globally",
         "coralogix raises 200m bet someone needs watch ai agents",
-        "lovable signs multi year deal google cloud usage 5x source says"
+        "lovable signs multi year deal google cloud usage 5x source says",
+        "apple touts trillion app store billings sales 90 without commission"
       ],
       "www.tomshardware.com": [
         "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -4120,7 +4220,8 @@
         "environmental cost artificial intelligence carbon water land footprints"
       ],
       "reuters.com": [
-        "meta enters enterprise ai race new business agent"
+        "meta enters enterprise ai race new business agent",
+        "broadcom set shed 300 billion value ai results fail impress"
       ],
       "scientificamerican.com": [
         "scientists built powerful ai computer worm learns spreads"
@@ -4145,6 +4246,30 @@
       ],
       "news.samsung.com": [
         "samsung introduces next gen galaxy watch features ai powered everyday health companion"
+      ],
+      "fool.com": [
+        "prediction artificial intelligence ai stock split year end 2026"
+      ],
+      "247wallst.com": [
+        "broadcom sinks 14 soft ai chip outlook despite earnings beat dragging amd intel"
+      ],
+      "theinformation.com": [
+        "tech 2026 halftime report ai hype hard limits"
+      ],
+      "thehackernews.com": [
+        "threatsday bulletin ai agents gone wrong sketchy c2 tools clickfix tricks js backdoors 20 new stories"
+      ],
+      "about.roblox.com": [
+        "pioneering ai founders join accelerate roblox reality vision"
+      ],
+      "law.upenn.edu": [
+        "new appointment ai legal education news events"
+      ],
+      "nytimes.com": [
+        "small business owners managing whole armies employees"
+      ],
+      "warontherocks.com": [
+        "forged knife fight china brutal domestic ai competition"
       ]
     },
     "cross_topics": [
@@ -5501,6 +5626,36 @@
       {
         "who": "Trump",
         "what": "backed push to bring AI doctors into American medicine",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Apple",
+        "what": "touts $1.4 trillion in App Store billings and sales, 90% without a commission",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Intel",
+        "what": "ligence (AI) Stock Will Split Before Year-End 2026",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Broadcom",
+        "what": "set to shed $300 billion in value as AI results fail to impress",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Broadcom",
+        "what": "Sinks 14% on Soft AI Chip Outlook Despite Earnings Beat, Dragging Down AMD and I",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "ARM",
+        "what": "ies of A.I. Employees",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "China",
+        "what": "’s Brutal Domestic AI Competition",
         "first_seen": "2026-06-04"
       }
     ],
