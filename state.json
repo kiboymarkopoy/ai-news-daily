@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-04T22:03:02.344521+07:00",
-    "total_articles": 393
+    "updated_at": "2026-06-05T00:03:56.857859+07:00",
+    "total_articles": 400
   },
   "dedup": {
     "articles": {
@@ -3562,6 +3562,69 @@
         "thumb_subheadline": null,
         "thumb_image": "https://warontherocks.com/wp-content/uploads/wotr-og-images/wotr-og-44721-e19571e0b378.jpg",
         "thumb_generated": true
+      },
+      "https://www.axios.com/2026/06/04/anthropic-warns-ai-build-successors": {
+        "file": "data/2026-06-04/23.03-01.md",
+        "source": "axios.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Anthropic Peringatkan AI Bakal Ciptakan Penerusnya Sendiri",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.axios.com/RhS3qLnrzFW5nLQ5dpuMQViUtEI=/0x0:1920x1080/1366x768/2026/04/22/1776888491607.jpeg",
+        "thumb_generated": true
+      },
+      "https://www.trefis.com/stock/avgo/articles/601481/broadcom-is-drowning-in-ai-orders-why-arent-investors-impressed/2026-06-04": {
+        "file": "data/2026-06-04/23.03-02.md",
+        "source": "trefis.com",
+        "first_seen": "2026-06-04",
+        "thumb_headline": "Broadcom Tenggelam Banjir Order Chip AI, Saham Tetap Merah",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cdn.trefis.com/env/prd/logos/AVGO.png",
+        "thumb_generated": true
+      },
+      "https://news.mit.edu/2026/nsf-renews-support-mit-led-ai-and-physics-institute-0604": {
+        "file": "data/2026-06-05/00.00-01.md",
+        "source": "news.mit.edu",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "NSF Perpanjang Dukungan untuk Institut AI dan Fisika MIT",
+        "thumb_subheadline": null,
+        "thumb_image": "https://news.mit.edu/sites/default/files/images/202606/iaifi-mit-announcement-26.jpg",
+        "thumb_generated": true
+      },
+      "https://www.aboutamazon.com/news/aws/pinterest-aws-4-billion-ai-infrastructure-deal": {
+        "file": "data/2026-06-05/00.00-02.md",
+        "source": "aboutamazon.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Pinterest Teken Kontrak AI 4 Miliar Dolar dengan AWS",
+        "thumb_subheadline": null,
+        "thumb_image": "https://assets.aboutamazon.com/dims4/default/6b02170/2147483647/strip/true/crop/1920x960+0+60/resize/1200x600!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F33%2F5f%2F9b810afd477484421fe5c7f2789c%2Fpinterest-aws-ai-amazonnews-cdlt-06-02-26.jpeg",
+        "thumb_generated": true
+      },
+      "https://www.vaticannews.va/en/world/news/2026-06/magnifica-humanitas-encyclical-pope-leo-interview-africa-rosman.html": {
+        "file": "data/2026-06-05/00.00-03.md",
+        "source": "vaticannews.va",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Suara Afrika Harus Ikut Membentuk Masa Depan AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://www.vaticannews.va/content/dam/vaticannews/multimedia/2026/maggio/21/2026.05.-21-Benjamin-Rosman.00_01_46_15.Immagine001.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.1500.844.jpeg",
+        "thumb_generated": true
+      },
+      "https://www.bloomberg.com/news/articles/2026-06-04/ai-data-center-boom-risks-breakup-of-biggest-us-power-grid-operator": {
+        "file": "data/2026-06-05/00.00-04.md",
+        "source": "bloomberg.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Boom Data Center AI Berisiko Pecah Operator Jaringan Listrik AS",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://blogs.microsoft.com/on-the-issues/2026/06/04/strengthening-biosecurity-in-the-era-of-ai/": {
+        "file": "data/2026-06-05/00.00-05.md",
+        "source": "blogs.microsoft.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Microsoft Peringatkan Risiko AI buat Biosecurity",
+        "thumb_subheadline": null,
+        "thumb_image": "https://blogs.microsoft.com/wp-content/uploads/sites/5/2026/06/FY26_OML_Q4_PA_Biosecurity-Modernization_Header-1024x576.png",
+        "thumb_generated": true
       }
     },
     "source_headlines": {
@@ -4173,7 +4236,8 @@
         "india it stocks soar as nvidia ceo huang calms ai disruption fears",
         "googles ai shift is causing a collective freakout",
         "duke ceo sees ai fueling power growth 10 times historic pace",
-        "ai data center parts maker xnrgy said mull 10 billion sale"
+        "ai data center parts maker xnrgy said mull 10 billion sale",
+        "ai data center boom risks breakup biggest us power grid operator"
       ],
       "cnbc.com": [
         "palo alto networks tops earnings as ai fuels cybersecurity urgency",
@@ -4195,7 +4259,8 @@
       ],
       "axios.com": [
         "exclusive ibm ceo backs trump narrowed ai executive order",
-        "exclusive yahoo launches ai tools nba fans investors"
+        "exclusive yahoo launches ai tools nba fans investors",
+        "anthropic warns ai soon help build successors"
       ],
       "businessinsider.com": [
         "uber lays almost quarter hr recruitment staff says nothing ai"
@@ -4270,6 +4335,21 @@
       ],
       "warontherocks.com": [
         "forged knife fight china brutal domestic ai competition"
+      ],
+      "trefis.com": [
+        "broadcom drowning ai orders aren investors impressed"
+      ],
+      "news.mit.edu": [
+        "nsf renews support mit led ai physics institute expanding new model discovery"
+      ],
+      "aboutamazon.com": [
+        "pinterest inks billion ai deal aws largest infrastructure commitment history"
+      ],
+      "vaticannews.va": [
+        "african voices must help shape future ai"
+      ],
+      "blogs.microsoft.com": [
+        "strengthening biosecurity era ai"
       ]
     },
     "cross_topics": [
@@ -5657,6 +5737,21 @@
         "who": "China",
         "what": "’s Brutal Domestic AI Competition",
         "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Anthropic",
+        "what": "warns AI could soon help build its own successors",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "Broadcom",
+        "what": "Is Drowning in AI Orders. Why Aren’t Investors Impressed?",
+        "first_seen": "2026-06-04"
+      },
+      {
+        "who": "SEC",
+        "what": "urity in the era of AI",
+        "first_seen": "2026-06-05"
       }
     ],
     "total": 333
