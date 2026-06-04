@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-05T02:54:34.155590+07:00",
-    "total_articles": 403
+    "updated_at": "2026-06-05T03:09:43.089880+07:00",
+    "total_articles": 410
   },
   "dedup": {
     "articles": {
@@ -3626,31 +3626,94 @@
         "thumb_image": "https://blogs.microsoft.com/wp-content/uploads/sites/5/2026/06/FY26_OML_Q4_PA_Biosecurity-Modernization_Header-1024x576.png",
         "thumb_generated": true
       },
-      "https://www.reuters.com/business/media-telecom/goldman-sachs-expects-spacexs-ai-revenue-surge-100-fold-by-2030-ft-reports-2026-06-04/": {
-        "file": "data/2026-06-05/02.13-01.md",
-        "source": "reuters.com",
-        "first_seen": "2026-06-05",
-        "thumb_headline": "Goldman Sachs expects SpaceX's AI revenue to surge 100-fold by 2030, FT reports",
-        "thumb_subheadline": null,
-        "thumb_image": "https://www.reuters.com/resizer/v2/74UYPI6WRZPGFMRVMX4VOPLINA.jpg?auth=94df9983ac4f3c8931be2b83b0d9cea2bf8c3fbc9f9eff16b480263bef57e16c&amp;height=1005&amp;width=1920&amp;quality=80&amp;smart=true",
-        "thumb_generated": true
-      },
       "https://www.latimes.com/business/story/2026-06-04/spacex-ipo-video-sells-elon-musks-space-ai-asteroid-dreams-to-mom-and-pop-investors": {
-        "file": "data/2026-06-05/02.13-02.md",
+        "file": "data/2026-06-05/02.33-01.md",
         "source": "latimes.com",
         "first_seen": "2026-06-05",
-        "thumb_headline": "SpaceX IPO video sells Elon Musk's space, AI and asteroid dreams to mom-and-pop investors",
+        "thumb_headline": "IPO SpaceX Gebrak Pasar dengan Visi AI dan Luar Angkasa",
         "thumb_subheadline": null,
         "thumb_image": "https://ca-times.brightspotcdn.com/dims4/default/47f5809/2147483647/strip/true/crop/3000x1575+0+213/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F7a%2Fc6%2F909cff304a40b2505fa99e42a7a1%2Fspacex-firings-42325.jpg",
         "thumb_generated": true
       },
+      "https://www.theguardian.com/business/live/2026/jun/04/spacex-ipo-elon-musk-fears-significantly-overvalued-stock-markets-cars-jobs-live-news-updates": {
+        "file": "data/2026-06-05/02.33-02.md",
+        "source": "theguardian.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Saham Chip AI Anjlok, Rally AI Mulai Tanda-tanda Lelah",
+        "thumb_subheadline": null,
+        "thumb_image": "https://i.guim.co.uk/img/media/02a208f7bbca7c9f286ca0255388566115a7089d/86_0_2972_2377/master/2972.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=7f2877631e29af3b3b78132044ed97e9",
+        "thumb_generated": true
+      },
+      "https://www.bloomberg.com/news/articles/2026-06-04/ai-power-boom-revives-natural-gas-as-infrastructure-bet": {
+        "file": "data/2026-06-05/02.33-03.md",
+        "source": "bloomberg.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Ledakan Model AI Bikin Industri Gas Alam Bangkit Kembali",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.nbcconnecticut.com/news/local/hartford-mayor-disputes-ai-data-center-rumors-as-residents-call-for-transparency/3742178/": {
+        "file": "data/2026-06-05/02.33-04.md",
+        "source": "nbcconnecticut.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Warga Hartford Minta Transparansi Soal Rencana Data Center AI",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
       "https://www.reuters.com/business/us-house-lawmakers-release-draft-bill-regulate-ai-2026-06-04/": {
-        "file": "data/2026-06-05/02.13-03.md",
+        "file": "data/2026-06-05/02.33-05.md",
         "source": "reuters.com",
         "first_seen": "2026-06-05",
-        "thumb_headline": "US House lawmakers release draft bill to regulate AI",
+        "thumb_headline": "DPR AS Rilis Rancangan Undang-Undang Regulasi AI",
         "thumb_subheadline": null,
-        "thumb_image": "https://www.reuters.com/resizer/v2/7UJIS6ISL5IGHMEZ7XHRW6RWFM.jpg?auth=0811fe6d3edde9245bdee871192f7ee32751c3af615d9c4ef59e882a4388c919&amp;height=1005&amp;width=1920&amp;quality=80&amp;smart=true",
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.1x.tech/discover/1x-world-model-lab": {
+        "file": "data/2026-06-05/03.03-01.md",
+        "source": "1x.tech",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "1X Technologies Buka Lab Model Dunia buat Robot Humanoid",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cdn.sanity.io/images/qka6yvsc/production/6aca2147f23302f727455205c817c7a80fb196e7-1650x953.jpg?fit=max&amp;auto=format",
+        "thumb_generated": true
+      },
+      "https://www.cfr.org/articles/the-popes-mandate-on-ai-is-a-moral-safeguard-for-our-times": {
+        "file": "data/2026-06-05/03.03-02.md",
+        "source": "cfr.org",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Paus Fransiskus Keluarkan Mandat AI sebagai Pengaman Moral",
+        "thumb_subheadline": null,
+        "thumb_image": "https://res.cloudinary.com/dmovl8u5q/images/f_auto,q_auto/v1780583643/AI_Moral_A/AI_Moral_A.jpg?_i=AA",
+        "thumb_generated": true
+      },
+      "https://www.unc.edu/posts/2026/06/04/carolina-launches-study-on-libraries-and-generative-ai-in-local-communities/": {
+        "file": "data/2026-06-05/03.03-03.md",
+        "source": "unc.edu",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "UNC Studi Dampak AI Generatif di Perpustakaan dan Komunitas Lokal",
+        "thumb_subheadline": null,
+        "thumb_image": "https://www.unc.edu/wp-content/uploads/2026/06/library-ai-community-announcement.jpg",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/meta-steals-a-tactic-from-tesla-and-builds-data-centers-in-tents/": {
+        "file": "data/2026-06-05/03.03-04.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Meta Bangun Data Center AI di Tenda, Tiru Strategi Tesla",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/meta-ai-icon-smartphone.jpg?resize=1200,800",
+        "thumb_generated": true
+      },
+      "https://www.nytimes.com/2026/06/04/opinion/trump-ai-executive-order-cybersecurity.html": {
+        "file": "data/2026-06-05/03.03-05.md",
+        "source": "nytimes.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Trump Mulai Hadapi Realitas soal AI, Naratif Politik Berubah",
+        "thumb_subheadline": null,
+        "thumb_image": "",
         "thumb_generated": true
       }
     },
@@ -3822,7 +3885,8 @@
         "meta ai agent whatsapp business now available globally",
         "coralogix raises 200m bet someone needs watch ai agents",
         "lovable signs multi year deal google cloud usage 5x source says",
-        "apple touts trillion app store billings sales 90 without commission"
+        "apple touts trillion app store billings sales 90 without commission",
+        "meta steals tactic tesla builds data centers tents"
       ],
       "www.tomshardware.com": [
         "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -4264,7 +4328,8 @@
         "googles ai shift is causing a collective freakout",
         "duke ceo sees ai fueling power growth 10 times historic pace",
         "ai data center parts maker xnrgy said mull 10 billion sale",
-        "ai data center boom risks breakup biggest us power grid operator"
+        "ai data center boom risks breakup biggest us power grid operator",
+        "ai power boom revives natural gas infrastructure bet"
       ],
       "cnbc.com": [
         "palo alto networks tops earnings as ai fuels cybersecurity urgency",
@@ -4302,7 +4367,8 @@
         "meta scales back plan track workers clicks keystrokes train ai"
       ],
       "theguardian.com": [
-        "labour mp sues elon musk ai company fake sexualised images"
+        "labour mp sues elon musk ai company fake sexualised images",
+        "chip stocks drop ai rally shows signs fatigue spacex huge ipo looms happened"
       ],
       "washingtonpost.com": [
         "opinion government ownership path poverty",
@@ -4314,7 +4380,6 @@
       "reuters.com": [
         "meta enters enterprise ai race new business agent",
         "broadcom set shed 300 billion value ai results fail impress",
-        "goldman sachs expects spacex ai revenue surge 100 fold 2030 ft reports",
         "us house lawmakers release draft bill regulate ai"
       ],
       "scientificamerican.com": [
@@ -4360,7 +4425,8 @@
         "new appointment ai legal education news events"
       ],
       "nytimes.com": [
-        "small business owners managing whole armies employees"
+        "small business owners managing whole armies employees",
+        "opinion trump finally facing reality"
       ],
       "warontherocks.com": [
         "forged knife fight china brutal domestic ai competition"
@@ -4382,6 +4448,18 @@
       ],
       "latimes.com": [
         "spacex ipo video sells elon musk space ai asteroid dreams mom pop investors"
+      ],
+      "nbcconnecticut.com": [
+        "hartford mayor disputes ai data center rumors residents call transparency"
+      ],
+      "1x.tech": [
+        "1x launches world model lab scale humanoid intelligence"
+      ],
+      "cfr.org": [
+        "pope mandate ai moral safeguard times"
+      ],
+      "unc.edu": [
+        "carolina launches study libraries generative ai local communities"
       ]
     },
     "cross_topics": [
@@ -5786,13 +5864,28 @@
         "first_seen": "2026-06-05"
       },
       {
-        "who": "SpaceX",
-        "what": "s AI revenue to surge 100-fold by 2030, FT reports",
+        "who": "Elon Musk",
+        "what": "s space, AI and asteroid dreams to mom-and-pop investors",
         "first_seen": "2026-06-05"
       },
       {
-        "who": "Elon Musk",
-        "what": "s space, AI and asteroid dreams to mom-and-pop investors",
+        "who": "SpaceX",
+        "what": "s huge IPO looms – as it happened",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Intel",
+        "what": "ligence",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Tesla",
+        "what": "and builds data centers in tents",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Trump",
+        "what": "Is Finally Facing Reality on A.I.",
         "first_seen": "2026-06-05"
       }
     ],
