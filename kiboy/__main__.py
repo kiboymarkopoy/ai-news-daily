@@ -181,11 +181,7 @@ def cmd_register(args: argparse.Namespace) -> None:
 
     registered = 0
     for article in articles:
-        # Skip if already registered
         url = article["url"]
-        if url in state["dedup"]["articles"]:
-            print(f"  [SKIP] Already registered: {article['title'][:60]}")
-            continue
 
         # Build file path: data/YYYY-MM-DD/HH.MM-NN.md
         from kiboy.writer import get_next_sequence
@@ -197,6 +193,23 @@ def cmd_register(args: argparse.Namespace) -> None:
         # Use article fields directly
         thumb_headline = article.get("thumb_headline", article["title"])
         thumb_image = article.get("image_url", "")
+
+        # Already-registered URL: skip ONLY if the old .md file still exists.
+        # If the old file is gone (deleted/regenerated), the entry is orphaned —
+        # re-link it to the freshly written file instead of leaving a zombie
+        # reference and orphaning the new .md on disk.
+        if url in state["dedup"]["articles"]:
+            existing = state["dedup"]["articles"][url]
+            old_file = REPO_DIR / existing.get("file", "")
+            if old_file.exists():
+                print(f"  [SKIP] Already registered: {article['title'][:60]}")
+                continue
+            existing["file"] = file_path
+            if not existing.get("thumb_image") and thumb_image:
+                existing["thumb_image"] = thumb_image
+            registered += 1
+            print(f"  [FIX]  Re-linked orphaned entry: {article['title'][:60]}")
+            continue
 
         from kiboy.dedup import register_article
         register_article(
