@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-05T20:03:52.545504+07:00",
-    "total_articles": 428
+    "updated_at": "2026-06-06T03:03:16.995758+07:00",
+    "total_articles": 457
   },
   "dedup": {
     "articles": {
@@ -3877,6 +3877,267 @@
         "thumb_subheadline": null,
         "thumb_image": "",
         "thumb_generated": true
+      },
+      "https://www.bloomberg.com/news/articles/2026-06-05/wwdc-2026-preview-ios-27-siri-ai-features-macos-27-more-apple-will-announce": {
+        "file": "data/2026-06-05/20.44-01.md",
+        "source": "bloomberg.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Apple Siap Rilis Fitur AI Besar-besaran di WWDC 2026",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/05/airtrunk-commits-30b-to-build-5gw-of-ai-data-centers-in-india/": {
+        "file": "data/2026-06-05/20.44-02.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "AirTrunk Investasi $30 Miliar Bangun Data Center AI di India",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2089845337.jpg?resize=1200,800",
+        "thumb_generated": true
+      },
+      "https://www.theverge.com/tech/943905/meta-remembers-the-portal-exists-and-turns-it-into-an-ai-dev-kit": {
+        "file": "data/2026-06-05/20.44-04.md",
+        "source": "theverge.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Meta Ubah Portal Jadi Perangkat AI Dev Kit",
+        "thumb_subheadline": null,
+        "thumb_image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/22935185/jtuohy_211014_4807_0005.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/apple-approves-poke-as-the-first-ai-agent-on-its-messages-for-business-platform/": {
+        "file": "data/2026-06-05/21.00-02.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Apple Resmi Setujui Poke sebagai AI Agent Pertama di iMessage Business",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/04/Poke-at-3.57.33-PM.jpg?resize=1200,604",
+        "thumb_generated": true
+      },
+      "https://www.latimes.com/business/story/2026-06-05/anthropic-calls-for-ai-pause-button-to-let-humans-take-stock": {
+        "file": "data/2026-06-05/22.00-01.md",
+        "source": "latimes.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Anthropic Minta AI Di-pause Biar Manusia Bisa Atur Dampaknya",
+        "thumb_subheadline": null,
+        "thumb_image": "https://ca-times.brightspotcdn.com/dims4/default/5f3e757/2147483647/strip/true/crop/4497x2361+0+319/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F01%2F6e%2F4317d9384392a3d49a7c61c981d3%2Fcb1e9f987a2146b1b804e29ca63358bd.jpg",
+        "thumb_generated": true
+      },
+      "https://source.washu.edu/2026/06/model-uses-real-image-to-train-ai-to-look-for-fakes/": {
+        "file": "data/2026-06-05/22.00-02.md",
+        "source": "source.washu.edu",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "AI Belajar Deteksi Foto Palsu dari Satu Gambar Asli",
+        "thumb_subheadline": null,
+        "thumb_image": "https://source.washu.edu/app/uploads/2026/06/image.png_202605282156.jpeg",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/": {
+        "file": "data/2026-06-05/22.00-03.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Biaya Token AI Makin Gila Bikin Perusahaan Pusing Tujuh Keliling",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-1316461644.jpg?resize=1200,816",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/meta-rolls-out-a-new-ai-creator-assistant-on-facebook/": {
+        "file": "data/2026-06-05/22.00-04.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Meta Rilis Asisten AI Buat Kreator Facebook Makin Gampang",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/Introducing-Creator-Assistant-Plus-More-Languages-for-AI-Translations-on-Facebook_Header.jpg?resize=1200,675",
+        "thumb_generated": true
+      },
+      "https://www.nytimes.com/2026/06/05/us/spelman-college-president-ayanna-howard.html": {
+        "file": "data/2026-06-05/22.00-05.md",
+        "source": "nytimes.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Pakar AI dan Robotika Ayanna Howard Jadi Presiden Spelman College",
+        "thumb_subheadline": null,
+        "thumb_image": "https://static01.nyt.com/images/2026/06/05/multimedia/05nat-spelman-jbqm/05nat-spelman-jbqm-facebookJumbo.jpg",
+        "thumb_generated": true
+      },
+      "https://fortune.com/2026/06/05/anthropic-ai-pause-development-recursive-self-improvement/": {
+        "file": "data/2026-06-05/23.03-01.md",
+        "source": "fortune.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Anthropic Peringatkan AI Bisa Tingkatkan Dirinya Sendiri",
+        "thumb_subheadline": null,
+        "thumb_image": "https://fortune.com/img-assets/wp-content/uploads/2026/06/GettyImages-2270736899-e1780662262326.jpg?resize=1200,600",
+        "thumb_generated": true
+      },
+      "https://www.datacenterknowledge.com/infrastructure/industry-coalition-warns-ai-data-centers-are-tightening-memory-supply": {
+        "file": "data/2026-06-05/23.03-02.md",
+        "source": "datacenterknowledge.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "AI Data Centers Bikin Pasokan Memori Makin Ketat",
+        "thumb_subheadline": null,
+        "thumb_image": "https://eu-images.contentstack.com/v3/assets/blt8eb3cdfc1fce5194/blta278e7e3d44644be/6a22ddfcff0c8812ca26e8e4/GettyImages-1363604982.jpg?disable=upscale&amp;width=1200&amp;height=630&amp;fit=crop",
+        "thumb_generated": true
+      },
+      "https://www.nytimes.com/2026/06/05/business/dealbook/anthropic-ai-nonproliferation.html": {
+        "file": "data/2026-06-05/23.03-03.md",
+        "source": "nytimes.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Anthropic Desak Nonproliferasi AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://static01.nyt.com/images/2026/06/05/multimedia/05db-claude-qzgm/05db-claude-qzgm-facebookJumbo.jpg",
+        "thumb_generated": true
+      },
+      "https://www.datacenterknowledge.com/infrastructure/industry-coalition-warns-ai-data-centers-are-tightening-memory-supply?src=robotics": {
+        "file": "data/2026-06-05/23.03-04.md",
+        "source": "datacenterknowledge.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Pasokan Chip Memori AI Makin Ketat",
+        "thumb_subheadline": null,
+        "thumb_image": "https://eu-images.contentstack.com/v3/assets/blt8eb3cdfc1fce5194/blta278e7e3d44644be/6a22ddfcff0c8812ca26e8e4/GettyImages-1363604982.jpg?disable=upscale&amp;width=1200&amp;height=630&amp;fit=crop",
+        "thumb_generated": true
+      },
+      "https://fortune.com/2026/06/05/anthropic-ai-pause-development-recursive-self-improvement?src=creative": {
+        "file": "data/2026-06-05/23.03-05.md",
+        "source": "fortune.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Saat AI Bisa Nulis Kode Buat Bikin AI Baru",
+        "thumb_subheadline": null,
+        "thumb_image": "https://fortune.com/img-assets/wp-content/uploads/2026/06/GettyImages-2270736899-e1780662262326.jpg?resize=1200,600",
+        "thumb_generated": true
+      },
+      "https://www.foxbusiness.com/video/6397650325112": {
+        "file": "data/2026-06-06/00.01-01.md",
+        "source": "foxbusiness.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Gordon Chang Sebut Aksi Protes Anti-AI Gak Sepenuhnya Organik",
+        "thumb_subheadline": null,
+        "thumb_image": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/854081161001/7366c013-53aa-4d3c-ae01-69322a441801/cf997de2-dca0-406a-a33b-34828358b5b7/1280x720/match/1024/512/image.jpg?ve=1&amp;tl=1",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/what-to-expect-from-wwdc-2026-siris-highly-anticipated-revamp-and-apple-intelligence-updates/": {
+        "file": "data/2026-06-06/00.01-02.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Apple Siap Revolusi Siri dengan AI di WWDC 2026",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/03/Apple-WWDC26-event-branding_big.jpg.large_.jpg?w=980",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/is-silicon-valley-ready-to-put-robots-in-peoples-homes-hello-robot-is/": {
+        "file": "data/2026-06-06/00.01-03.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Hello Robot Siap Bawa Robot ke Rumah-rumah",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/IMG_4162-rotated.jpg?resize=900,1200",
+        "thumb_generated": true
+      },
+      "https://www.wsj.com/cfo-journal/the-metric-cfos-struggle-to-track-ai-usage-3b30c10c": {
+        "file": "data/2026-06-06/00.01-04.md",
+        "source": "wsj.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "CFO Makin Pusing Tracking Efektivitas AI di Perusahaan",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.bbc.com/news/videos/c1m2mr7gr27o": {
+        "file": "data/2026-06-06/01.03-02.md",
+        "source": "bbc.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Saham AI Bubble Siap Meledak? BBC Kaji Ulang",
+        "thumb_subheadline": null,
+        "thumb_image": "https://ichef.bbci.co.uk/news/1024/branded_news/3047/live/39bcce30-6049-11f1-8b8c-6d33e1d5abb6.jpg",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/video/the-most-interesting-startups-right-now-want-to-get-you-off-your-phone/": {
+        "file": "data/2026-06-06/01.03-05.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Startup Mau Bikin Lo Lepas dari HP",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2025/07/IMG_2376-rotated.jpeg?resize=900,1200",
+        "thumb_generated": true
+      },
+      "https://arstechnica.com/gadgets/2026/06/the-fitbit-air-is-great-but-googles-ai-is-too-nice-to-be-your-coach/": {
+        "file": "data/2026-06-06/01.03-04.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Fitbit Air Keren Tapi AI Coach-nya Ngeselin",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/Fitbit-Air-1-1152x648.jpg",
+        "thumb_generated": true
+      },
+      "https://www.inc.com/joe-procopio/ai-is-now-more-expensive-than-the-mass-layoff-human-labor-its-replacing/91356134": {
+        "file": "data/2026-06-06/02.00-01.md",
+        "source": "inc.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "AI Ternyata Lebih Mahal dari Gaji Karyawan yang Di-PHK",
+        "thumb_subheadline": null,
+        "thumb_image": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit,w_1024/vip/2026/06/ai-more-expensive-1-inc.jpg",
+        "thumb_generated": true
+      },
+      "https://www.theguardian.com/technology/2026/jun/05/anthropic-urges-temporary-pause-on-ai-development-to-discuss-risks": {
+        "file": "data/2026-06-06/02.00-02.md",
+        "source": "theguardian.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Anthropic Minta Dunia Punya Opsi Pause AI Development",
+        "thumb_subheadline": null,
+        "thumb_image": "https://i.guim.co.uk/img/media/6697acbc2952a9bf0452523611a59d13a40b7ef2/527_0_4615_3693/master/4615.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=1873b3354dc4de77277ca7d43ea6f2e1",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/": {
+        "file": "data/2026-06-06/02.00-03.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Google Bayar SpaceX Nyaris $1 Miliar per Bulan buat Komputasi",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2259661359.jpg?w=1024",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/podcast/the-together-tech-wave-might-be-the-most-intriguing-startup-bet-of-2026/": {
+        "file": "data/2026-06-06/02.00-04.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Together Tech Jadi Tren Startup Paling Menarik 2026",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2025/08/Brynn-Putnam-Disrupt-2028.jpg?resize=1200,808",
+        "thumb_generated": true
+      },
+      "https://www.bloomberg.com/news/articles/2026-06-05/us-exploring-government-partnerships-with-ai-firms-trump-says": {
+        "file": "data/2026-06-06/02.00-05.md",
+        "source": "bloomberg.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Trump Jajaki Kemitraan Pemerintah dengan Perusahaan AI",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.scientificamerican.com/article/anthropic-warns-ai-may-soon-begin-recursive-self-improvement/": {
+        "file": "data/2026-06-06/03.00-01.md",
+        "source": "scientificamerican.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "AI Mulai Bisa Tingkatkan Dirinya Sendiri, Anthropic Peringatkan",
+        "thumb_subheadline": null,
+        "thumb_image": "https://static.scientificamerican.com/dam/asset/e70a14e5-09ef-4ac2-8346-934e1f437d61/Man-looking-at-server-racks.jpg?m=1780684616.108&amp;w=1200",
+        "thumb_generated": true
+      },
+      "https://www.barrons.com/articles/alphabet-spacex-ai-deal-google-9e5626cc": {
+        "file": "data/2026-06-06/03.00-02.md",
+        "source": "barrons.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Alphabet Keluarkan $920 Juta per Bulan ke SpaceX untuk AI",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.reuters.com/business/finance/bitcoins-star-fades-investors-flock-lustre-ai-megacap-ipos-2026-06-05/": {
+        "file": "data/2026-06-06/03.00-03.md",
+        "source": "reuters.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Investor Berbondong-bondong Tinggalkan Bitcoin Demi Saham AI",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
       }
     },
     "source_headlines": {
@@ -3983,16 +4244,6 @@
         "hpe stock soars record backlog booming ai server business"
       ],
       "techcrunch.com": [
-        "gila anthropic startup ai paling berharga di dunia resmi ajukan ipo target valuasi 1 triliun",
-        "ai weathermesh 6 dari windborne bisa prediksi cuaca lebih akurat dari pemerintah eropa gegara 400 balon udara",
-        "spacex peringatkan risiko air di ipo data center ai",
-        "alphabet siap kumpulkan 80 miliar dari jual saham dana terbesar buat ai infrastructure",
-        "nvidia resmi masuk pasar cpu dengan chip rtx spark untuk agent",
-        "duckduckgo makes noai search engine easier access traffic booms",
-        "zerodrift raises million protect models themselves",
-        "rocket engine startup impulse raises 500 million hire people",
-        "anthropic perluas claude mythos infrastruktur kritis negara",
-        "openai launches codex tools whitecollar work",
         "microsoft launches scout openclaw inspired personal assistant",
         "microsoft offers devs better way control ai agent behavior",
         "amazon faces class action lawsuit ring facial recognition feature",
@@ -4022,7 +4273,17 @@
         "mira murati steps back spotlight carefully",
         "ahead ipo anthropic daniela amodei shrugs doubts ai returns",
         "airbnb brian chesky plans launch new ai lab",
-        "defense tech ai fundraising take center stage strictlyvc los angeles june 18"
+        "defense tech ai fundraising take center stage strictlyvc los angeles june 18",
+        "airtrunk commits 30b build 5gw ai data centers india",
+        "apple approves poke first ai agent messages business platform",
+        "token bill comes due inside industry scramble manage ai runaway costs",
+        "meta rolls new ai creator assistant facebook",
+        "expect wwdc 2026 siri highly anticipated revamp apple intelligence updates",
+        "silicon valley ready put robots people homes hello robot",
+        "interesting startups right now want get phone",
+        "interesting startups right now want get phone",
+        "google pay spacex 920m per month compute",
+        "together tech wave might intriguing startup bet 2026"
       ],
       "www.tomshardware.com": [
         "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -4034,7 +4295,6 @@
         "spotify resmi masuk era remix ai karya fan bisa jadi resmi"
       ],
       "arstechnica.com": [
-        "jensen huang pilih taiwan daripada amerika 150 miliar buat pusat revolusi ai kebijakan trump justru bikin nvidia makin jauh",
         "kebencian ke ai makin parah fbi dan dhs keluarkan peringatan resmi soal ekstremisme antiteknologi yang bisa berujung kekerasan",
         "kerentanan kritis ditemukan di package open source yang dipake jutaan ai agent bisa kendalikan robot dari jarak jauh",
         "youtube keluarkan aturan baru semua video yang dibikin ai bakal ditag otomatis pake sistem deteksi internal kreator gak bisa manipulasi",
@@ -4073,7 +4333,8 @@
         "google new gemma 12b model designed run any laptop 16gb ram",
         "trump plan test ai models problem us security teams gutted doge",
         "inside meta attempts play catch ai",
-        "google ordered put clearer links ai search let uk publishers opt"
+        "google ordered put clearer links ai search let uk publishers opt",
+        "fitbit air good wearable weighed chatty ai coach"
       ],
       "www.businessinsider.com": [
         "anthropic sekarang startup ai paling berharga di dunia openai tumbang"
@@ -4142,7 +4403,9 @@
         "the ai economy could crash on mounting chip costs and those token costs wont help",
         "gila startup ai uji coba 5 model ai jadi penguasa kota virtual hasilnya bikin merinding",
         "godfather of ai peringatkan manusia soal kecerdasan yang melampaui",
-        "new ai powered computer worm prove stuff cybersecurity nightmares"
+        "new ai powered computer worm prove stuff cybersecurity nightmares",
+        "anthropic warns ai soon build itself without human involvement urges global pause development",
+        "anthropic warns ai soon build itself without human involvement"
       ],
       "www.wsj.com": [
         "perusahaan di as mulai menjatah ai biaya langganan melonjak dompet menjerit"
@@ -4276,7 +4539,8 @@
         "walmart batasi pemakaian ai karyawan token langganan"
       ],
       "theverge.com": [
-        "gemini spark most impressive terrifying experience yet"
+        "gemini spark most impressive terrifying experience yet",
+        "meta remembers portal exists turns ai dev kit"
       ],
       "Google News": [
         "nvidia new pc chips represent ceo huang bid win layer ai stack cnbc",
@@ -4332,7 +4596,9 @@
         "ai data center boom risks breakup biggest us power grid operator",
         "ai power boom revives natural gas infrastructure bet",
         "nvidia clears memory big three vera rubin hbm4 supply",
-        "anthropic calls ai pause button let humans take stock"
+        "anthropic calls ai pause button let humans take stock",
+        "expect apple ai siri ios 27 launch wwdc",
+        "us exploring government partnerships ai firms trump says"
       ],
       "cnbc.com": [
         "palo alto networks tops earnings as ai fuels cybersecurity urgency",
@@ -4368,11 +4634,13 @@
         "ai ruined job market"
       ],
       "bbc.com": [
-        "meta scales back plan track workers clicks keystrokes train ai"
+        "meta scales back plan track workers clicks keystrokes train ai",
+        "watch ai stock market bubble ready burst"
       ],
       "theguardian.com": [
         "labour mp sues elon musk ai company fake sexualised images",
-        "chip stocks drop ai rally shows signs fatigue spacex huge ipo looms happened"
+        "chip stocks drop ai rally shows signs fatigue spacex huge ipo looms happened",
+        "anthropic says world should option pause ai"
       ],
       "washingtonpost.com": [
         "opinion government ownership path poverty",
@@ -4386,13 +4654,16 @@
         "broadcom set shed 300 billion value ai results fail impress",
         "us house lawmakers release draft bill regulate ai",
         "japan end ai colony falls behind digital minister warns",
-        "drone crashes severed fingers 13 billion silicon valley military startup"
+        "drone crashes severed fingers 13 billion silicon valley military startup",
+        "bitcoin star fades investors flock lustre ai megacap ipos"
       ],
       "scientificamerican.com": [
-        "scientists built powerful ai computer worm learns spreads"
+        "scientists built powerful ai computer worm learns spreads",
+        "anthropic warns ai may soon begin recursive self improvement"
       ],
       "foxbusiness.com": [
-        "memory chips emerging one ai hottest trades"
+        "memory chips emerging one ai hottest trades",
+        "gordon chang anti ai protests entirely organic"
       ],
       "thefp.com": [
         "built ai company ai won kill coding jobs"
@@ -4404,7 +4675,8 @@
         "bringing gemma 12b laptop unlocking local agentic workflows google ai edge"
       ],
       "barrons.com": [
-        "global wealth surging ai boom minting millionaires"
+        "global wealth surging ai boom minting millionaires",
+        "inside alphabet massive 920 million monthly ai deal spacex"
       ],
       "yahoo.com": [
         "ai toys weaken kids bond parents anxious generation author says"
@@ -4433,7 +4705,9 @@
       "nytimes.com": [
         "small business owners managing whole armies employees",
         "opinion trump finally facing reality",
-        "ambitious new museum feel art feels right back"
+        "ambitious new museum feel art feels right back",
+        "spelman college names ayanna howard expert president",
+        "anthropic call nonproliferation"
       ],
       "warontherocks.com": [
         "forged knife fight china brutal domestic ai competition",
@@ -4455,7 +4729,8 @@
         "strengthening biosecurity era ai"
       ],
       "latimes.com": [
-        "spacex ipo video sells elon musk space ai asteroid dreams mom pop investors"
+        "spacex ipo video sells elon musk space ai asteroid dreams mom pop investors",
+        "anthropic calls ai pause button let humans take stock"
       ],
       "nbcconnecticut.com": [
         "hartford mayor disputes ai data center rumors residents call transparency"
@@ -4477,7 +4752,8 @@
       ],
       "wsj.com": [
         "officials discuss taking financial stakes ai industry",
-        "anthropic urges global pause ai development flags self improvement risk"
+        "anthropic urges global pause ai development flags self improvement risk",
+        "metric cfos struggle track ai usage"
       ],
       "notus.org": [
         "senior officials eye government shares ai giants"
@@ -4487,6 +4763,16 @@
       ],
       "qz.com": [
         "anthropic calls coordinated ai slowdown pause"
+      ],
+      "source.washu.edu": [
+        "model uses real image train ai look fakes"
+      ],
+      "datacenterknowledge.com": [
+        "ai data centers squeeze memory supply coalition warns",
+        "ai data centers squeeze memory supply coalition warns"
+      ],
+      "inc.com": [
+        "ai now expensive laid human labor replacing"
       ]
     },
     "cross_topics": [
@@ -5969,6 +6255,81 @@
         "who": "Anthropic",
         "what": "calls for coordinated AI slowdown or pause",
         "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Apple",
+        "what": "s AI, Siri and iOS 27 Launch at WWDC",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "India",
+        "what": "AirTrunk commits $30B to build 5GW of AI data centers in India",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Meta",
+        "what": "remembers the Portal exists and turns it into an AI dev kit.",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Apple",
+        "what": "approves Poke as the first AI agent on its Messages for Business platform",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Anthropic",
+        "what": "calls for AI pause button to let humans take stock",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Meta",
+        "what": "rolls out a new AI creator assistant on Facebook",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Anthropic",
+        "what": "warns AI could soon build itself without human involvement—and urges a global pa",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Anthropic",
+        "what": "’s Call for A.I. Nonproliferation",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Anthropic",
+        "what": "warns AI could soon build itself without human involvement",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Apple",
+        "what": "Intelligence updates",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Anthropic",
+        "what": "says the world should have option to 'pause' on AI",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Google",
+        "what": "will pay SpaceX $920M per month for compute",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Trump",
+        "what": "Says",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Anthropic",
+        "what": "warns AI may soon begin recursive self-improvement",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Alphabet",
+        "what": "’s Massive $920 Million Monthly AI Deal With SpaceX",
+        "first_seen": "2026-06-06"
       }
     ],
     "total": 333
