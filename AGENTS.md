@@ -14,7 +14,8 @@ LLM (DeepSeek via Hermes) is **outside** this Python package — the pipeline ha
 | `state.json` | Runtime mutable state: dedup articles, queue, schedule. Never edit by hand. |
 | `kiboy/__main__.py` | CLI entry point — all commands live here |
 | `kiboy/pipeline.py` | Pipeline orchestrator — understand this before touching the flow |
-| `kiboy/config.py` | Path resolution, config/state I/O |
+| `kiboy/config.py` | Path resolution, config/state I/O, pipeline lock, runtime paths |
+| `kiboy/health.py` | Observability: `RunRecorder`, `run_context`, `health.log`, `last_run.json` |
 | `kiboy_global_rules.md` | Owner-defined agent rules — **read before any task** |
 | `.hermes/plans/` | Active design plans for in-progress features |
 
@@ -55,7 +56,7 @@ No test runner is configured. Minimal verification:
 ```bash
 python -c "import kiboy; print('OK')"
 python -m kiboy status
-python -m pytest          # 84+ unit tests (runs in ~1s, no network)
+python -m pytest          # 98 unit tests (runs in ~1s, no network)
 ```
 
 ## Runtime environment
@@ -105,7 +106,7 @@ grep FAILED .runtime/health.log     # all failures
 - `state.json` — runtime, mutated every pipeline run, tracks all dedup state. `save_state()` writes atomically (tmp → rename). Never `json.dump` to it directly.
 
 ### Cron mode handoff pattern
-`pipeline --cron` outputs to **`/tmp/kiboy_new_articles.json`** — not into `data/`. The LLM reads this file, writes `.md` articles, then calls `register --from-temp` + `thumbnail --pending`. If you're editing the cron flow, trace: `run_cron_stage()` → LLM → `cmd_register()` → `stage_thumbnails()`.
+`pipeline --cron` outputs to **`.runtime/kiboy_new_articles.json`** (not `/tmp` — survives reboot, KIBOY_ROOT-scoped). The LLM reads this file, writes `.md` articles, then calls `register --from-temp` + `thumbnail --pending`. If you're editing the cron flow, trace: `run_cron_stage()` → LLM → `cmd_register()` → `stage_thumbnails()`.
 
 ### Dedup state key
 Articles in `state.json["dedup"]["articles"]` are keyed by **URL string**. Each entry has `file`, `thumb_headline`, `thumb_image`, `thumb_generated`, `first_seen`, `domain`.
@@ -141,13 +142,15 @@ The article's `# NN — 🧠 Title` header **must match** the file's `NN` suffix
 
 ## Conventions that differ from defaults
 
-- **No test suite** — verification is import check + `status` command + manual cron run.
+- **Test suite exists** — `python -m pytest` (98 tests, ~1s, no network). Run after any change.
 - **No formatter/linter config** — follow PEP 8, match existing style.
-- `thumb_headline` is a **plain string** (not array). Old `thumb_lines` array format is from before v1.0 migration — don't reintroduce it.
-- All hardcoded paths in old scripts were a known problem. New code must use `KIBOY_ROOT` / `REPO_DIR` from `kiboy/config.py`.
-- Content language: **Bahasa Indonesia, casual style** (`"casual_indonesian"` in config). Don't write articles in English.
+- `thumb_headline` is a **plain string** with optional `**...**` accent markup (not array). Old `thumb_lines` format is deprecated — don't reintroduce.
+- All paths use `KIBOY_ROOT` / `REPO_DIR` from `kiboy/config.py`. Never hardcode `/root/ai-news-daily/` or `/tmp/`.
+- Content language: **Bahasa Indonesia, casual style**. Don't write articles in English.
+- Runtime files (`health.log`, `last_run.json`, `kiboy.lock`, handoff JSON) live in `.runtime/` — gitignored, auto-created.
+- `state.json` is committed to git but **never edited by hand**. Always go through `save_state()`.
 
 ## Active in-progress work (check `.hermes/plans/`)
 
-- `2026-06-04-og-image-scraping.md` — `imagescraper.py` is implemented; pipeline integration done. The plan describes the final integrated architecture.
+- `2026-06-04-og-image-scraping.md` — fully implemented. Describes final architecture.
 - `2026-06-04_221500-vps-bandwidth-tunnel.md` — VPS/infra note, not a code task.
