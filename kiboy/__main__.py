@@ -212,6 +212,16 @@ def cmd_register(args: argparse.Namespace) -> None:
         registered += 1
         print(f"  [REG] {article['title'][:60]}")
 
+    # Bound state.json growth so hourly cron stays fast over time.
+    from kiboy.dedup import prune_state
+    prune_summary = prune_state(state, today=date_str)
+    if any(prune_summary.values()):
+        print(
+            f"  [PRUNE] cross_topics-{prune_summary['cross_topics_removed']} "
+            f"headlines-{prune_summary['headlines_trimmed']} "
+            f"articles_slimmed-{prune_summary['articles_slimmed']}"
+        )
+
     save_state(state)
     print(f"\n  ✅ Registered {registered} articles to state.json")
 

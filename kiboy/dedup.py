@@ -204,3 +204,88 @@ def register_article(
 
     # Keep running total in sync
     state["meta"]["total_articles"] = len(state["dedup"]["articles"])
+
+
+# ---------------------------------------------------------------------------
+# State pruning — keeps state.json bounded over time
+# ---------------------------------------------------------------------------
+
+def prune_state(
+    state: dict,
+    today: str,
+    ttl_days: int = 60,
+    max_headlines_per_domain: int = 40,
+) -> dict:
+    """Bound the growth of ``state.json`` so hourly cron stays fast.
+
+    The dedup state grows unbounded otherwise: every run appends to
+    ``cross_topics`` and ``source_headlines`` and never removes anything, so
+    Layer 2/3 dedup degrade toward O(n) over months.
+
+    Pruning strategy (conservative — never weakens URL dedup):
+
+    - **cross_topics**: drop entries whose ``first_seen`` is older than
+      *ttl_days*. Old cross-outlet topics are no longer actively breaking.
+    - **source_headlines**: cap each domain's list to the most recent
+      *max_headlines_per_domain* entries (these carry no per-item date).
+    - **articles**: kept as-is for Layer 1 URL matching (cheapest, highest
+      value), but heavy thumbnail fields are stripped from entries older than
+      *ttl_days* that have already been delivered, shrinking the file without
+      losing dedup coverage.
+
+    Args:
+        state: Mutable dedup state dict (modified in place).
+        today: Current date string ``YYYY-MM-DD`` (WIB).
+        ttl_days: Age threshold in days for time-based pruning.
+        max_headlines_per_domain: Hard cap on stored headlines per domain.
+
+    Returns:
+        A small summary dict ``{cross_topics_removed, headlines_trimmed,
+        articles_slimmed}`` for logging.
+    """
+    from datetime import date
+
+    def _parse(d: str) -> date | None:
+        try:
+            return date.fromisoformat(d[:10])
+        except (ValueError, TypeError):
+            return None
+
+    today_d = _parse(today) or date.today()
+    dedup = state.setdefault("dedup", {})
+
+    # ── cross_topics: TTL drop ───────────────────────────────────────────
+    cross = dedup.get("cross_topics", [])
+    kept_cross = []
+    for entry in cross:
+        seen = _parse(entry.get("first_seen", ""))
+        if seen is None or (today_d - seen).days <= ttl_days:
+            kept_cross.append(entry)
+    cross_removed = len(cross) - len(kept_cross)
+    dedup["cross_topics"] = kept_cross
+
+    # ── source_headlines: cap per-domain length ──────────────────────────
+    headlines_trimmed = 0
+    for domain, lst in dedup.get("source_headlines", {}).items():
+        if len(lst) > max_headlines_per_domain:
+            headlines_trimmed += len(lst) - max_headlines_per_domain
+            dedup["source_headlines"][domain] = lst[-max_headlines_per_domain:]
+
+    # ── articles: slim old delivered entries (keep URL for Layer 1) ──────
+    articles_slimmed = 0
+    for url, info in dedup.get("articles", {}).items():
+        seen = _parse(info.get("first_seen", ""))
+        if seen is None or (today_d - seen).days <= ttl_days:
+            continue
+        if not info.get("thumb_generated"):
+            continue  # not delivered yet — leave it intact
+        # Strip heavy fields no longer needed once delivered + aged out.
+        for heavy in ("thumb_headline", "thumb_subheadline", "thumb_image"):
+            if info.pop(heavy, None) is not None:
+                articles_slimmed += 1
+
+    return {
+        "cross_topics_removed": cross_removed,
+        "headlines_trimmed": headlines_trimmed,
+        "articles_slimmed": articles_slimmed,
+    }
