@@ -1,2 +1,12 @@
+# Core
 Pillow>=10.0
 numpy>=1.24
+
+# Anti-bot HTTP (image download + OG scrape). Optional but strongly
+# recommended — without curl_cffi the pipeline falls back to plain urllib
+# and bot detection will block most image hosts.
+curl_cffi>=0.7
+
+# JS-challenge fallback + Google News redirect resolution.
+# Requires `playwright install chromium` after pip install.
+playwright>=1.40

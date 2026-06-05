@@ -23,13 +23,16 @@ from __future__ import annotations
 
 import asyncio
 import json
+import logging
 import os
 import re
-import ssl
 import time
 import urllib.parse
-import urllib.request
 from typing import Optional
+
+from kiboy.httpclient import USER_AGENT as _USER_AGENT, BLOCKED_DOMAINS as _BLOCKED_DOMAINS
+
+logger = logging.getLogger(__name__)
 
 # ── Playwright (lazy-loaded) ────────────────────────────────────────────────
 
@@ -47,20 +50,6 @@ def _check_playwright() -> bool:
         _PLAYWRIGHT_AVAILABLE = False
     return _PLAYWRIGHT_AVAILABLE
 
-
-_USER_AGENT = (
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
-)
-
-# Domains known to block automated requests — skip immediately.
-_BLOCKED_DOMAINS: set[str] = {
-    "bloomberg.com",
-    "wsj.com",
-    "ft.com",
-    "barrons.com",
-    "economist.com",
-}
 
 # Cache for resolved GN URLs: {gn_url: (real_url, og_image, timestamp)}
 _RESOLVE_CACHE: dict[str, tuple[str, str, float]] = {}
@@ -140,7 +129,7 @@ def resolve_gn_url(gn_url: str, timeout: int = 10) -> tuple[str, str]:
             return cached[0], cached[1]
 
     if not _check_playwright():
-        print(f"  ⚠️  Playwright not available — can't resolve GN URL")
+        logger.warning("Playwright not available — can't resolve GN URL")
         return gn_url, ""
 
     try:
@@ -192,7 +181,7 @@ def resolve_gn_url(gn_url: str, timeout: int = 10) -> tuple[str, str]:
         real_url, og_image = asyncio.run(_resolve())
 
     except Exception as e:
-        print(f"  ⚠️  Playwright error: {e}")
+        logger.warning("Playwright error resolving GN URL: %s", e)
         real_url = gn_url
         og_image = ""
 
@@ -408,11 +397,11 @@ def resolve_and_enrich(
         return article
 
     # Case 2: GN URL — resolve via Playwright
-    print(f"  🌐 Resolving GN URL: {url[:60]}...")
+    logger.info("Resolving GN URL: %s...", url[:60])
     real_url, og_image = resolve_gn_url(url, timeout=timeout)
 
     if real_url and real_url != url:
-        print(f"     → {real_url[:80]}")
+        logger.info("  → %s", real_url[:80])
         article["url"] = real_url  # Replace GN URL with real URL
         article["resolved_url"] = real_url
     else:
@@ -421,7 +410,7 @@ def resolve_and_enrich(
     # Validate OG image before accepting
     if og_image and validate_image_url(og_image):
         article["image_url"] = og_image
-        print(f"     🖼️  OG image found & validated")
+        logger.info("  🖼️  OG image found & validated")
 
     return article
 

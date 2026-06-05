@@ -6,6 +6,7 @@ script/fetch_rss.py into a single, configurable module.  Uses
 """
 
 import html
+import logging
 import re
 import ssl
 import urllib.parse
@@ -13,16 +14,14 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from typing import Any
 
+from kiboy.httpclient import USER_AGENT
 from kiboy.utils import extract_domain
+
+logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
-
-_USER_AGENT: str = (
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-    "Chrome/125.0.0.0 Safari/537.36"
-)
 
 # Default Google News supplementary search queries
 _DEFAULT_GN_QUERIES: list[str] = [
@@ -56,11 +55,11 @@ def _make_request(url: str, timeout: int = 15) -> str | None:
     ctx.verify_mode = ssl.CERT_NONE
 
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": _USER_AGENT})
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
         with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
             return resp.read().decode("utf-8", errors="ignore")
     except Exception as e:  # noqa: BLE001
-        print(f"  [FETCH ERROR] {url}: {e}")
+        logger.warning("[FETCH ERROR] %s: %s", url, e)
         return None
 
 
@@ -173,7 +172,7 @@ def fetch_rss(
                 "image_url": image_url,
             })
     except ET.ParseError as e:
-        print(f"  [PARSE ERROR] {source_name}: {e}")
+        logger.warning("[PARSE ERROR] %s: %s", source_name, e)
 
     return articles
 
@@ -305,7 +304,7 @@ def fetch_all(config: dict[str, Any]) -> list[dict[str, str]]:
             source_url = f"https://{source_url}"
 
         name = source.get("name", source.get("id", "unknown"))
-        print(f"  [FETCH] {name}: {source_url}")
+        logger.info("[FETCH] %s: %s", name, source_url)
 
         # Route Google News URLs through the regex-based fetcher
         if "news.google.com" in source_url:
@@ -319,15 +318,15 @@ def fetch_all(config: dict[str, Any]) -> list[dict[str, str]]:
             articles = fetch_rss(source_url, name, max_per_source, timeout)
 
         all_articles.extend(articles)
-        print(f"    → {len(articles)} articles")
+        logger.info("    → %d articles", len(articles))
 
     # --- Supplementary Google News searches ---
     gn_queries: list[str] = fetch_cfg.get("gn_queries", _DEFAULT_GN_QUERIES)
     for query in gn_queries:
-        print(f"  [FETCH] GoogleNews: {query}")
+        logger.info("[FETCH] GoogleNews: %s", query)
         articles = fetch_google_news(query, 12, timeout)
         all_articles.extend(articles)
-        print(f"    → {len(articles)} articles")
+        logger.info("    → %d articles", len(articles))
 
     # --- Deduplication by URL ---
     seen_urls: set[str] = set()
@@ -338,5 +337,5 @@ def fetch_all(config: dict[str, Any]) -> list[dict[str, str]]:
             seen_urls.add(url)
             unique.append(article)
 
-    print(f"\n  [TOTAL] {len(unique)} unique articles (from {len(all_articles)} raw)")
+    logger.info("[TOTAL] %d unique articles (from %d raw)", len(unique), len(all_articles))
     return unique

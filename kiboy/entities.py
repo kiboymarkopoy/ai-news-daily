@@ -151,6 +151,36 @@ KNOWN_ORGS: list[tuple[str, str]] = sorted(
 
 
 # ---------------------------------------------------------------------------
+# Config-extensible entity table
+# ---------------------------------------------------------------------------
+# Built-in KNOWN_ORGS above is the baseline. Operators can add or override
+# entities via ``config["entities"]["extra"]`` (a ``{key: canonical}`` map)
+# without editing code — e.g. {"perplexity ai": "Perplexity AI"}.
+
+_ACTIVE_ORGS: list[tuple[str, str]] = list(KNOWN_ORGS)
+
+
+def configure_entities(config: dict) -> None:
+    """Merge operator-supplied entities from *config* into the active table.
+
+    Reads ``config["entities"]["extra"]`` — a mapping of lowercase match-key
+    to canonical display name. Idempotent: rebuilds the active table from the
+    built-in baseline each call, so removing a config entry takes effect on
+    the next run. Keeps the longest-key-first ordering the extractor relies on.
+    """
+    extra = (config or {}).get("entities", {}).get("extra", {})
+    merged: dict[str, str] = {key: canon for key, canon in KNOWN_ORGS}
+    for key, canon in extra.items():
+        if isinstance(key, str) and isinstance(canon, str) and key.strip():
+            merged[key.lower().strip()] = canon.strip()
+
+    global _ACTIVE_ORGS
+    _ACTIVE_ORGS = sorted(
+        merged.items(), key=lambda pair: len(pair[0]), reverse=True,
+    )
+
+
+# ---------------------------------------------------------------------------
 # WHO / WHAT extraction
 # ---------------------------------------------------------------------------
 
@@ -175,7 +205,7 @@ def extract_who_what(title: str) -> tuple[str, str]:
     who = ""
     match_pos = -1
     matched_key_len = 0
-    for key, canonical in KNOWN_ORGS:
+    for key, canonical in _ACTIVE_ORGS:
         pos = title_lower.find(key)
         if pos >= 0:
             who = canonical

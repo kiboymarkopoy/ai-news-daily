@@ -173,5 +173,8 @@
       "/usr/share/fonts/truetype/montserrat/",
       "C:/Windows/Fonts/"
     ]
+  },
+  "entities": {
+    "extra": {}
   }
 }

@@ -25,6 +25,15 @@ from typing import Optional
 
 logger = logging.getLogger(__name__)
 
+# ── Shared HTTP constants (single source of truth for the package) ──────────
+
+# Default browser User-Agent for plain urllib requests (fetcher, scraper).
+# curl_cffi paths use impersonation targets below instead.
+USER_AGENT: str = (
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+)
+
 # ── Browser impersonation targets (rotated on retry) ────────────────────────
 
 _IMPERSONATE_TARGETS = [
@@ -43,6 +52,13 @@ BLOCKED_DOMAINS: set[str] = {
     "barrons.com",
     "economist.com",
 }
+
+
+def is_blocked_domain(url: str) -> bool:
+    """Return True if *url*'s host is in :data:`BLOCKED_DOMAINS`."""
+    import urllib.parse
+    host = urllib.parse.urlparse(url).netloc.lower().removeprefix("www.")
+    return host in BLOCKED_DOMAINS
 
 # ── curl_cffi availability ──────────────────────────────────────────────────
 

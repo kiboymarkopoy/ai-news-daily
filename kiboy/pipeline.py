@@ -90,6 +90,11 @@ def stage_dedup(
     logger.info("STAGE 2: DEDUP")
     logger.info("═" * 60)
 
+    # Merge any operator-defined entities (config["entities"]["extra"]) into
+    # the WHO/WHAT extractor before running Layer 3.
+    from kiboy.entities import configure_entities
+    configure_entities(config)
+
     new_articles: list[dict] = []
 
     for article in articles:

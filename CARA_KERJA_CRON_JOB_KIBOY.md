@@ -23,24 +23,24 @@ Ini ngelakuin 4 stage:
 
 **FETCH**
 • Kode: kiboy/fetcher.py
-• Fungsi: RSS dari 10 sumber (~125 artikel) via urllib.request. Sumber: ArsTechnica, TechCrunch, The Verge, Reuters AI, NYTimes AI, Wired, Hacker News, Google News, MIT Tech Review, dll
+• Fungsi: RSS dari sumber di config.json (saat ini 5 feed: TechCrunch, ArsTechnica, The Verge, VentureBeat, Google News) + 5 query Google News tambahan (AI funding, regulation, robotics, model release). Via urllib.request. Total ~100-125 artikel mentah.
 
 **DEDUP**
 • Kode: kiboy/dedup.py
-• Fungsi: 3-layer dedup: exact URL → normalized URL → fuzzy title. State disimpen di state.json supaya gak nulis artikel yang sama 2x
+• Fungsi: 3-layer dedup: (1) exact URL match → (2) headline similarity per-domain (>50% word overlap) → (3) cross-outlet WHO+WHAT entity match. State disimpen di state.json supaya gak nulis artikel yang sama 2x. State di-prune otomatis (cross_topics > 60 hari dibuang) biar gak bengkak.
 
 **ENRICH**
 • Kode: kiboy/imagescraper.py
 • Fungsi: Resolve GN redirect (max 20/run), scrape OG image pake curl_cffi anti-bot (kiboy/httpclient.py). Kalo curl_cffi gagal → fallback Playwright. Kalo semua gagal → image_url: ""
 
 **WRITE**
-• Kode: Output ke /tmp/kiboy_new_articles.json
+• Kode: Output ke .runtime/kiboy_new_articles.json
 • Fungsi: Ini cuma nyimpen data mentah (title EN, url, image_url, domain). BELUM artikel bahasa Indonesia
 
-Output pipeline: File /tmp/kiboy_new_articles.json — berisi maks 50 artikel fresh, urut berdasarkan skor AI-relevance.
+Output pipeline: File .runtime/kiboy_new_articles.json — berisi maks 50 artikel fresh, urut berdasarkan skor AI-relevance. (Pindah dari /tmp ke .runtime/ biar tahan reboot VPS.)
 
 Phase 2 — LLM NULIS ARTIKEL (manual by agent)
-Agent baca /tmp/kiboy_new_articles.json dan milih 5 artikel:
+Agent baca .runtime/kiboy_new_articles.json dan milih 5 artikel:
 
 01
 • Topik: Model & Research
@@ -151,10 +151,10 @@ python -m kiboy thumbnail -a "data/...md"  # 1 artikel doang
 │   ├── imagescraper.py      # GN resolve + OG scrape (Playwright fallback)
 │   ├── httpclient.py        # curl_cffi anti-bot 3-tier downloader
 │   ├── thumbnail.py         # 4:5 branded thumbnail generator (905 baris)
-│   ├── config.py            # Config & state loader
-│   ├── entities.py          # Data class schemas
-│   ├── writer.py            # Helpers
-│   └── utils.py             # extract_domain, is_gn_url, dll
+│   ├── config.py            # Config & state loader + pipeline lock
+│   ├── entities.py          # Known AI/tech orgs + WHO/WHAT extractor (dedup L3)
+│   ├── writer.py            # Article .md writer + sequence helper
+│   └── utils.py             # extract_domain, normalize_headline, word_overlap
 ├── data/                    # Hasil artikel + thumbnail
 │   └── YYYY-MM-DD/
 │       ├── HH.MM-SEQ.md     # Artikel
