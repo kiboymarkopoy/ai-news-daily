@@ -35,6 +35,7 @@ from kiboy.config import (
     pipeline_lock,
     save_state,
 )
+from kiboy.health import setup_logging
 
 logger = logging.getLogger("kiboy")
 
@@ -161,59 +162,100 @@ def cmd_pipeline(args: argparse.Namespace) -> None:
 
 
 def cmd_register(args: argparse.Namespace) -> None:
-    """Register articles from the cron handoff JSON into state.json."""
+    """Register articles from the cron handoff JSON into state.json.
+
+    Validates schema and checks the LLM actually wrote each .md file before
+    registering — prevents phantom state entries pointing at missing files.
+    Appends tagged events to health.log without overwriting the pipeline's
+    last_run.json snapshot.
+    """
+    from kiboy.health import (
+        STATUS_SUCCESS, STATUS_SKIP,
+        HEALTH_LOG_PATH, ensure_runtime_dir, get_wib_now,
+    )
+    from kiboy.writer import get_next_sequence
+    from kiboy.dedup import register_article, prune_state
+
+    def _event(status: str, component: str, message: str) -> None:
+        """Append one tagged line to health.log — does NOT touch last_run.json."""
+        ts = get_wib_now().strftime("%m-%d %H:%M:%S")
+        tag = status.ljust(7)[:7]
+        line = f"{ts} [{tag}] {component:<8s}: {message}"
+        try:
+            ensure_runtime_dir()
+            with open(HEALTH_LOG_PATH, "a", encoding="utf-8") as f:
+                f.write(line + "\n")
+        except OSError:
+            pass
+
     temp_path = CRON_OUTPUT_PATH
     if not temp_path.exists():
         print(f"Error: {temp_path} not found. Run 'pipeline --cron' first.")
         sys.exit(1)
 
-    with open(temp_path, encoding="utf-8") as f:
-        cron_data = json.load(f)
+    try:
+        with open(temp_path, encoding="utf-8") as f:
+            cron_data = json.load(f)
+    except json.JSONDecodeError as exc:
+        print(f"Error: {temp_path} is not valid JSON: {exc}")
+        sys.exit(1)
+
+    if not isinstance(cron_data, dict) or "date" not in cron_data:
+        print("Error: handoff JSON missing required 'date' field.")
+        sys.exit(1)
 
     articles = cron_data.get("new_articles", [])
     if not articles:
         print("No new articles to register.")
         return
 
-    # Enrich articles with file paths written by LLM
     state = load_state()
     date_str = cron_data["date"]
+    time_str = cron_data.get("time", "00.00")
+    date_dir = DATA_DIR / date_str
 
-    registered = 0
+    registered = skipped = 0
     for article in articles:
-        # Skip if already registered
-        url = article["url"]
+        url = article.get("url", "")
+        title = article.get("title", "")
+        if not url or not title:
+            skipped += 1
+            _event(STATUS_SKIP, "register", "entry tanpa url/title")
+            continue
+
+        # Skip if already registered (idempotent re-runs).
         if url in state["dedup"]["articles"]:
-            print(f"  [SKIP] Already registered: {article['title'][:60]}")
+            print(f"  [SKIP] Already registered: {title[:60]}")
+            _event(STATUS_SKIP, "register", f"sudah terdaftar: {title[:50]}")
             continue
 
         # Build file path: data/YYYY-MM-DD/HH.MM-NN.md
-        from kiboy.writer import get_next_sequence
-        date_dir = DATA_DIR / date_str
-        time_str = cron_data.get("time", "00.00")
         seq = article.get("seq", get_next_sequence(date_dir, time_str))
-        file_path = f"data/{date_str}/{time_str}-{seq:02d}.md"
+        rel_path = f"data/{date_str}/{time_str}-{seq:02d}.md"
+        abs_path = DATA_DIR / date_str / f"{time_str}-{seq:02d}.md"
 
-        # Use article fields directly
-        thumb_headline = article.get("thumb_headline", article["title"])
-        thumb_image = article.get("image_url", "")
+        # CRITICAL: only register if the LLM actually wrote the article.
+        if not abs_path.exists():
+            skipped += 1
+            print(f"  [SKIP] {rel_path} → .md tidak ditemukan, tidak diregister")
+            _event(STATUS_SKIP, "register", f"{rel_path} → .md tidak ada")
+            continue
 
-        from kiboy.dedup import register_article
         register_article(
             url=url,
-            title=article["title"],
+            title=title,
             domain=article.get("domain", ""),
-            file_path=file_path,
-            thumb_headline=thumb_headline,
-            thumb_image=thumb_image,
+            file_path=rel_path,
+            thumb_headline=article.get("thumb_headline", title),
+            thumb_image=article.get("image_url", ""),
             state=state,
             first_seen=date_str,
         )
         registered += 1
-        print(f"  [REG] {article['title'][:60]}")
+        print(f"  [REG] {title[:60]}")
+        _event(STATUS_SUCCESS, "register", title[:50])
 
     # Bound state.json growth so hourly cron stays fast over time.
-    from kiboy.dedup import prune_state
     prune_summary = prune_state(state, today=date_str)
     if any(prune_summary.values()):
         print(
@@ -223,7 +265,8 @@ def cmd_register(args: argparse.Namespace) -> None:
         )
 
     save_state(state)
-    print(f"\n  ✅ Registered {registered} articles to state.json")
+    print(f"\n  ✅ Registered {registered} articles to state.json"
+          f" ({skipped} skipped)")
 
 
 def cmd_thumbnail(args: argparse.Namespace) -> None:
@@ -358,11 +401,7 @@ def cmd_migrate(args: argparse.Namespace) -> None:
 
 def main() -> None:
     """Main CLI entry point."""
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-        datefmt="%H:%M:%S",
-    )
+    setup_logging()
 
     parser = argparse.ArgumentParser(
         prog="kiboy",

@@ -316,15 +316,27 @@ def scrape_og_image(article_url: str, timeout: int = 5) -> str:
     Returns:
         Absolute image URL, or ``""`` if not found or request fails.
     """
+    url, _reason = _scrape_og_image_with_reason(article_url, timeout)
+    return url
+
+
+def _scrape_og_image_with_reason(article_url: str, timeout: int = 5) -> tuple[str, str]:
+    """Like :func:`scrape_og_image` but also returns a failure-reason key.
+
+    Returns:
+        ``(image_url, reason)``. On success ``reason`` is ``""``. On failure
+        ``image_url`` is ``""`` and ``reason`` is one of the taxonomy keys:
+        ``blocked_domain``, ``bot_block``, ``unreachable``, ``no_og_image``.
+    """
     if not article_url:
-        return ""
+        return "", "unreachable"
 
     # Skip known paywalled / bot-blocking domains entirely
     domain = urllib.parse.urlparse(article_url).netloc.lower()
     domain = domain.removeprefix("www.")
     if domain in _BLOCKED_DOMAINS:
         # Even Playwright won't help with these
-        return ""
+        return "", "blocked_domain"
 
     # Try 1: Fast path — curl_cffi HTTP request (no JS).
     html = _make_request(article_url, timeout)
@@ -332,17 +344,26 @@ def scrape_og_image(article_url: str, timeout: int = 5) -> str:
     if html and not blocked:
         og = _extract_og_from_html(html, article_url)
         if og:
-            return og
+            return og, ""
 
     # Try 2: Playwright fallback — handles JS-heavy / bot-blocked sites.
     # Reached when curl_cffi failed, hit a bot wall, or found no usable image.
     if not _check_playwright():
         if blocked:
             logger.info("Bot-blocked, no Playwright — no image: %s", article_url[:70])
-        return ""
+            return "", "bot_block"
+        if not html:
+            return "", "unreachable"
+        return "", "no_og_image"
 
     og = _scrape_og_playwright(article_url, timeout)
-    return og
+    if og:
+        return og, ""
+    if blocked:
+        return "", "bot_block"
+    if not html:
+        return "", "unreachable"
+    return "", "no_og_image"
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -503,6 +524,9 @@ def enrich_articles(
     # ══ Phase 0: Resolve GN URLs FIRST (Playwright-based, slow) ══
     # Semua GN URL harus di-resolve ke real URL sebelum scraping gambar.
     # Ini prioritas karena akan melambat jika dilakukan terakhir.
+    from kiboy.health import get_recorder
+    recorder = get_recorder()
+
     gn_resolved = 0
     for article in articles:
         if gn_resolved >= 20:  # Max 20 GN resolutions per run
@@ -512,6 +536,9 @@ def enrich_articles(
             continue
         resolve_and_enrich(article, timeout=timeout)
         gn_resolved += 1
+        # If resolution left it still a GN URL with no image, it's unusable.
+        if is_gn_url(article.get("url", "")) and not article.get("image_url"):
+            recorder.image(url, ok=False, reason="gn_unresolved")
 
     # ══ Phase 1: Direct URLs (fast, stdlib-based) ══
     # Scrape OG image only — URL sudah real, tidak perlu resolve
@@ -529,12 +556,21 @@ def enrich_articles(
             article["image_url"] = ""
         article.setdefault("image_url", "")
 
-        if not article["image_url"]:
-            og = scrape_og_image(url, timeout=min(timeout, 5))
-            # Validate before accepting — never store an unusable/blocked image
-            # (this is what let the Akamai logo SVG through previously).
-            if og and _is_usable_image_url(og) and validate_image_url(og):
-                article["image_url"] = og
-            processed += 1
+        if article["image_url"]:
+            # RSS already gave a usable image — count it, no scrape needed.
+            recorder.image(article["image_url"], ok=True)
+            continue
+
+        og, reason = _scrape_og_image_with_reason(url, timeout=min(timeout, 5))
+        processed += 1
+        # Validate before accepting — never store an unusable/blocked image
+        # (this is what let the Akamai logo SVG through previously).
+        if og and _is_usable_image_url(og) and validate_image_url(og):
+            article["image_url"] = og
+            recorder.image(url, ok=True)
+        else:
+            if og and not reason:
+                reason = "validation_failed"
+            recorder.image(url, ok=False, reason=reason or "no_og_image")
 
     return articles

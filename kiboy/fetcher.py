@@ -291,6 +291,9 @@ def fetch_all(config: dict[str, Any]) -> list[dict[str, str]]:
     timeout: int = fetch_cfg.get("timeout", 30)
     max_per_source: int = fetch_cfg.get("max_per_source", 20)
 
+    from kiboy.health import get_recorder, STATUS_SUCCESS, STATUS_FAILED
+    recorder = get_recorder()
+
     all_articles: list[dict[str, str]] = []
 
     # --- RSS sources from config ---
@@ -319,6 +322,11 @@ def fetch_all(config: dict[str, Any]) -> list[dict[str, str]]:
 
         all_articles.extend(articles)
         logger.info("    → %d articles", len(articles))
+        if articles:
+            recorder.event(STATUS_SUCCESS, "fetch", f"{name} → {len(articles)} artikel")
+        else:
+            recorder.bump("fetch_errors")
+            recorder.event(STATUS_FAILED, "fetch", f"{name} → 0 artikel (gagal/kosong)")
 
     # --- Supplementary Google News searches ---
     gn_queries: list[str] = fetch_cfg.get("gn_queries", _DEFAULT_GN_QUERIES)

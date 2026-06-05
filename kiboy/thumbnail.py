@@ -1046,12 +1046,8 @@ def main() -> None:
     import argparse
 
     from kiboy.config import load_config, load_state, save_state
-
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
-        datefmt="%H:%M:%S",
-    )
+    from kiboy.health import setup_logging, get_recorder
+    setup_logging()
 
     parser = argparse.ArgumentParser(description="KiMedia Thumbnail Generator")
     parser.add_argument(
@@ -1116,6 +1112,7 @@ def main() -> None:
             "Done: %d/%d thumbnails generated (no-image: %d)",
             success, pending, skipped_noimg,
         )
+        get_recorder().set("thumbs_ok", success)
     else:
         parser.print_help()
 

@@ -36,6 +36,11 @@ GN_RESOLVE_CACHE_PATH: Path = RUNTIME_DIR / "gn_resolve_cache.json"
 # Pipeline lock — prevents overlapping cron runs from corrupting state.json.
 LOCK_PATH: Path = RUNTIME_DIR / "kiboy.lock"
 
+# Observability — rotating debug log, trackable health log, last-run snapshot.
+RUN_LOG_PATH: Path = RUNTIME_DIR / "kiboy.log"
+HEALTH_LOG_PATH: Path = RUNTIME_DIR / "health.log"
+LAST_RUN_PATH: Path = RUNTIME_DIR / "last_run.json"
+
 # WIB timezone (UTC+7)
 _WIB = timezone(timedelta(hours=7))
 

@@ -215,6 +215,8 @@ def run_cron_stage(max_articles: int = 5, enrich: bool = True) -> str:
     import logging
     logging.basicConfig(level=logging.INFO, format="%(message)s")
 
+    from kiboy.health import run_context
+
     print("=" * 60)
     print("  KIBOY CRON PIPELINE (DETERMINISTIC)")
     print("=" * 60)
@@ -225,13 +227,24 @@ def run_cron_stage(max_articles: int = 5, enrich: bool = True) -> str:
     date_str = now.strftime("%Y-%m-%d")
     time_str = now.strftime("%H.%M")
 
+    with run_context(f"{date_str} {time_str}") as recorder:
+        return _run_cron_body(
+            config, state, date_str, time_str, max_articles, enrich, recorder
+        )
+
+
+def _run_cron_body(config, state, date_str, time_str, max_articles, enrich, recorder) -> str:
+    """Core of :func:`run_cron_stage`, run inside an active health context."""
     # Stage 1: Fetch (deterministic Python, no LLM hallucination possible)
     raw_articles = stage_fetch(config)
     fetched = len(raw_articles)
+    recorder.set("fetched", fetched)
 
     # Stage 2: 3-layer dedup
     new_articles = stage_dedup(raw_articles, config, state)
     duplicates = fetched - len(new_articles)
+    recorder.set("duplicates", duplicates)
+    recorder.event("INFO", "dedup", f"{len(new_articles)} new / {fetched} fetched")
 
     # Stage 2.5: Enrich articles without images via OG image scraping
     # Run enrichment on a larger pool (3x) so we can pick the best
@@ -337,6 +350,7 @@ def run_cron_stage(max_articles: int = 5, enrich: bool = True) -> str:
     ensure_runtime_dir()
     _CRON_OUTPUT.write_text(json.dumps(cron_data, indent=2, ensure_ascii=False),
                             encoding="utf-8")
+    recorder.set("new", len(payload))
 
     # Print summary (stdout goes to LLM context)
     print(f"\n  Fetched:    {fetched} articles")

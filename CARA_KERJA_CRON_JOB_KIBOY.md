@@ -188,4 +188,47 @@ Kalau 0 artikel baru, agent balikin [SILENT] — gak ada delivery. Itu wajar kal
 
 ---
 
+📊 MONITORING & HEALTH TRACKING
+
+Setiap cron run nulis ke `.runtime/` (gitignored, ikut KIBOY_ROOT):
+
+`.runtime/health.log` — log append-only dengan tag dan timestamp:
+```
+06-05 16:37:01 [SUCCESS] fetch   : TechCrunch → 18 artikel
+06-05 16:37:02 [FAILED ] fetch   : VentureBeat → 0 artikel (gagal/kosong)
+06-05 16:38:40 [FAILED ] image   : telegraph.co.uk → bot_block
+06-05 16:38:41 [SUCCESS] image   : axios.com → og:image ok
+06-05 16:39:10 [SKIP   ] register: data/2026-06-05/16.37-03.md → .md tidak ada
+06-05 16:39:55 [HEALTH ] run     : run 2026-06-05 16.37 → fetched=123 new=5 img_ok=4 img_fail=1 thumbs=5 errors=1 status=DEGRADED
+```
+
+`.runtime/last_run.json` — snapshot terstruktur buat dibaca program:
+- `status`: SUCCESS / DEGRADED / FAILED
+- `counters`: fetched, duplicates, new, img_ok, img_fail, thumbs_ok, register_skipped
+- `image_failures`: list `{domain, reason, url}`
+
+`.runtime/kiboy.log` — full debug log rotating (2MB × 3 backup).
+
+**Status run:**
+- `SUCCESS` — beres semua
+- `DEGRADED` — jalan tapi ada kegagalan sebagian (gambar gagal, source kosong, .md hilang)
+- `FAILED` — crash total atau 0 artikel
+
+**Alasan gagal gambar:**
+- `bot_block` → Akamai/Cloudflare block (Telegraph, dll)
+- `blocked_domain` → domain di blocklist (bloomberg, wsj, ft)
+- `no_og_image` → halaman oke tapi gak ada og:image
+- `gn_unresolved` → GN redirect gagal di-resolve
+- `unreachable` → timeout/network error
+- `validation_failed` → URL gak bisa didownload
+
+**Commands buat monitoring:**
+```bash
+tail -20 .runtime/health.log          # 20 event terbaru
+cat .runtime/last_run.json            # snapshot run terakhir
+grep FAILED .runtime/health.log       # semua kegagalan
+```
+
+---
+
 Gitu Bos, tinggal diterusin ke dev lu. Kalo ada yang kurang jelas, tanya aja 👊 (2/2)
