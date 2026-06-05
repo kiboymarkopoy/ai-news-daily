@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-05T16:47:46.631221+07:00",
-    "total_articles": 415
+    "updated_at": "2026-06-05T20:03:52.545504+07:00",
+    "total_articles": 428
   },
   "dedup": {
     "articles": {
@@ -3760,6 +3760,123 @@
         "thumb_subheadline": null,
         "thumb_image": "",
         "thumb_generated": true
+      },
+      "https://www.bloomberg.com/news/articles/2026-06-05/anthropic-calls-for-ai-pause-button-to-let-humans-take-stock": {
+        "file": "data/2026-06-05/19.08-01.md",
+        "source": "bloomberg.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Anthropic Desak Tombol Jeda AI Biar Manusia Bisa Narik Napas",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.wsj.com/tech/ai/u-s-officials-discuss-taking-financial-stakes-in-ai-industry-b654d41a": {
+        "file": "data/2026-06-05/19.08-02.md",
+        "source": "wsj.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Pemerintah AS Siap Ambil Saham di Perusahaan AI Raksasa",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://warontherocks.com/cogs-of-war/the-pentagons-ai-edge-is-being-distilled-away/": {
+        "file": "data/2026-06-05/19.08-03.md",
+        "source": "warontherocks.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Keunggulan AI Pentagon Lenyap, Kemampuan Militer AS Tergerus",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.wsj.com/tech/ai/anthropic-urges-global-pause-in-ai-development-flags-self-improvement-risk-99cefb73": {
+        "file": "data/2026-06-05/19.08-04.md",
+        "source": "wsj.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Anthropic Minta Pause Global, Peringatkan Risiko AI Self-Improvement",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.notus.org/technology/trump-ai-stake-openai": {
+        "file": "data/2026-06-05/19.08-05.md",
+        "source": "notus.org",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Pejabat Senior AS Bahas Saham Pemerintah di Perusahaan AI",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/mira-murati-steps-back-into-the-spotlight-carefully/": {
+        "file": "data/2026-06-05/19.21-01.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Mira Murati Kembali ke Sorotan Usai Hengkang dari OpenAI",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/": {
+        "file": "data/2026-06-05/19.21-02.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Anthropic IPO, Daniela Amodei Abaikan Keraguan soal Return AI",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.eenews.net/articles/von-der-leyens-ai-pick-triggers-conflict-of-interest-criticism/": {
+        "file": "data/2026-06-05/19.21-03.md",
+        "source": "eenews.net",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Pilihan AI Von der Leyen Tuai Kritik Konflik Kepentingan",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.nytimes.com/2026/06/05/arts/design/dataland-ai-museum-los-angeles-art-artificial-intelligence.html": {
+        "file": "data/2026-06-05/19.21-05.md",
+        "source": "nytimes.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Museum AI Baru di Los Angeles, Seni Bisa Dirasakan",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://qz.com/anthropic-ai-pause-brake-pedal-coordination-labs-060526": {
+        "file": "data/2026-06-05/20.00-01.md",
+        "source": "qz.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Anthropic Minta Industri AI Rem Darurat Bareng-Bareng",
+        "thumb_subheadline": null,
+        "thumb_image": "https://qz.com/cdn-cgi/image/width=1200,quality=85,format=auto/https://assets.qz.com/media/GettyImages-2245836911-300x200.jpg",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/airbnbs-brian-chesky-plans-to-launch-a-new-ai-lab/": {
+        "file": "data/2026-06-05/20.00-02.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Bos Airbnb Brian Chesky Siap Bikin AI Lab Baru",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2017/05/gettyimages-652988834.jpg?w=1024",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/defense-tech-ai-and-fundraising-take-center-stage-at-strictlyvc-los-angeles-on-june-18/": {
+        "file": "data/2026-06-05/20.00-03.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Inovasi AI dan Defense Tech Ramaikan StrictlyVC Los Angeles",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2025/04/StrictlyVC-NYC-2024.jpg?resize=1200,800",
+        "thumb_generated": true
+      },
+      "https://www.reuters.com/business/finance/drone-crashes-severed-fingers-13-billion-silicon-valley-military-startup-2026-06-05/": {
+        "file": "data/2026-06-05/20.00-04.md",
+        "source": "reuters.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Drone Jatuh dan Jari Terpotong di Startup Militer 13 Miliar Dolar",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
       }
     },
     "source_headlines": {
@@ -3866,10 +3983,6 @@
         "hpe stock soars record backlog booming ai server business"
       ],
       "techcrunch.com": [
-        "breaking what happens when companies become too aipilled",
-        "breaking the internet is being rebuilt for machines",
-        "bikin melongo asana acquires nocode agentbuilder stackai",
-        "mesin pencari yang antiai strategi berani duckduckgo di tengah demam ai",
         "gila anthropic startup ai paling berharga di dunia resmi ajukan ipo target valuasi 1 triliun",
         "ai weathermesh 6 dari windborne bisa prediksi cuaca lebih akurat dari pemerintah eropa gegara 400 balon udara",
         "spacex peringatkan risiko air di ipo data center ai",
@@ -3905,7 +4018,11 @@
         "coralogix raises 200m bet someone needs watch ai agents",
         "lovable signs multi year deal google cloud usage 5x source says",
         "apple touts trillion app store billings sales 90 without commission",
-        "meta steals tactic tesla builds data centers tents"
+        "meta steals tactic tesla builds data centers tents",
+        "mira murati steps back spotlight carefully",
+        "ahead ipo anthropic daniela amodei shrugs doubts ai returns",
+        "airbnb brian chesky plans launch new ai lab",
+        "defense tech ai fundraising take center stage strictlyvc los angeles june 18"
       ],
       "www.tomshardware.com": [
         "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -4214,7 +4331,8 @@
         "ai data center parts maker xnrgy said mull 10 billion sale",
         "ai data center boom risks breakup biggest us power grid operator",
         "ai power boom revives natural gas infrastructure bet",
-        "nvidia clears memory big three vera rubin hbm4 supply"
+        "nvidia clears memory big three vera rubin hbm4 supply",
+        "anthropic calls ai pause button let humans take stock"
       ],
       "cnbc.com": [
         "palo alto networks tops earnings as ai fuels cybersecurity urgency",
@@ -4267,7 +4385,8 @@
         "meta enters enterprise ai race new business agent",
         "broadcom set shed 300 billion value ai results fail impress",
         "us house lawmakers release draft bill regulate ai",
-        "japan end ai colony falls behind digital minister warns"
+        "japan end ai colony falls behind digital minister warns",
+        "drone crashes severed fingers 13 billion silicon valley military startup"
       ],
       "scientificamerican.com": [
         "scientists built powerful ai computer worm learns spreads"
@@ -4313,10 +4432,12 @@
       ],
       "nytimes.com": [
         "small business owners managing whole armies employees",
-        "opinion trump finally facing reality"
+        "opinion trump finally facing reality",
+        "ambitious new museum feel art feels right back"
       ],
       "warontherocks.com": [
-        "forged knife fight china brutal domestic ai competition"
+        "forged knife fight china brutal domestic ai competition",
+        "pentagon ai edge being distilled away"
       ],
       "trefis.com": [
         "broadcom drowning ai orders aren investors impressed"
@@ -4353,6 +4474,19 @@
       ],
       "france24.com": [
         "human role narrowing anthropic calls global ai slowdown systems escape control"
+      ],
+      "wsj.com": [
+        "officials discuss taking financial stakes ai industry",
+        "anthropic urges global pause ai development flags self improvement risk"
+      ],
+      "notus.org": [
+        "senior officials eye government shares ai giants"
+      ],
+      "eenews.net": [
+        "von der leyen ai pick triggers conflict interest criticism"
+      ],
+      "qz.com": [
+        "anthropic calls coordinated ai slowdown pause"
       ]
     },
     "cross_topics": [
@@ -5804,6 +5938,36 @@
       {
         "who": "Nvidia",
         "what": "Clears Memory’s Big Three for Vera Rubin HBM4 Supply",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Anthropic",
+        "what": "Calls for AI Pause Button to Let Humans Take Stock",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Pentagon",
+        "what": "’s AI Edge Is Being Distilled Away",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Anthropic",
+        "what": "Urges Global Pause in AI Development, Flags ‘Self-Improvement’ Risk",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Anthropic",
+        "what": "s Daniela Amodei shrugs off doubts about AI's returns",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "EU",
+        "what": "m, You Feel the Art, and It Feels You Right Back",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Anthropic",
+        "what": "calls for coordinated AI slowdown or pause",
         "first_seen": "2026-06-05"
       }
     ],
