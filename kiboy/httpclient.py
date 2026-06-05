@@ -366,10 +366,24 @@ def fetch_html(
     return None
 
 
+def _content_type_ok(content_type: str) -> bool:
+    """Return True if a Content-Type denotes a usable raster image.
+
+    SVG is rejected (Pillow can't rasterise it). An empty content-type is
+    accepted because some CDNs omit the header on otherwise-valid images.
+    """
+    ct = (content_type or "").lower()
+    if "svg" in ct:
+        return False
+    return bool("image" in ct or "octet-stream" in ct or not ct)
+
+
 def validate_url(url: str, timeout: int = 5) -> bool:
     """Check if a URL is reachable and returns valid content.
 
-    Uses a HEAD request via curl_cffi (fast, no body download).
+    Tries curl_cffi (HEAD then GET) first for TLS-impersonated requests, then
+    falls back to plain ``urllib`` so a missing/broken curl_cffi can't silently
+    fail EVERY image validation (which zeroed out img_ok in production).
 
     Returns:
         ``True`` if the URL returns 200 with an image-like content type.
@@ -398,10 +412,7 @@ def validate_url(url: str, timeout: int = 5) -> bool:
                 allow_redirects=True,
             )
             if resp.status_code == 200:
-                ct = resp.headers.get("content-type", "")
-                if "svg" in ct:
-                    return False
-                return bool("image" in ct or "octet-stream" in ct or not ct)
+                return _content_type_ok(resp.headers.get("content-type", ""))
         except Exception:
             pass
 
@@ -421,13 +432,25 @@ def validate_url(url: str, timeout: int = 5) -> bool:
                 max_recv_speed=1024 * 100,  # limit to 100KB to save bandwidth
             )
             if resp.status_code == 200:
-                ct = resp.headers.get("content-type", "")
-                if "svg" in ct:
-                    return False
-                return bool(
-                    "image" in ct or "octet-stream" in ct or not ct
-                )
+                return _content_type_ok(resp.headers.get("content-type", ""))
         except Exception:
             pass
+
+    # Last-resort fallback: plain urllib. Without this, a missing or broken
+    # curl_cffi made validate_url() return False for EVERY image — silently
+    # zeroing img_ok even when og:image was found and valid.
+    try:
+        from urllib.request import Request, urlopen
+
+        req = Request(
+            url,
+            method="HEAD",
+            headers={"User-Agent": USER_AGENT, "Referer": _derive_referer(url)},
+        )
+        with urlopen(req, timeout=timeout) as resp:
+            if resp.status == 200:
+                return _content_type_ok(resp.headers.get("Content-Type", ""))
+    except Exception:
+        pass
 
     return False
