@@ -171,3 +171,62 @@ def write_article(
     rel_path = f"data/{date_str}/{filename}"
     print(f"  [WRITE] {rel_path}")
     return rel_path
+
+
+# ---------------------------------------------------------------------------
+# Category-sequence validation
+# ---------------------------------------------------------------------------
+
+# Maps sequence number → expected category emoji + name (for display)
+SEQ_TO_CATEGORY: dict[int, tuple[str, str]] = {
+    1: ("🧠", "Model & Research"),
+    2: ("💰", "Industry & Business"),
+    3: ("⚖️", "Regulasi & Etika"),
+    4: ("🤖", "Robotics & Hardware"),
+    5: ("🎬", "Creative & Media"),
+}
+
+
+def validate_article_seq(file_path: Path, seq: int) -> tuple[bool, str]:
+    """Check that the article header number matches the file sequence number.
+
+    The convention is strict: ``HH.MM-NN.md`` must start with ``# NN — ...``
+    so the feed index (01–05) is consistent between filename and content.
+
+    Args:
+        file_path: Absolute path to the ``.md`` file.
+        seq: Expected sequence number (from the filename ``NN`` part).
+
+    Returns:
+        ``(ok, message)`` — ``ok`` is ``True`` when the header matches.
+        On mismatch, ``message`` describes the discrepancy so it can be
+        logged as ``[WARN]`` in health.log.
+    """
+    import re
+
+    if not file_path.exists():
+        return False, f"{file_path.name} does not exist"
+
+    try:
+        first_line = file_path.read_text(encoding="utf-8").splitlines()[0]
+    except (OSError, IndexError):
+        return False, f"{file_path.name} could not be read"
+
+    # Match "# NN — ..." at start of first line
+    m = re.match(r"^#\s+(\d+)\s+[—\-]", first_line)
+    if not m:
+        return False, (
+            f"{file_path.name}: header '{first_line[:60]}' "
+            f"has no category number (expected # {seq:02d} —)"
+        )
+
+    found = int(m.group(1))
+    if found != seq:
+        expected_cat = SEQ_TO_CATEGORY.get(seq, ("?", "Unknown"))
+        found_cat = SEQ_TO_CATEGORY.get(found, ("?", "Unknown"))
+        return False, (
+            f"{file_path.name}: header says #{found:02d} {found_cat[0]} {found_cat[1]}, "
+            f"but filename seq is {seq:02d} {expected_cat[0]} {expected_cat[1]}"
+        )
+
+    return True, ""

@@ -127,6 +127,18 @@ data/
       HH.MM-NN.png  # 1080x1350 thumbnail
 ```
 
+The `NN` sequence number is **not arbitrary** — it encodes the content category:
+
+| NN | Category | Emoji |
+|----|----------|-------|
+| 01 | Model & Research | 🧠 |
+| 02 | Industry & Business | 💰 |
+| 03 | Regulasi & Etika | ⚖️ |
+| 04 | Robotics & Hardware | 🤖 |
+| 05 | Creative & Media | 🎬 |
+
+The article's `# NN — 🧠 Title` header **must match** the file's `NN` suffix. `cmd_register` validates this and logs `[WARN]` on mismatch — the article is still registered, but the discrepancy is visible in `health.log`. The writer agent is responsible for choosing the correct slot.
+
 ## Conventions that differ from defaults
 
 - **No test suite** — verification is import check + `status` command + manual cron run.

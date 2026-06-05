@@ -42,25 +42,46 @@ Output pipeline: File .runtime/kiboy_new_articles.json — berisi maks 50 artike
 Phase 2 — LLM NULIS ARTIKEL (manual by agent)
 Agent baca .runtime/kiboy_new_articles.json dan milih 5 artikel:
 
-01
+01 🧠
 • Topik: Model & Research
 • Emoji: 🧠
+• File: HH.MM-01.md
+• Header wajib: `# 01 — 🧠 Judul Singkat`
 
-02
+02 💰
 • Topik: Industry & Business
 • Emoji: 💰
+• File: HH.MM-02.md
+• Header wajib: `# 02 — 💰 Judul Singkat`
 
-03
+03 ⚖️
 • Topik: Regulasi & Etika
 • Emoji: ⚖️
+• File: HH.MM-03.md
+• Header wajib: `# 03 — ⚖️ Judul Singkat`
 
-04
+04 🤖
 • Topik: Robotics & Hardware
 • Emoji: 🤖
+• File: HH.MM-04.md
+• Header wajib: `# 04 — 🤖 Judul Singkat`
 
-05
+05 🎬
 • Topik: Creative & Media
 • Emoji: 🎬
+• File: HH.MM-05.md
+• Header wajib: `# 05 — 🎬 Judul Singkat`
+
+⚠️ WAJIB: Nomor di header (`# NN`) HARUS sama dengan nomor di nama file (`-NN`).
+Salah matching = `[WARN]` di health.log. `cmd_register` validasi ini otomatis.
+
+Kalau dari 5 slot ada yang tidak ada artikelnya (misal cuma 3 artikel baru),
+pilih slot yang paling sesuai topiknya, dan buat HANYA file untuk slot itu.
+Jangan paksakan artikel ke slot yang salah topik.
+
+Contoh kalau cuma 3 artikel semua Regulasi + Industry:
+→ Tulis 02 (Industry), 03 (Regulasi), dan 1 lagi yang paling mendekati topik apapun.
+→ Slot yang tidak punya artikel cocok: skip (jangan tulis file kosong).
 
 Agent nulis 5 file .md di data/YYYY-MM-DD/HH.MM-SEQ.md dengan format:
 # 01 — 🧠 Judul Singkat

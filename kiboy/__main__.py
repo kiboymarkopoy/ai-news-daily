@@ -241,6 +241,14 @@ def cmd_register(args: argparse.Namespace) -> None:
             _event(STATUS_SKIP, "register", f"{rel_path} → .md tidak ada")
             continue
 
+        # Validate that the article header # NN matches the file seq number.
+        from kiboy.writer import validate_article_seq
+        from kiboy.health import STATUS_WARN
+        seq_ok, seq_msg = validate_article_seq(abs_path, seq)
+        if not seq_ok:
+            print(f"  [WARN] {seq_msg}")
+            _event(STATUS_WARN, "register", seq_msg)
+
         register_article(
             url=url,
             title=title,
