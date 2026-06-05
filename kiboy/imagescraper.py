@@ -197,39 +197,99 @@ def resolve_gn_url(gn_url: str, timeout: int = 10) -> tuple[str, str]:
 #  OG Image Scraping (stdlib, no browser)
 # ═══════════════════════════════════════════════════════════════════════════════
 
+# Markers that indicate a bot-challenge / block page rather than a real article.
+_BLOCK_PAGE_MARKERS = (
+    "akamai",
+    "sec-if-cpt-container",       # Akamai Bot Manager challenge container
+    "behavioral-content",         # Akamai
+    "/cdn-cgi/challenge",         # Cloudflare
+    "cf-challenge",
+    "just a moment",              # Cloudflare interstitial title
+    "attention required",         # Cloudflare block
+    "access denied",
+    "请稍候",                       # generic CDN interstitials
+)
+
+# Substrings in an image URL/path that mark it as a logo/icon/sprite, never a
+# real article photo. These are the junk the old "first <img>" fallback grabbed.
+_ICON_URL_MARKERS = (
+    "logo", "icon", "favicon", "sprite", "placeholder", "avatar",
+    "/badge", "pixel", "spinner", "loading", "blank.",
+)
+
+
+def _is_block_page(html: str) -> bool:
+    """Heuristic: True if *html* looks like a bot-challenge / block page.
+
+    Bot walls (Akamai, Cloudflare) return a tiny 200-OK page with no article
+    content. Treating these as real articles is what produced the Akamai logo
+    SVG as an "og:image". Short pages carrying a known marker are rejected.
+    """
+    if not html:
+        return True
+    low = html.lower()
+    # Real articles are large; challenge pages are tiny (~1-4 KB).
+    if len(html) < 4096 and any(mk in low for mk in _BLOCK_PAGE_MARKERS):
+        return True
+    # Even on larger pages, the Akamai challenge container is unambiguous.
+    return "sec-if-cpt-container" in low or "behavioral-button" in low
+
+
+def _is_usable_image_url(url: str) -> bool:
+    """Reject vector logos/icons and obvious non-photo assets.
+
+    The article scraper wants a *photo*, not a brand logo or UI icon. SVG is
+    rejected outright (Pillow can't raster it anyway), as are URLs whose path
+    advertises themselves as a logo/icon/sprite/etc.
+    """
+    if not url:
+        return False
+    low = url.lower().split("?")[0].split("#")[0]
+    if low.endswith(".svg"):
+        return False
+    return not any(mk in low for mk in _ICON_URL_MARKERS)
+
+
 def _extract_og_from_html(html: str, base_url: str) -> str:
-    """Extract OG image URL from HTML content."""
-    # Pattern 1: <meta property="og:image" content="URL">
-    match = re.search(
+    """Extract a usable article image URL from HTML content.
+
+    Order of preference: ``og:image`` → ``twitter:image``. Each candidate is
+    filtered through :func:`_is_usable_image_url` so logos/icons/SVGs are
+    skipped. Bot-challenge pages (see :func:`_is_block_page`) yield nothing so
+    the caller can fall back to Playwright or a clean gradient.
+
+    The old "first ``<img>`` on the page" fallback was removed — on block
+    pages and many article shells it grabbed brand logos/tracking pixels
+    (e.g. the Akamai logo SVG), which is worse than no image at all.
+    """
+    if _is_block_page(html):
+        return ""
+
+    candidates: list[str] = []
+
+    # og:image (property-first, then content-first)
+    candidates += re.findall(
         r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']',
         html, re.IGNORECASE,
     )
-    if match:
-        return _resolve_url(match.group(1), base_url)
-
-    # Pattern 2: Reverse order (content before property)
-    match = re.search(
+    candidates += re.findall(
         r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']',
         html, re.IGNORECASE,
     )
-    if match:
-        return _resolve_url(match.group(1), base_url)
-
-    # Fallback: twitter:image
-    match = re.search(
-        r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\']',
+    # twitter:image (both attribute orders)
+    candidates += re.findall(
+        r'<meta[^>]+name=["\']twitter:image(?::src)?["\'][^>]+content=["\']([^"\']+)["\']',
         html, re.IGNORECASE,
     )
-    if match:
-        return _resolve_url(match.group(1), base_url)
-
-    # Last resort: first <img>
-    match = re.search(
-        r'<img[^>]+src=["\']([^"\']+)["\']',
+    candidates += re.findall(
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']twitter:image(?::src)?["\']',
         html, re.IGNORECASE,
     )
-    if match:
-        return _resolve_url(match.group(1), base_url)
+
+    for raw in candidates:
+        resolved = _resolve_url(raw, base_url)
+        if _is_usable_image_url(resolved):
+            return resolved
 
     return ""
 
@@ -266,15 +326,19 @@ def scrape_og_image(article_url: str, timeout: int = 5) -> str:
         # Even Playwright won't help with these
         return ""
 
-    # Try 1: Fast path — stdlib HTTP request (no JS)
+    # Try 1: Fast path — curl_cffi HTTP request (no JS).
     html = _make_request(article_url, timeout)
-    if html:
+    blocked = _is_block_page(html or "")
+    if html and not blocked:
         og = _extract_og_from_html(html, article_url)
         if og:
             return og
 
-    # Try 2: Playwright fallback — handles JS-heavy / bot-blocked sites
+    # Try 2: Playwright fallback — handles JS-heavy / bot-blocked sites.
+    # Reached when curl_cffi failed, hit a bot wall, or found no usable image.
     if not _check_playwright():
+        if blocked:
+            logger.info("Bot-blocked, no Playwright — no image: %s", article_url[:70])
         return ""
 
     og = _scrape_og_playwright(article_url, timeout)
@@ -344,11 +408,9 @@ def validate_image_url(image_url: str) -> bool:
     """Check if an image URL is actually downloadable and usable.
 
     Uses httpclient (curl_cffi) for anti-bot bypass.
-    Returns True if the image appears valid (not SVG, not 404).
+    Returns True if the image appears valid (not a logo/icon/SVG, not 404).
     """
-    if not image_url:
-        return False
-    if image_url.lower().endswith(".svg"):
+    if not _is_usable_image_url(image_url):
         return False
     try:
         from kiboy.httpclient import validate_url
@@ -460,10 +522,18 @@ def enrich_articles(
         if not url or is_gn_url(url):
             continue
         article["resolved_url"] = url
+
+        # Drop any RSS-provided image that is a logo/icon/SVG before trusting it.
+        existing = article.get("image_url", "")
+        if existing and not _is_usable_image_url(existing):
+            article["image_url"] = ""
         article.setdefault("image_url", "")
+
         if not article["image_url"]:
             og = scrape_og_image(url, timeout=min(timeout, 5))
-            if og:
+            # Validate before accepting — never store an unusable/blocked image
+            # (this is what let the Akamai logo SVG through previously).
+            if og and _is_usable_image_url(og) and validate_image_url(og):
                 article["image_url"] = og
             processed += 1
 
