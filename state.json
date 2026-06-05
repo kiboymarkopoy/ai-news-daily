@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-05T05:08:25.605003+07:00",
-    "total_articles": 420
+    "updated_at": "2026-06-05T07:08:43.211144+07:00",
+    "total_articles": 430
   },
   "dedup": {
     "articles": {
@@ -3805,6 +3805,96 @@
         "thumb_subheadline": null,
         "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2256975350-1152x648-1780599648.jpg",
         "thumb_generated": true
+      },
+      "https://news.mit.edu/2026/mit-raise-georgia-state-university-announce-path-0604": {
+        "file": "data/2026-06-05/06.00-01.md",
+        "source": "news.mit.edu",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "MIT dan Georgia State Luncurkan Program AI Training PATH",
+        "thumb_subheadline": null,
+        "thumb_image": "https://news.mit.edu/sites/default/files/images/202605/mit-raise.jpg",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/": {
+        "file": "data/2026-06-05/06.00-02.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Daniela Amodei Santai Hadapi Keraguan Investor Jelang IPO Anthropic",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/55314412841_11b924318f_c.jpg?w=799",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/airbnbs-brian-chesky-plans-to-launch-a-new-ai-lab/": {
+        "file": "data/2026-06-05/06.00-03.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Brian Chesky Mau Bikin AI Lab Baru, Regulasi Makin Rumit",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2017/05/gettyimages-652988834.jpg?w=1024",
+        "thumb_generated": true
+      },
+      "https://arstechnica.com/ai/2026/06/the-skeptics-guide-to-humanoid-robots-going-viral-on-the-internet/": {
+        "file": "data/2026-06-05/06.00-04.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Panduan Skeptis Buat Robot Humanoid yang Viral di Internet",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2279229514-1152x648.jpg",
+        "thumb_generated": true
+      },
+      "https://www.bloomberg.com/news/live-blog/2026-06-04/bloomberg-tech-conference-2026": {
+        "file": "data/2026-06-05/06.00-05.md",
+        "source": "bloomberg.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Bloomberg Tech Conference 2026 Bahas AI Chip dan Masa Depan Media",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://wjla.com/news/nation-world/ais-red-blue-divide-chatbot-exposure-highest-among-workers-in-democratic-counties": {
+        "file": "data/2026-06-05/07.04-01.md",
+        "source": "wjla.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Pekerja di Daerah Demokrat Lebih Sering Pakai AI, Riset Ungkap",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.latitudemedia.com/news/trump-is-using-taxpayer-money-for-coal-to-power-ai/": {
+        "file": "data/2026-06-05/07.04-02.md",
+        "source": "latitudemedia.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Trump Guyur Dana Batubara Demi Energi Data Center AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://www.latitudemedia.com/wp-content/uploads/2026/06/Latitude-1920px-32-Image-2026-06-04T111515.192.jpg",
+        "thumb_generated": true
+      },
+      "https://www.reuters.com/legal/litigation/walmart-investors-reject-ai-workplace-report-automation-expands-us-2026-06-04/": {
+        "file": "data/2026-06-05/07.04-03.md",
+        "source": "reuters.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Investor Walmart Tolak Transparansi Dampak AI di Tempat Kerja",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://arstechnica.com/ai/2026/06/how-data-center-operators-are-tackling-their-water-use-problems/": {
+        "file": "data/2026-06-05/07.04-04.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Operator Data Center Cari Solusi untuk Konsumsi Air Raksasa",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2025/08/GettyImages-2229069552-1024x648.jpg",
+        "thumb_generated": true
+      },
+      "https://www.latitudemedia.com/news/trump-is-using-taxpayer-money-for-coal-to-power-ai/#creative": {
+        "file": "data/2026-06-05/07.04-05.md",
+        "source": "latitudemedia.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Kreator AI Khawatir soal Jejak Karbon Kebijakan Batubara Trump",
+        "thumb_subheadline": null,
+        "thumb_image": "https://www.latitudemedia.com/wp-content/uploads/2026/06/Latitude-1920px-32-Image-2026-06-04T111515.192.jpg",
+        "thumb_generated": true
       }
     },
     "source_headlines": {
@@ -3981,7 +4071,9 @@
         "meta rolls new ai creator assistant facebook",
         "expect wwdc 2026 siri highly anticipated revamp apple intelligence updates",
         "defense tech ai fundraising take center stage strictlyvc los angeles june 18",
-        "silicon valley ready put robots people homes hello robot"
+        "silicon valley ready put robots people homes hello robot",
+        "ahead ipo anthropic daniela amodei shrugs doubts ai returns",
+        "airbnb brian chesky plans launch new ai lab"
       ],
       "www.tomshardware.com": [
         "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -4041,7 +4133,9 @@
         "inside meta attempts play catch ai",
         "google ordered put clearer links ai search let uk publishers opt",
         "llms best resisting russian propaganda",
-        "elon musk tries again escape ftc audits data handling"
+        "elon musk tries again escape ftc audits data handling",
+        "skeptic guide humanoid robots going viral internet",
+        "data center operators tackling water use problems"
       ],
       "www.businessinsider.com": [
         "anthropic sekarang startup ai paling berharga di dunia openai tumbang"
@@ -4426,7 +4520,8 @@
         "duke ceo sees ai fueling power growth 10 times historic pace",
         "ai data center parts maker xnrgy said mull 10 billion sale",
         "ai data center boom risks breakup biggest us power grid operator",
-        "ai power boom revives natural gas infrastructure bet"
+        "ai power boom revives natural gas infrastructure bet",
+        "bloomberg tech conference 2026 live news ai chips technology bloomberg"
       ],
       "cnbc.com": [
         "palo alto networks tops earnings as ai fuels cybersecurity urgency",
@@ -4477,7 +4572,8 @@
       "reuters.com": [
         "meta enters enterprise ai race new business agent",
         "broadcom set shed 300 billion value ai results fail impress",
-        "us house lawmakers release draft bill regulate ai"
+        "us house lawmakers release draft bill regulate ai",
+        "walmart investors reject ai workplace report automation expands us"
       ],
       "scientificamerican.com": [
         "scientists built powerful ai computer worm learns spreads"
@@ -4532,7 +4628,8 @@
         "broadcom drowning ai orders aren investors impressed"
       ],
       "news.mit.edu": [
-        "nsf renews support mit led ai physics institute expanding new model discovery"
+        "nsf renews support mit led ai physics institute expanding new model discovery",
+        "path boost ai training career opportunities industry aligned jobs"
       ],
       "aboutamazon.com": [
         "pinterest inks billion ai deal aws largest infrastructure commitment history"
@@ -4564,6 +4661,13 @@
       ],
       "eff.org": [
         "eff testifies congress protecting americans rights government ai"
+      ],
+      "wjla.com": [
+        "ai red blue divide chatbot exposure highest among workers democratic counties"
+      ],
+      "latitudemedia.com": [
+        "trump using taxpayer money coal power ai",
+        "trump using taxpayer money coal power ai"
       ]
     },
     "cross_topics": [
@@ -6015,6 +6119,21 @@
       {
         "who": "Elon Musk",
         "what": "tries again to escape FTC audits of X data handling",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Anthropic",
+        "what": "’s Daniela Amodei shrugs off doubts about AI’s returns",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Trump",
+        "what": "is using taxpayer money for coal to power AI",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Trump",
+        "what": "is using taxpayer money for coal to power AI",
         "first_seen": "2026-06-05"
       }
     ],
