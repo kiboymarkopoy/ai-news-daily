@@ -1008,23 +1008,35 @@ def _create_gradient_background(width: int, height: int) -> Image.Image:
 
     Smooth vertical transition from deep charcoal-navy at the top to
     near-black at the bottom, with a subtle diagonal light streak.
+
+    Vectorised with numpy — the previous per-pixel ``putpixel`` loop made
+    ~1.46M Python calls per 1080×1350 canvas, which dominated thumbnail time
+    for image-less articles.
     """
-    img = Image.new("RGB", (width, height))
-    for y in range(height):
-        t = y / height
-        r = int(26 * (1 - t) + 13 * t)
-        g = int(26 * (1 - t) + 13 * t)
-        b = int(46 * (1 - t) + 13 * t)
-        streak = max(0, 1 - abs((y / height) - 0.3) * 3)
-        streak_val = int(streak * 20)
-        for x in range(width):
-            px_shift = int((x / width) * streak_val * 0.5)
-            img.putpixel((x, y), (
-                min(255, r + px_shift),
-                min(255, g + px_shift),
-                min(255, b + px_shift),
-            ))
-    return img
+    # Vertical interpolation factor t ∈ [0, 1] per row.
+    t = np.linspace(0.0, 1.0, height, dtype=np.float64)
+
+    # Base vertical gradient per channel (top → bottom).
+    r = 26 * (1 - t) + 13 * t
+    g = 26 * (1 - t) + 13 * t
+    b = 46 * (1 - t) + 13 * t
+
+    # Subtle diagonal light streak peaking around 30% height.
+    streak = np.clip(1 - np.abs(t - 0.3) * 3, 0, None)
+    streak_val = streak * 20  # per-row streak intensity
+
+    # Horizontal ramp 0→1 across width, scaled by the row streak intensity.
+    x_ramp = np.linspace(0.0, 1.0, width, dtype=np.float64)
+    # shift[y, x] = x_ramp[x] * streak_val[y] * 0.5
+    shift = np.outer(streak_val * 0.5, x_ramp)  # shape (height, width)
+
+    # Broadcast base channels (height,) to (height, width) and add streak.
+    rr = np.clip(r[:, None] + shift, 0, 255)
+    gg = np.clip(g[:, None] + shift, 0, 255)
+    bb = np.clip(b[:, None] + shift, 0, 255)
+
+    arr = np.stack([rr, gg, bb], axis=2).astype(np.uint8)
+    return Image.fromarray(arr, mode="RGB")
 
 
 # ── CLI entry point ──────────────────────────────────────────────────────────
