@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-05T07:08:43.211144+07:00",
-    "total_articles": 430
+    "updated_at": "2026-06-05T18:04:22.158508+07:00",
+    "total_articles": 460
   },
   "dedup": {
     "articles": {
@@ -3895,6 +3895,276 @@
         "thumb_subheadline": null,
         "thumb_image": "https://www.latitudemedia.com/wp-content/uploads/2026/06/Latitude-1920px-32-Image-2026-06-04T111515.192.jpg",
         "thumb_generated": true
+      },
+      "https://www.pymnts.com/walmart/2026/walmart-shareholders-reject-bid-to-require-ai-workplace-impact-report/": {
+        "file": "data/2026-06-05/08.04-01.md",
+        "source": "pymnts.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Shareholder Walmart Tolak Usul Laporan Dampak AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://www.pymnts.com/wp-content/uploads/2026/06/Walmart-AI-xxx-1.jpg",
+        "thumb_generated": true
+      },
+      "https://www.foxbusiness.com/technology/kevin-oleary-says-utah-ai-data-center-project-shrink-lawmakers-demand-cuts": {
+        "file": "data/2026-06-05/08.04-02.md",
+        "source": "foxbusiness.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Kevin O'Leary Pangkas Proyek Data Center AI di Utah",
+        "thumb_subheadline": null,
+        "thumb_image": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2026/02/0/0/kevin-o-leary-walking.jpg?ve=1&amp;tl=1",
+        "thumb_generated": true
+      },
+      "https://fortune.com/2026/06/04/airbnb-ceo-brian-chesky-plans-to-start-a-new-ai-company/": {
+        "file": "data/2026-06-05/08.04-03.md",
+        "source": "fortune.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "CEO Airbnb Brian Chesky Bakal Bikin Startup AI Baru",
+        "thumb_subheadline": null,
+        "thumb_image": "https://fortune.com/img-assets/wp-content/uploads/2026/06/GettyImages-2276716878.jpg?resize=1200,600",
+        "thumb_generated": true
+      },
+      "https://venturebeat.com/technology/anthropic-says-80-of-its-new-production-code-is-now-authored-by-claude-how-your-enterprise-can-keep-up": {
+        "file": "data/2026-06-05/08.04-04.md",
+        "source": "venturebeat.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Anthropic Klaim 80% Kode Produksi Ditulis Claude",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/6TDfdDR3BaglHMnVTBvvmB/ea7f4ad146ee42985d6f7c388767f738/ChatGPT_Image_Jun_4__2026__04_18_13_PM.png?w=300&q=30",
+        "thumb_generated": true
+      },
+      "https://www.bloomberg.com/news/articles/2026-06-04/wall-street-sees-spacex-s-ai-revenue-100-times-higher-by-2030": {
+        "file": "data/2026-06-05/08.04-05.md",
+        "source": "bloomberg.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Wall Street Ramal Pendapatan AI SpaceX Naik 100x Lipat",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.thefp.com/p/niall-ferguson-ai-is-the-most-dangerous-arms-race-history": {
+        "file": "data/2026-06-05/09.00-01.md",
+        "source": "thefp.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Niall Ferguson Sebut AI Jadi Perlombaan Senjata Paling Berbahaya dalam Sejarah",
+        "thumb_subheadline": null,
+        "thumb_image": "https://substackcdn.com/image/fetch/$s_!Vw4I!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe8aeeb32-0c68-4c62-9029-c8a3eb761703_1660x1056.jpeg",
+        "thumb_generated": true
+      },
+      "https://www.citybiz.co/article/855542/new-york-startup-funding-in-may-highlights-sustained-confidence-in-ai-healthcare/": {
+        "file": "data/2026-06-05/09.00-02.md",
+        "source": "citybiz.co",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Pendanaan Startup AI New York Cetak Rekor Baru, Investor Makin Percaya Diri",
+        "thumb_subheadline": null,
+        "thumb_image": "https://www.citybiz.co/wp-content/uploads/2026/06/NYCstartups.jpg",
+        "thumb_generated": true
+      },
+      "https://www.bloomberg.com/news/articles/2026-06-05/a-little-known-indian-stock-s-530-rally-shows-hidden-ai-winners": {
+        "file": "data/2026-06-05/09.00-03.md",
+        "source": "bloomberg.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Saham AI India Melejit 530 Persen, Bukti Ledakan Hardware AI Global",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.pymnts.com/artificial-intelligence-2/2026/house-members-propose-replacing-state-ai-laws-with-national-standard/": {
+        "file": "data/2026-06-05/10.00-01.md",
+        "source": "pymnts.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "DPR AS Usulkan Standar Nasional Gantikan Aturan AI Negara Bagian",
+        "thumb_subheadline": null,
+        "thumb_image": "https://www.pymnts.com/wp-content/uploads/2026/06/AI-laws-xxx1.jpg",
+        "thumb_generated": true
+      },
+      "https://www.reuters.com/business/autos-transportation/south-korea-labour-minister-calls-tech-firms-share-excess-ai-profits-with-2026-06-05/": {
+        "file": "data/2026-06-05/10.00-02.md",
+        "source": "reuters.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Menteri Korea Selatan Minta Perusahaan AI Bagikan Laba ke Pemasok dan Karyawan",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.wsj.com/tech/ai/u-s-officials-discuss-taking-financial-stakes-in-ai-industry-b654d41a": {
+        "file": "data/2026-06-05/11.00-01.md",
+        "source": "wsj.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Pejabat AS Bahas Ambil Saham di Perusahaan AI",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.reuters.com/legal/transactional/us-officials-eye-government-stakes-ai-companies-notus-reports-2026-06-05/": {
+        "file": "data/2026-06-05/11.00-02.md",
+        "source": "reuters.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Pemerintah AS Siap Gelontorkan Dana ke AI, Robot Kebagian Jatah",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.bloomberg.com/news/articles/2026-06-04/airbnb-ceo-brian-chesky-plans-to-start-a-new-ai-company": {
+        "file": "data/2026-06-05/11.00-03.md",
+        "source": "bloomberg.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "CEO Airbnb Brian Chesky Bakal Dirikan Perusahaan AI Baru",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://digiday.com/media/youtubes-ai-remix-push-exposes-a-looming-reckoning-for-the-creator-economy/": {
+        "file": "data/2026-06-05/12.00-01.md",
+        "source": "digiday.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Fitur AI Remix YouTube Bikin Heboh, Kreator Konten Mulai Waswas",
+        "thumb_subheadline": null,
+        "thumb_image": "https://digiday.com/wp-content/uploads/sites/3/2026/03/video-search-ai-digiday.jpg",
+        "thumb_generated": true
+      },
+      "https://www.eu-startups.com/2026/06/german-vc-merantix-capital-closes-e103-million-fund-for-early-stage-ai-startups/": {
+        "file": "data/2026-06-05/12.00-02.md",
+        "source": "eu-startups.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Merantix Capital Galang Rp1,8 Triliun Buat Startup AI Eropa",
+        "thumb_subheadline": null,
+        "thumb_image": "https://www.eu-startups.com/wp-content/uploads/2026/06/Merantix-Capital.png",
+        "thumb_generated": true
+      },
+      "https://thedeepdive.ca/carney-governments-national-ai-strategy-to-launch-startup-fund-equity-stakes-in-ai-firms/": {
+        "file": "data/2026-06-05/12.00-03.md",
+        "source": "thedeepdive.ca",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Pemerintah Kanada Luncurkan Strategi AI Nasional dengan Dana Startup dan Ambil Saham",
+        "thumb_subheadline": null,
+        "thumb_image": "https://thedeepdive.ca/wp-content/uploads/2026/06/Carney-Governments-National-AI-Strategy-to-Launch-Startup-Fund-Equity-Stakes-in-AI-Firms.jpg",
+        "thumb_generated": true
+      },
+      "https://www.ft.com/content/7531654f-6399-422b-a93c-97d487a76d54": {
+        "file": "data/2026-06-05/12.00-04.md",
+        "source": "ft.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Robot Humanoid Mulai Beneran Masuk Pabrik dan Gantiin Pekerja Manusia",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.reuters.com/business/media-telecom/japan-could-end-up-an-ai-colony-if-it-falls-behind-digital-minister-warns-2026-06-05/": {
+        "file": "data/2026-06-05/13.09-01.md",
+        "source": "reuters.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Jepang Peringatkan Bahaya Jadi Koloni AI Investasi Rp 100 Triliun Disiapkan",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/04/mira-murati-steps-back-into-the-spotlight-carefully/": {
+        "file": "data/2026-06-05/13.09-02.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Mantan CTO OpenAI Mira Murati Kembali ke Sorotan Usai Setengah Tahun",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/06/Mira-Murati-at-Bloomberg.jpg?w=1024",
+        "thumb_generated": true
+      },
+      "https://www.theguardian.com/technology/2026/jun/05/grok-ai-elon-musk-jess-asato-labour-mp-lawsuit": {
+        "file": "data/2026-06-05/14.00-01.md",
+        "source": "theguardian.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Banyak Orang Kini Ikut Nuntut xAI gegara Grok, Kasus Hukum AI Makin Memanas",
+        "thumb_subheadline": null,
+        "thumb_image": "https://i.guim.co.uk/img/media/f0df3336cb7fb1923c1e80a0755ab67cb667626d/404_0_2500_2000/master/2500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9b5671d64700eed13230d40edf7e2a8d",
+        "thumb_generated": true
+      },
+      "https://www.bloomberg.com/news/articles/2026-06-05/nvidia-green-lit-big-three-memory-firms-to-supply-hbm4-ceo-says": {
+        "file": "data/2026-06-05/14.00-02.md",
+        "source": "bloomberg.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "NVIDIA Resmi Kunci Samsung SK Hynix dan Micron buat Pasok HBM4 ke Vera Rubin",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://news.un.org/en/story/2026/06/1167658": {
+        "file": "data/2026-06-05/15.06-01.md",
+        "source": "news.un.org",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Biaya Lingkungan AI Ancam Air, Tanah, dan Iklim",
+        "thumb_subheadline": null,
+        "thumb_image": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/05-06-2025-Unsplash-data-centre-02.jpg/image770x420cropped.jpg",
+        "thumb_generated": true
+      },
+      "https://www.france24.com/en/technology/20260605-anthropic-calls-for-global-ai-slowdown-says-systems-may-outpace-human-control": {
+        "file": "data/2026-06-05/15.06-02.md",
+        "source": "france24.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Anthropic Minta Global AI Slowdown, Sistem Diklaim Mulai Di Luar Kendali",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.axios.com/2026/06/05/democrats-bill-responsible-defense-ai": {
+        "file": "data/2026-06-05/16.03-01.md",
+        "source": "axios.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "DPR AS Perkenalkan RUU AI Pertahanan yang Bertanggung Jawab",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.axios.com/NLKoXjlaaETomuXDcUDN3qzwgcw=/0x0:1920x1080/1366x768/2026/03/04/1772656960244.jpeg",
+        "thumb_generated": true
+      },
+      "https://warontherocks.com/cogs-of-war/the-pentagons-ai-edge-is-being-distilled-away/": {
+        "file": "data/2026-06-05/16.03-02.md",
+        "source": "warontherocks.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Keunggulan AI Militer AS Makin Terkikis, Pentagon Khawatir",
+        "thumb_subheadline": null,
+        "thumb_image": "https://warontherocks.com/wp-content/uploads/wotr-og-images/wotr-og-44820-95188b47636a.jpg",
+        "thumb_generated": true
+      },
+      "https://www.bloomberg.com/news/articles/2026-06-05/anthropic-calls-for-ai-pause-button-to-let-humans-take-stock": {
+        "file": "data/2026-06-05/17.00-01.md",
+        "source": "bloomberg.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Anthropic Desak Kasih Tombol Pause Buat Perkembangan AI",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.bloomberg.com/news/features/2026-06-05/universal-high-income-is-elon-musk-s-favored-response-to-ai-layoffs": {
+        "file": "data/2026-06-05/17.00-02.md",
+        "source": "bloomberg.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Elon Musk Usul Universal High Income Hadapi Era Tanpa Pekerjaan",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.foxnews.com/video/6397627493112": {
+        "file": "data/2026-06-05/18.00-01.md",
+        "source": "foxnews.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Boneka Teddy Bear AI Berbahaya Bisa Curi Data Sidik Jari Anak",
+        "thumb_subheadline": null,
+        "thumb_image": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/f9d219e0-e3f1-47ff-9446-d0e1a3335ea5/a4cc220d-464b-4fa7-b68c-722d6b7762e6/1280x720/match/1024/512/image.jpg?ve=1&tl=1",
+        "thumb_generated": true
+      },
+      "https://www.bloomberg.com/news/videos/2026-06-05/ca-senator-wiener-on-regulating-the-wild-west-of-ai-video": {
+        "file": "data/2026-06-05/18.00-02.md",
+        "source": "bloomberg.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Senator California Siap Regulasi Wild West AI Dampaknya ke Industri Bisa Gede",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.nytimes.com/2026/06/05/opinion/graduation-speakers-ai-college-commencement.html": {
+        "file": "data/2026-06-05/18.00-03.md",
+        "source": "nytimes.com",
+        "first_seen": "2026-06-05",
+        "thumb_headline": "Speaker Kena Boos di Wisuda Bukti Publik Muak Sama Hype AI Berlebihan",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
       }
     },
     "source_headlines": {
@@ -4073,7 +4343,8 @@
         "defense tech ai fundraising take center stage strictlyvc los angeles june 18",
         "silicon valley ready put robots people homes hello robot",
         "ahead ipo anthropic daniela amodei shrugs doubts ai returns",
-        "airbnb brian chesky plans launch new ai lab"
+        "airbnb brian chesky plans launch new ai lab",
+        "mira murati steps back spotlight carefully"
       ],
       "www.tomshardware.com": [
         "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -4204,7 +4475,8 @@
         "the ai economy could crash on mounting chip costs and those token costs wont help",
         "gila startup ai uji coba 5 model ai jadi penguasa kota virtual hasilnya bikin merinding",
         "godfather of ai peringatkan manusia soal kecerdasan yang melampaui",
-        "new ai powered computer worm prove stuff cybersecurity nightmares"
+        "new ai powered computer worm prove stuff cybersecurity nightmares",
+        "airbnb ceo brian chesky plans start new ai company"
       ],
       "www.wsj.com": [
         "perusahaan di as mulai menjatah ai biaya langganan melonjak dompet menjerit"
@@ -4234,7 +4506,8 @@
         "enterprise ai agents keep creating data silos microsoft build answer microsoft iq rayfin",
         "microsoft debuts surface rtx spark dev box run large ai models without cloud costs",
         "microsoft launches mxc os level sandbox ai agents openai nvidia already board",
-        "openai codex update lets agents build interactive enterprise workspaces via sites role specific plugins"
+        "openai codex update lets agents build interactive enterprise workspaces via sites role specific plugins",
+        "anthropic says 80 new production code now authored claude enterprise keep"
       ],
       "www.kxan.com": [
         "anggota kongres as usul pajak ai hasilnya buat training ulang pekerja"
@@ -4521,7 +4794,14 @@
         "ai data center parts maker xnrgy said mull 10 billion sale",
         "ai data center boom risks breakup biggest us power grid operator",
         "ai power boom revives natural gas infrastructure bet",
-        "bloomberg tech conference 2026 live news ai chips technology bloomberg"
+        "bloomberg tech conference 2026 live news ai chips technology bloomberg",
+        "wall street sees spacex ai revenue 100 times higher 2030",
+        "little known indian stock 530 rally shows hidden ai winners",
+        "airbnb ceo brian chesky plans start new ai company",
+        "nvidia clears memory big three vera rubin hbm4 supply",
+        "anthropic calls ai pause button let humans take stock",
+        "pay life abundance world without work",
+        "watch ca senator wiener regulating wild west ai"
       ],
       "cnbc.com": [
         "palo alto networks tops earnings as ai fuels cybersecurity urgency",
@@ -4544,7 +4824,8 @@
       "axios.com": [
         "exclusive ibm ceo backs trump narrowed ai executive order",
         "exclusive yahoo launches ai tools nba fans investors",
-        "anthropic warns ai soon help build successors"
+        "anthropic warns ai soon help build successors",
+        "exclusive dems introduce bill responsible defense ai"
       ],
       "businessinsider.com": [
         "uber lays almost quarter hr recruitment staff says nothing ai"
@@ -4560,7 +4841,8 @@
       ],
       "theguardian.com": [
         "labour mp sues elon musk ai company fake sexualised images",
-        "chip stocks drop ai rally shows signs fatigue spacex huge ipo looms happened"
+        "chip stocks drop ai rally shows signs fatigue spacex huge ipo looms happened",
+        "new claimants seek sue elon musk xai labour mp test case"
       ],
       "washingtonpost.com": [
         "opinion government ownership path poverty",
@@ -4573,16 +4855,21 @@
         "meta enters enterprise ai race new business agent",
         "broadcom set shed 300 billion value ai results fail impress",
         "us house lawmakers release draft bill regulate ai",
-        "walmart investors reject ai workplace report automation expands us"
+        "walmart investors reject ai workplace report automation expands us",
+        "exclusive south korea labour minister calls tech firms share excess ai profits suppliers staff",
+        "us officials eye government stakes ai companies notus reports",
+        "japan end ai colony falls behind digital minister warns"
       ],
       "scientificamerican.com": [
         "scientists built powerful ai computer worm learns spreads"
       ],
       "foxbusiness.com": [
-        "memory chips emerging one ai hottest trades"
+        "memory chips emerging one ai hottest trades",
+        "kevin leary says utah ai data center project shrink lawmakers demand cuts"
       ],
       "thefp.com": [
-        "built ai company ai won kill coding jobs"
+        "built ai company ai won kill coding jobs",
+        "niall ferguson ai dangerous arms race history"
       ],
       "wkrn.com": [
         "mcminnville residents against ai data center"
@@ -4619,10 +4906,12 @@
       ],
       "nytimes.com": [
         "small business owners managing whole armies employees",
-        "opinion trump finally facing reality"
+        "opinion trump finally facing reality",
+        "opinion commencement speakers deserved boos"
       ],
       "warontherocks.com": [
-        "forged knife fight china brutal domestic ai competition"
+        "forged knife fight china brutal domestic ai competition",
+        "pentagon ai edge being distilled away"
       ],
       "trefis.com": [
         "broadcom drowning ai orders aren investors impressed"
@@ -4657,7 +4946,8 @@
         "carolina launches study libraries generative ai local communities"
       ],
       "wsj.com": [
-        "anthropic urges global pause ai development flags self improvement risk"
+        "anthropic urges global pause ai development flags self improvement risk",
+        "officials discuss taking financial stakes ai industry"
       ],
       "eff.org": [
         "eff testifies congress protecting americans rights government ai"
@@ -4668,6 +4958,34 @@
       "latitudemedia.com": [
         "trump using taxpayer money coal power ai",
         "trump using taxpayer money coal power ai"
+      ],
+      "pymnts.com": [
+        "walmart shareholders reject bid require ai workplace impact report",
+        "house members propose replacing state ai laws national standard"
+      ],
+      "citybiz.co": [
+        "new york startup funding may highlights sustained confidence ai healthcare"
+      ],
+      "digiday.com": [
+        "youtube ai remix push exposes looming reckoning creator economy"
+      ],
+      "eu-startups.com": [
+        "german vc merantix capital closes 103 million fund early stage ai startups"
+      ],
+      "thedeepdive.ca": [
+        "carney government national ai strategy launch startup fund equity stakes ai firms"
+      ],
+      "ft.com": [
+        "humanoids bring ai creative destruction shop floor"
+      ],
+      "news.un.org": [
+        "ai environmental costs threaten water land climate"
+      ],
+      "france24.com": [
+        "anthropic calls global ai slowdown says systems may outpace human control"
+      ],
+      "foxnews.com": [
+        "cyberguy warns ai teddy bear risks selfie fingerprint hacking"
       ]
     },
     "cross_topics": [
@@ -6134,6 +6452,61 @@
       {
         "who": "Trump",
         "what": "is using taxpayer money for coal to power AI",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Anthropic",
+        "what": "says 80% of its new production code is now authored by Claude — how your enterpr",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "SpaceX",
+        "what": "’s AI Revenue 100 Times Higher by 2030",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "ARM",
+        "what": "s Race in History",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "India",
+        "what": "n Stock's 530% Rally Shows Hidden AI Winners",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "South Korea",
+        "what": "labour minister calls on tech firms to share excess AI profits with suppliers, s",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Japan",
+        "what": "could end up an 'AI colony' if it falls behind, digital minister warns",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Elon Musk",
+        "what": "’s xAI after Labour MP’s test case",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Nvidia",
+        "what": "Clears Memory’s Big Three for Vera Rubin HBM4 Supply",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Anthropic",
+        "what": "calls for global AI slowdown, says systems may outpace human control",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Pentagon",
+        "what": "’s AI Edge Is Being Distilled Away",
+        "first_seen": "2026-06-05"
+      },
+      {
+        "who": "Anthropic",
+        "what": "Calls for AI Pause Button to Let Humans Take Stock",
         "first_seen": "2026-06-05"
       }
     ],
