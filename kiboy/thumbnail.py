@@ -14,6 +14,7 @@ from __future__ import annotations
 import hashlib
 import logging
 import os
+import re
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
@@ -255,6 +256,87 @@ def check_text_contrast(
     return bright_zones / total_zones < 0.4
 
 
+# ── Green-accent markup (**...**) ────────────────────────────────────────────
+
+_ACCENT_RE = re.compile(r"\*\*(.+?)\*\*", re.DOTALL)
+
+
+def strip_accent_markup(text: str) -> str:
+    """Remove ``**...**`` accent markers, keeping the wrapped text.
+
+    Used wherever the plain headline string is needed (state, logs, fitting
+    fallbacks) without the green-accent control characters.
+    """
+    return _ACCENT_RE.sub(r"\1", text)
+
+
+def tokenize_accents(text: str) -> list[tuple[str, bool]]:
+    """Split *text* into ``(word, is_accent)`` tokens.
+
+    Words wrapped in ``**...**`` are marked ``is_accent=True`` so the renderer
+    can paint them in the highlight (green) color.  Markup may span multiple
+    words, e.g. ``**AI DUNIA**`` yields two accent words.
+
+    Example::
+
+        "**Anthropic** kuasai **AI DUNIA**"
+        → [("Anthropic", True), ("kuasai", False),
+           ("AI", True), ("DUNIA", True)]
+
+    Returns:
+        Flat list of ``(word, is_accent)`` in original order.  Returns an
+        empty list for blank input.
+    """
+    tokens: list[tuple[str, bool]] = []
+    pos = 0
+    for match in _ACCENT_RE.finditer(text):
+        # Plain (non-accent) segment before this accent span.
+        plain = text[pos:match.start()]
+        for word in plain.split():
+            tokens.append((word, False))
+        # Accent span — every word inside is highlighted.
+        for word in match.group(1).split():
+            tokens.append((word, True))
+        pos = match.end()
+    # Trailing plain segment after the last accent span.
+    for word in text[pos:].split():
+        tokens.append((word, False))
+    return tokens
+
+
+def wrap_accent_tokens(
+    tokens: list[tuple[str, bool]],
+    max_width: int,
+    font: ImageFont.FreeTypeFont,
+    draw: ImageDraw.ImageDraw,
+) -> list[list[tuple[str, bool]]]:
+    """Greedy word-wrap accent tokens into lines that fit *max_width*.
+
+    Mirrors :func:`auto_wrap_text` but preserves the per-word accent flag so
+    color survives wrapping.
+
+    Returns:
+        List of lines, each a list of ``(word, is_accent)`` tokens.
+    """
+    if not tokens:
+        return []
+
+    lines: list[list[tuple[str, bool]]] = []
+    current: list[tuple[str, bool]] = [tokens[0]]
+
+    for word, accent in tokens[1:]:
+        candidate = " ".join(w for w, _ in current) + " " + word
+        bbox = draw.textbbox((0, 0), candidate, font=font)
+        if bbox[2] - bbox[0] <= max_width:
+            current.append((word, accent))
+        else:
+            lines.append(current)
+            current = [(word, accent)]
+
+    lines.append(current)
+    return lines
+
+
 # ── Auto text wrapping (NEW) ────────────────────────────────────────────────
 
 def auto_wrap_text(
@@ -448,6 +530,64 @@ def draw_text_with_shadow(
     return result.convert("RGB")
 
 
+def draw_accent_line_with_shadow(
+    canvas: Image.Image,
+    tokens: list[tuple[str, bool]],
+    y: int,
+    font: ImageFont.FreeTypeFont,
+    main_color: tuple[int, ...],
+    accent_color: tuple[int, ...],
+    shadow_color: tuple[int, int, int] = (0, 0, 0),
+    shadow_offset: tuple[int, int] = (0, 4),
+    blur_radius: int = 6,
+    opacity: float = 0.7,
+) -> Image.Image:
+    """Render one centered line of ``(word, is_accent)`` tokens with a shadow.
+
+    Accent words are drawn in *accent_color* (green), the rest in *main_color*.
+    The whole line is horizontally centered on the canvas; the shadow is drawn
+    once for the full line so blur looks consistent across words.
+
+    Returns:
+        A new RGB ``Image`` with the line composited.
+    """
+    w, h = canvas.size
+    draw_probe = ImageDraw.Draw(canvas)
+
+    space_w = draw_probe.textbbox((0, 0), " ", font=font)[2]
+    word_widths = [
+        draw_probe.textbbox((0, 0), word, font=font)[2]
+        - draw_probe.textbbox((0, 0), word, font=font)[0]
+        for word, _ in tokens
+    ]
+    total_w = sum(word_widths) + space_w * (len(tokens) - 1 if tokens else 0)
+    start_x = (w - total_w) // 2
+
+    # ── Shadow layer (whole line at once) ────────────────────────────────
+    shadow_layer = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    shadow_draw = ImageDraw.Draw(shadow_layer)
+    x = start_x
+    for (word, _accent), ww in zip(tokens, word_widths):
+        shadow_draw.text(
+            (x + shadow_offset[0], y + shadow_offset[1]),
+            word, font=font, fill=(*shadow_color, int(255 * opacity)),
+        )
+        x += ww + space_w
+    shadow_layer = shadow_layer.filter(ImageFilter.GaussianBlur(radius=blur_radius))
+
+    result = Image.alpha_composite(canvas.convert("RGBA"), shadow_layer)
+
+    # ── Crisp words on top, colored per accent flag ──────────────────────
+    draw_final = ImageDraw.Draw(result)
+    x = start_x
+    for (word, accent), ww in zip(tokens, word_widths):
+        color = accent_color if accent else main_color
+        draw_final.text((x, y), word, font=font, fill=color)
+        x += ww + space_w
+
+    return result.convert("RGB")
+
+
 
 # ── Core thumbnail generation ────────────────────────────────────────────────
 
@@ -561,39 +701,65 @@ def generate_thumbnail(
     headline_font_name = hl_cfg.get("font", "Montserrat-Bold")
     lines: list[str] = []
 
-    while font_size >= min_size:
+    # Parse green-accent markup (**word**) into per-word tokens. The plain
+    # marker-free string drives the existing measuring / fitting code.
+    accent_tokens_all = tokenize_accents(headline)
+    has_accent = any(accent for _w, accent in accent_tokens_all)
+    token_lines: list[list[tuple[str, bool]]] = []
+
+    if has_accent:
+        # ── Accent path: token-based wrap preserves per-word color ───────
+        while font_size >= min_size:
+            ft = _get_font(headline_font_name, font_size, config)
+            token_lines = wrap_accent_tokens(accent_tokens_all, max_text_w, ft, draw_tmp)
+            if len(token_lines) <= max_lines:
+                break
+            font_size -= 2
+
+        font_size = max(min_size, font_size)
         ft = _get_font(headline_font_name, font_size, config)
+        token_lines = wrap_accent_tokens(accent_tokens_all, max_text_w, ft, draw_tmp)
+        if len(token_lines) > max_lines:
+            token_lines = token_lines[:max_lines]
+
+        # Plain string mirror for downstream measuring / vertical layout.
+        lines = [" ".join(word for word, _ in tl) for tl in token_lines]
+    else:
+        # ── Plain path: unchanged string wrap + smart-fit (run-on safe) ──
+        while font_size >= min_size:
+            ft = _get_font(headline_font_name, font_size, config)
+            lines = auto_wrap_text(headline, max_text_w, ft, draw_tmp)
+            if len(lines) <= max_lines:
+                break
+            font_size -= 2
+
+        font_size = max(min_size, font_size)
+        ft = _get_font(headline_font_name, font_size, config)
+
+        # Re-wrap at final size (may still exceed max_lines)
         lines = auto_wrap_text(headline, max_text_w, ft, draw_tmp)
-        if len(lines) <= max_lines:
-            break
-        font_size -= 2
-
-    font_size = max(min_size, font_size)
-    ft = _get_font(headline_font_name, font_size, config)
-
-    # Re-wrap at final size (may still exceed max_lines)
-    lines = auto_wrap_text(headline, max_text_w, ft, draw_tmp)
-    if len(lines) > max_lines:
-        lines = lines[:max_lines]
+        if len(lines) > max_lines:
+            lines = lines[:max_lines]
 
     if not lines:
         logger.warning("No valid text lines — skipping")
         return None
 
-    # Smart-fit any lines that still overflow
-    fitted_lines: list[str] = []
-    shortened_count = 0
-    for text in lines:
-        fitted, shortened = smart_fit_line(text, max_text_w, ft, draw_tmp)
-        fitted_lines.append(fitted)
-        if shortened:
-            shortened_count += 1
-    lines = fitted_lines
+    if not has_accent:
+        # Smart-fit any lines that still overflow
+        fitted_lines: list[str] = []
+        shortened_count = 0
+        for text in lines:
+            fitted, shortened = smart_fit_line(text, max_text_w, ft, draw_tmp)
+            fitted_lines.append(fitted)
+            if shortened:
+                shortened_count += 1
+        lines = fitted_lines
 
-    if shortened_count:
-        logger.info(
-            "%d/%d headline line(s) shortened to fit", shortened_count, len(lines),
-        )
+        if shortened_count:
+            logger.info(
+                "%d/%d headline line(s) shortened to fit", shortened_count, len(lines),
+            )
 
     # ── Compute subheadline ──────────────────────────────────────────────
     sub_lines: list[str] = []
@@ -653,7 +819,7 @@ def generate_thumbnail(
         th = bb[3] - bb[1]
         x = (W - tw) // 2
         line_color = highlight_color if i >= green_start else main_color
-        text_positions.append({
+        record = {
             "text": text,
             "color": line_color,
             "font": ft,
@@ -662,7 +828,12 @@ def generate_thumbnail(
             "y": current_y,
             "w": tw,
             "h": th,
-        })
+        }
+        # When markup is present, attach per-word accent tokens so the
+        # renderer paints individual green words instead of a whole green line.
+        if has_accent and i < len(token_lines):
+            record["accent_tokens"] = token_lines[i]
+        text_positions.append(record)
         current_y += line_height
 
     # Subheadline lines → main (white) color
@@ -708,12 +879,22 @@ def generate_thumbnail(
 
     # ── Render text with drop shadow (premium, matching brand style) ────
     for tp in text_positions:
-        canvas = draw_text_with_shadow(
-            canvas, tp["text"], tp["x"], tp["y"],
-            font=tp["font"], fill=tp["color"],
-            shadow_color=(0, 0, 0), shadow_offset=(0, 4),
-            blur_radius=6, opacity=0.7,
-        )
+        accent_tokens = tp.get("accent_tokens")
+        if accent_tokens:
+            # Per-word coloring: accent words green, the rest white.
+            canvas = draw_accent_line_with_shadow(
+                canvas, accent_tokens, tp["y"],
+                font=tp["font"], main_color=main_color, accent_color=highlight_color,
+                shadow_color=(0, 0, 0), shadow_offset=(0, 4),
+                blur_radius=6, opacity=0.7,
+            )
+        else:
+            canvas = draw_text_with_shadow(
+                canvas, tp["text"], tp["x"], tp["y"],
+                font=tp["font"], fill=tp["color"],
+                shadow_color=(0, 0, 0), shadow_offset=(0, 4),
+                blur_radius=6, opacity=0.7,
+            )
     draw_final = ImageDraw.Draw(canvas)
 
     # ── Final contrast check ─────────────────────────────────────────────
