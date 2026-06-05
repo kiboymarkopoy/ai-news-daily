@@ -18,6 +18,9 @@ cache/
 *.log
 *.tmp
 
+# Runtime working dir (cron handoff, resolver cache, pipeline lock)
+.runtime/
+
 # IDE
 .vscode/
 .idea/

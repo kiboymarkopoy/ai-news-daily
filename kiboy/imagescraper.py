@@ -64,15 +64,31 @@ _BLOCKED_DOMAINS: set[str] = {
 
 # Cache for resolved GN URLs: {gn_url: (real_url, og_image, timestamp)}
 _RESOLVE_CACHE: dict[str, tuple[str, str, float]] = {}
-_RESOLVE_CACHE_PATH = "/tmp/kiboy_gn_resolve_cache.json"
+_CACHE_LOADED = False
 _CACHE_TTL = 86400  # 24 hours
 
 
+def _resolve_cache_path() -> str:
+    """Return the GN resolver cache path (repo-scoped, not /tmp).
+
+    Imported lazily so a misconfigured KIBOY_ROOT can't break module import.
+    """
+    from kiboy.config import GN_RESOLVE_CACHE_PATH, ensure_runtime_dir
+    ensure_runtime_dir()
+    return str(GN_RESOLVE_CACHE_PATH)
+
+
 def _load_cache():
-    global _RESOLVE_CACHE
+    """Load the resolver cache from disk on first use (idempotent)."""
+    global _RESOLVE_CACHE, _CACHE_LOADED
+    if _CACHE_LOADED:
+        return
+    _CACHE_LOADED = True
     try:
-        if os.path.exists(_RESOLVE_CACHE_PATH):
-            data = json.load(open(_RESOLVE_CACHE_PATH))
+        path = _resolve_cache_path()
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as f:
+                data = json.load(f)
             now = time.time()
             _RESOLVE_CACHE = {
                 k: (v[0], v[1], v[2])
@@ -85,7 +101,7 @@ def _load_cache():
 
 def _save_cache():
     try:
-        with open(_RESOLVE_CACHE_PATH, "w") as f:
+        with open(_resolve_cache_path(), "w", encoding="utf-8") as f:
             serializable = {
                 k: [v[0], v[1], v[2]]
                 for k, v in _RESOLVE_CACHE.items()
@@ -93,9 +109,6 @@ def _save_cache():
             json.dump(serializable, f)
     except Exception:
         pass
-
-
-_load_cache()
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -117,6 +130,9 @@ def resolve_gn_url(gn_url: str, timeout: int = 10) -> tuple[str, str]:
         ``(real_url, og_image_url)`` — ``og_image_url`` may be empty if
         the article page wasn't loaded in time.
     """
+    # Lazy-load the disk cache on first resolution (no import-time side effect).
+    _load_cache()
+
     # Check cache first
     if gn_url in _RESOLVE_CACHE:
         cached = _RESOLVE_CACHE[gn_url]

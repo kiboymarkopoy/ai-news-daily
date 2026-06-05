@@ -24,12 +24,15 @@ from pathlib import Path
 from kiboy import __version__
 from kiboy.config import (
     CONFIG_PATH,
+    CRON_OUTPUT_PATH,
     DATA_DIR,
     REPO_DIR,
     STATE_PATH,
+    PipelineLockError,
     get_wib_now,
     load_config,
     load_state,
+    pipeline_lock,
     save_state,
 )
 
@@ -158,11 +161,8 @@ def cmd_pipeline(args: argparse.Namespace) -> None:
 
 
 def cmd_register(args: argparse.Namespace) -> None:
-    """Register articles from temp JSON file into state.json."""
-    from kiboy.pipeline import stage_register
-    from kiboy.config import load_state, save_state, get_wib_now
-
-    temp_path = Path("/tmp/kiboy_new_articles.json")
+    """Register articles from the cron handoff JSON into state.json."""
+    temp_path = CRON_OUTPUT_PATH
     if not temp_path.exists():
         print(f"Error: {temp_path} not found. Run 'pipeline --cron' first.")
         sys.exit(1)
@@ -189,9 +189,9 @@ def cmd_register(args: argparse.Namespace) -> None:
 
         # Build file path: data/YYYY-MM-DD/HH.MM-NN.md
         from kiboy.writer import get_next_sequence
-        data_dir = Path(f"/root/ai-news-daily/data/{date_str}")
+        date_dir = DATA_DIR / date_str
         time_str = cron_data.get("time", "00.00")
-        seq = article.get("seq", get_next_sequence(data_dir, time_str))
+        seq = article.get("seq", get_next_sequence(date_dir, time_str))
         file_path = f"data/{date_str}/{time_str}-{seq:02d}.md"
 
         # Use article fields directly
@@ -389,7 +389,7 @@ def main() -> None:
 
     # register
     sp_reg = subparsers.add_parser("register", help="Register articles into state.json")
-    sp_reg.add_argument("--from-temp", action="store_true", help="Register from /tmp/kiboy_new_articles.json")
+    sp_reg.add_argument("--from-temp", action="store_true", help="Register from the cron handoff JSON (.runtime/kiboy_new_articles.json)")
     sp_reg.set_defaults(func=cmd_register)
 
     # thumbnail
@@ -415,7 +415,18 @@ def main() -> None:
         parser.print_help()
         sys.exit(0)
 
-    args.func(args)
+    # Commands that mutate state.json must run under the pipeline lock so an
+    # overrunning cron cycle can't race a fresh one and corrupt state.
+    _STATE_MUTATING = {"pipeline", "register", "thumbnail", "migrate"}
+    if args.command in _STATE_MUTATING:
+        try:
+            with pipeline_lock():
+                args.func(args)
+        except PipelineLockError as exc:
+            print(f"[LOCKED] {exc}")
+            sys.exit(75)  # EX_TEMPFAIL — cron can retry next hour.
+    else:
+        args.func(args)
 
 
 if __name__ == "__main__":

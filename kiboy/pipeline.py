@@ -7,7 +7,7 @@ scope of this module.  The pipeline therefore exposes hooks that Kiboy can
 call individually or as a full end-to-end run.
 
 CRON MODE: ``run_cron_stage()`` performs fetch+dedup deterministically and
-outputs a verified JSON payload to ``/tmp/kiboy_new_articles.json``.  The
+outputs a verified JSON payload to ``.runtime/kiboy_new_articles.json``.  The
 LLM then reads this file, writes articles using the verified data, and
 calls ``stage_register()`` + ``stage_thumbnails()`` to finalise.
 """
@@ -20,9 +20,12 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from kiboy.config import (
+    CRON_OUTPUT_PATH,
+    ensure_runtime_dir,
     get_wib_now,
     load_config,
     load_state,
+    pipeline_lock,
     save_state,
 )
 from kiboy.dedup import check_duplicate, register_article
@@ -173,7 +176,7 @@ def stage_thumbnails(
 # Cron pipeline (deterministic fetch+dedup for LLM consumption)
 # ---------------------------------------------------------------------------
 
-_CRON_OUTPUT = Path("/tmp/kiboy_new_articles.json")
+_CRON_OUTPUT = CRON_OUTPUT_PATH
 
 
 def run_cron_stage(max_articles: int = 5, enrich: bool = True) -> str:
@@ -184,11 +187,11 @@ def run_cron_stage(max_articles: int = 5, enrich: bool = True) -> str:
     1. Fetch all RSS feeds deterministically (Python ``urllib``, no LLM).
     2. Run 3-layer dedup against ``state.json``.
     3. (Optional) Enrich articles without images by scraping og:image.
-    4. Save verified new articles to ``/tmp/kiboy_new_articles.json``.
+    4. Save verified new articles to ``.runtime/kiboy_new_articles.json``.
     5. Print a summary to stdout for the LLM to read and act on.
 
     The LLM is expected to:
-    - Read ``/tmp/kiboy_new_articles.json``
+    - Read ``.runtime/kiboy_new_articles.json``
     - Write 3-5 paragraph Indonesian articles using **only** the provided
       ``url``, ``title``, ``source_domain``, and ``image_url`` fields
     - **NEVER fabricate URLs or image URLs** — use only what's provided
@@ -326,13 +329,14 @@ def run_cron_stage(max_articles: int = 5, enrich: bool = True) -> str:
         "duplicates_skipped": duplicates,
         "new_articles": payload,
     }
+    ensure_runtime_dir()
     _CRON_OUTPUT.write_text(json.dumps(cron_data, indent=2, ensure_ascii=False),
                             encoding="utf-8")
 
     # Print summary (stdout goes to LLM context)
     print(f"\n  Fetched:    {fetched} articles")
     print(f"  Duplicates: {duplicates} skipped")
-    print(f"  NEW:        {len(payload)} articles → /tmp/kiboy_new_articles.json")
+    print(f"  NEW:        {len(payload)} articles → {_CRON_OUTPUT}")
     print(f"  Enriched:   {enriched_count} images (OG scrape)")
     print(f"  Date/Time:  {date_str} / {time_str}")
 

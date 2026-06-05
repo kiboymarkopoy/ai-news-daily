@@ -22,8 +22,28 @@ CACHE_DIR: Path = REPO_DIR / "cache"
 CONFIG_PATH: Path = REPO_DIR / "config.json"
 STATE_PATH: Path = REPO_DIR / "state.json"
 
+# Runtime working directory — replaces the old hardcoded /tmp usage so that
+# cron handoff files, resolver caches, and the pipeline lock survive a reboot
+# and stay scoped to this repo (KIBOY_ROOT aware). Gitignored.
+RUNTIME_DIR: Path = REPO_DIR / ".runtime"
+
+# Cron → LLM handoff payload (was /tmp/kiboy_new_articles.json).
+CRON_OUTPUT_PATH: Path = RUNTIME_DIR / "kiboy_new_articles.json"
+
+# Google News redirect resolver cache (was /tmp/kiboy_gn_resolve_cache.json).
+GN_RESOLVE_CACHE_PATH: Path = RUNTIME_DIR / "gn_resolve_cache.json"
+
+# Pipeline lock — prevents overlapping cron runs from corrupting state.json.
+LOCK_PATH: Path = RUNTIME_DIR / "kiboy.lock"
+
 # WIB timezone (UTC+7)
 _WIB = timezone(timedelta(hours=7))
+
+
+def ensure_runtime_dir() -> Path:
+    """Create the runtime working directory if missing and return it."""
+    RUNTIME_DIR.mkdir(parents=True, exist_ok=True)
+    return RUNTIME_DIR
 
 
 # ---------------------------------------------------------------------------
@@ -113,3 +133,103 @@ def get_font_path(font_name: str, config: dict) -> str | None:
 def get_wib_now() -> datetime:
     """Return the current time in WIB (UTC+7)."""
     return datetime.now(_WIB)
+
+
+# ---------------------------------------------------------------------------
+# Pipeline lock — prevents overlapping cron runs
+# ---------------------------------------------------------------------------
+
+class PipelineLockError(RuntimeError):
+    """Raised when another pipeline run currently holds the lock."""
+
+
+class pipeline_lock:
+    """Context manager that guards against concurrent pipeline runs.
+
+    Cron fires hourly; if a run (e.g. slow Playwright GN resolution) overruns
+    the hour, the next run must not start and clobber ``state.json`` — that
+    produces the lost-article / merge-conflict symptoms seen in git history.
+
+    The lock is a small file containing the owning PID and an ISO timestamp.
+    A stale lock (process no longer alive, or older than ``stale_after``
+    seconds) is reclaimed automatically so a crashed run never wedges cron
+    permanently.
+
+    Usage::
+
+        with pipeline_lock():
+            run_cron_stage(...)
+    """
+
+    def __init__(self, stale_after: int = 1800) -> None:
+        self.stale_after = stale_after
+        self._acquired = False
+
+    def __enter__(self) -> "pipeline_lock":
+        ensure_runtime_dir()
+        if LOCK_PATH.exists():
+            if not self._is_stale():
+                owner = self._read_owner()
+                raise PipelineLockError(
+                    f"Another pipeline run is active (lock held by {owner}). "
+                    f"Remove {LOCK_PATH} manually if you are sure it is dead."
+                )
+            # Stale lock — reclaim it.
+        self._write_lock()
+        self._acquired = True
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb) -> None:
+        if self._acquired and LOCK_PATH.exists():
+            try:
+                LOCK_PATH.unlink()
+            except OSError:
+                pass
+
+    def _write_lock(self) -> None:
+        payload = {"pid": os.getpid(), "acquired_at": get_wib_now().isoformat()}
+        LOCK_PATH.write_text(json.dumps(payload), encoding="utf-8")
+
+    def _read_owner(self) -> str:
+        try:
+            data = json.loads(LOCK_PATH.read_text(encoding="utf-8"))
+            return f"pid={data.get('pid')} since={data.get('acquired_at')}"
+        except (OSError, json.JSONDecodeError):
+            return "unknown"
+
+    def _is_stale(self) -> bool:
+        """Return True if the existing lock can be safely reclaimed."""
+        try:
+            data = json.loads(LOCK_PATH.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            return True  # Unreadable lock → treat as stale.
+
+        pid = data.get("pid")
+        if isinstance(pid, int) and not _pid_alive(pid):
+            return True
+
+        acquired = data.get("acquired_at")
+        if acquired:
+            try:
+                age = (get_wib_now() - datetime.fromisoformat(acquired)).total_seconds()
+                if age > self.stale_after:
+                    return True
+            except ValueError:
+                return True
+        return False
+
+
+def _pid_alive(pid: int) -> bool:
+    """Best-effort check whether *pid* is a live process (cross-platform)."""
+    if pid <= 0:
+        return False
+    if os.name == "nt":
+        # No cheap signal-0 on Windows; assume alive and rely on stale timeout.
+        return True
+    try:
+        os.kill(pid, 0)
+    except ProcessLookupError:
+        return False
+    except PermissionError:
+        return True  # Exists but owned by another user.
+    return True

@@ -72,6 +72,12 @@ def download_image(url: str, referer: str = "") -> Path | None:
     Uses ``curl_cffi`` (TLS fingerprint impersonation) as primary method,
     falling back to Playwright for JS-challenge sites.
 
+    The cache file extension is determined by **sniffing the actual bytes**
+    with Pillow rather than trusting the URL — many CDNs serve images from
+    extension-less URLs or mismatched extensions (e.g. an SVG behind a
+    ``.jpg``-looking path).  Vector formats (SVG) that Pillow cannot raster
+    are rejected up front so callers fall back to the gradient background.
+
     Args:
         url: Remote image URL.
         referer: The article page URL (for legitimate Referer header).
@@ -81,23 +87,53 @@ def download_image(url: str, referer: str = "") -> Path | None:
     """
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
-    url_hash = hashlib.md5(url.encode()).hexdigest()[:12]
-    path_part = url.split("?")[0].split("#")[0]
-    ext = path_part.rsplit(".", 1)[-1][:4] if "." in path_part else "jpg"
-    if ext not in _VALID_IMAGE_EXTS:
-        ext = "jpg"
+    # Reject vector formats early — Pillow can't rasterise them.
+    if url.split("?")[0].split("#")[0].lower().endswith(".svg"):
+        logger.debug("Skipping SVG image (not rasterisable): %s", url[:80])
+        return None
 
-    cache_path = CACHE_DIR / f"{url_hash}.{ext}"
-    if cache_path.exists():
-        return cache_path
+    url_hash = hashlib.md5(url.encode()).hexdigest()[:12]
+
+    # If any cached variant already exists, reuse it (extension-agnostic).
+    for existing in CACHE_DIR.glob(f"{url_hash}.*"):
+        return existing
 
     # Download via httpclient (curl_cffi → Playwright fallback)
     data = download_binary(url, referer=referer)
-    if data and len(data) > 1000:
-        cache_path.write_bytes(data)
-        return cache_path
+    if not data or len(data) <= 1000:
+        return None
 
-    return None
+    # Determine the real format by sniffing the bytes, not the URL.
+    ext = _sniff_image_ext(data)
+    if ext is None:
+        logger.debug("Downloaded bytes are not a usable raster image: %s", url[:80])
+        return None
+
+    cache_path = CACHE_DIR / f"{url_hash}.{ext}"
+    cache_path.write_bytes(data)
+    return cache_path
+
+
+def _sniff_image_ext(data: bytes) -> str | None:
+    """Return a valid image extension by inspecting *data* with Pillow.
+
+    Returns ``None`` when the bytes are not a raster image Pillow can open
+    (e.g. SVG/XML, HTML error pages, truncated downloads).
+    """
+    import io
+
+    try:
+        with Image.open(io.BytesIO(data)) as probe:
+            fmt = (probe.format or "").lower()
+    except Exception:
+        return None
+
+    # Normalise Pillow format names to file extensions.
+    fmt_map = {"jpeg": "jpg"}
+    ext = fmt_map.get(fmt, fmt)
+    if ext not in _VALID_IMAGE_EXTS:
+        return None
+    return ext
 
 
 # ── Background image loading ─────────────────────────────────────────────────
@@ -680,19 +716,6 @@ def generate_thumbnail(
         )
     draw_final = ImageDraw.Draw(canvas)
 
-    # ── Watermark (bottom) ───────────────────────────────────────────────
-    wm_cfg = {}
-    wm_size = wm_cfg.get("size_px", 22)
-    wm_pad_x = int(W * wm_cfg.get("padding_pct", 0.04))
-    wm_pad_y = int(H * wm_cfg.get("padding_pct", 0.03))
-    wm_font = _get_font("Montserrat-Regular", wm_size, config)
-    wm_color = tuple(wm_cfg.get("color", [200, 200, 200]))
-    # wm_text = ""
-    # draw_final.text(
-    #     (wm_pad_x, H - wm_pad_y - wm_size), wm_text,
-    #     fill=wm_color, font=wm_font,
-    # )
-
     # ── Final contrast check ─────────────────────────────────────────────
     if not check_text_contrast(canvas, text_positions, threshold_brightness=200):
         logger.warning("Final contrast may still be low — manual review recommended")
@@ -751,6 +774,9 @@ def process_article(
             thumb_path.unlink()
         else:
             logger.info("Thumbnail already exists: %s", thumb_path)
+            # Sync the state flag so future runs skip this article instead of
+            # rescanning every entry on disk each time.
+            article_info["thumb_generated"] = True
             return True
 
     # Extract headline data
