@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-06T20:03:07.207555+07:00",
-    "total_articles": 506
+    "updated_at": "2026-06-07T00:05:26.529730+07:00",
+    "total_articles": 513
   },
   "dedup": {
     "articles": {
@@ -4579,6 +4579,69 @@
         "thumb_subheadline": null,
         "thumb_image": "https://static01.nyt.com/images/2026/06/08/business/08db-ceo-bot/08db-ceo-bot-facebookJumbo.jpg",
         "thumb_generated": true
+      },
+      "https://fortune.com/2026/06/05/openai-anthropic-microsoft-ceos-congress-bioweapon-safeguards/": {
+        "file": "data/2026-06-06/21.01-03.md",
+        "source": "fortune.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Tiga Raksasa AI Bersatu Peringatkan Bahaya Bioweapon",
+        "thumb_subheadline": null,
+        "thumb_image": "https://fortune.com/img-assets/wp-content/uploads/2026/06/GettyImages-2265991617-1-e1780603648257.jpg?resize=1200,600",
+        "thumb_generated": true
+      },
+      "https://www.axios.com/2026/06/06/ai-bubble-economy-growth": {
+        "file": "data/2026-06-06/21.01-02.md",
+        "source": "axios.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Bubble AI Mulai Terasa, Saham Teknologi Ambruk",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.axios.com/FdWZ5uIK1uAtJcBVtpIN7srkQsY=/0x0:1280x720/1366x768/2026/06/05/1780698460885.jpg",
+        "thumb_generated": true
+      },
+      "https://www.inc.com/joe-galvin/why-smart-ceos-are-choosing-diy-ai-instead-of-build-or-buy/91349814": {
+        "file": "data/2026-06-06/23.04-02.md",
+        "source": "inc.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "CEO Pilih 'DIY AI' Daripada Beli Solusi Siap Pakai",
+        "thumb_subheadline": null,
+        "thumb_image": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/06/GettyImages-2220943589.jpg",
+        "thumb_generated": true
+      },
+      "https://www.axios.com/2026/06/06/trump-us-stake-ai-companies": {
+        "file": "data/2026-06-06/23.04-03.md",
+        "source": "axios.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Trump Sebut Kepemilikan Saham AS di Raksasa AI Hal yang Indah",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.axios.com/SgHkqWsKj4mjpzrDcxC5a9i7oqs=/0x117:3600x2142/1366x768/2026/06/06/1780750426835.jpeg",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai/": {
+        "file": "data/2026-06-07/00.00-03.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-07",
+        "thumb_headline": "Pemerintah AS Mungkin Ambil Saham di OpenAI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2026/05/donald-trump-cellphone.jpg?resize=1200,800",
+        "thumb_generated": true
+      },
+      "https://www.barrons.com/articles/market-selloff-tech-stocks-broadcom-ai-solar-117b9461": {
+        "file": "data/2026-06-07/00.00-02.md",
+        "source": "barrons.com",
+        "first_seen": "2026-06-07",
+        "thumb_headline": "Saham AI dan Solar Terpukul Laporan Jobs Report",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://thelocalreporter.press/how-the-ad-world-set-us-up-for-ai-language/": {
+        "file": "data/2026-06-07/00.00-05.md",
+        "source": "thelocalreporter.press",
+        "first_seen": "2026-06-07",
+        "thumb_headline": "Dunia Iklan Ternyata Membentuk Cara AI Berbahasa",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
       }
     },
     "source_headlines": {
@@ -4685,7 +4748,6 @@
         "hpe stock soars record backlog booming ai server business"
       ],
       "techcrunch.com": [
-        "microsoft offers devs better way control ai agent behavior",
         "amazon faces class action lawsuit ring facial recognition feature",
         "microsoft launches scout openclaw inspired personal assistant",
         "microsoft offers devs better way control ai agent behavior",
@@ -4724,7 +4786,8 @@
         "interesting startups right now want get phone",
         "google pay spacex 920m per month compute",
         "together tech wave might intriguing startup bet 2026",
-        "startup battlefield 200 applications officially close days"
+        "startup battlefield 200 applications officially close days",
+        "trump administration might take equity stake openai"
       ],
       "www.tomshardware.com": [
         "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -4849,7 +4912,9 @@
         "anthropic warns ai soon build itself without human involvement",
         "tech stocks lead market bloodbath fears fed rate hikes add worries ai fueled chip boom petering",
         "maga hates ai trump agrees bernie might time partial government ownership",
-        "company deny raises spend ai idea re going need workforce"
+        "company deny raises spend ai idea re going need workforce",
+        "ai ceos openai anthropic microsoft set aside rivalry warn congress ai making easy design create bioweapons",
+        "bernie sanders sam altman private one hour meeting public ownership ai"
       ],
       "www.wsj.com": [
         "perusahaan di as mulai menjatah ai biaya langganan melonjak dompet menjerit"
@@ -5007,7 +5072,6 @@
         "regulator let publishers keep content google search ai tool wsj",
         "goldman gutman ai re industrial revolution cnbc",
         "broadcom stock faces earnings test ai chip revenue surges barron",
-        "exclusive apoha startup pioneering ai based liquid wave form data gets 36 million series fortune",
         "softbank masayoshi son becomes asia richest person amid ai boom forbes",
         "nvidia new pc chips represent ceo huang bid win layer ai stack cnbc",
         "two years copilot nvidia shoving ai pcs again gizmodo",
@@ -5073,7 +5137,10 @@
         "exclusive ibm ceo backs trump narrowed ai executive order",
         "exclusive yahoo launches ai tools nba fans investors",
         "anthropic warns ai soon help build successors",
-        "china fueling data center resistance ai groups claim"
+        "china fueling data center resistance ai groups claim",
+        "revenge ai bubble",
+        "trump stake ai giants beautiful thing",
+        "trump stake ai giants beautiful thing"
       ],
       "businessinsider.com": [
         "uber lays almost quarter hr recruitment staff says nothing ai"
@@ -5133,7 +5200,9 @@
       ],
       "barrons.com": [
         "global wealth surging ai boom minting millionaires",
-        "inside alphabet massive 920 million monthly ai deal spacex"
+        "inside alphabet massive 920 million monthly ai deal spacex",
+        "jobs report hit solar ai stocks handle higher interest rates",
+        "jobs report hit solar ai stocks handle higher interest rates"
       ],
       "yahoo.com": [
         "ai toys weaken kids bond parents anxious generation author says"
@@ -5239,7 +5308,8 @@
       "inc.com": [
         "ai now expensive laid human labor replacing",
         "terrible year go public massive ai startup resisting ipo rush",
-        "everyone ai side hustle now build something better"
+        "everyone ai side hustle now build something better",
+        "smart ceos choosing diy ai instead build buy"
       ],
       "nbcbayarea.com": [
         "san jose state top class comes ai"
@@ -5276,6 +5346,9 @@
       ],
       "coloradosun.com": [
         "watch ai leaders discuss technology day life colorado sunfest 2026"
+      ],
+      "thelocalreporter.press": [
+        "ad world set us ai language"
       ]
     },
     "cross_topics": [
@@ -6933,6 +7006,31 @@
         "who": "Anthropic",
         "what": "Says We Must Stop Authoritarian AI. But What About Its Authoritarian Investors?",
         "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Anthropic",
+        "what": "and Microsoft set aside their rivalry to warn Congress AI is making it too easy",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Trump",
+        "what": "U.S. stake in AI giants \"could be a beautiful thing\"",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Bernie Sanders",
+        "what": "and Sam Altman's private one-hour meeting about the public ownership of AI",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Trump",
+        "what": "U.S. stake in AI giants \"could be a beautiful thing\"",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "OpenAI",
+        "what": "The Trump administration might take an equity stake in OpenAI",
+        "first_seen": "2026-06-07"
       }
     ],
     "total": 333
