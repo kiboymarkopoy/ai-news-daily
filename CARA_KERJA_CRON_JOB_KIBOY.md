@@ -83,6 +83,17 @@ Contoh kalau cuma 3 artikel semua Regulasi + Industry:
 → Tulis 02 (Industry), 03 (Regulasi), dan 1 lagi yang paling mendekati topik apapun.
 → Slot yang tidak punya artikel cocok: skip (jangan tulis file kosong).
 
+🚨 ATURAN ANTI-DUPLIKAT (WAJIB):
+- JANGAN PERNAH tulis 2+ artikel dengan `![illustration](URL)` yang SAMA.
+- JANGAN PERNAH tulis 2+ artikel dengan `Sumber : URL` yang SAMA.
+- Kalo suatu artikel gak punya image_url atau image_url-nya udah dipake artikel lain →
+  tulis TANPA gambar. Jangan pinjem gambar dari artikel lain.
+- Kalo cuma 1-2 artikel unik yang tersedia → tulis cuma 1-2 artikel. Jangan maksa 5.
+- Setiap artikel WAJIB punya illustration URL dan Sumber URL yang UNIK & BERBEDA.
+
+Cron prompt udah diupdate dengan aturan ini sejak 6 Juni 2026 (run 19.00+).
+Verifikasi: di laporan akhir, cron agent WAJIB konfirmasi gak ada duplikasi.
+
 Agent nulis 5 file .md di data/YYYY-MM-DD/HH.MM-SEQ.md dengan format:
 # 01 — 🧠 Judul Singkat
 ---

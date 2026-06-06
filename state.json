@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-06T03:03:16.995758+07:00",
-    "total_articles": 457
+    "updated_at": "2026-06-06T20:03:07.207555+07:00",
+    "total_articles": 506
   },
   "dedup": {
     "articles": {
@@ -4138,6 +4138,447 @@
         "thumb_subheadline": null,
         "thumb_image": "",
         "thumb_generated": true
+      },
+      "https://www.nbcbayarea.com/news/local/san-jose-state-ai/4095176/": {
+        "file": "data/2026-06-06/04.00-01.md",
+        "source": "nbcbayarea.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "San Jose State Jadi Kampus Terdepan di Bidang AI",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.foxbusiness.com/video/6397670451112": {
+        "file": "data/2026-06-06/04.00-02.md",
+        "source": "foxbusiness.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Mantan CTO Meta: Jalanin AI di Laut Peluang Sekali Seumur Hidup",
+        "thumb_subheadline": null,
+        "thumb_image": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/854081161001/6b0d9f0a-d146-4984-83be-ba1cd5928887/57583bcc-8fab-4dee-8839-ae6338269ea4/1280x720/match/1024/512/image.jpg?ve=1&amp;tl=1",
+        "thumb_generated": true
+      },
+      "https://www.nytimes.com/2026/06/05/magazine/ai-farms-technology.html": {
+        "file": "data/2026-06-06/05.00-01.md",
+        "source": "nytimes.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Robot Perah Sapi sampai Laser Pembasmi Gulma, Petani Makin Cinta AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://static01.nyt.com/images/2026/06/14/magazine/14mag-farming-01-07/14mag-farming-01-07-facebookJumbo-v3.jpg",
+        "thumb_generated": true
+      },
+      "https://www.bloomberg.com/news/articles/2026-06-05/apollo-wraps-up-35-billion-debt-to-buy-ai-chips-for-anthropic": {
+        "file": "data/2026-06-06/05.00-02.md",
+        "source": "bloomberg.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Apollo Siapkan Utang $35 Miliar buat Beli Chip AI Anthropic",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.bloomberg.com/news/articles/2026-06-05/trump-signs-ai-memo-addressing-issues-in-anthropic-pentagon-feud": {
+        "file": "data/2026-06-06/05.00-03.md",
+        "source": "bloomberg.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Trump Teken Memo AI, Intervensi Sengketa Anthropic vs Pentagon",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.wsj.com/opinion/bernie-sanders-sovereign-wealth-fund-ai-defense-national-security-392fdf1e": {
+        "file": "data/2026-06-06/05.00-04.md",
+        "source": "wsj.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Debat Masa Depan Riset AI: Sosialisme Negara vs Pasar Bebas",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://news3lv.com/news/local/four-in-five-gen-z-students-say-ai-will-make-learning-harder-data-shows": {
+        "file": "data/2026-06-06/06.00-01.md",
+        "source": "news3lv.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "80% Gen Z Yakin AI Bakal Bikin Belajar Makin Berat, Bukan Lebih Gampang",
+        "thumb_subheadline": null,
+        "thumb_image": "https://news3lv.com/resources/media2/16x9/1920/1320/center/90/59433fd8-e91e-493e-995d-d3736089ab73-05f435987cc046e9a6f7eac2309c8e1a.png",
+        "thumb_generated": true
+      },
+      "https://techcrunch.com/2026/06/05/startup-battlefield-200-applications-officially-close-in-3-days/": {
+        "file": "data/2026-06-06/06.00-02.md",
+        "source": "techcrunch.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Startup Battlefield 200 Tutup Pendaftaran, Founders Wajib Buruan Daftar",
+        "thumb_subheadline": null,
+        "thumb_image": "https://techcrunch.com/wp-content/uploads/2024/11/54105085427_2cae9d0502_o.jpg?resize=1200,800",
+        "thumb_generated": true
+      },
+      "https://fortune.com/2026/06/05/tech-stocks-market-bloodbath-fed-rate-hikes-jobs-report-ai-fueled-chip-boom/": {
+        "file": "data/2026-06-06/07.00-04.md",
+        "source": "fortune.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Saham Chip AI Berdarah-darah, Kekhawatiran Puncak Boom Teknologi",
+        "thumb_subheadline": null,
+        "thumb_image": "https://fortune.com/img-assets/wp-content/uploads/2026/06/GettyImages-2278890511-e1780697057756.jpg?resize=1200,600",
+        "thumb_generated": true
+      },
+      "https://www.inc.com/victoria-salves/a-terrible-year-to-go-public-why-massive-ai-startup-is-resisting-the-ipo-rush/91356664": {
+        "file": "data/2026-06-06/07.00-02.md",
+        "source": "inc.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Databricks Tahan IPO di Tengah Tahun yang Berat",
+        "thumb_subheadline": null,
+        "thumb_image": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/06/ali-ghodsi-databricks-ipo-inc.jpg",
+        "thumb_generated": true
+      },
+      "https://www.nytimes.com/2026/06/05/technology/spacex-google-deal.html": {
+        "file": "data/2026-06-06/08.00-01.md",
+        "source": "nytimes.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "SpaceX Dapat Kontrak $30 Miliar dari Google",
+        "thumb_subheadline": null,
+        "thumb_image": "https://static01.nyt.com/images/2026/06/05/multimedia/05biz-spacex-google-qzjh/05biz-spacex-google-qzjh-facebookJumbo.jpg",
+        "thumb_generated": true
+      },
+      "https://www.reuters.com/business/media-telecom/spacex-signs-cloud-deal-with-google-2026-06-05/": {
+        "file": "data/2026-06-06/08.00-02.md",
+        "source": "reuters.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "SpaceX dan Google Kolaborasi AI Compute Raksasa",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.trefis.com/stock/spcx/articles/601581/how-seriously-should-investors-take-spacexs-ai-narrative/2026-06-05": {
+        "file": "data/2026-06-06/08.00-03.md",
+        "source": "trefis.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Haruskah Investor Percaya Narasi AI SpaceX?",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://fortune.com/2026/06/05/trump-partnership-openai-anthropic-xai-nationalization-bernie-sanders-altman/": {
+        "file": "data/2026-06-06/09.01-01.md",
+        "source": "fortune.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Trump dan Bernie Sanders Setuju Pemerintah Bisa Ambil Alih Perusahaan AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://fortune.com/img-assets/wp-content/uploads/2026/06/GettyImages-2279869425-e1780702542421.jpg?resize=1200,600",
+        "thumb_generated": true
+      },
+      "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/": {
+        "file": "data/2026-06-06/09.01-02.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "S&P 500 Tolak SpaceX, OpenAI, dan Anthropic karena Belum Untung",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/SpaceX-signage-1152x648.jpg",
+        "thumb_generated": true
+      },
+      "https://arstechnica.com/tech-policy/2026/06/we-pissed-off-a-lot-of-people-giant-data-center-plan-cut-50-amid-protests/": {
+        "file": "data/2026-06-06/09.01-03.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Protes Warga Bikin Rencana Data Center Raksasa Dipangkas Setengahnya",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2277371061-1024x648.jpg",
+        "thumb_generated": true
+      },
+      "https://www.wxii12.com/article/atkins-high-school-students-ai-tool-parkinsons-disease/71510409": {
+        "file": "data/2026-06-06/09.01-04.md",
+        "source": "wxii12.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Siswa Atkins High School Ciptakan AI Pendeteksi Parkinson",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.foxbusiness.com/retail/mcdonalds-testing-ai-drive-thru-order-taking-system-called-archiq-five-locations-country": {
+        "file": "data/2026-06-06/10.00-01.md",
+        "source": "foxbusiness.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "McDonald's Uji Coba Sistem AI ArchIQ di Lima Lokasi",
+        "thumb_subheadline": null,
+        "thumb_image": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2026/06/0/0/mcdonalds-drivethru-scaled.jpg?ve=1&amp;tl=1",
+        "thumb_generated": true
+      },
+      "https://sakana.ai/rsi-lab/": {
+        "file": "data/2026-06-06/10.00-02.md",
+        "source": "sakana.ai",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Sakana AI Buka Lab Riset Self-Improvement Buat AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://sakana.ai/assets/home/sakana_rect.png",
+        "thumb_generated": true
+      },
+      "https://arstechnica.com/ai/2026/06/the-skeptics-guide-to-humanoid-robots-going-viral-on-the-internet/": {
+        "file": "data/2026-06-06/10.00-03.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Panduan Skeptis Buat Robot Humanoid yang Lagi Viral",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2279229514-1152x648.jpg",
+        "thumb_generated": true
+      },
+      "https://arstechnica.com/ai/2026/06/these-llms-are-the-best-at-resisting-russian-propaganda/": {
+        "file": "data/2026-06-06/10.00-04.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "LLM Ini Paling Jago Lawan Propaganda Rusia",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2271282507-1024x648.jpg",
+        "thumb_generated": true
+      },
+      "https://garymarcus.substack.com/p/no-anthropic-did-not-call-for-a-pause": {
+        "file": "data/2026-06-06/11.00-01.md",
+        "source": "garymarcus.substack.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Anthropic Bantah Minta Jeda Pengembangan AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://substackcdn.com/image/fetch/$s_!sZeR!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F270a450b-e0f8-477e-bc6d-c751ce440f6a_1174x861.jpeg",
+        "thumb_generated": true
+      },
+      "chrome-error://chromewebdata/": {
+        "file": "data/2026-06-06/11.00-02.md",
+        "source": "washingtonpost.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Trump Pertimbangkan Ambil Saham Pemerintah di Perusahaan AI",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.sciencedaily.com/releases/2026/06/260605023357.htm": {
+        "file": "data/2026-06-06/12.00-01.md",
+        "source": "sciencedaily.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Vaksin Universal COVID Buatan AI Lolos Uji Coba Manusia",
+        "thumb_subheadline": null,
+        "thumb_image": "https://www.sciencedaily.com/images/1920/clinical-trial-volunteer-receiving-new-universal-vaccine.webp",
+        "thumb_generated": true
+      },
+      "https://arstechnica.com/tech-policy/2026/06/elon-musk-tries-again-to-escape-ftc-audits-of-x-data-handling/": {
+        "file": "data/2026-06-06/12.00-02.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Elon Musk Coba Lagi Kabur dari Audit FTC soal Penanganan Data X",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2256975350-1152x648-1780599648.jpg",
+        "thumb_generated": true
+      },
+      "https://arstechnica.com/ai/2026/06/how-data-center-operators-are-tackling-their-water-use-problems/": {
+        "file": "data/2026-06-06/12.00-03.md",
+        "source": "arstechnica.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Operator Data Center Mulai Atasi Masalah Pemakaian Air",
+        "thumb_subheadline": null,
+        "thumb_image": "https://cdn.arstechnica.net/wp-content/uploads/2025/08/GettyImages-2229069552-1024x648.jpg",
+        "thumb_generated": true
+      },
+      "https://www.wmur.com/article/new-unh-study-two-thirds-of-granite-staters-say-ai-will-make-country-worse/71510743": {
+        "file": "data/2026-06-06/12.00-05.md",
+        "source": "wmur.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Warga New Hampshire Khawatir AI Bakal Bikin Negara Tambah Parah",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://venturebeat.com/orchestration/microsofts-ai-futurist-explains-how-he-uses-copilot-and-the-real-world-problems-enterprises-are-solving-with-agents": {
+        "file": "data/2026-06-06/13.00-02.md",
+        "source": "venturebeat.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Microsoft Copilot dan AI Agent Makin Canggih buat Enterprise",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/1K4LAVCi8QNMrPhIDXzCoq/09968c485105f82d1305fd60ec7cb9f4/ChatGPT_Image_Jun_5__2026__03_26_52_PM.png?w=300&q=30",
+        "thumb_generated": true
+      },
+      "https://www.fastcompany.com/91552415/ai-is-eliminating-entry-level-jobs-education-needs-to-fill-the-gap": {
+        "file": "data/2026-06-06/13.00-01.md",
+        "source": "fastcompany.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "AI Mulai Gantikan Pekerjaan Entry-Level, Pendidikan Kena Imbas",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit,w_1024/wp-cms-2/2026/06/p-91552415-AI-is-eliminating-entry-level-jobs.jpg",
+        "thumb_generated": true
+      },
+      "https://venturebeat.com/security/meta-ai-support-agent-recovery-email-takeover-soc-audit-grid": {
+        "file": "data/2026-06-06/13.00-04.md",
+        "source": "venturebeat.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "AI Support Agent Meta Bocorin Data Recovery ke Sembarang Orang",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/38WzL1nPF6nI78v2ZkNhqv/24ab8b1e4f85b1a21a123522a39ded31/hero_image.png?w=300&q=30",
+        "thumb_generated": true
+      },
+      "https://venturebeat.com/orchestration/ai-agents-are-learning-on-the-job-just-not-for-your-whole-team": {
+        "file": "data/2026-06-06/13.00-03.md",
+        "source": "venturebeat.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "AI Agent Belajar Sambil Kerja, Tapi Masih Jauh dari Sempurna",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/2ao1SxdtmqSty91VkWtsGQ/090c5e47ced9b77f97e134c0d3fdc488/crimedy7_illustration_of_a_robot_remembering_something_--ar_1_ca076720-6052-42d7-a901-a6539dc5dcfc_1.png?w=300&q=30",
+        "thumb_generated": true
+      },
+      "https://www.ksat.com/business/2026/06/06/donald-trump-bernie-sanders-and-sam-altman-are-all-talking-about-public-ownership-in-ai/": {
+        "file": "data/2026-06-06/14.00-01.md",
+        "source": "ksat.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Trump, Sanders, dan Altman Sepakat Publik Harus Punya Saham di AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://res.cloudinary.com/graham-media-group/image/upload/f_auto/q_auto/c_thumb,w_700/v1/media/gmg/7AKIW7ZLK5EL5CB637Y6EUNIBM.jpg?_a=DATAg1iuZAA0",
+        "thumb_generated": true
+      },
+      "https://www.theguardian.com/global-development/2026/jun/06/african-leader-speech-decolonisation-ai-generated-fake-president-namibia-africa-caribbean": {
+        "file": "data/2026-06-06/14.00-02.md",
+        "source": "theguardian.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Pidato Presiden Palsu Hasil AI Jadi Viral, Publik Tertipu",
+        "thumb_subheadline": null,
+        "thumb_image": "https://i.guim.co.uk/img/media/5fe77c98d7c41d196d1e9296c84f62197ce3e75c/304_0_2132_1706/master/2132.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=b7eab7fe62ddea957b99adaab58e97f6",
+        "thumb_generated": true
+      },
+      "https://venturebeat.com/technology/anthropic-says-80-of-its-new-production-code-is-now-authored-by-claude-how-your-enterprise-can-keep-up": {
+        "file": "data/2026-06-06/14.00-03.md",
+        "source": "venturebeat.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Anthropic: 80% Kode Produksi Baru Ditulis oleh Claude",
+        "thumb_subheadline": null,
+        "thumb_image": "https://images.ctfassets.net/jdtwqhzvc2n1/6TDfdDR3BaglHMnVTBvvmB/ebc812673e673345d4466f174868cc17/ChatGPT_Image_Jun_4__2026__04_47_29_PM.png?w=300&q=30",
+        "thumb_generated": true
+      },
+      "https://venturebeat.com/technology/microsoft-ai-chief-says-company-was-set-free-from-openai-to-pursue-superintelligence": {
+        "file": "data/2026-06-06/14.00-04.md",
+        "source": "venturebeat.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Microsoft Merdeka dari OpenAI demi Kejar Superintelligence",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.nytimes.com/2026/06/05/opinion/graduation-speakers-ai-college-commencement.html": {
+        "file": "data/2026-06-06/14.00-05.md",
+        "source": "nytimes.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Mahasiswa Boikot Pembicara Wisuda yang Terkait AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://static01.nyt.com/images/2026/06/08/multimedia/07jongfast-wvcj/07jongfast-wvcj-facebookJumbo.jpg",
+        "thumb_generated": true
+      },
+      "https://www.goldderby.com/film/2026/haley-joel-osment-ai-artificial-intelligence-steven-spielberg-stanley-kubrick-ending/": {
+        "file": "data/2026-06-06/15.00-01.md",
+        "source": "goldderby.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Perusahaan AI Kebingungan Hadapi Kandidat yang Paham Inner Workings Mereka",
+        "thumb_subheadline": null,
+        "thumb_image": "https://www.goldderby.com/wp-content/uploads/2026/06/MSDAAII_EC018.jpg?w=650",
+        "thumb_generated": true
+      },
+      "https://www.nytimes.com/2026/06/06/nyregion/alex-bores-primary-ai-palantir.html": {
+        "file": "data/2026-06-06/15.00-02.md",
+        "source": "nytimes.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Perusahaan AI Habiskan Miliaran Dolar untuk Pengaruhi Politik",
+        "thumb_subheadline": null,
+        "thumb_image": "https://static01.nyt.com/images/2026/06/06/multimedia/06met-bores-primary-top-01-vtkq/06met-bores-primary-top-01-vtkq-facebookJumbo.jpg",
+        "thumb_generated": true
+      },
+      "https://fortune.com/2026/06/06/teradata-ceo-pause-raises-ai-spend-race-workplace-benefits-ttec/": {
+        "file": "data/2026-06-06/16.00-02.md",
+        "source": "fortune.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Perusahaan Stop Kenaikan Gaji Demi AI, Tapi Gak Tau Mau Diapain",
+        "thumb_subheadline": null,
+        "thumb_image": "https://fortune.com/img-assets/wp-content/uploads/2026/06/GettyImages-1138949157-e1780694795535.jpg?resize=1200,600",
+        "thumb_generated": true
+      },
+      "https://www.reuters.com/video/watch/idRW651806062026RP1/": {
+        "file": "data/2026-06-06/17.00-01.md",
+        "source": "reuters.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Trump Siap Ambil Saham di Perusahaan AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://ajo.prod.reuters.tv/api/v2/img/6a23857ce4b096c1fe7e0a9a?height=1200&amp;width=1200&amp;quality=80&amp;smart=true",
+        "thumb_generated": true
+      },
+      "https://theintercept.com/2026/06/06/anthropic-ai-investor-abu-dhabi-china/": {
+        "file": "data/2026-06-06/17.00-02.md",
+        "source": "theintercept.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Anthropic Peringatkan Bahaya Authoritarian AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://theintercept.com/wp-content/uploads/2026/06/AP23206774285476-e1780528686764.jpg?fit=5000%2C2500&amp;w=1200&amp;h=800",
+        "thumb_generated": true
+      },
+      "https://www.inc.com/joe-procopio/everyone-has-an-ai-side-hustle-now-heres-how-to-build-something-better/91356839": {
+        "file": "data/2026-06-06/17.00-03.md",
+        "source": "inc.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "AI Side Hustle Lagi Booming, Banyak Yang Salah Langkah",
+        "thumb_subheadline": null,
+        "thumb_image": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/06/ai-side-gig-1-inc.jpg",
+        "thumb_generated": true
+      },
+      "https://coloradosun.com/2026/06/06/watch-ai-leaders-discuss-technology-in-every-day-life-at-colorado-sunfest-2026/": {
+        "file": "data/2026-06-06/18.00-01.md",
+        "source": "coloradosun.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Diskusi AI di SunFest 2026, Petinggi AI Bahas Dampak Teknologi",
+        "thumb_subheadline": null,
+        "thumb_image": "https://i0.wp.com/newspack-coloradosun.s3.amazonaws.com/wp-content/uploads/2026/06/20260501-Colwell-CoSun-SunFest-A9C2000-scaled.jpg?fit=2560%2C1707&ssl=1",
+        "thumb_generated": true
+      },
+      "https://coloradosun.com/2026/06/06/watch-ai-leaders-discuss-technology-in-every-day-life-at-colorado-sunfest-2026/#seq=02": {
+        "file": "data/2026-06-06/18.00-02.md",
+        "source": "coloradosun.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Para Bos AI Kumpul di Colorado SunFest Bahas Masa Depan Industri",
+        "thumb_subheadline": null,
+        "thumb_image": "https://i0.wp.com/newspack-coloradosun.s3.amazonaws.com/wp-content/uploads/2026/06/20260501-Colwell-CoSun-SunFest-A9C2000-scaled.jpg?fit=2560%2C1707&ssl=1",
+        "thumb_generated": true
+      },
+      "https://coloradosun.com/2026/06/06/watch-ai-leaders-discuss-technology-in-every-day-life-at-colorado-sunfest-2026/#seq=03": {
+        "file": "data/2026-06-06/18.00-03.md",
+        "source": "coloradosun.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Etika dan Regulasi AI Dibahas Serius di Colorado SunFest 2026",
+        "thumb_subheadline": null,
+        "thumb_image": "https://i0.wp.com/newspack-coloradosun.s3.amazonaws.com/wp-content/uploads/2026/06/20260501-Colwell-CoSun-SunFest-A9C2000-scaled.jpg?fit=2560%2C1707&ssl=1",
+        "thumb_generated": true
+      },
+      "https://coloradosun.com/2026/06/06/watch-ai-leaders-discuss-technology-in-every-day-life-at-colorado-sunfest-2026/#seq=04": {
+        "file": "data/2026-06-06/18.00-04.md",
+        "source": "coloradosun.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Robot dan AI Hardware Mulai Ngaruh ke Kehidupan Sehari-hari",
+        "thumb_subheadline": null,
+        "thumb_image": "https://i0.wp.com/newspack-coloradosun.s3.amazonaws.com/wp-content/uploads/2026/06/20260501-Colwell-CoSun-SunFest-A9C2000-scaled.jpg?fit=2560%2C1707&ssl=1",
+        "thumb_generated": true
+      },
+      "https://coloradosun.com/2026/06/06/watch-ai-leaders-discuss-technology-in-every-day-life-at-colorado-sunfest-2026/#seq=05": {
+        "file": "data/2026-06-06/18.00-05.md",
+        "source": "coloradosun.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "AI Udah Mulai Nulis, Ngegambar, dan Bikin Musik Kayak Manusia",
+        "thumb_subheadline": null,
+        "thumb_image": "https://i0.wp.com/newspack-coloradosun.s3.amazonaws.com/wp-content/uploads/2026/06/20260501-Colwell-CoSun-SunFest-A9C2000-scaled.jpg?fit=2560%2C1707&ssl=1",
+        "thumb_generated": true
+      },
+      "https://www.nytimes.com/2026/06/06/opinion/ai-pope-leo-encyclical.html": {
+        "file": "data/2026-06-06/19.03-03.md",
+        "source": "nytimes.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "Kapan Sebenarnya Gak Etis Pake AI?",
+        "thumb_subheadline": null,
+        "thumb_image": "https://static01.nyt.com/images/2026/06/06/multimedia/06douthat-bmkg/06douthat-bmkg-facebookJumbo.jpg",
+        "thumb_generated": true
+      },
+      "https://www.nytimes.com/2026/06/06/business/dealbook/ai-digital-twin.html": {
+        "file": "data/2026-06-06/20.01-02.md",
+        "source": "nytimes.com",
+        "first_seen": "2026-06-06",
+        "thumb_headline": "CEO Perusahaan Besar Mulai Bikin AI Digital Twin buat Ngobrol Sama Tim",
+        "thumb_subheadline": null,
+        "thumb_image": "https://static01.nyt.com/images/2026/06/08/business/08db-ceo-bot/08db-ceo-bot-facebookJumbo.jpg",
+        "thumb_generated": true
       }
     },
     "source_headlines": {
@@ -4244,7 +4685,6 @@
         "hpe stock soars record backlog booming ai server business"
       ],
       "techcrunch.com": [
-        "microsoft launches scout openclaw inspired personal assistant",
         "microsoft offers devs better way control ai agent behavior",
         "amazon faces class action lawsuit ring facial recognition feature",
         "microsoft launches scout openclaw inspired personal assistant",
@@ -4283,7 +4723,8 @@
         "interesting startups right now want get phone",
         "interesting startups right now want get phone",
         "google pay spacex 920m per month compute",
-        "together tech wave might intriguing startup bet 2026"
+        "together tech wave might intriguing startup bet 2026",
+        "startup battlefield 200 applications officially close days"
       ],
       "www.tomshardware.com": [
         "china resmi masukin chip ai dalam negeri ke daftar belanja pemerintah bye bye nvidia",
@@ -4295,12 +4736,6 @@
         "spotify resmi masuk era remix ai karya fan bisa jadi resmi"
       ],
       "arstechnica.com": [
-        "kebencian ke ai makin parah fbi dan dhs keluarkan peringatan resmi soal ekstremisme antiteknologi yang bisa berujung kekerasan",
-        "kerentanan kritis ditemukan di package open source yang dipake jutaan ai agent bisa kendalikan robot dari jarak jauh",
-        "youtube keluarkan aturan baru semua video yang dibikin ai bakal ditag otomatis pake sistem deteksi internal kreator gak bisa manipulasi",
-        "ceo ai nolak hadir trump batalkan tanda tangan executive order safety testing di menit terakhir",
-        "ai mencuri kutipan palsu ke dalam buku penulis tapi penulisnya nggak mau berhenti pake ai",
-        "bocoran detail gimana model internal openai akhirnya ngebuktiin erds unit distance conjecture yang bikin matematician tercengang",
         "nvidia rtx spark comes windows pcs arm cpu rtx gpu unified memory",
         "intel upcoming chip cheaper run cooler nvidia amd options",
         "florida sues openai sam altman after multiple chatgpt linked murders",
@@ -4334,7 +4769,13 @@
         "trump plan test ai models problem us security teams gutted doge",
         "inside meta attempts play catch ai",
         "google ordered put clearer links ai search let uk publishers opt",
-        "fitbit air good wearable weighed chatty ai coach"
+        "fitbit air good wearable weighed chatty ai coach",
+        "500 rejects spacex blocking entry openai anthropic",
+        "pissed lot people giant data center plan cut 50 amid protests",
+        "skeptic guide humanoid robots going viral internet",
+        "llms best resisting russian propaganda",
+        "elon musk tries again escape ftc audits data handling",
+        "data center operators tackling water use problems"
       ],
       "www.businessinsider.com": [
         "anthropic sekarang startup ai paling berharga di dunia openai tumbang"
@@ -4405,7 +4846,10 @@
         "godfather of ai peringatkan manusia soal kecerdasan yang melampaui",
         "new ai powered computer worm prove stuff cybersecurity nightmares",
         "anthropic warns ai soon build itself without human involvement urges global pause development",
-        "anthropic warns ai soon build itself without human involvement"
+        "anthropic warns ai soon build itself without human involvement",
+        "tech stocks lead market bloodbath fears fed rate hikes add worries ai fueled chip boom petering",
+        "maga hates ai trump agrees bernie might time partial government ownership",
+        "company deny raises spend ai idea re going need workforce"
       ],
       "www.wsj.com": [
         "perusahaan di as mulai menjatah ai biaya langganan melonjak dompet menjerit"
@@ -4435,7 +4879,12 @@
         "enterprise ai agents keep creating data silos microsoft build answer microsoft iq rayfin",
         "microsoft debuts surface rtx spark dev box run large ai models without cloud costs",
         "microsoft launches mxc os level sandbox ai agents openai nvidia already board",
-        "openai codex update lets agents build interactive enterprise workspaces via sites role specific plugins"
+        "openai codex update lets agents build interactive enterprise workspaces via sites role specific plugins",
+        "microsoft ai futurist explains uses copilot real world problems enterprises solving agents",
+        "meta ai support agent bound recovery emails anyone asked soc never saw alert",
+        "ai agents learning job whole team",
+        "anthropic says 80 new production code now authored claude enterprise keep",
+        "microsoft ai chief says company set free openai pursue superintelligence"
       ],
       "www.kxan.com": [
         "anggota kongres as usul pajak ai hasilnya buat training ulang pekerja"
@@ -4598,7 +5047,9 @@
         "nvidia clears memory big three vera rubin hbm4 supply",
         "anthropic calls ai pause button let humans take stock",
         "expect apple ai siri ios 27 launch wwdc",
-        "us exploring government partnerships ai firms trump says"
+        "us exploring government partnerships ai firms trump says",
+        "apollo wraps 35 billion debt buy ai chips anthropic",
+        "trump signs ai memo addressing issues anthropic pentagon feud"
       ],
       "cnbc.com": [
         "palo alto networks tops earnings as ai fuels cybersecurity urgency",
@@ -4640,11 +5091,13 @@
       "theguardian.com": [
         "labour mp sues elon musk ai company fake sexualised images",
         "chip stocks drop ai rally shows signs fatigue spacex huge ipo looms happened",
-        "anthropic says world should option pause ai"
+        "anthropic says world should option pause ai",
+        "surprise ai faked presidential speech condemning foreign exploitation went viral world suffering leadership vacuum"
       ],
       "washingtonpost.com": [
         "opinion government ownership path poverty",
-        "inside trump backed push bring ai doctors american medicine"
+        "inside trump backed push bring ai doctors american medicine",
+        "trump says considering government stake top ai companies"
       ],
       "unu.edu": [
         "environmental cost artificial intelligence carbon water land footprints"
@@ -4655,7 +5108,9 @@
         "us house lawmakers release draft bill regulate ai",
         "japan end ai colony falls behind digital minister warns",
         "drone crashes severed fingers 13 billion silicon valley military startup",
-        "bitcoin star fades investors flock lustre ai megacap ipos"
+        "bitcoin star fades investors flock lustre ai megacap ipos",
+        "spacex lands google ai compute deal anthropic pact ahead ipo",
+        "trump says team look us taking stakes ai firms"
       ],
       "scientificamerican.com": [
         "scientists built powerful ai computer worm learns spreads",
@@ -4663,7 +5118,9 @@
       ],
       "foxbusiness.com": [
         "memory chips emerging one ai hottest trades",
-        "gordon chang anti ai protests entirely organic"
+        "gordon chang anti ai protests entirely organic",
+        "former meta cto says running ai sea lifetime opportunity",
+        "mcdonald testing ai drive thru order taking system called archiq five locations across country"
       ],
       "thefp.com": [
         "built ai company ai won kill coding jobs"
@@ -4707,14 +5164,21 @@
         "opinion trump finally facing reality",
         "ambitious new museum feel art feels right back",
         "spelman college names ayanna howard expert president",
-        "anthropic call nonproliferation"
+        "anthropic call nonproliferation",
+        "cow milking robots weed zapping lasers farmers embracing",
+        "spacex 30 billion deal provide google computing power",
+        "opinion wonder grads booing commencement speakers",
+        "companies don know alex bores",
+        "opinion wrong use",
+        "sorry available talk"
       ],
       "warontherocks.com": [
         "forged knife fight china brutal domestic ai competition",
         "pentagon ai edge being distilled away"
       ],
       "trefis.com": [
-        "broadcom drowning ai orders aren investors impressed"
+        "broadcom drowning ai orders aren investors impressed",
+        "seriously should investors take spacex ai narrative"
       ],
       "news.mit.edu": [
         "nsf renews support mit led ai physics institute expanding new model discovery"
@@ -4753,7 +5217,8 @@
       "wsj.com": [
         "officials discuss taking financial stakes ai industry",
         "anthropic urges global pause ai development flags self improvement risk",
-        "metric cfos struggle track ai usage"
+        "metric cfos struggle track ai usage",
+        "opinion road ai state socialism"
       ],
       "notus.org": [
         "senior officials eye government shares ai giants"
@@ -4772,7 +5237,45 @@
         "ai data centers squeeze memory supply coalition warns"
       ],
       "inc.com": [
-        "ai now expensive laid human labor replacing"
+        "ai now expensive laid human labor replacing",
+        "terrible year go public massive ai startup resisting ipo rush",
+        "everyone ai side hustle now build something better"
+      ],
+      "nbcbayarea.com": [
+        "san jose state top class comes ai"
+      ],
+      "news3lv.com": [
+        "four five gen students say ai make learning harder data shows"
+      ],
+      "wxii12.com": [
+        "atkins high school students create ai tool diagnose parkinson disease"
+      ],
+      "sakana.ai": [
+        "introducing sakana ai recursive self improvement rsi lab"
+      ],
+      "garymarcus.substack.com": [
+        "anthropic call pause ai development"
+      ],
+      "sciencedaily.com": [
+        "ai designed universal coronavirus vaccine passes first human trial"
+      ],
+      "wmur.com": [
+        "new unh study two thirds granite staters say ai make country worse"
+      ],
+      "fastcompany.com": [
+        "ai eliminating entry level jobs education needs fill gap"
+      ],
+      "ksat.com": [
+        "donald trump bernie sanders sam altman talking public ownership ai"
+      ],
+      "goldderby.com": [
+        "haley joel osment 25th anniversary artificial intelligence disappointed reality cheesier"
+      ],
+      "theintercept.com": [
+        "anthropic says must stop authoritarian ai authoritarian investors"
+      ],
+      "coloradosun.com": [
+        "watch ai leaders discuss technology day life colorado sunfest 2026"
       ]
     },
     "cross_topics": [
@@ -6329,6 +6832,106 @@
       {
         "who": "Alphabet",
         "what": "’s Massive $920 Million Monthly AI Deal With SpaceX",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Meta",
+        "what": "CTO says running AI at sea is a 'once-in-a-lifetime opportunity'",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "ARM",
+        "what": "ers Are Embracing A.I.",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Anthropic",
+        "what": "Apollo Wraps Up $35 Billion Debt to Buy AI Chips for Anthropic",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Anthropic",
+        "what": "Pentagon Feud",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Google",
+        "what": "With A.I. Computing Power",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Anthropic",
+        "what": "pact ahead of IPO",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "SpaceX",
+        "what": "s AI Narrative?",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Trump",
+        "what": "agrees with Bernie it might be time for partial government ownership",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Anthropic",
+        "what": "S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Anthropic",
+        "what": "did not call for a pause on AI development",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Trump",
+        "what": "says he's considering government stake in top AI companies",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Elon Musk",
+        "what": "tries again to escape FTC audits of X data handling",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Microsoft",
+        "what": "s AI Futurist explains how he uses Copilot — and the real-world problems enterpr",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Meta",
+        "what": "s AI support agent bound recovery emails for anyone who asked. Your SOC never sa",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Bernie Sanders",
+        "what": "and Sam Altman are all talking about public ownership in AI",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Anthropic",
+        "what": "says 80% of its new production code is now authored by Claude — how your enterpr",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Microsoft",
+        "what": "AI chief says company was “set free” from OpenAI to pursue superintelligence",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Intel",
+        "what": "ligence': 'I'm disappointed our reality is cheesier'",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Trump",
+        "what": "says his team will 'look into' US taking stakes in AI firms",
+        "first_seen": "2026-06-06"
+      },
+      {
+        "who": "Anthropic",
+        "what": "Says We Must Stop Authoritarian AI. But What About Its Authoritarian Investors?",
         "first_seen": "2026-06-06"
       }
     ],
