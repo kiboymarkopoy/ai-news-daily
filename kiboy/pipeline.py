@@ -38,6 +38,80 @@ logger = logging.getLogger(__name__)
 
 
 # ---------------------------------------------------------------------------
+# Article prioritisation (image-quality aware)
+# ---------------------------------------------------------------------------
+
+# AI/tech relevance keywords — used to keep the feed on-topic.
+AI_KEYWORDS: tuple[str, ...] = (
+    "ai", "artificial intelligence", "machine learning", "deep learning",
+    "llm", "large language model", "gpt", "openai", "anthropic", "claude",
+    "gemini", "gemma", "mistral", "llama", "deepseek", "qwen",
+    "chatbot", "copilot", "codex", "agent",
+    "robot", "robotics", "humanoid",
+    "nvidia", "gpu", "chip", "semiconductor", "data center",
+    "startup", "funding", "investment",
+    "regulation", "policy", "safety", "ethics",
+    "microsoft", "google", "meta", "apple", "amazon", "aws",
+    "perplexity", "xai", "grok",
+    "neural", "transformer", "diffusion", "generative",
+    "autonomous", "self-driving",
+    "cyber", "security", "compute",
+    "silicon", "processor", "quantum",
+    "software", "app", "platform", "enterprise",
+    "blockchain", "crypto", "web3",
+    "cloud", "saas", "api",
+)
+
+
+def is_ai_related(title: str) -> bool:
+    """True if *title* contains any AI/tech keyword (case-insensitive)."""
+    low = title.lower()
+    return any(kw in low for kw in AI_KEYWORDS)
+
+
+def prioritize_articles(articles: list[dict]) -> list[dict]:
+    """Order articles so the cheapest, highest-quality images come first.
+
+    The production bottleneck (see health.log) was that Google News articles
+    are fetched first, so the enrichment pool (sliced to the first N) was
+    dominated by GN redirect URLs needing slow, failure-prone Playwright
+    resolution — while RSS articles (TechCrunch, ArsTechnica) that already
+    carry a ``media:content`` image were pushed past the slice and dropped.
+
+    This reorders the list (stable within each tier) by a 6-bucket key,
+    BEFORE any pool slicing, so the pool fills with image-ready RSS articles:
+
+      0. AI  + real URL + already has image (RSS media:content) — free, instant
+      1. AI  + real URL, no image yet       (cheap og:image scrape via curl_cffi)
+      2. AI  + GN URL                        (expensive Playwright resolve)
+      3. non-AI + real URL + has image
+      4. non-AI + real URL, no image
+      5. non-AI + GN URL                     (last resort)
+
+    Does not mutate inputs; returns a new list.
+    """
+    from kiboy.imagescraper import is_gn_url
+
+    def rank(article: dict) -> int:
+        ai = is_ai_related(article.get("title", ""))
+        gn = is_gn_url(article.get("url", ""))
+        has_img = bool(article.get("image_url"))
+        if ai and not gn and has_img:
+            return 0
+        if ai and not gn:
+            return 1
+        if ai and gn:
+            return 2
+        if not ai and not gn and has_img:
+            return 3
+        if not ai and not gn:
+            return 4
+        return 5
+
+    return sorted(articles, key=rank)
+
+
+# ---------------------------------------------------------------------------
 # Result container
 # ---------------------------------------------------------------------------
 
@@ -246,82 +320,47 @@ def _run_cron_body(config, state, date_str, time_str, max_articles, enrich, reco
     recorder.set("duplicates", duplicates)
     recorder.event("INFO", "dedup", f"{len(new_articles)} new / {fetched} fetched")
 
-    # Stage 2.5: Enrich articles without images via OG image scraping
-    # Run enrichment on a larger pool (3x) so we can pick the best
+    # Stage 2.5: Enrich articles without images via OG image scraping.
+    #
+    # Prioritise BEFORE slicing the pool so image-ready RSS articles (which
+    # carry media:content) fill the pool instead of being pushed past the
+    # slice by Google News URLs fetched earlier. This is the core fix for the
+    # production "img_ok=1, img_fail=14, all gn_unresolved" pattern.
     enriched_count = 0
     if enrich:
-        from kiboy.imagescraper import enrich_articles
-        pool = new_articles[:max_articles * 3]
+        from kiboy.imagescraper import enrich_articles, is_gn_url
+
+        # Reorder by image-quality tier, THEN take a generous pool.
+        ranked = prioritize_articles(new_articles)
+        pool = ranked[: max(max_articles * 4, 20)]
         pool = enrich_articles(pool, timeout=8, max_scrapes=max_articles)
-        # Sort: articles WITH images first
-        pool.sort(key=lambda a: 0 if a.get("image_url") else 1)
 
-        # Topic filter: pastikan artikel relevan dengan AI/tech
-        AI_KEYWORDS = [
-            "ai", "artificial intelligence", "machine learning", "deep learning",
-            "llm", "large language model", "gpt", "openai", "anthropic", "claude",
-            "gemini", "gemma", "mistral", "llama", "deepseek", "qwen",
-            "chatbot", "copilot", "codex", "agent",
-            "robot", "robotics", "humanoid",
-            "nvidia", "gpu", "chip", "semiconductor", "data center",
-            "startup", "funding", "investment",
-            "regulation", "policy", "safety", "ethics",
-            "nvidia", "microsoft", "google", "meta", "apple", "amazon", "aws",
-            "openai", "perplexity", "xai", "grok",
-            "neural", "transformer", "diffusion", "generative",
-            "autonomous", "self-driving",
-            "cyber", "security", "compute",
-            "silicon", "processor", "quantum",
-            "software", "app", "platform", "enterprise",
-            "blockchain", "crypto", "web3",
-            "cloud", "saas", "api",
-        ]
+        # Re-rank after enrichment (some articles just gained an image_url).
+        pool = prioritize_articles(pool)
 
-        def is_ai_related(title: str) -> bool:
-            title_lower = title.lower()
-            return any(kw in title_lower for kw in AI_KEYWORDS)
-
-        # Filter non-AI articles (especially from general feeds)
-        ai_pool = [a for a in pool if is_ai_related(a.get("title", ""))]
-        non_ai = [a for a in pool if not is_ai_related(a.get("title", ""))]
-        if non_ai:
-            print(f"  🔍 Filtered {len(non_ai)} non-AI articles: {[a['title'][:40] for a in non_ai[:3]]}")
-            pool = ai_pool + non_ai  # push non-AI to the back
-
-        # GN URL filter: push unresolved GN URLs to the VERY back
-        # Articles with real URLs selalu lebih prioritas
+        # Exclude still-unresolved GN URLs from the final selection — they have
+        # no usable real URL and would only yield a gradient thumbnail anyway.
         has_real_url = [a for a in pool if not is_gn_url(a.get("url", ""))]
-        gn_urls = [a for a in pool if is_gn_url(a.get("url", ""))]
-        if gn_urls:
-            print(f"  🔗 {len(gn_urls)} articles still have GN redirect URLs — excluded from selection")
-        pool = has_real_url
+        gn_unresolved = len(pool) - len(has_real_url)
+        if gn_unresolved:
+            logger.info("%d articles still on GN redirect URLs — excluded", gn_unresolved)
 
-        # Prioritas 1: Artikel AI dengan gambar
-        ai_with_img = [a for a in pool if a.get("image_url") and is_ai_related(a.get("title", ""))]
-        # Prioritas 2: Artikel AI tanpa gambar
-        ai_no_img = [a for a in pool if not a.get("image_url") and is_ai_related(a.get("title", ""))]
-        # Prioritas 3: Non-AI (last resort)
-        non_ai_pool = [a for a in pool if not is_ai_related(a.get("title", ""))]
+        # prioritize_articles already ordered AI+image first, so the top N is
+        # the best available selection.
+        selected = has_real_url[:max_articles]
 
-        if len(ai_with_img) >= max_articles:
-            new_articles = ai_with_img[:max_articles]
-        else:
-            # Isi dulu dengan yang ada gambar, sisanya dari AI tanpa gambar
-            new_articles = ai_with_img[:]
-            need = max_articles - len(ai_with_img)
-            fill = ai_no_img[:need]
-            new_articles.extend(fill)
-            need = max_articles - len(new_articles)
+        # Backfill from unresolved GN pool only if we couldn't fill the slots.
+        if len(selected) < max_articles:
+            gn_pool = [a for a in pool if is_gn_url(a.get("url", ""))]
+            selected.extend(gn_pool[: max_articles - len(selected)])
 
-            # Last resort: ambil non-AI buat genapin
-            if need > 0:
-                new_articles.extend(non_ai_pool[:need])
-
-            print(f"  ⚠️  Only {len(ai_with_img)}/{max_articles} articles have images.")
-            print(f"  📸 Available pool: {len(ai_no_img)} AI w/o img + {len(non_ai_pool)} non-AI")
-            print(f"  ✅ Selected: {len(new_articles)} articles ({len(ai_with_img)} with images)")
-
+        new_articles = selected
         enriched_count = sum(1 for a in new_articles if a.get("image_url"))
+        with_img = enriched_count
+        logger.info(
+            "Selected %d articles (%d with images)", len(new_articles), with_img,
+        )
+        recorder.set("img_selected_with_image", with_img)
     else:
         # Without enrichment, still take top N
         new_articles = new_articles[:max_articles]

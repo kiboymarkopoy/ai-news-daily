@@ -502,46 +502,43 @@ def enrich_articles(
     articles: list[dict],
     timeout: int = 8,
     max_scrapes: int = 5,
+    max_gn_resolve: int = 20,
 ) -> list[dict]:
     """Enrich article dicts with OG images and real URLs.
 
-    Processing order:
-    1. First pass: direct URLs (stdlib, fast) — up to ``max_scrapes``
-    2. Second pass: GN URLs (Playwright, slower) — up to 3
+    Processing order (reworked — direct URLs first):
+    1. **Direct URLs** (stdlib/curl_cffi, fast) — scrape og:image for any
+       real-URL article missing one. These are cheap and reliable.
+    2. **GN URLs** (Playwright, slow) — resolve only as many as needed,
+       capped by ``max_gn_resolve``. Skipped entirely when direct URLs
+       already yielded enough images, saving ~10s of Playwright per URL.
+
+    The previous version resolved up to 20 GN URLs *first*, burning Playwright
+    time on failure-prone redirects before even looking at image-ready RSS
+    articles. Callers (pipeline) now pre-rank so the best articles lead, and
+    GN resolution is best-effort rather than the backbone.
 
     Modifies the list **in place** and also returns it for chaining.
 
     Args:
-        articles: List of article dicts from the pipeline dedup stage.
+        articles: List of article dicts (pre-ranked by the caller).
         timeout: Timeout per URL resolution/scrape (default 8s).
-        max_scrapes: Max URLs to process (rate-limit safeguard).
+        max_scrapes: Max direct-URL og:image scrapes (rate-limit safeguard).
+        max_gn_resolve: Max GN redirect resolutions via Playwright. Set to 0
+            to skip GN resolution entirely.
 
     Returns:
         The same list with ``image_url`` and ``resolved_url`` populated.
     """
-    processed = 0
-
-    # ══ Phase 0: Resolve GN URLs FIRST (Playwright-based, slow) ══
-    # Semua GN URL harus di-resolve ke real URL sebelum scraping gambar.
-    # Ini prioritas karena akan melambat jika dilakukan terakhir.
     from kiboy.health import get_recorder
     recorder = get_recorder()
 
-    gn_resolved = 0
-    for article in articles:
-        if gn_resolved >= 20:  # Max 20 GN resolutions per run
-            break
-        url = article.get("url", "")
-        if not is_gn_url(url):
-            continue
-        resolve_and_enrich(article, timeout=timeout)
-        gn_resolved += 1
-        # If resolution left it still a GN URL with no image, it's unusable.
-        if is_gn_url(article.get("url", "")) and not article.get("image_url"):
-            recorder.image(url, ok=False, reason="gn_unresolved")
+    processed = 0
 
-    # ══ Phase 1: Direct URLs (fast, stdlib-based) ══
-    # Scrape OG image only — URL sudah real, tidak perlu resolve
+    # ══ Phase 1: Direct URLs FIRST (fast, curl_cffi) ══
+    # Cheap and reliable: RSS articles often already carry an image, and
+    # og:image scraping over curl_cffi is fast. Do this before touching the
+    # slow Playwright GN resolver.
     for article in articles:
         if processed >= max_scrapes:
             break
@@ -563,8 +560,6 @@ def enrich_articles(
 
         og, reason = _scrape_og_image_with_reason(url, timeout=min(timeout, 5))
         processed += 1
-        # Validate before accepting — never store an unusable/blocked image
-        # (this is what let the Akamai logo SVG through previously).
         if og and _is_usable_image_url(og) and validate_image_url(og):
             article["image_url"] = og
             recorder.image(url, ok=True)
@@ -573,4 +568,26 @@ def enrich_articles(
                 reason = "validation_failed"
             recorder.image(url, ok=False, reason=reason or "no_og_image")
 
+    # ══ Phase 2: GN URLs — best-effort, only if we still need images ══
+    # Count how many articles already have a usable image. Only resolve enough
+    # GN URLs to (try to) top up toward max_scrapes worth of images.
+    images_have = sum(1 for a in articles if a.get("image_url"))
+    needed = max(0, max_scrapes - images_have)
+    budget = min(max_gn_resolve, needed) if needed else 0
+
+    if budget:
+        gn_resolved = 0
+        for article in articles:
+            if gn_resolved >= budget:
+                break
+            url = article.get("url", "")
+            if not is_gn_url(url):
+                continue
+            resolve_and_enrich(article, timeout=timeout)
+            gn_resolved += 1
+            # If resolution left it still a GN URL with no image, it's unusable.
+            if is_gn_url(article.get("url", "")) and not article.get("image_url"):
+                recorder.image(url, ok=False, reason="gn_unresolved")
+
     return articles
+
