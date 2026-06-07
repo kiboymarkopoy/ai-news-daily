@@ -47,9 +47,8 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 		try {
 			const pngBytes = Uint8Array.from(atob(b64), (c) => c.charCodeAt(0));
 			const key = `${payload.date}/${(payload.id as string).split('_')[1]}.png`;
-			// Public base URL — uses custom domain if set, else r2.dev.
-			// TODO: replace with real R2 public URL after CF setup.
-			const baseUrl = `https://pub-REPLACE.r2.dev`;
+			// Public R2 base URL (enabled via Cloudflare Dashboard R2 → public access).
+			const baseUrl = `https://pub-f5ba05a8378a4af0a2a80ffb8996de2c.r2.dev`;
 			thumbnailR2Url = await uploadThumbnail(r2, key, pngBytes, baseUrl);
 		} catch (err) {
 			console.error('R2 upload failed:', err);
