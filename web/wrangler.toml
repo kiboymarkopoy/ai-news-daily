@@ -6,7 +6,7 @@ pages_build_output_dir = ".svelte-kit/cloudflare"
 [[d1_databases]]
 binding = "DB"
 database_name = "kimedia-db"
-database_id = "REPLACE_WITH_D1_DATABASE_ID"
+database_id = "8598cc0c-db90-4e0e-936a-bb87f4720f88"
 
 [[r2_buckets]]
 binding = "R2"
