@@ -277,6 +277,26 @@ def cmd_register(args: argparse.Namespace) -> None:
           f" ({skipped} skipped)")
 
 
+def cmd_publish(args: argparse.Namespace) -> None:
+    """Publish finished articles to the web dashboard (D1 + R2)."""
+    from kiboy.publisher import publish_pending
+    from kiboy.config import load_state, save_state
+
+    state = load_state()
+    dry_run = getattr(args, "dry_run", False)
+    force_regen = getattr(args, "regen", False)
+
+    summary = publish_pending(state, dry_run=dry_run, force_regen=force_regen)
+    save_state(state)
+
+    mode = "(DRY-RUN) " if dry_run else ""
+    print(f"\n  {mode}Publish complete:")
+    print(f"    Total    : {summary['total']}")
+    print(f"    Published: {summary['published']}")
+    print(f"    Skipped  : {summary['skipped']}")
+    print(f"    Errors   : {summary['errors']}")
+
+
 def cmd_thumbnail(args: argparse.Namespace) -> None:
     """Generate thumbnails."""
     from kiboy.thumbnail import main as thumb_main
@@ -456,6 +476,24 @@ def main() -> None:
     sp_thumb.add_argument("--regen", action="store_true", help="Regenerate all")
     sp_thumb.set_defaults(func=cmd_thumbnail)
 
+    # publish  ── web dashboard ingest
+    sp_pub = subparsers.add_parser(
+        "publish", help="Publish articles to web dashboard (ingest → D1 + R2)",
+    )
+    sp_pub.add_argument(
+        "--pending", action="store_true",
+        help="Publish all articles with thumb_generated=True but not yet published_web",
+    )
+    sp_pub.add_argument(
+        "--regen", action="store_true",
+        help="Re-publish articles already marked published_web",
+    )
+    sp_pub.add_argument(
+        "--dry-run", action="store_true",
+        help="Validate + build payload, skip POST (writes to .runtime/)",
+    )
+    sp_pub.set_defaults(func=cmd_publish)
+
     # migrate
     sp_migrate = subparsers.add_parser(
         "migrate", help="Migrate from old factory.json",
@@ -474,7 +512,7 @@ def main() -> None:
 
     # Commands that mutate state.json must run under the pipeline lock so an
     # overrunning cron cycle can't race a fresh one and corrupt state.
-    _STATE_MUTATING = {"pipeline", "register", "thumbnail", "migrate"}
+    _STATE_MUTATING = {"pipeline", "register", "thumbnail", "migrate", "publish"}
     if args.command in _STATE_MUTATING:
         try:
             with pipeline_lock():
