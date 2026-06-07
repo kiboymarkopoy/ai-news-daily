@@ -697,69 +697,59 @@ def generate_thumbnail(
     # ALL CAPS transform — matches REFERENSI media aesthetic
     headline = headline.upper()
 
-    font_size = default_size
     headline_font_name = hl_cfg.get("font", "Montserrat-Bold")
-    lines: list[str] = []
 
-    # Parse green-accent markup (**word**) into per-word tokens. The plain
-    # marker-free string drives the existing measuring / fitting code.
+    # ── Fit-to-zone sizing ───────────────────────────────────────────────
+    # The dark text band is a FIXED zone (top = y_start_pct, bottom margin).
+    # We pick the LARGEST font whose wrapped lines fit inside that fixed zone,
+    # so short headlines render big and long ones shrink — never overflowing.
+    bottom_margin = 60
+    zone_top = int(H * y_start_pct)
+    zone_bottom = H - bottom_margin
+    zone_h = zone_bottom - zone_top
+
+    fit_max = sizes.get("fit_max", sizes.get("default", 96))
+    fit_min = sizes.get("fit_min", 30)
+    fit_max_lines = hl_cfg.get("max_lines", 11)
+
+    # Parse green-accent markup once. Plain headlines yield all-non-accent
+    # tokens, so a single token-based path handles both cases.
     accent_tokens_all = tokenize_accents(headline)
     has_accent = any(accent for _w, accent in accent_tokens_all)
-    token_lines: list[list[tuple[str, bool]]] = []
 
-    if has_accent:
-        # ── Accent path: token-based wrap preserves per-word color ───────
-        while font_size >= min_size:
-            ft = _get_font(headline_font_name, font_size, config)
-            token_lines = wrap_accent_tokens(accent_tokens_all, max_text_w, ft, draw_tmp)
-            if len(token_lines) <= max_lines:
-                break
-            font_size -= 2
+    def _wrapped_at(size: int) -> list[list[tuple[str, bool]]]:
+        ft_local = _get_font(headline_font_name, size, config)
+        return wrap_accent_tokens(accent_tokens_all, max_text_w, ft_local, draw_tmp)
 
-        font_size = max(min_size, font_size)
-        ft = _get_font(headline_font_name, font_size, config)
-        token_lines = wrap_accent_tokens(accent_tokens_all, max_text_w, ft, draw_tmp)
-        if len(token_lines) > max_lines:
-            token_lines = token_lines[:max_lines]
+    font_size = fit_min
+    token_lines: list[list[tuple[str, bool]]] = _wrapped_at(fit_min)
+    # Search downward from the largest size for the first that fits the zone.
+    for size in range(fit_max, fit_min - 1, -2):
+        candidate = _wrapped_at(size)
+        total_h = len(candidate) * int(size * line_spacing)
+        if len(candidate) <= fit_max_lines and total_h <= zone_h:
+            font_size = size
+            token_lines = candidate
+            break
 
-        # Plain string mirror for downstream measuring / vertical layout.
-        lines = [" ".join(word for word, _ in tl) for tl in token_lines]
-    else:
-        # ── Plain path: unchanged string wrap + smart-fit (run-on safe) ──
-        while font_size >= min_size:
-            ft = _get_font(headline_font_name, font_size, config)
-            lines = auto_wrap_text(headline, max_text_w, ft, draw_tmp)
-            if len(lines) <= max_lines:
-                break
-            font_size -= 2
+    ft = _get_font(headline_font_name, font_size, config)
 
-        font_size = max(min_size, font_size)
-        ft = _get_font(headline_font_name, font_size, config)
+    # Hard safety cap: never render more lines than fit the zone at this size.
+    max_fit_lines = max(1, zone_h // int(font_size * line_spacing))
+    if len(token_lines) > min(fit_max_lines, max_fit_lines):
+        token_lines = token_lines[: min(fit_max_lines, max_fit_lines)]
 
-        # Re-wrap at final size (may still exceed max_lines)
-        lines = auto_wrap_text(headline, max_text_w, ft, draw_tmp)
-        if len(lines) > max_lines:
-            lines = lines[:max_lines]
+    # Plain string mirror for downstream measuring / contrast sampling.
+    lines = [" ".join(word for word, _ in tl) for tl in token_lines]
 
     if not lines:
         logger.warning("No valid text lines — skipping")
         return None
 
-    if not has_accent:
-        # Smart-fit any lines that still overflow
-        fitted_lines: list[str] = []
-        shortened_count = 0
-        for text in lines:
-            fitted, shortened = smart_fit_line(text, max_text_w, ft, draw_tmp)
-            fitted_lines.append(fitted)
-            if shortened:
-                shortened_count += 1
-        lines = fitted_lines
-
-        if shortened_count:
-            logger.info(
-                "%d/%d headline line(s) shortened to fit", shortened_count, len(lines),
-            )
+    logger.info(
+        "Headline fit: %dpx, %d lines (zone=%dpx, max_lines=%d)",
+        font_size, len(lines), zone_h, fit_max_lines,
+    )
 
     # ── Compute subheadline ──────────────────────────────────────────────
     sub_lines: list[str] = []
