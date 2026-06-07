@@ -23,7 +23,7 @@ Ini ngelakuin 4 stage:
 
 **FETCH**
 • Kode: kiboy/fetcher.py
-• Fungsi: RSS dari sumber di config.json (saat ini 5 feed: TechCrunch, ArsTechnica, The Verge, VentureBeat, Google News) + 5 query Google News tambahan (AI funding, regulation, robotics, model release). Via urllib.request. Total ~100-125 artikel mentah.
+• Fungsi: RSS dari sumber di config.json (saat ini 5 feed: TechCrunch, ArsTechnica, Wired AI, VentureBeat, Google News) + 5 query Google News tambahan (AI funding, regulation, robotics, model release). Via urllib.request. Total ~100-135 artikel mentah.
 
 **DEDUP**
 • Kode: kiboy/dedup.py
@@ -31,7 +31,7 @@ Ini ngelakuin 4 stage:
 
 **ENRICH**
 • Kode: kiboy/imagescraper.py
-• Fungsi: Resolve GN redirect (max 20/run), scrape OG image pake curl_cffi anti-bot (kiboy/httpclient.py). Kalo curl_cffi gagal → fallback Playwright. Kalo semua gagal → image_url: ""
+• Fungsi: Resolve GN redirect via Playwright (wait_until="domcontentloaded"), cache keberhasilan aja. scrape OG image pake curl_cffi anti-bot (kiboy/httpclient.py). Kalo curl_cffi gagal → fallback Playwright. Kalo semua gagal → image_url: ""
 
 **WRITE**
 • Kode: Output ke .runtime/kiboy_new_articles.json
@@ -250,7 +250,7 @@ Setiap cron run nulis ke `.runtime/` (gitignored, ikut KIBOY_ROOT):
 - `bot_block` → Akamai/Cloudflare block (Telegraph, dll)
 - `blocked_domain` → domain di blocklist (bloomberg, wsj, ft)
 - `no_og_image` → halaman oke tapi gak ada og:image
-- `gn_unresolved` → GN redirect gagal di-resolve
+| `gn_unresolved` → GN redirect gagal di-resolve (URL expired/bad request)
 - `unreachable` → timeout/network error
 - `validation_failed` → URL gak bisa didownload
 

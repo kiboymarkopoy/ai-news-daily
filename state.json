@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-06-07T00:05:26.529730+07:00",
-    "total_articles": 513
+    "updated_at": "2026-06-07T16:46:57.952988+07:00",
+    "total_articles": 519
   },
   "dedup": {
     "articles": {
@@ -4642,6 +4642,60 @@
         "thumb_subheadline": null,
         "thumb_image": "",
         "thumb_generated": true
+      },
+      "https://www.bloomberg.com/news/newsletters/2026-06-07/what-happens-if-the-ai-bubble-bursts": {
+        "file": "data/2026-06-07/16.00-02.md",
+        "source": "bloomberg.com",
+        "first_seen": "2026-06-07",
+        "thumb_headline": "Gimana Kalo Gelembung AI Beneran Meledak?",
+        "thumb_subheadline": null,
+        "thumb_image": "",
+        "thumb_generated": true
+      },
+      "https://www.yahoo.com/news/politics/articles/every-consumer-pay-same-price-082000797.html": {
+        "file": "data/2026-06-07/16.00-03.md",
+        "source": "yahoo.com",
+        "first_seen": "2026-06-07",
+        "thumb_headline": "DPR Dorong Larangan AI Buat Nentuin Harga Beda-beda Buat Tiap Orang",
+        "thumb_subheadline": null,
+        "thumb_image": "https://s.yimg.com/lo/mysterio/api/802e91f56b483572c8644e193c762cf0da6b46cd948c2df028d7327198d1fa29/lightyear_networkapi/resizefill_w1200;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fthe_cool_down_737%2F9843c3c3ad994b1504d140282249c6e6",
+        "thumb_generated": true
+      },
+      "https://www.wired.com/story/security-news-this-week-crypto-funded-chinese-peptide-labs-are-booming/": {
+        "file": "data/2026-06-07/16.44-01.md",
+        "source": "wired.com",
+        "first_seen": "2026-06-07",
+        "thumb_headline": "Laboratorium Peptide China Dibanjiri Pendanaan Kripto",
+        "thumb_subheadline": null,
+        "thumb_image": "https://media.wired.com/photos/6a2312eb2b342fb72975a62e/master/pass/Security-Roundup-Crypto-funded-Chinese-labs-sales-of-peptides-Security-1312618198.jpg",
+        "thumb_generated": true
+      },
+      "https://www.wired.com/story/has-microsoft-lost-its-mojo-again/": {
+        "file": "data/2026-06-07/16.44-02.md",
+        "source": "wired.com",
+        "first_seen": "2026-06-07",
+        "thumb_headline": "Has Microsoft Lost Its Mojo (Again)?",
+        "thumb_subheadline": null,
+        "thumb_image": "https://media.wired.com/photos/6a21bf0470a986f0e78c96a3/master/pass/Backchannel-Q-A-Scott-Hanselma-Business-681613422.jpg",
+        "thumb_generated": true
+      },
+      "https://www.wired.com/story/why-apple-might-put-cameras-into-its-next-airpods/": {
+        "file": "data/2026-06-07/16.44-04.md",
+        "source": "wired.com",
+        "first_seen": "2026-06-07",
+        "thumb_headline": "Apple Mau Pasang Kamera di AirPods untuk Fitur AI",
+        "thumb_subheadline": null,
+        "thumb_image": "https://media.wired.com/photos/6a21fac373f57a5aa16309ff/master/pass/gear_airpodcamera_getty.jpg",
+        "thumb_generated": true
+      },
+      "https://www.wired.com/story/ai-has-come-for-serif-fonts/": {
+        "file": "data/2026-06-07/16.44-05.md",
+        "source": "wired.com",
+        "first_seen": "2026-06-07",
+        "thumb_headline": "AI Mulai Incar Font Serif Klasik",
+        "thumb_subheadline": null,
+        "thumb_image": "https://media.wired.com/photos/6a20d5436a7879400ec4323c/master/pass/culture_ai_serif_font.jpg",
+        "thumb_generated": true
       }
     },
     "source_headlines": {
@@ -5113,7 +5167,8 @@
         "expect apple ai siri ios 27 launch wwdc",
         "us exploring government partnerships ai firms trump says",
         "apollo wraps 35 billion debt buy ai chips anthropic",
-        "trump signs ai memo addressing issues anthropic pentagon feud"
+        "trump signs ai memo addressing issues anthropic pentagon feud",
+        "happens ai bubble bursts"
       ],
       "cnbc.com": [
         "palo alto networks tops earnings as ai fuels cybersecurity urgency",
@@ -5205,7 +5260,8 @@
         "jobs report hit solar ai stocks handle higher interest rates"
       ],
       "yahoo.com": [
-        "ai toys weaken kids bond parents anxious generation author says"
+        "ai toys weaken kids bond parents anxious generation author says",
+        "consumer should pay price lawmakers push ban ai surveillance pricing"
       ],
       "news.samsung.com": [
         "samsung introduces next gen galaxy watch features ai powered everyday health companion"
@@ -5349,6 +5405,12 @@
       ],
       "thelocalreporter.press": [
         "ad world set us ai language"
+      ],
+      "wired.com": [
+        "crypto funded chinese peptide labs booming",
+        "microsoft lost mojo again",
+        "apple might put cameras next airpods",
+        "ai come serif fonts"
       ]
     },
     "cross_topics": [
@@ -7030,6 +7092,16 @@
       {
         "who": "OpenAI",
         "what": "The Trump administration might take an equity stake in OpenAI",
+        "first_seen": "2026-06-07"
+      },
+      {
+        "who": "Microsoft",
+        "what": "Lost Its Mojo (Again)?",
+        "first_seen": "2026-06-07"
+      },
+      {
+        "who": "Apple",
+        "what": "Might Put Cameras Into Its Next AirPods",
         "first_seen": "2026-06-07"
       }
     ],

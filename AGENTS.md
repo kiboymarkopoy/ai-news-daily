@@ -56,7 +56,7 @@ No test runner is configured. Minimal verification:
 ```bash
 python -c "import kiboy; print('OK')"
 python -m kiboy status
-python -m pytest          # 98 unit tests (runs in ~1s, no network)
+python -m pytest          # 124 unit tests (runs in ~1s, no network)
 ```
 
 ## Runtime environment
@@ -106,13 +106,13 @@ grep FAILED .runtime/health.log     # all failures
 - `state.json` — runtime, mutated every pipeline run, tracks all dedup state. `save_state()` writes atomically (tmp → rename). Never `json.dump` to it directly.
 
 ### Cron mode handoff pattern
-`pipeline --cron` outputs to **`.runtime/kiboy_new_articles.json`** (not `/tmp` — survives reboot, KIBOY_ROOT-scoped). The LLM reads this file, writes `.md` articles, then calls `register --from-temp` + `thumbnail --pending`. If you're editing the cron flow, trace: `run_cron_stage()` → LLM → `cmd_register()` → `stage_thumbnails()`.
+`pipeline --cron` outputs to **`.runtime/kiboy_new_articles.json`** (not `/tmp` — survives reboot, KIBOY_ROOT-scoped). The LLM reads this file, writes `.md` articles, then calls `register --from-temp` + `thumbnail --pending`.
 
 ### Dedup state key
 Articles in `state.json["dedup"]["articles"]` are keyed by **URL string**. Each entry has `file`, `thumb_headline`, `thumb_image`, `thumb_generated`, `first_seen`, `domain`.
 
 ### Image pipeline
-- `imagescraper.py` — stdlib only (no BeautifulSoup). Scrapes `og:image` from article URLs, follows Google News redirects automatically via `urllib`.
+- `imagescraper.py` — stdlib + Playwright. Resolves GN redirects via headless Chromium (`wait_until="domcontentloaded"`), caches only successful resolves. Scrapes `og:image` from article URLs via curl_cffi anti-bot.
 - Articles with unresolved Google News redirect URLs (`is_gn_url()`) are **excluded** from cron output — they get pushed to the back and filtered.
 - `cache/` holds downloaded images for thumbnail generation. Not committed.
 

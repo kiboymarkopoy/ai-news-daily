@@ -153,8 +153,8 @@ def resolve_gn_url(gn_url: str, timeout: int = 10) -> tuple[str, str]:
 
                 try:
                     # Step 1: Navigate to GN URL
-                    await page.goto(gn_url, timeout=timeout * 1000, wait_until="networkidle")
-                    await asyncio.sleep(1.5)
+                    await page.goto(gn_url, timeout=timeout * 1000, wait_until="domcontentloaded")
+                    await asyncio.sleep(2)
                     real_url = page.url
                 except Exception:
                     real_url = gn_url
@@ -185,10 +185,11 @@ def resolve_gn_url(gn_url: str, timeout: int = 10) -> tuple[str, str]:
         real_url = gn_url
         og_image = ""
 
-    # Cache result
-    now = time.time()
-    _RESOLVE_CACHE[gn_url] = (real_url, og_image, now)
-    _save_cache()
+    # Cache result (only cache SUCCESSES — failures retry next run)
+    if real_url != gn_url:
+        now = time.time()
+        _RESOLVE_CACHE[gn_url] = (real_url, og_image, now)
+        _save_cache()
 
     return real_url, og_image
 

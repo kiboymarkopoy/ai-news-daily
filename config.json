@@ -60,9 +60,9 @@
         "enabled": true
       },
       {
-        "id": "verge",
-        "name": "The Verge AI",
-        "url": "theverge.com/rss/ai-artificial-intelligence/index.xml",
+        "id": "wired-ai",
+        "name": "Wired AI",
+        "url": "wired.com/feed/tag/ai/latest/rss",
         "enabled": true
       },
       {

@@ -45,7 +45,7 @@ ai-news-daily/
 │   ├── thumbnail.py      # 1080×1350 thumbnail generator (Pillow + NumPy)
 │   ├── writer.py         # Article .md writer + category-sequence validation
 │   └── utils.py          # Text normalization, domain extraction, word overlap
-├── tests/                # pytest suite (98 tests, ~1s, no network)
+├── tests/                # pytest suite (124 tests, ~1s, no network)
 ├── data/
 │   └── YYYY-MM-DD/
 │       ├── HH.MM-NN.md   # Article (Indonesian, category NN)
@@ -133,7 +133,7 @@ Every cron cycle writes to `.runtime/` (gitignored):
 
 ```
 06-05 16:37:01 [SUCCESS] fetch   : TechCrunch AI → 18 artikel
-06-05 16:37:02 [FAILED ] fetch   : The Verge AI → 0 artikel
+06-05 16:37:02 [FAILED ] fetch   : Wired AI → 0 artikel
 06-05 16:38:40 [FAILED ] image   : telegraph.co.uk → bot_block
 06-05 16:39:55 [HEALTH ] run     : fetched=123 new=5 img_ok=4 img_fail=1 status=DEGRADED
 ```
