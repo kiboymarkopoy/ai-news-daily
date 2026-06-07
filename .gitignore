@@ -21,6 +21,9 @@ cache/
 # Runtime working dir (cron handoff, resolver cache, pipeline lock)
 .runtime/
 
+# Generated article data & thumbnails (regen on clone)
+data/
+
 # IDE
 .vscode/
 .idea/
