@@ -1,0 +1,17 @@
+name = "kimedia-dashboard"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = ".svelte-kit/cloudflare"
+
+# Declare bindings — fill in real IDs when deploying to Cloudflare.
+[[d1_databases]]
+binding = "DB"
+database_name = "kimedia-db"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "kimedia-thumbs"
+
+[vars]
+# Non-secret runtime vars (secrets go in Cloudflare dashboard env vars).
+APP_ENV = "production"

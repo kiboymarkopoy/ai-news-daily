@@ -1,0 +1,39 @@
+/* KiMedia Dashboard — global styles */
+
+:root {
+	--bg:        #0a0a0a;
+	--bg-card:   #141414;
+	--bg-hover:  #1e1e1e;
+	--border:    #2a2a2a;
+	--accent:    #00ff64;   /* KiMedia green */
+	--text:      #ffffff;
+	--text-muted: #888888;
+	--pending:   #888888;
+	--posted:    #00ff64;
+	--skipped:   #ff6060;
+	--font:      'Montserrat', system-ui, sans-serif;
+	--radius:    8px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+	background: var(--bg);
+	color: var(--text);
+	font-family: var(--font);
+	font-size: 15px;
+	min-height: 100vh;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+button {
+	cursor: pointer;
+	font-family: inherit;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
