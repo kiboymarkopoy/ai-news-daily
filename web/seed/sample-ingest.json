@@ -1,0 +1,65 @@
+{
+  "_comment": "Sample ingest payload built from real prod article data/2026-06-07/16.44-02.md. Used for D1 local seed and frontend dev. DO NOT commit real thumbnail_png_b64 — use placeholder.",
+
+  "id": "2026-06-07_16.44-02",
+  "date": "2026-06-07",
+  "time": "16.44",
+  "seq": 2,
+
+  "title_short": "Microsoft Kehilangan Mojo Lagi?",
+  "title_id": "Microsoft Kehilangan Arah di Tengah Gempuran AI? Banyak yang Nggak Setuju",
+  "body_md": "Wired baru aja nulis artikel menarik soal posisi Microsoft di industri AI sekarang. Judulnya provocative banget — \"Has Microsoft Lost Its Mojo (Again)?\" — dan langsung ngingetin masa-masa ketika Microsoft dulu sempat dianggap ketinggalan di era smartphone dan search engine.\n\nBanyak yang bilang sih nggak. Microsoft justru jadi salah satu pemain AI paling agresif. Mereka berhasil nge-integrasiin GPT ke Office, Bing, Windows, dan Azure. Bahkan, partnership sama OpenAI diklaim udah ngasih mereka akses ke teknologi paling canggih di industri.\n\nMenariknya, pertanyaan ini muncul pas Microsoft lagi kompetisi ketat sama Google, AWS, dan Meta. Apakah Microsoft masih punya keunggulan kompetitif? Yang jelas, perang AI masih jauh dari selesai.",
+  "thumb_headline": "**MICROSOFT** Kehilangan Mojo Lagi?",
+
+  "source_domain": "wired.com",
+  "source_name": "Wired",
+  "source_url": "https://www.wired.com/story/has-microsoft-lost-its-mojo-again/",
+
+  "image_original": "https://media.wired.com/photos/6a21bf0470a986f0e78c96a3/master/pass/Backchannel-Q-A-Scott-Hanselma-Business-681613422.jpg",
+  "thumbnail_png_b64": "__PLACEHOLDER_BASE64_PNG__",
+
+  "variants": {
+    "threads": {
+      "posts": [
+        {
+          "index": 1,
+          "text": "Microsoft Kehilangan Mojo Lagi? 🤔\n\nWired nulis soal posisi Microsoft di AI sekarang. Partnership sama OpenAI udah kasih mereka GPT di Office, Bing, dan Azure — tapi kritik tetap ada: terlalu bergantung, lebih kayak \"reseller\" model AI daripada inovator sejati.",
+          "char_count": 277,
+          "has_image": true
+        },
+        {
+          "index": 2,
+          "text": "Source: https://www.wired.com/story/has-microsoft-lost-its-mojo-again/",
+          "char_count": 70,
+          "has_image": false
+        }
+      ],
+      "total_chars": 347
+    },
+    "instagram": {
+      "caption": "Microsoft Kehilangan Mojo Lagi? 🤔\n\nWired baru aja nulis artikel menarik soal posisi Microsoft di industri AI sekarang. Judulnya provocative banget — \"Has Microsoft Lost Its Mojo (Again)?\" — dan langsung ngingetin masa-masa ketika Microsoft dulu sempat dianggap ketinggalan di era smartphone dan search engine.\n\nBanyak yang bilang sih nggak. Microsoft justru jadi salah satu pemain AI paling agresif. Mereka berhasil nge-integrasiin GPT ke Office, Bing, Windows, dan Azure. Bahkan, partnership sama OpenAI diklaim udah ngasih mereka akses ke teknologi paling canggih di industri.\n\nMenariknya, pertanyaan ini muncul pas Microsoft lagi kompetisi ketat sama Google, AWS, dan Meta. Apakah Microsoft masih punya keunggulan kompetitif? Atau mereka bakal jadi korban \"innovator's dilemma\"?\n\nLink di bio untuk baca selengkapnya.\n\n#Microsoft #AI #ArtificialIntelligence #Tech #KiMedia #AINews",
+      "char_count": 842,
+      "hashtags": ["#Microsoft", "#AI", "#ArtificialIntelligence", "#Tech", "#KiMedia", "#AINews"],
+      "has_image": true
+    },
+    "twitter": {
+      "posts": [
+        {
+          "index": 1,
+          "text": "Microsoft Kehilangan Mojo Lagi? 🤔 Wired tanya: udah kayak reseller OpenAI apa masih inovator? GPT di semua produk mereka — tapi pesaing (Google, AWS, Meta) makin dekat.",
+          "char_count": 168,
+          "has_image": true
+        },
+        {
+          "index": 2,
+          "text": "Source: https://www.wired.com/story/has-microsoft-lost-its-mojo-again/",
+          "char_count": 70,
+          "has_image": false
+        }
+      ],
+      "post_count": 2
+    }
+  },
+
+  "generated_at": "2026-06-07T16:45:10+07:00"
+}

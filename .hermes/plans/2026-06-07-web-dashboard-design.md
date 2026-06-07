@@ -33,6 +33,8 @@ Bukan untuk publik. Bukan untuk auto-posting (manual copy-paste dulu).
 | 9 | Framework | **SvelteKit** + `@sveltejs/adapter-cloudflare` |
 | 10 | Char over limit | **Auto-truncate** di publisher (word boundary, jangan potong URL/kata) |
 | 11 | Gambar storage | **R2** (bukan local), via API upload |
+| 12 | Konten artikel storage | **D1** (BUKAN git). Kiboy POST ke `/api/ingest` → simpan ke D1. Dashboard baca live dari D1. Git tidak menyimpan konten dashboard sama sekali. |
+| 13 | Update dashboard | Real-time saat Kiboy `publish` (tanpa rebuild Pages, tanpa git push) |
 
 ### Kredensial auth (1 user)
 - Username: `admin`
@@ -224,14 +226,42 @@ Daftar ringkas semua artikel untuk grid (tanpa body penuh, biar ringan).
 Status TIDAK disimpan di `content.json` (itu read-only hasil generate). Status mutable → D1.
 
 ```sql
--- Tabel utama: status posting per artikel per platform
+-- Tabel KONTEN artikel (sumber data dashboard — menggantikan content.json di git).
+-- Diisi oleh Kiboy publisher via POST /api/ingest tiap cron run.
+CREATE TABLE articles (
+    id            TEXT PRIMARY KEY,          -- "<date>_<slug>" mis. 2026-06-07_16.44-02
+    date          TEXT NOT NULL,             -- "2026-06-07"
+    time          TEXT NOT NULL,             -- "16.44"
+    seq           INTEGER NOT NULL,          -- 1-5 (kategori)
+    category_key  TEXT NOT NULL,             -- "industry_business"
+    category_label TEXT NOT NULL,
+    category_emoji TEXT NOT NULL,
+    title_short   TEXT NOT NULL,             -- dari "# NN — emoji <ini>"
+    title_id      TEXT NOT NULL,             -- judul lengkap Indonesia
+    body_md       TEXT NOT NULL,             -- body artikel (markdown)
+    thumb_headline TEXT,                     -- dengan **accent** markup
+    source_domain TEXT,
+    source_name   TEXT,
+    source_url    TEXT NOT NULL,             -- URL ASLI (bukan GN)
+    image_original_url TEXT,                 -- OG image artikel asli
+    thumbnail_r2_url   TEXT,                 -- thumbnail KiMedia di R2
+    has_real_image     INTEGER DEFAULT 0,    -- 0=gradient fallback, 1=foto asli
+    variants_json TEXT NOT NULL,             -- JSON: {threads, instagram, twitter}
+    generated_at  TEXT NOT NULL,
+    created_at    TEXT NOT NULL
+);
+
+CREATE INDEX idx_articles_date ON articles(date);
+CREATE INDEX idx_articles_seq  ON articles(seq);
+
+-- Status posting per artikel per platform (mutable).
 CREATE TABLE post_status (
-    article_id   TEXT NOT NULL,              -- = content.json "id"
+    article_id   TEXT NOT NULL,              -- = articles.id
     platform     TEXT NOT NULL,              -- 'threads' | 'instagram' | 'twitter'
     status       TEXT NOT NULL DEFAULT 'pending',  -- 'pending' | 'posted' | 'skipped'
-    posted_at    TEXT,                        -- ISO timestamp saat ditandai posted
-    posted_by    TEXT,                        -- username yang menandai
-    note         TEXT,                        -- catatan opsional
+    posted_at    TEXT,
+    posted_by    TEXT,
+    note         TEXT,
     updated_at   TEXT NOT NULL,
     PRIMARY KEY (article_id, platform)
 );
@@ -239,24 +269,26 @@ CREATE TABLE post_status (
 CREATE INDEX idx_post_status_article ON post_status(article_id);
 CREATE INDEX idx_post_status_status  ON post_status(status);
 
--- Tabel user (3 orang) — auth sederhana
+-- User (1 orang) — auth.
 CREATE TABLE users (
     username      TEXT PRIMARY KEY,
-    password_hash TEXT NOT NULL,    -- bcrypt/scrypt hash
+    password_hash TEXT NOT NULL,
     display_name  TEXT,
     created_at    TEXT NOT NULL
 );
 
--- (opsional) audit log aksi posting
+-- Audit log aksi posting.
 CREATE TABLE activity_log (
     id          INTEGER PRIMARY KEY AUTOINCREMENT,
     article_id  TEXT NOT NULL,
     platform    TEXT,
-    action      TEXT NOT NULL,      -- 'marked_posted' | 'unmarked' | 'login'
+    action      TEXT NOT NULL,
     username    TEXT NOT NULL,
     created_at  TEXT NOT NULL
 );
 ```
+
+> Catatan: `variants_json` disimpan sebagai TEXT (JSON serialized) — D1 tidak punya tipe JSON native, tapi query-nya cukup di app layer. `content.json` per-artikel **tidak lagi ditulis ke git** — D1 adalah satu-satunya sumber konten dashboard.
 
 **Catatan auth:** kamu bilang hash di `.env` Cloudflare Pages. Dua opsi:
 - (a) Hash di env Pages (3 user hardcoded di env var) — paling simpel, cukup untuk 3 orang
