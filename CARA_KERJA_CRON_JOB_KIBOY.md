@@ -250,9 +250,28 @@ Setiap cron run nulis ke `.runtime/` (gitignored, ikut KIBOY_ROOT):
 - `bot_block` → Akamai/Cloudflare block (Telegraph, dll)
 - `blocked_domain` → domain di blocklist (bloomberg, wsj, ft)
 - `no_og_image` → halaman oke tapi gak ada og:image
-| `gn_unresolved` → GN redirect gagal di-resolve (URL expired/bad request)
+- `gn_unresolved` → GN redirect gagal di-resolve (URL expired/bad request)
 - `unreachable` → timeout/network error
 - `validation_failed` → URL gak bisa didownload
+
+---
+
+### 🚨 PENTING: thumb_headline WAJIB Bahasa Indonesia!
+
+Ini **sering dilanggar** oleh LLM (deepseek-v4-flash). thumb_headline yang ditulis LLM di `.runtime/kiboy_new_articles.json` kadang pake Bahasa Inggris, padahal aturannya WAJIB Bahasa Indonesia.
+
+Akibatnya: teks di thumbnail jadi Bahasa Inggris.
+
+**Aturan:**
+- `thumb_headline` WAJIB BAHASA INDONESIA, BUKAN Inggris!
+- Jangan pake emoji, nama topik, atau nomor urut di thumb_headline
+- thumb_headline harus SESUAI dengan judul artikel file .md yang ditulis
+- ❌ Contoh SALAH (sering terjadi): `"Can AI undermine the capacities..."` (Inggris!)
+- ❌ Contoh SALAH (sering terjadi): `"Billions spent and hypothetical returns..."` (Inggris!)
+- ✅ Contoh BENAR: `"Google Gemini Spark Bisa Akses Seluruh Hidup Lo"`
+- ✅ Contoh BENAR: `"EU Sahkan Aturan AI Baru, Deadline Diperpanjang"`
+
+Verifikasi di laporan akhir: pastikan SEMUA thumb_headline dalam Bahasa Indonesia.
 
 **Commands buat monitoring:**
 ```bash
