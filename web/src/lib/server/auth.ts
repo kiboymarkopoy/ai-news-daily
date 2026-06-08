@@ -1,8 +1,10 @@
 /**
  * Auth helpers — session cookie signing + password verification.
  *
- * Uses Web Crypto API (available in Cloudflare Workers / edge runtime).
- * No external dependencies.
+ * Password auth: simple SHA-256 hash (deterministic, no salt).
+ * Store SHA-256(password) in ADMIN_PASSWORD_HASH env var.
+ *
+ * Session: HMAC-SHA-256 signed cookie.
  */
 
 const SESSION_TTL_SECONDS = 60 * 60 * 24 * 7; // 7 days
@@ -30,9 +32,7 @@ export async function createSession(username: string, secret: string): Promise<s
 	return `${encoded}.${sigHex}`;
 }
 
-/**
- * Verify a session token and return the username, or null if invalid / expired.
- */
+/** Verify a session token and return the username, or null if invalid / expired. */
 export async function verifySession(token: string, secret: string): Promise<string | null> {
 	try {
 		const [encoded, sigHex] = token.split('.');
@@ -52,61 +52,22 @@ export async function verifySession(token: string, secret: string): Promise<stri
 	}
 }
 
-// ── Password verification (scrypt via Web Crypto) ─────────────────────────
+// ── Password verification — simple SHA-256 (deterministic, no salt) ───────
+// ADMIN_PASSWORD_HASH = SHA-256(password) as hex string.
+// Generate with: node -e "const c=require('crypto');console.log(c.createHash('sha256').update('yourpassword').digest('hex'))"
 
-/**
- * Verify a plaintext password against a stored "salt:hash" scrypt record.
- *
- * Hash format (from .env.example generation command):
- *   <saltHex>:<hashHex>
- */
-export async function verifyPassword(plaintext: string, storedHash: string): Promise<boolean> {
-	try {
-		const [saltHex, hashHex] = storedHash.split(':');
-		if (!saltHex || !hashHex) return false;
-
-		const salt = new Uint8Array(saltHex.match(/.{2}/g)!.map((h) => parseInt(h, 16)));
-		const keyMaterial = await crypto.subtle.importKey(
-			'raw',
-			new TextEncoder().encode(plaintext),
-			'PBKDF2',
-			false,
-			['deriveBits']
-		);
-		// Use PBKDF2 (Web Crypto doesn't have scrypt; PBKDF2 is the available alternative)
-		const derived = await crypto.subtle.deriveBits(
-			{ name: 'PBKDF2', hash: 'SHA-256', salt, iterations: 200_000 },
-			keyMaterial,
-			512
-		);
-		const derivedHex = Array.from(new Uint8Array(derived))
-			.map((b) => b.toString(16).padStart(2, '0'))
-			.join('');
-		return derivedHex === hashHex;
-	} catch {
-		return false;
-	}
+export async function sha256hex(text: string): Promise<string> {
+	const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+	return Array.from(new Uint8Array(buf)).map((b) => b.toString(16).padStart(2, '0')).join('');
 }
 
-/**
- * Hash a plaintext password for storage (PBKDF2-SHA256, 200k iterations).
- * Run once when setting up the admin password — paste result into env var.
- */
+export async function verifyPassword(plaintext: string, storedHash: string): Promise<boolean> {
+	if (!storedHash) return false;
+	const hash = await sha256hex(plaintext);
+	return hash === storedHash.toLowerCase().trim();
+}
+
+/** Hash a password for storage — SHA-256 hex. */
 export async function hashPassword(plaintext: string): Promise<string> {
-	const salt = crypto.getRandomValues(new Uint8Array(16));
-	const keyMaterial = await crypto.subtle.importKey(
-		'raw',
-		new TextEncoder().encode(plaintext),
-		'PBKDF2',
-		false,
-		['deriveBits']
-	);
-	const derived = await crypto.subtle.deriveBits(
-		{ name: 'PBKDF2', hash: 'SHA-256', salt, iterations: 200_000 },
-		keyMaterial,
-		512
-	);
-	const saltHex = Array.from(salt).map((b) => b.toString(16).padStart(2, '0')).join('');
-	const hashHex = Array.from(new Uint8Array(derived)).map((b) => b.toString(16).padStart(2, '0')).join('');
-	return `${saltHex}:${hashHex}`;
+	return sha256hex(plaintext);
 }
