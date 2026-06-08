@@ -37,3 +37,6 @@ Thumbs.db
 # Environment
 .env
 .env.local
+
+# Credentials / secrets (never commit)
+dev-docs/
