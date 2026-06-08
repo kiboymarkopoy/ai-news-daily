@@ -148,9 +148,9 @@ Phase 5 — COMMIT & PUSH
 cd /root/ai-news-daily
 git add -A
 git commit -m "Cron Job HH.MM"
-git push origin refactor/best-practice-workflow
+git push origin robust-workflow
 
-Ini otomatis jalan oleh agent setelah delivery. Branch aktif: refactor/best-practice-workflow.
+Ini otomatis jalan oleh agent setelah delivery. Branch aktif: **robust-workflow**.
 
 ---
 

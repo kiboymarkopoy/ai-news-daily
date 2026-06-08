@@ -56,7 +56,7 @@ No test runner is configured. Minimal verification:
 ```bash
 python -c "import kiboy; print('OK')"
 python -m kiboy status
-python -m pytest          # 124 unit tests (runs in ~1s, no network)
+python -m pytest          # 154 unit tests (runs in ~2s, no network)
 ```
 
 ## Runtime environment
@@ -154,3 +154,20 @@ The article's `# NN — 🧠 Title` header **must match** the file's `NN` suffix
 
 - `2026-06-04-og-image-scraping.md` — fully implemented. Describes final architecture.
 - `2026-06-04_221500-vps-bandwidth-tunnel.md` — VPS/infra note, not a code task.
+- `2026-06-07-web-dashboard-design.md` — Web dashboard design (ACTIVE, partially implemented).
+- `2026-06-07-web-dashboard-execution.md` — Execution plan (Fase 0-4 done, Fase 5-6 remaining).
+
+## Web dashboard (branch `feature/web-dashboard`)
+
+Live at: **`https://ai-news-daily-arh.pages.dev`** (login: admin / see `dev-docs/credentials.txt`)
+
+Status: **Fase 0-4 complete** — login works, dashboard UI ready, D1+R2 configured, publisher Python ready.
+Remaining: **Fase 5** (update Kiboy cron prompt to generate `variants`, set VPS env, add `publish --pending` to cron).
+
+Key new files:
+- `kiboy/publisher.py` — parses `.md` → IngestPayload, POSTs to `/api/ingest`
+- `web/` — SvelteKit 5 app (adapter-cloudflare)
+- `web/schema.sql` — D1 schema
+- `web/src/lib/types.ts` — TypeScript contract (IngestPayload, Article, PlatformVariants)
+
+**Do NOT merge `feature/web-dashboard` into `robust-workflow`** until Fase 5 is complete and tested end-to-end.
